@@ -1,0 +1,1825 @@
+{
+  "summary": {
+    "generated": "2026-06-14T17:59:53.580Z",
+    "totalWords": 577,
+    "counts": {
+      "der": 152,
+      "die": 149,
+      "das": 91,
+      "null": 185,
+      "other": 0
+    },
+    "withArticleCount": 392,
+    "expectedNullCount": 107,
+    "intentionalNullCount": 47,
+    "reviewRequiredCount": 31,
+    "referenceMismatchCount": 0,
+    "exampleHintMismatchCount": 0,
+    "spotChecks": [
+      {
+        "word": "Salat",
+        "inVocab": true,
+        "vocabArticle": "der",
+        "referenceArticle": "der",
+        "ok": true
+      },
+      {
+        "word": "Brot",
+        "inVocab": true,
+        "vocabArticle": "das",
+        "referenceArticle": "das",
+        "ok": true
+      },
+      {
+        "word": "Wurst",
+        "inVocab": true,
+        "vocabArticle": "die",
+        "referenceArticle": "die",
+        "ok": true
+      }
+    ],
+    "referenceMeta": {
+      "path": "data/a1/article-reference.json",
+      "total": 392,
+      "generated": "2026-06-14T17:59:43.216Z"
+    }
+  },
+  "expectedNull": [
+    {
+      "id": "a1_0001",
+      "word": "Hallo",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0002",
+      "word": "Guten Morgen",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0003",
+      "word": "Guten Tag",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0004",
+      "word": "Guten Abend",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0005",
+      "word": "Gute Nacht",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0006",
+      "word": "Tschüss",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0007",
+      "word": "Auf Wiedersehen",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0008",
+      "word": "Danke",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0009",
+      "word": "Bitte",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0010",
+      "word": "Entschuldigung",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0011",
+      "word": "Willkommen",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0012",
+      "word": "Servus",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0013",
+      "word": "Grüß Gott",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0016",
+      "word": "Wie geht es?",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0017",
+      "word": "Alles klar",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0018",
+      "word": "Schön",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0019",
+      "word": "Freut mich",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0020",
+      "word": "Bis bald",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0021",
+      "word": "Bis später",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0022",
+      "word": "Guten Appetit",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0023",
+      "word": "Prost",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0024",
+      "word": "Herzlichen Glückwunsch",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0025",
+      "word": "Viel Glück",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0026",
+      "word": "Gute Besserung",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0027",
+      "word": "Schönes Wochenende",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0028",
+      "word": "Frohe Weihnachten",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0029",
+      "word": "Frohes neues Jahr",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0030",
+      "word": "Ja",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "basic",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0031",
+      "word": "Nein",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "basic",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0032",
+      "word": "Vielleicht",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "basic",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0033",
+      "word": "Natürlich",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "basic",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0037",
+      "word": "kommen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0038",
+      "word": "wohnen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0040",
+      "word": "sprechen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0041",
+      "word": "verstehen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0042",
+      "word": "lernen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0047",
+      "word": "Jahre alt",
+      "category": "Tanışma",
+      "tags": [
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0049",
+      "word": "arbeiten als",
+      "category": "Tanışma",
+      "tags": [
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0057",
+      "word": "kennenlernen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0058",
+      "word": "heißen",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0059",
+      "word": "sein",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0060",
+      "word": "haben",
+      "category": "Tanışma",
+      "tags": [
+        "verb",
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0096",
+      "word": "lieben",
+      "category": "Aile",
+      "tags": [
+        "verb",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0097",
+      "word": "heiraten",
+      "category": "Aile",
+      "tags": [
+        "verb",
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0139",
+      "word": "kosten",
+      "category": "Market",
+      "tags": [
+        "verb",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0140",
+      "word": "kaufen",
+      "category": "Market",
+      "tags": [
+        "verb",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0169",
+      "word": "bezahlen",
+      "category": "Market",
+      "tags": [
+        "verb",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0172",
+      "word": "arbeiten",
+      "category": "İş",
+      "tags": [
+        "verb",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0203",
+      "word": "anfangen",
+      "category": "İş",
+      "tags": [
+        "verb",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0204",
+      "word": "aufhören",
+      "category": "İş",
+      "tags": [
+        "verb",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0221",
+      "word": "fahren",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0222",
+      "word": "abfahren",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0223",
+      "word": "ankommen",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0224",
+      "word": "einsteigen",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0225",
+      "word": "aussteigen",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0226",
+      "word": "umsteigen",
+      "category": "Ulaşım",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0251",
+      "word": "Halb",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0252",
+      "word": "punkt",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0253",
+      "word": "Wie spät",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0254",
+      "word": "Wann",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0342",
+      "word": "bestellen",
+      "category": "Restoran",
+      "tags": [
+        "verb",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0375",
+      "word": "anrufen",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0388",
+      "word": "schicken",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0389",
+      "word": "empfangen",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0390",
+      "word": "antworten",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0391",
+      "word": "sprechen",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0392",
+      "word": "auflegen",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0403",
+      "word": "laden",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0406",
+      "word": "funktionieren",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0407",
+      "word": "reparieren",
+      "category": "Telefon",
+      "tags": [
+        "verb",
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0440",
+      "word": "ausfüllen",
+      "category": "Form doldurma",
+      "tags": [
+        "verb",
+        "form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0441",
+      "word": "unterschreiben",
+      "category": "Form doldurma",
+      "tags": [
+        "verb",
+        "form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0449",
+      "word": "Bitte in Druckbuchstaben",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0460",
+      "word": "Gültig ab",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0461",
+      "word": "Gültig bis",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0473",
+      "word": "Wie lange",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0487",
+      "word": "Sprache auf Niveau",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0505",
+      "word": "Davon Kinder",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0508",
+      "word": "Geboren in",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0512",
+      "word": "essen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0513",
+      "word": "kochen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0514",
+      "word": "waschen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0515",
+      "word": "duschen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0516",
+      "word": "anziehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0517",
+      "word": "aufstehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0518",
+      "word": "ins Bett gehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0519",
+      "word": "putzen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0520",
+      "word": "einkaufen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0521",
+      "word": "bezahlen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0522",
+      "word": "brauchen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0523",
+      "word": "möchten",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0524",
+      "word": "suchen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0525",
+      "word": "finden",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0526",
+      "word": "nehmen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0527",
+      "word": "geben",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0528",
+      "word": "machen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0529",
+      "word": "lesen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0530",
+      "word": "schreiben",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0531",
+      "word": "hören",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0532",
+      "word": "sehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0533",
+      "word": "gehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0534",
+      "word": "laufen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0535",
+      "word": "sitzen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0536",
+      "word": "stehen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0537",
+      "word": "öffnen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0538",
+      "word": "schließen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "verb",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0546",
+      "word": "Wo ist",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    }
+  ],
+  "intentionalNull": [
+    {
+      "id": "a1_0014",
+      "word": "Morgen",
+      "category": "Selamlama",
+      "tags": [
+        "greeting",
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0050",
+      "word": "ledig",
+      "category": "Tanışma",
+      "tags": [
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0051",
+      "word": "verheiratet",
+      "category": "Tanışma",
+      "tags": [
+        "introduction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0098",
+      "word": "geboren",
+      "category": "Aile",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0100",
+      "word": "allein",
+      "category": "Aile",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0101",
+      "word": "zusammen",
+      "category": "Aile",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0134",
+      "word": "sauber",
+      "category": "Ev",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0135",
+      "word": "schmutzig",
+      "category": "Ev",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0143",
+      "word": "billig",
+      "category": "Market",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0144",
+      "word": "teuer",
+      "category": "Market",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0202",
+      "word": "krank",
+      "category": "İş",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0240",
+      "word": "heute",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0241",
+      "word": "morgen",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0242",
+      "word": "gestern",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0243",
+      "word": "jetzt",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0244",
+      "word": "später",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0245",
+      "word": "früh",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0246",
+      "word": "spät",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0255",
+      "word": "immer",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0256",
+      "word": "manchmal",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0257",
+      "word": "nie",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0258",
+      "word": "oft",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0259",
+      "word": "selten",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0260",
+      "word": "pünktlich",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0271",
+      "word": "schon",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0272",
+      "word": "noch",
+      "category": "Saat",
+      "tags": [
+        "time",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0333",
+      "word": "gesund",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0334",
+      "word": "krank",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0335",
+      "word": "müde",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0336",
+      "word": "schwach",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0337",
+      "word": "besser",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0338",
+      "word": "schlecht",
+      "category": "Doktor",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0360",
+      "word": "hungrig",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0361",
+      "word": "satt",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0362",
+      "word": "durstig",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0363",
+      "word": "lecker",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0366",
+      "word": "vegetarisch",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0370",
+      "word": "noch",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0372",
+      "word": "warm",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0373",
+      "word": "kalt",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0418",
+      "word": "männlich",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0419",
+      "word": "weiblich",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0459",
+      "word": "Geschieden",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0490",
+      "word": "Staatsbürgerlich",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0499",
+      "word": "Verwitwet",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0504",
+      "word": "Beiden",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0506",
+      "word": "Bar",
+      "category": "Form doldurma",
+      "tags": [
+        "form",
+        "goethe-form",
+        "a1"
+      ]
+    }
+  ],
+  "reviewRequired": [
+    {
+      "id": "a1_0099",
+      "word": "Zusammenleben",
+      "category": "Aile",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0303",
+      "word": "Weihnachten",
+      "category": "Tarih",
+      "tags": [
+        "date",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0304",
+      "word": "Ostern",
+      "category": "Tarih",
+      "tags": [
+        "date",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0368",
+      "word": "ohne",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0369",
+      "word": "mit",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0371",
+      "word": "fertig",
+      "category": "Restoran",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0381",
+      "word": "besetzt",
+      "category": "Telefon",
+      "tags": [
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0393",
+      "word": "Warten",
+      "category": "Telefon",
+      "tags": [
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0399",
+      "word": "laut",
+      "category": "Telefon",
+      "tags": [
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0400",
+      "word": "leise",
+      "category": "Telefon",
+      "tags": [
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0401",
+      "word": "stumm",
+      "category": "Telefon",
+      "tags": [
+        "phone",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0509",
+      "word": "trinken",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0510",
+      "word": "schlafen",
+      "category": "Günlük ihtiyaçlar",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0543",
+      "word": "links",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0544",
+      "word": "rechts",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0545",
+      "word": "geradeaus",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0547",
+      "word": "hier",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0548",
+      "word": "dort",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0549",
+      "word": "nah",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0550",
+      "word": "weit",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0551",
+      "word": "oben",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0552",
+      "word": "unten",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0553",
+      "word": "vorne",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0554",
+      "word": "hinten",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0555",
+      "word": "neben",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0556",
+      "word": "gegenüber",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0557",
+      "word": "zwischen",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0574",
+      "word": "bis",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0575",
+      "word": "dann",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0576",
+      "word": "zurück",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0577",
+      "word": "verlaufen",
+      "category": "Basit yön tarifleri",
+      "tags": [
+        "direction",
+        "a1"
+      ]
+    }
+  ],
+  "referenceMismatch": [],
+  "exampleHintMismatch": [],
+  "spotChecks": [
+    {
+      "word": "Salat",
+      "inVocab": true,
+      "vocabArticle": "der",
+      "referenceArticle": "der",
+      "ok": true
+    },
+    {
+      "word": "Brot",
+      "inVocab": true,
+      "vocabArticle": "das",
+      "referenceArticle": "das",
+      "ok": true
+    },
+    {
+      "word": "Wurst",
+      "inVocab": true,
+      "vocabArticle": "die",
+      "referenceArticle": "die",
+      "ok": true
+    }
+  ]
+}

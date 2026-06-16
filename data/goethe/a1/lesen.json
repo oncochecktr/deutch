@@ -1,0 +1,1527 @@
+[
+  {
+    "id": "lp_001",
+    "level": "A1",
+    "type": "email",
+    "title_de": "E-Mail von Timur",
+    "text_de": "Hallo!\nIch heiße Timur. Ich komme aus der Türkei und wohne in Berlin. Ich arbeite in einem Lager. Meine Schicht beginnt um 6 Uhr. Ich spreche Türkisch und Deutsch.\nViele Grüße\nTimur",
+    "questions": [
+      {
+        "id": "lq_001",
+        "question_de": "Wo wohnt Timur?",
+        "question_tr": "Timur nerede yaşıyor?",
+        "options": [
+          "Istanbul",
+          "Ankara",
+          "Hamburg",
+          "Berlin"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_002",
+        "question_de": "Wo arbeitet er?",
+        "question_tr": "Nerede çalışıyor?",
+        "options": [
+          "Büro",
+          "Schule",
+          "Restaurant",
+          "Lager"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_003",
+        "question_de": "Wann beginnt die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "8 Uhr",
+          "10 Uhr",
+          "12 Uhr",
+          "6 Uhr"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_004",
+        "question_de": "Welche Sprachen spricht er?",
+        "question_tr": "Hangi diller?",
+        "options": [
+          "Nur Deutsch",
+          "Nur Türkisch",
+          "Englisch",
+          "Türkisch und Deutsch"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "email"
+    ]
+  },
+  {
+    "id": "lp_002",
+    "level": "A1",
+    "type": "notice",
+    "title_de": "Aushang im Lager",
+    "text_de": "ACHTUNG!\nSicherheitsschuhe und Helm sind Pflicht.\nPause: 12:00 – 12:30 Uhr\nFeierabend: 17:00 Uhr\nBei Fragen: Teamleiter Herr Schmidt",
+    "questions": [
+      {
+        "id": "lq_005",
+        "question_de": "Was ist Pflicht?",
+        "question_tr": "Ne zorunlu?",
+        "options": [
+          "Uniform",
+          "Handschuhe",
+          "Brille",
+          "Helm und Sicherheitsschuhe"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_006",
+        "question_de": "Wann ist Pause?",
+        "question_tr": "Mola ne zaman?",
+        "options": [
+          "10:00",
+          "14:00",
+          "16:00",
+          "12:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_007",
+        "question_de": "Wann ist Feierabend?",
+        "question_tr": "İş ne zaman bitiyor?",
+        "options": [
+          "15:00",
+          "18:00",
+          "20:00",
+          "17:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_008",
+        "question_de": "An wen wendet man sich?",
+        "question_tr": "Kime sorulur?",
+        "options": [
+          "Arzt",
+          "Kunde",
+          "Busfahrer",
+          "Teamleiter"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "notice"
+    ]
+  },
+  {
+    "id": "lp_003",
+    "level": "A1",
+    "type": "sign",
+    "title_de": "Schild am Bahnhof",
+    "text_de": "→ Bahnhof\n← Stadtmitte\nToilette: 200 Meter geradeaus\nTicket kaufen: Schalter 2",
+    "questions": [
+      {
+        "id": "lq_009",
+        "question_de": "Wo ist die Toilette?",
+        "question_tr": "Tuvalet nerede?",
+        "options": [
+          "links",
+          "rechts",
+          "zurück",
+          "geradeaus"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_010",
+        "question_de": "Wo kauft man Tickets?",
+        "question_tr": "Bilet nereden?",
+        "options": [
+          "Schalter 1",
+          "Im Bus",
+          "Online",
+          "Schalter 2"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_011",
+        "question_de": "Was ist rechts?",
+        "question_tr": "Sağda ne var?",
+        "options": [
+          "Bahnhof",
+          "Flughafen",
+          "Park",
+          "Stadtmitte"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_012",
+        "question_de": "Was bedeutet der Pfeil →?",
+        "question_tr": "Ok ne demek?",
+        "options": [
+          "Stadt",
+          "Toilette",
+          "Ausgang",
+          "Bahnhof"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "sign"
+    ]
+  },
+  {
+    "id": "lp_004",
+    "level": "A1",
+    "type": "advert",
+    "title_de": "Anzeige — Supermarkt",
+    "text_de": "SUPERMARKT ALDI\nMontag – Samstag: 8:00 – 20:00 Uhr\nSonntag: geschlossen\nBrot: 0,99 €\nMilch: 1,09 €",
+    "questions": [
+      {
+        "id": "lq_013",
+        "question_de": "Wann ist Sonntag geöffnet?",
+        "question_tr": "Pazar açık mı?",
+        "options": [
+          "8–20 Uhr",
+          "nur morgens",
+          "24 Stunden",
+          "geschlossen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_014",
+        "question_de": "Was kostet das Brot?",
+        "question_tr": "Ekmek fiyatı?",
+        "options": [
+          "1,09 €",
+          "2,00 €",
+          "5,00 €",
+          "0,99 €"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_015",
+        "question_de": "Wann öffnet der Markt?",
+        "question_tr": "Ne zaman açılır?",
+        "options": [
+          "10:00",
+          "12:00",
+          "6:00",
+          "8:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_016",
+        "question_de": "Was kostet die Milch?",
+        "question_tr": "Süt fiyatı?",
+        "options": [
+          "0,99 €",
+          "2,50 €",
+          "0,50 €",
+          "1,09 €"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "advert"
+    ]
+  },
+  {
+    "id": "lp_005",
+    "level": "A1",
+    "type": "message",
+    "title_de": "SMS von der Firma",
+    "text_de": "Hallo Timur,\nMorgen beginnt deine Schicht um 7 Uhr. Bitte pünktlich sein. Vergiss nicht deinen Helm.\nDein Chef",
+    "questions": [
+      {
+        "id": "lq_017",
+        "question_de": "Wann ist die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "6 Uhr heute",
+          "8 Uhr morgen",
+          "9 Uhr",
+          "7 Uhr morgen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_018",
+        "question_de": "Was soll Timur nicht vergessen?",
+        "question_tr": "Ne unutmamalı?",
+        "options": [
+          "Essen",
+          "Ticket",
+          "Pass",
+          "Helm"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_019",
+        "question_de": "Wer schreibt?",
+        "question_tr": "Kim yazıyor?",
+        "options": [
+          "Arzt",
+          "Lehrer",
+          "Freund",
+          "Chef"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_020",
+        "question_de": "Was ist wichtig?",
+        "question_tr": "Ne önemli?",
+        "options": [
+          "lange schlafen",
+          "Kaffee trinken",
+          "Auto fahren",
+          "pünktlich sein"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "message"
+    ]
+  },
+  {
+    "id": "lp_006",
+    "level": "A1",
+    "type": "email",
+    "title_de": "E-Mail von Timur",
+    "text_de": "Hallo!\nIch heiße Timur. Ich komme aus der Türkei und wohne in Berlin. Ich arbeite in einem Lager. Meine Schicht beginnt um 6 Uhr. Ich spreche Türkisch und Deutsch.\nViele Grüße\nTimur",
+    "questions": [
+      {
+        "id": "lq_021",
+        "question_de": "Wo wohnt Timur?",
+        "question_tr": "Timur nerede yaşıyor?",
+        "options": [
+          "Istanbul",
+          "Ankara",
+          "Hamburg",
+          "Berlin"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_022",
+        "question_de": "Wo arbeitet er?",
+        "question_tr": "Nerede çalışıyor?",
+        "options": [
+          "Büro",
+          "Schule",
+          "Restaurant",
+          "Lager"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_023",
+        "question_de": "Wann beginnt die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "8 Uhr",
+          "10 Uhr",
+          "12 Uhr",
+          "6 Uhr"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_024",
+        "question_de": "Welche Sprachen spricht er?",
+        "question_tr": "Hangi diller?",
+        "options": [
+          "Nur Deutsch",
+          "Nur Türkisch",
+          "Englisch",
+          "Türkisch und Deutsch"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "email"
+    ]
+  },
+  {
+    "id": "lp_007",
+    "level": "A1",
+    "type": "notice",
+    "title_de": "Aushang im Lager",
+    "text_de": "ACHTUNG!\nSicherheitsschuhe und Helm sind Pflicht.\nPause: 12:00 – 12:30 Uhr\nFeierabend: 17:00 Uhr\nBei Fragen: Teamleiter Herr Schmidt",
+    "questions": [
+      {
+        "id": "lq_025",
+        "question_de": "Was ist Pflicht?",
+        "question_tr": "Ne zorunlu?",
+        "options": [
+          "Uniform",
+          "Handschuhe",
+          "Brille",
+          "Helm und Sicherheitsschuhe"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_026",
+        "question_de": "Wann ist Pause?",
+        "question_tr": "Mola ne zaman?",
+        "options": [
+          "10:00",
+          "14:00",
+          "16:00",
+          "12:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_027",
+        "question_de": "Wann ist Feierabend?",
+        "question_tr": "İş ne zaman bitiyor?",
+        "options": [
+          "15:00",
+          "18:00",
+          "20:00",
+          "17:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_028",
+        "question_de": "An wen wendet man sich?",
+        "question_tr": "Kime sorulur?",
+        "options": [
+          "Arzt",
+          "Kunde",
+          "Busfahrer",
+          "Teamleiter"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "notice"
+    ]
+  },
+  {
+    "id": "lp_008",
+    "level": "A1",
+    "type": "sign",
+    "title_de": "Schild am Bahnhof",
+    "text_de": "→ Bahnhof\n← Stadtmitte\nToilette: 200 Meter geradeaus\nTicket kaufen: Schalter 2",
+    "questions": [
+      {
+        "id": "lq_029",
+        "question_de": "Wo ist die Toilette?",
+        "question_tr": "Tuvalet nerede?",
+        "options": [
+          "links",
+          "rechts",
+          "zurück",
+          "geradeaus"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_030",
+        "question_de": "Wo kauft man Tickets?",
+        "question_tr": "Bilet nereden?",
+        "options": [
+          "Schalter 1",
+          "Im Bus",
+          "Online",
+          "Schalter 2"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_031",
+        "question_de": "Was ist rechts?",
+        "question_tr": "Sağda ne var?",
+        "options": [
+          "Bahnhof",
+          "Flughafen",
+          "Park",
+          "Stadtmitte"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_032",
+        "question_de": "Was bedeutet der Pfeil →?",
+        "question_tr": "Ok ne demek?",
+        "options": [
+          "Stadt",
+          "Toilette",
+          "Ausgang",
+          "Bahnhof"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "sign"
+    ]
+  },
+  {
+    "id": "lp_009",
+    "level": "A1",
+    "type": "advert",
+    "title_de": "Anzeige — Supermarkt",
+    "text_de": "SUPERMARKT ALDI\nMontag – Samstag: 8:00 – 20:00 Uhr\nSonntag: geschlossen\nBrot: 0,99 €\nMilch: 1,09 €",
+    "questions": [
+      {
+        "id": "lq_033",
+        "question_de": "Wann ist Sonntag geöffnet?",
+        "question_tr": "Pazar açık mı?",
+        "options": [
+          "8–20 Uhr",
+          "nur morgens",
+          "24 Stunden",
+          "geschlossen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_034",
+        "question_de": "Was kostet das Brot?",
+        "question_tr": "Ekmek fiyatı?",
+        "options": [
+          "1,09 €",
+          "2,00 €",
+          "5,00 €",
+          "0,99 €"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_035",
+        "question_de": "Wann öffnet der Markt?",
+        "question_tr": "Ne zaman açılır?",
+        "options": [
+          "10:00",
+          "12:00",
+          "6:00",
+          "8:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_036",
+        "question_de": "Was kostet die Milch?",
+        "question_tr": "Süt fiyatı?",
+        "options": [
+          "0,99 €",
+          "2,50 €",
+          "0,50 €",
+          "1,09 €"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "advert"
+    ]
+  },
+  {
+    "id": "lp_010",
+    "level": "A1",
+    "type": "message",
+    "title_de": "SMS von der Firma",
+    "text_de": "Hallo Timur,\nMorgen beginnt deine Schicht um 7 Uhr. Bitte pünktlich sein. Vergiss nicht deinen Helm.\nDein Chef",
+    "questions": [
+      {
+        "id": "lq_037",
+        "question_de": "Wann ist die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "6 Uhr heute",
+          "8 Uhr morgen",
+          "9 Uhr",
+          "7 Uhr morgen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_038",
+        "question_de": "Was soll Timur nicht vergessen?",
+        "question_tr": "Ne unutmamalı?",
+        "options": [
+          "Essen",
+          "Ticket",
+          "Pass",
+          "Helm"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_039",
+        "question_de": "Wer schreibt?",
+        "question_tr": "Kim yazıyor?",
+        "options": [
+          "Arzt",
+          "Lehrer",
+          "Freund",
+          "Chef"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_040",
+        "question_de": "Was ist wichtig?",
+        "question_tr": "Ne önemli?",
+        "options": [
+          "lange schlafen",
+          "Kaffee trinken",
+          "Auto fahren",
+          "pünktlich sein"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "message"
+    ]
+  },
+  {
+    "id": "lp_011",
+    "level": "A1",
+    "type": "email",
+    "title_de": "E-Mail von Timur",
+    "text_de": "Hallo!\nIch heiße Timur. Ich komme aus der Türkei und wohne in Berlin. Ich arbeite in einem Lager. Meine Schicht beginnt um 6 Uhr. Ich spreche Türkisch und Deutsch.\nViele Grüße\nTimur",
+    "questions": [
+      {
+        "id": "lq_041",
+        "question_de": "Wo wohnt Timur?",
+        "question_tr": "Timur nerede yaşıyor?",
+        "options": [
+          "Istanbul",
+          "Ankara",
+          "Hamburg",
+          "Berlin"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_042",
+        "question_de": "Wo arbeitet er?",
+        "question_tr": "Nerede çalışıyor?",
+        "options": [
+          "Büro",
+          "Schule",
+          "Restaurant",
+          "Lager"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_043",
+        "question_de": "Wann beginnt die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "8 Uhr",
+          "10 Uhr",
+          "12 Uhr",
+          "6 Uhr"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_044",
+        "question_de": "Welche Sprachen spricht er?",
+        "question_tr": "Hangi diller?",
+        "options": [
+          "Nur Deutsch",
+          "Nur Türkisch",
+          "Englisch",
+          "Türkisch und Deutsch"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "email"
+    ]
+  },
+  {
+    "id": "lp_012",
+    "level": "A1",
+    "type": "notice",
+    "title_de": "Aushang im Lager",
+    "text_de": "ACHTUNG!\nSicherheitsschuhe und Helm sind Pflicht.\nPause: 12:00 – 12:30 Uhr\nFeierabend: 17:00 Uhr\nBei Fragen: Teamleiter Herr Schmidt",
+    "questions": [
+      {
+        "id": "lq_045",
+        "question_de": "Was ist Pflicht?",
+        "question_tr": "Ne zorunlu?",
+        "options": [
+          "Uniform",
+          "Handschuhe",
+          "Brille",
+          "Helm und Sicherheitsschuhe"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_046",
+        "question_de": "Wann ist Pause?",
+        "question_tr": "Mola ne zaman?",
+        "options": [
+          "10:00",
+          "14:00",
+          "16:00",
+          "12:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_047",
+        "question_de": "Wann ist Feierabend?",
+        "question_tr": "İş ne zaman bitiyor?",
+        "options": [
+          "15:00",
+          "18:00",
+          "20:00",
+          "17:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_048",
+        "question_de": "An wen wendet man sich?",
+        "question_tr": "Kime sorulur?",
+        "options": [
+          "Arzt",
+          "Kunde",
+          "Busfahrer",
+          "Teamleiter"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "notice"
+    ]
+  },
+  {
+    "id": "lp_013",
+    "level": "A1",
+    "type": "sign",
+    "title_de": "Schild am Bahnhof",
+    "text_de": "→ Bahnhof\n← Stadtmitte\nToilette: 200 Meter geradeaus\nTicket kaufen: Schalter 2",
+    "questions": [
+      {
+        "id": "lq_049",
+        "question_de": "Wo ist die Toilette?",
+        "question_tr": "Tuvalet nerede?",
+        "options": [
+          "links",
+          "rechts",
+          "zurück",
+          "geradeaus"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_050",
+        "question_de": "Wo kauft man Tickets?",
+        "question_tr": "Bilet nereden?",
+        "options": [
+          "Schalter 1",
+          "Im Bus",
+          "Online",
+          "Schalter 2"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_051",
+        "question_de": "Was ist rechts?",
+        "question_tr": "Sağda ne var?",
+        "options": [
+          "Bahnhof",
+          "Flughafen",
+          "Park",
+          "Stadtmitte"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_052",
+        "question_de": "Was bedeutet der Pfeil →?",
+        "question_tr": "Ok ne demek?",
+        "options": [
+          "Stadt",
+          "Toilette",
+          "Ausgang",
+          "Bahnhof"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "sign"
+    ]
+  },
+  {
+    "id": "lp_014",
+    "level": "A1",
+    "type": "advert",
+    "title_de": "Anzeige — Supermarkt",
+    "text_de": "SUPERMARKT ALDI\nMontag – Samstag: 8:00 – 20:00 Uhr\nSonntag: geschlossen\nBrot: 0,99 €\nMilch: 1,09 €",
+    "questions": [
+      {
+        "id": "lq_053",
+        "question_de": "Wann ist Sonntag geöffnet?",
+        "question_tr": "Pazar açık mı?",
+        "options": [
+          "8–20 Uhr",
+          "nur morgens",
+          "24 Stunden",
+          "geschlossen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_054",
+        "question_de": "Was kostet das Brot?",
+        "question_tr": "Ekmek fiyatı?",
+        "options": [
+          "1,09 €",
+          "2,00 €",
+          "5,00 €",
+          "0,99 €"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_055",
+        "question_de": "Wann öffnet der Markt?",
+        "question_tr": "Ne zaman açılır?",
+        "options": [
+          "10:00",
+          "12:00",
+          "6:00",
+          "8:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_056",
+        "question_de": "Was kostet die Milch?",
+        "question_tr": "Süt fiyatı?",
+        "options": [
+          "0,99 €",
+          "2,50 €",
+          "0,50 €",
+          "1,09 €"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "advert"
+    ]
+  },
+  {
+    "id": "lp_015",
+    "level": "A1",
+    "type": "message",
+    "title_de": "SMS von der Firma",
+    "text_de": "Hallo Timur,\nMorgen beginnt deine Schicht um 7 Uhr. Bitte pünktlich sein. Vergiss nicht deinen Helm.\nDein Chef",
+    "questions": [
+      {
+        "id": "lq_057",
+        "question_de": "Wann ist die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "6 Uhr heute",
+          "8 Uhr morgen",
+          "9 Uhr",
+          "7 Uhr morgen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_058",
+        "question_de": "Was soll Timur nicht vergessen?",
+        "question_tr": "Ne unutmamalı?",
+        "options": [
+          "Essen",
+          "Ticket",
+          "Pass",
+          "Helm"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_059",
+        "question_de": "Wer schreibt?",
+        "question_tr": "Kim yazıyor?",
+        "options": [
+          "Arzt",
+          "Lehrer",
+          "Freund",
+          "Chef"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_060",
+        "question_de": "Was ist wichtig?",
+        "question_tr": "Ne önemli?",
+        "options": [
+          "lange schlafen",
+          "Kaffee trinken",
+          "Auto fahren",
+          "pünktlich sein"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "message"
+    ]
+  },
+  {
+    "id": "lp_016",
+    "level": "A1",
+    "type": "email",
+    "title_de": "E-Mail von Timur",
+    "text_de": "Hallo!\nIch heiße Timur. Ich komme aus der Türkei und wohne in Berlin. Ich arbeite in einem Lager. Meine Schicht beginnt um 6 Uhr. Ich spreche Türkisch und Deutsch.\nViele Grüße\nTimur",
+    "questions": [
+      {
+        "id": "lq_061",
+        "question_de": "Wo wohnt Timur?",
+        "question_tr": "Timur nerede yaşıyor?",
+        "options": [
+          "Istanbul",
+          "Ankara",
+          "Hamburg",
+          "Berlin"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_062",
+        "question_de": "Wo arbeitet er?",
+        "question_tr": "Nerede çalışıyor?",
+        "options": [
+          "Büro",
+          "Schule",
+          "Restaurant",
+          "Lager"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_063",
+        "question_de": "Wann beginnt die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "8 Uhr",
+          "10 Uhr",
+          "12 Uhr",
+          "6 Uhr"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_064",
+        "question_de": "Welche Sprachen spricht er?",
+        "question_tr": "Hangi diller?",
+        "options": [
+          "Nur Deutsch",
+          "Nur Türkisch",
+          "Englisch",
+          "Türkisch und Deutsch"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "email"
+    ]
+  },
+  {
+    "id": "lp_017",
+    "level": "A1",
+    "type": "notice",
+    "title_de": "Aushang im Lager",
+    "text_de": "ACHTUNG!\nSicherheitsschuhe und Helm sind Pflicht.\nPause: 12:00 – 12:30 Uhr\nFeierabend: 17:00 Uhr\nBei Fragen: Teamleiter Herr Schmidt",
+    "questions": [
+      {
+        "id": "lq_065",
+        "question_de": "Was ist Pflicht?",
+        "question_tr": "Ne zorunlu?",
+        "options": [
+          "Uniform",
+          "Handschuhe",
+          "Brille",
+          "Helm und Sicherheitsschuhe"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_066",
+        "question_de": "Wann ist Pause?",
+        "question_tr": "Mola ne zaman?",
+        "options": [
+          "10:00",
+          "14:00",
+          "16:00",
+          "12:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_067",
+        "question_de": "Wann ist Feierabend?",
+        "question_tr": "İş ne zaman bitiyor?",
+        "options": [
+          "15:00",
+          "18:00",
+          "20:00",
+          "17:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_068",
+        "question_de": "An wen wendet man sich?",
+        "question_tr": "Kime sorulur?",
+        "options": [
+          "Arzt",
+          "Kunde",
+          "Busfahrer",
+          "Teamleiter"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "notice"
+    ]
+  },
+  {
+    "id": "lp_018",
+    "level": "A1",
+    "type": "sign",
+    "title_de": "Schild am Bahnhof",
+    "text_de": "→ Bahnhof\n← Stadtmitte\nToilette: 200 Meter geradeaus\nTicket kaufen: Schalter 2",
+    "questions": [
+      {
+        "id": "lq_069",
+        "question_de": "Wo ist die Toilette?",
+        "question_tr": "Tuvalet nerede?",
+        "options": [
+          "links",
+          "rechts",
+          "zurück",
+          "geradeaus"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_070",
+        "question_de": "Wo kauft man Tickets?",
+        "question_tr": "Bilet nereden?",
+        "options": [
+          "Schalter 1",
+          "Im Bus",
+          "Online",
+          "Schalter 2"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_071",
+        "question_de": "Was ist rechts?",
+        "question_tr": "Sağda ne var?",
+        "options": [
+          "Bahnhof",
+          "Flughafen",
+          "Park",
+          "Stadtmitte"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_072",
+        "question_de": "Was bedeutet der Pfeil →?",
+        "question_tr": "Ok ne demek?",
+        "options": [
+          "Stadt",
+          "Toilette",
+          "Ausgang",
+          "Bahnhof"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "sign"
+    ]
+  },
+  {
+    "id": "lp_019",
+    "level": "A1",
+    "type": "advert",
+    "title_de": "Anzeige — Supermarkt",
+    "text_de": "SUPERMARKT ALDI\nMontag – Samstag: 8:00 – 20:00 Uhr\nSonntag: geschlossen\nBrot: 0,99 €\nMilch: 1,09 €",
+    "questions": [
+      {
+        "id": "lq_073",
+        "question_de": "Wann ist Sonntag geöffnet?",
+        "question_tr": "Pazar açık mı?",
+        "options": [
+          "8–20 Uhr",
+          "nur morgens",
+          "24 Stunden",
+          "geschlossen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_074",
+        "question_de": "Was kostet das Brot?",
+        "question_tr": "Ekmek fiyatı?",
+        "options": [
+          "1,09 €",
+          "2,00 €",
+          "5,00 €",
+          "0,99 €"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_075",
+        "question_de": "Wann öffnet der Markt?",
+        "question_tr": "Ne zaman açılır?",
+        "options": [
+          "10:00",
+          "12:00",
+          "6:00",
+          "8:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_076",
+        "question_de": "Was kostet die Milch?",
+        "question_tr": "Süt fiyatı?",
+        "options": [
+          "0,99 €",
+          "2,50 €",
+          "0,50 €",
+          "1,09 €"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "advert"
+    ]
+  },
+  {
+    "id": "lp_020",
+    "level": "A1",
+    "type": "message",
+    "title_de": "SMS von der Firma",
+    "text_de": "Hallo Timur,\nMorgen beginnt deine Schicht um 7 Uhr. Bitte pünktlich sein. Vergiss nicht deinen Helm.\nDein Chef",
+    "questions": [
+      {
+        "id": "lq_077",
+        "question_de": "Wann ist die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "6 Uhr heute",
+          "8 Uhr morgen",
+          "9 Uhr",
+          "7 Uhr morgen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_078",
+        "question_de": "Was soll Timur nicht vergessen?",
+        "question_tr": "Ne unutmamalı?",
+        "options": [
+          "Essen",
+          "Ticket",
+          "Pass",
+          "Helm"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_079",
+        "question_de": "Wer schreibt?",
+        "question_tr": "Kim yazıyor?",
+        "options": [
+          "Arzt",
+          "Lehrer",
+          "Freund",
+          "Chef"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_080",
+        "question_de": "Was ist wichtig?",
+        "question_tr": "Ne önemli?",
+        "options": [
+          "lange schlafen",
+          "Kaffee trinken",
+          "Auto fahren",
+          "pünktlich sein"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "message"
+    ]
+  },
+  {
+    "id": "lp_021",
+    "level": "A1",
+    "type": "email",
+    "title_de": "E-Mail von Timur",
+    "text_de": "Hallo!\nIch heiße Timur. Ich komme aus der Türkei und wohne in Berlin. Ich arbeite in einem Lager. Meine Schicht beginnt um 6 Uhr. Ich spreche Türkisch und Deutsch.\nViele Grüße\nTimur",
+    "questions": [
+      {
+        "id": "lq_081",
+        "question_de": "Wo wohnt Timur?",
+        "question_tr": "Timur nerede yaşıyor?",
+        "options": [
+          "Istanbul",
+          "Ankara",
+          "Hamburg",
+          "Berlin"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_082",
+        "question_de": "Wo arbeitet er?",
+        "question_tr": "Nerede çalışıyor?",
+        "options": [
+          "Büro",
+          "Schule",
+          "Restaurant",
+          "Lager"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_083",
+        "question_de": "Wann beginnt die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "8 Uhr",
+          "10 Uhr",
+          "12 Uhr",
+          "6 Uhr"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_084",
+        "question_de": "Welche Sprachen spricht er?",
+        "question_tr": "Hangi diller?",
+        "options": [
+          "Nur Deutsch",
+          "Nur Türkisch",
+          "Englisch",
+          "Türkisch und Deutsch"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "email"
+    ]
+  },
+  {
+    "id": "lp_022",
+    "level": "A1",
+    "type": "notice",
+    "title_de": "Aushang im Lager",
+    "text_de": "ACHTUNG!\nSicherheitsschuhe und Helm sind Pflicht.\nPause: 12:00 – 12:30 Uhr\nFeierabend: 17:00 Uhr\nBei Fragen: Teamleiter Herr Schmidt",
+    "questions": [
+      {
+        "id": "lq_085",
+        "question_de": "Was ist Pflicht?",
+        "question_tr": "Ne zorunlu?",
+        "options": [
+          "Uniform",
+          "Handschuhe",
+          "Brille",
+          "Helm und Sicherheitsschuhe"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_086",
+        "question_de": "Wann ist Pause?",
+        "question_tr": "Mola ne zaman?",
+        "options": [
+          "10:00",
+          "14:00",
+          "16:00",
+          "12:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_087",
+        "question_de": "Wann ist Feierabend?",
+        "question_tr": "İş ne zaman bitiyor?",
+        "options": [
+          "15:00",
+          "18:00",
+          "20:00",
+          "17:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_088",
+        "question_de": "An wen wendet man sich?",
+        "question_tr": "Kime sorulur?",
+        "options": [
+          "Arzt",
+          "Kunde",
+          "Busfahrer",
+          "Teamleiter"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "notice"
+    ]
+  },
+  {
+    "id": "lp_023",
+    "level": "A1",
+    "type": "sign",
+    "title_de": "Schild am Bahnhof",
+    "text_de": "→ Bahnhof\n← Stadtmitte\nToilette: 200 Meter geradeaus\nTicket kaufen: Schalter 2",
+    "questions": [
+      {
+        "id": "lq_089",
+        "question_de": "Wo ist die Toilette?",
+        "question_tr": "Tuvalet nerede?",
+        "options": [
+          "links",
+          "rechts",
+          "zurück",
+          "geradeaus"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_090",
+        "question_de": "Wo kauft man Tickets?",
+        "question_tr": "Bilet nereden?",
+        "options": [
+          "Schalter 1",
+          "Im Bus",
+          "Online",
+          "Schalter 2"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_091",
+        "question_de": "Was ist rechts?",
+        "question_tr": "Sağda ne var?",
+        "options": [
+          "Bahnhof",
+          "Flughafen",
+          "Park",
+          "Stadtmitte"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_092",
+        "question_de": "Was bedeutet der Pfeil →?",
+        "question_tr": "Ok ne demek?",
+        "options": [
+          "Stadt",
+          "Toilette",
+          "Ausgang",
+          "Bahnhof"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "sign"
+    ]
+  },
+  {
+    "id": "lp_024",
+    "level": "A1",
+    "type": "advert",
+    "title_de": "Anzeige — Supermarkt",
+    "text_de": "SUPERMARKT ALDI\nMontag – Samstag: 8:00 – 20:00 Uhr\nSonntag: geschlossen\nBrot: 0,99 €\nMilch: 1,09 €",
+    "questions": [
+      {
+        "id": "lq_093",
+        "question_de": "Wann ist Sonntag geöffnet?",
+        "question_tr": "Pazar açık mı?",
+        "options": [
+          "8–20 Uhr",
+          "nur morgens",
+          "24 Stunden",
+          "geschlossen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_094",
+        "question_de": "Was kostet das Brot?",
+        "question_tr": "Ekmek fiyatı?",
+        "options": [
+          "1,09 €",
+          "2,00 €",
+          "5,00 €",
+          "0,99 €"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_095",
+        "question_de": "Wann öffnet der Markt?",
+        "question_tr": "Ne zaman açılır?",
+        "options": [
+          "10:00",
+          "12:00",
+          "6:00",
+          "8:00"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_096",
+        "question_de": "Was kostet die Milch?",
+        "question_tr": "Süt fiyatı?",
+        "options": [
+          "0,99 €",
+          "2,50 €",
+          "0,50 €",
+          "1,09 €"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "advert"
+    ]
+  },
+  {
+    "id": "lp_025",
+    "level": "A1",
+    "type": "message",
+    "title_de": "SMS von der Firma",
+    "text_de": "Hallo Timur,\nMorgen beginnt deine Schicht um 7 Uhr. Bitte pünktlich sein. Vergiss nicht deinen Helm.\nDein Chef",
+    "questions": [
+      {
+        "id": "lq_097",
+        "question_de": "Wann ist die Schicht?",
+        "question_tr": "Vardiya ne zaman?",
+        "options": [
+          "6 Uhr heute",
+          "8 Uhr morgen",
+          "9 Uhr",
+          "7 Uhr morgen"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_098",
+        "question_de": "Was soll Timur nicht vergessen?",
+        "question_tr": "Ne unutmamalı?",
+        "options": [
+          "Essen",
+          "Ticket",
+          "Pass",
+          "Helm"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_099",
+        "question_de": "Wer schreibt?",
+        "question_tr": "Kim yazıyor?",
+        "options": [
+          "Arzt",
+          "Lehrer",
+          "Freund",
+          "Chef"
+        ],
+        "correct_index": 3
+      },
+      {
+        "id": "lq_100",
+        "question_de": "Was ist wichtig?",
+        "question_tr": "Ne önemli?",
+        "options": [
+          "lange schlafen",
+          "Kaffee trinken",
+          "Auto fahren",
+          "pünktlich sein"
+        ],
+        "correct_index": 3
+      }
+    ],
+    "tags": [
+      "lesen",
+      "message"
+    ]
+  }
+]

@@ -1,0 +1,4413 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Conjugation Matrix",
+  "titleTr": "Fiil Çekim Matrisi",
+  "description": "11 A1 fiili × 9 kişi — du/er/sie ağırlıklı drill",
+  "passThreshold": 8,
+  "drillsPerVerb": 10,
+  "verbs": [
+    {
+      "id": "sein",
+      "infinitive": "sein",
+      "tr": "olmak",
+      "order": 1,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "bin",
+          "form_tr": "ben → bin"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "bist",
+          "form_tr": "sen → bist"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "ist",
+          "form_tr": "o (erkek) → ist"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "ist",
+          "form_tr": "o (kadın) → ist"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "ist",
+          "form_tr": "o (nötr) → ist"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "sind",
+          "form_tr": "biz → sind"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "seid",
+          "form_tr": "siz (çoğul) → seid"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "sind",
+          "form_tr": "siz (resmi) → sind"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "sind",
+          "form_tr": "onlar → sind"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich bin Student.",
+          "tr": "Ben öğrenciyim."
+        },
+        {
+          "personId": "du",
+          "de": "Du bist müde.",
+          "tr": "Sen yorgunsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er ist Lehrer.",
+          "tr": "O (erkek) öğretmen."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie ist Ärztin.",
+          "tr": "O (kadın) doktor."
+        },
+        {
+          "personId": "es",
+          "de": "Es ist kalt.",
+          "tr": "Soğuk."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-sein-01",
+          "verbId": "sein",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (olmak)",
+          "prompt_de": "Er ___ Lehrer.",
+          "blank": "ist",
+          "options": [
+            "bin",
+            "ist",
+            "bist",
+            "seid"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-02",
+          "verbId": "sein",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (olmak)",
+          "prompt_de": "Du ___ Student.",
+          "blank": "bist",
+          "options": [
+            "ist",
+            "bist",
+            "sind",
+            "bin"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-03",
+          "verbId": "sein",
+          "personId": "wir",
+          "prompt_tr": "biz — boşluğu doldur (olmak)",
+          "prompt_de": "wir ___ .",
+          "blank": "sind",
+          "options": [
+            "seid",
+            "sind",
+            "bist",
+            "ist"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-04",
+          "verbId": "sein",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (olmak)",
+          "prompt_de": "Du ___ Student.",
+          "blank": "bist",
+          "options": [
+            "seid",
+            "bin",
+            "sind",
+            "bist"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-sein-05",
+          "verbId": "sein",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (olmak)",
+          "prompt_de": "Ich ___ müde.",
+          "blank": "bin",
+          "options": [
+            "seid",
+            "bist",
+            "bin",
+            "ist"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-sein-06",
+          "verbId": "sein",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (olmak)",
+          "prompt_de": "Sie ___ Ärztin.",
+          "blank": "ist",
+          "options": [
+            "sind",
+            "ist",
+            "bist",
+            "bin"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-07",
+          "verbId": "sein",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (olmak)",
+          "prompt_de": "Er ___ Lehrer.",
+          "blank": "ist",
+          "options": [
+            "sind",
+            "ist",
+            "bist",
+            "seid"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-08",
+          "verbId": "sein",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (olmak)",
+          "prompt_de": "Ich ___ müde.",
+          "blank": "bin",
+          "options": [
+            "sind",
+            "bist",
+            "seid",
+            "bin"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-sein-09",
+          "verbId": "sein",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (olmak)",
+          "prompt_de": "Du ___ Student.",
+          "blank": "bist",
+          "options": [
+            "bin",
+            "bist",
+            "ist",
+            "seid"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sein-10",
+          "verbId": "sein",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (olmak)",
+          "prompt_de": "Du ___ Student.",
+          "blank": "bist",
+          "options": [
+            "ist",
+            "bist",
+            "sind",
+            "bin"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "haben",
+      "infinitive": "haben",
+      "tr": "sahip olmak",
+      "order": 2,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "habe",
+          "form_tr": "ben → habe"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "hast",
+          "form_tr": "sen → hast"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "hat",
+          "form_tr": "o (erkek) → hat"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "hat",
+          "form_tr": "o (kadın) → hat"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "hat",
+          "form_tr": "o (nötr) → hat"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "haben",
+          "form_tr": "biz → haben"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "habt",
+          "form_tr": "siz (çoğul) → habt"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "haben",
+          "form_tr": "siz (resmi) → haben"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "haben",
+          "form_tr": "onlar → haben"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich habe Zeit.",
+          "tr": "Vaktim var."
+        },
+        {
+          "personId": "du",
+          "de": "Du hast Hunger.",
+          "tr": "Açsın."
+        },
+        {
+          "personId": "er",
+          "de": "Er hat ein Auto.",
+          "tr": "Onun (erkek) arabası var."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie hat eine Katze.",
+          "tr": "Onun (kadın) kedisi var."
+        },
+        {
+          "personId": "es",
+          "de": "Es hat vier Beine.",
+          "tr": "Dört ayağı var."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-haben-01",
+          "verbId": "haben",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Du ___ Zeit.",
+          "blank": "hast",
+          "options": [
+            "habe",
+            "hast",
+            "hat",
+            "haben"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-02",
+          "verbId": "haben",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Du ___ Zeit.",
+          "blank": "hast",
+          "options": [
+            "haben",
+            "hast",
+            "hat",
+            "habt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-03",
+          "verbId": "haben",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Du ___ Zeit.",
+          "blank": "hast",
+          "options": [
+            "haben",
+            "hast",
+            "habt",
+            "habe"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-04",
+          "verbId": "haben",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Ich ___ Hunger.",
+          "blank": "habe",
+          "options": [
+            "hat",
+            "habt",
+            "hast",
+            "habe"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-haben-05",
+          "verbId": "haben",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Du ___ Zeit.",
+          "blank": "hast",
+          "options": [
+            "hat",
+            "habe",
+            "hast",
+            "haben"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-haben-06",
+          "verbId": "haben",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Er ___ ein Auto.",
+          "blank": "hat",
+          "options": [
+            "hast",
+            "hat",
+            "habt",
+            "haben"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-07",
+          "verbId": "haben",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Du ___ Zeit.",
+          "blank": "hast",
+          "options": [
+            "habe",
+            "hast",
+            "haben",
+            "habt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-08",
+          "verbId": "haben",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Ich ___ Hunger.",
+          "blank": "habe",
+          "options": [
+            "habt",
+            "hast",
+            "hat",
+            "habe"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-haben-09",
+          "verbId": "haben",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Ich ___ Hunger.",
+          "blank": "habe",
+          "options": [
+            "hast",
+            "habe",
+            "hat",
+            "haben"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-haben-10",
+          "verbId": "haben",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (sahip olmak)",
+          "prompt_de": "Sie ___ Hunger.",
+          "blank": "hat",
+          "options": [
+            "haben",
+            "hat",
+            "hast",
+            "habt"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "machen",
+      "infinitive": "machen",
+      "tr": "yapmak",
+      "order": 3,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "mache",
+          "form_tr": "ben → mache"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "machst",
+          "form_tr": "sen → machst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "macht",
+          "form_tr": "o (erkek) → macht"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "macht",
+          "form_tr": "o (kadın) → macht"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "macht",
+          "form_tr": "o (nötr) → macht"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "machen",
+          "form_tr": "biz → machen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "macht",
+          "form_tr": "siz (çoğul) → macht"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "machen",
+          "form_tr": "siz (resmi) → machen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "machen",
+          "form_tr": "onlar → machen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich mache Sport.",
+          "tr": "Spor yapıyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Was machst du?",
+          "tr": "Ne yapıyorsun?"
+        },
+        {
+          "personId": "er",
+          "de": "Er macht Pause.",
+          "tr": "O (erkek) mola veriyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie macht Hausaufgaben.",
+          "tr": "O (kadın) ödev yapıyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es macht Spaß.",
+          "tr": "Eğlenceli."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-machen-01",
+          "verbId": "machen",
+          "personId": "wir",
+          "prompt_tr": "biz — boşluğu doldur (yapmak)",
+          "prompt_de": "wir ___ .",
+          "blank": "machen",
+          "options": [
+            "mache",
+            "machen",
+            "machst",
+            "macht"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-02",
+          "verbId": "machen",
+          "personId": "Sie",
+          "prompt_tr": "siz (resmi) — boşluğu doldur (yapmak)",
+          "prompt_de": "Sie ___ .",
+          "blank": "machen",
+          "options": [
+            "macht",
+            "machen",
+            "machst",
+            "mache"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-03",
+          "verbId": "machen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yapmak)",
+          "prompt_de": "Was ___ du?",
+          "blank": "machst",
+          "options": [
+            "mache",
+            "machst",
+            "macht",
+            "machen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-04",
+          "verbId": "machen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (yapmak)",
+          "prompt_de": "es ___ .",
+          "blank": "macht",
+          "options": [
+            "machst",
+            "mache",
+            "machen",
+            "macht"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-machen-05",
+          "verbId": "machen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (yapmak)",
+          "prompt_de": "Ich ___ Sport.",
+          "blank": "mache",
+          "options": [
+            "machst",
+            "machen",
+            "mache",
+            "macht"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-machen-06",
+          "verbId": "machen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (yapmak)",
+          "prompt_de": "Ich ___ Sport.",
+          "blank": "mache",
+          "options": [
+            "machen",
+            "mache",
+            "macht",
+            "machst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-07",
+          "verbId": "machen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yapmak)",
+          "prompt_de": "Was ___ du?",
+          "blank": "machst",
+          "options": [
+            "mache",
+            "machst",
+            "machen",
+            "macht"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-08",
+          "verbId": "machen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (yapmak)",
+          "prompt_de": "Ich ___ Sport.",
+          "blank": "mache",
+          "options": [
+            "macht",
+            "machst",
+            "machen",
+            "mache"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-machen-09",
+          "verbId": "machen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (yapmak)",
+          "prompt_de": "es ___ .",
+          "blank": "macht",
+          "options": [
+            "mache",
+            "macht",
+            "machen",
+            "machst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-machen-10",
+          "verbId": "machen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yapmak)",
+          "prompt_de": "Was ___ du?",
+          "blank": "machst",
+          "options": [
+            "mache",
+            "machst",
+            "macht",
+            "machen"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "kommen",
+      "infinitive": "kommen",
+      "tr": "gelmek",
+      "order": 4,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "komme",
+          "form_tr": "ben → komme"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "kommst",
+          "form_tr": "sen → kommst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "kommt",
+          "form_tr": "o (erkek) → kommt"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "kommt",
+          "form_tr": "o (kadın) → kommt"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "kommt",
+          "form_tr": "o (nötr) → kommt"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "kommen",
+          "form_tr": "biz → kommen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "kommt",
+          "form_tr": "siz (çoğul) → kommt"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "kommen",
+          "form_tr": "siz (resmi) → kommen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "kommen",
+          "form_tr": "onlar → kommen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich komme aus der Türkei.",
+          "tr": "Türkiye'den geliyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du kommst aus Berlin.",
+          "tr": "Berlin'den geliyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er kommt morgen.",
+          "tr": "O (erkek) yarın geliyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie kommt aus Ankara.",
+          "tr": "O (kadın) Ankara'dan geliyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es kommt später.",
+          "tr": "Sonra geliyor."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-kommen-01",
+          "verbId": "kommen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+          "prompt_de": "Er ___ morgen.",
+          "blank": "kommt",
+          "options": [
+            "komme",
+            "kommt",
+            "kommen",
+            "kommst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-02",
+          "verbId": "kommen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gelmek)",
+          "prompt_de": "Sie ___ aus Ankara.",
+          "blank": "kommt",
+          "options": [
+            "kommen",
+            "kommt",
+            "kommst",
+            "komme"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-03",
+          "verbId": "kommen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (gelmek)",
+          "prompt_de": "es ___ .",
+          "blank": "kommt",
+          "options": [
+            "kommen",
+            "kommt",
+            "kommst",
+            "komme"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-04",
+          "verbId": "kommen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (gelmek)",
+          "prompt_de": "Du ___ aus Berlin.",
+          "blank": "kommst",
+          "options": [
+            "kommt",
+            "komme",
+            "kommen",
+            "kommst"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-kommen-05",
+          "verbId": "kommen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+          "prompt_de": "Er ___ morgen.",
+          "blank": "kommt",
+          "options": [
+            "kommst",
+            "komme",
+            "kommt",
+            "kommen"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-kommen-06",
+          "verbId": "kommen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+          "prompt_de": "Er ___ morgen.",
+          "blank": "kommt",
+          "options": [
+            "kommen",
+            "kommt",
+            "kommst",
+            "komme"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-07",
+          "verbId": "kommen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gelmek)",
+          "prompt_de": "Sie ___ aus Ankara.",
+          "blank": "kommt",
+          "options": [
+            "komme",
+            "kommt",
+            "kommst",
+            "kommen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-08",
+          "verbId": "kommen",
+          "personId": "ihr",
+          "prompt_tr": "siz (çoğul) — boşluğu doldur (gelmek)",
+          "prompt_de": "ihr ___ .",
+          "blank": "kommt",
+          "options": [
+            "kommst",
+            "komme",
+            "kommen",
+            "kommt"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-kommen-09",
+          "verbId": "kommen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (gelmek)",
+          "prompt_de": "Ich ___ aus der Türkei.",
+          "blank": "komme",
+          "options": [
+            "kommen",
+            "komme",
+            "kommst",
+            "kommt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-kommen-10",
+          "verbId": "kommen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+          "prompt_de": "Er ___ morgen.",
+          "blank": "kommt",
+          "options": [
+            "komme",
+            "kommt",
+            "kommst",
+            "kommen"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "wohnen",
+      "infinitive": "wohnen",
+      "tr": "oturmak",
+      "order": 5,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "wohne",
+          "form_tr": "ben → wohne"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "wohnst",
+          "form_tr": "sen → wohnst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "wohnt",
+          "form_tr": "o (erkek) → wohnt"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "wohnt",
+          "form_tr": "o (kadın) → wohnt"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "wohnt",
+          "form_tr": "o (nötr) → wohnt"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "wohnen",
+          "form_tr": "biz → wohnen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "wohnt",
+          "form_tr": "siz (çoğul) → wohnt"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "wohnen",
+          "form_tr": "siz (resmi) → wohnen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "wohnen",
+          "form_tr": "onlar → wohnen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich wohne in Berlin.",
+          "tr": "Berlin'de oturuyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du wohnst in Ankara.",
+          "tr": "Ankara'da oturuyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er wohnt hier.",
+          "tr": "O (erkek) burada oturuyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie wohnt in München.",
+          "tr": "O (kadın) Münih'te oturuyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es wohnt im Zentrum.",
+          "tr": "Merkezde oturuyor."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-wohnen-01",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohne",
+            "wohnst",
+            "wohnen",
+            "wohnt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-02",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohne",
+            "wohnst",
+            "wohnt",
+            "wohnen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-03",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohnen",
+            "wohnst",
+            "wohnt",
+            "wohne"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-04",
+          "verbId": "wohnen",
+          "personId": "ihr",
+          "prompt_tr": "siz (çoğul) — boşluğu doldur (oturmak)",
+          "prompt_de": "ihr ___ .",
+          "blank": "wohnt",
+          "options": [
+            "wohnen",
+            "wohnst",
+            "wohne",
+            "wohnt"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-wohnen-05",
+          "verbId": "wohnen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (oturmak)",
+          "prompt_de": "Sie ___ in München.",
+          "blank": "wohnt",
+          "options": [
+            "wohnst",
+            "wohne",
+            "wohnt",
+            "wohnen"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-wohnen-06",
+          "verbId": "wohnen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (oturmak)",
+          "prompt_de": "Er ___ hier.",
+          "blank": "wohnt",
+          "options": [
+            "wohnst",
+            "wohnt",
+            "wohnen",
+            "wohne"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-07",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohne",
+            "wohnst",
+            "wohnt",
+            "wohnen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-08",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohnt",
+            "wohnen",
+            "wohne",
+            "wohnst"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-wohnen-09",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohnen",
+            "wohnst",
+            "wohne",
+            "wohnt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-wohnen-10",
+          "verbId": "wohnen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (oturmak)",
+          "prompt_de": "Du ___ in Ankara.",
+          "blank": "wohnst",
+          "options": [
+            "wohnt",
+            "wohnst",
+            "wohnen",
+            "wohne"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "arbeiten",
+      "infinitive": "arbeiten",
+      "tr": "çalışmak",
+      "order": 6,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "arbeite",
+          "form_tr": "ben → arbeite"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "arbeitest",
+          "form_tr": "sen → arbeitest"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "arbeitet",
+          "form_tr": "o (erkek) → arbeitet"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "arbeitet",
+          "form_tr": "o (kadın) → arbeitet"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "arbeitet",
+          "form_tr": "o (nötr) → arbeitet"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "arbeiten",
+          "form_tr": "biz → arbeiten"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "arbeitet",
+          "form_tr": "siz (çoğul) → arbeitet"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "arbeiten",
+          "form_tr": "siz (resmi) → arbeiten"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "arbeiten",
+          "form_tr": "onlar → arbeiten"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich arbeite hier.",
+          "tr": "Burada çalışıyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du arbeitest viel.",
+          "tr": "Çok çalışıyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er arbeitet als Lehrer.",
+          "tr": "O (erkek) öğretmen olarak çalışıyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie arbeitet im Krankenhaus.",
+          "tr": "O (kadın) hastanede çalışıyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es arbeitet gut.",
+          "tr": "İyi çalışıyor."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-arbeiten-01",
+          "verbId": "arbeiten",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+          "prompt_de": "es ___ .",
+          "blank": "arbeitet",
+          "options": [
+            "arbeiten",
+            "arbeitet",
+            "arbeite",
+            "arbeitest"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-02",
+          "verbId": "arbeiten",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (çalışmak)",
+          "prompt_de": "Sie ___ im Krankenhaus.",
+          "blank": "arbeitet",
+          "options": [
+            "arbeite",
+            "arbeitet",
+            "arbeitest",
+            "arbeiten"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-03",
+          "verbId": "arbeiten",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+          "prompt_de": "Du ___ viel.",
+          "blank": "arbeitest",
+          "options": [
+            "arbeite",
+            "arbeitest",
+            "arbeiten",
+            "arbeitet"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-04",
+          "verbId": "arbeiten",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+          "prompt_de": "es ___ .",
+          "blank": "arbeitet",
+          "options": [
+            "arbeiten",
+            "arbeitest",
+            "arbeite",
+            "arbeitet"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-arbeiten-05",
+          "verbId": "arbeiten",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+          "prompt_de": "es ___ .",
+          "blank": "arbeitet",
+          "options": [
+            "arbeiten",
+            "arbeite",
+            "arbeitet",
+            "arbeitest"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-arbeiten-06",
+          "verbId": "arbeiten",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+          "prompt_de": "Du ___ viel.",
+          "blank": "arbeitest",
+          "options": [
+            "arbeitet",
+            "arbeitest",
+            "arbeiten",
+            "arbeite"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-07",
+          "verbId": "arbeiten",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+          "prompt_de": "es ___ .",
+          "blank": "arbeitet",
+          "options": [
+            "arbeiten",
+            "arbeitet",
+            "arbeitest",
+            "arbeite"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-08",
+          "verbId": "arbeiten",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+          "prompt_de": "Du ___ viel.",
+          "blank": "arbeitest",
+          "options": [
+            "arbeitet",
+            "arbeiten",
+            "arbeite",
+            "arbeitest"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-arbeiten-09",
+          "verbId": "arbeiten",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (çalışmak)",
+          "prompt_de": "Er ___ als Lehrer.",
+          "blank": "arbeitet",
+          "options": [
+            "arbeite",
+            "arbeitet",
+            "arbeitest",
+            "arbeiten"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-arbeiten-10",
+          "verbId": "arbeiten",
+          "personId": "Sie",
+          "prompt_tr": "siz (resmi) — boşluğu doldur (çalışmak)",
+          "prompt_de": "Sie ___ .",
+          "blank": "arbeiten",
+          "options": [
+            "arbeitest",
+            "arbeiten",
+            "arbeitet",
+            "arbeite"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "lernen",
+      "infinitive": "lernen",
+      "tr": "öğrenmek",
+      "order": 7,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "lerne",
+          "form_tr": "ben → lerne"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "lernst",
+          "form_tr": "sen → lernst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "lernt",
+          "form_tr": "o (erkek) → lernt"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "lernt",
+          "form_tr": "o (kadın) → lernt"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "lernt",
+          "form_tr": "o (nötr) → lernt"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "lernen",
+          "form_tr": "biz → lernen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "lernt",
+          "form_tr": "siz (çoğul) → lernt"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "lernen",
+          "form_tr": "siz (resmi) → lernen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "lernen",
+          "form_tr": "onlar → lernen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich lerne Deutsch.",
+          "tr": "Almanca öğreniyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du lernst schnell.",
+          "tr": "Hızlı öğreniyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er lernt Englisch.",
+          "tr": "O (erkek) İngilizce öğreniyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie lernt Türkisch.",
+          "tr": "O (kadın) Türkçe öğreniyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es lernt leicht.",
+          "tr": "Kolay öğreniyor."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-lernen-01",
+          "verbId": "lernen",
+          "personId": "Sie",
+          "prompt_tr": "siz (resmi) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Sie ___ .",
+          "blank": "lernen",
+          "options": [
+            "lernt",
+            "lernen",
+            "lerne",
+            "lernst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-02",
+          "verbId": "lernen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Er ___ Englisch.",
+          "blank": "lernt",
+          "options": [
+            "lernst",
+            "lernt",
+            "lernen",
+            "lerne"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-03",
+          "verbId": "lernen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Du ___ Deutsch.",
+          "blank": "lernst",
+          "options": [
+            "lerne",
+            "lernst",
+            "lernen",
+            "lernt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-04",
+          "verbId": "lernen",
+          "personId": "ihr",
+          "prompt_tr": "siz (çoğul) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "ihr ___ .",
+          "blank": "lernt",
+          "options": [
+            "lernst",
+            "lernen",
+            "lerne",
+            "lernt"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-lernen-05",
+          "verbId": "lernen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Du ___ Deutsch.",
+          "blank": "lernst",
+          "options": [
+            "lernen",
+            "lerne",
+            "lernst",
+            "lernt"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-lernen-06",
+          "verbId": "lernen",
+          "personId": "wir",
+          "prompt_tr": "biz — boşluğu doldur (öğrenmek)",
+          "prompt_de": "wir ___ .",
+          "blank": "lernen",
+          "options": [
+            "lernst",
+            "lernen",
+            "lerne",
+            "lernt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-07",
+          "verbId": "lernen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Ich ___ Deutsch.",
+          "blank": "lerne",
+          "options": [
+            "lernen",
+            "lerne",
+            "lernt",
+            "lernst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-08",
+          "verbId": "lernen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Sie ___ Türkisch.",
+          "blank": "lernt",
+          "options": [
+            "lernen",
+            "lerne",
+            "lernst",
+            "lernt"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-lernen-09",
+          "verbId": "lernen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Er ___ Englisch.",
+          "blank": "lernt",
+          "options": [
+            "lerne",
+            "lernt",
+            "lernst",
+            "lernen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-lernen-10",
+          "verbId": "lernen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (öğrenmek)",
+          "prompt_de": "Sie ___ Türkisch.",
+          "blank": "lernt",
+          "options": [
+            "lernen",
+            "lernt",
+            "lernst",
+            "lerne"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "gehen",
+      "infinitive": "gehen",
+      "tr": "gitmek",
+      "order": 8,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "gehe",
+          "form_tr": "ben → gehe"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "gehst",
+          "form_tr": "sen → gehst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "geht",
+          "form_tr": "o (erkek) → geht"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "geht",
+          "form_tr": "o (kadın) → geht"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "geht",
+          "form_tr": "o (nötr) → geht"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "gehen",
+          "form_tr": "biz → gehen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "geht",
+          "form_tr": "siz (çoğul) → geht"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "gehen",
+          "form_tr": "siz (resmi) → gehen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "gehen",
+          "form_tr": "onlar → gehen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich gehe nach Hause.",
+          "tr": "Eve gidiyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du gehst zur Arbeit.",
+          "tr": "İşe gidiyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er geht ins Kino.",
+          "tr": "O (erkek) sinemaya gidiyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie geht zum Arzt.",
+          "tr": "O (kadın) doktora gidiyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es geht gut.",
+          "tr": "İyi gidiyor."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-gehen-01",
+          "verbId": "gehen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (gitmek)",
+          "prompt_de": "Er ___ ins Kino.",
+          "blank": "geht",
+          "options": [
+            "gehe",
+            "geht",
+            "gehst",
+            "gehen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-02",
+          "verbId": "gehen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+          "prompt_de": "Sie ___ zum Arzt.",
+          "blank": "geht",
+          "options": [
+            "gehst",
+            "geht",
+            "gehen",
+            "gehe"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-03",
+          "verbId": "gehen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (gitmek)",
+          "prompt_de": "Du ___ zur Arbeit.",
+          "blank": "gehst",
+          "options": [
+            "gehe",
+            "gehst",
+            "geht",
+            "gehen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-04",
+          "verbId": "gehen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+          "prompt_de": "Sie ___ zum Arzt.",
+          "blank": "geht",
+          "options": [
+            "gehst",
+            "gehen",
+            "gehe",
+            "geht"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-gehen-05",
+          "verbId": "gehen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (gitmek)",
+          "prompt_de": "Du ___ zur Arbeit.",
+          "blank": "gehst",
+          "options": [
+            "gehe",
+            "gehen",
+            "gehst",
+            "geht"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-gehen-06",
+          "verbId": "gehen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (gitmek)",
+          "prompt_de": "Du ___ zur Arbeit.",
+          "blank": "gehst",
+          "options": [
+            "geht",
+            "gehst",
+            "gehe",
+            "gehen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-07",
+          "verbId": "gehen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (gitmek)",
+          "prompt_de": "es ___ .",
+          "blank": "geht",
+          "options": [
+            "gehe",
+            "geht",
+            "gehen",
+            "gehst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-08",
+          "verbId": "gehen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+          "prompt_de": "Sie ___ zum Arzt.",
+          "blank": "geht",
+          "options": [
+            "gehen",
+            "gehe",
+            "gehst",
+            "geht"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-gehen-09",
+          "verbId": "gehen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+          "prompt_de": "Sie ___ zum Arzt.",
+          "blank": "geht",
+          "options": [
+            "gehe",
+            "geht",
+            "gehen",
+            "gehst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-gehen-10",
+          "verbId": "gehen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (gitmek)",
+          "prompt_de": "Ich ___ nach Hause.",
+          "blank": "gehe",
+          "options": [
+            "gehen",
+            "gehe",
+            "geht",
+            "gehst"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "essen",
+      "infinitive": "essen",
+      "tr": "yemek",
+      "order": 9,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "esse",
+          "form_tr": "ben → esse"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "isst",
+          "form_tr": "sen → isst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "isst",
+          "form_tr": "o (erkek) → isst"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "isst",
+          "form_tr": "o (kadın) → isst"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "isst",
+          "form_tr": "o (nötr) → isst"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "essen",
+          "form_tr": "biz → essen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "esst",
+          "form_tr": "siz (çoğul) → esst"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "essen",
+          "form_tr": "siz (resmi) → essen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "essen",
+          "form_tr": "onlar → essen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich esse Brot.",
+          "tr": "Ekmek yiyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du isst gern Pizza.",
+          "tr": "Pizza yemeyi seviyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er isst Fleisch.",
+          "tr": "O (erkek) et yiyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie isst Salat.",
+          "tr": "O (kadın) salata yiyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es schmeckt gut.",
+          "tr": "Tadı iyi."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-essen-01",
+          "verbId": "essen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yemek)",
+          "prompt_de": "Du ___ Pizza.",
+          "blank": "isst",
+          "options": [
+            "esse",
+            "isst",
+            "essen",
+            "esst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-02",
+          "verbId": "essen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (yemek)",
+          "prompt_de": "Sie ___ Salat.",
+          "blank": "isst",
+          "options": [
+            "esst",
+            "isst",
+            "essen",
+            "esse"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-03",
+          "verbId": "essen",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (yemek)",
+          "prompt_de": "Sie ___ Salat.",
+          "blank": "isst",
+          "options": [
+            "esse",
+            "isst",
+            "essen",
+            "esst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-04",
+          "verbId": "essen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yemek)",
+          "prompt_de": "Du ___ Pizza.",
+          "blank": "isst",
+          "options": [
+            "essen",
+            "esse",
+            "esst",
+            "isst"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-essen-05",
+          "verbId": "essen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (yemek)",
+          "prompt_de": "es ___ .",
+          "blank": "isst",
+          "options": [
+            "esse",
+            "esst",
+            "isst",
+            "essen"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-essen-06",
+          "verbId": "essen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (yemek)",
+          "prompt_de": "Du ___ Pizza.",
+          "blank": "isst",
+          "options": [
+            "esst",
+            "isst",
+            "essen",
+            "esse"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-07",
+          "verbId": "essen",
+          "personId": "wir",
+          "prompt_tr": "biz — boşluğu doldur (yemek)",
+          "prompt_de": "wir ___ .",
+          "blank": "essen",
+          "options": [
+            "esse",
+            "essen",
+            "esst",
+            "isst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-08",
+          "verbId": "essen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (yemek)",
+          "prompt_de": "Ich ___ Brot.",
+          "blank": "esse",
+          "options": [
+            "essen",
+            "isst",
+            "esst",
+            "esse"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-essen-09",
+          "verbId": "essen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (yemek)",
+          "prompt_de": "es ___ .",
+          "blank": "isst",
+          "options": [
+            "esse",
+            "isst",
+            "esst",
+            "essen"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-essen-10",
+          "verbId": "essen",
+          "personId": "wir",
+          "prompt_tr": "biz — boşluğu doldur (yemek)",
+          "prompt_de": "wir ___ .",
+          "blank": "essen",
+          "options": [
+            "esse",
+            "essen",
+            "isst",
+            "esst"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "trinken",
+      "infinitive": "trinken",
+      "tr": "içmek",
+      "order": 10,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "trinke",
+          "form_tr": "ben → trinke"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "trinkst",
+          "form_tr": "sen → trinkst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "trinkt",
+          "form_tr": "o (erkek) → trinkt"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "trinkt",
+          "form_tr": "o (kadın) → trinkt"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "trinkt",
+          "form_tr": "o (nötr) → trinkt"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "trinken",
+          "form_tr": "biz → trinken"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "trinkt",
+          "form_tr": "siz (çoğul) → trinkt"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "trinken",
+          "form_tr": "siz (resmi) → trinken"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "trinken",
+          "form_tr": "onlar → trinken"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich trinke Wasser.",
+          "tr": "Su içiyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du trinkst Kaffee.",
+          "tr": "Kahve içiyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er trinkt Tee.",
+          "tr": "O (erkek) çay içiyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie trinkt Milch.",
+          "tr": "O (kadın) süt içiyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es ist kalt.",
+          "tr": "Soğuk."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-trinken-01",
+          "verbId": "trinken",
+          "personId": "ihr",
+          "prompt_tr": "siz (çoğul) — boşluğu doldur (içmek)",
+          "prompt_de": "ihr ___ .",
+          "blank": "trinkt",
+          "options": [
+            "trinke",
+            "trinkt",
+            "trinken",
+            "trinkst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-02",
+          "verbId": "trinken",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (içmek)",
+          "prompt_de": "Sie ___ Wasser.",
+          "blank": "trinkt",
+          "options": [
+            "trinken",
+            "trinkt",
+            "trinkst",
+            "trinke"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-03",
+          "verbId": "trinken",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (içmek)",
+          "prompt_de": "Ich ___ Wasser.",
+          "blank": "trinke",
+          "options": [
+            "trinken",
+            "trinke",
+            "trinkt",
+            "trinkst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-04",
+          "verbId": "trinken",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (içmek)",
+          "prompt_de": "Du ___ Kaffee.",
+          "blank": "trinkst",
+          "options": [
+            "trinkt",
+            "trinke",
+            "trinken",
+            "trinkst"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-trinken-05",
+          "verbId": "trinken",
+          "personId": "sie_she",
+          "prompt_tr": "o (kadın) — boşluğu doldur (içmek)",
+          "prompt_de": "Sie ___ Wasser.",
+          "blank": "trinkt",
+          "options": [
+            "trinkst",
+            "trinke",
+            "trinkt",
+            "trinken"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-trinken-06",
+          "verbId": "trinken",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (içmek)",
+          "prompt_de": "Du ___ Kaffee.",
+          "blank": "trinkst",
+          "options": [
+            "trinken",
+            "trinkst",
+            "trinkt",
+            "trinke"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-07",
+          "verbId": "trinken",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (içmek)",
+          "prompt_de": "Ich ___ Wasser.",
+          "blank": "trinke",
+          "options": [
+            "trinkst",
+            "trinke",
+            "trinkt",
+            "trinken"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-08",
+          "verbId": "trinken",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (içmek)",
+          "prompt_de": "Ich ___ Wasser.",
+          "blank": "trinke",
+          "options": [
+            "trinkt",
+            "trinkst",
+            "trinken",
+            "trinke"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-trinken-09",
+          "verbId": "trinken",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (içmek)",
+          "prompt_de": "Du ___ Kaffee.",
+          "blank": "trinkst",
+          "options": [
+            "trinken",
+            "trinkst",
+            "trinke",
+            "trinkt"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-trinken-10",
+          "verbId": "trinken",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (içmek)",
+          "prompt_de": "Er ___ Tee.",
+          "blank": "trinkt",
+          "options": [
+            "trinke",
+            "trinkt",
+            "trinkst",
+            "trinken"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "sprechen",
+      "infinitive": "sprechen",
+      "tr": "konuşmak",
+      "order": 11,
+      "rows": [
+        {
+          "personId": "ich",
+          "pronoun_de": "ich",
+          "pronoun_tr": "ben",
+          "form": "spreche",
+          "form_tr": "ben → spreche"
+        },
+        {
+          "personId": "du",
+          "pronoun_de": "du",
+          "pronoun_tr": "sen",
+          "form": "sprichst",
+          "form_tr": "sen → sprichst"
+        },
+        {
+          "personId": "er",
+          "pronoun_de": "er",
+          "pronoun_tr": "o (erkek)",
+          "form": "spricht",
+          "form_tr": "o (erkek) → spricht"
+        },
+        {
+          "personId": "sie_she",
+          "pronoun_de": "sie",
+          "pronoun_tr": "o (kadın)",
+          "form": "spricht",
+          "form_tr": "o (kadın) → spricht"
+        },
+        {
+          "personId": "es",
+          "pronoun_de": "es",
+          "pronoun_tr": "o (nötr)",
+          "form": "spricht",
+          "form_tr": "o (nötr) → spricht"
+        },
+        {
+          "personId": "wir",
+          "pronoun_de": "wir",
+          "pronoun_tr": "biz",
+          "form": "sprechen",
+          "form_tr": "biz → sprechen"
+        },
+        {
+          "personId": "ihr",
+          "pronoun_de": "ihr",
+          "pronoun_tr": "siz (çoğul)",
+          "form": "sprecht",
+          "form_tr": "siz (çoğul) → sprecht"
+        },
+        {
+          "personId": "Sie",
+          "pronoun_de": "Sie",
+          "pronoun_tr": "siz (resmi)",
+          "form": "sprechen",
+          "form_tr": "siz (resmi) → sprechen"
+        },
+        {
+          "personId": "sie_pl",
+          "pronoun_de": "sie",
+          "pronoun_tr": "onlar",
+          "form": "sprechen",
+          "form_tr": "onlar → sprechen"
+        }
+      ],
+      "examples": [
+        {
+          "personId": "ich",
+          "de": "Ich spreche Deutsch.",
+          "tr": "Almanca konuşuyorum."
+        },
+        {
+          "personId": "du",
+          "de": "Du sprichst Türkisch.",
+          "tr": "Türkçe konuşuyorsun."
+        },
+        {
+          "personId": "er",
+          "de": "Er spricht Englisch.",
+          "tr": "O (erkek) İngilizce konuşuyor."
+        },
+        {
+          "personId": "sie_she",
+          "de": "Sie spricht langsam.",
+          "tr": "O (kadın) yavaş konuşuyor."
+        },
+        {
+          "personId": "es",
+          "de": "Es ist wichtig.",
+          "tr": "Önemli."
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-sprechen-01",
+          "verbId": "sprechen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (konuşmak)",
+          "prompt_de": "Er ___ Englisch.",
+          "blank": "spricht",
+          "options": [
+            "sprecht",
+            "spricht",
+            "sprechen",
+            "sprichst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-02",
+          "verbId": "sprechen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+          "prompt_de": "Du ___ Türkisch.",
+          "blank": "sprichst",
+          "options": [
+            "sprechen",
+            "sprichst",
+            "sprecht",
+            "spreche"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-03",
+          "verbId": "sprechen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+          "prompt_de": "Du ___ Türkisch.",
+          "blank": "sprichst",
+          "options": [
+            "sprecht",
+            "sprichst",
+            "spricht",
+            "spreche"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-04",
+          "verbId": "sprechen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (konuşmak)",
+          "prompt_de": "Ich ___ Deutsch.",
+          "blank": "spreche",
+          "options": [
+            "spricht",
+            "sprechen",
+            "sprichst",
+            "spreche"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-sprechen-05",
+          "verbId": "sprechen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+          "prompt_de": "Du ___ Türkisch.",
+          "blank": "sprichst",
+          "options": [
+            "sprecht",
+            "sprechen",
+            "sprichst",
+            "spricht"
+          ],
+          "correct_index": 2
+        },
+        {
+          "id": "drill-sprechen-06",
+          "verbId": "sprechen",
+          "personId": "es",
+          "prompt_tr": "o (nötr) — boşluğu doldur (konuşmak)",
+          "prompt_de": "es ___ .",
+          "blank": "spricht",
+          "options": [
+            "sprecht",
+            "spricht",
+            "sprechen",
+            "spreche"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-07",
+          "verbId": "sprechen",
+          "personId": "ich",
+          "prompt_tr": "ben — boşluğu doldur (konuşmak)",
+          "prompt_de": "Ich ___ Deutsch.",
+          "blank": "spreche",
+          "options": [
+            "sprichst",
+            "spreche",
+            "sprecht",
+            "spricht"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-08",
+          "verbId": "sprechen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+          "prompt_de": "Du ___ Türkisch.",
+          "blank": "sprichst",
+          "options": [
+            "spricht",
+            "spreche",
+            "sprechen",
+            "sprichst"
+          ],
+          "correct_index": 3
+        },
+        {
+          "id": "drill-sprechen-09",
+          "verbId": "sprechen",
+          "personId": "er",
+          "prompt_tr": "o (erkek) — boşluğu doldur (konuşmak)",
+          "prompt_de": "Er ___ Englisch.",
+          "blank": "spricht",
+          "options": [
+            "sprecht",
+            "spricht",
+            "sprechen",
+            "sprichst"
+          ],
+          "correct_index": 1
+        },
+        {
+          "id": "drill-sprechen-10",
+          "verbId": "sprechen",
+          "personId": "du",
+          "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+          "prompt_de": "Du ___ Türkisch.",
+          "blank": "sprichst",
+          "options": [
+            "spreche",
+            "sprichst",
+            "sprecht",
+            "sprechen"
+          ],
+          "correct_index": 1
+        }
+      ]
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-sein-01",
+      "verbId": "sein",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (olmak)",
+      "prompt_de": "Er ___ Lehrer.",
+      "blank": "ist",
+      "options": [
+        "bin",
+        "ist",
+        "bist",
+        "seid"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-02",
+      "verbId": "sein",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (olmak)",
+      "prompt_de": "Du ___ Student.",
+      "blank": "bist",
+      "options": [
+        "ist",
+        "bist",
+        "sind",
+        "bin"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-03",
+      "verbId": "sein",
+      "personId": "wir",
+      "prompt_tr": "biz — boşluğu doldur (olmak)",
+      "prompt_de": "wir ___ .",
+      "blank": "sind",
+      "options": [
+        "seid",
+        "sind",
+        "bist",
+        "ist"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-04",
+      "verbId": "sein",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (olmak)",
+      "prompt_de": "Du ___ Student.",
+      "blank": "bist",
+      "options": [
+        "seid",
+        "bin",
+        "sind",
+        "bist"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-sein-05",
+      "verbId": "sein",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (olmak)",
+      "prompt_de": "Ich ___ müde.",
+      "blank": "bin",
+      "options": [
+        "seid",
+        "bist",
+        "bin",
+        "ist"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-sein-06",
+      "verbId": "sein",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (olmak)",
+      "prompt_de": "Sie ___ Ärztin.",
+      "blank": "ist",
+      "options": [
+        "sind",
+        "ist",
+        "bist",
+        "bin"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-07",
+      "verbId": "sein",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (olmak)",
+      "prompt_de": "Er ___ Lehrer.",
+      "blank": "ist",
+      "options": [
+        "sind",
+        "ist",
+        "bist",
+        "seid"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-08",
+      "verbId": "sein",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (olmak)",
+      "prompt_de": "Ich ___ müde.",
+      "blank": "bin",
+      "options": [
+        "sind",
+        "bist",
+        "seid",
+        "bin"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-sein-09",
+      "verbId": "sein",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (olmak)",
+      "prompt_de": "Du ___ Student.",
+      "blank": "bist",
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "seid"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sein-10",
+      "verbId": "sein",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (olmak)",
+      "prompt_de": "Du ___ Student.",
+      "blank": "bist",
+      "options": [
+        "ist",
+        "bist",
+        "sind",
+        "bin"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-01",
+      "verbId": "haben",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Du ___ Zeit.",
+      "blank": "hast",
+      "options": [
+        "habe",
+        "hast",
+        "hat",
+        "haben"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-02",
+      "verbId": "haben",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Du ___ Zeit.",
+      "blank": "hast",
+      "options": [
+        "haben",
+        "hast",
+        "hat",
+        "habt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-03",
+      "verbId": "haben",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Du ___ Zeit.",
+      "blank": "hast",
+      "options": [
+        "haben",
+        "hast",
+        "habt",
+        "habe"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-04",
+      "verbId": "haben",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Ich ___ Hunger.",
+      "blank": "habe",
+      "options": [
+        "hat",
+        "habt",
+        "hast",
+        "habe"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-haben-05",
+      "verbId": "haben",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Du ___ Zeit.",
+      "blank": "hast",
+      "options": [
+        "hat",
+        "habe",
+        "hast",
+        "haben"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-haben-06",
+      "verbId": "haben",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Er ___ ein Auto.",
+      "blank": "hat",
+      "options": [
+        "hast",
+        "hat",
+        "habt",
+        "haben"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-07",
+      "verbId": "haben",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Du ___ Zeit.",
+      "blank": "hast",
+      "options": [
+        "habe",
+        "hast",
+        "haben",
+        "habt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-08",
+      "verbId": "haben",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Ich ___ Hunger.",
+      "blank": "habe",
+      "options": [
+        "habt",
+        "hast",
+        "hat",
+        "habe"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-haben-09",
+      "verbId": "haben",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Ich ___ Hunger.",
+      "blank": "habe",
+      "options": [
+        "hast",
+        "habe",
+        "hat",
+        "haben"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-haben-10",
+      "verbId": "haben",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (sahip olmak)",
+      "prompt_de": "Sie ___ Hunger.",
+      "blank": "hat",
+      "options": [
+        "haben",
+        "hat",
+        "hast",
+        "habt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-01",
+      "verbId": "machen",
+      "personId": "wir",
+      "prompt_tr": "biz — boşluğu doldur (yapmak)",
+      "prompt_de": "wir ___ .",
+      "blank": "machen",
+      "options": [
+        "mache",
+        "machen",
+        "machst",
+        "macht"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-02",
+      "verbId": "machen",
+      "personId": "Sie",
+      "prompt_tr": "siz (resmi) — boşluğu doldur (yapmak)",
+      "prompt_de": "Sie ___ .",
+      "blank": "machen",
+      "options": [
+        "macht",
+        "machen",
+        "machst",
+        "mache"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-03",
+      "verbId": "machen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yapmak)",
+      "prompt_de": "Was ___ du?",
+      "blank": "machst",
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-04",
+      "verbId": "machen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (yapmak)",
+      "prompt_de": "es ___ .",
+      "blank": "macht",
+      "options": [
+        "machst",
+        "mache",
+        "machen",
+        "macht"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-machen-05",
+      "verbId": "machen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (yapmak)",
+      "prompt_de": "Ich ___ Sport.",
+      "blank": "mache",
+      "options": [
+        "machst",
+        "machen",
+        "mache",
+        "macht"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-machen-06",
+      "verbId": "machen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (yapmak)",
+      "prompt_de": "Ich ___ Sport.",
+      "blank": "mache",
+      "options": [
+        "machen",
+        "mache",
+        "macht",
+        "machst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-07",
+      "verbId": "machen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yapmak)",
+      "prompt_de": "Was ___ du?",
+      "blank": "machst",
+      "options": [
+        "mache",
+        "machst",
+        "machen",
+        "macht"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-08",
+      "verbId": "machen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (yapmak)",
+      "prompt_de": "Ich ___ Sport.",
+      "blank": "mache",
+      "options": [
+        "macht",
+        "machst",
+        "machen",
+        "mache"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-machen-09",
+      "verbId": "machen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (yapmak)",
+      "prompt_de": "es ___ .",
+      "blank": "macht",
+      "options": [
+        "mache",
+        "macht",
+        "machen",
+        "machst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-machen-10",
+      "verbId": "machen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yapmak)",
+      "prompt_de": "Was ___ du?",
+      "blank": "machst",
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-01",
+      "verbId": "kommen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+      "prompt_de": "Er ___ morgen.",
+      "blank": "kommt",
+      "options": [
+        "komme",
+        "kommt",
+        "kommen",
+        "kommst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-02",
+      "verbId": "kommen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gelmek)",
+      "prompt_de": "Sie ___ aus Ankara.",
+      "blank": "kommt",
+      "options": [
+        "kommen",
+        "kommt",
+        "kommst",
+        "komme"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-03",
+      "verbId": "kommen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (gelmek)",
+      "prompt_de": "es ___ .",
+      "blank": "kommt",
+      "options": [
+        "kommen",
+        "kommt",
+        "kommst",
+        "komme"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-04",
+      "verbId": "kommen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (gelmek)",
+      "prompt_de": "Du ___ aus Berlin.",
+      "blank": "kommst",
+      "options": [
+        "kommt",
+        "komme",
+        "kommen",
+        "kommst"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-kommen-05",
+      "verbId": "kommen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+      "prompt_de": "Er ___ morgen.",
+      "blank": "kommt",
+      "options": [
+        "kommst",
+        "komme",
+        "kommt",
+        "kommen"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-kommen-06",
+      "verbId": "kommen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+      "prompt_de": "Er ___ morgen.",
+      "blank": "kommt",
+      "options": [
+        "kommen",
+        "kommt",
+        "kommst",
+        "komme"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-07",
+      "verbId": "kommen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gelmek)",
+      "prompt_de": "Sie ___ aus Ankara.",
+      "blank": "kommt",
+      "options": [
+        "komme",
+        "kommt",
+        "kommst",
+        "kommen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-08",
+      "verbId": "kommen",
+      "personId": "ihr",
+      "prompt_tr": "siz (çoğul) — boşluğu doldur (gelmek)",
+      "prompt_de": "ihr ___ .",
+      "blank": "kommt",
+      "options": [
+        "kommst",
+        "komme",
+        "kommen",
+        "kommt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-kommen-09",
+      "verbId": "kommen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (gelmek)",
+      "prompt_de": "Ich ___ aus der Türkei.",
+      "blank": "komme",
+      "options": [
+        "kommen",
+        "komme",
+        "kommst",
+        "kommt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-kommen-10",
+      "verbId": "kommen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (gelmek)",
+      "prompt_de": "Er ___ morgen.",
+      "blank": "kommt",
+      "options": [
+        "komme",
+        "kommt",
+        "kommst",
+        "kommen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-01",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnen",
+        "wohnt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-02",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnt",
+        "wohnen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-03",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohnen",
+        "wohnst",
+        "wohnt",
+        "wohne"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-04",
+      "verbId": "wohnen",
+      "personId": "ihr",
+      "prompt_tr": "siz (çoğul) — boşluğu doldur (oturmak)",
+      "prompt_de": "ihr ___ .",
+      "blank": "wohnt",
+      "options": [
+        "wohnen",
+        "wohnst",
+        "wohne",
+        "wohnt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-wohnen-05",
+      "verbId": "wohnen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (oturmak)",
+      "prompt_de": "Sie ___ in München.",
+      "blank": "wohnt",
+      "options": [
+        "wohnst",
+        "wohne",
+        "wohnt",
+        "wohnen"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-wohnen-06",
+      "verbId": "wohnen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (oturmak)",
+      "prompt_de": "Er ___ hier.",
+      "blank": "wohnt",
+      "options": [
+        "wohnst",
+        "wohnt",
+        "wohnen",
+        "wohne"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-07",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnt",
+        "wohnen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-08",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohnt",
+        "wohnen",
+        "wohne",
+        "wohnst"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-wohnen-09",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohnen",
+        "wohnst",
+        "wohne",
+        "wohnt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-wohnen-10",
+      "verbId": "wohnen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (oturmak)",
+      "prompt_de": "Du ___ in Ankara.",
+      "blank": "wohnst",
+      "options": [
+        "wohnt",
+        "wohnst",
+        "wohnen",
+        "wohne"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-01",
+      "verbId": "arbeiten",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+      "prompt_de": "es ___ .",
+      "blank": "arbeitet",
+      "options": [
+        "arbeiten",
+        "arbeitet",
+        "arbeite",
+        "arbeitest"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-02",
+      "verbId": "arbeiten",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (çalışmak)",
+      "prompt_de": "Sie ___ im Krankenhaus.",
+      "blank": "arbeitet",
+      "options": [
+        "arbeite",
+        "arbeitet",
+        "arbeitest",
+        "arbeiten"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-03",
+      "verbId": "arbeiten",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+      "prompt_de": "Du ___ viel.",
+      "blank": "arbeitest",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeiten",
+        "arbeitet"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-04",
+      "verbId": "arbeiten",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+      "prompt_de": "es ___ .",
+      "blank": "arbeitet",
+      "options": [
+        "arbeiten",
+        "arbeitest",
+        "arbeite",
+        "arbeitet"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-arbeiten-05",
+      "verbId": "arbeiten",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+      "prompt_de": "es ___ .",
+      "blank": "arbeitet",
+      "options": [
+        "arbeiten",
+        "arbeite",
+        "arbeitet",
+        "arbeitest"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-arbeiten-06",
+      "verbId": "arbeiten",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+      "prompt_de": "Du ___ viel.",
+      "blank": "arbeitest",
+      "options": [
+        "arbeitet",
+        "arbeitest",
+        "arbeiten",
+        "arbeite"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-07",
+      "verbId": "arbeiten",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (çalışmak)",
+      "prompt_de": "es ___ .",
+      "blank": "arbeitet",
+      "options": [
+        "arbeiten",
+        "arbeitet",
+        "arbeitest",
+        "arbeite"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-08",
+      "verbId": "arbeiten",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (çalışmak)",
+      "prompt_de": "Du ___ viel.",
+      "blank": "arbeitest",
+      "options": [
+        "arbeitet",
+        "arbeiten",
+        "arbeite",
+        "arbeitest"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-arbeiten-09",
+      "verbId": "arbeiten",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (çalışmak)",
+      "prompt_de": "Er ___ als Lehrer.",
+      "blank": "arbeitet",
+      "options": [
+        "arbeite",
+        "arbeitet",
+        "arbeitest",
+        "arbeiten"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-arbeiten-10",
+      "verbId": "arbeiten",
+      "personId": "Sie",
+      "prompt_tr": "siz (resmi) — boşluğu doldur (çalışmak)",
+      "prompt_de": "Sie ___ .",
+      "blank": "arbeiten",
+      "options": [
+        "arbeitest",
+        "arbeiten",
+        "arbeitet",
+        "arbeite"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-01",
+      "verbId": "lernen",
+      "personId": "Sie",
+      "prompt_tr": "siz (resmi) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Sie ___ .",
+      "blank": "lernen",
+      "options": [
+        "lernt",
+        "lernen",
+        "lerne",
+        "lernst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-02",
+      "verbId": "lernen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Er ___ Englisch.",
+      "blank": "lernt",
+      "options": [
+        "lernst",
+        "lernt",
+        "lernen",
+        "lerne"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-03",
+      "verbId": "lernen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Du ___ Deutsch.",
+      "blank": "lernst",
+      "options": [
+        "lerne",
+        "lernst",
+        "lernen",
+        "lernt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-04",
+      "verbId": "lernen",
+      "personId": "ihr",
+      "prompt_tr": "siz (çoğul) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "ihr ___ .",
+      "blank": "lernt",
+      "options": [
+        "lernst",
+        "lernen",
+        "lerne",
+        "lernt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-lernen-05",
+      "verbId": "lernen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Du ___ Deutsch.",
+      "blank": "lernst",
+      "options": [
+        "lernen",
+        "lerne",
+        "lernst",
+        "lernt"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-lernen-06",
+      "verbId": "lernen",
+      "personId": "wir",
+      "prompt_tr": "biz — boşluğu doldur (öğrenmek)",
+      "prompt_de": "wir ___ .",
+      "blank": "lernen",
+      "options": [
+        "lernst",
+        "lernen",
+        "lerne",
+        "lernt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-07",
+      "verbId": "lernen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Ich ___ Deutsch.",
+      "blank": "lerne",
+      "options": [
+        "lernen",
+        "lerne",
+        "lernt",
+        "lernst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-08",
+      "verbId": "lernen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Sie ___ Türkisch.",
+      "blank": "lernt",
+      "options": [
+        "lernen",
+        "lerne",
+        "lernst",
+        "lernt"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-lernen-09",
+      "verbId": "lernen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Er ___ Englisch.",
+      "blank": "lernt",
+      "options": [
+        "lerne",
+        "lernt",
+        "lernst",
+        "lernen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-lernen-10",
+      "verbId": "lernen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (öğrenmek)",
+      "prompt_de": "Sie ___ Türkisch.",
+      "blank": "lernt",
+      "options": [
+        "lernen",
+        "lernt",
+        "lernst",
+        "lerne"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-01",
+      "verbId": "gehen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (gitmek)",
+      "prompt_de": "Er ___ ins Kino.",
+      "blank": "geht",
+      "options": [
+        "gehe",
+        "geht",
+        "gehst",
+        "gehen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-02",
+      "verbId": "gehen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+      "prompt_de": "Sie ___ zum Arzt.",
+      "blank": "geht",
+      "options": [
+        "gehst",
+        "geht",
+        "gehen",
+        "gehe"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-03",
+      "verbId": "gehen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (gitmek)",
+      "prompt_de": "Du ___ zur Arbeit.",
+      "blank": "gehst",
+      "options": [
+        "gehe",
+        "gehst",
+        "geht",
+        "gehen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-04",
+      "verbId": "gehen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+      "prompt_de": "Sie ___ zum Arzt.",
+      "blank": "geht",
+      "options": [
+        "gehst",
+        "gehen",
+        "gehe",
+        "geht"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-gehen-05",
+      "verbId": "gehen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (gitmek)",
+      "prompt_de": "Du ___ zur Arbeit.",
+      "blank": "gehst",
+      "options": [
+        "gehe",
+        "gehen",
+        "gehst",
+        "geht"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-gehen-06",
+      "verbId": "gehen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (gitmek)",
+      "prompt_de": "Du ___ zur Arbeit.",
+      "blank": "gehst",
+      "options": [
+        "geht",
+        "gehst",
+        "gehe",
+        "gehen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-07",
+      "verbId": "gehen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (gitmek)",
+      "prompt_de": "es ___ .",
+      "blank": "geht",
+      "options": [
+        "gehe",
+        "geht",
+        "gehen",
+        "gehst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-08",
+      "verbId": "gehen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+      "prompt_de": "Sie ___ zum Arzt.",
+      "blank": "geht",
+      "options": [
+        "gehen",
+        "gehe",
+        "gehst",
+        "geht"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-gehen-09",
+      "verbId": "gehen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (gitmek)",
+      "prompt_de": "Sie ___ zum Arzt.",
+      "blank": "geht",
+      "options": [
+        "gehe",
+        "geht",
+        "gehen",
+        "gehst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-gehen-10",
+      "verbId": "gehen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (gitmek)",
+      "prompt_de": "Ich ___ nach Hause.",
+      "blank": "gehe",
+      "options": [
+        "gehen",
+        "gehe",
+        "geht",
+        "gehst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-01",
+      "verbId": "essen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yemek)",
+      "prompt_de": "Du ___ Pizza.",
+      "blank": "isst",
+      "options": [
+        "esse",
+        "isst",
+        "essen",
+        "esst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-02",
+      "verbId": "essen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (yemek)",
+      "prompt_de": "Sie ___ Salat.",
+      "blank": "isst",
+      "options": [
+        "esst",
+        "isst",
+        "essen",
+        "esse"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-03",
+      "verbId": "essen",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (yemek)",
+      "prompt_de": "Sie ___ Salat.",
+      "blank": "isst",
+      "options": [
+        "esse",
+        "isst",
+        "essen",
+        "esst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-04",
+      "verbId": "essen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yemek)",
+      "prompt_de": "Du ___ Pizza.",
+      "blank": "isst",
+      "options": [
+        "essen",
+        "esse",
+        "esst",
+        "isst"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-essen-05",
+      "verbId": "essen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (yemek)",
+      "prompt_de": "es ___ .",
+      "blank": "isst",
+      "options": [
+        "esse",
+        "esst",
+        "isst",
+        "essen"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-essen-06",
+      "verbId": "essen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (yemek)",
+      "prompt_de": "Du ___ Pizza.",
+      "blank": "isst",
+      "options": [
+        "esst",
+        "isst",
+        "essen",
+        "esse"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-07",
+      "verbId": "essen",
+      "personId": "wir",
+      "prompt_tr": "biz — boşluğu doldur (yemek)",
+      "prompt_de": "wir ___ .",
+      "blank": "essen",
+      "options": [
+        "esse",
+        "essen",
+        "esst",
+        "isst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-08",
+      "verbId": "essen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (yemek)",
+      "prompt_de": "Ich ___ Brot.",
+      "blank": "esse",
+      "options": [
+        "essen",
+        "isst",
+        "esst",
+        "esse"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-essen-09",
+      "verbId": "essen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (yemek)",
+      "prompt_de": "es ___ .",
+      "blank": "isst",
+      "options": [
+        "esse",
+        "isst",
+        "esst",
+        "essen"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-essen-10",
+      "verbId": "essen",
+      "personId": "wir",
+      "prompt_tr": "biz — boşluğu doldur (yemek)",
+      "prompt_de": "wir ___ .",
+      "blank": "essen",
+      "options": [
+        "esse",
+        "essen",
+        "isst",
+        "esst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-01",
+      "verbId": "trinken",
+      "personId": "ihr",
+      "prompt_tr": "siz (çoğul) — boşluğu doldur (içmek)",
+      "prompt_de": "ihr ___ .",
+      "blank": "trinkt",
+      "options": [
+        "trinke",
+        "trinkt",
+        "trinken",
+        "trinkst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-02",
+      "verbId": "trinken",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (içmek)",
+      "prompt_de": "Sie ___ Wasser.",
+      "blank": "trinkt",
+      "options": [
+        "trinken",
+        "trinkt",
+        "trinkst",
+        "trinke"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-03",
+      "verbId": "trinken",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (içmek)",
+      "prompt_de": "Ich ___ Wasser.",
+      "blank": "trinke",
+      "options": [
+        "trinken",
+        "trinke",
+        "trinkt",
+        "trinkst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-04",
+      "verbId": "trinken",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (içmek)",
+      "prompt_de": "Du ___ Kaffee.",
+      "blank": "trinkst",
+      "options": [
+        "trinkt",
+        "trinke",
+        "trinken",
+        "trinkst"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-trinken-05",
+      "verbId": "trinken",
+      "personId": "sie_she",
+      "prompt_tr": "o (kadın) — boşluğu doldur (içmek)",
+      "prompt_de": "Sie ___ Wasser.",
+      "blank": "trinkt",
+      "options": [
+        "trinkst",
+        "trinke",
+        "trinkt",
+        "trinken"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-trinken-06",
+      "verbId": "trinken",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (içmek)",
+      "prompt_de": "Du ___ Kaffee.",
+      "blank": "trinkst",
+      "options": [
+        "trinken",
+        "trinkst",
+        "trinkt",
+        "trinke"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-07",
+      "verbId": "trinken",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (içmek)",
+      "prompt_de": "Ich ___ Wasser.",
+      "blank": "trinke",
+      "options": [
+        "trinkst",
+        "trinke",
+        "trinkt",
+        "trinken"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-08",
+      "verbId": "trinken",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (içmek)",
+      "prompt_de": "Ich ___ Wasser.",
+      "blank": "trinke",
+      "options": [
+        "trinkt",
+        "trinkst",
+        "trinken",
+        "trinke"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-trinken-09",
+      "verbId": "trinken",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (içmek)",
+      "prompt_de": "Du ___ Kaffee.",
+      "blank": "trinkst",
+      "options": [
+        "trinken",
+        "trinkst",
+        "trinke",
+        "trinkt"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-trinken-10",
+      "verbId": "trinken",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (içmek)",
+      "prompt_de": "Er ___ Tee.",
+      "blank": "trinkt",
+      "options": [
+        "trinke",
+        "trinkt",
+        "trinkst",
+        "trinken"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-01",
+      "verbId": "sprechen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (konuşmak)",
+      "prompt_de": "Er ___ Englisch.",
+      "blank": "spricht",
+      "options": [
+        "sprecht",
+        "spricht",
+        "sprechen",
+        "sprichst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-02",
+      "verbId": "sprechen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+      "prompt_de": "Du ___ Türkisch.",
+      "blank": "sprichst",
+      "options": [
+        "sprechen",
+        "sprichst",
+        "sprecht",
+        "spreche"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-03",
+      "verbId": "sprechen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+      "prompt_de": "Du ___ Türkisch.",
+      "blank": "sprichst",
+      "options": [
+        "sprecht",
+        "sprichst",
+        "spricht",
+        "spreche"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-04",
+      "verbId": "sprechen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (konuşmak)",
+      "prompt_de": "Ich ___ Deutsch.",
+      "blank": "spreche",
+      "options": [
+        "spricht",
+        "sprechen",
+        "sprichst",
+        "spreche"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-sprechen-05",
+      "verbId": "sprechen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+      "prompt_de": "Du ___ Türkisch.",
+      "blank": "sprichst",
+      "options": [
+        "sprecht",
+        "sprechen",
+        "sprichst",
+        "spricht"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": "drill-sprechen-06",
+      "verbId": "sprechen",
+      "personId": "es",
+      "prompt_tr": "o (nötr) — boşluğu doldur (konuşmak)",
+      "prompt_de": "es ___ .",
+      "blank": "spricht",
+      "options": [
+        "sprecht",
+        "spricht",
+        "sprechen",
+        "spreche"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-07",
+      "verbId": "sprechen",
+      "personId": "ich",
+      "prompt_tr": "ben — boşluğu doldur (konuşmak)",
+      "prompt_de": "Ich ___ Deutsch.",
+      "blank": "spreche",
+      "options": [
+        "sprichst",
+        "spreche",
+        "sprecht",
+        "spricht"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-08",
+      "verbId": "sprechen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+      "prompt_de": "Du ___ Türkisch.",
+      "blank": "sprichst",
+      "options": [
+        "spricht",
+        "spreche",
+        "sprechen",
+        "sprichst"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": "drill-sprechen-09",
+      "verbId": "sprechen",
+      "personId": "er",
+      "prompt_tr": "o (erkek) — boşluğu doldur (konuşmak)",
+      "prompt_de": "Er ___ Englisch.",
+      "blank": "spricht",
+      "options": [
+        "sprecht",
+        "spricht",
+        "sprechen",
+        "sprichst"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": "drill-sprechen-10",
+      "verbId": "sprechen",
+      "personId": "du",
+      "prompt_tr": "sen — boşluğu doldur (konuşmak)",
+      "prompt_de": "Du ___ Türkisch.",
+      "blank": "sprichst",
+      "options": [
+        "spreche",
+        "sprichst",
+        "sprecht",
+        "sprechen"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

@@ -1,0 +1,4633 @@
+{
+  "version": "1.0.0",
+  "source": "seed-from-vocabulary",
+  "generated": "2026-06-14T17:59:43.216Z",
+  "total": 392,
+  "verifiedSpotChecks": 19,
+  "entries": {
+    "a1_0015": {
+      "id": "a1_0015",
+      "word": "Abend",
+      "article": "der",
+      "verified": false,
+      "category": "Selamlama"
+    },
+    "a1_0034": {
+      "id": "a1_0034",
+      "word": "Name",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0035": {
+      "id": "a1_0035",
+      "word": "Vorname",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0036": {
+      "id": "a1_0036",
+      "word": "Nachname",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0039": {
+      "id": "a1_0039",
+      "word": "Sprache",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0043": {
+      "id": "a1_0043",
+      "word": "Land",
+      "article": "das",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0044": {
+      "id": "a1_0044",
+      "word": "Stadt",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0045": {
+      "id": "a1_0045",
+      "word": "Adresse",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0046": {
+      "id": "a1_0046",
+      "word": "Alter",
+      "article": "das",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0048": {
+      "id": "a1_0048",
+      "word": "Beruf",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0052": {
+      "id": "a1_0052",
+      "word": "Nationalität",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0053": {
+      "id": "a1_0053",
+      "word": "Pass",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0054": {
+      "id": "a1_0054",
+      "word": "Ausweis",
+      "article": "der",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0055": {
+      "id": "a1_0055",
+      "word": "Telefonnummer",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0056": {
+      "id": "a1_0056",
+      "word": "E-Mail",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0061": {
+      "id": "a1_0061",
+      "word": "Frage",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0062": {
+      "id": "a1_0062",
+      "word": "Antwort",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0063": {
+      "id": "a1_0063",
+      "word": "Information",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0064": {
+      "id": "a1_0064",
+      "word": "Formular",
+      "article": "das",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0065": {
+      "id": "a1_0065",
+      "word": "Unterschrift",
+      "article": "die",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0066": {
+      "id": "a1_0066",
+      "word": "Datum",
+      "article": "das",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0067": {
+      "id": "a1_0067",
+      "word": "Geburtsdatum",
+      "article": "das",
+      "verified": false,
+      "category": "Tanışma"
+    },
+    "a1_0068": {
+      "id": "a1_0068",
+      "word": "Mutter",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0069": {
+      "id": "a1_0069",
+      "word": "Vater",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0070": {
+      "id": "a1_0070",
+      "word": "Kind",
+      "article": "das",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0071": {
+      "id": "a1_0071",
+      "word": "Sohn",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0072": {
+      "id": "a1_0072",
+      "word": "Tochter",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0073": {
+      "id": "a1_0073",
+      "word": "Bruder",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0074": {
+      "id": "a1_0074",
+      "word": "Schwester",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0075": {
+      "id": "a1_0075",
+      "word": "Großmutter",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0076": {
+      "id": "a1_0076",
+      "word": "Großvater",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0077": {
+      "id": "a1_0077",
+      "word": "Eltern",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0078": {
+      "id": "a1_0078",
+      "word": "Familie",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0079": {
+      "id": "a1_0079",
+      "word": "Ehemann",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0080": {
+      "id": "a1_0080",
+      "word": "Ehefrau",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0081": {
+      "id": "a1_0081",
+      "word": "Baby",
+      "article": "das",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0082": {
+      "id": "a1_0082",
+      "word": "Enkel",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0083": {
+      "id": "a1_0083",
+      "word": "Enkelin",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0084": {
+      "id": "a1_0084",
+      "word": "Onkel",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0085": {
+      "id": "a1_0085",
+      "word": "Tante",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0086": {
+      "id": "a1_0086",
+      "word": "Cousin",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0087": {
+      "id": "a1_0087",
+      "word": "Cousine",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0088": {
+      "id": "a1_0088",
+      "word": "Schwiegermutter",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0089": {
+      "id": "a1_0089",
+      "word": "Schwiegervater",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0090": {
+      "id": "a1_0090",
+      "word": "Schwager",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0091": {
+      "id": "a1_0091",
+      "word": "Schwägerin",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0092": {
+      "id": "a1_0092",
+      "word": "Neffe",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0093": {
+      "id": "a1_0093",
+      "word": "Nichte",
+      "article": "die",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0094": {
+      "id": "a1_0094",
+      "word": "Verwandte",
+      "article": "der",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0095": {
+      "id": "a1_0095",
+      "word": "Paar",
+      "article": "das",
+      "verified": false,
+      "category": "Aile"
+    },
+    "a1_0102": {
+      "id": "a1_0102",
+      "word": "Haus",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0103": {
+      "id": "a1_0103",
+      "word": "Wohnung",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0104": {
+      "id": "a1_0104",
+      "word": "Zimmer",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0105": {
+      "id": "a1_0105",
+      "word": "Küche",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0106": {
+      "id": "a1_0106",
+      "word": "Bad",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0107": {
+      "id": "a1_0107",
+      "word": "Schlafzimmer",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0108": {
+      "id": "a1_0108",
+      "word": "Wohnzimmer",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0109": {
+      "id": "a1_0109",
+      "word": "Tür",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0110": {
+      "id": "a1_0110",
+      "word": "Fenster",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0111": {
+      "id": "a1_0111",
+      "word": "Bett",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0112": {
+      "id": "a1_0112",
+      "word": "Tisch",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0113": {
+      "id": "a1_0113",
+      "word": "Stuhl",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0114": {
+      "id": "a1_0114",
+      "word": "Sofa",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0115": {
+      "id": "a1_0115",
+      "word": "Schrank",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0116": {
+      "id": "a1_0116",
+      "word": "Regal",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0117": {
+      "id": "a1_0117",
+      "word": "Lampe",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0118": {
+      "id": "a1_0118",
+      "word": "Teppich",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0119": {
+      "id": "a1_0119",
+      "word": "Spiegel",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0120": {
+      "id": "a1_0120",
+      "word": "Kühlschrank",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0121": {
+      "id": "a1_0121",
+      "word": "Herd",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0122": {
+      "id": "a1_0122",
+      "word": "Waschmaschine",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0123": {
+      "id": "a1_0123",
+      "word": "Schlüssel",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0124": {
+      "id": "a1_0124",
+      "word": "Garten",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0125": {
+      "id": "a1_0125",
+      "word": "Balkon",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0126": {
+      "id": "a1_0126",
+      "word": "Keller",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0127": {
+      "id": "a1_0127",
+      "word": "Dach",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0128": {
+      "id": "a1_0128",
+      "word": "Treppenhaus",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0129": {
+      "id": "a1_0129",
+      "word": "Aufzug",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0130": {
+      "id": "a1_0130",
+      "word": "Miete",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0131": {
+      "id": "a1_0131",
+      "word": "Möbel",
+      "article": "das",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0132": {
+      "id": "a1_0132",
+      "word": "Heizung",
+      "article": "die",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0133": {
+      "id": "a1_0133",
+      "word": "Strom",
+      "article": "der",
+      "verified": false,
+      "category": "Ev"
+    },
+    "a1_0136": {
+      "id": "a1_0136",
+      "word": "Supermarkt",
+      "article": "der",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0137": {
+      "id": "a1_0137",
+      "word": "Brot",
+      "article": "das",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0138": {
+      "id": "a1_0138",
+      "word": "Milch",
+      "article": "die",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0141": {
+      "id": "a1_0141",
+      "word": "Euro",
+      "article": "der",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0142": {
+      "id": "a1_0142",
+      "word": "Preis",
+      "article": "der",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0145": {
+      "id": "a1_0145",
+      "word": "Obst",
+      "article": "das",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0146": {
+      "id": "a1_0146",
+      "word": "Gemüse",
+      "article": "das",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0147": {
+      "id": "a1_0147",
+      "word": "Apfel",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0148": {
+      "id": "a1_0148",
+      "word": "Banane",
+      "article": "die",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0149": {
+      "id": "a1_0149",
+      "word": "Tomate",
+      "article": "die",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0150": {
+      "id": "a1_0150",
+      "word": "Kartoffel",
+      "article": "die",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0151": {
+      "id": "a1_0151",
+      "word": "Reis",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0152": {
+      "id": "a1_0152",
+      "word": "Nudeln",
+      "article": "die",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0153": {
+      "id": "a1_0153",
+      "word": "Fleisch",
+      "article": "das",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0154": {
+      "id": "a1_0154",
+      "word": "Fisch",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0155": {
+      "id": "a1_0155",
+      "word": "Käse",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0156": {
+      "id": "a1_0156",
+      "word": "Ei",
+      "article": "das",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0157": {
+      "id": "a1_0157",
+      "word": "Butter",
+      "article": "die",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0158": {
+      "id": "a1_0158",
+      "word": "Zucker",
+      "article": "der",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0159": {
+      "id": "a1_0159",
+      "word": "Salz",
+      "article": "das",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0160": {
+      "id": "a1_0160",
+      "word": "Öl",
+      "article": "das",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0161": {
+      "id": "a1_0161",
+      "word": "Wasser",
+      "article": "das",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0162": {
+      "id": "a1_0162",
+      "word": "Saft",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0163": {
+      "id": "a1_0163",
+      "word": "Kaffee",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0164": {
+      "id": "a1_0164",
+      "word": "Tee",
+      "article": "der",
+      "verified": true,
+      "category": "Market"
+    },
+    "a1_0165": {
+      "id": "a1_0165",
+      "word": "Tüte",
+      "article": "die",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0166": {
+      "id": "a1_0166",
+      "word": "Kasse",
+      "article": "die",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0167": {
+      "id": "a1_0167",
+      "word": "Schlange",
+      "article": "die",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0168": {
+      "id": "a1_0168",
+      "word": "Angebot",
+      "article": "das",
+      "verified": false,
+      "category": "Market"
+    },
+    "a1_0170": {
+      "id": "a1_0170",
+      "word": "Arbeit",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0171": {
+      "id": "a1_0171",
+      "word": "Kollege",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0173": {
+      "id": "a1_0173",
+      "word": "Lager",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0174": {
+      "id": "a1_0174",
+      "word": "Chef",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0175": {
+      "id": "a1_0175",
+      "word": "Firma",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0176": {
+      "id": "a1_0176",
+      "word": "Büro",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0177": {
+      "id": "a1_0177",
+      "word": "Schicht",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0178": {
+      "id": "a1_0178",
+      "word": "Pause",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0179": {
+      "id": "a1_0179",
+      "word": "Gehalt",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0180": {
+      "id": "a1_0180",
+      "word": "Vertrag",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0181": {
+      "id": "a1_0181",
+      "word": "Bewerbung",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0182": {
+      "id": "a1_0182",
+      "word": "Lebenslauf",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0183": {
+      "id": "a1_0183",
+      "word": "Termin",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0184": {
+      "id": "a1_0184",
+      "word": "Besprechung",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0185": {
+      "id": "a1_0185",
+      "word": "Aufgabe",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0186": {
+      "id": "a1_0186",
+      "word": "Projekt",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0187": {
+      "id": "a1_0187",
+      "word": "Gruppe",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0188": {
+      "id": "a1_0188",
+      "word": "Kunde",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0189": {
+      "id": "a1_0189",
+      "word": "Paket",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0190": {
+      "id": "a1_0190",
+      "word": "Karton",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0191": {
+      "id": "a1_0191",
+      "word": "Palette",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0192": {
+      "id": "a1_0192",
+      "word": "Stapler",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0193": {
+      "id": "a1_0193",
+      "word": "Regal",
+      "article": "das",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0194": {
+      "id": "a1_0194",
+      "word": "Bestellung",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0195": {
+      "id": "a1_0195",
+      "word": "Lieferung",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0196": {
+      "id": "a1_0196",
+      "word": "Uniform",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0197": {
+      "id": "a1_0197",
+      "word": "Helm",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0198": {
+      "id": "a1_0198",
+      "word": "Sicherheit",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0199": {
+      "id": "a1_0199",
+      "word": "Feierabend",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0200": {
+      "id": "a1_0200",
+      "word": "Überstunden",
+      "article": "die",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0201": {
+      "id": "a1_0201",
+      "word": "Urlaub",
+      "article": "der",
+      "verified": false,
+      "category": "İş"
+    },
+    "a1_0205": {
+      "id": "a1_0205",
+      "word": "Bus",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0206": {
+      "id": "a1_0206",
+      "word": "Bahnhof",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0207": {
+      "id": "a1_0207",
+      "word": "Fahrkarte",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0208": {
+      "id": "a1_0208",
+      "word": "Zug",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0209": {
+      "id": "a1_0209",
+      "word": "S-Bahn",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0210": {
+      "id": "a1_0210",
+      "word": "U-Bahn",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0211": {
+      "id": "a1_0211",
+      "word": "Straßenbahn",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0212": {
+      "id": "a1_0212",
+      "word": "Taxi",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0213": {
+      "id": "a1_0213",
+      "word": "Auto",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0214": {
+      "id": "a1_0214",
+      "word": "Fahrrad",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0215": {
+      "id": "a1_0215",
+      "word": "Flugzeug",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0216": {
+      "id": "a1_0216",
+      "word": "Flughafen",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0217": {
+      "id": "a1_0217",
+      "word": "Haltestelle",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0218": {
+      "id": "a1_0218",
+      "word": "Gleis",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0219": {
+      "id": "a1_0219",
+      "word": "Fahrplan",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0220": {
+      "id": "a1_0220",
+      "word": "Verspätung",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0227": {
+      "id": "a1_0227",
+      "word": "Straße",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0228": {
+      "id": "a1_0228",
+      "word": "Ampel",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0229": {
+      "id": "a1_0229",
+      "word": "Kreuzung",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0230": {
+      "id": "a1_0230",
+      "word": "Brücke",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0231": {
+      "id": "a1_0231",
+      "word": "Parkplatz",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0232": {
+      "id": "a1_0232",
+      "word": "Tankstelle",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0233": {
+      "id": "a1_0233",
+      "word": "Benzin",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0234": {
+      "id": "a1_0234",
+      "word": "Führerschein",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0235": {
+      "id": "a1_0235",
+      "word": "Ticket",
+      "article": "das",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0236": {
+      "id": "a1_0236",
+      "word": "Monatskarte",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0237": {
+      "id": "a1_0237",
+      "word": "Fuß",
+      "article": "der",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0238": {
+      "id": "a1_0238",
+      "word": "Entfernung",
+      "article": "die",
+      "verified": false,
+      "category": "Ulaşım"
+    },
+    "a1_0239": {
+      "id": "a1_0239",
+      "word": "Uhr",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0247": {
+      "id": "a1_0247",
+      "word": "Stunde",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0248": {
+      "id": "a1_0248",
+      "word": "Minute",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0249": {
+      "id": "a1_0249",
+      "word": "Sekunde",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0250": {
+      "id": "a1_0250",
+      "word": "Viertel",
+      "article": "das",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0261": {
+      "id": "a1_0261",
+      "word": "Zeit",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0262": {
+      "id": "a1_0262",
+      "word": "Arbeitszeit",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0263": {
+      "id": "a1_0263",
+      "word": "Feierabend",
+      "article": "der",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0264": {
+      "id": "a1_0264",
+      "word": "Nacht",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0265": {
+      "id": "a1_0265",
+      "word": "Mittag",
+      "article": "der",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0266": {
+      "id": "a1_0266",
+      "word": "Nachmittag",
+      "article": "der",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0267": {
+      "id": "a1_0267",
+      "word": "Vormittag",
+      "article": "der",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0268": {
+      "id": "a1_0268",
+      "word": "Wochenende",
+      "article": "das",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0269": {
+      "id": "a1_0269",
+      "word": "Wochentag",
+      "article": "der",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0270": {
+      "id": "a1_0270",
+      "word": "Uhrzeit",
+      "article": "die",
+      "verified": false,
+      "category": "Saat"
+    },
+    "a1_0273": {
+      "id": "a1_0273",
+      "word": "Montag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0274": {
+      "id": "a1_0274",
+      "word": "Dienstag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0275": {
+      "id": "a1_0275",
+      "word": "Mittwoch",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0276": {
+      "id": "a1_0276",
+      "word": "Donnerstag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0277": {
+      "id": "a1_0277",
+      "word": "Freitag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0278": {
+      "id": "a1_0278",
+      "word": "Samstag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0279": {
+      "id": "a1_0279",
+      "word": "Sonntag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0280": {
+      "id": "a1_0280",
+      "word": "Jahr",
+      "article": "das",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0281": {
+      "id": "a1_0281",
+      "word": "Geburtstag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0282": {
+      "id": "a1_0282",
+      "word": "Monat",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0283": {
+      "id": "a1_0283",
+      "word": "Januar",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0284": {
+      "id": "a1_0284",
+      "word": "Februar",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0285": {
+      "id": "a1_0285",
+      "word": "März",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0286": {
+      "id": "a1_0286",
+      "word": "April",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0287": {
+      "id": "a1_0287",
+      "word": "Mai",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0288": {
+      "id": "a1_0288",
+      "word": "Juni",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0289": {
+      "id": "a1_0289",
+      "word": "Juli",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0290": {
+      "id": "a1_0290",
+      "word": "August",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0291": {
+      "id": "a1_0291",
+      "word": "September",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0292": {
+      "id": "a1_0292",
+      "word": "Oktober",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0293": {
+      "id": "a1_0293",
+      "word": "November",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0294": {
+      "id": "a1_0294",
+      "word": "Dezember",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0295": {
+      "id": "a1_0295",
+      "word": "Frühling",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0296": {
+      "id": "a1_0296",
+      "word": "Sommer",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0297": {
+      "id": "a1_0297",
+      "word": "Herbst",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0298": {
+      "id": "a1_0298",
+      "word": "Winter",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0299": {
+      "id": "a1_0299",
+      "word": "Woche",
+      "article": "die",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0300": {
+      "id": "a1_0300",
+      "word": "Tag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0301": {
+      "id": "a1_0301",
+      "word": "Kalender",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0302": {
+      "id": "a1_0302",
+      "word": "Feiertag",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0305": {
+      "id": "a1_0305",
+      "word": "Silvester",
+      "article": "der",
+      "verified": false,
+      "category": "Tarih"
+    },
+    "a1_0306": {
+      "id": "a1_0306",
+      "word": "Arzt",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0307": {
+      "id": "a1_0307",
+      "word": "Krankheit",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0308": {
+      "id": "a1_0308",
+      "word": "Schmerzen",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0309": {
+      "id": "a1_0309",
+      "word": "Krankenhaus",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0310": {
+      "id": "a1_0310",
+      "word": "Apotheke",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0311": {
+      "id": "a1_0311",
+      "word": "Medikament",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0312": {
+      "id": "a1_0312",
+      "word": "Rezept",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0313": {
+      "id": "a1_0313",
+      "word": "Termin",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0314": {
+      "id": "a1_0314",
+      "word": "Notfall",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0315": {
+      "id": "a1_0315",
+      "word": "Kopfschmerzen",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0316": {
+      "id": "a1_0316",
+      "word": "Bauchschmerzen",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0317": {
+      "id": "a1_0317",
+      "word": "Fieber",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0318": {
+      "id": "a1_0318",
+      "word": "Husten",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0319": {
+      "id": "a1_0319",
+      "word": "Schnupfen",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0320": {
+      "id": "a1_0320",
+      "word": "Allergie",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0321": {
+      "id": "a1_0321",
+      "word": "Impfung",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0322": {
+      "id": "a1_0322",
+      "word": "Blut",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0323": {
+      "id": "a1_0323",
+      "word": "Herz",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0324": {
+      "id": "a1_0324",
+      "word": "Rücken",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0325": {
+      "id": "a1_0325",
+      "word": "Kopf",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0326": {
+      "id": "a1_0326",
+      "word": "Hand",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0327": {
+      "id": "a1_0327",
+      "word": "Fuß",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0328": {
+      "id": "a1_0328",
+      "word": "Auge",
+      "article": "das",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0329": {
+      "id": "a1_0329",
+      "word": "Zahn",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0330": {
+      "id": "a1_0330",
+      "word": "Zahnarzt",
+      "article": "der",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0331": {
+      "id": "a1_0331",
+      "word": "Krankenversicherung",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0332": {
+      "id": "a1_0332",
+      "word": "Krankmeldung",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0339": {
+      "id": "a1_0339",
+      "word": "Hilfe",
+      "article": "die",
+      "verified": false,
+      "category": "Doktor"
+    },
+    "a1_0340": {
+      "id": "a1_0340",
+      "word": "Speisekarte",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0341": {
+      "id": "a1_0341",
+      "word": "Wasser",
+      "article": "das",
+      "verified": true,
+      "category": "Restoran"
+    },
+    "a1_0343": {
+      "id": "a1_0343",
+      "word": "Restaurant",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0344": {
+      "id": "a1_0344",
+      "word": "Café",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0345": {
+      "id": "a1_0345",
+      "word": "Kellner",
+      "article": "der",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0346": {
+      "id": "a1_0346",
+      "word": "Kellnerin",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0347": {
+      "id": "a1_0347",
+      "word": "Tisch",
+      "article": "der",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0348": {
+      "id": "a1_0348",
+      "word": "Reservierung",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0349": {
+      "id": "a1_0349",
+      "word": "Frühstück",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0350": {
+      "id": "a1_0350",
+      "word": "Mittagessen",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0351": {
+      "id": "a1_0351",
+      "word": "Abendessen",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0352": {
+      "id": "a1_0352",
+      "word": "Suppe",
+      "article": "die",
+      "verified": true,
+      "category": "Restoran"
+    },
+    "a1_0353": {
+      "id": "a1_0353",
+      "word": "Salat",
+      "article": "der",
+      "verified": true,
+      "category": "Restoran"
+    },
+    "a1_0354": {
+      "id": "a1_0354",
+      "word": "Pizza",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0355": {
+      "id": "a1_0355",
+      "word": "Schnitzel",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0356": {
+      "id": "a1_0356",
+      "word": "Wurst",
+      "article": "die",
+      "verified": true,
+      "category": "Restoran"
+    },
+    "a1_0357": {
+      "id": "a1_0357",
+      "word": "Kartoffel",
+      "article": "die",
+      "verified": true,
+      "category": "Restoran"
+    },
+    "a1_0358": {
+      "id": "a1_0358",
+      "word": "Rechnung",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0359": {
+      "id": "a1_0359",
+      "word": "Trinkgeld",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0364": {
+      "id": "a1_0364",
+      "word": "Essen",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0365": {
+      "id": "a1_0365",
+      "word": "Trinken",
+      "article": "das",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0367": {
+      "id": "a1_0367",
+      "word": "Allergie",
+      "article": "die",
+      "verified": false,
+      "category": "Restoran"
+    },
+    "a1_0374": {
+      "id": "a1_0374",
+      "word": "Telefon",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0376": {
+      "id": "a1_0376",
+      "word": "Nachricht",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0377": {
+      "id": "a1_0377",
+      "word": "Handy",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0378": {
+      "id": "a1_0378",
+      "word": "Nummer",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0379": {
+      "id": "a1_0379",
+      "word": "Anruf",
+      "article": "der",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0380": {
+      "id": "a1_0380",
+      "word": "Anrufbeantworter",
+      "article": "der",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0382": {
+      "id": "a1_0382",
+      "word": "SMS",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0383": {
+      "id": "a1_0383",
+      "word": "Kurznachricht",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0384": {
+      "id": "a1_0384",
+      "word": "Internet",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0385": {
+      "id": "a1_0385",
+      "word": "WLAN",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0386": {
+      "id": "a1_0386",
+      "word": "Passwort",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0387": {
+      "id": "a1_0387",
+      "word": "E-Mail",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0394": {
+      "id": "a1_0394",
+      "word": "Verbindung",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0395": {
+      "id": "a1_0395",
+      "word": "Kontakt",
+      "article": "der",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0396": {
+      "id": "a1_0396",
+      "word": "Foto",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0397": {
+      "id": "a1_0397",
+      "word": "Video",
+      "article": "das",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0398": {
+      "id": "a1_0398",
+      "word": "Anrufliste",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0402": {
+      "id": "a1_0402",
+      "word": "Akku",
+      "article": "der",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0404": {
+      "id": "a1_0404",
+      "word": "Anwendung",
+      "article": "die",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0405": {
+      "id": "a1_0405",
+      "word": "Fehler",
+      "article": "der",
+      "verified": false,
+      "category": "Telefon"
+    },
+    "a1_0408": {
+      "id": "a1_0408",
+      "word": "Formular",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0409": {
+      "id": "a1_0409",
+      "word": "Adresse",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0410": {
+      "id": "a1_0410",
+      "word": "Geburtsdatum",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0411": {
+      "id": "a1_0411",
+      "word": "Unterschrift",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0412": {
+      "id": "a1_0412",
+      "word": "Name",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0413": {
+      "id": "a1_0413",
+      "word": "Vorname",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0414": {
+      "id": "a1_0414",
+      "word": "Nachname",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0415": {
+      "id": "a1_0415",
+      "word": "Geburtsort",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0416": {
+      "id": "a1_0416",
+      "word": "Staatsangehörigkeit",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0417": {
+      "id": "a1_0417",
+      "word": "Geschlecht",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0420": {
+      "id": "a1_0420",
+      "word": "Familienstand",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0421": {
+      "id": "a1_0421",
+      "word": "Postleitzahl",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0422": {
+      "id": "a1_0422",
+      "word": "Stadt",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0423": {
+      "id": "a1_0423",
+      "word": "Land",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0424": {
+      "id": "a1_0424",
+      "word": "Telefonnummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0425": {
+      "id": "a1_0425",
+      "word": "Beruf",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0426": {
+      "id": "a1_0426",
+      "word": "Arbeitgeber",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0427": {
+      "id": "a1_0427",
+      "word": "Einkommen",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0428": {
+      "id": "a1_0428",
+      "word": "Konto",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0429": {
+      "id": "a1_0429",
+      "word": "Bank",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0430": {
+      "id": "a1_0430",
+      "word": "IBAN",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0431": {
+      "id": "a1_0431",
+      "word": "Steuer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0432": {
+      "id": "a1_0432",
+      "word": "Steuernummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0433": {
+      "id": "a1_0433",
+      "word": "Antrag",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0434": {
+      "id": "a1_0434",
+      "word": "Bescheinigung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0435": {
+      "id": "a1_0435",
+      "word": "Kopie",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0436": {
+      "id": "a1_0436",
+      "word": "Original",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0437": {
+      "id": "a1_0437",
+      "word": "Stempel",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0438": {
+      "id": "a1_0438",
+      "word": "Datum",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0439": {
+      "id": "a1_0439",
+      "word": "Ort",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0442": {
+      "id": "a1_0442",
+      "word": "Anmeldung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0443": {
+      "id": "a1_0443",
+      "word": "Anmeldungstag",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0444": {
+      "id": "a1_0444",
+      "word": "Arbeitsstelle",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0445": {
+      "id": "a1_0445",
+      "word": "Aufenthaltstitel",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0446": {
+      "id": "a1_0446",
+      "word": "Ausbildung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0447": {
+      "id": "a1_0447",
+      "word": "Beginn",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0448": {
+      "id": "a1_0448",
+      "word": "Bezahlung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0450": {
+      "id": "a1_0450",
+      "word": "Bundesland",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0451": {
+      "id": "a1_0451",
+      "word": "Datum der Anmeldung",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0452": {
+      "id": "a1_0452",
+      "word": "Dokument",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0453": {
+      "id": "a1_0453",
+      "word": "Ende",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0454": {
+      "id": "a1_0454",
+      "word": "Familienmitglied",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0455": {
+      "id": "a1_0455",
+      "word": "Familienname",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0456": {
+      "id": "a1_0456",
+      "word": "Geburtsjahr",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0457": {
+      "id": "a1_0457",
+      "word": "Geburtsland",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0458": {
+      "id": "a1_0458",
+      "word": "Gebühr",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0462": {
+      "id": "a1_0462",
+      "word": "Handynummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0463": {
+      "id": "a1_0463",
+      "word": "Hausnummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0464": {
+      "id": "a1_0464",
+      "word": "Heimatland",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0465": {
+      "id": "a1_0465",
+      "word": "Identitätskarte",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0466": {
+      "id": "a1_0466",
+      "word": "Kenntnisse",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0467": {
+      "id": "a1_0467",
+      "word": "Kontaktperson",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0468": {
+      "id": "a1_0468",
+      "word": "Kurs",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0469": {
+      "id": "a1_0469",
+      "word": "Kursbeginn",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0470": {
+      "id": "a1_0470",
+      "word": "Kursende",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0471": {
+      "id": "a1_0471",
+      "word": "Kursnummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0472": {
+      "id": "a1_0472",
+      "word": "Kurstermin",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0474": {
+      "id": "a1_0474",
+      "word": "Überweisung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0475": {
+      "id": "a1_0475",
+      "word": "Muttersprache",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0476": {
+      "id": "a1_0476",
+      "word": "Passnummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0477": {
+      "id": "a1_0477",
+      "word": "PLZ",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0478": {
+      "id": "a1_0478",
+      "word": "Prüfungsdatum",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0479": {
+      "id": "a1_0479",
+      "word": "Prüfungsergebnis",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0480": {
+      "id": "a1_0480",
+      "word": "Prüfungstag",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0481": {
+      "id": "a1_0481",
+      "word": "Prüfungsteilnehmer",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0482": {
+      "id": "a1_0482",
+      "word": "Prüfungszentrum",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0483": {
+      "id": "a1_0483",
+      "word": "Reiseausweis",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0484": {
+      "id": "a1_0484",
+      "word": "Schulbildung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0485": {
+      "id": "a1_0485",
+      "word": "Schüler",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0486": {
+      "id": "a1_0486",
+      "word": "Schülerin",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0488": {
+      "id": "a1_0488",
+      "word": "Staat",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0489": {
+      "id": "a1_0489",
+      "word": "Staatsbürger",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0491": {
+      "id": "a1_0491",
+      "word": "Studium",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0492": {
+      "id": "a1_0492",
+      "word": "Tag der Ausstellung",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0493": {
+      "id": "a1_0493",
+      "word": "Teilnahme",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0494": {
+      "id": "a1_0494",
+      "word": "Teilnehmer",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0495": {
+      "id": "a1_0495",
+      "word": "Teilnehmernummer",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0496": {
+      "id": "a1_0496",
+      "word": "Universität",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0497": {
+      "id": "a1_0497",
+      "word": "Unterschrift der Eltern",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0498": {
+      "id": "a1_0498",
+      "word": "Unterschrift des Teilnehmers",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0500": {
+      "id": "a1_0500",
+      "word": "Visum",
+      "article": "das",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0501": {
+      "id": "a1_0501",
+      "word": "Wohnort",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0502": {
+      "id": "a1_0502",
+      "word": "Zahlung",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0503": {
+      "id": "a1_0503",
+      "word": "Anfänger",
+      "article": "der",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0507": {
+      "id": "a1_0507",
+      "word": "Kreditkarte",
+      "article": "die",
+      "verified": false,
+      "category": "Form doldurma"
+    },
+    "a1_0511": {
+      "id": "a1_0511",
+      "word": "Toilette",
+      "article": "die",
+      "verified": false,
+      "category": "Günlük ihtiyaçlar"
+    },
+    "a1_0539": {
+      "id": "a1_0539",
+      "word": "Kleidung",
+      "article": "die",
+      "verified": false,
+      "category": "Günlük ihtiyaçlar"
+    },
+    "a1_0540": {
+      "id": "a1_0540",
+      "word": "Schuhe",
+      "article": "die",
+      "verified": false,
+      "category": "Günlük ihtiyaçlar"
+    },
+    "a1_0541": {
+      "id": "a1_0541",
+      "word": "Jacke",
+      "article": "die",
+      "verified": false,
+      "category": "Günlük ihtiyaçlar"
+    },
+    "a1_0542": {
+      "id": "a1_0542",
+      "word": "Regenschirm",
+      "article": "der",
+      "verified": false,
+      "category": "Günlük ihtiyaçlar"
+    },
+    "a1_0558": {
+      "id": "a1_0558",
+      "word": "Ecke",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0559": {
+      "id": "a1_0559",
+      "word": "Kreuzung",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0560": {
+      "id": "a1_0560",
+      "word": "Ampel",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0561": {
+      "id": "a1_0561",
+      "word": "Brücke",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0562": {
+      "id": "a1_0562",
+      "word": "Tunnel",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0563": {
+      "id": "a1_0563",
+      "word": "Platz",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0564": {
+      "id": "a1_0564",
+      "word": "Park",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0565": {
+      "id": "a1_0565",
+      "word": "Karte",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0566": {
+      "id": "a1_0566",
+      "word": "Weg",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0567": {
+      "id": "a1_0567",
+      "word": "Richtung",
+      "article": "die",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0568": {
+      "id": "a1_0568",
+      "word": "Norden",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0569": {
+      "id": "a1_0569",
+      "word": "Süden",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0570": {
+      "id": "a1_0570",
+      "word": "Osten",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0571": {
+      "id": "a1_0571",
+      "word": "Westen",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0572": {
+      "id": "a1_0572",
+      "word": "Meter",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    },
+    "a1_0573": {
+      "id": "a1_0573",
+      "word": "Kilometer",
+      "article": "der",
+      "verified": false,
+      "category": "Basit yön tarifleri"
+    }
+  },
+  "byWord": {
+    "abend": {
+      "id": "a1_0015",
+      "article": "der",
+      "word": "Abend"
+    },
+    "name": {
+      "id": "a1_0034",
+      "article": "der",
+      "word": "Name"
+    },
+    "vorname": {
+      "id": "a1_0035",
+      "article": "der",
+      "word": "Vorname"
+    },
+    "nachname": {
+      "id": "a1_0036",
+      "article": "der",
+      "word": "Nachname"
+    },
+    "sprache": {
+      "id": "a1_0039",
+      "article": "die",
+      "word": "Sprache"
+    },
+    "land": {
+      "id": "a1_0043",
+      "article": "das",
+      "word": "Land"
+    },
+    "stadt": {
+      "id": "a1_0044",
+      "article": "die",
+      "word": "Stadt"
+    },
+    "adresse": {
+      "id": "a1_0045",
+      "article": "die",
+      "word": "Adresse"
+    },
+    "alter": {
+      "id": "a1_0046",
+      "article": "das",
+      "word": "Alter"
+    },
+    "beruf": {
+      "id": "a1_0048",
+      "article": "der",
+      "word": "Beruf"
+    },
+    "nationalität": {
+      "id": "a1_0052",
+      "article": "die",
+      "word": "Nationalität"
+    },
+    "pass": {
+      "id": "a1_0053",
+      "article": "der",
+      "word": "Pass"
+    },
+    "ausweis": {
+      "id": "a1_0054",
+      "article": "der",
+      "word": "Ausweis"
+    },
+    "telefonnummer": {
+      "id": "a1_0055",
+      "article": "die",
+      "word": "Telefonnummer"
+    },
+    "e-mail": {
+      "id": "a1_0056",
+      "article": "die",
+      "word": "E-Mail"
+    },
+    "frage": {
+      "id": "a1_0061",
+      "article": "die",
+      "word": "Frage"
+    },
+    "antwort": {
+      "id": "a1_0062",
+      "article": "die",
+      "word": "Antwort"
+    },
+    "information": {
+      "id": "a1_0063",
+      "article": "die",
+      "word": "Information"
+    },
+    "formular": {
+      "id": "a1_0064",
+      "article": "das",
+      "word": "Formular"
+    },
+    "unterschrift": {
+      "id": "a1_0065",
+      "article": "die",
+      "word": "Unterschrift"
+    },
+    "datum": {
+      "id": "a1_0066",
+      "article": "das",
+      "word": "Datum"
+    },
+    "geburtsdatum": {
+      "id": "a1_0067",
+      "article": "das",
+      "word": "Geburtsdatum"
+    },
+    "mutter": {
+      "id": "a1_0068",
+      "article": "die",
+      "word": "Mutter"
+    },
+    "vater": {
+      "id": "a1_0069",
+      "article": "der",
+      "word": "Vater"
+    },
+    "kind": {
+      "id": "a1_0070",
+      "article": "das",
+      "word": "Kind"
+    },
+    "sohn": {
+      "id": "a1_0071",
+      "article": "der",
+      "word": "Sohn"
+    },
+    "tochter": {
+      "id": "a1_0072",
+      "article": "die",
+      "word": "Tochter"
+    },
+    "bruder": {
+      "id": "a1_0073",
+      "article": "der",
+      "word": "Bruder"
+    },
+    "schwester": {
+      "id": "a1_0074",
+      "article": "die",
+      "word": "Schwester"
+    },
+    "großmutter": {
+      "id": "a1_0075",
+      "article": "die",
+      "word": "Großmutter"
+    },
+    "großvater": {
+      "id": "a1_0076",
+      "article": "der",
+      "word": "Großvater"
+    },
+    "eltern": {
+      "id": "a1_0077",
+      "article": "die",
+      "word": "Eltern"
+    },
+    "familie": {
+      "id": "a1_0078",
+      "article": "die",
+      "word": "Familie"
+    },
+    "ehemann": {
+      "id": "a1_0079",
+      "article": "der",
+      "word": "Ehemann"
+    },
+    "ehefrau": {
+      "id": "a1_0080",
+      "article": "die",
+      "word": "Ehefrau"
+    },
+    "baby": {
+      "id": "a1_0081",
+      "article": "das",
+      "word": "Baby"
+    },
+    "enkel": {
+      "id": "a1_0082",
+      "article": "der",
+      "word": "Enkel"
+    },
+    "enkelin": {
+      "id": "a1_0083",
+      "article": "die",
+      "word": "Enkelin"
+    },
+    "onkel": {
+      "id": "a1_0084",
+      "article": "der",
+      "word": "Onkel"
+    },
+    "tante": {
+      "id": "a1_0085",
+      "article": "die",
+      "word": "Tante"
+    },
+    "cousin": {
+      "id": "a1_0086",
+      "article": "der",
+      "word": "Cousin"
+    },
+    "cousine": {
+      "id": "a1_0087",
+      "article": "die",
+      "word": "Cousine"
+    },
+    "schwiegermutter": {
+      "id": "a1_0088",
+      "article": "die",
+      "word": "Schwiegermutter"
+    },
+    "schwiegervater": {
+      "id": "a1_0089",
+      "article": "der",
+      "word": "Schwiegervater"
+    },
+    "schwager": {
+      "id": "a1_0090",
+      "article": "der",
+      "word": "Schwager"
+    },
+    "schwägerin": {
+      "id": "a1_0091",
+      "article": "die",
+      "word": "Schwägerin"
+    },
+    "neffe": {
+      "id": "a1_0092",
+      "article": "der",
+      "word": "Neffe"
+    },
+    "nichte": {
+      "id": "a1_0093",
+      "article": "die",
+      "word": "Nichte"
+    },
+    "verwandte": {
+      "id": "a1_0094",
+      "article": "der",
+      "word": "Verwandte"
+    },
+    "paar": {
+      "id": "a1_0095",
+      "article": "das",
+      "word": "Paar"
+    },
+    "haus": {
+      "id": "a1_0102",
+      "article": "das",
+      "word": "Haus"
+    },
+    "wohnung": {
+      "id": "a1_0103",
+      "article": "die",
+      "word": "Wohnung"
+    },
+    "zimmer": {
+      "id": "a1_0104",
+      "article": "das",
+      "word": "Zimmer"
+    },
+    "küche": {
+      "id": "a1_0105",
+      "article": "die",
+      "word": "Küche"
+    },
+    "bad": {
+      "id": "a1_0106",
+      "article": "das",
+      "word": "Bad"
+    },
+    "schlafzimmer": {
+      "id": "a1_0107",
+      "article": "das",
+      "word": "Schlafzimmer"
+    },
+    "wohnzimmer": {
+      "id": "a1_0108",
+      "article": "das",
+      "word": "Wohnzimmer"
+    },
+    "tür": {
+      "id": "a1_0109",
+      "article": "die",
+      "word": "Tür"
+    },
+    "fenster": {
+      "id": "a1_0110",
+      "article": "das",
+      "word": "Fenster"
+    },
+    "bett": {
+      "id": "a1_0111",
+      "article": "das",
+      "word": "Bett"
+    },
+    "tisch": {
+      "id": "a1_0112",
+      "article": "der",
+      "word": "Tisch"
+    },
+    "stuhl": {
+      "id": "a1_0113",
+      "article": "der",
+      "word": "Stuhl"
+    },
+    "sofa": {
+      "id": "a1_0114",
+      "article": "das",
+      "word": "Sofa"
+    },
+    "schrank": {
+      "id": "a1_0115",
+      "article": "der",
+      "word": "Schrank"
+    },
+    "regal": {
+      "id": "a1_0116",
+      "article": "das",
+      "word": "Regal"
+    },
+    "lampe": {
+      "id": "a1_0117",
+      "article": "die",
+      "word": "Lampe"
+    },
+    "teppich": {
+      "id": "a1_0118",
+      "article": "der",
+      "word": "Teppich"
+    },
+    "spiegel": {
+      "id": "a1_0119",
+      "article": "der",
+      "word": "Spiegel"
+    },
+    "kühlschrank": {
+      "id": "a1_0120",
+      "article": "der",
+      "word": "Kühlschrank"
+    },
+    "herd": {
+      "id": "a1_0121",
+      "article": "der",
+      "word": "Herd"
+    },
+    "waschmaschine": {
+      "id": "a1_0122",
+      "article": "die",
+      "word": "Waschmaschine"
+    },
+    "schlüssel": {
+      "id": "a1_0123",
+      "article": "der",
+      "word": "Schlüssel"
+    },
+    "garten": {
+      "id": "a1_0124",
+      "article": "der",
+      "word": "Garten"
+    },
+    "balkon": {
+      "id": "a1_0125",
+      "article": "der",
+      "word": "Balkon"
+    },
+    "keller": {
+      "id": "a1_0126",
+      "article": "der",
+      "word": "Keller"
+    },
+    "dach": {
+      "id": "a1_0127",
+      "article": "das",
+      "word": "Dach"
+    },
+    "treppenhaus": {
+      "id": "a1_0128",
+      "article": "das",
+      "word": "Treppenhaus"
+    },
+    "aufzug": {
+      "id": "a1_0129",
+      "article": "der",
+      "word": "Aufzug"
+    },
+    "miete": {
+      "id": "a1_0130",
+      "article": "die",
+      "word": "Miete"
+    },
+    "möbel": {
+      "id": "a1_0131",
+      "article": "das",
+      "word": "Möbel"
+    },
+    "heizung": {
+      "id": "a1_0132",
+      "article": "die",
+      "word": "Heizung"
+    },
+    "strom": {
+      "id": "a1_0133",
+      "article": "der",
+      "word": "Strom"
+    },
+    "supermarkt": {
+      "id": "a1_0136",
+      "article": "der",
+      "word": "Supermarkt"
+    },
+    "brot": {
+      "id": "a1_0137",
+      "article": "das",
+      "word": "Brot",
+      "expectedVerified": "das",
+      "verified": true
+    },
+    "milch": {
+      "id": "a1_0138",
+      "article": "die",
+      "word": "Milch",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "euro": {
+      "id": "a1_0141",
+      "article": "der",
+      "word": "Euro"
+    },
+    "preis": {
+      "id": "a1_0142",
+      "article": "der",
+      "word": "Preis"
+    },
+    "obst": {
+      "id": "a1_0145",
+      "article": "das",
+      "word": "Obst"
+    },
+    "gemüse": {
+      "id": "a1_0146",
+      "article": "das",
+      "word": "Gemüse"
+    },
+    "apfel": {
+      "id": "a1_0147",
+      "article": "der",
+      "word": "Apfel",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "banane": {
+      "id": "a1_0148",
+      "article": "die",
+      "word": "Banane",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "tomate": {
+      "id": "a1_0149",
+      "article": "die",
+      "word": "Tomate",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "kartoffel": {
+      "id": "a1_0150",
+      "article": "die",
+      "word": "Kartoffel",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "reis": {
+      "id": "a1_0151",
+      "article": "der",
+      "word": "Reis",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "nudeln": {
+      "id": "a1_0152",
+      "article": "die",
+      "word": "Nudeln"
+    },
+    "fleisch": {
+      "id": "a1_0153",
+      "article": "das",
+      "word": "Fleisch",
+      "expectedVerified": "das",
+      "verified": true
+    },
+    "fisch": {
+      "id": "a1_0154",
+      "article": "der",
+      "word": "Fisch",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "käse": {
+      "id": "a1_0155",
+      "article": "der",
+      "word": "Käse",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "ei": {
+      "id": "a1_0156",
+      "article": "das",
+      "word": "Ei",
+      "expectedVerified": "das",
+      "verified": true
+    },
+    "butter": {
+      "id": "a1_0157",
+      "article": "die",
+      "word": "Butter",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "zucker": {
+      "id": "a1_0158",
+      "article": "der",
+      "word": "Zucker"
+    },
+    "salz": {
+      "id": "a1_0159",
+      "article": "das",
+      "word": "Salz"
+    },
+    "öl": {
+      "id": "a1_0160",
+      "article": "das",
+      "word": "Öl"
+    },
+    "wasser": {
+      "id": "a1_0161",
+      "article": "das",
+      "word": "Wasser",
+      "expectedVerified": "das",
+      "verified": true
+    },
+    "saft": {
+      "id": "a1_0162",
+      "article": "der",
+      "word": "Saft",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "kaffee": {
+      "id": "a1_0163",
+      "article": "der",
+      "word": "Kaffee",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "tee": {
+      "id": "a1_0164",
+      "article": "der",
+      "word": "Tee",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "tüte": {
+      "id": "a1_0165",
+      "article": "die",
+      "word": "Tüte"
+    },
+    "kasse": {
+      "id": "a1_0166",
+      "article": "die",
+      "word": "Kasse"
+    },
+    "schlange": {
+      "id": "a1_0167",
+      "article": "die",
+      "word": "Schlange"
+    },
+    "angebot": {
+      "id": "a1_0168",
+      "article": "das",
+      "word": "Angebot"
+    },
+    "arbeit": {
+      "id": "a1_0170",
+      "article": "die",
+      "word": "Arbeit"
+    },
+    "kollege": {
+      "id": "a1_0171",
+      "article": "der",
+      "word": "Kollege"
+    },
+    "lager": {
+      "id": "a1_0173",
+      "article": "das",
+      "word": "Lager"
+    },
+    "chef": {
+      "id": "a1_0174",
+      "article": "der",
+      "word": "Chef"
+    },
+    "firma": {
+      "id": "a1_0175",
+      "article": "die",
+      "word": "Firma"
+    },
+    "büro": {
+      "id": "a1_0176",
+      "article": "das",
+      "word": "Büro"
+    },
+    "schicht": {
+      "id": "a1_0177",
+      "article": "die",
+      "word": "Schicht"
+    },
+    "pause": {
+      "id": "a1_0178",
+      "article": "die",
+      "word": "Pause"
+    },
+    "gehalt": {
+      "id": "a1_0179",
+      "article": "das",
+      "word": "Gehalt"
+    },
+    "vertrag": {
+      "id": "a1_0180",
+      "article": "der",
+      "word": "Vertrag"
+    },
+    "bewerbung": {
+      "id": "a1_0181",
+      "article": "die",
+      "word": "Bewerbung"
+    },
+    "lebenslauf": {
+      "id": "a1_0182",
+      "article": "der",
+      "word": "Lebenslauf"
+    },
+    "termin": {
+      "id": "a1_0183",
+      "article": "der",
+      "word": "Termin"
+    },
+    "besprechung": {
+      "id": "a1_0184",
+      "article": "die",
+      "word": "Besprechung"
+    },
+    "aufgabe": {
+      "id": "a1_0185",
+      "article": "die",
+      "word": "Aufgabe"
+    },
+    "projekt": {
+      "id": "a1_0186",
+      "article": "das",
+      "word": "Projekt"
+    },
+    "gruppe": {
+      "id": "a1_0187",
+      "article": "die",
+      "word": "Gruppe"
+    },
+    "kunde": {
+      "id": "a1_0188",
+      "article": "der",
+      "word": "Kunde"
+    },
+    "paket": {
+      "id": "a1_0189",
+      "article": "das",
+      "word": "Paket"
+    },
+    "karton": {
+      "id": "a1_0190",
+      "article": "der",
+      "word": "Karton"
+    },
+    "palette": {
+      "id": "a1_0191",
+      "article": "die",
+      "word": "Palette"
+    },
+    "stapler": {
+      "id": "a1_0192",
+      "article": "der",
+      "word": "Stapler"
+    },
+    "bestellung": {
+      "id": "a1_0194",
+      "article": "die",
+      "word": "Bestellung"
+    },
+    "lieferung": {
+      "id": "a1_0195",
+      "article": "die",
+      "word": "Lieferung"
+    },
+    "uniform": {
+      "id": "a1_0196",
+      "article": "die",
+      "word": "Uniform"
+    },
+    "helm": {
+      "id": "a1_0197",
+      "article": "der",
+      "word": "Helm"
+    },
+    "sicherheit": {
+      "id": "a1_0198",
+      "article": "die",
+      "word": "Sicherheit"
+    },
+    "feierabend": {
+      "id": "a1_0199",
+      "article": "der",
+      "word": "Feierabend"
+    },
+    "überstunden": {
+      "id": "a1_0200",
+      "article": "die",
+      "word": "Überstunden"
+    },
+    "urlaub": {
+      "id": "a1_0201",
+      "article": "der",
+      "word": "Urlaub"
+    },
+    "bus": {
+      "id": "a1_0205",
+      "article": "der",
+      "word": "Bus"
+    },
+    "bahnhof": {
+      "id": "a1_0206",
+      "article": "der",
+      "word": "Bahnhof"
+    },
+    "fahrkarte": {
+      "id": "a1_0207",
+      "article": "die",
+      "word": "Fahrkarte"
+    },
+    "zug": {
+      "id": "a1_0208",
+      "article": "der",
+      "word": "Zug"
+    },
+    "s-bahn": {
+      "id": "a1_0209",
+      "article": "die",
+      "word": "S-Bahn"
+    },
+    "u-bahn": {
+      "id": "a1_0210",
+      "article": "die",
+      "word": "U-Bahn"
+    },
+    "straßenbahn": {
+      "id": "a1_0211",
+      "article": "die",
+      "word": "Straßenbahn"
+    },
+    "taxi": {
+      "id": "a1_0212",
+      "article": "das",
+      "word": "Taxi"
+    },
+    "auto": {
+      "id": "a1_0213",
+      "article": "das",
+      "word": "Auto"
+    },
+    "fahrrad": {
+      "id": "a1_0214",
+      "article": "das",
+      "word": "Fahrrad"
+    },
+    "flugzeug": {
+      "id": "a1_0215",
+      "article": "das",
+      "word": "Flugzeug"
+    },
+    "flughafen": {
+      "id": "a1_0216",
+      "article": "der",
+      "word": "Flughafen"
+    },
+    "haltestelle": {
+      "id": "a1_0217",
+      "article": "die",
+      "word": "Haltestelle"
+    },
+    "gleis": {
+      "id": "a1_0218",
+      "article": "das",
+      "word": "Gleis"
+    },
+    "fahrplan": {
+      "id": "a1_0219",
+      "article": "der",
+      "word": "Fahrplan"
+    },
+    "verspätung": {
+      "id": "a1_0220",
+      "article": "die",
+      "word": "Verspätung"
+    },
+    "straße": {
+      "id": "a1_0227",
+      "article": "die",
+      "word": "Straße"
+    },
+    "ampel": {
+      "id": "a1_0228",
+      "article": "die",
+      "word": "Ampel"
+    },
+    "kreuzung": {
+      "id": "a1_0229",
+      "article": "die",
+      "word": "Kreuzung"
+    },
+    "brücke": {
+      "id": "a1_0230",
+      "article": "die",
+      "word": "Brücke"
+    },
+    "parkplatz": {
+      "id": "a1_0231",
+      "article": "der",
+      "word": "Parkplatz"
+    },
+    "tankstelle": {
+      "id": "a1_0232",
+      "article": "die",
+      "word": "Tankstelle"
+    },
+    "benzin": {
+      "id": "a1_0233",
+      "article": "das",
+      "word": "Benzin"
+    },
+    "führerschein": {
+      "id": "a1_0234",
+      "article": "der",
+      "word": "Führerschein"
+    },
+    "ticket": {
+      "id": "a1_0235",
+      "article": "das",
+      "word": "Ticket"
+    },
+    "monatskarte": {
+      "id": "a1_0236",
+      "article": "die",
+      "word": "Monatskarte"
+    },
+    "fuß": {
+      "id": "a1_0237",
+      "article": "der",
+      "word": "Fuß"
+    },
+    "entfernung": {
+      "id": "a1_0238",
+      "article": "die",
+      "word": "Entfernung"
+    },
+    "uhr": {
+      "id": "a1_0239",
+      "article": "die",
+      "word": "Uhr"
+    },
+    "stunde": {
+      "id": "a1_0247",
+      "article": "die",
+      "word": "Stunde"
+    },
+    "minute": {
+      "id": "a1_0248",
+      "article": "die",
+      "word": "Minute"
+    },
+    "sekunde": {
+      "id": "a1_0249",
+      "article": "die",
+      "word": "Sekunde"
+    },
+    "viertel": {
+      "id": "a1_0250",
+      "article": "das",
+      "word": "Viertel"
+    },
+    "zeit": {
+      "id": "a1_0261",
+      "article": "die",
+      "word": "Zeit"
+    },
+    "arbeitszeit": {
+      "id": "a1_0262",
+      "article": "die",
+      "word": "Arbeitszeit"
+    },
+    "nacht": {
+      "id": "a1_0264",
+      "article": "die",
+      "word": "Nacht"
+    },
+    "mittag": {
+      "id": "a1_0265",
+      "article": "der",
+      "word": "Mittag"
+    },
+    "nachmittag": {
+      "id": "a1_0266",
+      "article": "der",
+      "word": "Nachmittag"
+    },
+    "vormittag": {
+      "id": "a1_0267",
+      "article": "der",
+      "word": "Vormittag"
+    },
+    "wochenende": {
+      "id": "a1_0268",
+      "article": "das",
+      "word": "Wochenende"
+    },
+    "wochentag": {
+      "id": "a1_0269",
+      "article": "der",
+      "word": "Wochentag"
+    },
+    "uhrzeit": {
+      "id": "a1_0270",
+      "article": "die",
+      "word": "Uhrzeit"
+    },
+    "montag": {
+      "id": "a1_0273",
+      "article": "der",
+      "word": "Montag"
+    },
+    "dienstag": {
+      "id": "a1_0274",
+      "article": "der",
+      "word": "Dienstag"
+    },
+    "mittwoch": {
+      "id": "a1_0275",
+      "article": "der",
+      "word": "Mittwoch"
+    },
+    "donnerstag": {
+      "id": "a1_0276",
+      "article": "der",
+      "word": "Donnerstag"
+    },
+    "freitag": {
+      "id": "a1_0277",
+      "article": "der",
+      "word": "Freitag"
+    },
+    "samstag": {
+      "id": "a1_0278",
+      "article": "der",
+      "word": "Samstag"
+    },
+    "sonntag": {
+      "id": "a1_0279",
+      "article": "der",
+      "word": "Sonntag"
+    },
+    "jahr": {
+      "id": "a1_0280",
+      "article": "das",
+      "word": "Jahr"
+    },
+    "geburtstag": {
+      "id": "a1_0281",
+      "article": "der",
+      "word": "Geburtstag"
+    },
+    "monat": {
+      "id": "a1_0282",
+      "article": "der",
+      "word": "Monat"
+    },
+    "januar": {
+      "id": "a1_0283",
+      "article": "der",
+      "word": "Januar"
+    },
+    "februar": {
+      "id": "a1_0284",
+      "article": "der",
+      "word": "Februar"
+    },
+    "märz": {
+      "id": "a1_0285",
+      "article": "der",
+      "word": "März"
+    },
+    "april": {
+      "id": "a1_0286",
+      "article": "der",
+      "word": "April"
+    },
+    "mai": {
+      "id": "a1_0287",
+      "article": "der",
+      "word": "Mai"
+    },
+    "juni": {
+      "id": "a1_0288",
+      "article": "der",
+      "word": "Juni"
+    },
+    "juli": {
+      "id": "a1_0289",
+      "article": "der",
+      "word": "Juli"
+    },
+    "august": {
+      "id": "a1_0290",
+      "article": "der",
+      "word": "August"
+    },
+    "september": {
+      "id": "a1_0291",
+      "article": "der",
+      "word": "September"
+    },
+    "oktober": {
+      "id": "a1_0292",
+      "article": "der",
+      "word": "Oktober"
+    },
+    "november": {
+      "id": "a1_0293",
+      "article": "der",
+      "word": "November"
+    },
+    "dezember": {
+      "id": "a1_0294",
+      "article": "der",
+      "word": "Dezember"
+    },
+    "frühling": {
+      "id": "a1_0295",
+      "article": "der",
+      "word": "Frühling"
+    },
+    "sommer": {
+      "id": "a1_0296",
+      "article": "der",
+      "word": "Sommer"
+    },
+    "herbst": {
+      "id": "a1_0297",
+      "article": "der",
+      "word": "Herbst"
+    },
+    "winter": {
+      "id": "a1_0298",
+      "article": "der",
+      "word": "Winter"
+    },
+    "woche": {
+      "id": "a1_0299",
+      "article": "die",
+      "word": "Woche"
+    },
+    "tag": {
+      "id": "a1_0300",
+      "article": "der",
+      "word": "Tag"
+    },
+    "kalender": {
+      "id": "a1_0301",
+      "article": "der",
+      "word": "Kalender"
+    },
+    "feiertag": {
+      "id": "a1_0302",
+      "article": "der",
+      "word": "Feiertag"
+    },
+    "silvester": {
+      "id": "a1_0305",
+      "article": "der",
+      "word": "Silvester"
+    },
+    "arzt": {
+      "id": "a1_0306",
+      "article": "der",
+      "word": "Arzt"
+    },
+    "krankheit": {
+      "id": "a1_0307",
+      "article": "die",
+      "word": "Krankheit"
+    },
+    "schmerzen": {
+      "id": "a1_0308",
+      "article": "die",
+      "word": "Schmerzen"
+    },
+    "krankenhaus": {
+      "id": "a1_0309",
+      "article": "das",
+      "word": "Krankenhaus"
+    },
+    "apotheke": {
+      "id": "a1_0310",
+      "article": "die",
+      "word": "Apotheke"
+    },
+    "medikament": {
+      "id": "a1_0311",
+      "article": "das",
+      "word": "Medikament"
+    },
+    "rezept": {
+      "id": "a1_0312",
+      "article": "das",
+      "word": "Rezept"
+    },
+    "notfall": {
+      "id": "a1_0314",
+      "article": "der",
+      "word": "Notfall"
+    },
+    "kopfschmerzen": {
+      "id": "a1_0315",
+      "article": "die",
+      "word": "Kopfschmerzen"
+    },
+    "bauchschmerzen": {
+      "id": "a1_0316",
+      "article": "die",
+      "word": "Bauchschmerzen"
+    },
+    "fieber": {
+      "id": "a1_0317",
+      "article": "das",
+      "word": "Fieber"
+    },
+    "husten": {
+      "id": "a1_0318",
+      "article": "der",
+      "word": "Husten"
+    },
+    "schnupfen": {
+      "id": "a1_0319",
+      "article": "der",
+      "word": "Schnupfen"
+    },
+    "allergie": {
+      "id": "a1_0320",
+      "article": "die",
+      "word": "Allergie"
+    },
+    "impfung": {
+      "id": "a1_0321",
+      "article": "die",
+      "word": "Impfung"
+    },
+    "blut": {
+      "id": "a1_0322",
+      "article": "das",
+      "word": "Blut"
+    },
+    "herz": {
+      "id": "a1_0323",
+      "article": "das",
+      "word": "Herz"
+    },
+    "rücken": {
+      "id": "a1_0324",
+      "article": "der",
+      "word": "Rücken"
+    },
+    "kopf": {
+      "id": "a1_0325",
+      "article": "der",
+      "word": "Kopf"
+    },
+    "hand": {
+      "id": "a1_0326",
+      "article": "die",
+      "word": "Hand"
+    },
+    "auge": {
+      "id": "a1_0328",
+      "article": "das",
+      "word": "Auge"
+    },
+    "zahn": {
+      "id": "a1_0329",
+      "article": "der",
+      "word": "Zahn"
+    },
+    "zahnarzt": {
+      "id": "a1_0330",
+      "article": "der",
+      "word": "Zahnarzt"
+    },
+    "krankenversicherung": {
+      "id": "a1_0331",
+      "article": "die",
+      "word": "Krankenversicherung"
+    },
+    "krankmeldung": {
+      "id": "a1_0332",
+      "article": "die",
+      "word": "Krankmeldung"
+    },
+    "hilfe": {
+      "id": "a1_0339",
+      "article": "die",
+      "word": "Hilfe"
+    },
+    "speisekarte": {
+      "id": "a1_0340",
+      "article": "die",
+      "word": "Speisekarte"
+    },
+    "restaurant": {
+      "id": "a1_0343",
+      "article": "das",
+      "word": "Restaurant"
+    },
+    "café": {
+      "id": "a1_0344",
+      "article": "das",
+      "word": "Café"
+    },
+    "kellner": {
+      "id": "a1_0345",
+      "article": "der",
+      "word": "Kellner"
+    },
+    "kellnerin": {
+      "id": "a1_0346",
+      "article": "die",
+      "word": "Kellnerin"
+    },
+    "reservierung": {
+      "id": "a1_0348",
+      "article": "die",
+      "word": "Reservierung"
+    },
+    "frühstück": {
+      "id": "a1_0349",
+      "article": "das",
+      "word": "Frühstück"
+    },
+    "mittagessen": {
+      "id": "a1_0350",
+      "article": "das",
+      "word": "Mittagessen"
+    },
+    "abendessen": {
+      "id": "a1_0351",
+      "article": "das",
+      "word": "Abendessen"
+    },
+    "suppe": {
+      "id": "a1_0352",
+      "article": "die",
+      "word": "Suppe",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "salat": {
+      "id": "a1_0353",
+      "article": "der",
+      "word": "Salat",
+      "expectedVerified": "der",
+      "verified": true
+    },
+    "pizza": {
+      "id": "a1_0354",
+      "article": "die",
+      "word": "Pizza"
+    },
+    "schnitzel": {
+      "id": "a1_0355",
+      "article": "das",
+      "word": "Schnitzel"
+    },
+    "wurst": {
+      "id": "a1_0356",
+      "article": "die",
+      "word": "Wurst",
+      "expectedVerified": "die",
+      "verified": true
+    },
+    "rechnung": {
+      "id": "a1_0358",
+      "article": "die",
+      "word": "Rechnung"
+    },
+    "trinkgeld": {
+      "id": "a1_0359",
+      "article": "das",
+      "word": "Trinkgeld"
+    },
+    "essen": {
+      "id": "a1_0364",
+      "article": "das",
+      "word": "Essen"
+    },
+    "trinken": {
+      "id": "a1_0365",
+      "article": "das",
+      "word": "Trinken"
+    },
+    "telefon": {
+      "id": "a1_0374",
+      "article": "das",
+      "word": "Telefon"
+    },
+    "nachricht": {
+      "id": "a1_0376",
+      "article": "die",
+      "word": "Nachricht"
+    },
+    "handy": {
+      "id": "a1_0377",
+      "article": "das",
+      "word": "Handy"
+    },
+    "nummer": {
+      "id": "a1_0378",
+      "article": "die",
+      "word": "Nummer"
+    },
+    "anruf": {
+      "id": "a1_0379",
+      "article": "der",
+      "word": "Anruf"
+    },
+    "anrufbeantworter": {
+      "id": "a1_0380",
+      "article": "der",
+      "word": "Anrufbeantworter"
+    },
+    "sms": {
+      "id": "a1_0382",
+      "article": "die",
+      "word": "SMS"
+    },
+    "kurznachricht": {
+      "id": "a1_0383",
+      "article": "die",
+      "word": "Kurznachricht"
+    },
+    "internet": {
+      "id": "a1_0384",
+      "article": "das",
+      "word": "Internet"
+    },
+    "wlan": {
+      "id": "a1_0385",
+      "article": "das",
+      "word": "WLAN"
+    },
+    "passwort": {
+      "id": "a1_0386",
+      "article": "das",
+      "word": "Passwort"
+    },
+    "verbindung": {
+      "id": "a1_0394",
+      "article": "die",
+      "word": "Verbindung"
+    },
+    "kontakt": {
+      "id": "a1_0395",
+      "article": "der",
+      "word": "Kontakt"
+    },
+    "foto": {
+      "id": "a1_0396",
+      "article": "das",
+      "word": "Foto"
+    },
+    "video": {
+      "id": "a1_0397",
+      "article": "das",
+      "word": "Video"
+    },
+    "anrufliste": {
+      "id": "a1_0398",
+      "article": "die",
+      "word": "Anrufliste"
+    },
+    "akku": {
+      "id": "a1_0402",
+      "article": "der",
+      "word": "Akku"
+    },
+    "anwendung": {
+      "id": "a1_0404",
+      "article": "die",
+      "word": "Anwendung"
+    },
+    "fehler": {
+      "id": "a1_0405",
+      "article": "der",
+      "word": "Fehler"
+    },
+    "geburtsort": {
+      "id": "a1_0415",
+      "article": "der",
+      "word": "Geburtsort"
+    },
+    "staatsangehörigkeit": {
+      "id": "a1_0416",
+      "article": "die",
+      "word": "Staatsangehörigkeit"
+    },
+    "geschlecht": {
+      "id": "a1_0417",
+      "article": "das",
+      "word": "Geschlecht"
+    },
+    "familienstand": {
+      "id": "a1_0420",
+      "article": "der",
+      "word": "Familienstand"
+    },
+    "postleitzahl": {
+      "id": "a1_0421",
+      "article": "die",
+      "word": "Postleitzahl"
+    },
+    "arbeitgeber": {
+      "id": "a1_0426",
+      "article": "der",
+      "word": "Arbeitgeber"
+    },
+    "einkommen": {
+      "id": "a1_0427",
+      "article": "das",
+      "word": "Einkommen"
+    },
+    "konto": {
+      "id": "a1_0428",
+      "article": "das",
+      "word": "Konto"
+    },
+    "bank": {
+      "id": "a1_0429",
+      "article": "die",
+      "word": "Bank"
+    },
+    "iban": {
+      "id": "a1_0430",
+      "article": "die",
+      "word": "IBAN"
+    },
+    "steuer": {
+      "id": "a1_0431",
+      "article": "die",
+      "word": "Steuer"
+    },
+    "steuernummer": {
+      "id": "a1_0432",
+      "article": "die",
+      "word": "Steuernummer"
+    },
+    "antrag": {
+      "id": "a1_0433",
+      "article": "der",
+      "word": "Antrag"
+    },
+    "bescheinigung": {
+      "id": "a1_0434",
+      "article": "die",
+      "word": "Bescheinigung"
+    },
+    "kopie": {
+      "id": "a1_0435",
+      "article": "die",
+      "word": "Kopie"
+    },
+    "original": {
+      "id": "a1_0436",
+      "article": "das",
+      "word": "Original"
+    },
+    "stempel": {
+      "id": "a1_0437",
+      "article": "der",
+      "word": "Stempel"
+    },
+    "ort": {
+      "id": "a1_0439",
+      "article": "der",
+      "word": "Ort"
+    },
+    "anmeldung": {
+      "id": "a1_0442",
+      "article": "die",
+      "word": "Anmeldung"
+    },
+    "anmeldungstag": {
+      "id": "a1_0443",
+      "article": "der",
+      "word": "Anmeldungstag"
+    },
+    "arbeitsstelle": {
+      "id": "a1_0444",
+      "article": "die",
+      "word": "Arbeitsstelle"
+    },
+    "aufenthaltstitel": {
+      "id": "a1_0445",
+      "article": "der",
+      "word": "Aufenthaltstitel"
+    },
+    "ausbildung": {
+      "id": "a1_0446",
+      "article": "die",
+      "word": "Ausbildung"
+    },
+    "beginn": {
+      "id": "a1_0447",
+      "article": "der",
+      "word": "Beginn"
+    },
+    "bezahlung": {
+      "id": "a1_0448",
+      "article": "die",
+      "word": "Bezahlung"
+    },
+    "bundesland": {
+      "id": "a1_0450",
+      "article": "das",
+      "word": "Bundesland"
+    },
+    "datum der anmeldung": {
+      "id": "a1_0451",
+      "article": "das",
+      "word": "Datum der Anmeldung"
+    },
+    "dokument": {
+      "id": "a1_0452",
+      "article": "das",
+      "word": "Dokument"
+    },
+    "ende": {
+      "id": "a1_0453",
+      "article": "das",
+      "word": "Ende"
+    },
+    "familienmitglied": {
+      "id": "a1_0454",
+      "article": "das",
+      "word": "Familienmitglied"
+    },
+    "familienname": {
+      "id": "a1_0455",
+      "article": "der",
+      "word": "Familienname"
+    },
+    "geburtsjahr": {
+      "id": "a1_0456",
+      "article": "das",
+      "word": "Geburtsjahr"
+    },
+    "geburtsland": {
+      "id": "a1_0457",
+      "article": "das",
+      "word": "Geburtsland"
+    },
+    "gebühr": {
+      "id": "a1_0458",
+      "article": "die",
+      "word": "Gebühr"
+    },
+    "handynummer": {
+      "id": "a1_0462",
+      "article": "die",
+      "word": "Handynummer"
+    },
+    "hausnummer": {
+      "id": "a1_0463",
+      "article": "die",
+      "word": "Hausnummer"
+    },
+    "heimatland": {
+      "id": "a1_0464",
+      "article": "das",
+      "word": "Heimatland"
+    },
+    "identitätskarte": {
+      "id": "a1_0465",
+      "article": "die",
+      "word": "Identitätskarte"
+    },
+    "kenntnisse": {
+      "id": "a1_0466",
+      "article": "die",
+      "word": "Kenntnisse"
+    },
+    "kontaktperson": {
+      "id": "a1_0467",
+      "article": "die",
+      "word": "Kontaktperson"
+    },
+    "kurs": {
+      "id": "a1_0468",
+      "article": "der",
+      "word": "Kurs"
+    },
+    "kursbeginn": {
+      "id": "a1_0469",
+      "article": "der",
+      "word": "Kursbeginn"
+    },
+    "kursende": {
+      "id": "a1_0470",
+      "article": "das",
+      "word": "Kursende"
+    },
+    "kursnummer": {
+      "id": "a1_0471",
+      "article": "die",
+      "word": "Kursnummer"
+    },
+    "kurstermin": {
+      "id": "a1_0472",
+      "article": "der",
+      "word": "Kurstermin"
+    },
+    "überweisung": {
+      "id": "a1_0474",
+      "article": "die",
+      "word": "Überweisung"
+    },
+    "muttersprache": {
+      "id": "a1_0475",
+      "article": "die",
+      "word": "Muttersprache"
+    },
+    "passnummer": {
+      "id": "a1_0476",
+      "article": "die",
+      "word": "Passnummer"
+    },
+    "plz": {
+      "id": "a1_0477",
+      "article": "die",
+      "word": "PLZ"
+    },
+    "prüfungsdatum": {
+      "id": "a1_0478",
+      "article": "das",
+      "word": "Prüfungsdatum"
+    },
+    "prüfungsergebnis": {
+      "id": "a1_0479",
+      "article": "das",
+      "word": "Prüfungsergebnis"
+    },
+    "prüfungstag": {
+      "id": "a1_0480",
+      "article": "der",
+      "word": "Prüfungstag"
+    },
+    "prüfungsteilnehmer": {
+      "id": "a1_0481",
+      "article": "der",
+      "word": "Prüfungsteilnehmer"
+    },
+    "prüfungszentrum": {
+      "id": "a1_0482",
+      "article": "das",
+      "word": "Prüfungszentrum"
+    },
+    "reiseausweis": {
+      "id": "a1_0483",
+      "article": "der",
+      "word": "Reiseausweis"
+    },
+    "schulbildung": {
+      "id": "a1_0484",
+      "article": "die",
+      "word": "Schulbildung"
+    },
+    "schüler": {
+      "id": "a1_0485",
+      "article": "der",
+      "word": "Schüler"
+    },
+    "schülerin": {
+      "id": "a1_0486",
+      "article": "die",
+      "word": "Schülerin"
+    },
+    "staat": {
+      "id": "a1_0488",
+      "article": "der",
+      "word": "Staat"
+    },
+    "staatsbürger": {
+      "id": "a1_0489",
+      "article": "der",
+      "word": "Staatsbürger"
+    },
+    "studium": {
+      "id": "a1_0491",
+      "article": "das",
+      "word": "Studium"
+    },
+    "tag der ausstellung": {
+      "id": "a1_0492",
+      "article": "der",
+      "word": "Tag der Ausstellung"
+    },
+    "teilnahme": {
+      "id": "a1_0493",
+      "article": "die",
+      "word": "Teilnahme"
+    },
+    "teilnehmer": {
+      "id": "a1_0494",
+      "article": "der",
+      "word": "Teilnehmer"
+    },
+    "teilnehmernummer": {
+      "id": "a1_0495",
+      "article": "die",
+      "word": "Teilnehmernummer"
+    },
+    "universität": {
+      "id": "a1_0496",
+      "article": "die",
+      "word": "Universität"
+    },
+    "unterschrift der eltern": {
+      "id": "a1_0497",
+      "article": "die",
+      "word": "Unterschrift der Eltern"
+    },
+    "unterschrift des teilnehmers": {
+      "id": "a1_0498",
+      "article": "die",
+      "word": "Unterschrift des Teilnehmers"
+    },
+    "visum": {
+      "id": "a1_0500",
+      "article": "das",
+      "word": "Visum"
+    },
+    "wohnort": {
+      "id": "a1_0501",
+      "article": "der",
+      "word": "Wohnort"
+    },
+    "zahlung": {
+      "id": "a1_0502",
+      "article": "die",
+      "word": "Zahlung"
+    },
+    "anfänger": {
+      "id": "a1_0503",
+      "article": "der",
+      "word": "Anfänger"
+    },
+    "kreditkarte": {
+      "id": "a1_0507",
+      "article": "die",
+      "word": "Kreditkarte"
+    },
+    "toilette": {
+      "id": "a1_0511",
+      "article": "die",
+      "word": "Toilette"
+    },
+    "kleidung": {
+      "id": "a1_0539",
+      "article": "die",
+      "word": "Kleidung"
+    },
+    "schuhe": {
+      "id": "a1_0540",
+      "article": "die",
+      "word": "Schuhe"
+    },
+    "jacke": {
+      "id": "a1_0541",
+      "article": "die",
+      "word": "Jacke"
+    },
+    "regenschirm": {
+      "id": "a1_0542",
+      "article": "der",
+      "word": "Regenschirm"
+    },
+    "ecke": {
+      "id": "a1_0558",
+      "article": "die",
+      "word": "Ecke"
+    },
+    "tunnel": {
+      "id": "a1_0562",
+      "article": "der",
+      "word": "Tunnel"
+    },
+    "platz": {
+      "id": "a1_0563",
+      "article": "der",
+      "word": "Platz"
+    },
+    "park": {
+      "id": "a1_0564",
+      "article": "der",
+      "word": "Park"
+    },
+    "karte": {
+      "id": "a1_0565",
+      "article": "die",
+      "word": "Karte"
+    },
+    "weg": {
+      "id": "a1_0566",
+      "article": "der",
+      "word": "Weg"
+    },
+    "richtung": {
+      "id": "a1_0567",
+      "article": "die",
+      "word": "Richtung"
+    },
+    "norden": {
+      "id": "a1_0568",
+      "article": "der",
+      "word": "Norden"
+    },
+    "süden": {
+      "id": "a1_0569",
+      "article": "der",
+      "word": "Süden"
+    },
+    "osten": {
+      "id": "a1_0570",
+      "article": "der",
+      "word": "Osten"
+    },
+    "westen": {
+      "id": "a1_0571",
+      "article": "der",
+      "word": "Westen"
+    },
+    "meter": {
+      "id": "a1_0572",
+      "article": "der",
+      "word": "Meter"
+    },
+    "kilometer": {
+      "id": "a1_0573",
+      "article": "der",
+      "word": "Kilometer"
+    }
+  }
+}

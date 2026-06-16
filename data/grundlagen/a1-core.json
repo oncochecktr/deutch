@@ -1,0 +1,2606 @@
+{
+  "version": "1.1.0",
+  "level": "A1",
+  "fragewoerter": {
+    "title": "Soru Kelimeleri",
+    "titleTr": "W-Fragen",
+    "items": [
+      {
+        "de": "Wer?",
+        "tr": "Kim?",
+        "example_de": "Wer ist das?",
+        "example_tr": "Bu kim?"
+      },
+      {
+        "de": "Was?",
+        "tr": "Ne?",
+        "example_de": "Was ist das?",
+        "example_tr": "Bu ne?"
+      },
+      {
+        "de": "Wo?",
+        "tr": "Nerede?",
+        "example_de": "Wo wohnst du?",
+        "example_tr": "Nerede oturuyorsun?"
+      },
+      {
+        "de": "Wohin?",
+        "tr": "Nereye?",
+        "example_de": "Wohin gehst du?",
+        "example_tr": "Nereye gidiyorsun?"
+      },
+      {
+        "de": "Woher?",
+        "tr": "Nereden?",
+        "example_de": "Woher kommst du?",
+        "example_tr": "Neredensin?"
+      },
+      {
+        "de": "Wann?",
+        "tr": "Ne zaman?",
+        "example_de": "Wann beginnt der Kurs?",
+        "example_tr": "Kurs ne zaman başlıyor?"
+      },
+      {
+        "de": "Warum?",
+        "tr": "Neden?",
+        "example_de": "Warum lernst du Deutsch?",
+        "example_tr": "Neden Almanca öğreniyorsun?"
+      },
+      {
+        "de": "Wie?",
+        "tr": "Nasıl?",
+        "example_de": "Wie geht es dir?",
+        "example_tr": "Nasılsın?"
+      },
+      {
+        "de": "Wie viel?",
+        "tr": "Ne kadar?",
+        "example_de": "Wie viel kostet das?",
+        "example_tr": "Bu ne kadar?"
+      }
+    ]
+  },
+  "zeit": {
+    "title": "Zeit",
+    "titleTr": "Zaman",
+    "sections": [
+      {
+        "id": "relative",
+        "title": "Bugün · Yarın · Dün",
+        "items": [
+          {
+            "de": "heute",
+            "tr": "bugün",
+            "example_de": "Heute lerne ich Deutsch.",
+            "example_tr": "Bugün Almanca öğreniyorum."
+          },
+          {
+            "de": "morgen",
+            "tr": "yarın",
+            "example_de": "Morgen habe ich Prüfung.",
+            "example_tr": "Yarın sınavım var."
+          },
+          {
+            "de": "gestern",
+            "tr": "dün",
+            "example_de": "Gestern war ich müde.",
+            "example_tr": "Dün yorgundum."
+          },
+          {
+            "de": "jetzt",
+            "tr": "şimdi",
+            "example_de": "Jetzt esse ich.",
+            "example_tr": "Şimdi yemek yiyorum."
+          },
+          {
+            "de": "später",
+            "tr": "sonra",
+            "example_de": "Später telefoniere ich.",
+            "example_tr": "Sonra telefon edeceğim."
+          }
+        ]
+      },
+      {
+        "id": "dayparts",
+        "title": "Günün zamanları",
+        "items": [
+          {
+            "de": "der Morgen",
+            "tr": "sabah",
+            "example_de": "Am Morgen trinke ich Kaffee.",
+            "example_tr": "Sabah kahve içerim."
+          },
+          {
+            "de": "der Mittag",
+            "tr": "öğle",
+            "example_de": "Am Mittag esse ich.",
+            "example_tr": "Öğle yemek yerim."
+          },
+          {
+            "de": "der Abend",
+            "tr": "akşam",
+            "example_de": "Am Abend lese ich.",
+            "example_tr": "Akşam okurum."
+          },
+          {
+            "de": "die Nacht",
+            "tr": "gece",
+            "example_de": "In der Nacht schlafe ich.",
+            "example_tr": "Gece uyurum."
+          },
+          {
+            "de": "morgens",
+            "tr": "sabahları",
+            "example_de": "Morgens gehe ich zur Arbeit.",
+            "example_tr": "Sabahları işe giderim."
+          },
+          {
+            "de": "abends",
+            "tr": "akşamları",
+            "example_de": "Abends sehe ich fern.",
+            "example_tr": "Akşamları televizyon izlerim."
+          }
+        ]
+      },
+      {
+        "id": "weekdays",
+        "title": "Haftanın günleri",
+        "items": [
+          {
+            "de": "Montag",
+            "tr": "Pazartesi",
+            "example_de": "Am Montag habe ich Kurs.",
+            "example_tr": "Pazartesi kursum var."
+          },
+          {
+            "de": "Dienstag",
+            "tr": "Salı",
+            "example_de": "Am Dienstag gehe ich zum Arzt.",
+            "example_tr": "Salı doktora giderim."
+          },
+          {
+            "de": "Mittwoch",
+            "tr": "Çarşamba",
+            "example_de": "Am Mittwoch ist Markt.",
+            "example_tr": "Çarşamba pazar var."
+          },
+          {
+            "de": "Donnerstag",
+            "tr": "Perşembe",
+            "example_de": "Am Donnerstag lerne ich.",
+            "example_tr": "Perşembe çalışırım."
+          },
+          {
+            "de": "Freitag",
+            "tr": "Cuma",
+            "example_de": "Am Freitag ist Feierabend.",
+            "example_tr": "Cuma mesai bitiyor."
+          },
+          {
+            "de": "Samstag",
+            "tr": "Cumartesi",
+            "example_de": "Am Samstag schlafe ich lang.",
+            "example_tr": "Cumartesi geç uyanırım."
+          },
+          {
+            "de": "Sonntag",
+            "tr": "Pazar",
+            "example_de": "Am Sonntag ruhe ich.",
+            "example_tr": "Pazar dinlenirim."
+          }
+        ]
+      },
+      {
+        "id": "months",
+        "title": "Aylar",
+        "items": [
+          {
+            "de": "Januar",
+            "tr": "Ocak"
+          },
+          {
+            "de": "Februar",
+            "tr": "Şubat"
+          },
+          {
+            "de": "März",
+            "tr": "Mart"
+          },
+          {
+            "de": "April",
+            "tr": "Nisan"
+          },
+          {
+            "de": "Mai",
+            "tr": "Mayıs"
+          },
+          {
+            "de": "Juni",
+            "tr": "Haziran"
+          },
+          {
+            "de": "Juli",
+            "tr": "Temmuz"
+          },
+          {
+            "de": "August",
+            "tr": "Ağustos"
+          },
+          {
+            "de": "September",
+            "tr": "Eylül"
+          },
+          {
+            "de": "Oktober",
+            "tr": "Ekim"
+          },
+          {
+            "de": "November",
+            "tr": "Kasım"
+          },
+          {
+            "de": "Dezember",
+            "tr": "Aralık"
+          }
+        ]
+      },
+      {
+        "id": "clock",
+        "title": "Saat söyleme",
+        "items": [
+          {
+            "de": "Es ist ein Uhr.",
+            "tr": "Saat bir.",
+            "example_de": "Es ist ein Uhr.",
+            "example_tr": "Saat 01:00"
+          },
+          {
+            "de": "Es ist halb zwei.",
+            "tr": "Saat bir buçuk.",
+            "example_de": "Es ist halb zwei.",
+            "example_tr": "Saat 01:30"
+          },
+          {
+            "de": "Es ist Viertel nach drei.",
+            "tr": "Saat üçü çeyrek geçiyor.",
+            "example_de": "Es ist Viertel nach drei.",
+            "example_tr": "Saat 03:15"
+          },
+          {
+            "de": "Es ist Viertel vor vier.",
+            "tr": "Saat dörde çeyrek var.",
+            "example_de": "Es ist Viertel vor vier.",
+            "example_tr": "Saat 03:45"
+          },
+          {
+            "de": "Um wie viel Uhr?",
+            "tr": "Saat kaçta?",
+            "example_de": "Um wie viel Uhr beginnt der Kurs?",
+            "example_tr": "Kurs saat kaçta başlıyor?"
+          }
+        ]
+      }
+    ]
+  },
+  "zahlen": {
+    "title": "Zahlen",
+    "titleTr": "Sayılar",
+    "sections": [
+      {
+        "id": "0-20",
+        "title": "0 – 20",
+        "items": [
+          {
+            "de": "null",
+            "tr": "0"
+          },
+          {
+            "de": "eins",
+            "tr": "1"
+          },
+          {
+            "de": "zwei",
+            "tr": "2"
+          },
+          {
+            "de": "drei",
+            "tr": "3"
+          },
+          {
+            "de": "vier",
+            "tr": "4"
+          },
+          {
+            "de": "fünf",
+            "tr": "5"
+          },
+          {
+            "de": "sechs",
+            "tr": "6"
+          },
+          {
+            "de": "sieben",
+            "tr": "7"
+          },
+          {
+            "de": "acht",
+            "tr": "8"
+          },
+          {
+            "de": "neun",
+            "tr": "9"
+          },
+          {
+            "de": "zehn",
+            "tr": "10"
+          },
+          {
+            "de": "elf",
+            "tr": "11"
+          },
+          {
+            "de": "zwölf",
+            "tr": "12"
+          },
+          {
+            "de": "dreizehn",
+            "tr": "13"
+          },
+          {
+            "de": "vierzehn",
+            "tr": "14"
+          },
+          {
+            "de": "fünfzehn",
+            "tr": "15"
+          },
+          {
+            "de": "sechzehn",
+            "tr": "16"
+          },
+          {
+            "de": "siebzehn",
+            "tr": "17"
+          },
+          {
+            "de": "achtzehn",
+            "tr": "18"
+          },
+          {
+            "de": "neunzehn",
+            "tr": "19"
+          },
+          {
+            "de": "zwanzig",
+            "tr": "20"
+          }
+        ]
+      },
+      {
+        "id": "tens",
+        "title": "Onluklar (30–100)",
+        "items": [
+          {
+            "de": "dreißig",
+            "tr": "30"
+          },
+          {
+            "de": "vierzig",
+            "tr": "40"
+          },
+          {
+            "de": "fünfzig",
+            "tr": "50"
+          },
+          {
+            "de": "sechzig",
+            "tr": "60"
+          },
+          {
+            "de": "siebzig",
+            "tr": "70"
+          },
+          {
+            "de": "achtzig",
+            "tr": "80"
+          },
+          {
+            "de": "neunzig",
+            "tr": "90"
+          },
+          {
+            "de": "hundert",
+            "tr": "100"
+          }
+        ]
+      },
+      {
+        "id": "hundreds",
+        "title": "Yüzler (100–1000)",
+        "items": [
+          {
+            "de": "einhundert",
+            "tr": "100"
+          },
+          {
+            "de": "zweihundert",
+            "tr": "200"
+          },
+          {
+            "de": "dreihundert",
+            "tr": "300"
+          },
+          {
+            "de": "fünfhundert",
+            "tr": "500"
+          },
+          {
+            "de": "tausend",
+            "tr": "1000"
+          },
+          {
+            "de": "einundzwanzig",
+            "tr": "21",
+            "example_de": "einundzwanzig",
+            "example_tr": "21 = ein + und + zwanzig"
+          },
+          {
+            "de": "zweiundvierzig",
+            "tr": "42",
+            "example_de": "zweiundvierzig",
+            "example_tr": "42 = iki + kırk"
+          },
+          {
+            "de": "neunundneunzig",
+            "tr": "99",
+            "example_de": "neunundneunzig",
+            "example_tr": "99 = dokuz + doksan dokuz"
+          }
+        ]
+      },
+      {
+        "id": "practical",
+        "title": "Telefon · Adres · Tarih",
+        "items": [
+          {
+            "de": "null – eins – zwei – drei",
+            "tr": "0 – 1 – 2 – 3 (telefon)",
+            "example_de": "Meine Nummer ist null-eins-sieben-eins...",
+            "example_tr": "Numaram 0171..."
+          },
+          {
+            "de": "Hauptstraße 12",
+            "tr": "Ana cadde 12",
+            "example_de": "Ich wohne in der Hauptstraße 12.",
+            "example_tr": "Ana cadde 12'de oturuyorum."
+          },
+          {
+            "de": "am 13. Juli 2026",
+            "tr": "13 Temmuz 2026",
+            "example_de": "Die Prüfung ist am 13. Juli.",
+            "example_tr": "Sınav 13 Temmuz'da."
+          },
+          {
+            "de": "im Jahr 2026",
+            "tr": "2026 yılında",
+            "example_de": "Ich komme im Jahr 2026 nach Deutschland.",
+            "example_tr": "2026'da Almanya'ya geliyorum."
+          }
+        ]
+      }
+    ]
+  },
+  "grammar": {
+    "title": "Grammar A1 Core",
+    "titleTr": "A1 Gramer Çekirdeği",
+    "pronouns": {
+      "title": "Şahıs zamirleri",
+      "items": [
+        {
+          "de": "ich",
+          "tr": "ben"
+        },
+        {
+          "de": "du",
+          "tr": "sen"
+        },
+        {
+          "de": "er",
+          "tr": "o (erkek)"
+        },
+        {
+          "de": "sie",
+          "tr": "o (kadın)"
+        },
+        {
+          "de": "es",
+          "tr": "o (nötr)"
+        },
+        {
+          "de": "wir",
+          "tr": "biz"
+        },
+        {
+          "de": "ihr",
+          "tr": "siz (çoğul)"
+        },
+        {
+          "de": "Sie",
+          "tr": "siz (resmi)"
+        },
+        {
+          "de": "sie",
+          "tr": "onlar"
+        }
+      ]
+    },
+    "sein": {
+      "title": "sein (olmak)",
+      "conjugation": [
+        {
+          "de": "ich bin",
+          "tr": "ben …ım"
+        },
+        {
+          "de": "du bist",
+          "tr": "sen …sın"
+        },
+        {
+          "de": "er/sie/es ist",
+          "tr": "o …"
+        },
+        {
+          "de": "wir sind",
+          "tr": "biz …ız"
+        },
+        {
+          "de": "ihr seid",
+          "tr": "siz …sınız"
+        },
+        {
+          "de": "Sie sind",
+          "tr": "siz …sınız (resmi)"
+        }
+      ],
+      "examples": [
+        {
+          "de": "Ich bin Timur.",
+          "tr": "Ben Timur'um."
+        },
+        {
+          "de": "Du bist Student.",
+          "tr": "Sen öğrencisin."
+        },
+        {
+          "de": "Wir sind aus der Türkei.",
+          "tr": "Biz Türkiye'deniz."
+        }
+      ]
+    },
+    "haben": {
+      "title": "haben (sahip olmak)",
+      "conjugation": [
+        {
+          "de": "ich habe",
+          "tr": "benim … var"
+        },
+        {
+          "de": "du hast",
+          "tr": "senin … var"
+        },
+        {
+          "de": "er/sie/es hat",
+          "tr": "onun … var"
+        },
+        {
+          "de": "wir haben",
+          "tr": "bizim … var"
+        },
+        {
+          "de": "ihr habt",
+          "tr": "sizin … var"
+        },
+        {
+          "de": "Sie haben",
+          "tr": "sizin … var (resmi)"
+        }
+      ],
+      "examples": [
+        {
+          "de": "Ich habe ein Auto.",
+          "tr": "Bir arabam var."
+        },
+        {
+          "de": "Hast du Zeit?",
+          "tr": "Vaktin var mı?"
+        },
+        {
+          "de": "Wir haben einen Hund.",
+          "tr": "Bir köpeğimiz var."
+        }
+      ]
+    },
+    "verbs": [
+      {
+        "infinitive": "kommen",
+        "tr": "gelmek",
+        "forms": [
+          {
+            "de": "ich komme",
+            "tr": "ben geliyorum"
+          },
+          {
+            "de": "du kommst",
+            "tr": "sen geliyorsun"
+          },
+          {
+            "de": "er kommt",
+            "tr": "o geliyor"
+          },
+          {
+            "de": "wir kommen",
+            "tr": "biz geliyoruz"
+          }
+        ]
+      },
+      {
+        "infinitive": "wohnen",
+        "tr": "oturmak",
+        "forms": [
+          {
+            "de": "ich wohne",
+            "tr": "ben oturuyorum"
+          },
+          {
+            "de": "du wohnst",
+            "tr": "sen oturuyorsun"
+          },
+          {
+            "de": "er wohnt",
+            "tr": "o oturuyor"
+          },
+          {
+            "de": "wir wohnen",
+            "tr": "biz oturuyoruz"
+          }
+        ]
+      },
+      {
+        "infinitive": "arbeiten",
+        "tr": "çalışmak",
+        "forms": [
+          {
+            "de": "ich arbeite",
+            "tr": "ben çalışıyorum"
+          },
+          {
+            "de": "du arbeitest",
+            "tr": "sen çalışıyorsun"
+          },
+          {
+            "de": "er arbeitet",
+            "tr": "o çalışıyor"
+          },
+          {
+            "de": "wir arbeiten",
+            "tr": "biz çalışıyoruz"
+          }
+        ]
+      }
+    ],
+    "modals": [
+      {
+        "verb": "möchten",
+        "tr": "istemek (kibar)",
+        "examples": [
+          {
+            "de": "Ich möchte Wasser.",
+            "tr": "Su istiyorum."
+          },
+          {
+            "de": "Ich möchte einen Kaffee, bitte.",
+            "tr": "Bir kahve istiyorum, lütfen."
+          }
+        ]
+      },
+      {
+        "verb": "können",
+        "tr": "yapabilmek",
+        "examples": [
+          {
+            "de": "Ich kann Deutsch lernen.",
+            "tr": "Almanca öğrenebilirim."
+          },
+          {
+            "de": "Kannst du mir helfen?",
+            "tr": "Bana yardım edebilir misin?"
+          }
+        ]
+      },
+      {
+        "verb": "wollen",
+        "tr": "istemek",
+        "examples": [
+          {
+            "de": "Ich will nach Hause.",
+            "tr": "Eve gitmek istiyorum."
+          }
+        ]
+      },
+      {
+        "verb": "müssen",
+        "tr": "zorunda olmak",
+        "examples": [
+          {
+            "de": "Ich muss arbeiten.",
+            "tr": "Çalışmak zorundayım."
+          },
+          {
+            "de": "Du musst lernen.",
+            "tr": "Öğrenmen gerekiyor."
+          }
+        ]
+      }
+    ],
+    "patterns": {
+      "title": "Cümle kalıpları",
+      "items": [
+        {
+          "de": "Ich bin …",
+          "tr": "Ben …ım (meslek / milliyet)",
+          "example_de": "Ich bin Student.",
+          "example_tr": "Ben öğrenciyim."
+        },
+        {
+          "de": "Ich habe …",
+          "tr": "Benim … var",
+          "example_de": "Ich habe zwei Kinder.",
+          "example_tr": "İki çocuğum var."
+        },
+        {
+          "de": "Ich komme aus …",
+          "tr": "…den geliyorum",
+          "example_de": "Ich komme aus der Türkei.",
+          "example_tr": "Türkiye'den geliyorum."
+        },
+        {
+          "de": "Ich wohne in …",
+          "tr": "…de oturuyorum",
+          "example_de": "Ich wohne in Ankara.",
+          "example_tr": "Ankara'da oturuyorum."
+        },
+        {
+          "de": "Ich arbeite als …",
+          "tr": "… olarak çalışıyorum",
+          "example_de": "Ich arbeite als Lagerist.",
+          "example_tr": "Depo işçisi olarak çalışıyorum."
+        },
+        {
+          "de": "Ich möchte …",
+          "tr": "… istiyorum",
+          "example_de": "Ich möchte Deutsch lernen.",
+          "example_tr": "Almanca öğrenmek istiyorum."
+        },
+        {
+          "de": "Ich brauche …",
+          "tr": "… lazım",
+          "example_de": "Ich brauche Hilfe.",
+          "example_tr": "Yardıma ihtiyacım var."
+        }
+      ]
+    },
+    "jaNein": {
+      "title": "Ja/Nein Fragen",
+      "titleTr": "Evet/Hayır soruları",
+      "items": [
+        {
+          "de": "Verb an Position 1 + du/Sie?",
+          "tr": "Fiil başa + du/Sie?"
+        },
+        {
+          "de": "Ja, …",
+          "tr": "Evet, … (tam cümle)"
+        },
+        {
+          "de": "Nein, …",
+          "tr": "Hayır, … (tam cümle)"
+        }
+      ],
+      "examples": [
+        {
+          "de": "Kommst du aus der Türkei?",
+          "tr": "Türkiye'den misin?",
+          "example_de": "Ja, ich komme aus der Türkei.",
+          "example_tr": "Evet, Türkiye'denim."
+        },
+        {
+          "de": "Hast du Zeit?",
+          "tr": "Vaktin var mı?",
+          "example_de": "Nein, ich habe keine Zeit.",
+          "example_tr": "Hayır, vaktim yok."
+        },
+        {
+          "de": "Lernst du Deutsch?",
+          "tr": "Almanca öğreniyor musun?",
+          "example_de": "Ja, ich lerne Deutsch.",
+          "example_tr": "Evet, Almanca öğreniyorum."
+        },
+        {
+          "de": "Wohnst du in Berlin?",
+          "tr": "Berlin'de mi oturuyorsun?",
+          "example_de": "Nein, ich wohne in Ankara.",
+          "example_tr": "Hayır, Ankara'da oturuyorum."
+        }
+      ]
+    },
+    "akkusativ": {
+      "title": "Akkusativ",
+      "titleTr": "Belirtme hali (Akkusativ)",
+      "items": [
+        {
+          "de": "ein → einen (der)",
+          "tr": "eril: ein Hund → einen Hund"
+        },
+        {
+          "de": "eine → eine (die)",
+          "tr": "dişil: eine Katze → eine Katze"
+        },
+        {
+          "de": "ein → ein (das)",
+          "tr": "nötr: ein Kind → ein Kind"
+        }
+      ],
+      "examples": [
+        {
+          "de": "Ich habe einen Hund.",
+          "tr": "Bir köpeğim var."
+        },
+        {
+          "de": "Ich kaufe einen Apfel.",
+          "tr": "Bir elma alıyorum."
+        },
+        {
+          "de": "Ich trinke eine Cola.",
+          "tr": "Bir kola içiyorum."
+        },
+        {
+          "de": "Ich esse ein Brötchen.",
+          "tr": "Bir küçük ekmek yiyorum."
+        },
+        {
+          "de": "Ich brauche einen Stift.",
+          "tr": "Bir kaleme ihtiyacım var."
+        },
+        {
+          "de": "Ich möchte einen Kaffee.",
+          "tr": "Bir kahve istiyorum."
+        }
+      ]
+    },
+    "trennbareVerben": {
+      "title": "Trennbare Verben",
+      "titleTr": "Ayrılabilen fiiller",
+      "verbs": [
+        {
+          "infinitive": "aufstehen",
+          "prefix": "auf",
+          "tr": "kalkmak",
+          "example_de": "Ich stehe um 7 Uhr auf.",
+          "example_tr": "Saat 7'de kalkıyorum."
+        },
+        {
+          "infinitive": "einkaufen",
+          "prefix": "ein",
+          "tr": "alışveriş yapmak",
+          "example_de": "Ich kaufe im Supermarkt ein.",
+          "example_tr": "Süpermarkette alışveriş yapıyorum."
+        },
+        {
+          "infinitive": "anrufen",
+          "prefix": "an",
+          "tr": "telefon etmek",
+          "example_de": "Ich rufe meine Mutter an.",
+          "example_tr": "Annemi arıyorum."
+        },
+        {
+          "infinitive": "fernsehen",
+          "prefix": "fern",
+          "tr": "televizyon izlemek",
+          "example_de": "Am Abend sehe ich fern.",
+          "example_tr": "Akşam televizyon izliyorum."
+        },
+        {
+          "infinitive": "mitkommen",
+          "prefix": "mit",
+          "tr": "birlikte gelmek",
+          "example_de": "Kommst du mit?",
+          "example_tr": "Sen de geliyor musun?"
+        },
+        {
+          "infinitive": "abholen",
+          "prefix": "ab",
+          "tr": "almak (yolcu)",
+          "example_de": "Ich hole dich ab.",
+          "example_tr": "Seni alıyorum."
+        },
+        {
+          "infinitive": "zuhören",
+          "prefix": "zu",
+          "tr": "dinlemek",
+          "example_de": "Hör bitte zu!",
+          "example_tr": "Lütfen dinle!"
+        },
+        {
+          "infinitive": "anfangen",
+          "prefix": "an",
+          "tr": "başlamak",
+          "example_de": "Der Kurs fängt um 9 Uhr an.",
+          "example_tr": "Kurs saat 9'da başlıyor."
+        }
+      ]
+    }
+  },
+  "goetheForm": {
+    "title": "Goethe Form Trainer",
+    "titleTr": "Sınav formu alanları",
+    "fields": [
+      {
+        "de": "Name",
+        "tr": "Ad",
+        "hint": "Mustermann",
+        "label_de": "Familienname"
+      },
+      {
+        "de": "Vorname",
+        "tr": "Ad (isim)",
+        "hint": "Max",
+        "label_de": "Vorname"
+      },
+      {
+        "de": "Straße",
+        "tr": "Sokak / cadde",
+        "hint": "Hauptstraße 12",
+        "label_de": "Straße und Hausnummer"
+      },
+      {
+        "de": "PLZ",
+        "tr": "Posta kodu",
+        "hint": "06420",
+        "label_de": "Postleitzahl (PLZ)"
+      },
+      {
+        "de": "Wohnort",
+        "tr": "Şehir",
+        "hint": "Ankara",
+        "label_de": "Wohnort"
+      },
+      {
+        "de": "Telefon",
+        "tr": "Telefon",
+        "hint": "0171 1234567",
+        "label_de": "Telefonnummer"
+      },
+      {
+        "de": "Geburtsdatum",
+        "tr": "Doğum tarihi",
+        "hint": "01.01.1990",
+        "label_de": "Geburtsdatum"
+      },
+      {
+        "de": "Geburtsort",
+        "tr": "Doğum yeri",
+        "hint": "Ankara",
+        "label_de": "Geburtsort"
+      },
+      {
+        "de": "Land",
+        "tr": "Ülke",
+        "hint": "Türkei",
+        "label_de": "Staatsangehörigkeit / Land"
+      }
+    ]
+  },
+  "sentenceBuilder": {
+    "title": "Satz Builder",
+    "titleTr": "Cümle kur",
+    "exercises": [
+      {
+        "id": "sb_001",
+        "prompt_tr": "Ben öğrenciyim.",
+        "tokens": [
+          "Ich",
+          "bin",
+          "Student",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich bin Student.",
+        "hint": "sein: ich → bin"
+      },
+      {
+        "id": "sb_002",
+        "prompt_tr": "Ben Timur'um.",
+        "tokens": [
+          "Ich",
+          "bin",
+          "Timur",
+          "."
+        ],
+        "distractors": [
+          "du"
+        ],
+        "answer_de": "Ich bin Timur.",
+        "hint": "sein"
+      },
+      {
+        "id": "sb_003",
+        "prompt_tr": "Sen öğrencisin.",
+        "tokens": [
+          "Du",
+          "bist",
+          "Student",
+          "."
+        ],
+        "distractors": [
+          "Ich"
+        ],
+        "answer_de": "Du bist Student.",
+        "hint": "sein: du → bist"
+      },
+      {
+        "id": "sb_004",
+        "prompt_tr": "Biz Türkiye'deniz.",
+        "tokens": [
+          "Wir",
+          "sind",
+          "aus",
+          "der",
+          "Türkei",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Wir sind aus der Türkei.",
+        "hint": "sein + aus"
+      },
+      {
+        "id": "sb_005",
+        "prompt_tr": "Ben Almanya'dayım.",
+        "tokens": [
+          "Ich",
+          "bin",
+          "in",
+          "Deutschland",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich bin in Deutschland.",
+        "hint": "sein + in"
+      },
+      {
+        "id": "sb_006",
+        "prompt_tr": "Bir arabam var.",
+        "tokens": [
+          "Ich",
+          "habe",
+          "ein",
+          "Auto",
+          "."
+        ],
+        "distractors": [
+          "du"
+        ],
+        "answer_de": "Ich habe ein Auto.",
+        "hint": "haben: ich → habe"
+      },
+      {
+        "id": "sb_007",
+        "prompt_tr": "Vaktin var mı? (soru)",
+        "tokens": [
+          "Hast",
+          "du",
+          "Zeit",
+          "?"
+        ],
+        "distractors": [
+          "Ich",
+          "habe"
+        ],
+        "answer_de": "Hast du Zeit?",
+        "hint": "haben + du"
+      },
+      {
+        "id": "sb_008",
+        "prompt_tr": "Bir köpeğim var.",
+        "tokens": [
+          "Ich",
+          "habe",
+          "einen",
+          "Hund",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich habe einen Hund.",
+        "hint": "Akkusativ: einen"
+      },
+      {
+        "id": "sb_009",
+        "prompt_tr": "İki çocuğum var.",
+        "tokens": [
+          "Ich",
+          "habe",
+          "zwei",
+          "Kinder",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich habe zwei Kinder.",
+        "hint": "haben + sayı"
+      },
+      {
+        "id": "sb_010",
+        "prompt_tr": "Türkiye'den geliyorum.",
+        "tokens": [
+          "Ich",
+          "komme",
+          "aus",
+          "der",
+          "Türkei",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich komme aus der Türkei.",
+        "hint": "kommen + aus"
+      },
+      {
+        "id": "sb_011",
+        "prompt_tr": "Almanya'dan geliyorum.",
+        "tokens": [
+          "Ich",
+          "komme",
+          "aus",
+          "Deutschland",
+          "."
+        ],
+        "distractors": [
+          "in"
+        ],
+        "answer_de": "Ich komme aus Deutschland.",
+        "hint": "kommen"
+      },
+      {
+        "id": "sb_012",
+        "prompt_tr": "Ankara'da oturuyorum.",
+        "tokens": [
+          "Ich",
+          "wohne",
+          "in",
+          "Ankara",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich wohne in Ankara.",
+        "hint": "wohnen + in"
+      },
+      {
+        "id": "sb_013",
+        "prompt_tr": "Berlin'de oturuyorum.",
+        "tokens": [
+          "Ich",
+          "wohne",
+          "in",
+          "Berlin",
+          "."
+        ],
+        "distractors": [
+          "aus"
+        ],
+        "answer_de": "Ich wohne in Berlin.",
+        "hint": "wohnen"
+      },
+      {
+        "id": "sb_014",
+        "prompt_tr": "İstanbul'da oturuyorum.",
+        "tokens": [
+          "Ich",
+          "wohne",
+          "in",
+          "Istanbul",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich wohne in Istanbul.",
+        "hint": "wohnen + in"
+      },
+      {
+        "id": "sb_015",
+        "prompt_tr": "Depo işçisi olarak çalışıyorum.",
+        "tokens": [
+          "Ich",
+          "arbeite",
+          "als",
+          "Lagerist",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich arbeite als Lagerist.",
+        "hint": "arbeiten + als"
+      },
+      {
+        "id": "sb_016",
+        "prompt_tr": "Öğretmen olarak çalışıyorum.",
+        "tokens": [
+          "Ich",
+          "arbeite",
+          "als",
+          "Lehrer",
+          "."
+        ],
+        "distractors": [
+          "bin"
+        ],
+        "answer_de": "Ich arbeite als Lehrer.",
+        "hint": "arbeiten"
+      },
+      {
+        "id": "sb_017",
+        "prompt_tr": "Almanca öğrenmek istiyorum.",
+        "tokens": [
+          "Ich",
+          "möchte",
+          "Deutsch",
+          "lernen",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich möchte Deutsch lernen.",
+        "hint": "möchten"
+      },
+      {
+        "id": "sb_018",
+        "prompt_tr": "Bir kahve istiyorum.",
+        "tokens": [
+          "Ich",
+          "möchte",
+          "einen",
+          "Kaffee",
+          ",",
+          "bitte",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich möchte einen Kaffee, bitte.",
+        "hint": "möchten + Akkusativ"
+      },
+      {
+        "id": "sb_019",
+        "prompt_tr": "Yardıma ihtiyacım var.",
+        "tokens": [
+          "Ich",
+          "brauche",
+          "Hilfe",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich brauche Hilfe.",
+        "hint": "brauchen"
+      },
+      {
+        "id": "sb_020",
+        "prompt_tr": "Bugün Almanca öğreniyorum.",
+        "tokens": [
+          "Heute",
+          "lerne",
+          "ich",
+          "Deutsch",
+          "."
+        ],
+        "distractors": [
+          "morgen"
+        ],
+        "answer_de": "Heute lerne ich Deutsch.",
+        "hint": "Zeit + fiil"
+      },
+      {
+        "id": "sb_021",
+        "prompt_tr": "Bu kim?",
+        "tokens": [
+          "Wer",
+          "ist",
+          "das",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Wer ist das?",
+        "hint": "W-Frage: Wer"
+      },
+      {
+        "id": "sb_022",
+        "prompt_tr": "Nerede oturuyorsun?",
+        "tokens": [
+          "Wo",
+          "wohnst",
+          "du",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Wo wohnst du?",
+        "hint": "W-Frage: Wo"
+      },
+      {
+        "id": "sb_023",
+        "prompt_tr": "Neredensin?",
+        "tokens": [
+          "Woher",
+          "kommst",
+          "du",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Woher kommst du?",
+        "hint": "W-Frage: Woher"
+      },
+      {
+        "id": "sb_024",
+        "prompt_tr": "Ne zaman başlıyor?",
+        "tokens": [
+          "Wann",
+          "beginnt",
+          "der",
+          "Kurs",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Wann beginnt der Kurs?",
+        "hint": "W-Frage: Wann"
+      },
+      {
+        "id": "sb_025",
+        "prompt_tr": "Türkiye'den misin?",
+        "tokens": [
+          "Kommst",
+          "du",
+          "aus",
+          "der",
+          "Türkei",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Kommst du aus der Türkei?",
+        "hint": "Ja/Nein soru"
+      },
+      {
+        "id": "sb_026",
+        "prompt_tr": "Almanca öğreniyor musun?",
+        "tokens": [
+          "Lernst",
+          "du",
+          "Deutsch",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Lernst du Deutsch?",
+        "hint": "Ja/Nein"
+      },
+      {
+        "id": "sb_027",
+        "prompt_tr": "Evet, Türkiye'denim.",
+        "tokens": [
+          "Ja",
+          ",",
+          "ich",
+          "komme",
+          "aus",
+          "der",
+          "Türkei",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ja, ich komme aus der Türkei.",
+        "hint": "Ja cevabı"
+      },
+      {
+        "id": "sb_028",
+        "prompt_tr": "Hayır, vaktim yok.",
+        "tokens": [
+          "Nein",
+          ",",
+          "ich",
+          "habe",
+          "keine",
+          "Zeit",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Nein, ich habe keine Zeit.",
+        "hint": "Nein cevabı"
+      },
+      {
+        "id": "sb_029",
+        "prompt_tr": "Bir elma alıyorum.",
+        "tokens": [
+          "Ich",
+          "kaufe",
+          "einen",
+          "Apfel",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich kaufe einen Apfel.",
+        "hint": "Akkusativ"
+      },
+      {
+        "id": "sb_030",
+        "prompt_tr": "Bir kola içiyorum.",
+        "tokens": [
+          "Ich",
+          "trinke",
+          "eine",
+          "Cola",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich trinke eine Cola.",
+        "hint": "Akkusativ: eine"
+      },
+      {
+        "id": "sb_031",
+        "prompt_tr": "Bir kaleme ihtiyacım var.",
+        "tokens": [
+          "Ich",
+          "brauche",
+          "einen",
+          "Stift",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich brauche einen Stift.",
+        "hint": "Akkusativ: einen"
+      },
+      {
+        "id": "sb_032",
+        "prompt_tr": "Saat 7'de kalkıyorum.",
+        "tokens": [
+          "Ich",
+          "stehe",
+          "um",
+          "7",
+          "Uhr",
+          "auf",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich stehe um 7 Uhr auf.",
+        "hint": "Trennbar: aufstehen"
+      },
+      {
+        "id": "sb_033",
+        "prompt_tr": "Süpermarkette alışveriş yapıyorum.",
+        "tokens": [
+          "Ich",
+          "kaufe",
+          "im",
+          "Supermarkt",
+          "ein",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich kaufe im Supermarkt ein.",
+        "hint": "Trennbar: einkaufen"
+      },
+      {
+        "id": "sb_034",
+        "prompt_tr": "Annemi arıyorum.",
+        "tokens": [
+          "Ich",
+          "rufe",
+          "meine",
+          "Mutter",
+          "an",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich rufe meine Mutter an.",
+        "hint": "Trennbar: anrufen"
+      },
+      {
+        "id": "sb_035",
+        "prompt_tr": "Akşam televizyon izliyorum.",
+        "tokens": [
+          "Am",
+          "Abend",
+          "sehe",
+          "ich",
+          "fern",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Am Abend sehe ich fern.",
+        "hint": "Trennbar: fernsehen"
+      },
+      {
+        "id": "sb_036",
+        "prompt_tr": "Sen de geliyor musun?",
+        "tokens": [
+          "Kommst",
+          "du",
+          "mit",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Kommst du mit?",
+        "hint": "Trennbar: mitkommen"
+      },
+      {
+        "id": "sb_037",
+        "prompt_tr": "Kurs saat 9'da başlıyor.",
+        "tokens": [
+          "Der",
+          "Kurs",
+          "fängt",
+          "um",
+          "9",
+          "Uhr",
+          "an",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Der Kurs fängt um 9 Uhr an.",
+        "hint": "Trennbar: anfangen"
+      },
+      {
+        "id": "sb_038",
+        "prompt_tr": "Almanca öğrenebilirim.",
+        "tokens": [
+          "Ich",
+          "kann",
+          "Deutsch",
+          "lernen",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich kann Deutsch lernen.",
+        "hint": "Modal: können"
+      },
+      {
+        "id": "sb_039",
+        "prompt_tr": "Çalışmak zorundayım.",
+        "tokens": [
+          "Ich",
+          "muss",
+          "arbeiten",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich muss arbeiten.",
+        "hint": "Modal: müssen"
+      },
+      {
+        "id": "sb_040",
+        "prompt_tr": "Eve gitmek istiyorum.",
+        "tokens": [
+          "Ich",
+          "will",
+          "nach",
+          "Hause",
+          "."
+        ],
+        "distractors": [],
+        "answer_de": "Ich will nach Hause.",
+        "hint": "Modal: wollen"
+      },
+      {
+        "id": "sb_041",
+        "prompt_tr": "Nasılsın?",
+        "tokens": [
+          "Wie",
+          "geht",
+          "es",
+          "dir",
+          "?"
+        ],
+        "distractors": [],
+        "answer_de": "Wie geht es dir?",
+        "hint": "W-Frage: Wie"
+      },
+      {
+        "id": "sb_042",
+        "prompt_tr": "Sen öğrencisin.",
+        "tokens": [
+          "Du",
+          "bist",
+          "Student",
+          "."
+        ],
+        "distractors": [
+          "Ich",
+          "bin",
+          "Er",
+          "ist"
+        ],
+        "answer_de": "Du bist Student.",
+        "hint": "sein: du → bist"
+      },
+      {
+        "id": "sb_043",
+        "prompt_tr": "O (erkek) öğretmen.",
+        "tokens": [
+          "Er",
+          "ist",
+          "Lehrer",
+          "."
+        ],
+        "distractors": [
+          "Sie",
+          "ist",
+          "Du",
+          "bist"
+        ],
+        "answer_de": "Er ist Lehrer.",
+        "hint": "sein: er → ist"
+      },
+      {
+        "id": "sb_044",
+        "prompt_tr": "O (kadın) doktor.",
+        "tokens": [
+          "Sie",
+          "ist",
+          "Ärztin",
+          "."
+        ],
+        "distractors": [
+          "Er",
+          "ist",
+          "Es",
+          "ist"
+        ],
+        "answer_de": "Sie ist Ärztin.",
+        "hint": "sein: sie → ist"
+      },
+      {
+        "id": "sb_045",
+        "prompt_tr": "Vaktin var mı?",
+        "tokens": [
+          "Hast",
+          "du",
+          "Zeit",
+          "?"
+        ],
+        "distractors": [
+          "Habe",
+          "ich",
+          "Hat",
+          "er"
+        ],
+        "answer_de": "Hast du Zeit?",
+        "hint": "haben: du → hast"
+      },
+      {
+        "id": "sb_046",
+        "prompt_tr": "O (erkek) Türkiye'den geliyor.",
+        "tokens": [
+          "Er",
+          "kommt",
+          "aus",
+          "der",
+          "Türkei",
+          "."
+        ],
+        "distractors": [
+          "Ich",
+          "komme",
+          "Du",
+          "kommst"
+        ],
+        "answer_de": "Er kommt aus der Türkei.",
+        "hint": "kommen: er → kommt"
+      },
+      {
+        "id": "sb_047",
+        "prompt_tr": "Ne yapıyorsun?",
+        "tokens": [
+          "Was",
+          "machst",
+          "du",
+          "?"
+        ],
+        "distractors": [
+          "macht",
+          "er",
+          "mache",
+          "ich"
+        ],
+        "answer_de": "Was machst du?",
+        "hint": "machen: du → machst"
+      },
+      {
+        "id": "sb_048",
+        "prompt_tr": "Almanca öğreniyorsun.",
+        "tokens": [
+          "Du",
+          "lernst",
+          "Deutsch",
+          "."
+        ],
+        "distractors": [
+          "Ich",
+          "lerne",
+          "Er",
+          "lernt"
+        ],
+        "answer_de": "Du lernst Deutsch.",
+        "hint": "lernen: du → lernst"
+      },
+      {
+        "id": "sb_049",
+        "prompt_tr": "O (erkek) burada çalışıyor.",
+        "tokens": [
+          "Er",
+          "arbeitet",
+          "hier",
+          "."
+        ],
+        "distractors": [
+          "Ich",
+          "arbeite",
+          "Du",
+          "arbeitest"
+        ],
+        "answer_de": "Er arbeitet hier.",
+        "hint": "arbeiten: er → arbeitet"
+      },
+      {
+        "id": "sb_050",
+        "prompt_tr": "Bu benim oğlum.",
+        "tokens": [
+          "Das",
+          "ist",
+          "mein",
+          "Sohn",
+          "."
+        ],
+        "distractors": [
+          "meine",
+          "dein",
+          "sein",
+          "ihr"
+        ],
+        "answer_de": "Das ist mein Sohn.",
+        "hint": "der Sohn → mein"
+      },
+      {
+        "id": "sb_051",
+        "prompt_tr": "Bu senin kız kardeşin.",
+        "tokens": [
+          "Das",
+          "ist",
+          "deine",
+          "Schwester",
+          "."
+        ],
+        "distractors": [
+          "dein",
+          "meine",
+          "seine",
+          "ihre"
+        ],
+        "answer_de": "Das ist deine Schwester.",
+        "hint": "die Schwester → deine"
+      },
+      {
+        "id": "sb_052",
+        "prompt_tr": "Bu onun (erkek) arabası.",
+        "tokens": [
+          "Das",
+          "ist",
+          "sein",
+          "Auto",
+          "."
+        ],
+        "distractors": [
+          "seine",
+          "mein",
+          "dein",
+          "ihr"
+        ],
+        "answer_de": "Das ist sein Auto.",
+        "hint": "das Auto → sein"
+      },
+      {
+        "id": "sb_053",
+        "prompt_tr": "Bu onun (kadın) kocası.",
+        "tokens": [
+          "Das",
+          "ist",
+          "ihr",
+          "Mann",
+          "."
+        ],
+        "distractors": [
+          "ihre",
+          "sein",
+          "dein",
+          "unser"
+        ],
+        "answer_de": "Das ist ihr Mann.",
+        "hint": "der Mann → ihr (onun — kadın)"
+      },
+      {
+        "id": "sb_054",
+        "prompt_tr": "Bu bizim otelimiz.",
+        "tokens": [
+          "Das",
+          "ist",
+          "unser",
+          "Hotel",
+          "."
+        ],
+        "distractors": [
+          "unsere",
+          "mein",
+          "euer",
+          "dein"
+        ],
+        "answer_de": "Das ist unser Hotel.",
+        "hint": "das Hotel → unser"
+      }
+    ]
+  },
+  "grammarPack": {
+    "title": "A1 Grammar Pack",
+    "titleTr": "A1 Gramer Paketi",
+    "sections": [
+      {
+        "id": "pronouns",
+        "title": "Pronomen",
+        "titleTr": "Zamirler",
+        "reference": {
+          "items": [
+            {
+              "de": "ich",
+              "tr": "ben"
+            },
+            {
+              "de": "du",
+              "tr": "sen"
+            },
+            {
+              "de": "er",
+              "tr": "o (erkek)"
+            },
+            {
+              "de": "sie",
+              "tr": "o (kadın)"
+            },
+            {
+              "de": "es",
+              "tr": "o (nötr)"
+            },
+            {
+              "de": "wir",
+              "tr": "biz"
+            },
+            {
+              "de": "ihr",
+              "tr": "siz (çoğul)"
+            },
+            {
+              "de": "Sie",
+              "tr": "siz (resmi)"
+            },
+            {
+              "de": "sie",
+              "tr": "onlar"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "pr_01",
+            "question_tr": "Hangisi \"ben\"?",
+            "options": [
+              "ich",
+              "du",
+              "wir",
+              "ihr"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "pr_02",
+            "question_tr": "Hangisi \"sen\"?",
+            "options": [
+              "er",
+              "du",
+              "Sie",
+              "wir"
+            ],
+            "correct_index": 1
+          },
+          {
+            "id": "pr_03",
+            "question_tr": "Hangisi \"biz\"?",
+            "options": [
+              "ihr",
+              "wir",
+              "ich",
+              "du"
+            ],
+            "correct_index": 1
+          },
+          {
+            "id": "pr_04",
+            "question_tr": "Hangisi resmi \"siz\"?",
+            "options": [
+              "du",
+              "Sie",
+              "sie",
+              "er"
+            ],
+            "correct_index": 1
+          },
+          {
+            "id": "pr_05",
+            "question_tr": "Hangisi \"o (erkek)\"?",
+            "options": [
+              "sie",
+              "es",
+              "er",
+              "ich"
+            ],
+            "correct_index": 2
+          },
+          {
+            "id": "pr_06",
+            "question_tr": "Hangisi \"o (kadın)\"?",
+            "options": [
+              "er",
+              "sie",
+              "du",
+              "wir"
+            ],
+            "correct_index": 1
+          },
+          {
+            "id": "pr_07",
+            "question_tr": "Hangisi \"o (nötr)\"?",
+            "options": [
+              "es",
+              "er",
+              "sie",
+              "ihr"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "pr_08",
+            "question_tr": "Hangisi \"onlar\"?",
+            "options": [
+              "Sie",
+              "sie",
+              "ihr",
+              "wir"
+            ],
+            "correct_index": 1
+          }
+        ]
+      },
+      {
+        "id": "verbs",
+        "title": "Verbkonjugation",
+        "titleTr": "Fiil çekimleri",
+        "reference": {
+          "items": [
+            {
+              "de": "ich bin / habe / komme",
+              "tr": "ben …ım / … var / geliyorum"
+            },
+            {
+              "de": "du bist / hast / kommst",
+              "tr": "sen …sın / … var / geliyorsun"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "vb_01",
+            "question_tr": "Ich ___ Student. (olmak)",
+            "options": [
+              "bin",
+              "bist",
+              "ist",
+              "sind"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "vb_02",
+            "question_tr": "Du ___ aus der Türkei. (gelmek)",
+            "options": [
+              "komme",
+              "kommst",
+              "kommt",
+              "kommen"
+            ],
+            "correct_index": 1
+          },
+          {
+            "id": "vb_03",
+            "question_tr": "Ich ___ ein Auto. (sahip olmak)",
+            "options": [
+              "habe",
+              "hast",
+              "hat",
+              "haben"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "vb_04",
+            "question_tr": "Wir ___ in Ankara. (oturmak)",
+            "options": [
+              "wohne",
+              "wohnst",
+              "wohnen",
+              "wohnt"
+            ],
+            "correct_index": 2
+          },
+          {
+            "id": "vb_05",
+            "question_tr": "Er ___ als Lehrer. (çalışmak)",
+            "options": [
+              "arbeite",
+              "arbeitest",
+              "arbeitet",
+              "arbeiten"
+            ],
+            "correct_index": 2
+          },
+          {
+            "id": "vb_06",
+            "question_tr": "Du ___ Deutsch. (öğrenmek)",
+            "options": [
+              "lerne",
+              "lernst",
+              "lernt",
+              "lernen"
+            ],
+            "correct_index": 1
+          }
+        ]
+      },
+      {
+        "id": "wFragen",
+        "title": "W-Fragen",
+        "titleTr": "Soru kelimeleri",
+        "reference": {
+          "items": [
+            {
+              "de": "Wer?",
+              "tr": "Kim?"
+            },
+            {
+              "de": "Was?",
+              "tr": "Ne?"
+            },
+            {
+              "de": "Wo?",
+              "tr": "Nerede?"
+            },
+            {
+              "de": "Wann?",
+              "tr": "Ne zaman?"
+            },
+            {
+              "de": "Wie?",
+              "tr": "Nasıl?"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "wf_01",
+            "question_tr": "___ ist das? (Bu kim?)",
+            "options": [
+              "Wer",
+              "Was",
+              "Wo",
+              "Wann"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "wf_02",
+            "question_tr": "___ wohnst du? (Nerede oturuyorsun?)",
+            "options": [
+              "Wo",
+              "Wer",
+              "Was",
+              "Warum"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "wf_03",
+            "question_tr": "___ kommst du? (Neredensin?)",
+            "options": [
+              "Woher",
+              "Wohin",
+              "Wann",
+              "Wie"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "wf_04",
+            "question_tr": "___ beginnt der Kurs? (Ne zaman?)",
+            "options": [
+              "Wann",
+              "Wo",
+              "Wer",
+              "Was"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "wf_05",
+            "question_tr": "___ geht es dir? (Nasılsın?)",
+            "options": [
+              "Wie",
+              "Was",
+              "Wo",
+              "Wer"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "wf_06",
+            "question_tr": "___ kostet das? (Ne kadar?)",
+            "options": [
+              "Wie viel",
+              "Wer",
+              "Wo",
+              "Wann"
+            ],
+            "correct_index": 0
+          }
+        ]
+      },
+      {
+        "id": "jaNein",
+        "title": "Ja/Nein Fragen",
+        "titleTr": "Evet/Hayır soruları",
+        "reference": {
+          "items": [
+            {
+              "de": "Kommst du …?",
+              "tr": "… misin/musun?"
+            },
+            {
+              "de": "Ja, ich …",
+              "tr": "Evet, …"
+            },
+            {
+              "de": "Nein, ich … nicht",
+              "tr": "Hayır, … değilim/yapmıyorum"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "jn_01",
+            "question_tr": "Hangisi soru cümlesi?",
+            "options": [
+              "Kommst du aus der Türkei?",
+              "Ich komme aus der Türkei.",
+              "Ja, ich komme.",
+              "Aus der Türkei."
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "jn_02",
+            "question_tr": "\"Vaktin var mı?\" Almancası:",
+            "options": [
+              "Hast du Zeit?",
+              "Du hast Zeit.",
+              "Ja, Zeit.",
+              "Zeit du hast?"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "jn_03",
+            "question_tr": "Kommst du aus der Türkei? — Evet cevabı:",
+            "options": [
+              "Ja, ich komme aus der Türkei.",
+              "Nein, ich komme.",
+              "Ja, du kommst.",
+              "Ich komme nicht."
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "jn_04",
+            "question_tr": "Lernst du Deutsch? — Hayır:",
+            "options": [
+              "Nein, ich lerne kein Deutsch.",
+              "Ja, ich lerne Deutsch.",
+              "Nein, du lernst.",
+              "Lernst du nicht."
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "jn_05",
+            "question_tr": "Hangisi cümle (soru değil)?",
+            "options": [
+              "Ich wohne in Berlin.",
+              "Wohnst du in Berlin?",
+              "Hast du Zeit?",
+              "Kommst du mit?"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "jn_06",
+            "question_tr": "Wohnst du in Ankara? — Evet:",
+            "options": [
+              "Ja, ich wohne in Ankara.",
+              "Nein, ich wohne.",
+              "Ja, du wohnst.",
+              "Wohne ich in Ankara."
+            ],
+            "correct_index": 0
+          }
+        ]
+      },
+      {
+        "id": "akkusativ",
+        "title": "Akkusativ",
+        "titleTr": "Belirtme hali",
+        "reference": {
+          "items": [
+            {
+              "de": "einen Hund",
+              "tr": "bir köpek (eril)"
+            },
+            {
+              "de": "eine Cola",
+              "tr": "bir kola (dişil)"
+            },
+            {
+              "de": "ein Brötchen",
+              "tr": "bir küçük ekmek (nötr)"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "ak_01",
+            "question_tr": "Ich habe ___ Hund.",
+            "options": [
+              "einen",
+              "ein",
+              "eine",
+              "der"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "ak_02",
+            "question_tr": "Ich kaufe ___ Apfel.",
+            "options": [
+              "einen",
+              "eine",
+              "ein",
+              "die"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "ak_03",
+            "question_tr": "Ich trinke ___ Cola.",
+            "options": [
+              "eine",
+              "einen",
+              "ein",
+              "der"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "ak_04",
+            "question_tr": "Ich esse ___ Brötchen.",
+            "options": [
+              "ein",
+              "einen",
+              "eine",
+              "das"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "ak_05",
+            "question_tr": "Ich möchte ___ Kaffee.",
+            "options": [
+              "einen",
+              "eine",
+              "ein",
+              "der"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "ak_06",
+            "question_tr": "Ich brauche ___ Stift.",
+            "options": [
+              "einen",
+              "eine",
+              "ein",
+              "die"
+            ],
+            "correct_index": 0
+          }
+        ]
+      },
+      {
+        "id": "possessiv",
+        "title": "Possessivartikel",
+        "titleTr": "Sahiplik zamirleri",
+        "reference": {
+          "items": [
+            {
+              "de": "mein Sohn (der)",
+              "tr": "benim oğlum"
+            },
+            {
+              "de": "meine Schwester (die)",
+              "tr": "benim kız kardeşim"
+            },
+            {
+              "de": "mein Kind (das)",
+              "tr": "benim çocuğum"
+            },
+            {
+              "de": "dein Sohn / deine Schwester",
+              "tr": "senin oğlun / kız kardeşin"
+            },
+            {
+              "de": "sein Sohn / seine Schwester",
+              "tr": "onun (erkek) oğlu / kız kardeşi"
+            },
+            {
+              "de": "ihr Sohn / ihre Schwester",
+              "tr": "onun (kadın) oğlu / kız kardeşi"
+            },
+            {
+              "de": "unser Sohn / unsere Familie",
+              "tr": "bizim oğlumuz / ailemiz"
+            },
+            {
+              "de": "euer Sohn / eure Familie",
+              "tr": "sizin oğlunuz / aileniz"
+            },
+            {
+              "de": "mein Hotel (das)",
+              "tr": "benim otelim"
+            },
+            {
+              "de": "ihr Mann (der)",
+              "tr": "onun (kadın) kocası"
+            },
+            {
+              "de": "Ihr Name / Ihre Adresse (Sie)",
+              "tr": "sizin adınız / adresiniz (resmi)"
+            }
+          ],
+          "examples": [
+            {
+              "de": "Anna, ist deine Schwester Lehrerin?",
+              "tr": "Anna, kız kardeşin öğretmen mi?"
+            },
+            {
+              "de": "David, ist dein Sohn Bäcker?",
+              "tr": "David, oğlun fırıncı mı?"
+            },
+            {
+              "de": "Das ist mein Hotel.",
+              "tr": "Bu benim otelim."
+            },
+            {
+              "de": "Das ist ihr Mann.",
+              "tr": "Bu onun (kadın) kocası."
+            }
+          ]
+        },
+        "quiz": [
+          {
+            "id": "po_01",
+            "question_tr": "die Schwester → hangi form? (senin)",
+            "options": [
+              "deine",
+              "dein",
+              "deinen",
+              "deins"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_02",
+            "question_tr": "der Sohn → hangi form? (senin)",
+            "options": [
+              "dein",
+              "deine",
+              "deinen",
+              "deins"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_03",
+            "question_tr": "das Kind → hangi form? (benim)",
+            "options": [
+              "mein",
+              "meine",
+              "meinen",
+              "meins"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_04",
+            "question_tr": "die Familie → hangi form? (bizim)",
+            "options": [
+              "unsere",
+              "unser",
+              "unseren",
+              "unseres"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_05",
+            "question_tr": "der Bruder → hangi form? (onun — erkek)",
+            "options": [
+              "sein",
+              "seine",
+              "seinen",
+              "seins"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_06",
+            "question_tr": "die Mutter → hangi form? (onun — kadın)",
+            "options": [
+              "ihre",
+              "ihr",
+              "ihren",
+              "ihres"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_07",
+            "question_tr": "Ich suche ___ Sohn. (Akkusativ — benim)",
+            "options": [
+              "meinen",
+              "mein",
+              "meine",
+              "meinem"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "po_08",
+            "question_tr": "Resmi \"sizin adresiniz\" — hangisi?",
+            "options": [
+              "Ihre Adresse",
+              "ihre Adresse",
+              "deine Adresse",
+              "unsere Adresse"
+            ],
+            "correct_index": 0
+          }
+        ]
+      },
+      {
+        "id": "trennbar",
+        "title": "Trennbare Verben",
+        "titleTr": "Ayrılabilen fiiller",
+        "reference": {
+          "items": [
+            {
+              "de": "aufstehen → stehe … auf",
+              "tr": "kalkmak"
+            },
+            {
+              "de": "anrufen → rufe … an",
+              "tr": "aramak"
+            },
+            {
+              "de": "einkaufen → kaufe … ein",
+              "tr": "alışveriş"
+            }
+          ],
+          "examples": []
+        },
+        "quiz": [
+          {
+            "id": "tv_01",
+            "question_tr": "Ich stehe um 7 Uhr ___. (aufstehen)",
+            "options": [
+              "auf",
+              "an",
+              "ein",
+              "mit"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "tv_02",
+            "question_tr": "Ich rufe meine Mutter ___. (anrufen)",
+            "options": [
+              "an",
+              "auf",
+              "ein",
+              "zu"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "tv_03",
+            "question_tr": "Ich kaufe im Supermarkt ___. (einkaufen)",
+            "options": [
+              "ein",
+              "an",
+              "auf",
+              "fern"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "tv_04",
+            "question_tr": "Am Abend sehe ich ___. (fernsehen)",
+            "options": [
+              "fern",
+              "an",
+              "auf",
+              "mit"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "tv_05",
+            "question_tr": "Kommst du ___? (mitkommen)",
+            "options": [
+              "mit",
+              "an",
+              "auf",
+              "ein"
+            ],
+            "correct_index": 0
+          },
+          {
+            "id": "tv_06",
+            "question_tr": "Der Kurs fängt um 9 Uhr ___. (anfangen)",
+            "options": [
+              "an",
+              "auf",
+              "ein",
+              "zu"
+            ],
+            "correct_index": 0
+          }
+        ]
+      }
+    ]
+  }
+}

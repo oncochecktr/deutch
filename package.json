@@ -1,0 +1,28 @@
+{
+  "name": "german-coach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Goethe A1/A2/B1 sınav hazırlık ve Almanca öğrenme platformu",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "start": "npm run start --workspace=apps/web",
+    "vocab": "node scripts/build-a1-500.mjs",
+    "timur": "node scripts/build-timur.mjs",
+    "goethe": "node scripts/build-goethe-a1-bank.mjs",
+    "audio": "node scripts/generate-audio.mjs",
+    "audit:articles": "node scripts/audit-a1-articles.mjs",
+    "seed:articles": "node scripts/seed-article-reference.mjs",
+    "build:patterns": "node scripts/build-a1-patterns.mjs",
+    "build:conjugation": "node scripts/build-a1-conjugation.mjs",
+    "build:possessives": "node scripts/build-a1-possessives.mjs",
+    "build:word-order": "node scripts/build-a1-word-order.mjs"
+  },
+  "devDependencies": {
+    "msedge-tts": "^2.0.5"
+  }
+}

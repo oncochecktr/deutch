@@ -1,0 +1,1628 @@
+[
+  {
+    "id": "sw_001",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_002",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_003",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_004",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_005",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_006",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_007",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_008",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Anmeldeformular aus.",
+    "prompt_tr": "Kayıt formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Vorname",
+        "placeholder": "Vorname...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Telefonnummer",
+        "placeholder": "Telefonnummer...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_009",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_010",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_011",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_012",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_013",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_014",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_015",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_016",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular für die Arbeitsagentur aus.",
+    "prompt_tr": "İş ajansı formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Beruf",
+        "placeholder": "Beruf...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Staatsangehörigkeit",
+        "placeholder": "Staatsangehörigkeit...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Unterschrift",
+        "placeholder": "Unterschrift...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_017",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_018",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_019",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_020",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_021",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_022",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_023",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_024",
+    "level": "A1",
+    "type": "form",
+    "prompt_de": "Füllen Sie das Formular beim Arzt aus.",
+    "prompt_tr": "Doktor formunu doldurun.",
+    "fields": [
+      {
+        "id": "f0",
+        "label": "Name",
+        "placeholder": "Name...",
+        "required": true
+      },
+      {
+        "id": "f1",
+        "label": "Geburtsdatum",
+        "placeholder": "Geburtsdatum...",
+        "required": true
+      },
+      {
+        "id": "f2",
+        "label": "Adresse",
+        "placeholder": "Adresse...",
+        "required": true
+      },
+      {
+        "id": "f3",
+        "label": "Krankenkasse",
+        "placeholder": "Krankenkasse...",
+        "required": false
+      },
+      {
+        "id": "f4",
+        "label": "Telefon",
+        "placeholder": "Telefon...",
+        "required": false
+      }
+    ],
+    "min_words": 0,
+    "sample_answer": "Name: Timur Yilmaz, Adresse: Hauptstraße 5, Berlin",
+    "tags": [
+      "schreiben",
+      "form"
+    ]
+  },
+  {
+    "id": "sw_025",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_026",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_027",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_028",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_029",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_030",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine E-Mail an Ihren Chef. Sie sind krank.",
+    "prompt_tr": "Patronunuza e-posta yazın. Hastasınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Sehr geehrter Herr Schmidt, ich bin krank und kann heute nicht arbeiten. Mit freundlichen Grüßen, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_031",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_032",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_033",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_034",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_035",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_036",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie an einen Freund. Laden Sie ihn zum Essen ein.",
+    "prompt_tr": "Arkadaşınıza yazın. Yemeğe davet edin.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Hallo Ali, möchtest du am Samstag essen gehen? Bis bald, Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_037",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_038",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_039",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_040",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_041",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_042",
+    "level": "A1",
+    "type": "email",
+    "prompt_de": "Schreiben Sie eine kurze Nachricht. Sie kommen später zur Arbeit.",
+    "prompt_tr": "Kısa mesaj yazın. İşe geç kalacaksınız.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Ihre Nachricht",
+        "placeholder": "Schreiben Sie hier...",
+        "required": true
+      }
+    ],
+    "min_words": 20,
+    "sample_answer": "Guten Morgen, ich komme heute um 30 Minuten später. Timur",
+    "tags": [
+      "schreiben",
+      "email"
+    ]
+  },
+  {
+    "id": "sw_043",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Geburtstag.",
+    "prompt_tr": "Doğum günü davetiyesi yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_044",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Geburtstag.",
+    "prompt_tr": "Doğum günü davetiyesi yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_045",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Geburtstag.",
+    "prompt_tr": "Doğum günü davetiyesi yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_046",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Geburtstag.",
+    "prompt_tr": "Doğum günü davetiyesi yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_047",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Kaffee.",
+    "prompt_tr": "Kahve daveti yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_048",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Kaffee.",
+    "prompt_tr": "Kahve daveti yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_049",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Kaffee.",
+    "prompt_tr": "Kahve daveti yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  },
+  {
+    "id": "sw_050",
+    "level": "A1",
+    "type": "invitation",
+    "prompt_de": "Schreiben Sie eine Einladung zum Kaffee.",
+    "prompt_tr": "Kahve daveti yazın.",
+    "fields": [
+      {
+        "id": "text",
+        "label": "Einladung",
+        "placeholder": "Liebe...",
+        "required": true
+      }
+    ],
+    "min_words": 25,
+    "sample_answer": "Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Kommt bitte um 18 Uhr. Timur",
+    "tags": [
+      "schreiben",
+      "invitation"
+    ]
+  }
+]

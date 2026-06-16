@@ -1,0 +1,282 @@
+[
+  {
+    "id": "hrf_001",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Gute Nacht",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_002",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Danke",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_003",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Willkommen",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_004",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Morgen",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_005",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Alles klar",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_006",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Bis bald",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_007",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Prost",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_008",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Gute Besserung",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_009",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Frohes neues Jahr",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_010",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Vielleicht",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_011",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "der Vorname",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_012",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "wohnen",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_013",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "verstehen",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_014",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "die Stadt",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_015",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Jahre alt",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_016",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "ledig",
+    "statement_de": "Was hörst du.",
+    "statement_tr": "Ne duyuyorsun?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_017",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Ich wohne in Berlin.",
+    "statement_de": "Was ist richtig.",
+    "statement_tr": "Berlin'de yaşıyorum.",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_018",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Wie spät ist es?",
+    "statement_de": "Was ist richtig.",
+    "statement_tr": "Saat kaç?",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_019",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Ich habe Hunger.",
+    "statement_de": "Was ist richtig.",
+    "statement_tr": "Açım.",
+    "correct": true,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  },
+  {
+    "id": "hrf_020",
+    "level": "A1",
+    "part": 1,
+    "format": "true_false",
+    "audio_text": "Ich heiße Timur.",
+    "statement_de": "Was ist richtig.",
+    "statement_tr": "Benim adım Timur.",
+    "correct": false,
+    "tags": [
+      "real",
+      "teil1"
+    ]
+  }
+]

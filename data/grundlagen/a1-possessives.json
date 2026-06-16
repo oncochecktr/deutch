@@ -1,0 +1,2191 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Possessive Trainer",
+  "titleTr": "Sahiplik Zamirleri (Possessivartikel)",
+  "description": "der/die/das → mein/deine — 6 sahip × 8 örnek + drill",
+  "passThreshold": 6,
+  "drillsPerSet": 8,
+  "rules": [
+    {
+      "owner": "mein",
+      "owner_tr": "benim",
+      "masc_neut": "mein",
+      "fem_pl": "meine"
+    },
+    {
+      "owner": "dein",
+      "owner_tr": "senin",
+      "masc_neut": "dein",
+      "fem_pl": "deine"
+    },
+    {
+      "owner": "sein",
+      "owner_tr": "onun (erkek)",
+      "masc_neut": "sein",
+      "fem_pl": "seine"
+    },
+    {
+      "owner": "ihr",
+      "owner_tr": "onun (kadın)",
+      "masc_neut": "ihr",
+      "fem_pl": "ihre"
+    },
+    {
+      "owner": "unser",
+      "owner_tr": "bizim",
+      "masc_neut": "unser",
+      "fem_pl": "unsere"
+    },
+    {
+      "owner": "euer",
+      "owner_tr": "sizin (çoğul)",
+      "masc_neut": "euer",
+      "fem_pl": "eure"
+    }
+  ],
+  "sets": [
+    {
+      "id": "mein",
+      "owner": "mein",
+      "owner_tr": "benim",
+      "masc_neut": "mein",
+      "fem_pl": "meine",
+      "order": 1,
+      "examples": [
+        {
+          "id": "mein-ex-0",
+          "de": "Anna, ist mein Sohn Bäcker?",
+          "tr": "Anna, benim oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "mein",
+              "tr": "benim (der/das → mein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "mein",
+          "possessive_form": "mein"
+        },
+        {
+          "id": "mein-ex-1",
+          "de": "David, ist meine Schwester Lehrerin?",
+          "tr": "David, benim kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "meine",
+              "tr": "benim (die → meine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "mein",
+          "possessive_form": "meine"
+        },
+        {
+          "id": "mein-ex-2",
+          "de": "Meine Mutter ist nett.",
+          "tr": "benim anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "meine",
+              "tr": "benim (die → meine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "mein",
+          "possessive_form": "meine"
+        },
+        {
+          "id": "mein-ex-3",
+          "de": "Mein Hotel ist nett.",
+          "tr": "benim otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "mein",
+              "tr": "benim (der/das → mein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "mein",
+          "possessive_form": "mein"
+        },
+        {
+          "id": "mein-ex-4",
+          "de": "Mein Kind ist nett.",
+          "tr": "benim çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "mein",
+              "tr": "benim (der/das → mein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "mein",
+          "possessive_form": "mein"
+        },
+        {
+          "id": "mein-ex-5",
+          "de": "Meine Familie ist nett.",
+          "tr": "benim aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "meine",
+              "tr": "benim (die → meine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "mein",
+          "possessive_form": "meine"
+        },
+        {
+          "id": "mein-ex-6",
+          "de": "Mein Bruder ist Ärztin.",
+          "tr": "benim erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "mein",
+              "tr": "benim (der/das → mein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "mein",
+          "possessive_form": "mein"
+        },
+        {
+          "id": "mein-ex-7",
+          "de": "Mein Mann ist nett.",
+          "tr": "benim adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "mein",
+              "tr": "benim (der/das → mein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "mein",
+          "possessive_form": "mein"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-mein-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "meine",
+            "mein",
+            "deine",
+            "dein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → mein (benim)"
+        },
+        {
+          "id": "drill-mein-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (benim)",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "deine",
+            "meine",
+            "dein",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → meine (benim)"
+        },
+        {
+          "id": "drill-mein-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "deine",
+            "meine",
+            "dein",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → meine (benim)"
+        },
+        {
+          "id": "drill-mein-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "dein",
+            "meine",
+            "deine",
+            "mein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → mein (benim)"
+        },
+        {
+          "id": "drill-mein-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (benim)",
+          "context_de": "Mein Kind ist nett.",
+          "options": [
+            "dein",
+            "meine",
+            "mein",
+            "deine"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → mein (benim)"
+        },
+        {
+          "id": "drill-mein-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "deine",
+            "meine",
+            "dein",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → meine (benim)"
+        },
+        {
+          "id": "drill-mein-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "meine",
+            "mein",
+            "dein",
+            "deine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → mein (benim)"
+        },
+        {
+          "id": "drill-mein-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (benim)",
+          "context_de": "Mein Mann ist nett.",
+          "options": [
+            "dein",
+            "meine",
+            "deine",
+            "mein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → mein (benim)"
+        }
+      ]
+    },
+    {
+      "id": "dein",
+      "owner": "dein",
+      "owner_tr": "senin",
+      "masc_neut": "dein",
+      "fem_pl": "deine",
+      "order": 2,
+      "examples": [
+        {
+          "id": "dein-ex-0",
+          "de": "Anna, ist dein Sohn Bäcker?",
+          "tr": "Anna, senin oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "dein",
+              "tr": "senin (der/das → dein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "dein",
+          "possessive_form": "dein"
+        },
+        {
+          "id": "dein-ex-1",
+          "de": "David, ist deine Schwester Lehrerin?",
+          "tr": "David, senin kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "deine",
+              "tr": "senin (die → deine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "dein",
+          "possessive_form": "deine"
+        },
+        {
+          "id": "dein-ex-2",
+          "de": "Deine Mutter ist nett.",
+          "tr": "senin anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "deine",
+              "tr": "senin (die → deine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "dein",
+          "possessive_form": "deine"
+        },
+        {
+          "id": "dein-ex-3",
+          "de": "Dein Hotel ist nett.",
+          "tr": "senin otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "dein",
+              "tr": "senin (der/das → dein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "dein",
+          "possessive_form": "dein"
+        },
+        {
+          "id": "dein-ex-4",
+          "de": "Dein Kind ist nett.",
+          "tr": "senin çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "dein",
+              "tr": "senin (der/das → dein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "dein",
+          "possessive_form": "dein"
+        },
+        {
+          "id": "dein-ex-5",
+          "de": "Deine Familie ist nett.",
+          "tr": "senin aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "deine",
+              "tr": "senin (die → deine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "dein",
+          "possessive_form": "deine"
+        },
+        {
+          "id": "dein-ex-6",
+          "de": "Dein Bruder ist Ärztin.",
+          "tr": "senin erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "dein",
+              "tr": "senin (der/das → dein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "dein",
+          "possessive_form": "dein"
+        },
+        {
+          "id": "dein-ex-7",
+          "de": "Dein Mann ist nett.",
+          "tr": "senin adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "dein",
+              "tr": "senin (der/das → dein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "dein",
+          "possessive_form": "dein"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-dein-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "deine",
+            "dein",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → dein (senin)"
+        },
+        {
+          "id": "drill-dein-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (senin)",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "mein",
+            "deine",
+            "meine",
+            "dein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → deine (senin)"
+        },
+        {
+          "id": "drill-dein-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "dein",
+            "deine",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → deine (senin)"
+        },
+        {
+          "id": "drill-dein-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "mein",
+            "meine",
+            "deine",
+            "dein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → dein (senin)"
+        },
+        {
+          "id": "drill-dein-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (senin)",
+          "context_de": "Dein Kind ist nett.",
+          "options": [
+            "deine",
+            "meine",
+            "dein",
+            "mein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → dein (senin)"
+        },
+        {
+          "id": "drill-dein-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "mein",
+            "deine",
+            "dein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → deine (senin)"
+        },
+        {
+          "id": "drill-dein-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "deine",
+            "dein",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → dein (senin)"
+        },
+        {
+          "id": "drill-dein-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (senin)",
+          "context_de": "Dein Mann ist nett.",
+          "options": [
+            "meine",
+            "deine",
+            "mein",
+            "dein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → dein (senin)"
+        }
+      ]
+    },
+    {
+      "id": "sein",
+      "owner": "sein",
+      "owner_tr": "onun (erkek)",
+      "masc_neut": "sein",
+      "fem_pl": "seine",
+      "order": 3,
+      "examples": [
+        {
+          "id": "sein-ex-0",
+          "de": "Anna, ist sein Sohn Bäcker?",
+          "tr": "Anna, onun (erkek) oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "sein",
+              "tr": "onun (erkek) (der/das → sein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "sein",
+          "possessive_form": "sein"
+        },
+        {
+          "id": "sein-ex-1",
+          "de": "David, ist seine Schwester Lehrerin?",
+          "tr": "David, onun (erkek) kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "seine",
+              "tr": "onun (erkek) (die → seine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "sein",
+          "possessive_form": "seine"
+        },
+        {
+          "id": "sein-ex-2",
+          "de": "Seine Mutter ist nett.",
+          "tr": "onun (erkek) anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "seine",
+              "tr": "onun (erkek) (die → seine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "sein",
+          "possessive_form": "seine"
+        },
+        {
+          "id": "sein-ex-3",
+          "de": "Sein Hotel ist nett.",
+          "tr": "onun (erkek) otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "sein",
+              "tr": "onun (erkek) (der/das → sein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "sein",
+          "possessive_form": "sein"
+        },
+        {
+          "id": "sein-ex-4",
+          "de": "Sein Kind ist nett.",
+          "tr": "onun (erkek) çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "sein",
+              "tr": "onun (erkek) (der/das → sein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "sein",
+          "possessive_form": "sein"
+        },
+        {
+          "id": "sein-ex-5",
+          "de": "Seine Familie ist nett.",
+          "tr": "onun (erkek) aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "seine",
+              "tr": "onun (erkek) (die → seine)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "sein",
+          "possessive_form": "seine"
+        },
+        {
+          "id": "sein-ex-6",
+          "de": "Sein Bruder ist Ärztin.",
+          "tr": "onun (erkek) erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "sein",
+              "tr": "onun (erkek) (der/das → sein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "sein",
+          "possessive_form": "sein"
+        },
+        {
+          "id": "sein-ex-7",
+          "de": "Sein Mann ist nett.",
+          "tr": "onun (erkek) adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "sein",
+              "tr": "onun (erkek) (der/das → sein)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "sein",
+          "possessive_form": "sein"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-sein-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "meine",
+            "sein",
+            "seine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → sein (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (erkek))",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "sein",
+            "seine",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → seine (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "sein",
+            "seine",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → seine (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "meine",
+            "mein",
+            "seine",
+            "sein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → sein (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (erkek))",
+          "context_de": "Sein Kind ist nett.",
+          "options": [
+            "meine",
+            "seine",
+            "sein",
+            "mein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → sein (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "mein",
+            "seine",
+            "meine",
+            "sein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → seine (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "meine",
+            "sein",
+            "mein",
+            "seine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → sein (onun (erkek))"
+        },
+        {
+          "id": "drill-sein-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (erkek))",
+          "context_de": "Sein Mann ist nett.",
+          "options": [
+            "meine",
+            "seine",
+            "mein",
+            "sein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → sein (onun (erkek))"
+        }
+      ]
+    },
+    {
+      "id": "ihr",
+      "owner": "ihr",
+      "owner_tr": "onun (kadın)",
+      "masc_neut": "ihr",
+      "fem_pl": "ihre",
+      "order": 4,
+      "examples": [
+        {
+          "id": "ihr-ex-0",
+          "de": "Anna, ist ihr Sohn Bäcker?",
+          "tr": "Anna, onun (kadın) oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihr",
+              "tr": "onun (kadın) (der/das → ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "ihr",
+          "possessive_form": "ihr"
+        },
+        {
+          "id": "ihr-ex-1",
+          "de": "David, ist ihre Schwester Lehrerin?",
+          "tr": "David, onun (kadın) kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihre",
+              "tr": "onun (kadın) (die → ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "ihr",
+          "possessive_form": "ihre"
+        },
+        {
+          "id": "ihr-ex-2",
+          "de": "Ihre Mutter ist nett.",
+          "tr": "onun (kadın) anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihre",
+              "tr": "onun (kadın) (die → ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "ihr",
+          "possessive_form": "ihre"
+        },
+        {
+          "id": "ihr-ex-3",
+          "de": "Ihr Hotel ist nett.",
+          "tr": "onun (kadın) otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihr",
+              "tr": "onun (kadın) (der/das → ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "ihr",
+          "possessive_form": "ihr"
+        },
+        {
+          "id": "ihr-ex-4",
+          "de": "Ihr Kind ist nett.",
+          "tr": "onun (kadın) çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihr",
+              "tr": "onun (kadın) (der/das → ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "ihr",
+          "possessive_form": "ihr"
+        },
+        {
+          "id": "ihr-ex-5",
+          "de": "Ihre Familie ist nett.",
+          "tr": "onun (kadın) aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihre",
+              "tr": "onun (kadın) (die → ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "ihr",
+          "possessive_form": "ihre"
+        },
+        {
+          "id": "ihr-ex-6",
+          "de": "Ihr Bruder ist Ärztin.",
+          "tr": "onun (kadın) erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihr",
+              "tr": "onun (kadın) (der/das → ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "ihr",
+          "possessive_form": "ihr"
+        },
+        {
+          "id": "ihr-ex-7",
+          "de": "Ihr Mann ist nett.",
+          "tr": "onun (kadın) adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "ihr",
+              "tr": "onun (kadın) (der/das → ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "ihr",
+          "possessive_form": "ihr"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-ihr-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "ihre",
+            "ihr",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → ihr (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (kadın))",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "ihr",
+            "ihre",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → ihre (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "meine",
+            "ihre",
+            "mein",
+            "ihr"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → ihre (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "meine",
+            "mein",
+            "ihre",
+            "ihr"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → ihr (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (kadın))",
+          "context_de": "Ihr Kind ist nett.",
+          "options": [
+            "mein",
+            "ihre",
+            "ihr",
+            "meine"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → ihr (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "mein",
+            "ihre",
+            "meine",
+            "ihr"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → ihre (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "ihre",
+            "ihr",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → ihr (onun (kadın))"
+        },
+        {
+          "id": "drill-ihr-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (onun (kadın))",
+          "context_de": "Ihr Mann ist nett.",
+          "options": [
+            "mein",
+            "meine",
+            "ihre",
+            "ihr"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → ihr (onun (kadın))"
+        }
+      ]
+    },
+    {
+      "id": "unser",
+      "owner": "unser",
+      "owner_tr": "bizim",
+      "masc_neut": "unser",
+      "fem_pl": "unsere",
+      "order": 5,
+      "examples": [
+        {
+          "id": "unser-ex-0",
+          "de": "Anna, ist unser Sohn Bäcker?",
+          "tr": "Anna, bizim oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unser",
+              "tr": "bizim (der/das → unser)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "unser",
+          "possessive_form": "unser"
+        },
+        {
+          "id": "unser-ex-1",
+          "de": "David, ist unsere Schwester Lehrerin?",
+          "tr": "David, bizim kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unsere",
+              "tr": "bizim (die → unsere)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "unser",
+          "possessive_form": "unsere"
+        },
+        {
+          "id": "unser-ex-2",
+          "de": "Unsere Mutter ist nett.",
+          "tr": "bizim anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unsere",
+              "tr": "bizim (die → unsere)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "unser",
+          "possessive_form": "unsere"
+        },
+        {
+          "id": "unser-ex-3",
+          "de": "Unser Hotel ist nett.",
+          "tr": "bizim otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unser",
+              "tr": "bizim (der/das → unser)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "unser",
+          "possessive_form": "unser"
+        },
+        {
+          "id": "unser-ex-4",
+          "de": "Unser Kind ist nett.",
+          "tr": "bizim çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unser",
+              "tr": "bizim (der/das → unser)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "unser",
+          "possessive_form": "unser"
+        },
+        {
+          "id": "unser-ex-5",
+          "de": "Unsere Familie ist nett.",
+          "tr": "bizim aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unsere",
+              "tr": "bizim (die → unsere)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "unser",
+          "possessive_form": "unsere"
+        },
+        {
+          "id": "unser-ex-6",
+          "de": "Unser Bruder ist Ärztin.",
+          "tr": "bizim erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unser",
+              "tr": "bizim (der/das → unser)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "unser",
+          "possessive_form": "unser"
+        },
+        {
+          "id": "unser-ex-7",
+          "de": "Unser Mann ist nett.",
+          "tr": "bizim adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "unser",
+              "tr": "bizim (der/das → unser)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "unser",
+          "possessive_form": "unser"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-unser-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "unsere",
+            "unser",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → unser (bizim)"
+        },
+        {
+          "id": "drill-unser-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (bizim)",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "meine",
+            "unsere",
+            "mein",
+            "unser"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → unsere (bizim)"
+        },
+        {
+          "id": "drill-unser-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "unser",
+            "unsere",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → unsere (bizim)"
+        },
+        {
+          "id": "drill-unser-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "mein",
+            "unsere",
+            "meine",
+            "unser"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → unser (bizim)"
+        },
+        {
+          "id": "drill-unser-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (bizim)",
+          "context_de": "Unser Kind ist nett.",
+          "options": [
+            "unsere",
+            "meine",
+            "unser",
+            "mein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → unser (bizim)"
+        },
+        {
+          "id": "drill-unser-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "meine",
+            "unsere",
+            "mein",
+            "unser"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → unsere (bizim)"
+        },
+        {
+          "id": "drill-unser-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "unsere",
+            "unser",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → unser (bizim)"
+        },
+        {
+          "id": "drill-unser-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (bizim)",
+          "context_de": "Unser Mann ist nett.",
+          "options": [
+            "mein",
+            "unsere",
+            "meine",
+            "unser"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → unser (bizim)"
+        }
+      ]
+    },
+    {
+      "id": "euer",
+      "owner": "euer",
+      "owner_tr": "sizin (çoğul)",
+      "masc_neut": "euer",
+      "fem_pl": "eure",
+      "order": 6,
+      "examples": [
+        {
+          "id": "euer-ex-0",
+          "de": "Anna, ist euer Sohn Bäcker?",
+          "tr": "Anna, sizin (çoğul) oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "euer",
+              "tr": "sizin (çoğul) (der/das → euer)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "euer",
+          "possessive_form": "euer"
+        },
+        {
+          "id": "euer-ex-1",
+          "de": "David, ist eure Schwester Lehrerin?",
+          "tr": "David, sizin (çoğul) kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "eure",
+              "tr": "sizin (çoğul) (die → eure)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "euer",
+          "possessive_form": "eure"
+        },
+        {
+          "id": "euer-ex-2",
+          "de": "Eure Mutter ist nett.",
+          "tr": "sizin (çoğul) anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "eure",
+              "tr": "sizin (çoğul) (die → eure)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "euer",
+          "possessive_form": "eure"
+        },
+        {
+          "id": "euer-ex-3",
+          "de": "Euer Hotel ist nett.",
+          "tr": "sizin (çoğul) otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "euer",
+              "tr": "sizin (çoğul) (der/das → euer)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "euer",
+          "possessive_form": "euer"
+        },
+        {
+          "id": "euer-ex-4",
+          "de": "Euer Kind ist nett.",
+          "tr": "sizin (çoğul) çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "euer",
+              "tr": "sizin (çoğul) (der/das → euer)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "euer",
+          "possessive_form": "euer"
+        },
+        {
+          "id": "euer-ex-5",
+          "de": "Eure Familie ist nett.",
+          "tr": "sizin (çoğul) aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "eure",
+              "tr": "sizin (çoğul) (die → eure)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "euer",
+          "possessive_form": "eure"
+        },
+        {
+          "id": "euer-ex-6",
+          "de": "Euer Bruder ist Ärztin.",
+          "tr": "sizin (çoğul) erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "euer",
+              "tr": "sizin (çoğul) (der/das → euer)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "euer",
+          "possessive_form": "euer"
+        },
+        {
+          "id": "euer-ex-7",
+          "de": "Euer Mann ist nett.",
+          "tr": "sizin (çoğul) adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "euer",
+              "tr": "sizin (çoğul) (der/das → euer)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "euer",
+          "possessive_form": "euer"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-euer-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "meine",
+            "euer",
+            "eure",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → euer (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (çoğul))",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "mein",
+            "eure",
+            "meine",
+            "euer"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → eure (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "euer",
+            "eure",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → eure (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "mein",
+            "meine",
+            "eure",
+            "euer"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → euer (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (çoğul))",
+          "context_de": "Euer Kind ist nett.",
+          "options": [
+            "meine",
+            "eure",
+            "euer",
+            "mein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → euer (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "mein",
+            "eure",
+            "euer",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → eure (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "meine",
+            "euer",
+            "mein",
+            "eure"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → euer (sizin (çoğul))"
+        },
+        {
+          "id": "drill-euer-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (çoğul))",
+          "context_de": "Euer Mann ist nett.",
+          "options": [
+            "meine",
+            "eure",
+            "mein",
+            "euer"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → euer (sizin (çoğul))"
+        }
+      ]
+    }
+  ]
+}

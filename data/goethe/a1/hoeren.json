@@ -1,0 +1,2052 @@
+[
+  {
+    "id": "h_001",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Guten Morgen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi akşamlar",
+      "iyi geceler",
+      "hoşça kal",
+      "günaydın"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_002",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Guten Tag",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi akşamlar",
+      "iyi geceler",
+      "hoşça kal",
+      "iyi günler"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_003",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Guten Abend",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi geceler",
+      "hoşça kal",
+      "iyi akşamlar"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_004",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Gute Nacht",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "hoşça kal",
+      "iyi geceler"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_005",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Tschüss",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "hoşça kal"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_006",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Auf Wiedersehen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "güle güle"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_007",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Danke",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "teşekkürler"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_008",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Bitte",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "lütfen / rica ederim"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_009",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Entschuldigung",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "affedersiniz"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_010",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Willkommen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "hoş geldiniz"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_011",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Servus",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "selam (Güney Almanca)"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_012",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Grüß Gott",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "selam (Bavyera)"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_013",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Morgen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "sabah"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_014",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "der Abend",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "akşam"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_015",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Wie geht es?",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "nasılsın?"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_016",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Alles klar",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "her şey yolunda"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_017",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Schön",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "güzel"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_018",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Freut mich",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "memnun oldum"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_019",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Bis bald",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "görüşürüz"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_020",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Bis später",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "sonra görüşürüz"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_021",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Guten Appetit",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "afiyet olsun"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_022",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Prost",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "şerefe"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_023",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Herzlichen Glückwunsch",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "tebrikler"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_024",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Viel Glück",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "bol şans"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_025",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Gute Besserung",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "geçmiş olsun"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_026",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Schönes Wochenende",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "iyi hafta sonları"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_027",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Frohe Weihnachten",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "mutlu Noel"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_028",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Frohes neues Jahr",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "mutlu yıllar"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_029",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Ja",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "evet"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_030",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Nein",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "hayır"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_031",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Vielleicht",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "belki"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_032",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Natürlich",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "tabii ki"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Selamlama"
+    ]
+  },
+  {
+    "id": "h_033",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "der Name",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "isim"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_034",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "der Vorname",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "ad"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_035",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "der Nachname",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "soyad"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_036",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "kommen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "gelmek"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_037",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "wohnen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "yaşamak"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_038",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "die Sprache",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "dil"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_039",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "sprechen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "konuşmak"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_040",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "verstehen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "anlamak"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_041",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "lernen",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "öğrenmek"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_042",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "das Land",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "ülke"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_043",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "die Stadt",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "şehir"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_044",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "die Adresse",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "adres"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_045",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "das Alter",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "yaş"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_046",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "Jahre alt",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "yaşında"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_047",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "der Beruf",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "meslek"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_048",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "arbeiten als",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "olarak çalışmak"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_049",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "ledig",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "bekar"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_050",
+    "level": "A1",
+    "part": 1,
+    "type": "word",
+    "audio_text": "verheiratet",
+    "question_de": "Was hörst du?",
+    "question_tr": "Ne duyuyorsun?",
+    "options": [
+      "iyi günler",
+      "iyi akşamlar",
+      "iyi geceler",
+      "evli"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "word",
+      "Tanışma"
+    ]
+  },
+  {
+    "id": "h_051",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich heiße Timur.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Benim adım Timur.",
+    "options": [
+      "Anna",
+      "Peter",
+      "Maria",
+      "Timur"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_052",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich wohne in Berlin.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Berlin'de yaşıyorum.",
+    "options": [
+      "Hamburg",
+      "München",
+      "Köln",
+      "Berlin"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_053",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich komme aus der Türkei.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Türkiye'den geliyorum.",
+    "options": [
+      "Polen",
+      "Italien",
+      "Griechenland",
+      "Türkei"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_054",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich arbeite im Lager.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Depoda çalışıyorum.",
+    "options": [
+      "Büro",
+      "Schule",
+      "Restaurant",
+      "Lager"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_055",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wie spät ist es?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Saat kaç?",
+    "options": [
+      "Datum",
+      "Adresse",
+      "Name",
+      "Uhrzeit"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_056",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Der Bus kommt um acht.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Otobüs sekizde geliyor.",
+    "options": [
+      "zehn Uhr",
+      "sechs Uhr",
+      "zwölf Uhr",
+      "acht Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_057",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Das kostet fünf Euro.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Bu beş euro.",
+    "options": [
+      "10 Euro",
+      "1 Euro",
+      "50 Euro",
+      "5 Euro"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_058",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich habe Hunger.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Açım.",
+    "options": [
+      "Durst",
+      "Freude",
+      "Angst",
+      "Hunger"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_059",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wo ist der Bahnhof?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Tren istasyonu nerede?",
+    "options": [
+      "Flughafen",
+      "Parkplatz",
+      "Supermarkt",
+      "Bahnhof"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_060",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Meine Schicht beginnt um sechs.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Vardiyam altıda başlıyor.",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "22 Uhr",
+      "6 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_061",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich heiße Timur.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Benim adım Timur.",
+    "options": [
+      "Anna",
+      "Peter",
+      "Maria",
+      "Timur"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_062",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich wohne in Berlin.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Berlin'de yaşıyorum.",
+    "options": [
+      "Hamburg",
+      "München",
+      "Köln",
+      "Berlin"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_063",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich komme aus der Türkei.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Türkiye'den geliyorum.",
+    "options": [
+      "Polen",
+      "Italien",
+      "Griechenland",
+      "Türkei"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_064",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich arbeite im Lager.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Depoda çalışıyorum.",
+    "options": [
+      "Büro",
+      "Schule",
+      "Restaurant",
+      "Lager"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_065",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wie spät ist es?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Saat kaç?",
+    "options": [
+      "Datum",
+      "Adresse",
+      "Name",
+      "Uhrzeit"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_066",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Der Bus kommt um acht.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Otobüs sekizde geliyor.",
+    "options": [
+      "zehn Uhr",
+      "sechs Uhr",
+      "zwölf Uhr",
+      "acht Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_067",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Das kostet fünf Euro.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Bu beş euro.",
+    "options": [
+      "10 Euro",
+      "1 Euro",
+      "50 Euro",
+      "5 Euro"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_068",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich habe Hunger.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Açım.",
+    "options": [
+      "Durst",
+      "Freude",
+      "Angst",
+      "Hunger"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_069",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wo ist der Bahnhof?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Tren istasyonu nerede?",
+    "options": [
+      "Flughafen",
+      "Parkplatz",
+      "Supermarkt",
+      "Bahnhof"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_070",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Meine Schicht beginnt um sechs.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Vardiyam altıda başlıyor.",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "22 Uhr",
+      "6 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_071",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich heiße Timur.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Benim adım Timur.",
+    "options": [
+      "Anna",
+      "Peter",
+      "Maria",
+      "Timur"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_072",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich wohne in Berlin.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Berlin'de yaşıyorum.",
+    "options": [
+      "Hamburg",
+      "München",
+      "Köln",
+      "Berlin"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_073",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich komme aus der Türkei.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Türkiye'den geliyorum.",
+    "options": [
+      "Polen",
+      "Italien",
+      "Griechenland",
+      "Türkei"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_074",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich arbeite im Lager.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Depoda çalışıyorum.",
+    "options": [
+      "Büro",
+      "Schule",
+      "Restaurant",
+      "Lager"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_075",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wie spät ist es?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Saat kaç?",
+    "options": [
+      "Datum",
+      "Adresse",
+      "Name",
+      "Uhrzeit"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_076",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Der Bus kommt um acht.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Otobüs sekizde geliyor.",
+    "options": [
+      "zehn Uhr",
+      "sechs Uhr",
+      "zwölf Uhr",
+      "acht Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_077",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Das kostet fünf Euro.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Bu beş euro.",
+    "options": [
+      "10 Euro",
+      "1 Euro",
+      "50 Euro",
+      "5 Euro"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_078",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Ich habe Hunger.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Açım.",
+    "options": [
+      "Durst",
+      "Freude",
+      "Angst",
+      "Hunger"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_079",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Wo ist der Bahnhof?",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Tren istasyonu nerede?",
+    "options": [
+      "Flughafen",
+      "Parkplatz",
+      "Supermarkt",
+      "Bahnhof"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_080",
+    "level": "A1",
+    "part": 2,
+    "type": "sentence",
+    "audio_text": "Meine Schicht beginnt um sechs.",
+    "question_de": "Was ist richtig?",
+    "question_tr": "Vardiyam altıda başlıyor.",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "22 Uhr",
+      "6 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "sentence"
+    ]
+  },
+  {
+    "id": "h_081",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "A: Guten Tag! B: Guten Tag! Ich suche die Toilette. A: Die Toilette ist links.",
+    "question_de": "Wo ist die Toilette?",
+    "question_tr": "Wo ist die Toilette?",
+    "options": [
+      "rechts",
+      "oben",
+      "draußen",
+      "links"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_082",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Der Zug nach München fährt von Gleis 3 ab.",
+    "question_de": "Von welchem Gleis fährt der Zug?",
+    "question_tr": "Von welchem Gleis fährt der Zug?",
+    "options": [
+      "Gleis 2",
+      "Gleis 3",
+      "Gleis 4",
+      "Gleis 1"
+    ],
+    "correct_index": 1,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_083",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Heute haben wir von 8 bis 16 Uhr geöffnet.",
+    "question_de": "Wann schließt das Geschäft?",
+    "question_tr": "Wann schließt das Geschäft?",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "18 Uhr",
+      "16 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_084",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Bringen Sie die Palette bitte nach hinten.",
+    "question_de": "Wohin soll die Palette?",
+    "question_tr": "Wohin soll die Palette?",
+    "options": [
+      "nach vorne",
+      "nach oben",
+      "nach draußen",
+      "nach hinten"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_085",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Pause ist um zwölf Uhr für dreißig Minuten.",
+    "question_de": "Wann ist Pause?",
+    "question_tr": "Wann ist Pause?",
+    "options": [
+      "10 Uhr",
+      "14 Uhr",
+      "16 Uhr",
+      "12 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_086",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "A: Guten Tag! B: Guten Tag! Ich suche die Toilette. A: Die Toilette ist links.",
+    "question_de": "Wo ist die Toilette?",
+    "question_tr": "Wo ist die Toilette?",
+    "options": [
+      "rechts",
+      "oben",
+      "draußen",
+      "links"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_087",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Der Zug nach München fährt von Gleis 3 ab.",
+    "question_de": "Von welchem Gleis fährt der Zug?",
+    "question_tr": "Von welchem Gleis fährt der Zug?",
+    "options": [
+      "Gleis 2",
+      "Gleis 3",
+      "Gleis 4",
+      "Gleis 1"
+    ],
+    "correct_index": 1,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_088",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Heute haben wir von 8 bis 16 Uhr geöffnet.",
+    "question_de": "Wann schließt das Geschäft?",
+    "question_tr": "Wann schließt das Geschäft?",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "18 Uhr",
+      "16 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_089",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Bringen Sie die Palette bitte nach hinten.",
+    "question_de": "Wohin soll die Palette?",
+    "question_tr": "Wohin soll die Palette?",
+    "options": [
+      "nach vorne",
+      "nach oben",
+      "nach draußen",
+      "nach hinten"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_090",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Pause ist um zwölf Uhr für dreißig Minuten.",
+    "question_de": "Wann ist Pause?",
+    "question_tr": "Wann ist Pause?",
+    "options": [
+      "10 Uhr",
+      "14 Uhr",
+      "16 Uhr",
+      "12 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_091",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "A: Guten Tag! B: Guten Tag! Ich suche die Toilette. A: Die Toilette ist links.",
+    "question_de": "Wo ist die Toilette?",
+    "question_tr": "Wo ist die Toilette?",
+    "options": [
+      "rechts",
+      "oben",
+      "draußen",
+      "links"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_092",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Der Zug nach München fährt von Gleis 3 ab.",
+    "question_de": "Von welchem Gleis fährt der Zug?",
+    "question_tr": "Von welchem Gleis fährt der Zug?",
+    "options": [
+      "Gleis 2",
+      "Gleis 3",
+      "Gleis 4",
+      "Gleis 1"
+    ],
+    "correct_index": 1,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_093",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Heute haben wir von 8 bis 16 Uhr geöffnet.",
+    "question_de": "Wann schließt das Geschäft?",
+    "question_tr": "Wann schließt das Geschäft?",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "18 Uhr",
+      "16 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_094",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Bringen Sie die Palette bitte nach hinten.",
+    "question_de": "Wohin soll die Palette?",
+    "question_tr": "Wohin soll die Palette?",
+    "options": [
+      "nach vorne",
+      "nach oben",
+      "nach draußen",
+      "nach hinten"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_095",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Pause ist um zwölf Uhr für dreißig Minuten.",
+    "question_de": "Wann ist Pause?",
+    "question_tr": "Wann ist Pause?",
+    "options": [
+      "10 Uhr",
+      "14 Uhr",
+      "16 Uhr",
+      "12 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_096",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "A: Guten Tag! B: Guten Tag! Ich suche die Toilette. A: Die Toilette ist links.",
+    "question_de": "Wo ist die Toilette?",
+    "question_tr": "Wo ist die Toilette?",
+    "options": [
+      "rechts",
+      "oben",
+      "draußen",
+      "links"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_097",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Der Zug nach München fährt von Gleis 3 ab.",
+    "question_de": "Von welchem Gleis fährt der Zug?",
+    "question_tr": "Von welchem Gleis fährt der Zug?",
+    "options": [
+      "Gleis 2",
+      "Gleis 3",
+      "Gleis 4",
+      "Gleis 1"
+    ],
+    "correct_index": 1,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_098",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Heute haben wir von 8 bis 16 Uhr geöffnet.",
+    "question_de": "Wann schließt das Geschäft?",
+    "question_tr": "Wann schließt das Geschäft?",
+    "options": [
+      "8 Uhr",
+      "12 Uhr",
+      "18 Uhr",
+      "16 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_099",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Bringen Sie die Palette bitte nach hinten.",
+    "question_de": "Wohin soll die Palette?",
+    "question_tr": "Wohin soll die Palette?",
+    "options": [
+      "nach vorne",
+      "nach oben",
+      "nach draußen",
+      "nach hinten"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  },
+  {
+    "id": "h_100",
+    "level": "A1",
+    "part": 3,
+    "type": "dialogue",
+    "audio_text": "Pause ist um zwölf Uhr für dreißig Minuten.",
+    "question_de": "Wann ist Pause?",
+    "question_tr": "Wann ist Pause?",
+    "options": [
+      "10 Uhr",
+      "14 Uhr",
+      "16 Uhr",
+      "12 Uhr"
+    ],
+    "correct_index": 3,
+    "tags": [
+      "hoeren",
+      "dialogue"
+    ]
+  }
+]

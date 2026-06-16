@@ -1,0 +1,1956 @@
+{
+  "level": "A1",
+  "mode": "timur",
+  "version": "1.0.0",
+  "total": 102,
+  "categories": [
+    "Depo",
+    "Lojistik",
+    "Kommissionierung",
+    "Vardiya & Mesai",
+    "Maaş & Sözleşme",
+    "İş güvenliği",
+    "Forklift & Ekipman",
+    "Şefle iletişim"
+  ],
+  "words": [
+    {
+      "id": "timur_0001",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Lager",
+      "article": "das",
+      "plural": "Lager",
+      "translation_tr": "depo",
+      "translation_ru": "склад",
+      "example_de": "Ich arbeite im Lager.",
+      "example_tr": "Depoda çalışıyorum.",
+      "audio_word": "/audio/timur/lager.mp3",
+      "audio_example": "/audio/timur/ich-arbeite-im-lager.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0002",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Wareneingang",
+      "article": "der",
+      "plural": "Wareneingänge",
+      "translation_tr": "mal girişi",
+      "translation_ru": "приёмка",
+      "example_de": "Der Wareneingang ist heute voll.",
+      "example_tr": "Bugün mal girişi yoğun.",
+      "audio_word": "/audio/timur/wareneingang.mp3",
+      "audio_example": "/audio/timur/der-wareneingang-ist-heute-voll.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0003",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Warenausgang",
+      "article": "der",
+      "plural": "Warenausgänge",
+      "translation_tr": "mal çıkışı",
+      "translation_ru": "отгрузка",
+      "example_de": "Der Warenausgang ist um zehn Uhr.",
+      "example_tr": "Mal çıkışı saat onda.",
+      "audio_word": "/audio/timur/warenausgang.mp3",
+      "audio_example": "/audio/timur/der-warenausgang-ist-um-zehn-uhr.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0004",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Lagerhalle",
+      "article": "die",
+      "plural": "Lagerhallen",
+      "translation_tr": "depo holu",
+      "translation_ru": "складской зал",
+      "example_de": "Die Lagerhalle ist groß.",
+      "example_tr": "Depo holu büyük.",
+      "audio_word": "/audio/timur/lagerhalle.mp3",
+      "audio_example": "/audio/timur/die-lagerhalle-ist-gross.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0005",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Regal",
+      "article": "das",
+      "plural": "Regale",
+      "translation_tr": "raf",
+      "translation_ru": "стеллаж",
+      "example_de": "Das Regal ist voll.",
+      "example_tr": "Raf dolu.",
+      "audio_word": "/audio/timur/regal.mp3",
+      "audio_example": "/audio/timur/das-regal-ist-voll.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0006",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Gang",
+      "article": "der",
+      "plural": "Gänge",
+      "translation_tr": "koridor",
+      "translation_ru": "проход",
+      "example_de": "Gehen Sie den Gang entlang.",
+      "example_tr": "Koridordan gidin.",
+      "audio_word": "/audio/timur/gang.mp3",
+      "audio_example": "/audio/timur/gehen-sie-den-gang-entlang.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0007",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Boden",
+      "article": "der",
+      "plural": "Böden",
+      "translation_tr": "zemin",
+      "translation_ru": "пол",
+      "example_de": "Der Boden ist sauber.",
+      "example_tr": "Zemin temiz.",
+      "audio_word": "/audio/timur/boden.mp3",
+      "audio_example": "/audio/timur/der-boden-ist-sauber.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0008",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Inventur",
+      "article": "die",
+      "plural": "Inventuren",
+      "translation_tr": "envanter sayımı",
+      "translation_ru": "инвентаризация",
+      "example_de": "Heute ist Inventur.",
+      "example_tr": "Bugün envanter sayımı var.",
+      "audio_word": "/audio/timur/inventur.mp3",
+      "audio_example": "/audio/timur/heute-ist-inventur.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0009",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Bestand",
+      "article": "der",
+      "plural": "Bestände",
+      "translation_tr": "stok",
+      "translation_ru": "запас",
+      "example_de": "Der Bestand ist niedrig.",
+      "example_tr": "Stok düşük.",
+      "audio_word": "/audio/timur/bestand.mp3",
+      "audio_example": "/audio/timur/der-bestand-ist-niedrig.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0010",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Umlagerung",
+      "article": "die",
+      "plural": "Umlagerungen",
+      "translation_tr": "transfer",
+      "translation_ru": "перемещение",
+      "example_de": "Die Umlagerung dauert zwei Stunden.",
+      "example_tr": "Transfer iki saat sürer.",
+      "audio_word": "/audio/timur/umlagerung.mp3",
+      "audio_example": "/audio/timur/die-umlagerung-dauert-zwei-stunden.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0011",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Lagerraum",
+      "article": "der",
+      "plural": "Lagerräume",
+      "translation_tr": "depo alanı",
+      "translation_ru": "складское помещение",
+      "example_de": "Der Lagerraum ist kalt.",
+      "example_tr": "Depo alanı soğuk.",
+      "audio_word": "/audio/timur/lagerraum.mp3",
+      "audio_example": "/audio/timur/der-lagerraum-ist-kalt.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0012",
+      "level": "A1",
+      "category": "Depo",
+      "word": "Halle",
+      "article": "die",
+      "plural": "Hallens",
+      "translation_tr": "hangar/hol",
+      "translation_ru": "ангар",
+      "example_de": "In der Halle ist es laut.",
+      "example_tr": "Hol gürültülü.",
+      "audio_word": "/audio/timur/halle.mp3",
+      "audio_example": "/audio/timur/in-der-halle-ist-es-laut.mp3",
+      "tags": [
+        "warehouse",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0013",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Logistik",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "lojistik",
+      "translation_ru": "логистика",
+      "example_de": "Ich arbeite in der Logistik.",
+      "example_tr": "Lojistikte çalışıyorum.",
+      "audio_word": "/audio/timur/logistik.mp3",
+      "audio_example": "/audio/timur/ich-arbeite-in-der-logistik.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0014",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Lieferung",
+      "article": "die",
+      "plural": "Lieferungen",
+      "translation_tr": "teslimat",
+      "translation_ru": "доставка",
+      "example_de": "Die Lieferung kommt morgen.",
+      "example_tr": "Teslimat yarın geliyor.",
+      "audio_word": "/audio/timur/lieferung.mp3",
+      "audio_example": "/audio/timur/die-lieferung-kommt-morgen.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0015",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Spedition",
+      "article": "die",
+      "plural": "Speditionen",
+      "translation_tr": "nakliye firması",
+      "translation_ru": "экспедиция",
+      "example_de": "Die Spedition liefert pünktlich.",
+      "example_tr": "Nakliye firması zamanında teslim eder.",
+      "audio_word": "/audio/timur/spedition.mp3",
+      "audio_example": "/audio/timur/die-spedition-liefert-puenktlich.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0016",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Transport",
+      "article": "der",
+      "plural": "Transporte",
+      "translation_tr": "nakliye",
+      "translation_ru": "транспорт",
+      "example_de": "Der Transport ist organisiert.",
+      "example_tr": "Nakliye organize edildi.",
+      "audio_word": "/audio/timur/transport.mp3",
+      "audio_example": "/audio/timur/der-transport-ist-organisiert.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0017",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "LKW",
+      "article": "der",
+      "plural": "LKWs",
+      "translation_tr": "kamyon",
+      "translation_ru": "грузовик",
+      "example_de": "Der LKW wartet am Tor.",
+      "example_tr": "Kamyon kapıda bekliyor.",
+      "audio_word": "/audio/timur/lkw.mp3",
+      "audio_example": "/audio/timur/der-lkw-wartet-am-tor.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0018",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Anlieferung",
+      "article": "die",
+      "plural": "Anlieferungen",
+      "translation_tr": "teslim alma",
+      "translation_ru": "поставка",
+      "example_de": "Die Anlieferung ist um acht.",
+      "example_tr": "Teslim alma saat sekizde.",
+      "audio_word": "/audio/timur/anlieferung.mp3",
+      "audio_example": "/audio/timur/die-anlieferung-ist-um-acht.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0019",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Versand",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "sevkiyat",
+      "translation_ru": "отправка",
+      "example_de": "Der Versand beginnt um neun.",
+      "example_tr": "Sevkiyat dokuzda başlar.",
+      "audio_word": "/audio/timur/versand.mp3",
+      "audio_example": "/audio/timur/der-versand-beginnt-um-neun.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0020",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Fracht",
+      "article": "die",
+      "plural": "Frachten",
+      "translation_tr": "yük",
+      "translation_ru": "груз",
+      "example_de": "Die Fracht ist schwer.",
+      "example_tr": "Yük ağır.",
+      "audio_word": "/audio/timur/fracht.mp3",
+      "audio_example": "/audio/timur/die-fracht-ist-schwer.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0021",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Strecke",
+      "article": "die",
+      "plural": "Strecken",
+      "translation_tr": "rota",
+      "translation_ru": "маршрут",
+      "example_de": "Meine Strecke ist lang.",
+      "example_tr": "Rotam uzun.",
+      "audio_word": "/audio/timur/strecke.mp3",
+      "audio_example": "/audio/timur/meine-strecke-ist-lang.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0022",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Sendung",
+      "article": "die",
+      "plural": "Sendungen",
+      "translation_tr": "gönderi",
+      "translation_ru": "отправление",
+      "example_de": "Die Sendung ist unterwegs.",
+      "example_tr": "Gönderi yolda.",
+      "audio_word": "/audio/timur/sendung.mp3",
+      "audio_example": "/audio/timur/die-sendung-ist-unterwegs.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0023",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Zoll",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "gümrük",
+      "translation_ru": "таможня",
+      "example_de": "Der Zoll kontrolliert die Ware.",
+      "example_tr": "Gümrük malları kontrol eder.",
+      "audio_word": "/audio/timur/zoll.mp3",
+      "audio_example": "/audio/timur/der-zoll-kontrolliert-die-ware.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0024",
+      "level": "A1",
+      "category": "Lojistik",
+      "word": "Einfuhr",
+      "article": "die",
+      "plural": "Einfuhren",
+      "translation_tr": "ithalat",
+      "translation_ru": "импорт",
+      "example_de": "Die Einfuhr dauert lange.",
+      "example_tr": "İthalat uzun sürer.",
+      "audio_word": "/audio/timur/einfuhr.mp3",
+      "audio_example": "/audio/timur/die-einfuhr-dauert-lange.mp3",
+      "tags": [
+        "logistics",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0025",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Kommissionierung",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "sipariş toplama",
+      "translation_ru": "комплектация",
+      "example_de": "Die Kommissionierung ist meine Aufgabe.",
+      "example_tr": "Sipariş toplama benim görevim.",
+      "audio_word": "/audio/timur/kommissionierung.mp3",
+      "audio_example": "/audio/timur/die-kommissionierung-ist-meine-aufgabe.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0026",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Kommissionierliste",
+      "article": "die",
+      "plural": "Kommissionierlisten",
+      "translation_tr": "toplama listesi",
+      "translation_ru": "лист комплектации",
+      "example_de": "Hier ist die Kommissionierliste.",
+      "example_tr": "İşte toplama listesi.",
+      "audio_word": "/audio/timur/kommissionierliste.mp3",
+      "audio_example": "/audio/timur/hier-ist-die-kommissionierliste.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0027",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Bestellung",
+      "article": "die",
+      "plural": "Bestellungen",
+      "translation_tr": "sipariş",
+      "translation_ru": "заказ",
+      "example_de": "Die Bestellung ist fertig.",
+      "example_tr": "Sipariş hazır.",
+      "audio_word": "/audio/timur/bestellung.mp3",
+      "audio_example": "/audio/timur/die-bestellung-ist-fertig.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0028",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Artikel",
+      "article": "der",
+      "plural": "Artikel",
+      "translation_tr": "ürün/kalem",
+      "translation_ru": "артикул",
+      "example_de": "Der Artikel ist im Regal B3.",
+      "example_tr": "Ürün B3 rafında.",
+      "audio_word": "/audio/timur/artikel.mp3",
+      "audio_example": "/audio/timur/der-artikel-ist-im-regal-b3.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0029",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Artikelnummer",
+      "article": "die",
+      "plural": "Artikelnummern",
+      "translation_tr": "ürün numarası",
+      "translation_ru": "номер артикула",
+      "example_de": "Die Artikelnummer ist 12345.",
+      "example_tr": "Ürün numarası 12345.",
+      "audio_word": "/audio/timur/artikelnummer.mp3",
+      "audio_example": "/audio/timur/die-artikelnummer-ist-12345.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0030",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Strichcode",
+      "article": "der",
+      "plural": "Strichcodes",
+      "translation_tr": "barkod",
+      "translation_ru": "штрихкод",
+      "example_de": "Scannen Sie den Strichcode.",
+      "example_tr": "Barkodu tarayın.",
+      "audio_word": "/audio/timur/strichcode.mp3",
+      "audio_example": "/audio/timur/scannen-sie-den-strichcode.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0031",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Lesegerät",
+      "article": "das",
+      "plural": "Lesegeräte",
+      "translation_tr": "tarayıcı",
+      "translation_ru": "сканер",
+      "example_de": "Das Lesegerät funktioniert nicht.",
+      "example_tr": "Tarayıcı çalışmıyor.",
+      "audio_word": "/audio/timur/lesegeraet.mp3",
+      "audio_example": "/audio/timur/das-lesegeraet-funktioniert-nicht.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0032",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Packliste",
+      "article": "die",
+      "plural": "Packlisten",
+      "translation_tr": "paket listesi",
+      "translation_ru": "упаковочный лист",
+      "example_de": "Die Packliste ist dabei.",
+      "example_tr": "Paket listesi eklendi.",
+      "audio_word": "/audio/timur/packliste.mp3",
+      "audio_example": "/audio/timur/die-packliste-ist-dabei.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0033",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Karton",
+      "article": "der",
+      "plural": "Kartons",
+      "translation_tr": "karton",
+      "translation_ru": "картон",
+      "example_de": "Der Karton ist schwer.",
+      "example_tr": "Karton ağır.",
+      "audio_word": "/audio/timur/karton.mp3",
+      "audio_example": "/audio/timur/der-karton-ist-schwer.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0034",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Paket",
+      "article": "das",
+      "plural": "Pakete",
+      "translation_tr": "paket",
+      "translation_ru": "посылка",
+      "example_de": "Das Paket ist kaputt.",
+      "example_tr": "Paket hasarlı.",
+      "audio_word": "/audio/timur/paket.mp3",
+      "audio_example": "/audio/timur/das-paket-ist-kaputt.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0035",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "verpacken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "paketlemek",
+      "translation_ru": "упаковывать",
+      "example_de": "Ich verpacke die Ware.",
+      "example_tr": "Malı paketliyorum.",
+      "audio_word": "/audio/timur/verpacken.mp3",
+      "audio_example": "/audio/timur/ich-verpacke-die-ware.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0036",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "etikettieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "etiketlemek",
+      "translation_ru": "маркировать",
+      "example_de": "Bitte etikettieren.",
+      "example_tr": "Lütfen etiketleyin.",
+      "audio_word": "/audio/timur/etikettieren.mp3",
+      "audio_example": "/audio/timur/bitte-etikettieren.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0037",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "sortieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ayırmak/sınıflamak",
+      "translation_ru": "сортировать",
+      "example_de": "Wir sortieren die Pakete.",
+      "example_tr": "Paketleri ayırıyoruz.",
+      "audio_word": "/audio/timur/sortieren.mp3",
+      "audio_example": "/audio/timur/wir-sortieren-die-pakete.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0038",
+      "level": "A1",
+      "category": "Kommissionierung",
+      "word": "Stück",
+      "article": "das",
+      "plural": "Stücke",
+      "translation_tr": "adet",
+      "translation_ru": "штука",
+      "example_de": "Zehn Stück, bitte.",
+      "example_tr": "On adet lütfen.",
+      "audio_word": "/audio/timur/stueck.mp3",
+      "audio_example": "/audio/timur/zehn-stueck-bitte.mp3",
+      "tags": [
+        "picking",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0039",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Schicht",
+      "article": "die",
+      "plural": "Schichten",
+      "translation_tr": "vardiya",
+      "translation_ru": "смена",
+      "example_de": "Meine Schicht beginnt um sechs.",
+      "example_tr": "Vardiyam altıda başlıyor.",
+      "audio_word": "/audio/timur/schicht.mp3",
+      "audio_example": "/audio/timur/meine-schicht-beginnt-um-sechs.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0040",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Frühschicht",
+      "article": "die",
+      "plural": "Frühschichten",
+      "translation_tr": "sabah vardiyası",
+      "translation_ru": "утренняя смена",
+      "example_de": "Ich habe Frühschicht.",
+      "example_tr": "Sabah vardiyam var.",
+      "audio_word": "/audio/timur/fruehschicht.mp3",
+      "audio_example": "/audio/timur/ich-habe-fruehschicht.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0041",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Spätschicht",
+      "article": "die",
+      "plural": "Spätschichten",
+      "translation_tr": "akşam vardiyası",
+      "translation_ru": "вечерняя смена",
+      "example_de": "Die Spätschicht endet um Mitternacht.",
+      "example_tr": "Akşam vardiyası gece yarısında biter.",
+      "audio_word": "/audio/timur/spaetschicht.mp3",
+      "audio_example": "/audio/timur/die-spaetschicht-endet-um-mitternacht.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0042",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Nachtschicht",
+      "article": "die",
+      "plural": "Nachtschichten",
+      "translation_tr": "gece vardiyası",
+      "translation_ru": "ночная смена",
+      "example_de": "Die Nachtschicht ist anstrengend.",
+      "example_tr": "Gece vardiyası yorucu.",
+      "audio_word": "/audio/timur/nachtschicht.mp3",
+      "audio_example": "/audio/timur/die-nachtschicht-ist-anstrengend.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0043",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Arbeitszeit",
+      "article": "die",
+      "plural": "Arbeitszeiten",
+      "translation_tr": "çalışma saati",
+      "translation_ru": "рабочее время",
+      "example_de": "Meine Arbeitszeit ist acht Stunden.",
+      "example_tr": "Çalışma saatim sekiz.",
+      "audio_word": "/audio/timur/arbeitszeit.mp3",
+      "audio_example": "/audio/timur/meine-arbeitszeit-ist-acht-stunden.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0044",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Überstunden",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "fazla mesai",
+      "translation_ru": "сверхурочные",
+      "example_de": "Ich mache Überstunden.",
+      "example_tr": "Fazla mesai yapıyorum.",
+      "audio_word": "/audio/timur/ueberstunden.mp3",
+      "audio_example": "/audio/timur/ich-mache-ueberstunden.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0045",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Pause",
+      "article": "die",
+      "plural": "Pausen",
+      "translation_tr": "mola",
+      "translation_ru": "перерыв",
+      "example_de": "Die Pause ist um zwölf.",
+      "example_tr": "Mola saat on iki.",
+      "audio_word": "/audio/timur/pause.mp3",
+      "audio_example": "/audio/timur/die-pause-ist-um-zwoelf.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0046",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Feierabend",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "iş bitimi",
+      "translation_ru": "конец работы",
+      "example_de": "Um fünf ist Feierabend.",
+      "example_tr": "Beşte iş bitiyor.",
+      "audio_word": "/audio/timur/feierabend.mp3",
+      "audio_example": "/audio/timur/um-fuenf-ist-feierabend.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0047",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "Schichtplan",
+      "article": "der",
+      "plural": "Schichtpläne",
+      "translation_tr": "vardiya planı",
+      "translation_ru": "график смен",
+      "example_de": "Der Schichtplan hängt an der Wand.",
+      "example_tr": "Vardiya planı duvarda.",
+      "audio_word": "/audio/timur/schichtplan.mp3",
+      "audio_example": "/audio/timur/der-schichtplan-haengt-an-der-wand.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0048",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "einstempeln",
+      "article": null,
+      "plural": null,
+      "translation_tr": "giriş kart basmak",
+      "translation_ru": "отметиться о приходе",
+      "example_de": "Ich stempel um sechs ein.",
+      "example_tr": "Altıda giriş yapıyorum.",
+      "audio_word": "/audio/timur/einstempeln.mp3",
+      "audio_example": "/audio/timur/ich-stempel-um-sechs-ein.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0049",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "ausstempeln",
+      "article": null,
+      "plural": null,
+      "translation_tr": "çıkış kart basmak",
+      "translation_ru": "отметиться об уходе",
+      "example_de": "Ich stempel um zwei aus.",
+      "example_tr": "İkide çıkış yapıyorum.",
+      "audio_word": "/audio/timur/ausstempeln.mp3",
+      "audio_example": "/audio/timur/ich-stempel-um-zwei-aus.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0050",
+      "level": "A1",
+      "category": "Vardiya & Mesai",
+      "word": "pünktlich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dakik",
+      "translation_ru": "вовремя",
+      "example_de": "Sei pünktlich zur Schicht!",
+      "example_tr": "Vardiyaya dakik ol!",
+      "audio_word": "/audio/timur/puenktlich.mp3",
+      "audio_example": "/audio/timur/sei-puenktlich-zur-schicht.mp3",
+      "tags": [
+        "shift",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0051",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Lohn",
+      "article": "der",
+      "plural": "Löhne",
+      "translation_tr": "maaş (saatlik)",
+      "translation_ru": "зарплата",
+      "example_de": "Mein Lohn ist 14 Euro pro Stunde.",
+      "example_tr": "Saatlik maaşım 14 euro.",
+      "audio_word": "/audio/timur/lohn.mp3",
+      "audio_example": "/audio/timur/mein-lohn-ist-14-euro-pro-stunde.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0052",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Gehalt",
+      "article": "das",
+      "plural": "Gehälter",
+      "translation_tr": "maaş (aylık)",
+      "translation_ru": "оклад",
+      "example_de": "Das Gehalt kommt am Monatsende.",
+      "example_tr": "Maaş ay sonunda gelir.",
+      "audio_word": "/audio/timur/gehalt.mp3",
+      "audio_example": "/audio/timur/das-gehalt-kommt-am-monatsende.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0053",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Vertrag",
+      "article": "der",
+      "plural": "Verträge",
+      "translation_tr": "sözleşme",
+      "translation_ru": "контракт",
+      "example_de": "Ich unterschreibe den Vertrag.",
+      "example_tr": "Sözleşmeyi imzalıyorum.",
+      "audio_word": "/audio/timur/vertrag.mp3",
+      "audio_example": "/audio/timur/ich-unterschreibe-den-vertrag.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0054",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Arbeitsvertrag",
+      "article": "der",
+      "plural": "Arbeitsverträge",
+      "translation_tr": "iş sözleşmesi",
+      "translation_ru": "трудовой договор",
+      "example_de": "Der Arbeitsvertrag ist befristet.",
+      "example_tr": "İş sözleşmesi belirli süreli.",
+      "audio_word": "/audio/timur/arbeitsvertrag.mp3",
+      "audio_example": "/audio/timur/der-arbeitsvertrag-ist-befristet.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0055",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Probezeit",
+      "article": "die",
+      "plural": "Probezeiten",
+      "translation_tr": "deneme süresi",
+      "translation_ru": "испытательный срок",
+      "example_de": "Die Probezeit dauert sechs Monate.",
+      "example_tr": "Deneme süresi altı ay.",
+      "audio_word": "/audio/timur/probezeit.mp3",
+      "audio_example": "/audio/timur/die-probezeit-dauert-sechs-monate.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0056",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Kündigung",
+      "article": "die",
+      "plural": "Kündigungen",
+      "translation_tr": "fesih/ihbar",
+      "translation_ru": "увольнение",
+      "example_de": "Die Kündigungsfrist ist zwei Wochen.",
+      "example_tr": "İhbar süresi iki hafta.",
+      "audio_word": "/audio/timur/kuendigung.mp3",
+      "audio_example": "/audio/timur/die-kuendigungsfrist-ist-zwei-wochen.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0057",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Urlaub",
+      "article": "der",
+      "plural": "Urlaube",
+      "translation_tr": "izin",
+      "translation_ru": "отпуск",
+      "example_de": "Ich habe Urlaub im August.",
+      "example_tr": "Ağustos'ta iznim var.",
+      "audio_word": "/audio/timur/urlaub.mp3",
+      "audio_example": "/audio/timur/ich-habe-urlaub-im-august.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0058",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Krankmeldung",
+      "article": "die",
+      "plural": "Krankmeldungen",
+      "translation_tr": "rapor",
+      "translation_ru": "больничный",
+      "example_de": "Ich brauche eine Krankmeldung.",
+      "example_tr": "Rapor lazım.",
+      "audio_word": "/audio/timur/krankmeldung.mp3",
+      "audio_example": "/audio/timur/ich-brauche-eine-krankmeldung.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0059",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Steuer",
+      "article": "die",
+      "plural": "Steuern",
+      "translation_tr": "vergi",
+      "translation_ru": "налог",
+      "example_de": "Die Steuer wird abgezogen.",
+      "example_tr": "Vergi kesilir.",
+      "audio_word": "/audio/timur/steuer.mp3",
+      "audio_example": "/audio/timur/die-steuer-wird-abgezogen.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0060",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Netto",
+      "article": null,
+      "plural": null,
+      "translation_tr": "net maaş",
+      "translation_ru": "нетто",
+      "example_de": "Mein Netto ist 1800 Euro.",
+      "example_tr": "Net maaşım 1800 euro.",
+      "audio_word": "/audio/timur/netto.mp3",
+      "audio_example": "/audio/timur/mein-netto-ist-1800-euro.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0061",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Brutto",
+      "article": null,
+      "plural": null,
+      "translation_tr": "brüt maaş",
+      "translation_ru": "брутто",
+      "example_de": "Das Brutto ist höher.",
+      "example_tr": "Brüt daha yüksek.",
+      "audio_word": "/audio/timur/brutto.mp3",
+      "audio_example": "/audio/timur/das-brutto-ist-hoeher.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0062",
+      "level": "A1",
+      "category": "Maaş & Sözleşme",
+      "word": "Sozialversicherung",
+      "article": "die",
+      "plural": "Sozialversicherungen",
+      "translation_tr": "sosyal sigorta",
+      "translation_ru": "соцстрахование",
+      "example_de": "Die Sozialversicherung ist Pflicht.",
+      "example_tr": "Sosyal sigorta zorunlu.",
+      "audio_word": "/audio/timur/sozialversicherung.mp3",
+      "audio_example": "/audio/timur/die-sozialversicherung-ist-pflicht.mp3",
+      "tags": [
+        "contract",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0063",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Sicherheit",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "güvenlik",
+      "translation_ru": "безопасность",
+      "example_de": "Sicherheit geht vor.",
+      "example_tr": "Güvenlik önce gelir.",
+      "audio_word": "/audio/timur/sicherheit.mp3",
+      "audio_example": "/audio/timur/sicherheit-geht-vor.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0064",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Arbeitsschutz",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "iş güvenliği",
+      "translation_ru": "охрана труда",
+      "example_de": "Arbeitsschutz ist wichtig.",
+      "example_tr": "İş güvenliği önemli.",
+      "audio_word": "/audio/timur/arbeitsschutz.mp3",
+      "audio_example": "/audio/timur/arbeitsschutz-ist-wichtig.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0065",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Helm",
+      "article": "der",
+      "plural": "Helme",
+      "translation_tr": "kask",
+      "translation_ru": "каска",
+      "example_de": "Tragen Sie einen Helm!",
+      "example_tr": "Kask takın!",
+      "audio_word": "/audio/timur/helm.mp3",
+      "audio_example": "/audio/timur/tragen-sie-einen-helm.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0066",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Schutzweste",
+      "article": "die",
+      "plural": "Schutzwesten",
+      "translation_tr": "yelek",
+      "translation_ru": "жилет",
+      "example_de": "Die Schutzweste ist gelb.",
+      "example_tr": "Yelek sarı.",
+      "audio_word": "/audio/timur/schutzweste.mp3",
+      "audio_example": "/audio/timur/die-schutzweste-ist-gelb.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0067",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Sicherheitsschuhe",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "güvenlik ayakkabısı",
+      "translation_ru": "защитная обувь",
+      "example_de": "Sicherheitsschuhe sind Pflicht.",
+      "example_tr": "Güvenlik ayakkabısı zorunlu.",
+      "audio_word": "/audio/timur/sicherheitsschuhe.mp3",
+      "audio_example": "/audio/timur/sicherheitsschuhe-sind-pflicht.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0068",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Handschuhe",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "eldiven",
+      "translation_ru": "перчатки",
+      "example_de": "Tragen Sie Handschuhe.",
+      "example_tr": "Eldiven takın.",
+      "audio_word": "/audio/timur/handschuhe.mp3",
+      "audio_example": "/audio/timur/tragen-sie-handschuhe.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0069",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Warnung",
+      "article": "die",
+      "plural": "Warnungen",
+      "translation_tr": "uyarı",
+      "translation_ru": "предупреждение",
+      "example_de": "Achtung! Warnung beachten.",
+      "example_tr": "Dikkat! Uyarıya dikkat.",
+      "audio_word": "/audio/timur/warnung.mp3",
+      "audio_example": "/audio/timur/achtung-warnung-beachten.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0070",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Gefahr",
+      "article": "die",
+      "plural": "Gefahren",
+      "translation_tr": "tehlike",
+      "translation_ru": "опасность",
+      "example_de": "Vorsicht, Gefahr!",
+      "example_tr": "Dikkat, tehlike!",
+      "audio_word": "/audio/timur/gefahr.mp3",
+      "audio_example": "/audio/timur/vorsicht-gefahr.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0071",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Unfall",
+      "article": "der",
+      "plural": "Unfälle",
+      "translation_tr": "kaza",
+      "translation_ru": "несчастный случай",
+      "example_de": "Es gab einen Unfall.",
+      "example_tr": "Kaza oldu.",
+      "audio_word": "/audio/timur/unfall.mp3",
+      "audio_example": "/audio/timur/es-gab-einen-unfall.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0072",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Erste Hilfe",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "ilk yardım",
+      "translation_ru": "первая помощь",
+      "example_de": "Erste Hilfe ist dort.",
+      "example_tr": "İlk yardım orada.",
+      "audio_word": "/audio/timur/erste.mp3",
+      "audio_example": "/audio/timur/erste-hilfe-ist-dort.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0073",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "Notausgang",
+      "article": "der",
+      "plural": "Notausgänge",
+      "translation_tr": "acil çıkış",
+      "translation_ru": "запасной выход",
+      "example_de": "Der Notausgang ist links.",
+      "example_tr": "Acil çıkış solda.",
+      "audio_word": "/audio/timur/notausgang.mp3",
+      "audio_example": "/audio/timur/der-notausgang-ist-links.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0074",
+      "level": "A1",
+      "category": "İş güvenliği",
+      "word": "vorsichtig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dikkatli",
+      "translation_ru": "осторожный",
+      "example_de": "Sei vorsichtig!",
+      "example_tr": "Dikkatli ol!",
+      "audio_word": "/audio/timur/vorsichtig.mp3",
+      "audio_example": "/audio/timur/sei-vorsichtig.mp3",
+      "tags": [
+        "safety",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0075",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Gabelstapler",
+      "article": "der",
+      "plural": "Gabelstapler",
+      "translation_tr": "forklift",
+      "translation_ru": "погрузчик",
+      "example_de": "Der Gabelstapler fährt langsam.",
+      "example_tr": "Forklift yavaş gider.",
+      "audio_word": "/audio/timur/gabelstapler.mp3",
+      "audio_example": "/audio/timur/der-gabelstapler-faehrt-langsam.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0076",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Stapler",
+      "article": "der",
+      "plural": "Stapler",
+      "translation_tr": "forklift (kısa)",
+      "translation_ru": "погрузчик",
+      "example_de": "Ich fahre Stapler.",
+      "example_tr": "Forklift kullanıyorum.",
+      "audio_word": "/audio/timur/stapler.mp3",
+      "audio_example": "/audio/timur/ich-fahre-stapler.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0077",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Staplerschein",
+      "article": "der",
+      "plural": "Staplerscheine",
+      "translation_tr": "forklift ehliyeti",
+      "translation_ru": "удостоверение",
+      "example_de": "Ich habe einen Staplerschein.",
+      "example_tr": "Forklift ehliyetim var.",
+      "audio_word": "/audio/timur/staplerschein.mp3",
+      "audio_example": "/audio/timur/ich-habe-einen-staplerschein.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0078",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Palette",
+      "article": "die",
+      "plural": "Paletten",
+      "translation_tr": "palet",
+      "translation_ru": "паллета",
+      "example_de": "Bringen Sie die Palette nach hinten.",
+      "example_tr": "Paleti arkaya götürün.",
+      "audio_word": "/audio/timur/palette.mp3",
+      "audio_example": "/audio/timur/bringen-sie-die-palette-nach-hinten.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0079",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Hubwagen",
+      "article": "der",
+      "plural": "Hubwagen",
+      "translation_tr": "transpalet",
+      "translation_ru": "рохля",
+      "example_de": "Der Hubwagen ist kaputt.",
+      "example_tr": "Transpalet bozuk.",
+      "audio_word": "/audio/timur/hubwagen.mp3",
+      "audio_example": "/audio/timur/der-hubwagen-ist-kaputt.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0080",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Gabel",
+      "article": "die",
+      "plural": "Gabeln",
+      "translation_tr": "çatal (forklift)",
+      "translation_ru": "вилы",
+      "example_de": "Die Gabel ist hoch.",
+      "example_tr": "Çatal yukarıda.",
+      "audio_word": "/audio/timur/gabel.mp3",
+      "audio_example": "/audio/timur/die-gabel-ist-hoch.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0081",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "heben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kaldırmak",
+      "translation_ru": "поднимать",
+      "example_de": "Heben Sie die Palette vorsichtig.",
+      "example_tr": "Paleti dikkatli kaldırın.",
+      "audio_word": "/audio/timur/heben.mp3",
+      "audio_example": "/audio/timur/heben-sie-die-palette-vorsichtig.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0082",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "senken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "indirmek",
+      "translation_ru": "опускать",
+      "example_de": "Senken Sie die Gabel.",
+      "example_tr": "Çatalı indirin.",
+      "audio_word": "/audio/timur/senken.mp3",
+      "audio_example": "/audio/timur/senken-sie-die-gabel.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0083",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "laden",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yüklemek",
+      "translation_ru": "грузить",
+      "example_de": "Wir laden den LKW.",
+      "example_tr": "Kamyonu yüklüyoruz.",
+      "audio_word": "/audio/timur/laden.mp3",
+      "audio_example": "/audio/timur/wir-laden-den-lkw.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0084",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "entladen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "boşaltmak",
+      "translation_ru": "разгружать",
+      "example_de": "Wir entladen die Ware.",
+      "example_tr": "Malı boşaltıyoruz.",
+      "audio_word": "/audio/timur/entladen.mp3",
+      "audio_example": "/audio/timur/wir-entladen-die-ware.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0085",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "stapeln",
+      "article": null,
+      "plural": null,
+      "translation_tr": "istiflemek",
+      "translation_ru": "штабелировать",
+      "example_de": "Stapeln Sie die Kartons.",
+      "example_tr": "Kartonları istifleyin.",
+      "audio_word": "/audio/timur/stapeln.mp3",
+      "audio_example": "/audio/timur/stapeln-sie-die-kartons.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0086",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Rollcontainer",
+      "article": "der",
+      "plural": "Rollcontainer",
+      "translation_tr": "roll konteyner",
+      "translation_ru": "контейнер",
+      "example_de": "Der Rollcontainer ist voll.",
+      "example_tr": "Roll konteyner dolu.",
+      "audio_word": "/audio/timur/rollcontainer.mp3",
+      "audio_example": "/audio/timur/der-rollcontainer-ist-voll.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0087",
+      "level": "A1",
+      "category": "Forklift & Ekipman",
+      "word": "Förderband",
+      "article": "das",
+      "plural": "Förderbänder",
+      "translation_tr": "konveyör bant",
+      "translation_ru": "конвейер",
+      "example_de": "Das Förderband läuft.",
+      "example_tr": "Konveyör bant çalışıyor.",
+      "audio_word": "/audio/timur/foerderband.mp3",
+      "audio_example": "/audio/timur/das-foerderband-laeuft.mp3",
+      "tags": [
+        "equipment",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0088",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Chef",
+      "article": "der",
+      "plural": "Chefs",
+      "translation_tr": "patron/şef",
+      "translation_ru": "начальник",
+      "example_de": "Mein Chef ist streng.",
+      "example_tr": "Patronum katı.",
+      "audio_word": "/audio/timur/chef.mp3",
+      "audio_example": "/audio/timur/mein-chef-ist-streng.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0089",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Vorgesetzter",
+      "article": "der",
+      "plural": "Vorgesetzten",
+      "translation_tr": "amir",
+      "translation_ru": "руководитель",
+      "example_de": "Mein Vorgesetzter ruft mich.",
+      "example_tr": "Amirim beni çağırıyor.",
+      "audio_word": "/audio/timur/vorgesetzter.mp3",
+      "audio_example": "/audio/timur/mein-vorgesetzter-ruft-mich.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0090",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Kollege",
+      "article": "der",
+      "plural": "Kollegen",
+      "translation_tr": "iş arkadaşı",
+      "translation_ru": "коллега",
+      "example_de": "Mein Kollege hilft mir.",
+      "example_tr": "İş arkadaşım yardım ediyor.",
+      "audio_word": "/audio/timur/kollege.mp3",
+      "audio_example": "/audio/timur/mein-kollege-hilft-mir.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0091",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Gruppenleiter",
+      "article": "der",
+      "plural": "Gruppenleiter",
+      "translation_tr": "grup lideri",
+      "translation_ru": "бригадир",
+      "example_de": "Der Gruppenleiter gibt Anweisungen.",
+      "example_tr": "Grup lideri talimat veriyor.",
+      "audio_word": "/audio/timur/gruppenleiter.mp3",
+      "audio_example": "/audio/timur/der-gruppenleiter-gibt-anweisungen.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0092",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Anweisung",
+      "article": "die",
+      "plural": "Anweisungen",
+      "translation_tr": "talimat",
+      "translation_ru": "указание",
+      "example_de": "Folgen Sie der Anweisung.",
+      "example_tr": "Talimata uyun.",
+      "audio_word": "/audio/timur/anweisung.mp3",
+      "audio_example": "/audio/timur/folgen-sie-der-anweisung.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0093",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "sofort",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hemen",
+      "translation_ru": "сразу",
+      "example_de": "Machen Sie das sofort!",
+      "example_tr": "Bunu hemen yapın!",
+      "audio_word": "/audio/timur/sofort.mp3",
+      "audio_example": "/audio/timur/machen-sie-das-sofort.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0094",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "langsam",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yavaş",
+      "translation_ru": "медленно",
+      "example_de": "Fahren Sie langsam!",
+      "example_tr": "Yavaş gidin!",
+      "audio_word": "/audio/timur/langsam.mp3",
+      "audio_example": "/audio/timur/fahren-sie-langsam.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0095",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "schnell",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hızlı",
+      "translation_ru": "быстро",
+      "example_de": "Arbeiten Sie schneller!",
+      "example_tr": "Daha hızlı çalışın!",
+      "audio_word": "/audio/timur/schnell.mp3",
+      "audio_example": "/audio/timur/arbeiten-sie-schneller.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0096",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "fertig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hazır/bitti",
+      "translation_ru": "готово",
+      "example_de": "Ich bin fertig.",
+      "example_tr": "Bitirdim.",
+      "audio_word": "/audio/timur/fertig.mp3",
+      "audio_example": "/audio/timur/ich-bin-fertig.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0097",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Problem",
+      "article": "das",
+      "plural": "Probleme",
+      "translation_tr": "problem",
+      "translation_ru": "проблема",
+      "example_de": "Ich habe ein Problem.",
+      "example_tr": "Bir problemim var.",
+      "audio_word": "/audio/timur/problem.mp3",
+      "audio_example": "/audio/timur/ich-habe-ein-problem.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0098",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Hilfe",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "yardım",
+      "translation_ru": "помощь",
+      "example_de": "Ich brauche Hilfe!",
+      "example_tr": "Yardım lazım!",
+      "audio_word": "/audio/timur/hilfe.mp3",
+      "audio_example": "/audio/timur/ich-brauche-hilfe.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0099",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "verstanden",
+      "article": null,
+      "plural": null,
+      "translation_tr": "anladım",
+      "translation_ru": "понял",
+      "example_de": "Verstanden!",
+      "example_tr": "Anladım!",
+      "audio_word": "/audio/timur/verstanden.mp3",
+      "audio_example": "/audio/timur/verstanden.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0100",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "nach hinten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "arkaya",
+      "translation_ru": "назад",
+      "example_de": "Bringen Sie es nach hinten.",
+      "example_tr": "Arkaya götürün.",
+      "audio_word": "/audio/timur/nach.mp3",
+      "audio_example": "/audio/timur/bringen-sie-es-nach-hinten.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0101",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "nach vorne",
+      "article": null,
+      "plural": null,
+      "translation_tr": "öne",
+      "translation_ru": "вперёд",
+      "example_de": "Stellen Sie es nach vorne.",
+      "example_tr": "Öne koyun.",
+      "audio_word": "/audio/timur/nach.mp3",
+      "audio_example": "/audio/timur/stellen-sie-es-nach-vorne.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    },
+    {
+      "id": "timur_0102",
+      "level": "A1",
+      "category": "Şefle iletişim",
+      "word": "Achtung",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dikkat",
+      "translation_ru": "внимание",
+      "example_de": "Achtung! Palette kommt!",
+      "example_tr": "Dikkat! Palet geliyor!",
+      "audio_word": "/audio/timur/achtung.mp3",
+      "audio_example": "/audio/timur/achtung-palette-kommt.mp3",
+      "tags": [
+        "communication",
+        "timur",
+        "work"
+      ]
+    }
+  ]
+}

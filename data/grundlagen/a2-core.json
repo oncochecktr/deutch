@@ -1,0 +1,27 @@
+{
+  "level": "A2",
+  "version": "1.0.0",
+  "grammarPack": {
+    "title": "A2 Gramer Temeli",
+    "sections": [
+      {
+        "id": "perfekt",
+        "title": "Perfekt",
+        "summary_tr": "Geçmiş zaman: haben/sein + Partizip II",
+        "examples": ["Ich habe gearbeitet.", "Wir sind gekommen."]
+      },
+      {
+        "id": "dativ-intro",
+        "title": "Dativ giriş",
+        "summary_tr": "mit, bei, nach, zu + Dativ",
+        "examples": ["Ich fahre mit dem Bus.", "Er wohnt bei seinen Eltern."]
+      },
+      {
+        "id": "nebensatz",
+        "title": "Basit Nebensatz",
+        "summary_tr": "weil, dass — fiil sonda",
+        "examples": ["Ich bleibe zu Hause, weil ich müde bin.", "Er sagt, dass er kommt."]
+      }
+    ]
+  }
+}

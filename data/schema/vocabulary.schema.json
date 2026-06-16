@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://german-coach.local/schema/vocabulary.json",
+  "title": "GermanCoachVocabulary",
+  "description": "Goethe A1/A2/B1 kelime şeması",
+  "type": "object",
+  "required": [
+    "id",
+    "level",
+    "category",
+    "word",
+    "translation_tr",
+    "translation_ru",
+    "example_de",
+    "example_tr",
+    "audio_word",
+    "audio_example",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(a1|a2|b1)_\\d{4}$"
+    },
+    "level": {
+      "type": "string",
+      "enum": ["A1", "A2", "B1"]
+    },
+    "category": {
+      "type": "string"
+    },
+    "word": {
+      "type": "string",
+      "minLength": 1
+    },
+    "article": {
+      "type": ["string", "null"],
+      "enum": ["der", "die", "das", null]
+    },
+    "plural": {
+      "type": ["string", "null"]
+    },
+    "translation_tr": {
+      "type": "string"
+    },
+    "translation_ru": {
+      "type": "string"
+    },
+    "example_de": {
+      "type": "string"
+    },
+    "example_tr": {
+      "type": "string"
+    },
+    "audio_word": {
+      "type": "string"
+    },
+    "audio_example": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

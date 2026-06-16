@@ -1,0 +1,470 @@
+{
+  "rf": [
+    {
+      "id": "lrf_001",
+      "format": "true_false",
+      "context_de": "Geöffnet\nMo–Fr 9–18 Uhr",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Am Samstag ist geöffnet.",
+      "statement_tr": "Am Samstag ist geöffnet.",
+      "correct": false,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_002",
+      "format": "true_false",
+      "context_de": "Ausgang\n←",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Das ist der Ausgang.",
+      "statement_tr": "Das ist der Ausgang.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_003",
+      "format": "true_false",
+      "context_de": "Rauchen verboten",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Hier darf man rauchen.",
+      "statement_tr": "Hier darf man rauchen.",
+      "correct": false,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_004",
+      "format": "true_false",
+      "context_de": "Kursraum 12\n2. Stock",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Der Kurs ist im zweiten Stock.",
+      "statement_tr": "Der Kurs ist im zweiten Stock.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_005",
+      "format": "true_false",
+      "context_de": "Eingang nur mit Ticket",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Man braucht ein Ticket.",
+      "statement_tr": "Man braucht ein Ticket.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_006",
+      "format": "true_false",
+      "context_de": "Toilette\n→",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Die Toilette ist links.",
+      "statement_tr": "Die Toilette ist links.",
+      "correct": false,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_007",
+      "format": "true_false",
+      "context_de": "Parken verboten",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Parken ist nicht erlaubt.",
+      "statement_tr": "Parken ist nicht erlaubt.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_008",
+      "format": "true_false",
+      "context_de": "Bibliothek\ngeschlossen",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Die Bibliothek ist offen.",
+      "statement_tr": "Die Bibliothek ist offen.",
+      "correct": false,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_009",
+      "format": "true_false",
+      "context_de": "Achtung!\nBaustelle",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Es gibt eine Baustelle.",
+      "statement_tr": "Es gibt eine Baustelle.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_010",
+      "format": "true_false",
+      "context_de": "Fahrräder\nbitte abstellen",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Man soll Fahrräder abstellen.",
+      "statement_tr": "Man soll Fahrräder abstellen.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_011",
+      "format": "true_false",
+      "context_de": "Nicht rauchen",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Rauchen ist verboten.",
+      "statement_tr": "Rauchen ist verboten.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_012",
+      "format": "true_false",
+      "context_de": "Information\nMo–Fr 8–16",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Am Freitag ist Information offen.",
+      "statement_tr": "Am Freitag ist Information offen.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_013",
+      "format": "true_false",
+      "context_de": "Zimmer 5\nBitte leise",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Man soll leise sein.",
+      "statement_tr": "Man soll leise sein.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_014",
+      "format": "true_false",
+      "context_de": "Feuerwehr\nNotausgang",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Das ist ein Notausgang.",
+      "statement_tr": "Das ist ein Notausgang.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_015",
+      "format": "true_false",
+      "context_de": "Kinder\n0–6 Jahre frei",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Kinder zahlen nicht.",
+      "statement_tr": "Kinder zahlen nicht.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_016",
+      "format": "true_false",
+      "context_de": "Hund\nnicht erlaubt",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Hunde sind erlaubt.",
+      "statement_tr": "Hunde sind erlaubt.",
+      "correct": false,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_017",
+      "format": "true_false",
+      "context_de": "Aufzug\nout of order",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Der Aufzug funktioniert nicht.",
+      "statement_tr": "Der Aufzug funktioniert nicht.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_018",
+      "format": "true_false",
+      "context_de": "Kasse 3\n←",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Kasse 3 ist links.",
+      "statement_tr": "Kasse 3 ist links.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_019",
+      "format": "true_false",
+      "context_de": "WLAN\nPasswort: gast123",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Es gibt WLAN.",
+      "statement_tr": "Es gibt WLAN.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    },
+    {
+      "id": "lrf_020",
+      "format": "true_false",
+      "context_de": "Bitte\nSchuhe ausziehen",
+      "context_title": "Schild / Tafel",
+      "statement_de": "Man soll Schuhe ausziehen.",
+      "statement_tr": "Man soll Schuhe ausziehen.",
+      "correct": true,
+      "tags": [
+        "real",
+        "teil1"
+      ]
+    }
+  ],
+  "matching": [
+    {
+      "id": "lmatch_001",
+      "format": "matching",
+      "title_de": "Was passt? Ordnen Sie zu.",
+      "title_tr": "Hangisi uyuyor? Eşleştirin.",
+      "prompts": [
+        {
+          "id": "a",
+          "text_de": "Ich suche einen Arzt.",
+          "text_tr": "Doktor arıyorum."
+        },
+        {
+          "id": "b",
+          "text_de": "Ich möchte einkaufen.",
+          "text_tr": "Alışveriş yapmak istiyorum."
+        },
+        {
+          "id": "c",
+          "text_de": "Ich brauche Geld.",
+          "text_tr": "Paraya ihtiyacım var."
+        },
+        {
+          "id": "d",
+          "text_de": "Ich möchte Deutsch lernen.",
+          "text_tr": "Almanca öğrenmek istiyorum."
+        },
+        {
+          "id": "e",
+          "text_de": "Ich habe Hunger.",
+          "text_tr": "Açım."
+        }
+      ],
+      "options": [
+        "Supermarkt — Mo–Sa 8–20",
+        "Sprachschule — Kurs Mo–Fr",
+        "Bank — Geldautomat 24h",
+        "Praxis Dr. Müller — Tel. 030…",
+        "Restaurant — Mittag 12–14"
+      ],
+      "correct_indices": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ],
+      "tags": [
+        "real",
+        "teil2"
+      ]
+    },
+    {
+      "id": "lmatch_002",
+      "format": "matching",
+      "title_de": "Was passt? Ordnen Sie zu.",
+      "title_tr": "Hangisi uyuyor? Eşleştirin.",
+      "prompts": [
+        {
+          "id": "a",
+          "text_de": "Ich suche einen Arzt.",
+          "text_tr": "Doktor arıyorum."
+        },
+        {
+          "id": "b",
+          "text_de": "Ich möchte einkaufen.",
+          "text_tr": "Alışveriş yapmak istiyorum."
+        },
+        {
+          "id": "c",
+          "text_de": "Ich brauche Geld.",
+          "text_tr": "Paraya ihtiyacım var."
+        },
+        {
+          "id": "d",
+          "text_de": "Ich möchte Deutsch lernen.",
+          "text_tr": "Almanca öğrenmek istiyorum."
+        },
+        {
+          "id": "e",
+          "text_de": "Ich habe Hunger.",
+          "text_tr": "Açım."
+        }
+      ],
+      "options": [
+        "Supermarkt — Mo–Sa 8–20",
+        "Sprachschule — Kurs Mo–Fr",
+        "Bank — Geldautomat 24h",
+        "Praxis Dr. Müller — Tel. 030…",
+        "Restaurant — Mittag 12–14"
+      ],
+      "correct_indices": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ],
+      "tags": [
+        "real",
+        "teil2"
+      ]
+    },
+    {
+      "id": "lmatch_003",
+      "format": "matching",
+      "title_de": "Was passt? Ordnen Sie zu.",
+      "title_tr": "Hangisi uyuyor? Eşleştirin.",
+      "prompts": [
+        {
+          "id": "a",
+          "text_de": "Ich suche einen Arzt.",
+          "text_tr": "Doktor arıyorum."
+        },
+        {
+          "id": "b",
+          "text_de": "Ich möchte einkaufen.",
+          "text_tr": "Alışveriş yapmak istiyorum."
+        },
+        {
+          "id": "c",
+          "text_de": "Ich brauche Geld.",
+          "text_tr": "Paraya ihtiyacım var."
+        },
+        {
+          "id": "d",
+          "text_de": "Ich möchte Deutsch lernen.",
+          "text_tr": "Almanca öğrenmek istiyorum."
+        },
+        {
+          "id": "e",
+          "text_de": "Ich habe Hunger.",
+          "text_tr": "Açım."
+        }
+      ],
+      "options": [
+        "Supermarkt — Mo–Sa 8–20",
+        "Sprachschule — Kurs Mo–Fr",
+        "Bank — Geldautomat 24h",
+        "Praxis Dr. Müller — Tel. 030…",
+        "Restaurant — Mittag 12–14"
+      ],
+      "correct_indices": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ],
+      "tags": [
+        "real",
+        "teil2"
+      ]
+    },
+    {
+      "id": "lmatch_004",
+      "format": "matching",
+      "title_de": "Was passt? Ordnen Sie zu.",
+      "title_tr": "Hangisi uyuyor? Eşleştirin.",
+      "prompts": [
+        {
+          "id": "a",
+          "text_de": "Ich suche einen Arzt.",
+          "text_tr": "Doktor arıyorum."
+        },
+        {
+          "id": "b",
+          "text_de": "Ich möchte einkaufen.",
+          "text_tr": "Alışveriş yapmak istiyorum."
+        },
+        {
+          "id": "c",
+          "text_de": "Ich brauche Geld.",
+          "text_tr": "Paraya ihtiyacım var."
+        },
+        {
+          "id": "d",
+          "text_de": "Ich möchte Deutsch lernen.",
+          "text_tr": "Almanca öğrenmek istiyorum."
+        },
+        {
+          "id": "e",
+          "text_de": "Ich habe Hunger.",
+          "text_tr": "Açım."
+        }
+      ],
+      "options": [
+        "Supermarkt — Mo–Sa 8–20",
+        "Sprachschule — Kurs Mo–Fr",
+        "Bank — Geldautomat 24h",
+        "Praxis Dr. Müller — Tel. 030…",
+        "Restaurant — Mittag 12–14"
+      ],
+      "correct_indices": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ],
+      "tags": [
+        "real",
+        "teil2"
+      ]
+    }
+  ]
+}

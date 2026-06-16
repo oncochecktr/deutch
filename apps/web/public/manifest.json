@@ -1,0 +1,26 @@
+{
+  "name": "German Coach — Goethe A1 Hazırlık",
+  "short_name": "German Coach",
+  "description": "Goethe A1 sınavına hazırlık — kelime, quiz, sınav simülasyonu",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f9f5ed",
+  "theme_color": "#1a3a5c",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

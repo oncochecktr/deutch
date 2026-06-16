@@ -1,0 +1,15 @@
+{
+  "level": "A1",
+  "version": "1.0.0",
+  "counts": {
+    "hoeren": 100,
+    "lesen_questions": 100,
+    "lesen_passages": 25,
+    "schreiben": 50,
+    "sprechen": 100,
+    "exams": 20,
+    "hoeren_real": 20,
+    "lesen_rf": 20,
+    "lesen_match": 4
+  }
+}

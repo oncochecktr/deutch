@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f9f5ed;
+  --surface: #fdfbf7;
+  --text: #2c3e35;
+  --muted: #6b7c72;
+  --accent: #5a785a;
+  --goethe-blue: #1a3a5c;
+  --goethe-gold: #c9a227;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-cream-100 font-sans text-[var(--text)] antialiased;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+::selection {
+  @apply bg-sage-200 text-sage-600;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wordCueDraw {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wordCuePulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.word-cue-line {
+  transform-origin: center;
+  animation:
+    wordCueDraw 0.75s ease-out forwards,
+    wordCuePulse 2.2s ease-in-out 0.75s infinite;
+}
+
+.card-soft {
+  @apply rounded-2xl border border-sage-100 bg-cream-50 shadow-sm;
+}
+
+/* @apply kullanilmiyor — card-soft ile birlestirilmesin diye duz CSS */
+.card-goethe {
+  border-radius: 1rem;
+  border: 2px solid rgba(26, 58, 92, 0.25);
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.18) 0%, rgba(26, 58, 92, 0.08) 100%);
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  @apply rounded-xl bg-sage-500 px-5 py-2.5 font-medium text-white transition hover:bg-sage-600 active:scale-[0.98];
+}
+
+.btn-primary-lg {
+  @apply min-h-[52px] touch-manipulation rounded-xl bg-sage-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-sage-600 active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply rounded-xl border border-sage-200 bg-white px-5 py-2.5 font-medium text-sage-600 transition hover:bg-sage-50;
+}
+
+.btn-secondary-lg {
+  @apply min-h-[52px] touch-manipulation rounded-xl border border-sage-200 bg-white px-6 py-3.5 text-base font-semibold text-sage-600 transition hover:bg-sage-50;
+}
+
+.app-main {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 1024px) {
+  .app-main {
+    padding-bottom: 2rem;
+  }
+}
+
+details.app-collapse > summary {
+  @apply cursor-pointer list-none select-none;
+}
+
+details.app-collapse > summary::-webkit-details-marker {
+  display: none;
+}
+
+.goethe-badge {
+  @apply inline-flex items-center gap-1 rounded-full bg-goethe-blue px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white;
+}
