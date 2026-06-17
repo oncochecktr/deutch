@@ -17,22 +17,22 @@ export const DAILY_TASK_META: Record<string, DailyTaskMeta> = {
   },
   hoeren: {
     title: "Hören (Dinleme)",
-    subtitle: "Goethe dinleme bölümü — sesi dinle, çoktan seçmeli soruları cevapla",
+    subtitle: "A1 dinleme — sesi dinle, çoktan seçmeli soruları cevapla (Goethe · TELC formatı)",
     shortLabel: "Hören oturumu",
   },
   lesen: {
     title: "Lesen (Okuma)",
-    subtitle: "Goethe okuma bölümü — kısa metni oku, alttaki soruları işaretle",
+    subtitle: "A1 okuma — kısa metni oku, alttaki soruları işaretle",
     shortLabel: "Lesen metni",
   },
   schreiben: {
     title: "Schreiben (Yazma)",
-    subtitle: "Goethe yazma bölümü — form doldur veya kısa mesaj / e-posta yaz",
+    subtitle: "A1 yazma — form doldur veya kısa mesaj / e-posta yaz",
     shortLabel: "Schreiben görevi",
   },
   sprechen: {
     title: "Sprechen (Konuşma)",
-    subtitle: "Goethe konuşma bölümü — soruları yüksek sesle cevapla, checklist işaretle",
+    subtitle: "A1 konuşma — soruları yüksek sesle cevapla, checklist işaretle",
     shortLabel: "Sprechen kartları",
   },
   listen: {
@@ -42,7 +42,7 @@ export const DAILY_TASK_META: Record<string, DailyTaskMeta> = {
   },
   exam: {
     title: "Deneme sınavı (Prüfung)",
-    subtitle: "Tam Goethe A1 simülasyonu — Hören, Lesen, Schreiben, Sprechen bir arada",
+    subtitle: "Tam A1 simülasyonu — Hören, Lesen, Schreiben, Sprechen (Goethe · TELC · ÖSD)",
     shortLabel: "Deneme sınavı",
   },
   rest: {

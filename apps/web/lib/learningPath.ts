@@ -186,7 +186,7 @@ export function computeLearningPath(
     {
       id: "goethe" as const,
       step: 3,
-      title: "Goethe 4 modül",
+      title: "A1 sınav modülleri",
       tagline: "Hören · Lesen · Schreiben · Sprechen",
       href: nextGoetheHref(progress, report),
       cta: "Modüle git",

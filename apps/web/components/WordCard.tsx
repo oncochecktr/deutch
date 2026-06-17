@@ -130,7 +130,7 @@ export function WordCard({
           {flipped && (
             <>
               <span className="rounded-full bg-goethe-blue/10 px-2.5 py-1 text-[10px] font-semibold uppercase text-goethe-blue">
-                Goethe {word.level}
+                A1 {word.level}
               </span>
               <span className="rounded-full bg-sage-100 px-2.5 py-1 text-[10px] font-medium text-sage-500">
                 {kind}

@@ -39,7 +39,7 @@ export default function HomePage() {
               <MiniTile href="/review" icon="review" label="Tekrar" stat={srs.due > 0 ? `${srs.due} bekliyor` : "OK"} />
               <MiniTile href="/cards" icon="cards" label="Kartlar" stat={`${a1.total} kelime`} />
               <MiniTile href="/grundlagen" icon="exam" label="Gramer" stat="6 modül" />
-              <MiniTile href="/exam" icon="exam" label="Goethe" stat="Sınav" />
+              <MiniTile href="/exam" icon="exam" label="Sınav" stat="A1 modül" />
               <MiniTile href="/listen" icon="listen" label="Dinle" stat="MP3" />
               <MiniTile href="/quiz" icon="cards" label="Quiz" stat="TR anlam" />
               <MiniTile href="/words" icon="list" label="Liste" stat="Ara" />

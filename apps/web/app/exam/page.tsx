@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { getBankMeta, getGoetheExams } from "@german-coach/exams";
 import { useProgress } from "@/lib/ProgressContext";
+import { EXAM_HUB_TITLE, EXAM_LABEL_DESC } from "@/lib/brand";
 import { calcGoethePct } from "@/lib/goetheProgress";
 
 const MODULES = [
@@ -56,9 +57,9 @@ export default function ExamHubPage() {
     <div className="mx-auto max-w-3xl space-y-6">
       <div className="card-soft overflow-hidden">
         <div className="bg-goethe-blue px-6 py-8 text-center text-white">
-          <p className="text-xs uppercase tracking-widest text-white/60">Goethe-Institut</p>
-          <h1 className="mt-2 text-2xl font-bold">Start Deutsch 1 — A1</h1>
-          <p className="mt-2 text-sm text-white/70">Soru Bankası · Prüfungsvorbereitung</p>
+          <p className="text-xs uppercase tracking-widest text-white/60">{EXAM_HUB_TITLE}</p>
+          <h1 className="mt-2 text-2xl font-bold">Deutsch A1 — Startniveau</h1>
+          <p className="mt-2 text-sm text-white/70">{EXAM_LABEL_DESC}</p>
         </div>
         <div className="grid grid-cols-2 gap-3 p-6 sm:grid-cols-5">
           <Stat n={bank.counts.hoeren} label="Hören" done={hoerenDone} />

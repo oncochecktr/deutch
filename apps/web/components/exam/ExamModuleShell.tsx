@@ -18,7 +18,7 @@ export function ExamModuleShell({
       <div className="flex items-start justify-between gap-4 border-b border-sage-100 pb-4">
         <div>
           <Link href={backHref} className="text-xs text-sage-400 hover:text-sage-600">
-            ← Goethe Modülleri
+            ← A1 Sınav Modülleri
           </Link>
           <span className="goethe-badge mt-2 block w-fit">{title}</span>
           <p className="mt-2 text-sm text-sage-400">{subtitle}</p>
@@ -48,7 +48,7 @@ export function ExamScoreBar({
       </p>
       <p className={`mt-1 text-lg ${pass ? "text-sage-600" : "text-goethe-red"}`}>%{pct}</p>
       <p className="mt-2 text-xs text-sage-400">
-        {pass ? "Goethe hedefi geçildi (≥%75)" : "Hedef: en az %75 — tekrar dene"}
+        {pass ? "A1 hedefi geçildi (≥%75)" : "Hedef: en az %75 — tekrar dene"}
       </p>
     </div>
   );

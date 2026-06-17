@@ -12,7 +12,7 @@ const ITEMS: { href: string; label: string; icon: NavIconKey; match?: (p: string
   { href: "/", label: "Panel", icon: "panel", match: (p) => p === "/" },
   { href: "/review", label: "Tekrar", icon: "review", match: (p) => p.startsWith("/review") },
   { href: "/cards", label: "Kart", icon: "cards", match: (p) => p.startsWith("/cards") },
-  { href: "/exam", label: "Goethe", icon: "exam", match: (p) => p.startsWith("/exam") },
+  { href: "/exam", label: "Sınav", icon: "exam", match: (p) => p.startsWith("/exam") },
   { href: "/listen", label: "Dinle", icon: "listen", match: (p) => p.startsWith("/listen") },
 ];
 

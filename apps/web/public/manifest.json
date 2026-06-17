@@ -1,7 +1,7 @@
 {
-  "name": "German Coach — Goethe A1 Hazırlık",
+  "name": "German Coach — Almanya A1 Hazırlık",
   "short_name": "German Coach",
-  "description": "Goethe A1 sınavına hazırlık — kelime, quiz, sınav simülasyonu",
+  "description": "Goethe · TELC · ÖSD — A1 kelime, gramer ve sınav pratiği",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

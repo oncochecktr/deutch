@@ -20,7 +20,7 @@ const links: { href: string; label: string; icon: NavIconKey }[] = [
 
   { href: "/listen", label: "Dinle", icon: "listen" },
 
-  { href: "/exam", label: "Goethe", icon: "exam" },
+  { href: "/exam", label: "Sınav", icon: "exam" },
 
   { href: "/mesleki", label: "Mesleki", icon: "mesleki" },
 
@@ -57,7 +57,7 @@ export function NavBar() {
 
             <p className="text-sm font-semibold leading-tight text-goethe-blue">German Coach</p>
 
-            <p className="text-[10px] uppercase tracking-wider text-sage-400">A1 Hazırlık v0.7</p>
+            <p className="text-[10px] uppercase tracking-wider text-sage-400">A1 Hazırlık v0.8</p>
 
           </div>
 
