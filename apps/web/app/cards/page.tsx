@@ -13,13 +13,17 @@ import { useProgress } from "@/lib/ProgressContext";
 const SESSION_MEMORY_MAX = 20;
 
 export default function CardsPage() {
-  const { progress, updateProgress, hydrated } = useProgress();
+  const { progress, updateProgress, hydrated, flushProgress } = useProgress();
   const vocab = getA1Vocabulary();
   const [flipped, setFlipped] = useState(false);
   const [trail, setTrail] = useState<string[]>([]);
   const [trailCursor, setTrailCursor] = useState(0);
   const [nudgeTrigger, setNudgeTrigger] = useState(0);
   const trailReady = useRef(false);
+
+  useEffect(() => {
+    return () => flushProgress();
+  }, [flushProgress]);
 
   const index = Math.min(progress.cardIndex, vocab.words.length - 1);
   const liveWord = vocab.words[index];
@@ -69,12 +73,14 @@ export default function CardsPage() {
 
   const continueLive = useCallback(() => {
     if (!isLive) return;
-    const updated = recordAnswer(progress, liveWord.id, true);
     const nextIndex = (index + 1) % vocab.words.length;
     const nextWord = vocab.words[nextIndex];
-    updateProgress({ ...updated, cardIndex: nextIndex });
+    updateProgress((p) => ({
+      ...recordAnswer(p, liveWord.id, true),
+      cardIndex: nextIndex,
+    }));
     appendTrail(nextWord.id);
-  }, [isLive, progress, liveWord.id, index, vocab.words, updateProgress, appendTrail]);
+  }, [isLive, liveWord.id, index, vocab.words, updateProgress, appendTrail]);
 
   const goPrevious = () => {
     if (trailCursor > 0) {

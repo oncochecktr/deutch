@@ -14,11 +14,11 @@ import {
   MODULE_TARGETS,
   type ModuleScores,
 } from "@/lib/readinessEngine";
-import { getStudyMinutesSinceBreak } from "@/lib/progress";
+import { countStudiedA1Words, getStudyMinutesSinceBreak } from "@/lib/progress";
 import { getSRSStats } from "@/lib/srs";
 
 export function A1ControlPanel() {
-  const { progress, updateProgress } = useProgress();
+  const { progress, updateProgress, hydrated, storageOk } = useProgress();
   const a1 = getA1Vocabulary();
   const mesleki = getTimurVocabulary();
   const allIds = [...a1.words.map((w) => w.id), ...mesleki.words.map((w) => w.id)];
@@ -27,6 +27,7 @@ export function A1ControlPanel() {
   const studyMin = getStudyMinutesSinceBreak(progress);
   const bank = getBankMeta();
   const grundlagenCore = getA1Core();
+  const a1Studied = countStudiedA1Words(progress);
   const a1Known = progress.knownWordIds.filter((id) => id.startsWith("a1_")).length;
   const satzDone = progress.grundlagen.satzCompleted.length;
   const satzTotal = grundlagenCore.sentenceBuilder.exercises.length;
@@ -73,7 +74,7 @@ export function A1ControlPanel() {
         <div className="space-y-2 p-4 text-sm">
           <Row label="Tahmini sınav" value={report.estimatedExamDate} />
           <Row label="Kalan gün" value={`${report.daysUntilExam} gün`} />
-          <Row label="Kelime" value={`${a1Known} / ${a1.total} öğrenildi`} />
+          <Row label="Kelime" value={`${a1Studied} / ${a1.total} çalışıldı`} />
           <Row label="Satz Builder" value={`${satzDone} / ${satzTotal} cümle`} />
           <Row label="Conjugation Matrix" value={`${conjugationDone} / ${conjugationTotal} fiil`} />
           <Row label="Possessive Trainer" value={`${possessivesDone} / ${possessivesTotal} set`} />
@@ -166,8 +167,15 @@ export function A1ControlPanel() {
         </label>
         <p className="mt-2">Çalışma bloğu: {studyMin}/{progress.studyBlockMinutes} dk</p>
         <p className="mt-2 rounded-lg bg-sage-50 p-2 text-sage-600">
-          İlerleme bu tarayıcıda kayıtlı ({progress.knownWordIds.length} kelime,{" "}
-          {Object.keys(progress.srsRecords).length} SRS). Sunucu kapatılsa bile silinmez.
+          {hydrated
+            ? storageOk
+              ? `İlerleme bu telefonda kayıtlı (${a1Studied} kelime çalışıldı, ${a1Known} bilinen).${
+                  progress.lastSavedAt
+                    ? ` Son kayıt: ${new Date(progress.lastSavedAt).toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" })}`
+                    : ""
+                }`
+              : "Uyarı: tarayıcı kaydı başarısız — gizli mod veya depolama dolu olabilir."
+            : "İlerleme yükleniyor…"}
         </p>
       </div>
     </aside>

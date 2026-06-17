@@ -11,8 +11,16 @@ import { computeLearningPath } from "@/lib/learningPath";
 import { useDashboardReport } from "@/lib/useDashboardReport";
 
 export default function HomePage() {
-  const { report, srs, a1, mesleki, progress } = useDashboardReport();
+  const { report, srs, a1, mesleki, progress, hydrated } = useDashboardReport();
   const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
+
+  if (!hydrated) {
+    return (
+      <div className="card-soft p-8 text-center text-sm text-sage-500">
+        İlerleme yükleniyor…
+      </div>
+    );
+  }
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">

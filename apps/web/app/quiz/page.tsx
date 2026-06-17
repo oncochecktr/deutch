@@ -37,10 +37,9 @@ export default function QuizPage() {
       setPhase("result");
       setSessionCorrect((c) => c + (isCorrect ? 1 : 0));
       setSessionWrong((w) => w + (isCorrect ? 0 : 1));
-      const updated = recordAnswer(progress, currentWord.id, isCorrect);
-      updateProgress(updated);
+      updateProgress((p) => recordAnswer(p, currentWord.id, isCorrect));
     },
-    [phase, currentWord.id, progress, updateProgress]
+    [phase, currentWord.id, updateProgress]
   );
 
   const nextQuestion = useCallback(() => {

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { IconCheck, IconX } from "@/components/icons";
-import { checkSentenceBuilt } from "@/lib/germanTextCompare";
+import { checkSentenceBuilt, germanTextsMatch } from "@/lib/germanTextCompare";
 import type { WordOrderExercise } from "@/lib/grundlagen";
 
 function shuffle<T>(arr: T[], seed: number): T[] {
@@ -16,12 +16,8 @@ function shuffle<T>(arr: T[], seed: number): T[] {
   return copy;
 }
 
-function normalizeToken(s: string) {
-  return s
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/ß/g, "ss");
+function tokensMatch(user: string, expected: string) {
+  return germanTextsMatch(user.replace(/[.,!?]/g, ""), expected.replace(/[.,!?]/g, ""));
 }
 
 interface WordOrderSpotVerbProps {
@@ -54,7 +50,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
 
   const handleVerbPick = (word: string) => {
     if (phase !== "spot" || verbPicked) return;
-    const ok = normalizeToken(word) === normalizeToken(verb);
+    const ok = tokensMatch(word, verb);
     setVerbPicked(word);
     if (ok) {
       setPhase("build");
@@ -101,7 +97,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
             <span
               key={`${w}-${i}`}
               className={`rounded-lg border px-3 py-1.5 text-sm ${
-                normalizeToken(w) === normalizeToken(verb)
+                tokensMatch(w, verb)
                   ? "border-sage-500 bg-sage-100 font-semibold"
                   : w === verbPicked
                     ? "border-red-300 bg-red-50"

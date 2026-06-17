@@ -7,7 +7,7 @@ import { computeA1Readiness } from "@/lib/readinessEngine";
 import { getSRSStats } from "@/lib/srs";
 
 export function useDashboardReport() {
-  const { progress } = useProgress();
+  const { progress, hydrated } = useProgress();
   const a1 = getA1Vocabulary();
   const mesleki = getTimurVocabulary();
   const allIds = useMemo(
@@ -25,5 +25,5 @@ export function useDashboardReport() {
     [allIds, progress.srsRecords]
   );
 
-  return { progress, report, srs, a1, mesleki, allIds };
+  return { progress, report, srs, a1, mesleki, allIds, hydrated };
 }

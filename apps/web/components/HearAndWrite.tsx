@@ -165,7 +165,7 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
                 Doğrusu: <strong className="text-goethe-blue">{target}</strong>
               </p>
               <p className="mt-1 text-xs opacity-80">
-                Benzerlik: %{result.score} · ß/ss ve ü/ue yazımına dikkat
+                Benzerlik: %{result.score} · İngilizce klavye OK: u=ü, ss/s/b=ß, ue=ü
               </p>
               {examples[0]?.tr && mode === "sentence" && (
                 <p className="mt-2 border-t border-red-200/50 pt-2 text-sage-600">

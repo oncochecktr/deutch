@@ -1,4 +1,5 @@
 import type { UserProgress } from "./progress";
+import { countStudiedA1Words } from "./progress";
 import type { A1ReadinessReport } from "./readinessEngine";
 import { A1_TARGETS } from "./dailyGoals";
 import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer } from "./grundlagen";
@@ -142,7 +143,7 @@ export function computeLearningPath(
   report: A1ReadinessReport
 ): LearningPathState {
   const a1Total = getA1Vocabulary().total;
-  const a1Known = progress.knownWordIds.filter((id) => id.startsWith("a1_")).length;
+  const a1Studied = countStudiedA1Words(progress);
 
   const wProg = wordsProgress(report);
   const gProg = grammarProgress(progress);
@@ -170,7 +171,7 @@ export function computeLearningPath(
       href: "/cards",
       cta: "Kartlara git",
       progress: wProg,
-      detail: `${a1Known} / ${a1Total}`,
+      detail: `${a1Studied} / ${a1Total}`,
     },
     {
       id: "grammar" as const,

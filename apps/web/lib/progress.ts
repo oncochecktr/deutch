@@ -86,6 +86,7 @@ export interface UserProgress {
 }
 
 export const STORAGE_KEY = "german-coach-progress";
+export const STORAGE_BACKUP_KEY = "german-coach-progress-backup";
 
 export const DEFAULT_PROGRESS: UserProgress = {
   version: 3,
@@ -273,13 +274,27 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
   return normalizeProgress(base);
 }
 
+function parseStoredProgress(raw: string | null): UserProgress | null {
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    return migrateProgress(parsed);
+  } catch {
+    return null;
+  }
+}
+
 export function loadProgress(): UserProgress {
   if (typeof window === "undefined") return DEFAULT_PROGRESS;
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return { ...DEFAULT_PROGRESS };
-    const parsed = JSON.parse(raw) as Record<string, unknown>;
-    return migrateProgress(parsed);
+    const fromLocal = parseStoredProgress(localStorage.getItem(STORAGE_KEY));
+    if (fromLocal) return fromLocal;
+    const fromBackup = parseStoredProgress(sessionStorage.getItem(STORAGE_BACKUP_KEY));
+    if (fromBackup) {
+      saveProgress(fromBackup);
+      return fromBackup;
+    }
+    return { ...DEFAULT_PROGRESS };
   } catch {
     return { ...DEFAULT_PROGRESS };
   }
@@ -325,10 +340,41 @@ export function resetStudyProfile(progress: UserProgress): Partial<UserProgress>
 /** @deprecated resetStudyProfile kullan */
 export const resetSRSIndicators = resetStudyProfile;
 
-export function saveProgress(progress: UserProgress): void {
-  if (typeof window === "undefined") return;
+export function saveProgress(progress: UserProgress): boolean {
+  if (typeof window === "undefined") return false;
   const payload = { ...progress, lastSavedAt: new Date().toISOString() };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+  const json = JSON.stringify(payload);
+  try {
+    localStorage.setItem(STORAGE_KEY, json);
+    try {
+      sessionStorage.setItem(STORAGE_BACKUP_KEY, json);
+    } catch {
+      /* session backup optional */
+    }
+    return true;
+  } catch {
+    try {
+      sessionStorage.setItem(STORAGE_BACKUP_KEY, json);
+      return true;
+    } catch {
+      return false;
+    }
+  }
+}
+
+/** Kart/quiz/SRS dahil çalışılmış A1 kelime sayısı */
+export function countStudiedA1Words(progress: UserProgress): number {
+  const ids = new Set<string>();
+  for (const id of progress.knownWordIds) {
+    if (id.startsWith("a1_")) ids.add(id);
+  }
+  for (const id of Object.keys(progress.wordProgress)) {
+    if (id.startsWith("a1_")) ids.add(id);
+  }
+  for (const id of Object.keys(progress.srsRecords)) {
+    if (id.startsWith("a1_")) ids.add(id);
+  }
+  return ids.size;
 }
 
 export function recordAnswer(
@@ -353,8 +399,8 @@ export function recordAnswer(
   const knownWordIds =
     progress.knownWordIds.includes(wordId) || wp.mastered
       ? [...new Set([...progress.knownWordIds, wordId])]
-      : isCorrect && wp.correct >= 2
-        ? [...progress.knownWordIds, wordId]
+      : isCorrect && wp.correct >= 1
+        ? [...new Set([...progress.knownWordIds, wordId])]
         : progress.knownWordIds;
 
   return {

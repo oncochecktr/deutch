@@ -1,7 +1,7 @@
 import { getBankMeta } from "@german-coach/exams";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
 import type { UserProgress } from "./progress";
-import { calcAccuracy } from "./progress";
+import { calcAccuracy, countStudiedA1Words } from "./progress";
 import { calcGoethePct } from "./goetheProgress";
 import { A1_TARGETS, DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
 import { getSRSStats, todayISO } from "./srs";
@@ -346,8 +346,8 @@ function calcExamScore(progress: UserProgress): number {
 
 function calcWordsScore(progress: UserProgress): number {
   const a1Total = getA1Vocabulary().total;
-  const a1Known = progress.knownWordIds.filter((id) => id.startsWith("a1_")).length;
-  return Math.min(100, Math.round((a1Known / a1Total) * 100));
+  const a1Studied = countStudiedA1Words(progress);
+  return Math.min(100, Math.round((a1Studied / a1Total) * 100));
 }
 
 function calcSrsScore(progress: UserProgress, allWordIds: string[]): number {
@@ -356,8 +356,13 @@ function calcSrsScore(progress: UserProgress, allWordIds: string[]): number {
     ? Math.round((srs.mastered / allWordIds.length) * 100)
     : 0;
   const accuracy = calcAccuracy(progress);
-  if (progress.dailyStats.srsReviews === 0 && srs.mastered === 0) return 0;
-  return Math.round(masteredPct * 0.5 + accuracy * 0.5);
+  const hasActivity =
+    progress.dailyStats.srsReviews > 0 || Object.keys(progress.srsRecords).length > 0;
+  if (!hasActivity && srs.mastered === 0) return 0;
+  const studiedPct = allWordIds.length
+    ? Math.round((Object.keys(progress.srsRecords).length / allWordIds.length) * 100)
+    : 0;
+  return Math.round(masteredPct * 0.4 + studiedPct * 0.3 + accuracy * 0.3);
 }
 
 function addDaysISO(dateStr: string, days: number): string {
@@ -393,7 +398,7 @@ export function computeA1Readiness(
 ): A1ReadinessReport {
   const bank = getBankMeta();
   const a1Total = getA1Vocabulary().total;
-  const a1Known = progress.knownWordIds.filter((id) => id.startsWith("a1_")).length;
+  const a1Studied = countStudiedA1Words(progress);
   const ds = progress.dailyStats;
   const goals = progress.dailyGoals ?? DEFAULT_DAILY_GOALS;
   const srsStats = getSRSStats(allWordIds, progress.srsRecords);
@@ -441,7 +446,7 @@ export function computeA1Readiness(
   const lesenPassagesDone = Math.floor(lesenDone / 4);
 
   const remaining = {
-    words: Math.max(0, Math.ceil(a1Total * 0.85) - a1Known),
+    words: Math.max(0, Math.ceil(a1Total * 0.85) - a1Studied),
     hoerenQuestions: Math.max(0, bank.counts.hoeren - hoerenDone),
     lesenPassages: Math.max(0, bank.counts.lesen_passages - lesenPassagesDone),
     schreibenTasks: Math.max(0, bank.counts.schreiben - progress.goethe.schreibenDone.length),

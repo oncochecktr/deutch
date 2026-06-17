@@ -302,18 +302,14 @@ export const MEKTUP_VERB_NOUN_PAIRS = [
   { verb: "suchen", noun: "Suche", tr: "aramak" },
 ];
 
+import { germanTextsMatch, normalizeGermanText } from "./germanTextCompare";
+
 export function normalizeFormAnswer(s: string): string {
-  return s
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, " ");
+  return normalizeGermanText(s);
 }
 
 export function checkFormAnswer(field: FormField, userInput: string): boolean {
-  const n = normalizeFormAnswer(userInput);
-  if (!n) return false;
-  const ok = new Set([normalizeFormAnswer(field.answer), ...(field.acceptAlso ?? []).map(normalizeFormAnswer)]);
-  return ok.has(n) || [...ok].some((a) => n.includes(a) || a.includes(n));
+  if (!userInput.trim()) return false;
+  const answers = [field.answer, ...(field.acceptAlso ?? [])];
+  return answers.some((a) => germanTextsMatch(userInput, a));
 }
