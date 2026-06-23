@@ -6,6 +6,7 @@ import { PageShell } from "@/components/PageShell";
 import { SpeakBoard } from "@/components/SpeakBoard";
 import { SpeakExercisePanel } from "@/components/SpeakExercisePanel";
 import { SpeakSessionLogPanel } from "@/components/SpeakSessionLogPanel";
+import { ScriptProfessorBanner } from "@/components/speak/ScriptProfessorBanner";
 import { SpeakLessonShelf } from "@/components/SpeakLessonShelf";
 import { getNextLesson, resolveCurrentLesson } from "@/lib/speakCurriculum";
 import { SpeakApiUsagePanel, SpeakProgressPanel } from "@/components/SpeakProgressPanel";
@@ -68,7 +69,8 @@ import {
   updateHintSupport,
 } from "@/lib/speakHintLevel";
 import { useSpeechRecognition } from "@/lib/useSpeechRecognition";
-import { clientChatAuthPayload } from "@/lib/userApiKeys";
+import { clientChatAuthPayload, hasUserApiKey } from "@/lib/userApiKeys";
+import { runScriptProfessor, shouldUseScriptProfessor } from "@/lib/speakScript";
 import {
   buildReadyPracticeHint,
   coercePracticeIfReady,
@@ -171,6 +173,7 @@ export default function SpeakPage() {
   const writtenInputRef = useRef<HTMLTextAreaElement>(null);
 
   const currentLesson = resolveCurrentLesson(professor.currentLessonId);
+  const scriptModeActive = shouldUseScriptProfessor(professor.currentLessonId, hasUserApiKey());
   const curriculumProgress = computeOverallCurriculumProgress(professor);
   const fallbackAdvice = getLocalProfessorAdvice(curriculumProgress, professor.weaknesses);
 
@@ -449,8 +452,24 @@ export default function SpeakPage() {
       const progress = computeOverallCurriculumProgress(prof);
       const readyHint = buildReadyPracticeHint(prof.stepConceptReady, trimmed);
       const apiMessage = readyHint ? `${trimmed}\n\n${readyHint}` : trimmed;
+      const useScript = shouldUseScriptProfessor(prof.currentLessonId, Boolean(clientChatAuthPayload().userApiKey));
 
       try {
+        let chatDataRaw: ChatResponse;
+
+        if (useScript) {
+          await new Promise((r) => setTimeout(r, 350));
+          chatDataRaw = runScriptProfessor({
+            lessonId: prof.currentLessonId,
+            stepIndex: prof.currentStepIndex,
+            stepConceptReady: prof.stepConceptReady,
+            userMessage: trimmed,
+            lastGermanQuestion:
+              germanQuestion ?? memoryRef.current.session.lastGermanQuestion,
+            lastBoardPhase: boardPhase ?? memoryRef.current.session.lastBoardPhase,
+          });
+          addLog("ok", "Profesör modu yanıtı", `Adım ${prof.currentStepIndex + 1}`);
+        } else {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -495,7 +514,9 @@ export default function SpeakPage() {
           return;
         }
 
-        const chatDataRaw = data as ChatResponse;
+        chatDataRaw = data as ChatResponse;
+        }
+
         const lesson = resolveCurrentLesson(prof.currentLessonId);
         const isLastStep = prof.currentStepIndex >= lesson.steps.length - 1;
         let chatData = coercePracticeIfReady(
@@ -563,7 +584,7 @@ export default function SpeakPage() {
             "API yanıt alındı",
             `${chatData.usage.totalTokens} token · ${chatData.usage.model}`
           );
-        } else {
+        } else if (!useScript) {
           addLog("ok", "API yanıt alındı");
         }
 
@@ -608,7 +629,7 @@ export default function SpeakPage() {
         setLoading(false);
       }
     },
-    [history, loading, updateProgress, inputLanguage, handleLessonProgress, applyTeacherMeta, addLog, professorAudio, focusWrittenInput, teachingTopicGerman, teachingExamples]
+    [history, loading, updateProgress, inputLanguage, handleLessonProgress, applyTeacherMeta, addLog, professorAudio, focusWrittenInput, teachingTopicGerman, teachingExamples, germanQuestion, boardPhase]
   );
 
   const hintLevel = professor.hintSupport.level;
@@ -905,6 +926,12 @@ export default function SpeakPage() {
       subtitle="Öğretim → örnek → soru · profesör sesli anlatır · tahta merkezde"
       maxWidth="full"
     >
+      {scriptModeActive && (
+        <div className="mb-3">
+          <ScriptProfessorBanner lessonTitle={currentLesson.title} />
+        </div>
+      )}
+
       {focusMode ? (
         <details className="mb-2 card-soft p-2">
           <summary className="cursor-pointer text-xs text-sage-500">

@@ -70,3 +70,7 @@ export function clientChatAuthPayload(): ClientChatAuth {
   if (!creds) return {};
   return { userApiKey: creds.apiKey, userProvider: creds.provider };
 }
+
+export function hasUserApiKey(): boolean {
+  return Boolean(loadUserApiCredentials()?.apiKey);
+}
