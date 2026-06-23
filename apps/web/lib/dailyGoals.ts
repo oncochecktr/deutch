@@ -5,6 +5,9 @@ export const DEFAULT_DAILY_GOALS = {
   lesenPassages: 1,
   schreibenTasks: 1,
   sprechenCards: 5,
+  speakSteps: 1,
+  exercises: 3,
+  dialoguesRead: 1,
 } as const;
 
 export type DailyGoals = typeof DEFAULT_DAILY_GOALS;

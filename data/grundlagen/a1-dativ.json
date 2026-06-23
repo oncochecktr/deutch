@@ -1,0 +1,997 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Dativ Trainer",
+  "titleTr": "Dativ temel kalıplar",
+  "description": "mit · bei · in · zu/nach — A1 sabit kalıplar",
+  "passThreshold": 6,
+  "drillsPerSet": 8,
+  "rules": [
+    {
+      "article": "mit",
+      "tr": "mit + dem/der/mir …"
+    },
+    {
+      "article": "bei",
+      "tr": "bei + Dativ (yanında)"
+    },
+    {
+      "article": "in",
+      "tr": "in der / in dem (içinde)"
+    },
+    {
+      "article": "zu",
+      "tr": "zu/zur/zum, nach Hause"
+    }
+  ],
+  "sets": [
+    {
+      "id": "mit",
+      "title": "mit + Dativ",
+      "title_tr": "mit + Dativ",
+      "order": 1,
+      "examples": [
+        {
+          "id": "mit-ex-0",
+          "de": "Ich fahre mit dem Bus.",
+          "tr": "Otobüsle gidiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich fahre mit dem Bus.",
+              "tr": "Otobüsle gidiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-1",
+          "de": "Ich komme mit meiner Mutter.",
+          "tr": "Annemle geliyorum.",
+          "breakdown": [
+            {
+              "de": "Ich komme mit meiner Mutter.",
+              "tr": "Annemle geliyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-2",
+          "de": "Er spricht mit dem Lehrer.",
+          "tr": "Öğretmenle konuşuyor.",
+          "breakdown": [
+            {
+              "de": "Er spricht mit dem Lehrer.",
+              "tr": "Öğretmenle konuşuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-3",
+          "de": "Wir essen mit der Familie.",
+          "tr": "Aileyle yemek yiyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir essen mit der Familie.",
+              "tr": "Aileyle yemek yiyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-4",
+          "de": "Sie fährt mit dem Auto.",
+          "tr": "Arabayla gidiyor.",
+          "breakdown": [
+            {
+              "de": "Sie fährt mit dem Auto.",
+              "tr": "Arabayla gidiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-5",
+          "de": "Ich gehe mit meinem Bruder.",
+          "tr": "Erkek kardeşimle gidiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich gehe mit meinem Bruder.",
+              "tr": "Erkek kardeşimle gidiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-6",
+          "de": "Du kommst mit uns?",
+          "tr": "Bizimle geliyor musun?",
+          "breakdown": [
+            {
+              "de": "Du kommst mit uns?",
+              "tr": "Bizimle geliyor musun?",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-7",
+          "de": "Er arbeitet mit dem Kollegen.",
+          "tr": "Meslektaşıyla çalışıyor.",
+          "breakdown": [
+            {
+              "de": "Er arbeitet mit dem Kollegen.",
+              "tr": "Meslektaşıyla çalışıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-mit-01",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich fahre mit ___.",
+          "options": [
+            "dem Bus",
+            "den Bus",
+            "der Bus",
+            "das Bus"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Bus"
+        },
+        {
+          "id": "drill-mit-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich komme mit ___.",
+          "options": [
+            "meiner Mutter",
+            "meine Mutter",
+            "meinen Mutter",
+            "meinem Mutter"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: meiner Mutter"
+        },
+        {
+          "id": "drill-mit-03",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er spricht mit ___.",
+          "options": [
+            "dem Lehrer",
+            "den Lehrer",
+            "der Lehrer",
+            "des Lehrer"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Lehrer"
+        },
+        {
+          "id": "drill-mit-04",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Wir essen mit ___.",
+          "options": [
+            "der Familie",
+            "die Familie",
+            "den Familie",
+            "dem Familie"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Familie"
+        },
+        {
+          "id": "drill-mit-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie fährt mit ___.",
+          "options": [
+            "dem Auto",
+            "das Auto",
+            "den Auto",
+            "der Auto"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Auto"
+        },
+        {
+          "id": "drill-mit-06",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich gehe mit ___.",
+          "options": [
+            "meinem Bruder",
+            "meinen Bruder",
+            "meiner Bruder",
+            "mein Bruder"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: meinem Bruder"
+        },
+        {
+          "id": "drill-mit-07",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Kommst du mit ___?",
+          "options": [
+            "uns",
+            "wir",
+            "unser",
+            "unseren"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: uns"
+        },
+        {
+          "id": "drill-mit-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er arbeitet mit ___.",
+          "options": [
+            "dem Kollegen",
+            "den Kollegen",
+            "der Kollegen",
+            "des Kollegen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Kollegen"
+        }
+      ]
+    },
+    {
+      "id": "bei",
+      "title": "bei + Dativ",
+      "title_tr": "bei + Dativ",
+      "order": 2,
+      "examples": [
+        {
+          "id": "bei-ex-0",
+          "de": "Ich bin bei meiner Schwester.",
+          "tr": "Kız kardeşimin yanındayım.",
+          "breakdown": [
+            {
+              "de": "Ich bin bei meiner Schwester.",
+              "tr": "Kız kardeşimin yanındayım.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-1",
+          "de": "Er wohnt bei seinen Eltern.",
+          "tr": "Ailesinin yanında oturuyor.",
+          "breakdown": [
+            {
+              "de": "Er wohnt bei seinen Eltern.",
+              "tr": "Ailesinin yanında oturuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-2",
+          "de": "Sie arbeitet bei der Firma.",
+          "tr": "Şirkette çalışıyor.",
+          "breakdown": [
+            {
+              "de": "Sie arbeitet bei der Firma.",
+              "tr": "Şirkette çalışıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-3",
+          "de": "Wir sind bei Freunden.",
+          "tr": "Arkadaşların yanındayız.",
+          "breakdown": [
+            {
+              "de": "Wir sind bei Freunden.",
+              "tr": "Arkadaşların yanındayız.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-4",
+          "de": "Ich esse bei meiner Oma.",
+          "tr": "Büyükannemde yemek yiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich esse bei meiner Oma.",
+              "tr": "Büyükannemde yemek yiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-5",
+          "de": "Du bist bei mir?",
+          "tr": "Benim yanında mısın?",
+          "breakdown": [
+            {
+              "de": "Du bist bei mir?",
+              "tr": "Benim yanında mısın?",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-6",
+          "de": "Er ist beim Arzt.",
+          "tr": "Doktorda.",
+          "breakdown": [
+            {
+              "de": "Er ist beim Arzt.",
+              "tr": "Doktorda.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-7",
+          "de": "Sie ist bei der Arbeit.",
+          "tr": "İşte.",
+          "breakdown": [
+            {
+              "de": "Sie ist bei der Arbeit.",
+              "tr": "İşte.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-bei-01",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich bin bei ___.",
+          "options": [
+            "meiner Schwester",
+            "meine Schwester",
+            "meinen Schwester",
+            "meinem Schwester"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: meiner Schwester"
+        },
+        {
+          "id": "drill-bei-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er wohnt bei ___.",
+          "options": [
+            "seinen Eltern",
+            "seine Eltern",
+            "sein Eltern",
+            "seiner Eltern"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: seinen Eltern"
+        },
+        {
+          "id": "drill-bei-03",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie arbeitet bei ___.",
+          "options": [
+            "der Firma",
+            "die Firma",
+            "den Firma",
+            "dem Firma"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Firma"
+        },
+        {
+          "id": "drill-bei-04",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Wir sind bei ___.",
+          "options": [
+            "Freunden",
+            "Freunde",
+            "Freundes",
+            "Freund"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: Freunden"
+        },
+        {
+          "id": "drill-bei-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich esse bei ___.",
+          "options": [
+            "meiner Oma",
+            "meine Oma",
+            "meinen Oma",
+            "meinem Oma"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: meiner Oma"
+        },
+        {
+          "id": "drill-bei-06",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Bist du bei ___?",
+          "options": [
+            "mir",
+            "ich",
+            "mich",
+            "mein"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mir"
+        },
+        {
+          "id": "drill-bei-07",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er ist ___.",
+          "options": [
+            "beim Arzt",
+            "bei den Arzt",
+            "bei der Arzt",
+            "beim Arzten"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: beim Arzt"
+        },
+        {
+          "id": "drill-bei-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie ist bei ___.",
+          "options": [
+            "der Arbeit",
+            "die Arbeit",
+            "den Arbeit",
+            "dem Arbeit"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Arbeit"
+        }
+      ]
+    },
+    {
+      "id": "in",
+      "title": "in + Dativ",
+      "title_tr": "in der / in dem",
+      "order": 3,
+      "examples": [
+        {
+          "id": "in-ex-0",
+          "de": "Ich wohne in der Stadt.",
+          "tr": "Şehirde oturuyorum.",
+          "breakdown": [
+            {
+              "de": "Ich wohne in der Stadt.",
+              "tr": "Şehirde oturuyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-1",
+          "de": "Er ist in der Schule.",
+          "tr": "Okulda.",
+          "breakdown": [
+            {
+              "de": "Er ist in der Schule.",
+              "tr": "Okulda.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-2",
+          "de": "Sie arbeitet in dem Büro.",
+          "tr": "Ofiste çalışıyor.",
+          "breakdown": [
+            {
+              "de": "Sie arbeitet in dem Büro.",
+              "tr": "Ofiste çalışıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-3",
+          "de": "Wir sind in der Küche.",
+          "tr": "Mutfaktayız.",
+          "breakdown": [
+            {
+              "de": "Wir sind in der Küche.",
+              "tr": "Mutfaktayız.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-4",
+          "de": "Ich bin in der Türkei.",
+          "tr": "Türkiye'deyim.",
+          "breakdown": [
+            {
+              "de": "Ich bin in der Türkei.",
+              "tr": "Türkiye'deyim.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-5",
+          "de": "Du bist im Krankenhaus.",
+          "tr": "Hastanedesin.",
+          "breakdown": [
+            {
+              "de": "Du bist im Krankenhaus.",
+              "tr": "Hastanedesin.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-6",
+          "de": "Er lernt in der Bibliothek.",
+          "tr": "Kütüphanede öğreniyor.",
+          "breakdown": [
+            {
+              "de": "Er lernt in der Bibliothek.",
+              "tr": "Kütüphanede öğreniyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-7",
+          "de": "Sie wohnt in dem Haus.",
+          "tr": "Evde oturuyor.",
+          "breakdown": [
+            {
+              "de": "Sie wohnt in dem Haus.",
+              "tr": "Evde oturuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-in-01",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich wohne in ___.",
+          "options": [
+            "der Stadt",
+            "die Stadt",
+            "den Stadt",
+            "dem Stadt"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Stadt"
+        },
+        {
+          "id": "drill-in-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er ist in ___.",
+          "options": [
+            "der Schule",
+            "die Schule",
+            "den Schule",
+            "dem Schule"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Schule"
+        },
+        {
+          "id": "drill-in-03",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie arbeitet in ___.",
+          "options": [
+            "dem Büro",
+            "das Büro",
+            "den Büro",
+            "der Büro"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Büro"
+        },
+        {
+          "id": "drill-in-04",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Wir sind in ___.",
+          "options": [
+            "der Küche",
+            "die Küche",
+            "den Küche",
+            "dem Küche"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Küche"
+        },
+        {
+          "id": "drill-in-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich bin in ___.",
+          "options": [
+            "der Türkei",
+            "die Türkei",
+            "den Türkei",
+            "dem Türkei"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Türkei"
+        },
+        {
+          "id": "drill-in-06",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Du bist ___.",
+          "options": [
+            "im Krankenhaus",
+            "in den Krankenhaus",
+            "in der Krankenhaus",
+            "ins Krankenhaus"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: im Krankenhaus"
+        },
+        {
+          "id": "drill-in-07",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er lernt in ___.",
+          "options": [
+            "der Bibliothek",
+            "die Bibliothek",
+            "den Bibliothek",
+            "dem Bibliothek"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: der Bibliothek"
+        },
+        {
+          "id": "drill-in-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie wohnt in ___.",
+          "options": [
+            "dem Haus",
+            "das Haus",
+            "den Haus",
+            "der Haus"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: dem Haus"
+        }
+      ]
+    },
+    {
+      "id": "zu",
+      "title": "zu + Dativ",
+      "title_tr": "zu / nach Hause",
+      "order": 4,
+      "examples": [
+        {
+          "id": "zu-ex-0",
+          "de": "Ich gehe nach Hause.",
+          "tr": "Eve gidiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich gehe nach Hause.",
+              "tr": "Eve gidiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-1",
+          "de": "Er fährt zum Arzt.",
+          "tr": "Doktora gidiyor.",
+          "breakdown": [
+            {
+              "de": "Er fährt zum Arzt.",
+              "tr": "Doktora gidiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-2",
+          "de": "Sie kommt zur Arbeit.",
+          "tr": "İşe geliyor.",
+          "breakdown": [
+            {
+              "de": "Sie kommt zur Arbeit.",
+              "tr": "İşe geliyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-3",
+          "de": "Wir gehen zur Schule.",
+          "tr": "Okula gidiyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir gehen zur Schule.",
+              "tr": "Okula gidiyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-4",
+          "de": "Ich fahre zu meiner Mutter.",
+          "tr": "Anneme gidiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich fahre zu meiner Mutter.",
+              "tr": "Anneme gidiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-5",
+          "de": "Du gehst zum Supermarkt.",
+          "tr": "Süpermarkete gidiyorsun.",
+          "breakdown": [
+            {
+              "de": "Du gehst zum Supermarkt.",
+              "tr": "Süpermarkete gidiyorsun.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-6",
+          "de": "Er ist zu Hause.",
+          "tr": "Evde.",
+          "breakdown": [
+            {
+              "de": "Er ist zu Hause.",
+              "tr": "Evde.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "zu-ex-7",
+          "de": "Sie fährt zur Bank.",
+          "tr": "Bankaya gidiyor.",
+          "breakdown": [
+            {
+              "de": "Sie fährt zur Bank.",
+              "tr": "Bankaya gidiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-zu-01",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich gehe ___.",
+          "options": [
+            "nach Hause",
+            "zu Hause",
+            "in Hause",
+            "dem Hause"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: nach Hause"
+        },
+        {
+          "id": "drill-zu-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er fährt ___.",
+          "options": [
+            "zum Arzt",
+            "den Arzt",
+            "der Arzt",
+            "am Arzt"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zum Arzt"
+        },
+        {
+          "id": "drill-zu-03",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie kommt ___.",
+          "options": [
+            "zur Arbeit",
+            "die Arbeit",
+            "den Arbeit",
+            "am Arbeit"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zur Arbeit"
+        },
+        {
+          "id": "drill-zu-04",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Wir gehen ___.",
+          "options": [
+            "zur Schule",
+            "die Schule",
+            "den Schule",
+            "in Schule"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zur Schule"
+        },
+        {
+          "id": "drill-zu-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Ich fahre ___.",
+          "options": [
+            "zu meiner Mutter",
+            "zu meine Mutter",
+            "zu meinen Mutter",
+            "nach meiner Mutter"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zu meiner Mutter"
+        },
+        {
+          "id": "drill-zu-06",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Du gehst ___.",
+          "options": [
+            "zum Supermarkt",
+            "den Supermarkt",
+            "in Supermarkt",
+            "am Supermarkt"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zum Supermarkt"
+        },
+        {
+          "id": "drill-zu-07",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Er ist ___.",
+          "options": [
+            "zu Hause",
+            "nach Hause",
+            "in Hause",
+            "dem Hause"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zu Hause"
+        },
+        {
+          "id": "drill-zu-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Doğru Dativ formunu seç",
+          "context_de": "Sie fährt ___.",
+          "options": [
+            "zur Bank",
+            "die Bank",
+            "den Bank",
+            "am Bank"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: zur Bank"
+        }
+      ]
+    }
+  ]
+}

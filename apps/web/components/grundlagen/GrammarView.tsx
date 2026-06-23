@@ -80,7 +80,10 @@ export function GrammarView({ grammar, fragewoerter }: Pick<A1CoreData, "grammar
 
       {grammar.modals.map((m) => (
         <Block key={m.verb} title={`${m.verb} — ${m.tr}`}>
-          <ul className="space-y-2">
+          {m.conjugation && m.conjugation.length > 0 && (
+            <ItemGrid items={m.conjugation} />
+          )}
+          <ul className={`space-y-2 ${m.conjugation?.length ? "mt-4 border-t border-sage-100 pt-4" : ""}`}>
             {m.examples.map((ex) => (
               <li key={ex.de} className="rounded-lg bg-sage-50 p-3 text-sm">
                 <p className="font-medium text-goethe-blue">{ex.de}</p>
@@ -90,6 +93,13 @@ export function GrammarView({ grammar, fragewoerter }: Pick<A1CoreData, "grammar
           </ul>
         </Block>
       ))}
+
+      {grammar.regularRule && (
+        <RefBlock block={grammar.regularRule} />
+      )}
+      {grammar.irregularRule && (
+        <RefBlock block={grammar.irregularRule} />
+      )}
 
       <Block title={grammar.patterns.title}>
         <ul className="space-y-3">
@@ -156,6 +166,32 @@ export function GrammarView({ grammar, fragewoerter }: Pick<A1CoreData, "grammar
           ))}
         </ul>
       </Block>
+
+      {grammar.negation && <RefBlock block={grammar.negation} />}
+      {grammar.dativBasics && <RefBlock block={grammar.dativBasics} />}
+      {grammar.imperativ && <RefBlock block={grammar.imperativ} />}
+      {grammar.plural && <RefBlock block={grammar.plural} />}
+      {grammar.konjunktionen && <RefBlock block={grammar.konjunktionen} />}
+      {grammar.perfektIntro && <RefBlock block={grammar.perfektIntro} />}
     </div>
+  );
+}
+
+function RefBlock({ block }: { block: { title: string; titleTr?: string; items: { de: string; tr: string }[]; examples: { de: string; tr: string }[] } }) {
+  return (
+    <Block title={`${block.title}${block.titleTr ? ` · ${block.titleTr}` : ""}`}>
+      <ItemGrid items={block.items} />
+      {block.examples.length > 0 && (
+        <ul className="mt-4 space-y-2 border-t border-sage-100 pt-4">
+          {block.examples.map((ex) => (
+            <li key={ex.de} className="flex flex-wrap items-center gap-2 text-sm">
+              <span className="font-medium text-goethe-blue">{ex.de}</span>
+              <span className="text-sage-500">— {ex.tr}</span>
+              <AudioButton text={ex.de} size="sm" />
+            </li>
+          ))}
+        </ul>
+      )}
+    </Block>
   );
 }

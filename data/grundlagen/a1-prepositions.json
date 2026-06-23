@@ -1,0 +1,808 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Prepositions Trainer",
+  "titleTr": "Yer edatları",
+  "description": "in · auf · an · bei · mit — A1 kalıplar",
+  "passThreshold": 4,
+  "drillsPerSet": 5,
+  "rules": [
+    {
+      "article": "in",
+      "tr": "in (içinde / -de)"
+    },
+    {
+      "article": "auf",
+      "tr": "auf (üstünde)"
+    },
+    {
+      "article": "an",
+      "tr": "an (yanında / -de)"
+    },
+    {
+      "article": "bei",
+      "tr": "bei (yanında / -de)"
+    },
+    {
+      "article": "mit",
+      "tr": "mit (ile)"
+    }
+  ],
+  "sets": [
+    {
+      "id": "in",
+      "title": "in",
+      "title_tr": "in (içinde / -de)",
+      "order": 1,
+      "examples": [
+        {
+          "id": "in-ex-0",
+          "de": "Ich wohne in Berlin.",
+          "tr": "Berlin'de oturuyorum.",
+          "breakdown": [
+            {
+              "de": "Ich wohne in Berlin.",
+              "tr": "Berlin'de oturuyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-1",
+          "de": "Er ist in der Schule.",
+          "tr": "Okulda.",
+          "breakdown": [
+            {
+              "de": "Er ist in der Schule.",
+              "tr": "Okulda.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-2",
+          "de": "Wir sind in der Türkei.",
+          "tr": "Türkiye'deyiz.",
+          "breakdown": [
+            {
+              "de": "Wir sind in der Türkei.",
+              "tr": "Türkiye'deyiz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-3",
+          "de": "Sie arbeitet in dem Büro.",
+          "tr": "Ofiste çalışıyor.",
+          "breakdown": [
+            {
+              "de": "Sie arbeitet in dem Büro.",
+              "tr": "Ofiste çalışıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "in-ex-4",
+          "de": "Das Buch ist in der Tasche.",
+          "tr": "Kitap çantada.",
+          "breakdown": [
+            {
+              "de": "Das Buch ist in der Tasche.",
+              "tr": "Kitap çantada.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-in-01",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: in",
+          "context_de": "Ich wohne ___ Berlin.",
+          "options": [
+            "in",
+            "auf",
+            "an",
+            "bei"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: in"
+        },
+        {
+          "id": "drill-in-02",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: in",
+          "context_de": "Er ist ___ der Schule.",
+          "options": [
+            "in der",
+            "in den",
+            "auf der",
+            "an der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: in der"
+        },
+        {
+          "id": "drill-in-03",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: in",
+          "context_de": "Wir sind ___ der Türkei.",
+          "options": [
+            "in der",
+            "in den",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: in der"
+        },
+        {
+          "id": "drill-in-04",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: in",
+          "context_de": "Sie arbeitet ___ dem Büro.",
+          "options": [
+            "in dem",
+            "in den",
+            "auf dem",
+            "an dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: in dem"
+        },
+        {
+          "id": "drill-in-05",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: in",
+          "context_de": "Das ist ___ der Küche.",
+          "options": [
+            "in der",
+            "in den",
+            "auf der",
+            "an der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: in der"
+        }
+      ]
+    },
+    {
+      "id": "auf",
+      "title": "auf",
+      "title_tr": "auf (üstünde)",
+      "order": 2,
+      "examples": [
+        {
+          "id": "auf-ex-0",
+          "de": "Das Buch liegt auf dem Tisch.",
+          "tr": "Kitap masanın üstünde.",
+          "breakdown": [
+            {
+              "de": "Das Buch liegt auf dem Tisch.",
+              "tr": "Kitap masanın üstünde.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "auf-ex-1",
+          "de": "Die Katze ist auf dem Sofa.",
+          "tr": "Kedi kanepenin üstünde.",
+          "breakdown": [
+            {
+              "de": "Die Katze ist auf dem Sofa.",
+              "tr": "Kedi kanepenin üstünde.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "auf-ex-2",
+          "de": "Ich stelle die Tasse auf den Tisch.",
+          "tr": "Bardağı masaya koyuyorum.",
+          "breakdown": [
+            {
+              "de": "Ich stelle die Tasse auf den Tisch.",
+              "tr": "Bardağı masaya koyuyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "auf-ex-3",
+          "de": "Er sitzt auf dem Stuhl.",
+          "tr": "Sandalyede oturuyor.",
+          "breakdown": [
+            {
+              "de": "Er sitzt auf dem Stuhl.",
+              "tr": "Sandalyede oturuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "auf-ex-4",
+          "de": "Wir treffen uns auf dem Platz.",
+          "tr": "Meydanda buluşuyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir treffen uns auf dem Platz.",
+              "tr": "Meydanda buluşuyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-auf-01",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: auf",
+          "context_de": "Das Buch liegt ___ dem Tisch.",
+          "options": [
+            "auf dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: auf dem"
+        },
+        {
+          "id": "drill-auf-02",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: auf",
+          "context_de": "Die Katze ist ___ dem Sofa.",
+          "options": [
+            "auf dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: auf dem"
+        },
+        {
+          "id": "drill-auf-03",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: auf",
+          "context_de": "Ich stelle es ___ den Tisch.",
+          "options": [
+            "auf den",
+            "in den",
+            "an den",
+            "bei den"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: auf den"
+        },
+        {
+          "id": "drill-auf-04",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: auf",
+          "context_de": "Er sitzt ___ dem Stuhl.",
+          "options": [
+            "auf dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: auf dem"
+        },
+        {
+          "id": "drill-auf-05",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: auf",
+          "context_de": "Wir sind ___ dem Platz.",
+          "options": [
+            "auf dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: auf dem"
+        }
+      ]
+    },
+    {
+      "id": "an",
+      "title": "an",
+      "title_tr": "an (yanında / -de)",
+      "order": 3,
+      "examples": [
+        {
+          "id": "an-ex-0",
+          "de": "Ich bin an der Haltestelle.",
+          "tr": "Duraktayım.",
+          "breakdown": [
+            {
+              "de": "Ich bin an der Haltestelle.",
+              "tr": "Duraktayım.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "an-ex-1",
+          "de": "Das Bild hängt an der Wand.",
+          "tr": "Resim duvarda.",
+          "breakdown": [
+            {
+              "de": "Das Bild hängt an der Wand.",
+              "tr": "Resim duvarda.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "an-ex-2",
+          "de": "Er steht an der Tür.",
+          "tr": "Kapının yanında duruyor.",
+          "breakdown": [
+            {
+              "de": "Er steht an der Tür.",
+              "tr": "Kapının yanında duruyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "an-ex-3",
+          "de": "Wir warten an der Ecke.",
+          "tr": "Köşede bekliyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir warten an der Ecke.",
+              "tr": "Köşede bekliyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "an-ex-4",
+          "de": "Sie ist an der Kasse.",
+          "tr": "Kasada.",
+          "breakdown": [
+            {
+              "de": "Sie ist an der Kasse.",
+              "tr": "Kasada.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-an-01",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: an",
+          "context_de": "Ich bin ___ der Haltestelle.",
+          "options": [
+            "an der",
+            "in der",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: an der"
+        },
+        {
+          "id": "drill-an-02",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: an",
+          "context_de": "Das Bild hängt ___ der Wand.",
+          "options": [
+            "an der",
+            "in der",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: an der"
+        },
+        {
+          "id": "drill-an-03",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: an",
+          "context_de": "Er steht ___ der Tür.",
+          "options": [
+            "an der",
+            "in der",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: an der"
+        },
+        {
+          "id": "drill-an-04",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: an",
+          "context_de": "Wir warten ___ der Ecke.",
+          "options": [
+            "an der",
+            "in der",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: an der"
+        },
+        {
+          "id": "drill-an-05",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: an",
+          "context_de": "Sie ist ___ der Kasse.",
+          "options": [
+            "an der",
+            "in der",
+            "auf der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: an der"
+        }
+      ]
+    },
+    {
+      "id": "bei",
+      "title": "bei",
+      "title_tr": "bei (yanında / -de)",
+      "order": 4,
+      "examples": [
+        {
+          "id": "bei-ex-0",
+          "de": "Ich bin bei meiner Mutter.",
+          "tr": "Annemin yanındayım.",
+          "breakdown": [
+            {
+              "de": "Ich bin bei meiner Mutter.",
+              "tr": "Annemin yanındayım.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-1",
+          "de": "Er arbeitet bei der Firma.",
+          "tr": "Şirkette çalışıyor.",
+          "breakdown": [
+            {
+              "de": "Er arbeitet bei der Firma.",
+              "tr": "Şirkette çalışıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-2",
+          "de": "Wir essen bei Freunden.",
+          "tr": "Arkadaşlarda yemek yiyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir essen bei Freunden.",
+              "tr": "Arkadaşlarda yemek yiyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-3",
+          "de": "Sie wohnt bei ihren Eltern.",
+          "tr": "Ailesinin yanında oturuyor.",
+          "breakdown": [
+            {
+              "de": "Sie wohnt bei ihren Eltern.",
+              "tr": "Ailesinin yanında oturuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "bei-ex-4",
+          "de": "Du bist bei mir.",
+          "tr": "Benim yanındasın.",
+          "breakdown": [
+            {
+              "de": "Du bist bei mir.",
+              "tr": "Benim yanındasın.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-bei-01",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: bei",
+          "context_de": "Ich bin ___ meiner Mutter.",
+          "options": [
+            "bei meiner",
+            "in meiner",
+            "an meiner",
+            "auf meiner"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: bei meiner"
+        },
+        {
+          "id": "drill-bei-02",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: bei",
+          "context_de": "Er arbeitet ___ der Firma.",
+          "options": [
+            "bei der",
+            "in der",
+            "an der",
+            "auf der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: bei der"
+        },
+        {
+          "id": "drill-bei-03",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: bei",
+          "context_de": "Wir essen ___ Freunden.",
+          "options": [
+            "bei",
+            "in",
+            "an",
+            "auf"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: bei"
+        },
+        {
+          "id": "drill-bei-04",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: bei",
+          "context_de": "Sie wohnt ___ ihren Eltern.",
+          "options": [
+            "bei",
+            "in",
+            "an",
+            "auf"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: bei"
+        },
+        {
+          "id": "drill-bei-05",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: bei",
+          "context_de": "Du bist ___ mir.",
+          "options": [
+            "bei",
+            "in",
+            "an",
+            "mit"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: bei"
+        }
+      ]
+    },
+    {
+      "id": "mit",
+      "title": "mit",
+      "title_tr": "mit (ile)",
+      "order": 5,
+      "examples": [
+        {
+          "id": "mit-ex-0",
+          "de": "Ich fahre mit dem Bus.",
+          "tr": "Otobüsle gidiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich fahre mit dem Bus.",
+              "tr": "Otobüsle gidiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-1",
+          "de": "Er kommt mit seiner Schwester.",
+          "tr": "Kız kardeşiyle geliyor.",
+          "breakdown": [
+            {
+              "de": "Er kommt mit seiner Schwester.",
+              "tr": "Kız kardeşiyle geliyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-2",
+          "de": "Wir sprechen mit dem Lehrer.",
+          "tr": "Öğretmenle konuşuyoruz.",
+          "breakdown": [
+            {
+              "de": "Wir sprechen mit dem Lehrer.",
+              "tr": "Öğretmenle konuşuyoruz.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-3",
+          "de": "Sie geht mit dem Hund.",
+          "tr": "Köpekle gidiyor.",
+          "breakdown": [
+            {
+              "de": "Sie geht mit dem Hund.",
+              "tr": "Köpekle gidiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "mit-ex-4",
+          "de": "Ich esse mit der Familie.",
+          "tr": "Aileyle yemek yiyorum.",
+          "breakdown": [
+            {
+              "de": "Ich esse mit der Familie.",
+              "tr": "Aileyle yemek yiyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-mit-01",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: mit",
+          "context_de": "Ich fahre ___ dem Bus.",
+          "options": [
+            "mit dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mit dem"
+        },
+        {
+          "id": "drill-mit-02",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: mit",
+          "context_de": "Er kommt ___ seiner Schwester.",
+          "options": [
+            "mit",
+            "in",
+            "an",
+            "bei"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mit"
+        },
+        {
+          "id": "drill-mit-03",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: mit",
+          "context_de": "Wir sprechen ___ dem Lehrer.",
+          "options": [
+            "mit dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mit dem"
+        },
+        {
+          "id": "drill-mit-04",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: mit",
+          "context_de": "Sie geht ___ dem Hund.",
+          "options": [
+            "mit dem",
+            "in dem",
+            "an dem",
+            "bei dem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mit dem"
+        },
+        {
+          "id": "drill-mit-05",
+          "type": "prep_gap",
+          "prompt_tr": "Doğru edat: mit",
+          "context_de": "Ich esse ___ der Familie.",
+          "options": [
+            "mit der",
+            "in der",
+            "an der",
+            "bei der"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: mit der"
+        }
+      ]
+    }
+  ]
+}

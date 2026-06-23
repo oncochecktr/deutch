@@ -42,6 +42,12 @@
       "owner_tr": "sizin (çoğul)",
       "masc_neut": "euer",
       "fem_pl": "eure"
+    },
+    {
+      "owner": "Ihr",
+      "owner_tr": "sizin (resmi)",
+      "masc_neut": "Ihr",
+      "fem_pl": "Ihre"
     }
   ],
   "sets": [
@@ -2184,6 +2190,363 @@
           ],
           "correct_index": 3,
           "explanation_tr": "der → euer (sizin (çoğul))"
+        }
+      ]
+    },
+    {
+      "id": "Ihr",
+      "owner": "Ihr",
+      "owner_tr": "sizin (resmi)",
+      "masc_neut": "Ihr",
+      "fem_pl": "Ihre",
+      "order": 7,
+      "examples": [
+        {
+          "id": "Ihr-ex-0",
+          "de": "Anna, ist Ihr Sohn Bäcker?",
+          "tr": "Anna, sizin (resmi) oğul fırıncı mi?",
+          "breakdown": [
+            {
+              "de": "Anna",
+              "tr": "Anna",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihr",
+              "tr": "sizin (resmi) (der/das → Ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Sohn",
+              "tr": "oğul",
+              "role": "noun"
+            },
+            {
+              "de": "Bäcker",
+              "tr": "fırıncı",
+              "role": "job"
+            }
+          ],
+          "noun": "Sohn",
+          "article": "der",
+          "owner": "Ihr",
+          "possessive_form": "Ihr"
+        },
+        {
+          "id": "Ihr-ex-1",
+          "de": "David, ist Ihre Schwester Lehrerin?",
+          "tr": "David, sizin (resmi) kız kardeş öğretmen (kadın) mi?",
+          "breakdown": [
+            {
+              "de": "David",
+              "tr": "David",
+              "role": "name"
+            },
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihre",
+              "tr": "sizin (resmi) (die → Ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Schwester",
+              "tr": "kız kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Lehrerin",
+              "tr": "öğretmen (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Schwester",
+          "article": "die",
+          "owner": "Ihr",
+          "possessive_form": "Ihre"
+        },
+        {
+          "id": "Ihr-ex-2",
+          "de": "Ihre Mutter ist nett.",
+          "tr": "sizin (resmi) anne nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihre",
+              "tr": "sizin (resmi) (die → Ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mutter",
+              "tr": "anne",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mutter",
+          "article": "die",
+          "owner": "Ihr",
+          "possessive_form": "Ihre"
+        },
+        {
+          "id": "Ihr-ex-3",
+          "de": "Ihr Hotel ist nett.",
+          "tr": "sizin (resmi) otel nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihr",
+              "tr": "sizin (resmi) (der/das → Ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Hotel",
+              "tr": "otel",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hotel",
+          "article": "das",
+          "owner": "Ihr",
+          "possessive_form": "Ihr"
+        },
+        {
+          "id": "Ihr-ex-4",
+          "de": "Ihr Kind ist nett.",
+          "tr": "sizin (resmi) çocuk nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihr",
+              "tr": "sizin (resmi) (der/das → Ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "owner": "Ihr",
+          "possessive_form": "Ihr"
+        },
+        {
+          "id": "Ihr-ex-5",
+          "de": "Ihre Familie ist nett.",
+          "tr": "sizin (resmi) aile nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihre",
+              "tr": "sizin (resmi) (die → Ihre)",
+              "role": "possessive"
+            },
+            {
+              "de": "Familie",
+              "tr": "aile",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familie",
+          "article": "die",
+          "owner": "Ihr",
+          "possessive_form": "Ihre"
+        },
+        {
+          "id": "Ihr-ex-6",
+          "de": "Ihr Bruder ist Ärztin.",
+          "tr": "sizin (resmi) erkek kardeş doktor (kadın).",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihr",
+              "tr": "sizin (resmi) (der/das → Ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            },
+            {
+              "de": "Ärztin",
+              "tr": "doktor (kadın)",
+              "role": "job"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "owner": "Ihr",
+          "possessive_form": "Ihr"
+        },
+        {
+          "id": "Ihr-ex-7",
+          "de": "Ihr Mann ist nett.",
+          "tr": "sizin (resmi) adam / koca nazik.",
+          "breakdown": [
+            {
+              "de": "ist",
+              "tr": "mi / …dır",
+              "role": "verb"
+            },
+            {
+              "de": "Ihr",
+              "tr": "sizin (resmi) (der/das → Ihr)",
+              "role": "possessive"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam / koca",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "owner": "Ihr",
+          "possessive_form": "Ihr"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-Ihr-01",
+          "type": "pick_form",
+          "prompt_tr": "oğul — der → hangi sahiplik?",
+          "context_de": "___ Sohn (der)",
+          "options": [
+            "Ihre",
+            "Ihr",
+            "meine",
+            "mein"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → Ihr (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (resmi))",
+          "context_de": "David, ist ___ Schwester Lehrerin?",
+          "options": [
+            "Ihr",
+            "Ihre",
+            "mein",
+            "meine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → Ihre (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Mutter",
+          "context_de": "die Mutter → ?",
+          "options": [
+            "meine",
+            "Ihre",
+            "mein",
+            "Ihr"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → Ihre (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-04",
+          "type": "pick_form",
+          "prompt_tr": "otel — das → hangi sahiplik?",
+          "context_de": "___ Hotel (das)",
+          "options": [
+            "meine",
+            "mein",
+            "Ihre",
+            "Ihr"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "das → Ihr (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (resmi))",
+          "context_de": "___ Kind ist nett.",
+          "options": [
+            "meine",
+            "Ihre",
+            "Ihr",
+            "mein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "das → Ihr (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die Familie",
+          "context_de": "die Familie → ?",
+          "options": [
+            "mein",
+            "Ihre",
+            "meine",
+            "Ihr"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "die → Ihre (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-07",
+          "type": "pick_form",
+          "prompt_tr": "erkek kardeş — der → hangi sahiplik?",
+          "context_de": "___ Bruder (der)",
+          "options": [
+            "meine",
+            "Ihr",
+            "mein",
+            "Ihre"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → Ihr (sizin (resmi))"
+        },
+        {
+          "id": "drill-Ihr-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Boşluğu doldur (sizin (resmi))",
+          "context_de": "___ Mann ist nett.",
+          "options": [
+            "mein",
+            "meine",
+            "Ihre",
+            "Ihr"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → Ihr (sizin (resmi))"
         }
       ]
     }

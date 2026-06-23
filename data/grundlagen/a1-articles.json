@@ -1,0 +1,1426 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Artikel Trainer",
+  "titleTr": "Artikel (der / die / das)",
+  "description": "der · die · das · ein/eine · çoğul — 5 set × drill",
+  "passThreshold": 6,
+  "drillsPerSet": 10,
+  "rules": [
+    {
+      "article": "der",
+      "tr": "eril (masculine)"
+    },
+    {
+      "article": "die",
+      "tr": "dişil (feminine) + çoğul"
+    },
+    {
+      "article": "das",
+      "tr": "nötr (neuter)"
+    }
+  ],
+  "sets": [
+    {
+      "id": "der",
+      "title": "der",
+      "title_tr": "der (eril)",
+      "order": 1,
+      "examples": [
+        {
+          "id": "der-ex-0",
+          "de": "der Name",
+          "tr": "isim",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Name",
+              "tr": "isim",
+              "role": "noun"
+            }
+          ],
+          "noun": "Name",
+          "article": "der",
+          "plural": "Namen"
+        },
+        {
+          "id": "der-ex-1",
+          "de": "der Pass",
+          "tr": "pasaport",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Pass",
+              "tr": "pasaport",
+              "role": "noun"
+            }
+          ],
+          "noun": "Pass",
+          "article": "der",
+          "plural": "Pässe"
+        },
+        {
+          "id": "der-ex-2",
+          "de": "der Fuß",
+          "tr": "ayak",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Fuß",
+              "tr": "ayak",
+              "role": "noun"
+            }
+          ],
+          "noun": "Fuß",
+          "article": "der",
+          "plural": "Füße"
+        },
+        {
+          "id": "der-ex-3",
+          "de": "der Preis",
+          "tr": "fiyat",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Preis",
+              "tr": "fiyat",
+              "role": "noun"
+            }
+          ],
+          "noun": "Preis",
+          "article": "der",
+          "plural": "Preise"
+        },
+        {
+          "id": "der-ex-4",
+          "de": "der Bruder",
+          "tr": "erkek kardeş",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Bruder",
+              "tr": "erkek kardeş",
+              "role": "noun"
+            }
+          ],
+          "noun": "Bruder",
+          "article": "der",
+          "plural": "Brüder"
+        },
+        {
+          "id": "der-ex-5",
+          "de": "der Montag",
+          "tr": "pazartesi",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Montag",
+              "tr": "pazartesi",
+              "role": "noun"
+            }
+          ],
+          "noun": "Montag",
+          "article": "der",
+          "plural": "Montage"
+        },
+        {
+          "id": "der-ex-6",
+          "de": "der Vater",
+          "tr": "baba",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Vater",
+              "tr": "baba",
+              "role": "noun"
+            }
+          ],
+          "noun": "Vater",
+          "article": "der",
+          "plural": "Väter"
+        },
+        {
+          "id": "der-ex-7",
+          "de": "der Onkel",
+          "tr": "amca/dayı",
+          "breakdown": [
+            {
+              "de": "der",
+              "tr": "der artikel",
+              "role": "article"
+            },
+            {
+              "de": "Onkel",
+              "tr": "amca/dayı",
+              "role": "noun"
+            }
+          ],
+          "noun": "Onkel",
+          "article": "der",
+          "plural": "Onkel"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-der-01",
+          "type": "pick_article",
+          "prompt_tr": "\"isim\" → hangi artikel?",
+          "context_de": "___ Name",
+          "options": [
+            "das",
+            "der",
+            "die"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Name → der (isim)"
+        },
+        {
+          "id": "drill-der-02",
+          "type": "noun_gap",
+          "prompt_tr": "der + ? → pasaport",
+          "context_de": "der ___",
+          "options": [
+            "Studium",
+            "S-Bahn",
+            "Küche",
+            "Pass"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Pass → der (pasaport)"
+        },
+        {
+          "id": "drill-der-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: der …",
+          "context_de": "der ?",
+          "options": [
+            "Gemüse",
+            "Firma",
+            "Fuß",
+            "Staatsangehörigkeit"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Fuß → der (ayak)"
+        },
+        {
+          "id": "drill-der-04",
+          "type": "pick_article",
+          "prompt_tr": "\"fiyat\" → hangi artikel?",
+          "context_de": "___ Preis",
+          "options": [
+            "die",
+            "das",
+            "der"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Preis → der (fiyat)"
+        },
+        {
+          "id": "drill-der-05",
+          "type": "noun_gap",
+          "prompt_tr": "der + ? → erkek kardeş",
+          "context_de": "der ___",
+          "options": [
+            "Nudeln",
+            "Adresse",
+            "Bruder",
+            "Sofa"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Bruder → der (erkek kardeş)"
+        },
+        {
+          "id": "drill-der-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: der …",
+          "context_de": "der ?",
+          "options": [
+            "Visum",
+            "Salz",
+            "Krankenhaus",
+            "Montag"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "Montag → der (pazartesi)"
+        },
+        {
+          "id": "drill-der-07",
+          "type": "pick_article",
+          "prompt_tr": "\"baba\" → hangi artikel?",
+          "context_de": "___ Vater",
+          "options": [
+            "das",
+            "der",
+            "die"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Vater → der (baba)"
+        },
+        {
+          "id": "drill-der-08",
+          "type": "noun_gap",
+          "prompt_tr": "der + ? → amca/dayı",
+          "context_de": "der ___",
+          "options": [
+            "Anwendung",
+            "Onkel",
+            "Video",
+            "Adresse"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Onkel → der (amca/dayı)"
+        }
+      ]
+    },
+    {
+      "id": "die",
+      "title": "die",
+      "title_tr": "die (dişil)",
+      "order": 2,
+      "examples": [
+        {
+          "id": "die-ex-0",
+          "de": "die Unterschrift",
+          "tr": "imza",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Unterschrift",
+              "tr": "imza",
+              "role": "noun"
+            }
+          ],
+          "noun": "Unterschrift",
+          "article": "die",
+          "plural": "Unterschriften"
+        },
+        {
+          "id": "die-ex-1",
+          "de": "die Kopie",
+          "tr": "kopya",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Kopie",
+              "tr": "kopya",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kopie",
+          "article": "die",
+          "plural": "Kopien"
+        },
+        {
+          "id": "die-ex-2",
+          "de": "die Nummer",
+          "tr": "numara",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Nummer",
+              "tr": "numara",
+              "role": "noun"
+            }
+          ],
+          "noun": "Nummer",
+          "article": "die",
+          "plural": "Nummern"
+        },
+        {
+          "id": "die-ex-3",
+          "de": "die Woche",
+          "tr": "hafta",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Woche",
+              "tr": "hafta",
+              "role": "noun"
+            }
+          ],
+          "noun": "Woche",
+          "article": "die",
+          "plural": "Wochen"
+        },
+        {
+          "id": "die-ex-4",
+          "de": "die Bezahlung",
+          "tr": "ödeme işlemi",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Bezahlung",
+              "tr": "ödeme işlemi",
+              "role": "noun"
+            }
+          ],
+          "noun": "Bezahlung",
+          "article": "die",
+          "plural": "Bezahlungen"
+        },
+        {
+          "id": "die-ex-5",
+          "de": "die Suppe",
+          "tr": "çorba",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Suppe",
+              "tr": "çorba",
+              "role": "noun"
+            }
+          ],
+          "noun": "Suppe",
+          "article": "die",
+          "plural": "Suppen"
+        },
+        {
+          "id": "die-ex-6",
+          "de": "die Kopfschmerzen",
+          "tr": "baş ağrısı",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Kopfschmerzen",
+              "tr": "baş ağrısı",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kopfschmerzen",
+          "article": "die",
+          "plural": null
+        },
+        {
+          "id": "die-ex-7",
+          "de": "die Eltern",
+          "tr": "ebeveynler",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "die artikel",
+              "role": "article"
+            },
+            {
+              "de": "Eltern",
+              "tr": "ebeveynler",
+              "role": "noun"
+            }
+          ],
+          "noun": "Eltern",
+          "article": "die",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-die-01",
+          "type": "pick_article",
+          "prompt_tr": "\"imza\" → hangi artikel?",
+          "context_de": "___ Unterschrift",
+          "options": [
+            "der",
+            "das",
+            "die"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Unterschrift → die (imza)"
+        },
+        {
+          "id": "drill-die-02",
+          "type": "noun_gap",
+          "prompt_tr": "die + ? → kopya",
+          "context_de": "die ___",
+          "options": [
+            "Schüler",
+            "Kopie",
+            "Arzt",
+            "Rezept"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Kopie → die (kopya)"
+        },
+        {
+          "id": "drill-die-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die …",
+          "context_de": "die ?",
+          "options": [
+            "Vertrag",
+            "Prüfungsdatum",
+            "Nummer",
+            "Cousin"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Nummer → die (numara)"
+        },
+        {
+          "id": "drill-die-04",
+          "type": "pick_article",
+          "prompt_tr": "\"hafta\" → hangi artikel?",
+          "context_de": "___ Woche",
+          "options": [
+            "das",
+            "die",
+            "der"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Woche → die (hafta)"
+        },
+        {
+          "id": "drill-die-05",
+          "type": "noun_gap",
+          "prompt_tr": "die + ? → ödeme işlemi",
+          "context_de": "die ___",
+          "options": [
+            "Bett",
+            "Bezahlung",
+            "Chef",
+            "Kind"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Bezahlung → die (ödeme işlemi)"
+        },
+        {
+          "id": "drill-die-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: die …",
+          "context_de": "die ?",
+          "options": [
+            "Ehemann",
+            "Silvester",
+            "Suppe",
+            "Prüfungstag"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Suppe → die (çorba)"
+        },
+        {
+          "id": "drill-die-07",
+          "type": "pick_article",
+          "prompt_tr": "\"baş ağrısı\" → hangi artikel?",
+          "context_de": "___ Kopfschmerzen",
+          "options": [
+            "der",
+            "das",
+            "die"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Kopfschmerzen → die (baş ağrısı)"
+        },
+        {
+          "id": "drill-die-08",
+          "type": "noun_gap",
+          "prompt_tr": "die + ? → ebeveynler",
+          "context_de": "die ___",
+          "options": [
+            "Nachname",
+            "Flugzeug",
+            "Krankenhaus",
+            "Eltern"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Eltern → die (ebeveynler)"
+        }
+      ]
+    },
+    {
+      "id": "das",
+      "title": "das",
+      "title_tr": "das (nötr)",
+      "order": 3,
+      "examples": [
+        {
+          "id": "das-ex-0",
+          "de": "das Familienmitglied",
+          "tr": "aile üyesi",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Familienmitglied",
+              "tr": "aile üyesi",
+              "role": "noun"
+            }
+          ],
+          "noun": "Familienmitglied",
+          "article": "das",
+          "plural": "Familienmitglieder"
+        },
+        {
+          "id": "das-ex-1",
+          "de": "das Gemüse",
+          "tr": "sebze",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Gemüse",
+              "tr": "sebze",
+              "role": "noun"
+            }
+          ],
+          "noun": "Gemüse",
+          "article": "das",
+          "plural": null
+        },
+        {
+          "id": "das-ex-2",
+          "de": "das Kind",
+          "tr": "çocuk",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "plural": "Kinder"
+        },
+        {
+          "id": "das-ex-3",
+          "de": "das Paar",
+          "tr": "çift",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Paar",
+              "tr": "çift",
+              "role": "noun"
+            }
+          ],
+          "noun": "Paar",
+          "article": "das",
+          "plural": "Paare"
+        },
+        {
+          "id": "das-ex-4",
+          "de": "das Viertel",
+          "tr": "çeyrek",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Viertel",
+              "tr": "çeyrek",
+              "role": "noun"
+            }
+          ],
+          "noun": "Viertel",
+          "article": "das",
+          "plural": "Viertel"
+        },
+        {
+          "id": "das-ex-5",
+          "de": "das Schlafzimmer",
+          "tr": "yatak odası",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Schlafzimmer",
+              "tr": "yatak odası",
+              "role": "noun"
+            }
+          ],
+          "noun": "Schlafzimmer",
+          "article": "das",
+          "plural": "Schlafzimmer"
+        },
+        {
+          "id": "das-ex-6",
+          "de": "das Ticket",
+          "tr": "bilet",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Ticket",
+              "tr": "bilet",
+              "role": "noun"
+            }
+          ],
+          "noun": "Ticket",
+          "article": "das",
+          "plural": "Tickets"
+        },
+        {
+          "id": "das-ex-7",
+          "de": "das Wasser",
+          "tr": "su",
+          "breakdown": [
+            {
+              "de": "das",
+              "tr": "das artikel",
+              "role": "article"
+            },
+            {
+              "de": "Wasser",
+              "tr": "su",
+              "role": "noun"
+            }
+          ],
+          "noun": "Wasser",
+          "article": "das",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-das-01",
+          "type": "pick_article",
+          "prompt_tr": "\"aile üyesi\" → hangi artikel?",
+          "context_de": "___ Familienmitglied",
+          "options": [
+            "der",
+            "das",
+            "die"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Familienmitglied → das (aile üyesi)"
+        },
+        {
+          "id": "drill-das-02",
+          "type": "noun_gap",
+          "prompt_tr": "das + ? → sebze",
+          "context_de": "das ___",
+          "options": [
+            "Pause",
+            "Handynummer",
+            "Juni",
+            "Gemüse"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Gemüse → das (sebze)"
+        },
+        {
+          "id": "drill-das-03",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: das …",
+          "context_de": "das ?",
+          "options": [
+            "Universität",
+            "Kind",
+            "Schwester",
+            "Strom"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Kind → das (çocuk)"
+        },
+        {
+          "id": "drill-das-04",
+          "type": "pick_article",
+          "prompt_tr": "\"çift\" → hangi artikel?",
+          "context_de": "___ Paar",
+          "options": [
+            "der",
+            "die",
+            "das"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Paar → das (çift)"
+        },
+        {
+          "id": "drill-das-05",
+          "type": "noun_gap",
+          "prompt_tr": "das + ? → çeyrek",
+          "context_de": "das ___",
+          "options": [
+            "Nachname",
+            "Viertel",
+            "Juni",
+            "Kaffee"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Viertel → das (çeyrek)"
+        },
+        {
+          "id": "drill-das-06",
+          "type": "article_match",
+          "prompt_tr": "Artikel eşleştir: das …",
+          "context_de": "das ?",
+          "options": [
+            "Straße",
+            "Ecke",
+            "Frage",
+            "Schlafzimmer"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "Schlafzimmer → das (yatak odası)"
+        },
+        {
+          "id": "drill-das-07",
+          "type": "pick_article",
+          "prompt_tr": "\"bilet\" → hangi artikel?",
+          "context_de": "___ Ticket",
+          "options": [
+            "der",
+            "das",
+            "die"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Ticket → das (bilet)"
+        },
+        {
+          "id": "drill-das-08",
+          "type": "noun_gap",
+          "prompt_tr": "das + ? → su",
+          "context_de": "das ___",
+          "options": [
+            "Krankmeldung",
+            "Wasser",
+            "Frage",
+            "Husten"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Wasser → das (su)"
+        }
+      ]
+    },
+    {
+      "id": "ein",
+      "title": "ein / eine",
+      "title_tr": "Belirsiz artikel",
+      "order": 4,
+      "examples": [
+        {
+          "id": "ein-ex-0",
+          "de": "ein Mann",
+          "tr": "bir adam",
+          "breakdown": [
+            {
+              "de": "ein",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Mann",
+              "tr": "adam",
+              "role": "noun"
+            }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-1",
+          "de": "eine Frau",
+          "tr": "bir kadın",
+          "breakdown": [
+            {
+              "de": "eine",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Frau",
+              "tr": "kadın",
+              "role": "noun"
+            }
+          ],
+          "noun": "Frau",
+          "article": "die",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-2",
+          "de": "ein Kind",
+          "tr": "bir çocuk",
+          "breakdown": [
+            {
+              "de": "ein",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Kind",
+              "tr": "çocuk",
+              "role": "noun"
+            }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-3",
+          "de": "ein Apfel",
+          "tr": "bir elma",
+          "breakdown": [
+            {
+              "de": "ein",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Apfel",
+              "tr": "elma",
+              "role": "noun"
+            }
+          ],
+          "noun": "Apfel",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-4",
+          "de": "eine Katze",
+          "tr": "bir kedi",
+          "breakdown": [
+            {
+              "de": "eine",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Katze",
+              "tr": "kedi",
+              "role": "noun"
+            }
+          ],
+          "noun": "Katze",
+          "article": "die",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-5",
+          "de": "ein Brot",
+          "tr": "bir ekmek",
+          "breakdown": [
+            {
+              "de": "ein",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Brot",
+              "tr": "ekmek",
+              "role": "noun"
+            }
+          ],
+          "noun": "Brot",
+          "article": "das",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-6",
+          "de": "ein Hund",
+          "tr": "bir köpek",
+          "breakdown": [
+            {
+              "de": "ein",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Hund",
+              "tr": "köpek",
+              "role": "noun"
+            }
+          ],
+          "noun": "Hund",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "ein-ex-7",
+          "de": "eine Blume",
+          "tr": "bir çiçek",
+          "breakdown": [
+            {
+              "de": "eine",
+              "tr": "belirsiz artikel (Nom.)",
+              "role": "article"
+            },
+            {
+              "de": "Blume",
+              "tr": "çiçek",
+              "role": "noun"
+            }
+          ],
+          "noun": "Blume",
+          "article": "die",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-ein-01",
+          "type": "ein_nom",
+          "prompt_tr": "Nominativ: Das ist ___ Mann.",
+          "context_de": "Das ist ___ Mann.",
+          "options": [
+            "einer",
+            "eine",
+            "einen",
+            "ein"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "der → Nom: ein, Akk: einen"
+        },
+        {
+          "id": "drill-ein-02",
+          "type": "ein_akk",
+          "prompt_tr": "Akkusativ: Ich kaufe ___ Frau.",
+          "context_de": "Ich kaufe ___ Frau.",
+          "options": [
+            "ein",
+            "einer",
+            "eine",
+            "einen"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "die → Nom: eine, Akk: eine"
+        },
+        {
+          "id": "drill-ein-03",
+          "type": "ein_nom",
+          "prompt_tr": "Nominativ: Das ist ___ Kind.",
+          "context_de": "Das ist ___ Kind.",
+          "options": [
+            "einer",
+            "ein",
+            "einen",
+            "eine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "das → Nom: ein, Akk: ein"
+        },
+        {
+          "id": "drill-ein-04",
+          "type": "ein_akk",
+          "prompt_tr": "Akkusativ: Ich kaufe ___ Apfel.",
+          "context_de": "Ich kaufe ___ Apfel.",
+          "options": [
+            "ein",
+            "einen",
+            "einer",
+            "eine"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → Nom: ein, Akk: einen"
+        },
+        {
+          "id": "drill-ein-05",
+          "type": "ein_nom",
+          "prompt_tr": "Nominativ: Das ist ___ Katze.",
+          "context_de": "Das ist ___ Katze.",
+          "options": [
+            "ein",
+            "einer",
+            "einen",
+            "eine"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "die → Nom: eine, Akk: eine"
+        },
+        {
+          "id": "drill-ein-06",
+          "type": "ein_akk",
+          "prompt_tr": "Akkusativ: Ich kaufe ___ Brot.",
+          "context_de": "Ich kaufe ___ Brot.",
+          "options": [
+            "einer",
+            "ein",
+            "eine",
+            "einen"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "das → Nom: ein, Akk: ein"
+        },
+        {
+          "id": "drill-ein-07",
+          "type": "ein_nom",
+          "prompt_tr": "Nominativ: Das ist ___ Hund.",
+          "context_de": "Das ist ___ Hund.",
+          "options": [
+            "einen",
+            "ein",
+            "eine",
+            "einer"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "der → Nom: ein, Akk: einen"
+        },
+        {
+          "id": "drill-ein-08",
+          "type": "ein_akk",
+          "prompt_tr": "Akkusativ: Ich kaufe ___ Blume.",
+          "context_de": "Ich kaufe ___ Blume.",
+          "options": [
+            "einen",
+            "einer",
+            "eine",
+            "ein"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "die → Nom: eine, Akk: eine"
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plural",
+      "title_tr": "Çoğul tanıma",
+      "order": 5,
+      "examples": [
+        {
+          "id": "pl-ex-0",
+          "de": "die Sonntage",
+          "tr": "pazar (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Sonntage",
+              "tr": "pazar",
+              "role": "noun"
+            }
+          ],
+          "noun": "Sonntag",
+          "article": "der",
+          "plural": "Sonntage"
+        },
+        {
+          "id": "pl-ex-1",
+          "de": "die Flugzeuge",
+          "tr": "uçak (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Flugzeuge",
+              "tr": "uçak",
+              "role": "noun"
+            }
+          ],
+          "noun": "Flugzeug",
+          "article": "das",
+          "plural": "Flugzeuge"
+        },
+        {
+          "id": "pl-ex-2",
+          "de": "die Nachnamen",
+          "tr": "soyad (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Nachnamen",
+              "tr": "soyad",
+              "role": "noun"
+            }
+          ],
+          "noun": "Nachname",
+          "article": "der",
+          "plural": "Nachnamen"
+        },
+        {
+          "id": "pl-ex-3",
+          "de": "die Großväter",
+          "tr": "büyükbaba (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Großväter",
+              "tr": "büyükbaba",
+              "role": "noun"
+            }
+          ],
+          "noun": "Großvater",
+          "article": "der",
+          "plural": "Großväter"
+        },
+        {
+          "id": "pl-ex-4",
+          "de": "die Anfänger",
+          "tr": "yeni başlayan (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Anfänger",
+              "tr": "yeni başlayan",
+              "role": "noun"
+            }
+          ],
+          "noun": "Anfänger",
+          "article": "der",
+          "plural": "Anfänger"
+        },
+        {
+          "id": "pl-ex-5",
+          "de": "die Töchter",
+          "tr": "kız evlat (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Töchter",
+              "tr": "kız evlat",
+              "role": "noun"
+            }
+          ],
+          "noun": "Tochter",
+          "article": "die",
+          "plural": "Töchter"
+        },
+        {
+          "id": "pl-ex-6",
+          "de": "die Verträge",
+          "tr": "sözleşme (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Verträge",
+              "tr": "sözleşme",
+              "role": "noun"
+            }
+          ],
+          "noun": "Vertrag",
+          "article": "der",
+          "plural": "Verträge"
+        },
+        {
+          "id": "pl-ex-7",
+          "de": "die Aufgaben",
+          "tr": "görev (çoğul)",
+          "breakdown": [
+            {
+              "de": "die",
+              "tr": "çoğul artikel",
+              "role": "article"
+            },
+            {
+              "de": "Aufgaben",
+              "tr": "görev",
+              "role": "noun"
+            }
+          ],
+          "noun": "Aufgabe",
+          "article": "die",
+          "plural": "Aufgaben"
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-pl-01",
+          "type": "plural_match",
+          "prompt_tr": "der Sonntag → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Spiegel",
+            "Sonntage",
+            "Restaurants",
+            "Mittagessen"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Sonntag → die Sonntage"
+        },
+        {
+          "id": "drill-pl-02",
+          "type": "plural_match",
+          "prompt_tr": "das Flugzeug → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Daten",
+            "Flugzeuge",
+            "Öle",
+            "Ausbildungen"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Flugzeug → die Flugzeuge"
+        },
+        {
+          "id": "drill-pl-03",
+          "type": "plural_match",
+          "prompt_tr": "der Nachname → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Unterschriften",
+            "Nachnamen",
+            "Lieferungen",
+            "Nachmittage"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Nachname → die Nachnamen"
+        },
+        {
+          "id": "drill-pl-04",
+          "type": "plural_match",
+          "prompt_tr": "der Großvater → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Firmen",
+            "Kontakte",
+            "Enkelinnen",
+            "Großväter"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "Großvater → die Großväter"
+        },
+        {
+          "id": "drill-pl-05",
+          "type": "plural_match",
+          "prompt_tr": "der Anfänger → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Nachnamen",
+            "Anfänger",
+            "Helme",
+            "Ecken"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Anfänger → die Anfänger"
+        },
+        {
+          "id": "drill-pl-06",
+          "type": "plural_match",
+          "prompt_tr": "die Tochter → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Pausen",
+            "Töchter",
+            "Paletten",
+            "Straßen"
+          ],
+          "correct_index": 1,
+          "explanation_tr": "Tochter → die Töchter"
+        },
+        {
+          "id": "drill-pl-07",
+          "type": "plural_match",
+          "prompt_tr": "der Vertrag → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Ausweise",
+            "Länder",
+            "Verträge",
+            "Uniformen"
+          ],
+          "correct_index": 2,
+          "explanation_tr": "Vertrag → die Verträge"
+        },
+        {
+          "id": "drill-pl-08",
+          "type": "plural_match",
+          "prompt_tr": "die Aufgabe → çoğul?",
+          "context_de": "die ___",
+          "options": [
+            "Möbel",
+            "Donnerstage",
+            "Kühlschränke",
+            "Aufgaben"
+          ],
+          "correct_index": 3,
+          "explanation_tr": "Aufgabe → die Aufgaben"
+        }
+      ]
+    }
+  ]
+}

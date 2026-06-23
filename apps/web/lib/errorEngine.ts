@@ -5,6 +5,9 @@ export type ErrorTag =
   | "jaNein"
   | "trennbar"
   | "artikel"
+  | "dativ"
+  | "negation"
+  | "modal"
   | "hoeren"
   | "lesen"
   | "schreiben"
@@ -26,9 +29,9 @@ const TAG_ROUTES: Record<ErrorTag, { href: string; label: string; cta: string }>
     cta: "Akkusativ tekrarı",
   },
   jaNein: {
-    href: "/grundlagen/grammar-pack?section=jaNein",
+    href: "/grundlagen/word-order",
     label: "Ja/Nein soruları",
-    cta: "Ja/Nein tekrarı",
+    cta: "Kelime sırası — fiil başa",
   },
   trennbar: {
     href: "/grundlagen/grammar-pack?section=trennbar",
@@ -36,9 +39,24 @@ const TAG_ROUTES: Record<ErrorTag, { href: string; label: string; cta: string }>
     cta: "Ayrılabilen fiiller",
   },
   artikel: {
-    href: "/grundlagen/grammar",
+    href: "/grundlagen/artikel",
     label: "Artikel (der/die/das)",
     cta: "Artikel tekrarı",
+  },
+  dativ: {
+    href: "/grundlagen/dativ",
+    label: "Dativ",
+    cta: "Dativ tekrarı",
+  },
+  negation: {
+    href: "/grundlagen/negation",
+    label: "Negation (nicht/kein)",
+    cta: "Olumsuzluk tekrarı",
+  },
+  modal: {
+    href: "/grundlagen/conjugation",
+    label: "Modalverben",
+    cta: "Modal fiil tekrarı",
   },
   hoeren: {
     href: "/exam/hoeren",
@@ -89,6 +107,12 @@ export function analyzeWeakTopics(progress: UserProgress): WeakTopicSuggestion |
   if ((grammarPack["akkusativ"] ?? 100) < 3) bump(counts, "akkusativ", 3);
   if ((grammarPack["jaNein"] ?? 100) < 3) bump(counts, "jaNein", 3);
   if ((grammarPack["trennbar"] ?? 100) < 3) bump(counts, "trennbar", 3);
+  if ((grammarPack["modalverben"] ?? 100) < 3) bump(counts, "modal", 3);
+  if ((grammarPack["dativ"] ?? 100) < 3) bump(counts, "dativ", 3);
+  if ((grammarPack["negation"] ?? 100) < 3) bump(counts, "negation", 3);
+
+  const artikelDone = progress.grundlagen.articlesCompleted.length;
+  if (artikelDone < 2) bump(counts, "artikel", 3);
 
   const satzDone = progress.grundlagen.satzCompleted.length;
   if (satzDone < 10) bump(counts, "artikel", 2);

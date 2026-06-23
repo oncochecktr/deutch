@@ -1,0 +1,505 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "title": "Negation Trainer",
+  "titleTr": "Olumsuzluk (nicht / kein)",
+  "description": "kein/keine/keinen + nicht pozisyonu",
+  "passThreshold": 6,
+  "drillsPerSet": 8,
+  "rules": [
+    {
+      "article": "kein",
+      "tr": "isim olumsuzluğu: kein/keine/keinen"
+    },
+    {
+      "article": "nicht",
+      "tr": "fiil/sıfat/zarf olumsuzluğu: nicht"
+    }
+  ],
+  "sets": [
+    {
+      "id": "kein",
+      "title": "kein / keine / keinen",
+      "title_tr": "kein ile olumsuzluk",
+      "order": 1,
+      "examples": [
+        {
+          "id": "kein-ex-0",
+          "de": "Ich habe keine Zeit.",
+          "tr": "Vaktim yok.",
+          "breakdown": [
+            {
+              "de": "Ich habe keine Zeit.",
+              "tr": "Vaktim yok.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-1",
+          "de": "Er hat kein Auto.",
+          "tr": "Arabası yok.",
+          "breakdown": [
+            {
+              "de": "Er hat kein Auto.",
+              "tr": "Arabası yok.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-2",
+          "de": "Sie hat keine Kinder.",
+          "tr": "Çocuğu yok.",
+          "breakdown": [
+            {
+              "de": "Sie hat keine Kinder.",
+              "tr": "Çocuğu yok.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-3",
+          "de": "Wir haben kein Geld.",
+          "tr": "Paramız yok.",
+          "breakdown": [
+            {
+              "de": "Wir haben kein Geld.",
+              "tr": "Paramız yok.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-4",
+          "de": "Du hast keinen Hunger.",
+          "tr": "Aç değilsin.",
+          "breakdown": [
+            {
+              "de": "Du hast keinen Hunger.",
+              "tr": "Aç değilsin.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-5",
+          "de": "Ich spreche kein Deutsch.",
+          "tr": "Almanca konuşmuyorum.",
+          "breakdown": [
+            {
+              "de": "Ich spreche kein Deutsch.",
+              "tr": "Almanca konuşmuyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-6",
+          "de": "Er isst kein Fleisch.",
+          "tr": "Et yemiyor.",
+          "breakdown": [
+            {
+              "de": "Er isst kein Fleisch.",
+              "tr": "Et yemiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kein-ex-7",
+          "de": "Sie trinkt keinen Kaffee.",
+          "tr": "Kahve içmiyor.",
+          "breakdown": [
+            {
+              "de": "Sie trinkt keinen Kaffee.",
+              "tr": "Kahve içmiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-kein-01",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Ich habe ___ Zeit.",
+          "options": [
+            "keine",
+            "kein",
+            "keinen",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: keine"
+        },
+        {
+          "id": "drill-kein-02",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Er hat ___ Auto.",
+          "options": [
+            "kein",
+            "keine",
+            "keinen",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: kein"
+        },
+        {
+          "id": "drill-kein-03",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Sie hat ___ Kinder.",
+          "options": [
+            "keine",
+            "kein",
+            "keinen",
+            "keinem"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: keine"
+        },
+        {
+          "id": "drill-kein-04",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Wir haben ___ Geld.",
+          "options": [
+            "kein",
+            "keine",
+            "keinen",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: kein"
+        },
+        {
+          "id": "drill-kein-05",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Du hast ___ Hunger.",
+          "options": [
+            "keinen",
+            "kein",
+            "keine",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: keinen"
+        },
+        {
+          "id": "drill-kein-06",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Ich spreche ___ Deutsch.",
+          "options": [
+            "kein",
+            "keine",
+            "keinen",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: kein"
+        },
+        {
+          "id": "drill-kein-07",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Er isst ___ Fleisch.",
+          "options": [
+            "kein",
+            "keine",
+            "keinen",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: kein"
+        },
+        {
+          "id": "drill-kein-08",
+          "type": "kein_form",
+          "prompt_tr": "Doğru kein formu",
+          "context_de": "Sie trinkt ___ Kaffee.",
+          "options": [
+            "keinen",
+            "kein",
+            "keine",
+            "nicht"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Doğru: keinen"
+        }
+      ]
+    },
+    {
+      "id": "nicht",
+      "title": "nicht pozisyonu",
+      "title_tr": "nicht nereye gelir?",
+      "order": 2,
+      "examples": [
+        {
+          "id": "nicht-ex-0",
+          "de": "Ich arbeite nicht heute.",
+          "tr": "Bugün çalışmıyorum.",
+          "breakdown": [
+            {
+              "de": "Ich arbeite nicht heute.",
+              "tr": "Bugün çalışmıyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-1",
+          "de": "Er kommt nicht.",
+          "tr": "Gelmiyor.",
+          "breakdown": [
+            {
+              "de": "Er kommt nicht.",
+              "tr": "Gelmiyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-2",
+          "de": "Sie wohnt nicht hier.",
+          "tr": "Burada oturmuyor.",
+          "breakdown": [
+            {
+              "de": "Sie wohnt nicht hier.",
+              "tr": "Burada oturmuyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-3",
+          "de": "Ich bin nicht müde.",
+          "tr": "Yorgun değilim.",
+          "breakdown": [
+            {
+              "de": "Ich bin nicht müde.",
+              "tr": "Yorgun değilim.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-4",
+          "de": "Du lernst nicht Deutsch.",
+          "tr": "Almanca öğrenmiyorsun.",
+          "breakdown": [
+            {
+              "de": "Du lernst nicht Deutsch.",
+              "tr": "Almanca öğrenmiyorsun.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-5",
+          "de": "Er steht um 7 Uhr nicht auf.",
+          "tr": "Saat 7'de kalkmıyor.",
+          "breakdown": [
+            {
+              "de": "Er steht um 7 Uhr nicht auf.",
+              "tr": "Saat 7'de kalkmıyor.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-6",
+          "de": "Das ist nicht teuer.",
+          "tr": "Bu pahalı değil.",
+          "breakdown": [
+            {
+              "de": "Das ist nicht teuer.",
+              "tr": "Bu pahalı değil.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "nicht-ex-7",
+          "de": "Ich verstehe das nicht.",
+          "tr": "Bunu anlamıyorum.",
+          "breakdown": [
+            {
+              "de": "Ich verstehe das nicht.",
+              "tr": "Bunu anlamıyorum.",
+              "role": "phrase"
+            }
+          ],
+          "noun": "",
+          "article": "der",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-nicht-01",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Ich arbeite ___ heute.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Ich arbeite nicht heute."
+        },
+        {
+          "id": "drill-nicht-02",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Er kommt ___.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Er kommt nicht."
+        },
+        {
+          "id": "drill-nicht-03",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Sie wohnt ___ hier.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Sie wohnt nicht hier."
+        },
+        {
+          "id": "drill-nicht-04",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Ich bin ___ müde.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Ich bin nicht müde."
+        },
+        {
+          "id": "drill-nicht-05",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Du lernst ___ Deutsch.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Du lernst nicht Deutsch."
+        },
+        {
+          "id": "drill-nicht-06",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Er steht um 7 Uhr ___ auf.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Er steht um 7 Uhr nicht auf."
+        },
+        {
+          "id": "drill-nicht-07",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Das ist ___ teuer.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Das ist nicht teuer."
+        },
+        {
+          "id": "drill-nicht-08",
+          "type": "nicht_position",
+          "prompt_tr": "nicht nereye gelir?",
+          "context_de": "Ich verstehe das ___.",
+          "options": [
+            "nicht",
+            "kein",
+            "keine",
+            "keinen"
+          ],
+          "correct_index": 0,
+          "explanation_tr": "Tam cümle: Ich verstehe das nicht."
+        }
+      ]
+    }
+  ]
+}

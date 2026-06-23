@@ -1,7 +1,12 @@
 "use client";
 
+import { buildTeacherSpeakText, sanitizeForTts, trimGermanProfessorText } from "@/lib/speakTts";
+import { TTS_MAX_CHARS, TTS_MAX_CHARS_TR } from "@/lib/ttsConfig";
+
 let currentAudio: HTMLAudioElement | null = null;
 let voicesReady: Promise<SpeechSynthesisVoice[]> | null = null;
+
+export type TtsLang = "de" | "tr";
 
 function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   if (typeof window === "undefined" || !window.speechSynthesis) {
@@ -23,24 +28,34 @@ function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   return voicesReady;
 }
 
-function scoreVoice(v: SpeechSynthesisVoice): number {
+function scoreVoice(v: SpeechSynthesisVoice, lang: TtsLang): number {
   const name = v.name.toLowerCase();
-  const lang = v.lang.toLowerCase();
+  const voiceLang = v.lang.toLowerCase();
   let score = 0;
-  if (lang === "de-de") score += 40;
-  else if (lang.startsWith("de")) score += 20;
-  if (/katja|hedda|stefan|conrad|amala|killian|ingrid|jan|klara|german|deutsch/.test(name)) {
-    score += 30;
+
+  if (lang === "de") {
+    if (voiceLang === "de-de") score += 40;
+    else if (voiceLang.startsWith("de")) score += 20;
+    if (/katja|hedda|stefan|conrad|amala|killian|ingrid|jan|klara|german|deutsch/.test(name)) {
+      score += 30;
+    }
+    if (/google/.test(name) && voiceLang.startsWith("de")) score += 10;
+  } else {
+    if (voiceLang === "tr-tr") score += 40;
+    else if (voiceLang.startsWith("tr")) score += 20;
+    if (/ahmet|emel|turk|türk|turkish|tolga|ayşe|aysel|filiz/.test(name)) score += 30;
+    if (/google/.test(name) && voiceLang.startsWith("tr")) score += 10;
   }
-  if (/google/.test(name) && lang.startsWith("de")) score += 10;
+
   if (/english|en-us|en-gb|zira|david|mark|samantha/.test(name)) score -= 100;
   return score;
 }
 
-function pickGermanVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | undefined {
-  const de = voices.filter((v) => v.lang.toLowerCase().startsWith("de"));
-  if (!de.length) return undefined;
-  return de.sort((a, b) => scoreVoice(b) - scoreVoice(a))[0];
+function pickVoice(voices: SpeechSynthesisVoice[], lang: TtsLang): SpeechSynthesisVoice | undefined {
+  const prefix = lang === "de" ? "de" : "tr";
+  const filtered = voices.filter((v) => v.lang.toLowerCase().startsWith(prefix));
+  if (!filtered.length) return undefined;
+  return filtered.sort((a, b) => scoreVoice(b, lang) - scoreVoice(a, lang))[0];
 }
 
 export function stopAudio(): void {
@@ -85,9 +100,14 @@ async function playMp3Url(src: string): Promise<boolean> {
   return true;
 }
 
-async function playServerGermanTts(text: string): Promise<boolean> {
+async function playServerTts(text: string, lang: TtsLang): Promise<boolean> {
+  const max = lang === "tr" ? TTS_MAX_CHARS_TR : TTS_MAX_CHARS;
+  const trimmed = sanitizeForTts(text.trim(), lang).slice(0, max);
+  if (!trimmed) return false;
   try {
-    const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}`);
+    const res = await fetch(
+      `/api/tts?lang=${lang}&text=${encodeURIComponent(trimmed)}`
+    );
     if (!res.ok) return false;
     await playBlobAudio(await res.blob());
     return true;
@@ -96,17 +116,19 @@ async function playServerGermanTts(text: string): Promise<boolean> {
   }
 }
 
-async function speakGermanBrowser(text: string, rate = 0.88): Promise<void> {
+async function speakBrowser(text: string, lang: TtsLang, rate?: number): Promise<void> {
   if (typeof window === "undefined" || !window.speechSynthesis) return;
   window.speechSynthesis.cancel();
   const voices = await loadVoices();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "de-DE";
-  utterance.rate = rate;
-  const german = pickGermanVoice(voices);
-  if (german) {
-    utterance.voice = german;
-    utterance.lang = german.lang;
+  const cleaned = sanitizeForTts(text, lang);
+  const utterance = new SpeechSynthesisUtterance(cleaned);
+  utterance.lang = lang === "de" ? "de-DE" : "tr-TR";
+  utterance.rate = rate ?? (lang === "tr" ? 0.94 : 0.88);
+  utterance.pitch = lang === "tr" ? 1.02 : 1;
+  const voice = pickVoice(voices, lang);
+  if (voice) {
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
   }
   await new Promise<void>((resolve) => {
     utterance.onend = () => resolve();
@@ -115,9 +137,9 @@ async function speakGermanBrowser(text: string, rate = 0.88): Promise<void> {
   });
 }
 
-/** 1) MP3  2) Sunucu Almanca Edge TTS  3) Tarayıcı (son çare) */
-export async function playGermanAudio(
+async function playLangAudio(
   text: string,
+  lang: TtsLang,
   audioSrc?: string | null
 ): Promise<"mp3" | "server" | "browser"> {
   stopAudio();
@@ -127,16 +149,113 @@ export async function playGermanAudio(
       await playMp3Url(audioSrc);
       return "mp3";
     } catch {
-      /* 404 → sunucu TTS */
+      /* fallback */
     }
   }
 
-  if (await playServerGermanTts(text)) {
+  if (await playServerTts(text, lang)) {
     return "server";
   }
 
-  await speakGermanBrowser(text);
+  await speakBrowser(text, lang);
   return "browser";
+}
+
+/** Almanca TTS — MP3 → sunucu Edge → tarayıcı */
+export async function playGermanAudio(
+  text: string,
+  audioSrc?: string | null
+): Promise<"mp3" | "server" | "browser"> {
+  return playLangAudio(text, "de", audioSrc);
+}
+
+/** Türkçe TTS — sunucu Edge → tarayıcı */
+export async function playTurkishAudio(text: string): Promise<"mp3" | "server" | "browser"> {
+  return playLangAudio(text, "tr");
+}
+
+/** Profesör turu: önce Almanca, sonra Türkçe açıklama, sonra düzeltme modeli */
+export async function playProfessorTurn(options: {
+  speakTextGerman?: string | null;
+  germanQuestion?: string | null;
+  teachingTopicGerman?: string | null;
+  teachingTopicTurkish?: string | null;
+  turkishTranslation?: string | null;
+  speakText?: string | null;
+  reply?: string;
+  correction?: string | null;
+  praise?: string | null;
+  inputLanguage: "de" | "tr";
+  boardPhase?: "teach" | "practice" | "question" | null;
+}): Promise<void> {
+  const {
+    speakTextGerman,
+    germanQuestion,
+    teachingTopicGerman,
+    teachingTopicTurkish,
+    turkishTranslation,
+    speakText,
+    reply = "",
+    correction,
+    praise,
+    inputLanguage,
+    boardPhase,
+  } = options;
+
+  stopAudio();
+
+  const germanRaw =
+    speakTextGerman?.trim() ||
+    germanQuestion?.trim() ||
+    (boardPhase === "teach" ? teachingTopicGerman?.trim() : null) ||
+    praise?.trim() ||
+    null;
+
+  const germanMain = germanRaw ? trimGermanProfessorText(germanRaw) : null;
+
+  if (germanMain) {
+    await playGermanAudio(germanMain);
+  }
+
+  if (inputLanguage === "tr") {
+    const trSource =
+      speakText?.trim() ||
+      teachingTopicTurkish?.trim() ||
+      turkishTranslation?.trim() ||
+      null;
+    const trText = buildTeacherSpeakText(reply, trSource, "tr");
+    if (trText) {
+      await playTurkishAudio(trText);
+    }
+  } else if (!germanMain && reply.trim()) {
+    await playGermanAudio(trimGermanProfessorText(reply));
+  }
+
+  if (correction?.trim() && correction.trim() !== germanMain) {
+    await playGermanAudio(trimGermanProfessorText(correction));
+  }
+}
+
+/** Öğretmen yanıtı: kısa speakText + Almanca kalıp (Edge TTS) — geriye dönük */
+export async function playTeacherResponse(
+  reply: string,
+  correction: string | null,
+  inputLanguage: "de" | "tr",
+  speakText?: string | null
+): Promise<void> {
+  const toSpeak = buildTeacherSpeakText(reply, speakText, inputLanguage);
+
+  if (inputLanguage === "tr") {
+    await playTurkishAudio(toSpeak);
+    if (correction) {
+      await playGermanAudio(correction);
+    }
+  } else {
+    await playGermanAudio(toSpeak || reply);
+    if (correction && correction !== toSpeak) {
+      await playGermanAudio(correction);
+    }
+  }
 }
 
 export function formatWord(word: string, article: string | null): string {
@@ -153,4 +272,8 @@ export function speakWord(
 
 export function speakGerman(text: string): void {
   void playGermanAudio(text);
+}
+
+export function speakTurkish(text: string): void {
+  void playTurkishAudio(text);
 }

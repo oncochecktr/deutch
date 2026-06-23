@@ -20,6 +20,20 @@ export default function GrundlagenPage() {
       backHref="/"
       maxWidth="lg"
     >
+      <Link
+        href="/grundlagen/roadmap"
+        className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-gold/40 bg-goethe-gold/5 p-5 transition hover:border-goethe-gold/60"
+      >
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
+            Almanca Motoru
+          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">Gramer yol haritası</h2>
+          <p className="mt-1 text-sm text-sage-600">24 A1 kuralı — der/die/das&apos;tan Perfekt&apos;e sıralı</p>
+        </div>
+        <span className="shrink-0 text-goethe-blue">→</span>
+      </Link>
+
       <div className="card-soft border-2 border-goethe-blue/20 p-5">
         <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
           Öğrenme yolu — Adım 2
@@ -35,6 +49,30 @@ export default function GrundlagenPage() {
           Kaldığın yerden devam →
         </Link>
       </div>
+
+      <Link
+        href="/grundlagen/word-order"
+        className="card-soft flex items-start gap-4 border-2 border-goethe-gold/40 bg-goethe-gold/5 p-5 transition hover:border-goethe-gold/60"
+      >
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-goethe-blue text-lg font-bold text-white">
+          1
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
+            Satzstellung · Kelime sırası
+          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">
+            Önce motoru (fiili) bul — soruda fiil başa
+          </h2>
+          <p className="mt-1 text-sm text-sage-600">
+            Stufe 1→4: düz cümle (SVO) · Ja/Nein · W-Fragen · karışık drill. Duolingo tarzı taşla kur.
+          </p>
+          <p className="mt-2 text-xs font-medium text-goethe-blue">
+            {progress.grundlagen.wordOrderCompleted.length} /{" "}
+            {GRUNDLAGEN_MODULES.find((m) => m.id === "word-order")?.sections ?? 6} bölüm tamam →
+          </p>
+        </div>
+      </Link>
 
       <ol className="space-y-3">
         {GRUNDLAGEN_MODULES.map((m, i) => (
@@ -77,6 +115,25 @@ function GrammarModuleRow({
     const n = progress.grundlagen.wordOrderCompleted.length;
     done = n >= m.sections;
     progressLabel = `${n}/${m.sections}`;
+  } else if (m.id === "artikel") {
+    const n = progress.grundlagen.articlesCompleted.length;
+    done = n >= m.sections;
+    progressLabel = `${n}/${m.sections}`;
+  } else if (m.id === "dativ") {
+    const n = progress.grundlagen.dativCompleted.length;
+    done = n >= m.sections;
+    progressLabel = `${n}/${m.sections}`;
+  } else if (m.id === "negation") {
+    const n = progress.grundlagen.negationCompleted.length;
+    done = n >= m.sections;
+    progressLabel = `${n}/${m.sections}`;
+  } else if (m.id === "prepositions") {
+    const n = progress.grundlagen.prepositionsCompleted.length;
+    done = n >= m.sections;
+    progressLabel = `${n}/${m.sections}`;
+  } else if (m.id === "zeit") {
+    done = progress.grundlagen.zeitQuizBest >= 50;
+    progressLabel = `${progress.grundlagen.zeitQuizBest}%`;
   } else if (m.id === "grammar-pack") {
     const n = Object.keys(progress.grundlagen.grammarPack).length;
     done = n >= m.sections;

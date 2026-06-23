@@ -14,6 +14,15 @@ export interface GrundlagenProgress {
   wordOrderCompleted: string[];
   wordOrderScores: Record<string, number>;
   grammarPack: Record<string, number>;
+  articlesCompleted: string[];
+  articleScores: Record<string, number>;
+  dativCompleted: string[];
+  dativScores: Record<string, number>;
+  negationCompleted: string[];
+  negationScores: Record<string, number>;
+  prepositionsCompleted: string[];
+  prepositionScores: Record<string, number>;
+  zeitQuizBest: number;
 }
 
 export const DEFAULT_GRUNDLAGEN: GrundlagenProgress = {
@@ -27,6 +36,15 @@ export const DEFAULT_GRUNDLAGEN: GrundlagenProgress = {
   wordOrderCompleted: [],
   wordOrderScores: {},
   grammarPack: {},
+  articlesCompleted: [],
+  articleScores: {},
+  dativCompleted: [],
+  dativScores: {},
+  negationCompleted: [],
+  negationScores: {},
+  prepositionsCompleted: [],
+  prepositionScores: {},
+  zeitQuizBest: 0,
 };
 
 export interface WordProgress {
@@ -49,6 +67,10 @@ export interface DailyStats {
   lesenPassages: number;
   schreibenTasks: number;
   sprechenCards: number;
+  speakSteps: number;
+  exercisesCompleted: number;
+  dialoguesRead: number;
+  konusDinleTurns: number;
 }
 
 export interface UserProgress {
@@ -118,6 +140,10 @@ export const DEFAULT_PROGRESS: UserProgress = {
     lesenPassages: 0,
     schreibenTasks: 0,
     sprechenCards: 0,
+    speakSteps: 0,
+    exercisesCompleted: 0,
+    dialoguesRead: 0,
+    konusDinleTurns: 0,
   },
   totalStudyMinutes: 0,
   sessionStartTime: null,
@@ -210,6 +236,29 @@ function normalizeGrundlagen(
       g.grammarPack && typeof g.grammarPack === "object" && !Array.isArray(g.grammarPack)
         ? g.grammarPack
         : {},
+    articlesCompleted: Array.isArray(g.articlesCompleted) ? g.articlesCompleted : [],
+    articleScores:
+      g.articleScores && typeof g.articleScores === "object" && !Array.isArray(g.articleScores)
+        ? g.articleScores
+        : {},
+    dativCompleted: Array.isArray(g.dativCompleted) ? g.dativCompleted : [],
+    dativScores:
+      g.dativScores && typeof g.dativScores === "object" && !Array.isArray(g.dativScores)
+        ? g.dativScores
+        : {},
+    negationCompleted: Array.isArray(g.negationCompleted) ? g.negationCompleted : [],
+    negationScores:
+      g.negationScores && typeof g.negationScores === "object" && !Array.isArray(g.negationScores)
+        ? g.negationScores
+        : {},
+    prepositionsCompleted: Array.isArray(g.prepositionsCompleted) ? g.prepositionsCompleted : [],
+    prepositionScores:
+      g.prepositionScores &&
+      typeof g.prepositionScores === "object" &&
+      !Array.isArray(g.prepositionScores)
+        ? g.prepositionScores
+        : {},
+    zeitQuizBest: typeof g.zeitQuizBest === "number" ? g.zeitQuizBest : 0,
   };
 }
 
@@ -228,6 +277,10 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
       lesenPassages: ds.lesenPassages ?? 0,
       schreibenTasks: ds.schreibenTasks ?? 0,
       sprechenCards: ds.sprechenCards ?? 0,
+      speakSteps: ds.speakSteps ?? 0,
+      exercisesCompleted: ds.exercisesCompleted ?? 0,
+      dialoguesRead: ds.dialoguesRead ?? 0,
+      konusDinleTurns: ds.konusDinleTurns ?? 0,
     };
     if (base.dailyStats.date !== today) {
       base.dailyStats = {
@@ -243,6 +296,10 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
         lesenPassages: 0,
         schreibenTasks: 0,
         sprechenCards: 0,
+        speakSteps: 0,
+        exercisesCompleted: 0,
+        dialoguesRead: 0,
+        konusDinleTurns: 0,
       };
     }
   }
@@ -271,7 +328,7 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
   base.goethe = normalizeGoethe(parsed.goethe as GoetheProgress);
   base.grundlagen = normalizeGrundlagen(parsed.grundlagen as GrundlagenProgress);
 
-  return normalizeProgress(base);
+  return ensureTodayStudySession(normalizeProgress(base));
 }
 
 function parseStoredProgress(raw: string | null): UserProgress | null {
@@ -333,6 +390,10 @@ export function resetStudyProfile(progress: UserProgress): Partial<UserProgress>
       lesenPassages: 0,
       schreibenTasks: 0,
       sprechenCards: 0,
+      speakSteps: 0,
+      exercisesCompleted: 0,
+      dialoguesRead: 0,
+      konusDinleTurns: 0,
     },
   };
 }
@@ -454,9 +515,58 @@ export function calcKnownPercent(progress: UserProgress, totalWords: number): nu
 }
 
 export function getStudyMinutesSinceBreak(progress: UserProgress): number {
+  const today = todayISO();
   const ref = progress.lastBreakAt ?? progress.sessionStartTime;
   if (!ref) return 0;
+  if (ref.slice(0, 10) !== today) return 0;
   return Math.floor((Date.now() - new Date(ref).getTime()) / 60000);
+}
+
+/** Eski oturum zamanlarını sıfırla — mola popup'ının her açılışta çıkmasını önler */
+export function ensureTodayStudySession(progress: UserProgress): UserProgress {
+  const today = todayISO();
+  const sessionDay = progress.sessionStartTime?.slice(0, 10);
+  let sessionStartTime = progress.sessionStartTime;
+  let lastBreakAt = progress.lastBreakAt;
+
+  if (!sessionStartTime || sessionDay !== today) {
+    sessionStartTime = new Date().toISOString();
+    lastBreakAt = null;
+  } else if (lastBreakAt && lastBreakAt.slice(0, 10) !== today) {
+    lastBreakAt = null;
+  }
+
+  if (sessionStartTime === progress.sessionStartTime && lastBreakAt === progress.lastBreakAt) {
+    return progress;
+  }
+  return { ...progress, sessionStartTime, lastBreakAt };
+}
+
+const STUDY_ROUTE_PREFIXES = [
+  "/cards",
+  "/review",
+  "/quiz",
+  "/listen",
+  "/konus-dinle",
+  "/speak",
+  "/mesleki",
+  "/grundlagen",
+  "/exam/",
+] as const;
+
+export function isActiveStudyRoute(pathname: string): boolean {
+  if (pathname === "/" || pathname === "/words" || pathname.startsWith("/a2/words")) {
+    return false;
+  }
+  if (pathname === "/exam" || pathname === "/exam/bilgi") return false;
+  return STUDY_ROUTE_PREFIXES.some(
+    (prefix) => pathname === prefix || pathname.startsWith(prefix)
+  );
+}
+
+export function snoozeBreakReminder(progress: UserProgress): UserProgress {
+  const now = new Date().toISOString();
+  return { ...progress, lastBreakAt: now, sessionStartTime: now };
 }
 
 export function shouldShowBreakReminder(progress: UserProgress): boolean {
@@ -636,6 +746,146 @@ export function markWordOrderCompleted(
         passed && !alreadyDone
           ? [...progress.grundlagen.wordOrderCompleted, sectionId]
           : progress.grundlagen.wordOrderCompleted,
+    },
+  };
+}
+
+function markSetTrainerCompleted(
+  progress: UserProgress,
+  setId: string,
+  score: number,
+  passScore: number,
+  completed: string[],
+  scores: Record<string, number>,
+  completedKey: keyof GrundlagenProgress,
+  scoresKey: keyof GrundlagenProgress
+): UserProgress {
+  const prevScore = scores[setId] ?? 0;
+  const bestScore = Math.max(prevScore, score);
+  const passed = bestScore >= passScore;
+  const alreadyDone = completed.includes(setId);
+
+  if (bestScore <= prevScore && alreadyDone) return progress;
+
+  return {
+    ...progress,
+    grundlagen: {
+      ...progress.grundlagen,
+      [scoresKey]: {
+        ...scores,
+        [setId]: bestScore,
+      },
+      [completedKey]:
+        passed && !alreadyDone ? [...completed, setId] : completed,
+    },
+  };
+}
+
+export const ARTIKEL_PASS_SCORE = 6;
+export function markArtikelCompleted(
+  progress: UserProgress,
+  setId: string,
+  score: number
+): UserProgress {
+  const g = progress.grundlagen;
+  return markSetTrainerCompleted(
+    progress,
+    setId,
+    score,
+    ARTIKEL_PASS_SCORE,
+    g.articlesCompleted,
+    g.articleScores,
+    "articlesCompleted",
+    "articleScores"
+  );
+}
+
+export const DATIV_PASS_SCORE = 6;
+export function markDativCompleted(
+  progress: UserProgress,
+  setId: string,
+  score: number
+): UserProgress {
+  const g = progress.grundlagen;
+  return markSetTrainerCompleted(
+    progress,
+    setId,
+    score,
+    DATIV_PASS_SCORE,
+    g.dativCompleted,
+    g.dativScores,
+    "dativCompleted",
+    "dativScores"
+  );
+}
+
+export const NEGATION_PASS_SCORE = 6;
+export function markNegationCompleted(
+  progress: UserProgress,
+  setId: string,
+  score: number
+): UserProgress {
+  const g = progress.grundlagen;
+  return markSetTrainerCompleted(
+    progress,
+    setId,
+    score,
+    NEGATION_PASS_SCORE,
+    g.negationCompleted,
+    g.negationScores,
+    "negationCompleted",
+    "negationScores"
+  );
+}
+
+export const PREPOSITION_PASS_SCORE = 4;
+export function markPrepositionCompleted(
+  progress: UserProgress,
+  setId: string,
+  score: number
+): UserProgress {
+  const g = progress.grundlagen;
+  return markSetTrainerCompleted(
+    progress,
+    setId,
+    score,
+    PREPOSITION_PASS_SCORE,
+    g.prepositionsCompleted,
+    g.prepositionScores,
+    "prepositionsCompleted",
+    "prepositionScores"
+  );
+}
+
+export function recordZeitQuizScore(progress: UserProgress, score: number): UserProgress {
+  const best = Math.max(progress.grundlagen.zeitQuizBest, score);
+  if (best === progress.grundlagen.zeitQuizBest) return progress;
+  return {
+    ...progress,
+    grundlagen: {
+      ...progress.grundlagen,
+      zeitQuizBest: best,
+    },
+  };
+}
+
+export function recordKonusDinleDailyTurn(
+  progress: UserProgress,
+  isGood: boolean
+): UserProgress {
+  const today = todayISO();
+  const dailyStats =
+    progress.dailyStats.date === today
+      ? progress.dailyStats
+      : { ...DEFAULT_PROGRESS.dailyStats, date: today };
+
+  return {
+    ...progress,
+    dailyStats: {
+      ...dailyStats,
+      konusDinleTurns: dailyStats.konusDinleTurns + 1,
+      correct: dailyStats.correct + (isGood ? 1 : 0),
+      wrong: dailyStats.wrong + (isGood ? 0 : 1),
     },
   };
 }

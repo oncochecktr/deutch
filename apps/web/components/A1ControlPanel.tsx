@@ -8,7 +8,7 @@ import { ProgressBar } from "@/components/ProgressBar";
 import { ResetSRSButton } from "@/components/ResetSRSButton";
 import { useProgress } from "@/lib/ProgressContext";
 import { READINESS_LABEL } from "@/lib/brand";
-import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer } from "@/lib/grundlagen";
+import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer, getArtikelTrainer, getDativTrainer } from "@/lib/grundlagen";
 import {
   A1_TARGETS,
   computeA1Readiness,
@@ -109,6 +109,10 @@ export function A1ControlPanel() {
             <Row label="Kelime" value={`${a1Studied} / ${a1.total}`} />
             <Row label="Satz Builder" value={`${satzDone} / ${satzTotal}`} />
             <Row label="Conjugation" value={`${conjugationDone} / ${conjugationTotal}`} />
+            <Row label="Artikel" value={`${progress.grundlagen.articlesCompleted.length} / ${getArtikelTrainer().sets.length}`} />
+            <Row label="Dativ" value={`${progress.grundlagen.dativCompleted.length} / ${getDativTrainer().sets.length}`} />
+            <Row label="Grammar Pack" value={`${grammarPackDone} / ${grammarPackTotal}`} />
+            <Row label="Zeit quiz" value={`${progress.grundlagen.zeitQuizBest}%`} />
             <Row label="Word Order" value={`${wordOrderDone} / ${wordOrderTotal}`} />
             <Row label="Hören" value={`${hoerenDone} / ${bank.counts.hoeren}`} />
             <Row label="Lesen" value={`${lesenPassagesDone} / ${bank.counts.lesen_passages}`} />
@@ -196,6 +200,17 @@ export function A1ControlPanel() {
                   updateProgress({ targetExamDate: e.target.value || null })
                 }
               />
+            </label>
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={progress.breakReminderEnabled}
+                onChange={(e) =>
+                  updateProgress({ breakReminderEnabled: e.target.checked })
+                }
+                className="h-4 w-4 rounded border-sage-300"
+              />
+              <span>Mola hatırlatıcısı ({progress.studyBlockMinutes} dk)</span>
             </label>
             <p>
               Çalışma: {studyMin}/{progress.studyBlockMinutes} dk

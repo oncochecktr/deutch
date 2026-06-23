@@ -44,6 +44,7 @@ const OWNERS = [
   { id: "ihr", owner: "ihr", owner_tr: "onun (kadın)", masc_neut: "ihr", fem_pl: "ihre", order: 4 },
   { id: "unser", owner: "unser", owner_tr: "bizim", masc_neut: "unser", fem_pl: "unsere", order: 5 },
   { id: "euer", owner: "euer", owner_tr: "sizin (çoğul)", masc_neut: "euer", fem_pl: "eure", order: 6 },
+  { id: "Ihr", owner: "Ihr", owner_tr: "sizin (resmi)", masc_neut: "Ihr", fem_pl: "Ihre", order: 7 },
 ];
 
 const JOBS = [
@@ -197,7 +198,7 @@ const sets = OWNERS.map((owner) => {
 });
 
 function validate(data) {
-  if (data.sets.length !== 6) throw new Error("Expected 6 sets");
+  if (data.sets.length !== 7) throw new Error("Expected 7 sets");
   const ids = new Set();
   for (const s of data.sets) {
     if (s.examples.length !== 8) throw new Error(`${s.id}: need 8 examples`);

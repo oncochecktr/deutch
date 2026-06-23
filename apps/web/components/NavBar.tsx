@@ -20,7 +20,13 @@ const links: { href: string; label: string; icon: NavIconKey }[] = [
 
   { href: "/listen", label: "Dinle", icon: "listen" },
 
+  { href: "/konus-dinle", label: "Konuş-Dinle", icon: "konusDinle" },
+
+  { href: "/speak", label: "Sınıf", icon: "speak" },
+
   { href: "/exam", label: "Sınav", icon: "exam" },
+
+  { href: "/harita", label: "Harita", icon: "list" },
 
   { href: "/mesleki", label: "Mesleki", icon: "mesleki" },
 

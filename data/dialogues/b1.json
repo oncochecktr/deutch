@@ -1,0 +1,108 @@
+[
+  {
+    "id": "d_b1_01",
+    "level": "B1",
+    "title_de": "Meinung zum Klimawandel",
+    "title_tr": "İklim değişikliği hakkında görüş",
+    "theme": "Meinung · weil/denn",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Laura", "kind": "dialogue", "text_de": "Ich finde, wir müssen mehr für die Umwelt tun.", "text_tr": "Bence çevre için daha fazla şey yapmalıyız." },
+      { "id": "l02", "speaker": "Felix", "kind": "dialogue", "text_de": "Warum? Was denkst du?", "text_tr": "Neden? Ne düşünüyorsun?" },
+      { "id": "l03", "speaker": "Laura", "kind": "dialogue", "text_de": "Weil das Wetter immer extremer wird.", "text_tr": "Çünkü hava giderek daha aşırı oluyor." },
+      { "id": "l04", "speaker": "Felix", "kind": "dialogue", "text_de": "Stimmt, aber viele Menschen können sich kein E-Auto leisten.", "text_tr": "Doğru, ama birçok insan elektrikli araba alamaz." },
+      { "id": "l05", "speaker": "Laura", "kind": "dialogue", "text_de": "Deshalb sollte der Staat mehr helfen.", "text_tr": "Bu yüzden devlet daha fazla yardım etmeli." },
+      { "id": "l06", "speaker": "Felix", "kind": "dialogue", "text_de": "Da bin ich mit dir einverstanden.", "text_tr": "Bu konuda sana katılıyorum." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Laura neden daha fazla çevre koruması istiyor?", "options_tr": ["Ekonomi", "Aşırı hava", "Turizm", "İş"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_b1_02",
+    "level": "B1",
+    "title_de": "Ein schwieriger Tag",
+    "title_tr": "Zor bir gün",
+    "theme": "Alltag · Nebensatz",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "kind": "narration", "text_de": "Als Can heute aufgewacht ist, hat es stark geregnet.", "text_tr": "Can bugün uyandığında şiddetli yağmur yağıyordu." },
+      { "id": "l02", "speaker": "Can", "kind": "dialogue", "text_de": "Ich habe den Bus verpasst, weil die Straße gesperrt war.", "text_tr": "Cadde kapalı olduğu için otobüsü kaçırdım." },
+      { "id": "l03", "speaker": "Chef", "kind": "dialogue", "text_de": "Kein Problem, aber morgen bitte pünktlich.", "text_tr": "Sorun değil, ama yarın lütfen zamanında gel." },
+      { "id": "l04", "speaker": "Can", "kind": "dialogue", "text_de": "Natürlich. Es tut mir leid.", "text_tr": "Tabii. Özür dilerim." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Can otobüsü neden kaçırmış?", "options_tr": ["Uyudu", "Cadde kapalı", "Hasta", "Unuttu"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_b1_03",
+    "level": "B1",
+    "title_de": "Umzug nach Berlin",
+    "title_tr": "Berlin'e taşınmak",
+    "theme": "Wohnen · Pläne",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Ece", "kind": "dialogue", "text_de": "Wir ziehen nächsten Monat nach Berlin.", "text_tr": "Gelecek ay Berlin'e taşınıyoruz." },
+      { "id": "l02", "speaker": "Freundin", "kind": "dialogue", "text_de": "Wirklich? Freust du dich?", "text_tr": "Gerçekten mi? Heyecanlı mısın?" },
+      { "id": "l03", "speaker": "Ece", "kind": "dialogue", "text_de": "Ja, aber ich habe Angst vor der neuen Arbeit.", "text_tr": "Evet, ama yeni işten korkuyorum." },
+      { "id": "l04", "speaker": "Freundin", "kind": "dialogue", "text_de": "Du schaffst das! Du bist sehr fleißig.", "text_tr": "Başarırsın! Çok çalışkansın." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Ece neyden korkuyor?", "options_tr": ["Taşınma", "Yeni iş", "Berlin", "Aile"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_b1_04",
+    "level": "B1",
+    "title_de": "Diskussion über Handy",
+    "title_tr": "Telefon tartışması",
+    "theme": "Technologie · Vergleich",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Tim", "kind": "dialogue", "text_de": "Mein neues Handy ist besser als das alte.", "text_tr": "Yeni telefonum eskisinden daha iyi." },
+      { "id": "l02", "speaker": "Nina", "kind": "dialogue", "text_de": "Ich finde, du benutzt es zu oft.", "text_tr": "Bence çok sık kullanıyorsun." },
+      { "id": "l03", "speaker": "Tim", "kind": "dialogue", "text_de": "Das stimmt, aber ich brauche es für die Arbeit.", "text_tr": "Doğru, ama iş için lazım." },
+      { "id": "l04", "speaker": "Nina", "kind": "dialogue", "text_de": "Dann solltest du Pausen machen.", "text_tr": "O zaman mola vermelisin." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Nina ne öneriyor?", "options_tr": ["Yeni telefon", "Mola", "Satış", "Oyun"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_b1_05",
+    "level": "B1",
+    "title_de": "Beim Behörden-Termin",
+    "title_tr": "Resmi daire randevusunda",
+    "theme": "Behörde · höflich",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Beamter", "kind": "dialogue", "text_de": "Guten Tag. Haben Sie alle Unterlagen dabei?", "text_tr": "İyi günler. Tüm belgeleriniz yanınızda mı?" },
+      { "id": "l02", "speaker": "Antragsteller", "kind": "dialogue", "text_de": "Ja, hier sind Pass und Meldebescheinigung.", "text_tr": "Evet, pasaport ve ikamet belgesi burada." },
+      { "id": "l03", "speaker": "Beamter", "kind": "dialogue", "text_de": "Gut. Die Bearbeitung dauert etwa zwei Wochen.", "text_tr": "Güzel. İşlem yaklaşık iki hafta sürer." },
+      { "id": "l04", "speaker": "Antragsteller", "kind": "dialogue", "text_de": "Bekomme ich eine Benachrichtigung per E-Mail?", "text_tr": "E-posta ile bildirim alır mıyım?" },
+      { "id": "l05", "speaker": "Beamter", "kind": "dialogue", "text_de": "Ja, automatisch.", "text_tr": "Evet, otomatik olarak." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "İşlem ne kadar sürer?", "options_tr": ["1 hafta", "2 hafta", "1 ay", "3 gün"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_b1_06",
+    "level": "B1",
+    "title_de": "Rückblick auf das Jahr",
+    "title_tr": "Yıla bakış",
+    "theme": "Vergangenheit · Reflexion",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Host", "kind": "dialogue", "text_de": "Was war Ihr größter Erfolg dieses Jahr?", "text_tr": "Bu yılki en büyük başarınız neydi?" },
+      { "id": "l02", "speaker": "Gast", "kind": "dialogue", "text_de": "Ich habe die B1-Prüfung bestanden.", "text_tr": "B1 sınavını geçtim." },
+      { "id": "l03", "speaker": "Host", "kind": "dialogue", "text_de": "Herzlichen Glückwunsch! Wie haben Sie gelernt?", "text_tr": "Tebrikler! Nasıl çalıştınız?" },
+      { "id": "l04", "speaker": "Gast", "kind": "dialogue", "text_de": "Jeden Tag eine Stunde und viele Dialoge gelesen.", "text_tr": "Her gün bir saat ve çok diyalog okudum." },
+      { "id": "l05", "speaker": "Host", "kind": "dialogue", "text_de": "Das ist eine gute Strategie.", "text_tr": "Bu iyi bir strateji." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Konuk hangi sınavı geçmiş?", "options_tr": ["A1", "A2", "B1", "B2"], "correct_index": 2 }
+    ]
+  }
+]

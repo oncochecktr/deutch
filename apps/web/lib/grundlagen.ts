@@ -3,6 +3,10 @@ import patternsRaw from "../../../data/grundlagen/a1-patterns.json";
 import conjugationRaw from "../../../data/grundlagen/a1-conjugation.json";
 import possessivesRaw from "../../../data/grundlagen/a1-possessives.json";
 import wordOrderRaw from "../../../data/grundlagen/a1-word-order.json";
+import articlesRaw from "../../../data/grundlagen/a1-articles.json";
+import dativRaw from "../../../data/grundlagen/a1-dativ.json";
+import negationRaw from "../../../data/grundlagen/a1-negation.json";
+import prepositionsRaw from "../../../data/grundlagen/a1-prepositions.json";
 
 export interface GrundlagenItem {
   de: string;
@@ -26,6 +30,7 @@ export interface VerbConjugation {
 export interface ModalBlock {
   verb: string;
   tr: string;
+  conjugation?: GrundlagenItem[];
   examples: GrundlagenItem[];
 }
 
@@ -51,6 +56,8 @@ export interface FormField {
   label_de: string;
 }
 
+export type WordOrderTier = 1 | 2 | 3 | 4;
+
 export interface SentenceExercise {
   id: string;
   prompt_tr: string;
@@ -58,6 +65,8 @@ export interface SentenceExercise {
   distractors: string[];
   answer_de: string;
   hint: string;
+  /** Satzstellung zorluk: 1 kolay … 4 zor */
+  tier?: WordOrderTier;
 }
 
 export interface GrammarPackQuizItem {
@@ -180,7 +189,7 @@ export interface ConjugationMatrixData {
   drills: ConjugationDrill[];
 }
 
-export type PossessiveOwnerId = "mein" | "dein" | "sein" | "ihr" | "unser" | "euer";
+export type PossessiveOwnerId = "mein" | "dein" | "sein" | "ihr" | "unser" | "euer" | "Ihr";
 
 export interface PossessiveRule {
   owner: PossessiveOwnerId;
@@ -239,6 +248,58 @@ export interface PossessiveTrainerData {
   sets: PossessiveSet[];
 }
 
+export interface TrainerBreakdownPart {
+  de: string;
+  tr: string;
+  role?: string;
+}
+
+export interface TrainerExample {
+  id: string;
+  de: string;
+  tr: string;
+  breakdown: TrainerBreakdownPart[];
+  noun: string;
+  article: string;
+  plural: string | null;
+}
+
+export interface TrainerDrill {
+  id: string;
+  type: string;
+  prompt_tr: string;
+  context_de: string;
+  options: string[];
+  correct_index: number;
+  explanation_tr: string;
+}
+
+export interface TrainerSet {
+  id: string;
+  title: string;
+  title_tr: string;
+  order: number;
+  examples: TrainerExample[];
+  drills: TrainerDrill[];
+}
+
+export interface TrainerRule {
+  label: string;
+  tr: string;
+}
+
+export interface SetTrainerData {
+  version: string;
+  level: string;
+  title: string;
+  titleTr: string;
+  description: string;
+  passThreshold: number;
+  drillsPerSet: number;
+  rules: TrainerRule[];
+  sets: TrainerSet[];
+}
+
 export type WordOrderCategory = "statement" | "yes_no" | "w_question" | "compare" | "mixed";
 export type WordOrderExerciseType = "reorder" | "transform" | "gap" | "compare" | "spot_verb";
 
@@ -246,6 +307,7 @@ export interface WordOrderExercise {
   id: string;
   type: WordOrderExerciseType;
   category: WordOrderCategory;
+  tier?: WordOrderTier;
   prompt_tr: string;
   hint_tr?: string;
   tokens?: string[];
@@ -266,12 +328,38 @@ export interface WordOrderExercise {
 export interface WordOrderSection {
   id: string;
   order: number;
+  tier?: WordOrderTier;
+  tierLabel?: string;
   title: string;
   titleTr: string;
   rule_de: string;
   rule_tr: string;
   examples: { de: string; tr: string }[];
   drill: WordOrderExercise[];
+}
+
+export const WORD_ORDER_STUFE: Record<
+  WordOrderTier,
+  { label: string; subtitle: string }
+> = {
+  1: { label: "Stufe 1 · Kolay", subtitle: "Düz cümle — özne + fiil + …" },
+  2: { label: "Stufe 2 · Orta", subtitle: "Ja/Nein — fiil başa geçer" },
+  3: { label: "Stufe 3 · Orta-Zor", subtitle: "W-Frage + fiil + özne" },
+  4: { label: "Stufe 4 · Zor", subtitle: "Karışık kalıp + bağlaç" },
+};
+
+export function wordOrderTierForSection(sectionId: string): WordOrderTier {
+  switch (sectionId) {
+    case "statement":
+      return 1;
+    case "yes_no":
+      return 2;
+    case "w_question":
+    case "compare":
+      return 3;
+    default:
+      return 4;
+  }
 }
 
 export interface WordOrderTrainerData {
@@ -304,6 +392,14 @@ export interface A1CoreData {
     jaNein: GrammarReferenceBlock;
     akkusativ: GrammarReferenceBlock;
     trennbareVerben: { title: string; titleTr: string; verbs: TrennbarVerb[] };
+    imperativ?: GrammarReferenceBlock;
+    negation?: GrammarReferenceBlock;
+    dativBasics?: GrammarReferenceBlock;
+    plural?: GrammarReferenceBlock;
+    konjunktionen?: GrammarReferenceBlock;
+    perfektIntro?: GrammarReferenceBlock;
+    regularRule?: GrammarReferenceBlock;
+    irregularRule?: GrammarReferenceBlock;
   };
   goetheForm: { title: string; titleTr: string; fields: FormField[] };
   sentenceBuilder: { title: string; titleTr: string; exercises: SentenceExercise[] };
@@ -315,6 +411,22 @@ const patternData = patternsRaw as PatternTrainerData;
 const conjugationData = conjugationRaw as ConjugationMatrixData;
 const possessivesData = possessivesRaw as PossessiveTrainerData;
 const wordOrderData = wordOrderRaw as WordOrderTrainerData;
+const articlesData = normalizeSetTrainer(articlesRaw);
+const dativData = normalizeSetTrainer(dativRaw);
+const negationData = normalizeSetTrainer(negationRaw);
+const prepositionsData = normalizeSetTrainer(prepositionsRaw);
+
+function normalizeSetTrainer(rawData: unknown): SetTrainerData {
+  const d = rawData as SetTrainerData;
+  const rules = (rawData as { rules?: { article?: string; owner?: string; tr: string }[] }).rules;
+  if (rules?.length && !("label" in (rules[0] ?? {}))) {
+    d.rules = rules.map((r) => ({
+      label: r.article ?? r.owner ?? "",
+      tr: r.tr,
+    }));
+  }
+  return d;
+}
 
 export function getA1Core(): A1CoreData {
   return data;
@@ -356,7 +468,31 @@ export function getGrammarPackSections(): GrammarPackSection[] {
   return data.grammarPack.sections;
 }
 
+export function getArtikelTrainer(): SetTrainerData {
+  return articlesData;
+}
+
+export function getDativTrainer(): SetTrainerData {
+  return dativData;
+}
+
+export function getNegationTrainer(): SetTrainerData {
+  return negationData;
+}
+
+export function getPrepositionsTrainer(): SetTrainerData {
+  return prepositionsData;
+}
+
 export const GRUNDLAGEN_MODULES = [
+  {
+    id: "word-order",
+    href: "/grundlagen/word-order",
+    de: "Word Order Trainer",
+    tr: "Kelime sırası",
+    desc: "Stufe 1→4: SVO · Ja/Nein · W-Fragen · 100+ drill",
+    sections: wordOrderData.sections.length + 1,
+  },
   {
     id: "satz",
     href: "/grundlagen/satz",
@@ -370,24 +506,24 @@ export const GRUNDLAGEN_MODULES = [
     href: "/grundlagen/conjugation",
     de: "Conjugation Matrix",
     tr: "Fiil çekim matrisi",
-    desc: "11 A1 fiili × 9 kişi — du/er/sie ağırlıklı drill",
+    desc: "A1 fiilleri + Modalverben × 9 kişi drill",
     sections: conjugationData.verbs.length,
+  },
+  {
+    id: "artikel",
+    href: "/grundlagen/artikel",
+    de: "Artikel Trainer",
+    tr: "Artikel (der/die/das)",
+    desc: "der · die · das · ein/eine · çoğul drill",
+    sections: articlesData.sets.length,
   },
   {
     id: "possessives",
     href: "/grundlagen/possessives",
     de: "Possessive Trainer",
     tr: "Sahiplik zamirleri",
-    desc: "der/die/das → mein/deine — 6 sahip × drill",
+    desc: "der/die/das → mein/deine — 7 sahip × drill",
     sections: possessivesData.sets.length,
-  },
-  {
-    id: "word-order",
-    href: "/grundlagen/word-order",
-    de: "Word Order Trainer",
-    tr: "Kelime sırası",
-    desc: "SVO · Ja/Nein · W-Fragen · 100+ drill",
-    sections: wordOrderData.sections.length + 1,
   },
   {
     id: "patterns",
@@ -398,11 +534,35 @@ export const GRUNDLAGEN_MODULES = [
     sections: patternData.patterns.length,
   },
   {
+    id: "dativ",
+    href: "/grundlagen/dativ",
+    de: "Dativ Trainer",
+    tr: "Dativ kalıplar",
+    desc: "mit · bei · in · zu/nach — A1 sabit kalıplar",
+    sections: dativData.sets.length,
+  },
+  {
+    id: "negation",
+    href: "/grundlagen/negation",
+    de: "Negation Trainer",
+    tr: "Olumsuzluk",
+    desc: "kein/keine/keinen + nicht pozisyonu",
+    sections: negationData.sets.length,
+  },
+  {
+    id: "prepositions",
+    href: "/grundlagen/prepositions",
+    de: "Prepositions",
+    tr: "Yer edatları",
+    desc: "in · auf · an · bei · mit kalıpları",
+    sections: prepositionsData.sets.length,
+  },
+  {
     id: "grammar-pack",
     href: "/grundlagen/grammar-pack",
     de: "Grammar Pack",
     tr: "A1 Gramer Paketi",
-    desc: "Zamirler, fiiller, Ja/Nein, Akkusativ, trennbar — quiz",
+    desc: "16 bölüm — referans + mini quiz",
     sections: data.grammarPack.sections.length,
   },
   {

@@ -2,6 +2,10 @@
 title German Coach
 cd /d "%~dp0"
 set "LOCK=%~dp0.german-coach.lock"
+set "SHELL_PID=%~dp0.german-coach-shell.pid"
+
+REM stop.bat bu CMD penceresini kapatabilsin diye PID kaydet
+for /f %%i in ('powershell -NoProfile -Command "(Get-CimInstance Win32_Process -Filter \"ProcessId=$PID\").ParentProcessId"') do echo %%i> "%SHELL_PID%"
 
 echo ========================================
 echo   German Coach - Tek pencere
@@ -47,7 +51,14 @@ set "DO_BUILD=0"
 if /i "%~1"=="--fast" goto :build_check_done
 if /i "%~1"=="--rebuild" set "DO_BUILD=1"
 if not exist "apps\web\.next\BUILD_ID" set "DO_BUILD=1"
-if not exist "apps\web\.next\static\css\*.css" set "DO_BUILD=1"
+if not exist "apps\web\.next\static\css" set "DO_BUILD=1"
+if "%DO_BUILD%"=="0" (
+  dir /b "apps\web\.next\static\css\*.css" >nul 2>&1
+  if errorlevel 1 (
+    dir /b /s "apps\web\.next\static\css\*.css" >nul 2>&1
+    if errorlevel 1 set "DO_BUILD=1"
+  )
+)
 goto :build_check_done
 
 :build_check_done
@@ -68,7 +79,8 @@ if "%DO_BUILD%"=="1" (
 )
 
 echo.
-echo   http://localhost:3000
+echo   Tek adres: http://localhost:3000
+echo   (Baska port kullanilmaz — 3000 doluysa once stop.bat)
 echo   CSS patlaksa: fix-css.bat  veya  start.bat --rebuild
 echo   Tarayici: Ctrl+F5
 echo.
@@ -78,4 +90,7 @@ node "..\..\node_modules\next\dist\bin\next" start -p 3000
 
 cd ..\..
 del "%LOCK%" 2>nul
-pause
+del "%SHELL_PID%" 2>nul
+echo Sunucu kapandi.
+timeout /t 2 >nul
+exit /b 0

@@ -56,8 +56,17 @@ export function getWordById(id: string) {
   );
 }
 
-export function getRandomWords(count: number, excludeIds: string[] = [], pack: "a1" | "timur" = "a1") {
-  const vocab = pack === "timur" ? getTimurVocabulary() : getA1Vocabulary();
+export function getRandomWords(
+  count: number,
+  excludeIds: string[] = [],
+  pack: "a1" | "a2" | "timur" = "a1"
+) {
+  const vocab =
+    pack === "timur"
+      ? getTimurVocabulary()
+      : pack === "a2"
+        ? getA2Vocabulary()
+        : getA1Vocabulary();
   const pool = vocab.words.filter((w) => !excludeIds.includes(w.id));
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, Math.min(count, shuffled.length));

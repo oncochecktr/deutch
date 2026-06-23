@@ -2,9 +2,20 @@ import type { UserProgress } from "./progress";
 import { countStudiedA1Words } from "./progress";
 import type { A1ReadinessReport } from "./readinessEngine";
 import { A1_TARGETS } from "./dailyGoals";
-import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer } from "./grundlagen";
+import {
+  getA1Core,
+  getPatternTrainer,
+  getConjugationMatrix,
+  getPossessiveTrainer,
+  getWordOrderTrainer,
+  getArtikelTrainer,
+  getDativTrainer,
+  getNegationTrainer,
+  getPrepositionsTrainer,
+} from "./grundlagen";
 import { getBankMeta } from "@german-coach/exams";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
+import { nextGrammarHref } from "./learningPathGrammar";
 
 export type LearningStageId = "words" | "grammar" | "goethe" | "exam";
 
@@ -40,27 +51,36 @@ function grammarProgress(progress: UserProgress): number {
   const conjugationTotal = getConjugationMatrix().verbs.length;
   const possessivesTotal = getPossessiveTrainer().sets.length;
   const wordOrderTotal = getWordOrderTrainer().sections.length + 1;
+  const artikelTotal = getArtikelTrainer().sets.length;
+  const dativTotal = getDativTrainer().sets.length;
+  const negationTotal = getNegationTrainer().sets.length;
+  const prepTotal = getPrepositionsTrainer().sets.length;
   const satzTotal = core.sentenceBuilder.exercises.length;
   const satzDone = progress.grundlagen.satzCompleted.length;
   const patternsDone = progress.grundlagen.patternsCompleted.length;
   const conjugationDone = progress.grundlagen.conjugationCompleted.length;
   const possessivesDone = progress.grundlagen.possessivesCompleted.length;
   const wordOrderDone = progress.grundlagen.wordOrderCompleted.length;
+  const artikelDone = progress.grundlagen.articlesCompleted.length;
+  const dativDone = progress.grundlagen.dativCompleted.length;
+  const negationDone = progress.grundlagen.negationCompleted.length;
+  const prepDone = progress.grundlagen.prepositionsCompleted.length;
   const packSections = core.grammarPack.sections.length;
   const packDone = Object.keys(progress.grundlagen.grammarPack).length;
-  const satzPct = satzTotal ? (satzDone / satzTotal) * 100 : 0;
-  const patternsPct = patternsTotal ? (patternsDone / patternsTotal) * 100 : 0;
-  const conjugationPct = conjugationTotal ? (conjugationDone / conjugationTotal) * 100 : 0;
-  const possessivesPct = possessivesTotal ? (possessivesDone / possessivesTotal) * 100 : 0;
-  const wordOrderPct = wordOrderTotal ? (wordOrderDone / wordOrderTotal) * 100 : 0;
-  const packPct = packSections ? (packDone / packSections) * 100 : 0;
+  const zeitPct = progress.grundlagen.zeitQuizBest;
+  const pct = (done: number, total: number) => (total ? (done / total) * 100 : 0);
   return Math.round(
-    satzPct * 0.12 +
-      conjugationPct * 0.25 +
-      possessivesPct * 0.15 +
-      wordOrderPct * 0.18 +
-      patternsPct * 0.2 +
-      packPct * 0.1
+    pct(satzDone, satzTotal) * 0.08 +
+      pct(conjugationDone, conjugationTotal) * 0.18 +
+      pct(possessivesDone, possessivesTotal) * 0.1 +
+      pct(wordOrderDone, wordOrderTotal) * 0.12 +
+      pct(patternsDone, patternsTotal) * 0.15 +
+      pct(artikelDone, artikelTotal) * 0.12 +
+      pct(dativDone, dativTotal) * 0.08 +
+      pct(negationDone, negationTotal) * 0.07 +
+      pct(prepDone, prepTotal) * 0.05 +
+      pct(packDone, packSections) * 0.1 +
+      zeitPct * 0.05
   );
 }
 
@@ -80,35 +100,6 @@ function examProgress(progress: UserProgress): number {
   if (real >= A1_TARGETS.realExamsMin) pct += 50;
   else pct += Math.round((real / A1_TARGETS.realExamsMin) * 50);
   return Math.min(100, pct);
-}
-
-function nextGrammarHref(progress: UserProgress): string {
-  const core = getA1Core();
-  const patternsTotal = getPatternTrainer().patterns.length;
-  const conjugationTotal = getConjugationMatrix().verbs.length;
-  const possessivesTotal = getPossessiveTrainer().sets.length;
-  const wordOrderTotal = getWordOrderTrainer().sections.length + 1;
-  const patternsDone = progress.grundlagen.patternsCompleted.length;
-  const conjugationDone = progress.grundlagen.conjugationCompleted.length;
-  const possessivesDone = progress.grundlagen.possessivesCompleted.length;
-  const wordOrderDone = progress.grundlagen.wordOrderCompleted.length;
-  const satzTotal = core.sentenceBuilder.exercises.length;
-  const satzDone = progress.grundlagen.satzCompleted.length;
-  const packSections = core.grammarPack.sections.length;
-  const packDone = Object.keys(progress.grundlagen.grammarPack).length;
-
-  if (satzDone < Math.ceil(satzTotal * 0.3)) return "/grundlagen/satz";
-  if (conjugationDone < Math.min(5, conjugationTotal)) return "/grundlagen/conjugation";
-  if (possessivesDone < Math.min(3, possessivesTotal)) return "/grundlagen/possessives";
-  if (wordOrderDone < Math.min(3, wordOrderTotal)) return "/grundlagen/word-order";
-  if (patternsDone < Math.ceil(patternsTotal * 0.2)) return "/grundlagen/patterns";
-  if (conjugationDone < conjugationTotal) return "/grundlagen/conjugation";
-  if (possessivesDone < possessivesTotal) return "/grundlagen/possessives";
-  if (wordOrderDone < wordOrderTotal) return "/grundlagen/word-order";
-  if (patternsDone < patternsTotal) return "/grundlagen/patterns";
-  if (packDone < packSections) return "/grundlagen/grammar-pack";
-  if (satzDone < satzTotal) return "/grundlagen/satz";
-  return "/grundlagen";
 }
 
 function nextGoetheHref(progress: UserProgress, report: A1ReadinessReport): string {

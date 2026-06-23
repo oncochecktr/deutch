@@ -3,7 +3,7 @@ title German Coach - Gelistirici Modu
 cd /d "%~dp0"
 
 echo ========================================
-echo   UYARI: dev.bat AYRI bir CMD acar!
+echo   UYARI: npm run dev da artik sadece 3000 kullanir.
 echo   Normal kullanim: sadece start.bat
 echo ========================================
 echo.

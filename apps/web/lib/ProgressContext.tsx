@@ -13,6 +13,7 @@ import {
 import { usePathname } from "next/navigation";
 import {
   DEFAULT_PROGRESS,
+  ensureTodayStudySession,
   loadProgress,
   normalizeProgress,
   saveProgress,
@@ -20,6 +21,7 @@ import {
   STORAGE_KEY,
   type UserProgress,
 } from "./progress";
+import { todayISO } from "./srs";
 
 interface ProgressContextValue {
   progress: UserProgress;
@@ -125,20 +127,37 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!hydrated) return;
-    if (!progress.sessionStartTime) {
-      updateProgress((p) =>
-        p.sessionStartTime ? p : { ...p, sessionStartTime: new Date().toISOString() }
-      );
-    }
+    updateProgress((p) => {
+      const withSession = ensureTodayStudySession(p);
+      if (!withSession.sessionStartTime) {
+        return { ...withSession, sessionStartTime: new Date().toISOString() };
+      }
+      return withSession === p && p.sessionStartTime ? p : withSession;
+    });
     const interval = setInterval(() => {
-      updateProgress((p) => ({
-        ...p,
-        dailyStats: { ...p.dailyStats, minutesStudied: p.dailyStats.minutesStudied + 1 },
-        totalStudyMinutes: p.totalStudyMinutes + 1,
-      }));
+      updateProgress((p) => {
+        const today = todayISO();
+        const nextMinutes = p.dailyStats.minutesStudied + 1;
+        if (p.dailyStats.date !== today) {
+          return ensureTodayStudySession({
+            ...p,
+            dailyStats: {
+              ...DEFAULT_PROGRESS.dailyStats,
+              date: today,
+              minutesStudied: 1,
+            },
+            totalStudyMinutes: p.totalStudyMinutes + 1,
+          });
+        }
+        return {
+          ...p,
+          dailyStats: { ...p.dailyStats, minutesStudied: nextMinutes },
+          totalStudyMinutes: p.totalStudyMinutes + 1,
+        };
+      });
     }, 60000);
     return () => clearInterval(interval);
-  }, [hydrated, progress.sessionStartTime, updateProgress]);
+  }, [hydrated, updateProgress]);
 
   const value = useMemo(
     () => ({ progress, updateProgress, flushProgress, hydrated, storageOk }),

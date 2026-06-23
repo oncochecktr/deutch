@@ -1,69 +1,100 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { IconBreak } from "@/components/icons";
-import { getBreakMessage, shouldShowBreakReminder } from "@/lib/progress";
+import {
+  getBreakMessage,
+  getStudyMinutesSinceBreak,
+  isActiveStudyRoute,
+  shouldShowBreakReminder,
+  snoozeBreakReminder,
+} from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
 
 export function BreakReminder() {
+  const pathname = usePathname();
   const { progress, updateProgress } = useProgress();
   const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  const shownBlockRef = useRef<string | null>(null);
+
+  const blockKey = progress.lastBreakAt ?? progress.sessionStartTime ?? "";
+
+  const dismiss = useCallback(() => {
+    setVisible(false);
+    updateProgress((p) => snoozeBreakReminder(p));
+  }, [updateProgress]);
 
   useEffect(() => {
-    const check = () => {
-      if (shouldShowBreakReminder(progress) && !dismissed) {
-        setVisible(true);
+    if (!isActiveStudyRoute(pathname)) {
+      setVisible(false);
+      return;
+    }
+
+    if (!shouldShowBreakReminder(progress)) {
+      setVisible(false);
+      shownBlockRef.current = null;
+      return;
+    }
+
+    if (shownBlockRef.current === blockKey) return;
+    shownBlockRef.current = blockKey;
+    setVisible(true);
+  }, [pathname, progress, blockKey]);
+
+  useEffect(() => {
+    if (!visible || !isActiveStudyRoute(pathname)) return;
+    const id = setInterval(() => {
+      if (!shouldShowBreakReminder(progress)) {
+        setVisible(false);
       }
-    };
-    check();
-    const id = setInterval(check, 30000);
+    }, 60000);
     return () => clearInterval(id);
-  }, [progress, dismissed]);
+  }, [visible, pathname, progress]);
 
   if (!visible) return null;
 
-  const mins = progress.dailyStats.minutesStudied;
+  const blockMin = getStudyMinutesSinceBreak(progress);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4 backdrop-blur-sm">
-      <div className="card-soft max-w-md p-6 text-center shadow-lg">
-        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-goethe-gold/20 text-goethe-blue">
-          <IconBreak size={28} />
+    <div
+      className="fixed z-40 max-w-[min(20rem,calc(100vw-2rem))] bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))] left-1/2 -translate-x-1/2 lg:bottom-auto lg:left-auto lg:right-4 lg:top-20 lg:translate-x-0"
+      style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
+    >
+      <div className="rounded-xl border border-goethe-gold/40 bg-cream-50/95 p-3 shadow-lg backdrop-blur-sm">
+        <div className="mb-2 flex items-start gap-2">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-goethe-gold/20 text-goethe-blue">
+            <IconBreak size={16} />
+          </span>
+          <div className="min-w-0 text-left">
+            <p className="text-xs font-semibold text-goethe-blue">Mola Zamanı</p>
+            <p className="mt-0.5 text-xs leading-snug text-sage-600">
+              {getBreakMessage(blockMin)}
+            </p>
+          </div>
         </div>
-        <h3 className="mb-2 text-lg font-semibold text-goethe-blue">Mola Zamanı</h3>
-        <p className="mb-4 text-sm text-sage-500">{getBreakMessage(mins)}</p>
-        <p className="mb-6 text-xs text-sage-400">
-          Goethe sınavına 12 saat disiplinli çalışma hedefin var — ama dinlenmeden verim düşer.
-        </p>
-        <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
+        <div className="flex gap-2">
           <button
             type="button"
-            className="btn-primary"
+            className="btn-primary flex-1 py-2 text-xs"
             onClick={() => {
-              updateProgress({
-                lastBreakAt: new Date().toISOString(),
-                sessionStartTime: new Date().toISOString(),
-              });
+              updateProgress((p) => snoozeBreakReminder(p));
               setVisible(false);
-              setDismissed(true);
-              setTimeout(() => setDismissed(false), progress.breakMinutes * 60000);
             }}
           >
-            {progress.breakMinutes} dk mola başlat
+            {progress.breakMinutes} dk mola
           </button>
-          <button
-            type="button"
-            className="btn-secondary"
-            onClick={() => {
-              setVisible(false);
-              setDismissed(true);
-              setTimeout(() => setDismissed(false), 5 * 60000);
-            }}
-          >
-            5 dk daha devam
+          <button type="button" className="btn-secondary flex-1 py-2 text-xs" onClick={dismiss}>
+            Devam et
           </button>
         </div>
+        <button
+          type="button"
+          className="mt-2 w-full text-[10px] text-sage-400 hover:text-sage-600"
+          onClick={dismiss}
+        >
+          Kapat
+        </button>
       </div>
     </div>
   );

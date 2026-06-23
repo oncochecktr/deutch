@@ -1,6 +1,9 @@
 /** Tarayıcı localStorage — kullanıcı başına (Chrome, Edge, Safari…) */
 
 export const PROGRESS_STORAGE_KEY = "german-coach-progress";
+export const STORAGE_DISMISS_KEY = "german-coach-storage-warn-dismiss";
+
+export { SPEAK_STORAGE_KEY } from "./speakStorage";
 
 export function isBrowserStorageAvailable(): boolean {
   if (typeof window === "undefined") return false;
@@ -18,12 +21,18 @@ export function getStorageUsageHint(): string {
   return "İlerlemen bu tarayıcıda saklanır (localStorage). Aynı cihaz ve tarayıcıda kaldığın yerden devam edersin.";
 }
 
+export function getStorageWarningText(): string {
+  return "Tüm ilerlemeniz (kelimeler, gramer, sınav) bu tarayıcının yerel deposunda tutulur. Tarayıcı verilerini temizlerseniz, gizli mod kullanırsanız veya farklı bir cihaz/tarayıcıya geçerseniz verileriniz kaybolur. API anahtarınız da yalnızca bu cihazda saklanır.";
+}
+
 const ROUTE_LABELS: Record<string, string> = {
   "/": "Panel",
   "/review": "Tekrar Motoru",
   "/cards": "Kelime Kartları",
   "/quiz": "Quiz",
   "/listen": "Dinleme",
+  "/konus-dinle": "Konuş-Dinle",
+  "/speak": "Sınıf",
   "/words": "Kelime Listesi",
   "/mesleki": "Mesleki Almanca",
   "/grundlagen": "A1 Temel Modüller",
@@ -31,9 +40,21 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/zahlen": "Zahlen Modülü",
   "/grundlagen/grammar": "Grammar A1",
   "/grundlagen/satz": "Satz Builder",
+  "/grundlagen/artikel": "Artikel Trainer",
+  "/grundlagen/dativ": "Dativ Trainer",
+  "/grundlagen/negation": "Negation Trainer",
+  "/grundlagen/prepositions": "Prepositions Trainer",
+  "/grundlagen/conjugation": "Conjugation Matrix",
+  "/grundlagen/possessives": "Possessive Trainer",
+  "/grundlagen/patterns": "Pattern Trainer",
   "/grundlagen/word-order": "Word Order Trainer",
   "/grundlagen/grammar-pack": "Grammar Pack",
+  "/grundlagen/roadmap": "Gramer Yol Haritası",
   "/grundlagen/form": "Goethe Form",
+  "/ayarlar": "Ayarlar",
+  "/blog": "Blog",
+  "/iletisim": "İletişim",
+  "/harita": "Öğrenme Haritası",
   "/exam": "Goethe Sınav",
   "/exam/bilgi": "Sınav Takvimi",
   "/exam/hoeren": "Hören",

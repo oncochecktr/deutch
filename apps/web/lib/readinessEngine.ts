@@ -6,7 +6,7 @@ import { calcGoethePct } from "./goetheProgress";
 import { A1_TARGETS, DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
 import { getSRSStats, todayISO } from "./srs";
 import { getTaskMeta, taskFields } from "./dailyTaskLabels";
-import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer } from "./grundlagen";
+import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer, getArtikelTrainer, getDativTrainer, getNegationTrainer, getPrepositionsTrainer } from "./grundlagen";
 
 export { A1_TARGETS, DEFAULT_DAILY_GOALS, type DailyGoals };
 
@@ -238,25 +238,22 @@ function calcGrammarScore(progress: UserProgress): number {
   const conjugationTotal = getConjugationMatrix().verbs.length;
   const possessivesTotal = getPossessiveTrainer().sets.length;
   const wordOrderTotal = getWordOrderTrainer().sections.length + 1;
+  const artikelTotal = getArtikelTrainer().sets.length;
+  const dativTotal = getDativTrainer().sets.length;
+  const negationTotal = getNegationTrainer().sets.length;
+  const prepTotal = getPrepositionsTrainer().sets.length;
   const patternsDone = progress.grundlagen.patternsCompleted.length;
   const conjugationDone = progress.grundlagen.conjugationCompleted.length;
   const possessivesDone = progress.grundlagen.possessivesCompleted.length;
   const wordOrderDone = progress.grundlagen.wordOrderCompleted.length;
+  const artikelDone = progress.grundlagen.articlesCompleted.length;
+  const dativDone = progress.grundlagen.dativCompleted.length;
+  const negationDone = progress.grundlagen.negationCompleted.length;
+  const prepDone = progress.grundlagen.prepositionsCompleted.length;
   const satzTotal = core.sentenceBuilder.exercises.length;
   const satzDone = progress.grundlagen.satzCompleted.length;
-  const satzPct = satzTotal ? Math.min(100, Math.round((satzDone / satzTotal) * 100)) : 0;
-  const patternsPct = patternsTotal
-    ? Math.min(100, Math.round((patternsDone / patternsTotal) * 100))
-    : 0;
-  const conjugationPct = conjugationTotal
-    ? Math.min(100, Math.round((conjugationDone / conjugationTotal) * 100))
-    : 0;
-  const possessivesPct = possessivesTotal
-    ? Math.min(100, Math.round((possessivesDone / possessivesTotal) * 100))
-    : 0;
-  const wordOrderPct = wordOrderTotal
-    ? Math.min(100, Math.round((wordOrderDone / wordOrderTotal) * 100))
-    : 0;
+  const pct = (done: number, total: number) =>
+    total ? Math.min(100, Math.round((done / total) * 100)) : 0;
 
   const sections = core.grammarPack.sections;
   let packPct = 0;
@@ -268,22 +265,34 @@ function calcGrammarScore(progress: UserProgress): number {
     packPct = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
   }
 
+  const zeitPct = progress.grundlagen.zeitQuizBest;
+
   if (
     satzDone === 0 &&
     patternsDone === 0 &&
     conjugationDone === 0 &&
     possessivesDone === 0 &&
     wordOrderDone === 0 &&
+    artikelDone === 0 &&
+    dativDone === 0 &&
+    negationDone === 0 &&
+    prepDone === 0 &&
+    zeitPct === 0 &&
     Object.keys(progress.grundlagen.grammarPack).length === 0
   )
     return 0;
   return Math.round(
-    satzPct * 0.12 +
-      conjugationPct * 0.25 +
-      possessivesPct * 0.15 +
-      wordOrderPct * 0.18 +
-      patternsPct * 0.2 +
-      packPct * 0.1
+    pct(satzDone, satzTotal) * 0.08 +
+      pct(conjugationDone, conjugationTotal) * 0.18 +
+      pct(possessivesDone, possessivesTotal) * 0.1 +
+      pct(wordOrderDone, wordOrderTotal) * 0.12 +
+      pct(patternsDone, patternsTotal) * 0.15 +
+      pct(artikelDone, artikelTotal) * 0.12 +
+      pct(dativDone, dativTotal) * 0.08 +
+      pct(negationDone, negationTotal) * 0.07 +
+      pct(prepDone, prepTotal) * 0.05 +
+      packPct * 0.1 +
+      zeitPct * 0.05
   );
 }
 
@@ -533,6 +542,30 @@ export function computeA1Readiness(
       done: ds.sprechenCards >= goals.sprechenCards,
       progress: `${ds.sprechenCards}/${goals.sprechenCards}`,
       priority: moduleScores.sprechen < A1_TARGETS.sprechenPct ? 3 : 6,
+    },
+    {
+      id: "speakClass",
+      ...taskFields("speakClass"),
+      href: "/speak",
+      done: (ds.speakSteps ?? 0) >= goals.speakSteps,
+      progress: `${ds.speakSteps ?? 0}/${goals.speakSteps}`,
+      priority: (ds.speakSteps ?? 0) >= goals.speakSteps ? 10 : 0,
+    },
+    {
+      id: "speakExercise",
+      ...taskFields("speakExercise"),
+      href: "/speak",
+      done: (ds.exercisesCompleted ?? 0) >= goals.exercises,
+      progress: `${ds.exercisesCompleted ?? 0}/${goals.exercises}`,
+      priority: (ds.exercisesCompleted ?? 0) >= goals.exercises ? 10 : 1,
+    },
+    {
+      id: "dialogues",
+      ...taskFields("dialogues"),
+      href: "/dialogues",
+      done: (ds.dialoguesRead ?? 0) >= goals.dialoguesRead,
+      progress: `${ds.dialoguesRead ?? 0}/${goals.dialoguesRead}`,
+      priority: (ds.dialoguesRead ?? 0) >= goals.dialoguesRead ? 10 : 2,
     },
     {
       id: "listen",

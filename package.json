@@ -20,7 +20,15 @@
     "build:patterns": "node scripts/build-a1-patterns.mjs",
     "build:conjugation": "node scripts/build-a1-conjugation.mjs",
     "build:possessives": "node scripts/build-a1-possessives.mjs",
-    "build:word-order": "node scripts/build-a1-word-order.mjs"
+    "build:articles": "node scripts/build-a1-articles.mjs",
+    "build:dativ": "node scripts/build-a1-dativ.mjs",
+    "build:negation": "node scripts/build-a1-negation.mjs",
+    "build:prepositions": "node scripts/build-a1-prepositions.mjs",
+    "patch:grammar": "node scripts/patch-a1-grammar-complete.mjs",
+    "patch:word-order": "node scripts/patch-a1-word-order.mjs",
+    "patch:satz-questions": "node scripts/patch-a1-satz-questions.mjs",
+    "build:word-order": "node scripts/build-a1-word-order.mjs",
+    "build:grundlagen": "npm run build:word-order && npm run build:possessives && npm run build:articles && npm run build:dativ && npm run build:negation && npm run build:prepositions && npm run build:conjugation && npm run patch:grammar && npm run patch:word-order && npm run patch:satz-questions"
   },
   "devDependencies": {
     "msedge-tts": "^2.0.5"

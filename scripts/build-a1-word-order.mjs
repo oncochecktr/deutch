@@ -22,7 +22,7 @@ function shuffle(arr, seed = 0) {
   return a;
 }
 
-function reorderEx(id, prompt_tr, answer_de, hint_tr, category = "statement") {
+function reorderEx(id, prompt_tr, answer_de, hint_tr, category = "statement", tier = 1) {
   const tokens = tok(answer_de);
   const distractors = shuffle(
     ["Ich", "Er", "Wir", "Sie", "ist", "bin", "nicht", "auch"].filter((d) => !tokens.includes(d)),
@@ -32,6 +32,7 @@ function reorderEx(id, prompt_tr, answer_de, hint_tr, category = "statement") {
     id,
     type: "reorder",
     category,
+    tier,
     prompt_tr,
     tokens,
     distractors,
@@ -40,7 +41,7 @@ function reorderEx(id, prompt_tr, answer_de, hint_tr, category = "statement") {
   };
 }
 
-function transformEx(id, statement_de, answer_de, prompt_tr, hint_tr, category = "yes_no") {
+function transformEx(id, statement_de, answer_de, prompt_tr, hint_tr, category = "yes_no", tier = 2) {
   const tokens = tok(answer_de);
   const stTokens = tok(statement_de);
   const distractors = shuffle(
@@ -51,6 +52,7 @@ function transformEx(id, statement_de, answer_de, prompt_tr, hint_tr, category =
     id,
     type: "transform",
     category,
+    tier,
     prompt_tr,
     statement_de,
     tokens,
@@ -60,11 +62,12 @@ function transformEx(id, statement_de, answer_de, prompt_tr, hint_tr, category =
   };
 }
 
-function gapEx(id, context_de, options, correct_index, prompt_tr, hint_tr, category = "w_question") {
+function gapEx(id, context_de, options, correct_index, prompt_tr, hint_tr, category = "w_question", tier = 3) {
   return {
     id,
     type: "gap",
     category,
+    tier,
     prompt_tr,
     context_de,
     options,
@@ -73,11 +76,12 @@ function gapEx(id, context_de, options, correct_index, prompt_tr, hint_tr, categ
   };
 }
 
-function compareEx(id, statement_de, question_de, options, correct_index, explanation_tr, category = "compare") {
+function compareEx(id, statement_de, question_de, options, correct_index, explanation_tr, category = "compare", tier = 3) {
   return {
     id,
     type: "compare",
     category,
+    tier,
     prompt_tr: "İki cümle arasındaki fark nedir?",
     statement_de,
     question_de,
@@ -94,7 +98,8 @@ function spotVerbEx(
   verb,
   extraDistractors,
   hint_tr,
-  category = "yes_no"
+  category = "yes_no",
+  tier = 2
 ) {
   const tokens = tok(answer_de);
   const stTokens = tok(statement_de).filter((t) => t !== ".");
@@ -107,6 +112,7 @@ function spotVerbEx(
     id,
     type: "spot_verb",
     category,
+    tier,
     prompt_tr: "Önce fiili (motoru) bul, sonra soruyu kur",
     statement_de,
     verb,
@@ -145,22 +151,22 @@ const statementDrill = [
 const YESNO_EXAMPLES = [
   { de: "David joggt oft.", tr: "David sık koşar." },
   { de: "Joggt David oft?", tr: "Motor joggt öne geçti — David sık koşar mı?" },
-  { de: "David arbeitet heute.", tr: "David bugün çalışıyor." },
-  { de: "Arbeitet David heute?", tr: "Fiil başta: David bugün çalışıyor mu?" },
-  { de: "Alex spielt Tennis.", tr: "Alex tenis oynuyor." },
-  { de: "Spielt Alex Tennis?", tr: "Spielt → öne: Alex tenis oynuyor mu?" },
+  { de: "Wir zahlen mit Karte.", tr: "Kartla ödüyoruz." },
+  { de: "Zahlen wir mit Karte?", tr: "Zahlen öne geçti — kartla mı ödüyoruz?" },
   { de: "Du kommst aus Istanbul.", tr: "İstanbul'dan geliyorsun." },
   { de: "Kommst du aus Istanbul?", tr: "Kommst başta — İstanbul'dan mısın?" },
+  { de: "Ihr wohnt in Berlin.", tr: "Berlin'de oturuyorsunuz." },
+  { de: "Wohnt ihr in Berlin?", tr: "Fiil başta: Berlin'de mi oturuyorsunuz?" },
 ];
 
 const yesNoDrill = [
   spotVerbEx(
     "wo-yn-01",
-    "David joggt oft.",
-    "Joggt David oft?",
-    "joggt",
-    ["Lehrerin", "Anna"],
-    "Normal: David joggt oft. → Soru: Joggt David oft?"
+    "Wir zahlen mit Karte.",
+    "Zahlen wir mit Karte?",
+    "zahlen",
+    ["Karte", "bar", "Bäckerei"],
+    "Normal: Wir zahlen mit Karte. → Soru: Zahlen wir mit Karte?"
   ),
   spotVerbEx(
     "wo-yn-02",
@@ -172,27 +178,27 @@ const yesNoDrill = [
   ),
   spotVerbEx(
     "wo-yn-03",
-    "David arbeitet heute.",
-    "Arbeitet David heute?",
-    "arbeitet",
-    ["heute", "Lehrer"],
-    "Arbeitet David heute?"
+    "Ihr wohnt in Berlin.",
+    "Wohnt ihr in Berlin?",
+    "wohnt",
+    ["Berlin", "Hamburg"],
+    "Ihr wohnt … → Wohnt ihr …?"
   ),
   spotVerbEx(
     "wo-yn-04",
-    "Alex spielt Tennis.",
-    "Spielt Alex Tennis?",
-    "spielt",
-    ["Tennis", "Fußball"],
-    "Spielt Alex Tennis?"
+    "Wir bezahlen bar.",
+    "Bezahlen wir bar?",
+    "bezahlen",
+    ["bar", "Karte"],
+    "Bezahlen wir bar? — fiil başta"
   ),
   spotVerbEx(
     "wo-yn-05",
-    "Du joggst oft.",
-    "Joggst du oft?",
-    "joggst",
-    ["oft", "Lehrerin"],
-    "Joggst du oft?"
+    "David joggt oft.",
+    "Joggt David oft?",
+    "joggt",
+    ["Lehrerin", "Anna"],
+    "Joggt David oft?"
   ),
   spotVerbEx(
     "wo-yn-06",
@@ -202,10 +208,10 @@ const yesNoDrill = [
     ["müde", "oft"],
     "Bist du müde?"
   ),
-  transformEx("wo-yn-07", "Du hast einen Bruder.", "Hast du einen Bruder?", "Soruya çevir", "Hast du …?"),
-  transformEx("wo-yn-08", "Du lernst Deutsch.", "Lernst du Deutsch?", "Soruya çevir", "Lernst du …?"),
-  transformEx("wo-yn-09", "Du wohnst in Berlin.", "Wohnst du in Berlin?", "Soruya çevir", "Wohnst du …?"),
-  transformEx("wo-yn-10", "Du spielst Fußball.", "Spielst du Fußball?", "Soruya çevir", "Spielst du …?"),
+  transformEx("wo-yn-07", "Wir zahlen mit Karte.", "Zahlen wir mit Karte?", "Soruya çevir", "Zahlen wir mit Karte?"),
+  transformEx("wo-yn-08", "Ihr lernt Deutsch.", "Lernt ihr Deutsch?", "Soruya çevir", "Lernt ihr …?"),
+  transformEx("wo-yn-09", "Sie wohnen in München.", "Wohnen Sie in München?", "Soruya çevir (Sie)", "Wohnen Sie …?"),
+  transformEx("wo-yn-10", "Wir essen zusammen.", "Essen wir zusammen?", "Soruya çevir", "Essen wir …?"),
 ];
 
 // --- Section 3: W-Fragen ---
@@ -228,6 +234,11 @@ const wDrill = [
   gapEx("wo-w-08", "___ wohnst du?", ["Wo", "Was", "Wie", "Woher"], 0, "Wo = nerede", "Wo wohnst du?"),
   gapEx("wo-w-09", "___ kommst du?", ["Woher", "Wo", "Was", "Wie"], 0, "Woher = nereden", "Woher kommst du?"),
   gapEx("wo-w-10", "___ spielst du Fußball?", ["Wann", "Wo", "Wie", "Was"], 0, "Wann = ne zaman", "Wann spielst du …?"),
+  reorderEx("wo-wq-extra-01", "Wohin sorusu", "Wohin gehst du?", "Wohin = nereye", "w_question", 3),
+  reorderEx("wo-wq-extra-02", "Woher sorusu", "Woher kommst du?", "Woher = nereden", "w_question", 3),
+  reorderEx("wo-wq-extra-03", "Warum sorusu", "Warum lernst du Deutsch?", "Warum = neden", "w_question", 3),
+  reorderEx("wo-wq-extra-04", "Wann sorusu", "Wann beginnt der Kurs?", "Wann = ne zaman", "w_question", 3),
+  reorderEx("wo-wq-extra-05", "Wer sorusu", "Wer ist das?", "Wer = kim", "w_question", 3),
 ];
 
 // --- Section 4: Pattern recognition ---
@@ -331,10 +342,38 @@ const compareDrill = [
   ),
 ];
 
+const CONJUNCTION_EXAMPLES = [
+  { de: "Ich lerne Deutsch, aber es ist schwer.", tr: "Almanca öğreniyorum ama zor." },
+  { de: "Er isst Brot und trinkt Kaffee.", tr: "Ekmek yiyor ve kahve içiyor." },
+  { de: "Ich bleibe zu Hause, denn ich bin müde.", tr: "Evde kalıyorum çünkü yorgunum." },
+];
+
+const conjunctionDrill = [
+  reorderEx("wo-kon-01", "und ile birleştir", "Er isst Brot und trinkt Kaffee.", "… und …", "statement", 4),
+  reorderEx("wo-kon-02", "aber ile birleştir", "Ich lerne Deutsch, aber es ist schwer.", "… , aber …", "statement", 4),
+  reorderEx("wo-kon-03", "denn ile birleştir", "Ich bleibe zu Hause, denn ich bin müde.", "… , denn …", "statement", 4),
+  reorderEx("wo-kon-04", "Sırayı kur", "Sie kommt und er geht.", "und bağlar", "statement", 4),
+  reorderEx("wo-kon-05", "aber — olumsuz ikinci cümle", "Ich habe Zeit, aber ich komme nicht.", "… , aber …", "statement", 4),
+  reorderEx("wo-kon-06", "und — iki fiil", "Wir zahlen und gehen.", "… und …", "statement", 4),
+  reorderEx("wo-kon-07", "denn — sebep", "Ich kaufe Brot, denn ich habe Hunger.", "… , denn …", "statement", 4),
+  reorderEx("wo-kon-08", "aber — zıtlık", "Er isst gern, aber er kocht nicht.", "… , aber …", "statement", 4),
+  reorderEx("wo-kon-09", "und — alışveriş", "Ich kaufe Brot und Milch.", "… und …", "statement", 4),
+  reorderEx("wo-kon-10", "denn — yorgunluk", "Sie bleibt zu Hause, denn sie ist krank.", "… , denn …", "statement", 4),
+];
+
+const STUFE = {
+  statement: { tier: 1, tierLabel: "Stufe 1 · Kolay" },
+  yes_no: { tier: 2, tierLabel: "Stufe 2 · Orta" },
+  w_question: { tier: 3, tierLabel: "Stufe 3 · Orta-Zor" },
+  compare: { tier: 3, tierLabel: "Stufe 3 · Orta-Zor" },
+  conjunction: { tier: 4, tierLabel: "Stufe 4 · Zor" },
+};
+
 const sections = [
   {
     id: "statement",
     order: 1,
+    ...STUFE.statement,
     title: "Normal Cümle",
     titleTr: "Düz cümle (SVO)",
     rule_de: "Subjekt + Verb + Rest",
@@ -345,6 +384,7 @@ const sections = [
   {
     id: "yes_no",
     order: 2,
+    ...STUFE.yes_no,
     title: "Ja/Nein Soruları",
     titleTr: "Evet/Hayır soruları",
     rule_de: "Verb + Subjekt + Rest",
@@ -355,6 +395,7 @@ const sections = [
   {
     id: "w_question",
     order: 3,
+    ...STUFE.w_question,
     title: "W-Fragen",
     titleTr: "Soru kelimeli sorular",
     rule_de: "W-Wort + Verb + Subjekt",
@@ -365,6 +406,7 @@ const sections = [
   {
     id: "compare",
     order: 4,
+    ...STUFE.compare,
     title: "Pattern Recognition",
     titleTr: "Kalıp farkı",
     rule_de: "Aussage: Subjekt zuerst · Frage: Verb zuerst",
@@ -374,6 +416,17 @@ const sections = [
       { de: "Wie heißt du?", tr: "W-Frage + fiil + özne" },
     ],
     drill: compareDrill,
+  },
+  {
+    id: "conjunction",
+    order: 5,
+    ...STUFE.conjunction,
+    title: "Bağlaçlar",
+    titleTr: "und / aber / denn",
+    rule_de: "Hauptsatz + Konjunktion + Hauptsatz",
+    rule_tr: "Cümle + bağlaç + cümle",
+    examples: CONJUNCTION_EXAMPLES,
+    drill: conjunctionDrill,
   },
 ];
 
@@ -406,6 +459,12 @@ for (const [de, tr] of MORE_STATEMENTS) {
 }
 
 const MORE_YESNO = [
+  ["Wir zahlen mit Karte.", "Zahlen wir mit Karte?"],
+  ["Ihr bezahlt bar.", "Bezahlt ihr bar?"],
+  ["Wir essen zusammen.", "Essen wir zusammen?"],
+  ["Ihr wohnt in Berlin.", "Wohnt ihr in Berlin?"],
+  ["Sie wohnen hier.", "Wohnen Sie hier?"],
+  ["Wir lernen Deutsch.", "Lernen wir Deutsch?"],
   ["Du isst Pizza.", "Isst du Pizza?"],
   ["Du trinkst Kaffee.", "Trinkst du Kaffee?"],
   ["Du liest heute.", "Liest du heute?"],
@@ -569,10 +628,12 @@ for (const de of EXTRA_REORDER2) {
 }
 
 function validate(data) {
-  if (data.sections.length !== 4) throw new Error("Expected 4 sections");
+  if (data.sections.length !== 5) throw new Error(`Expected 5 sections, got ${data.sections.length}`);
   const ids = new Set();
   for (const s of data.sections) {
-    if (s.drill.length !== 10) throw new Error(`${s.id}: need 10 drill`);
+    const minDrill = s.id === "w_question" ? 15 : 10;
+    if (s.drill.length < minDrill) throw new Error(`${s.id}: need ${minDrill} drill, got ${s.drill.length}`);
+    if (!s.tier || !s.tierLabel) throw new Error(`${s.id}: missing tier metadata`);
     for (const e of s.drill) {
       if (ids.has(e.id)) throw new Error(`Duplicate ${e.id}`);
       ids.add(e.id);

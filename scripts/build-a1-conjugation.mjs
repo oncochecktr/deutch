@@ -30,6 +30,18 @@ const VERB_FORMS = {
   essen: ["esse", "isst", "isst", "isst", "isst", "essen", "esst", "essen", "essen"],
   trinken: ["trinke", "trinkst", "trinkt", "trinkt", "trinkt", "trinken", "trinkt", "trinken", "trinken"],
   sprechen: ["spreche", "sprichst", "spricht", "spricht", "spricht", "sprechen", "sprecht", "sprechen", "sprechen"],
+  koennen: ["kann", "kannst", "kann", "kann", "kann", "koennen", "koennt", "koennen", "koennen"],
+  muessen: ["muss", "musst", "muss", "muss", "muss", "muessen", "muesst", "muessen", "muessen"],
+  moechten: ["moechte", "moechtest", "moechte", "moechte", "moechte", "moechten", "moechtet", "moechten", "moechten"],
+  wollen: ["will", "willst", "will", "will", "will", "wollen", "wollt", "wollen", "wollen"],
+  duerfen: ["darf", "darfst", "darf", "darf", "darf", "duerfen", "duerft", "duerfen", "duerfen"],
+  kaufen: ["kaufe", "kaufst", "kauft", "kauft", "kauft", "kaufen", "kauft", "kaufen", "kaufen"],
+  spielen: ["spiele", "spielst", "spielt", "spielt", "spielt", "spielen", "spielt", "spielen", "spielen"],
+  heissen: ["heisse", "heisst", "heisst", "heisst", "heisst", "heissen", "heisst", "heissen", "heissen"],
+  fahren: ["fahre", "faehrst", "faehrt", "faehrt", "faehrt", "fahren", "fahrt", "fahren", "fahren"],
+  nehmen: ["nehme", "nimmst", "nimmt", "nimmt", "nimmt", "nehmen", "nehmt", "nehmen", "nehmen"],
+  sehen: ["sehe", "siehst", "sieht", "sieht", "sieht", "sehen", "seht", "sehen", "sehen"],
+  schlafen: ["schlafe", "schlaefst", "schlaeft", "schlaeft", "schlaeft", "schlafen", "schlaft", "schlafen", "schlafen"],
 };
 
 const VERB_META = [
@@ -44,6 +56,18 @@ const VERB_META = [
   { id: "essen", infinitive: "essen", tr: "yemek", order: 9 },
   { id: "trinken", infinitive: "trinken", tr: "içmek", order: 10 },
   { id: "sprechen", infinitive: "sprechen", tr: "konuşmak", order: 11 },
+  { id: "koennen", infinitive: "können", tr: "yapabilmek", order: 12 },
+  { id: "muessen", infinitive: "müssen", tr: "zorunda olmak", order: 13 },
+  { id: "moechten", infinitive: "möchten", tr: "istemek (kibar)", order: 14 },
+  { id: "wollen", infinitive: "wollen", tr: "istemek", order: 15 },
+  { id: "duerfen", infinitive: "dürfen", tr: "yapabilmek (izin)", order: 16 },
+  { id: "kaufen", infinitive: "kaufen", tr: "satın almak", order: 17 },
+  { id: "spielen", infinitive: "spielen", tr: "oynamak", order: 18 },
+  { id: "heissen", infinitive: "heißen", tr: "adını … koymak", order: 19 },
+  { id: "fahren", infinitive: "fahren", tr: "gitmek (araçla)", order: 20 },
+  { id: "nehmen", infinitive: "nehmen", tr: "almak", order: 21 },
+  { id: "sehen", infinitive: "sehen", tr: "görmek", order: 22 },
+  { id: "schlafen", infinitive: "schlafen", tr: "uyumak", order: 23 },
 ];
 
 const EXAMPLE_TEMPLATES = {
@@ -170,6 +194,27 @@ const EXAMPLE_TEMPLATES = {
   },
 };
 
+function defaultExamples(verbId, infinitive, tr) {
+  const tpl = EXAMPLE_TEMPLATES.machen;
+  const out = {};
+  for (const p of PERSON_META) {
+    const base = tpl[p.personId];
+    if (base) {
+      out[p.personId] = {
+        de: base.de.replace(/mach\w*/gi, VERB_FORMS[verbId][PERSON_META.indexOf(p)]),
+        tr: `${tr} — ${p.pronoun_tr}`,
+      };
+    }
+  }
+  return out;
+}
+
+for (const v of VERB_META) {
+  if (!EXAMPLE_TEMPLATES[v.id]) {
+    EXAMPLE_TEMPLATES[v.id] = defaultExamples(v.id, v.infinitive, v.tr);
+  }
+}
+
 const DRILL_CONTEXT = {
   sein: { du: "Du ___ Student.", er: "Er ___ Lehrer.", sie_she: "Sie ___ Ärztin.", es: "Es ___ kalt.", ich: "Ich ___ müde." },
   haben: { du: "Du ___ Zeit.", er: "Er ___ ein Auto.", sie_she: "Sie ___ Hunger.", ich: "Ich ___ Hunger.", wir: "Wir ___ einen Hund." },
@@ -182,6 +227,18 @@ const DRILL_CONTEXT = {
   essen: { du: "Du ___ Pizza.", er: "Er ___ Brot.", sie_she: "Sie ___ Salat.", ich: "Ich ___ Brot." },
   trinken: { du: "Du ___ Kaffee.", er: "Er ___ Tee.", sie_she: "Sie ___ Wasser.", ich: "Ich ___ Wasser." },
   sprechen: { du: "Du ___ Türkisch.", er: "Er ___ Englisch.", sie_she: "Sie ___ langsam.", ich: "Ich ___ Deutsch." },
+  koennen: { du: "Du ___ mir helfen.", er: "Er ___ Deutsch sprechen.", ich: "Ich ___ Deutsch lernen.", wir: "Wir ___ helfen." },
+  muessen: { du: "Du ___ arbeiten.", er: "Er ___ lernen.", ich: "Ich ___ arbeiten.", wir: "Wir ___ gehen." },
+  moechten: { du: "Du ___ Wasser.", ich: "Ich ___ Kaffee.", er: "Er ___ Tee.", wir: "Wir ___ essen." },
+  wollen: { du: "Du ___ nach Hause.", ich: "Ich ___ lernen.", er: "Er ___ schlafen.", wir: "Wir ___ gehen." },
+  duerfen: { du: "Du ___ hereinkommen.", ich: "Ich ___ gehen.", er: "Er ___ rauchen.", wir: "Wir ___ helfen." },
+  kaufen: { du: "Du ___ Brot.", ich: "Ich ___ einen Apfel.", er: "Er ___ Milch.", wir: "Wir ___ Obst." },
+  spielen: { du: "Du ___ Fußball.", ich: "Ich ___ Tennis.", er: "Er ___ gern.", wir: "Wir ___ zusammen." },
+  heissen: { du: "Du ___ Timur.", ich: "Ich ___ Anna.", er: "Er ___ Max.", wir: "Wir ___ Freunde." },
+  fahren: { du: "Du ___ mit dem Bus.", ich: "Ich ___ nach Hause.", er: "Er ___ schnell.", wir: "Wir ___ nach Berlin." },
+  nehmen: { du: "Du ___ Platz.", ich: "Ich ___ den Bus.", er: "Er ___ das Buch.", wir: "Wir ___ Kaffee." },
+  sehen: { du: "Du ___ den Film.", ich: "Ich ___ den Mann.", er: "Er ___ fern.", wir: "Wir ___ uns." },
+  schlafen: { du: "Du ___ viel.", ich: "Ich ___ gut.", er: "Er ___ spät.", wir: "Wir ___ heute." },
 };
 
 function shuffle(arr, seed) {
@@ -271,20 +328,17 @@ const verbs = VERB_META.map((v) => {
 const allDrills = verbs.flatMap((v) => v.drills);
 
 function validate(data) {
-  if (data.verbs.length !== 11) throw new Error(`Expected 11 verbs, got ${data.verbs.length}`);
-  let rows = 0;
+  const n = data.verbs.length;
+  if (n < 11) throw new Error(`Expected at least 11 verbs, got ${n}`);
   const ids = new Set();
   for (const v of data.verbs) {
     if (v.rows.length !== 9) throw new Error(`${v.id}: expected 9 rows`);
-    rows += v.rows.length;
     if (v.drills.length !== 10) throw new Error(`${v.id}: expected 10 drills`);
     for (const d of v.drills) {
       if (ids.has(d.id)) throw new Error(`Duplicate drill ${d.id}`);
       ids.add(d.id);
     }
   }
-  if (rows !== 99) throw new Error(`Expected 99 rows, got ${rows}`);
-  if (allDrills.length !== 110) throw new Error(`Expected 110 drills, got ${allDrills.length}`);
 }
 
 const output = {
@@ -292,7 +346,7 @@ const output = {
   level: "A1",
   title: "Conjugation Matrix",
   titleTr: "Fiil Çekim Matrisi",
-  description: "11 A1 fiili × 9 kişi — du/er/sie ağırlıklı drill",
+  description: "A1 fiilleri + Modalverben × 9 kişi — du/er/sie ağırlıklı drill",
   passThreshold: 8,
   drillsPerVerb: 10,
   verbs,

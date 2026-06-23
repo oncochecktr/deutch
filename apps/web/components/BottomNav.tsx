@@ -10,10 +10,10 @@ import { getSRSStats } from "@/lib/srs";
 
 const ITEMS: { href: string; label: string; icon: NavIconKey; match?: (p: string) => boolean }[] = [
   { href: "/", label: "Panel", icon: "panel", match: (p) => p === "/" },
+  { href: "/konus-dinle", label: "Konuş", icon: "konusDinle", match: (p) => p.startsWith("/konus-dinle") },
   { href: "/review", label: "Tekrar", icon: "review", match: (p) => p.startsWith("/review") },
   { href: "/cards", label: "Kart", icon: "cards", match: (p) => p.startsWith("/cards") },
   { href: "/exam", label: "Sınav", icon: "exam", match: (p) => p.startsWith("/exam") },
-  { href: "/listen", label: "Dinle", icon: "listen", match: (p) => p.startsWith("/listen") },
 ];
 
 export function BottomNav() {

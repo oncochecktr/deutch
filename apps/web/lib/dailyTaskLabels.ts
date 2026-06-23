@@ -40,6 +40,21 @@ export const DAILY_TASK_META: Record<string, DailyTaskMeta> = {
     subtitle: "Kulaklıkla yürürken kelime ve cümle dinle — telaffuz alışkanlığı",
     shortLabel: "Dinleme (MP3)",
   },
+  speakClass: {
+    title: "Sınıf — Profesör",
+    subtitle: "Tahtada 1 adım bitir (öğret → dene → cevap) — 60 gün A1+A2 yolu",
+    shortLabel: "Sınıf adımı",
+  },
+  speakExercise: {
+    title: "Sınıf — Egzersiz",
+    subtitle: "Profesörle kelime, yazma ve konuşma egzersizi — A1/A2/B1",
+    shortLabel: "Egzersiz alanı",
+  },
+  dialogues: {
+    title: "Hikayeler & Diyaloglar",
+    subtitle: "Satır satır oku — gizli Türkçe çeviri, ses, anlama soruları",
+    shortLabel: "Hikaye oku",
+  },
   exam: {
     title: "Deneme sınavı (Prüfung)",
     subtitle: "Tam A1 simülasyonu — Hören, Lesen, Schreiben, Sprechen (Goethe · TELC · ÖSD)",

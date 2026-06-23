@@ -1,0 +1,268 @@
+[
+  {
+    "id": "d_a1_01",
+    "level": "A1",
+    "title_de": "Tims kleine Frage",
+    "title_tr": "Tim'in küçük sorusu",
+    "theme": "Komik · Familie · Fußball",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "kind": "narration", "text_de": "Tim und sein Papa sind zu Hause. Papa sitzt vor dem Fernseher.", "text_tr": "Tim ve babası evde. Baba televizyonun önünde oturuyor." },
+      { "id": "l02", "speaker": "Tim", "kind": "dialogue", "text_de": "Papa, eine kleine Frage.", "text_tr": "Baba, küçük bir sorum var." },
+      { "id": "l03", "speaker": "Papa", "kind": "dialogue", "text_de": "Es tut mir leid, Tim. Ich kann jetzt nicht.", "text_tr": "Üzgünüm Tim. Şimdi yapamam." },
+      { "id": "l04", "speaker": "Papa", "kind": "dialogue", "text_de": "Das Fußballspiel ist sehr aufregend.", "text_tr": "Futbol maçı çok heyecanlı." },
+      { "id": "l05", "speaker": "Papa", "kind": "dialogue", "text_de": "Ja! Da drüben! Komm!", "text_tr": "Evet! Orada! Gel!" },
+      { "id": "l06", "speaker": "Tim", "kind": "dialogue", "text_de": "Ich brauche Geld…", "text_tr": "Paraya ihtiyacım var…" },
+      { "id": "l07", "speaker": "Papa", "kind": "dialogue", "text_de": "Ja!", "text_tr": "Evet!" },
+      { "id": "l08", "speaker": "Tim", "kind": "dialogue", "text_de": "Wirklich?", "text_tr": "Gerçekten mi?" },
+      { "id": "l09", "speaker": "Tim", "kind": "dialogue", "text_de": "Ich möchte eine Pizza bestellen.", "text_tr": "Pizza sipariş etmek istiyorum." },
+      { "id": "l10", "speaker": "Papa", "kind": "dialogue", "text_de": "Schnell! Komm! Ja! Jetzt!", "text_tr": "Çabuk! Gel! Evet! Hemen!" },
+      { "id": "l11", "speaker": "Tim", "kind": "dialogue", "text_de": "Und ich möchte ein neues Videospiel.", "text_tr": "Ve yeni bir video oyunu istiyorum." },
+      { "id": "l12", "speaker": "Papa", "kind": "dialogue", "text_de": "Ja!", "text_tr": "Evet!" },
+      { "id": "l13", "speaker": "Tim", "kind": "dialogue", "text_de": "Und ich gehe am Montag nicht in die Schule!", "text_tr": "Ve pazartesi okula gitmeyeceğim!" },
+      { "id": "l14", "speaker": "Papa", "kind": "dialogue", "text_de": "Ja! Super!", "text_tr": "Evet! Süper!" },
+      { "id": "l15", "speaker": "Tim", "kind": "dialogue", "text_de": "Cool, das ist einfach!", "text_tr": "Harika, bu çok kolay!" },
+      { "id": "l16", "speaker": "Tim", "kind": "dialogue", "text_de": "Ich gehe jetzt in das Kaufhaus!", "text_tr": "Şimdi alışveriş merkezine gidiyorum!" },
+      { "id": "l17", "speaker": "Papa", "kind": "dialogue", "text_de": "Ja! Ja! Ja!", "text_tr": "Evet! Evet! Evet!" },
+      { "id": "l18", "speaker": "Tim", "kind": "dialogue", "text_de": "Bis später, Papa!", "text_tr": "Sonra görüşürüz baba!" },
+      { "id": "l19", "kind": "narration", "text_de": "Das Fußballspiel ist vorbei. Papa schaut sich um.", "text_tr": "Futbol maçı bitti. Baba etrafına bakınıyor." },
+      { "id": "l20", "speaker": "Papa", "kind": "dialogue", "text_de": "OK… was möchtest du, Tim?", "text_tr": "Tamam… ne istiyorsun Tim?" },
+      { "id": "l21", "speaker": "Papa", "kind": "dialogue", "text_de": "Tim? Wo bist du?", "text_tr": "Tim? Neredesin?" }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Tim'in babası kendini neye o kadar kaptırmıştı ki Tim'i duymadı?",
+        "options_tr": ["Pizza siparişine", "Futbol maçına", "Video oyununa", "Okula"],
+        "correct_index": 1,
+        "explanation_tr": "Papa sagt: Das Fußballspiel ist sehr aufregend."
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Tim en son nereye gitmeye karar verdi?",
+        "options_tr": ["Okula", "Fußballplatz", "Kaufhaus", "Pizzeria"],
+        "correct_index": 2
+      },
+      {
+        "id": "c03",
+        "prompt_tr": "Papa maç bitince ne soruyor?",
+        "options_tr": ["Wo ist die Pizza?", "Was möchtest du?", "Wann ist Schule?", "Wer spielt Fußball?"],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "id": "d_a1_02",
+    "level": "A1",
+    "title_de": "Im Supermarkt",
+    "title_tr": "Süpermarkette",
+    "theme": "Einkaufen · Zahlen",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Kunde", "kind": "dialogue", "text_de": "Guten Tag! Ich suche Milch.", "text_tr": "İyi günler! Süt arıyorum." },
+      { "id": "l02", "speaker": "Verkäuferin", "kind": "dialogue", "text_de": "Die Milch ist dort, links.", "text_tr": "Süt orada, solda." },
+      { "id": "l03", "speaker": "Kunde", "kind": "dialogue", "text_de": "Danke. Ich brauche auch Brot.", "text_tr": "Teşekkürler. Ekmek de lazım." },
+      { "id": "l04", "speaker": "Verkäuferin", "kind": "dialogue", "text_de": "Das Brot kostet zwei Euro.", "text_tr": "Ekmek iki euro." },
+      { "id": "l05", "speaker": "Kunde", "kind": "dialogue", "text_de": "Und die Milch?", "text_tr": "Süt ne kadar?" },
+      { "id": "l06", "speaker": "Verkäuferin", "kind": "dialogue", "text_de": "Eins Euro fünfzig.", "text_tr": "Bir euro elli." },
+      { "id": "l07", "speaker": "Kunde", "kind": "dialogue", "text_de": "Gut. Ich nehme beides.", "text_tr": "Tamam. İkisini de alıyorum." },
+      { "id": "l08", "speaker": "Verkäuferin", "kind": "dialogue", "text_de": "Das macht drei Euro fünfzig.", "text_tr": "Toplam üç euro elli." },
+      { "id": "l09", "speaker": "Kunde", "kind": "dialogue", "text_de": "Hier, bitte.", "text_tr": "Buyurun." },
+      { "id": "l10", "speaker": "Verkäuferin", "kind": "dialogue", "text_de": "Danke! Schönen Tag noch!", "text_tr": "Teşekkürler! İyi günler!" }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Müşteri ne arıyor?",
+        "options_tr": ["Brot", "Milch", "Käse", "Wasser"],
+        "correct_index": 1
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Toplam ne kadar?",
+        "options_tr": ["2,50 €", "3,50 €", "4,00 €", "1,50 €"],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "id": "d_a1_03",
+    "level": "A1",
+    "title_de": "In der Schule",
+    "title_tr": "Okulda",
+    "theme": "Schule · Uhrzeit",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Lehrer", "kind": "dialogue", "text_de": "Guten Morgen, Klasse!", "text_tr": "Günaydın sınıf!" },
+      { "id": "l02", "speaker": "Schüler", "kind": "dialogue", "text_de": "Guten Morgen, Herr Schmidt!", "text_tr": "Günaydın Bay Schmidt!" },
+      { "id": "l03", "speaker": "Lehrer", "kind": "dialogue", "text_de": "Wie spät ist es?", "text_tr": "Saat kaç?" },
+      { "id": "l04", "speaker": "Anna", "kind": "dialogue", "text_de": "Es ist acht Uhr.", "text_tr": "Saat sekiz." },
+      { "id": "l05", "speaker": "Lehrer", "kind": "dialogue", "text_de": "Gut. Heute lernen wir Zahlen.", "text_tr": "Güzel. Bugün sayıları öğreniyoruz." },
+      { "id": "l06", "speaker": "Lehrer", "kind": "dialogue", "text_de": "Öffnet bitte das Buch auf Seite zehn.", "text_tr": "Lütfen kitabı onuncu sayfada açın." },
+      { "id": "l07", "speaker": "Max", "kind": "dialogue", "text_de": "Entschuldigung, ich habe mein Buch vergessen.", "text_tr": "Özür dilerim, kitabımı unuttum." },
+      { "id": "l08", "speaker": "Lehrer", "kind": "dialogue", "text_de": "Kein Problem. Schau mit Anna.", "text_tr": "Sorun değil. Anna ile bak." },
+      { "id": "l09", "kind": "narration", "text_de": "Die Stunde beginnt um acht Uhr.", "text_tr": "Ders saat sekizde başlıyor." }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Saat kaç?",
+        "options_tr": ["7:00", "8:00", "9:00", "10:00"],
+        "correct_index": 1
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Max ne unutmuş?",
+        "options_tr": ["Stift", "Buch", "Tasche", "Heft"],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "id": "d_a1_04",
+    "level": "A1",
+    "title_de": "Meine Familie",
+    "title_tr": "Ailem",
+    "theme": "Familie · Vorstellen",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Aylin", "kind": "dialogue", "text_de": "Hallo! Ich heiße Aylin.", "text_tr": "Merhaba! Benim adım Aylin." },
+      { "id": "l02", "speaker": "Tom", "kind": "dialogue", "text_de": "Hi! Ich bin Tom. Woher kommst du?", "text_tr": "Selam! Ben Tom. Nerelisin?" },
+      { "id": "l03", "speaker": "Aylin", "kind": "dialogue", "text_de": "Ich komme aus der Türkei.", "text_tr": "Türkiye'den geliyorum." },
+      { "id": "l04", "speaker": "Aylin", "kind": "dialogue", "text_de": "Ich wohne in Berlin mit meiner Familie.", "text_tr": "Berlin'de ailemle yaşıyorum." },
+      { "id": "l05", "speaker": "Tom", "kind": "dialogue", "text_de": "Wie groß ist deine Familie?", "text_tr": "Ailen kaç kişi?" },
+      { "id": "l06", "speaker": "Aylin", "kind": "dialogue", "text_de": "Ich habe einen Bruder und eine Schwester.", "text_tr": "Bir erkek kardeşim ve bir kız kardeşim var." },
+      { "id": "l07", "speaker": "Tom", "kind": "dialogue", "text_de": "Schön! Meine Familie ist klein.", "text_tr": "Güzel! Benim ailem küçük." },
+      { "id": "l08", "speaker": "Tom", "kind": "dialogue", "text_de": "Nur meine Mutter und ich.", "text_tr": "Sadece annem ve ben." }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Aylin nerede yaşıyor?",
+        "options_tr": ["Istanbul", "Ankara", "Berlin", "Hamburg"],
+        "correct_index": 2
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Aylin'in kaç kardeşi var?",
+        "options_tr": ["0", "1", "2", "3"],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "id": "d_a1_05",
+    "level": "A1",
+    "title_de": "Im Café",
+    "title_tr": "Kafede",
+    "theme": "Restaurant · Bestellen",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Kellner", "kind": "dialogue", "text_de": "Guten Tag! Was möchten Sie?", "text_tr": "İyi günler! Ne istersiniz?" },
+      { "id": "l02", "speaker": "Gast", "kind": "dialogue", "text_de": "Einen Kaffee, bitte.", "text_tr": "Bir kahve, lütfen." },
+      { "id": "l03", "speaker": "Kellner", "kind": "dialogue", "text_de": "Mit Milch oder ohne?", "text_tr": "Sütlü mü sütsüz mü?" },
+      { "id": "l04", "speaker": "Gast", "kind": "dialogue", "text_de": "Mit Milch, danke.", "text_tr": "Sütlü, teşekkürler." },
+      { "id": "l05", "speaker": "Kellner", "kind": "dialogue", "text_de": "Noch etwas?", "text_tr": "Başka bir şey?" },
+      { "id": "l06", "speaker": "Gast", "kind": "dialogue", "text_de": "Ja, ein Stück Kuchen.", "text_tr": "Evet, bir dilim kek." },
+      { "id": "l07", "speaker": "Kellner", "kind": "dialogue", "text_de": "Gern. Das macht vier Euro.", "text_tr": "Tabii. Toplam dört euro." },
+      { "id": "l08", "speaker": "Gast", "kind": "dialogue", "text_de": "Hier ist das Geld.", "text_tr": "Parayı buyurun." }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Müşteri ne içiyor?",
+        "options_tr": ["Tee", "Wasser", "Kaffee", "Saft"],
+        "correct_index": 2
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Toplam ne kadar?",
+        "options_tr": ["2 €", "3 €", "4 €", "5 €"],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "id": "d_a1_06",
+    "level": "A1",
+    "title_de": "Der Bus kommt",
+    "title_tr": "Otobüs geliyor",
+    "theme": "Verkehr · Uhrzeit",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Frau", "kind": "dialogue", "text_de": "Entschuldigung, wann kommt der Bus?", "text_tr": "Affedersiniz, otobüs ne zaman geliyor?" },
+      { "id": "l02", "speaker": "Mann", "kind": "dialogue", "text_de": "Um neun Uhr.", "text_tr": "Saat dokuzda." },
+      { "id": "l03", "speaker": "Frau", "kind": "dialogue", "text_de": "Wie spät ist es jetzt?", "text_tr": "Şimdi saat kaç?" },
+      { "id": "l04", "speaker": "Mann", "kind": "dialogue", "text_de": "Es ist halb neun.", "text_tr": "Sekiz buçuk." },
+      { "id": "l05", "speaker": "Frau", "kind": "dialogue", "text_de": "Gut, ich warte hier.", "text_tr": "Tamam, burada bekliyorum." },
+      { "id": "l06", "kind": "narration", "text_de": "Der Bus kommt pünktlich.", "text_tr": "Otobüs tam zamanında geliyor." },
+      { "id": "l07", "speaker": "Frau", "kind": "dialogue", "text_de": "Danke für die Hilfe!", "text_tr": "Yardım için teşekkürler!" }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Otobüs saat kaçta geliyor?",
+        "options_tr": ["8:00", "8:30", "9:00", "9:30"],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "id": "d_a1_07",
+    "level": "A1",
+    "title_de": "Am Telefon",
+    "title_tr": "Telefonda",
+    "theme": "Telefon · Höflichkeit",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Lisa", "kind": "dialogue", "text_de": "Hallo, hier ist Lisa.", "text_tr": "Merhaba, Lisa ben." },
+      { "id": "l02", "speaker": "Mark", "kind": "dialogue", "text_de": "Hi Lisa! Hier ist Mark.", "text_tr": "Selam Lisa! Mark ben." },
+      { "id": "l03", "speaker": "Lisa", "kind": "dialogue", "text_de": "Wie geht es dir?", "text_tr": "Nasılsın?" },
+      { "id": "l04", "speaker": "Mark", "kind": "dialogue", "text_de": "Mir geht es gut, danke.", "text_tr": "İyiyim, teşekkürler." },
+      { "id": "l05", "speaker": "Lisa", "kind": "dialogue", "text_de": "Kommst du heute?", "text_tr": "Bugün geliyor musun?" },
+      { "id": "l06", "speaker": "Mark", "kind": "dialogue", "text_de": "Ja, um sechs Uhr.", "text_tr": "Evet, saat altıda." },
+      { "id": "l07", "speaker": "Lisa", "kind": "dialogue", "text_de": "Super! Bis später!", "text_tr": "Harika! Sonra görüşürüz!" },
+      { "id": "l08", "speaker": "Mark", "kind": "dialogue", "text_de": "Tschüss!", "text_tr": "Hoşça kal!" }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Mark saat kaçta geliyor?",
+        "options_tr": ["5:00", "6:00", "7:00", "8:00"],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "id": "d_a1_08",
+    "level": "A1",
+    "title_de": "Mein erster Tag im Lager",
+    "title_tr": "Depodaki ilk günüm",
+    "theme": "Arbeit · Alltag",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "kind": "narration", "text_de": "Emre arbeitet heute zum ersten Mal im Lager.", "text_tr": "Emre bugün ilk kez depoda çalışıyor." },
+      { "id": "l02", "speaker": "Chef", "kind": "dialogue", "text_de": "Guten Morgen, Emre!", "text_tr": "Günaydın Emre!" },
+      { "id": "l03", "speaker": "Emre", "kind": "dialogue", "text_de": "Guten Morgen, Herr Weber!", "text_tr": "Günaydın Bay Weber!" },
+      { "id": "l04", "speaker": "Chef", "kind": "dialogue", "text_de": "Heute lernen wir die Regeln.", "text_tr": "Bugün kuralları öğreniyoruz." },
+      { "id": "l05", "speaker": "Chef", "kind": "dialogue", "text_de": "Sicherheitsschuhe sind wichtig.", "text_tr": "Emniyet ayakkabıları önemli." },
+      { "id": "l06", "speaker": "Emre", "kind": "dialogue", "text_de": "Verstanden!", "text_tr": "Anladım!" },
+      { "id": "l07", "speaker": "Chef", "kind": "dialogue", "text_de": "Pause ist um zwölf Uhr.", "text_tr": "Mola saat on ikide." },
+      { "id": "l08", "speaker": "Emre", "kind": "dialogue", "text_de": "Danke! Ich bin bereit.", "text_tr": "Teşekkürler! Hazırım." }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Emre nerede çalışıyor?",
+        "options_tr": ["Büro", "Lager", "Schule", "Café"],
+        "correct_index": 1
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Mola saat kaçta?",
+        "options_tr": ["10:00", "11:00", "12:00", "13:00"],
+        "correct_index": 2
+      }
+    ]
+  }
+]

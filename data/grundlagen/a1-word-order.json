@@ -10,6 +10,8 @@
     {
       "id": "statement",
       "order": 1,
+      "tier": 1,
+      "tierLabel": "Stufe 1 · Kolay",
       "title": "Normal Cümle",
       "titleTr": "Düz cümle (SVO)",
       "rule_de": "Subjekt + Verb + Rest",
@@ -41,6 +43,7 @@
           "id": "wo-st-01",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Kelime sırası: Özne + Fiil + …",
           "tokens": [
             "Ich",
@@ -60,6 +63,7 @@
           "id": "wo-st-02",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Doğru cümle sırası",
           "tokens": [
             "Du",
@@ -78,6 +82,7 @@
           "id": "wo-st-03",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Sırayı kur",
           "tokens": [
             "Er",
@@ -96,6 +101,7 @@
           "id": "wo-st-04",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Normal cümle (SVO)",
           "tokens": [
             "Mein",
@@ -115,6 +121,7 @@
           "id": "wo-st-05",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Sırayı kur",
           "tokens": [
             "Wir",
@@ -133,6 +140,7 @@
           "id": "wo-st-06",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Doğru sıra",
           "tokens": [
             "Sie",
@@ -152,6 +160,7 @@
           "id": "wo-st-07",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Cümleyi kur",
           "tokens": [
             "Ich",
@@ -170,6 +179,7 @@
           "id": "wo-st-08",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Sırayı kur",
           "tokens": [
             "Du",
@@ -190,6 +200,7 @@
           "id": "wo-st-09",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Normal cümle",
           "tokens": [
             "Er",
@@ -209,6 +220,7 @@
           "id": "wo-st-10",
           "type": "reorder",
           "category": "statement",
+          "tier": 1,
           "prompt_tr": "Sırayı kur",
           "tokens": [
             "Wir",
@@ -228,6 +240,8 @@
     {
       "id": "yes_no",
       "order": 2,
+      "tier": 2,
+      "tierLabel": "Stufe 2 · Orta",
       "title": "Ja/Nein Soruları",
       "titleTr": "Evet/Hayır soruları",
       "rule_de": "Verb + Subjekt + Rest",
@@ -242,20 +256,12 @@
           "tr": "Motor joggt öne geçti — David sık koşar mı?"
         },
         {
-          "de": "David arbeitet heute.",
-          "tr": "David bugün çalışıyor."
+          "de": "Wir zahlen mit Karte.",
+          "tr": "Kartla ödüyoruz."
         },
         {
-          "de": "Arbeitet David heute?",
-          "tr": "Fiil başta: David bugün çalışıyor mu?"
-        },
-        {
-          "de": "Alex spielt Tennis.",
-          "tr": "Alex tenis oynuyor."
-        },
-        {
-          "de": "Spielt Alex Tennis?",
-          "tr": "Spielt → öne: Alex tenis oynuyor mu?"
+          "de": "Zahlen wir mit Karte?",
+          "tr": "Zahlen öne geçti — kartla mı ödüyoruz?"
         },
         {
           "de": "Du kommst aus Istanbul.",
@@ -264,6 +270,14 @@
         {
           "de": "Kommst du aus Istanbul?",
           "tr": "Kommst başta — İstanbul'dan mısın?"
+        },
+        {
+          "de": "Ihr wohnt in Berlin.",
+          "tr": "Berlin'de oturuyorsunuz."
+        },
+        {
+          "de": "Wohnt ihr in Berlin?",
+          "tr": "Fiil başta: Berlin'de mi oturuyorsunuz?"
         }
       ],
       "drill": [
@@ -271,34 +285,39 @@
           "id": "wo-yn-01",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
-          "statement_de": "David joggt oft.",
-          "verb": "joggt",
+          "statement_de": "Wir zahlen mit Karte.",
+          "verb": "zahlen",
           "word_pool": [
-            "oft.",
-            "Anna",
-            "joggt",
-            "David",
-            "Lehrerin"
+            "zahlen",
+            "bar",
+            "mit",
+            "Wir",
+            "Bäckerei",
+            "Karte",
+            "Karte."
           ],
           "tokens": [
-            "Joggt",
-            "David",
-            "oft?"
+            "Zahlen",
+            "wir",
+            "mit",
+            "Karte?"
           ],
           "distractors": [
             "Wir",
             "Ich",
             "nicht"
           ],
-          "answer_de": "Joggt David oft?",
-          "hint_tr": "Normal: David joggt oft. → Soru: Joggt David oft?",
-          "verb_hint_tr": "Motor: joggt — soruda fiil polis gibi öne geçer"
+          "answer_de": "Zahlen wir mit Karte?",
+          "hint_tr": "Normal: Wir zahlen mit Karte. → Soru: Zahlen wir mit Karte?",
+          "verb_hint_tr": "Motor: zahlen — soruda fiil polis gibi öne geçer"
         },
         {
           "id": "wo-yn-02",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
           "statement_de": "Du kommst aus Istanbul.",
           "verb": "kommst",
@@ -329,75 +348,80 @@
           "id": "wo-yn-03",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
-          "statement_de": "David arbeitet heute.",
-          "verb": "arbeitet",
+          "statement_de": "Ihr wohnt in Berlin.",
+          "verb": "wohnt",
           "word_pool": [
-            "heute.",
-            "Lehrer",
-            "arbeitet",
-            "David",
-            "heute"
+            "in",
+            "Berlin.",
+            "Hamburg",
+            "Ihr",
+            "Berlin",
+            "wohnt"
           ],
           "tokens": [
-            "Arbeitet",
-            "David",
-            "heute?"
+            "Wohnt",
+            "ihr",
+            "in",
+            "Berlin?"
           ],
           "distractors": [
             "Wir",
             "Ich",
             "nicht"
           ],
-          "answer_de": "Arbeitet David heute?",
-          "hint_tr": "Arbeitet David heute?",
-          "verb_hint_tr": "Motor: arbeitet — soruda fiil polis gibi öne geçer"
+          "answer_de": "Wohnt ihr in Berlin?",
+          "hint_tr": "Ihr wohnt … → Wohnt ihr …?",
+          "verb_hint_tr": "Motor: wohnt — soruda fiil polis gibi öne geçer"
         },
         {
           "id": "wo-yn-04",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
-          "statement_de": "Alex spielt Tennis.",
-          "verb": "spielt",
+          "statement_de": "Wir bezahlen bar.",
+          "verb": "bezahlen",
           "word_pool": [
-            "Tennis.",
-            "Fußball",
-            "spielt",
-            "Alex",
-            "Tennis"
+            "bar.",
+            "Karte",
+            "bezahlen",
+            "Wir",
+            "bar"
           ],
           "tokens": [
-            "Spielt",
-            "Alex",
-            "Tennis?"
+            "Bezahlen",
+            "wir",
+            "bar?"
           ],
           "distractors": [
             "Wir",
             "Ich",
             "nicht"
           ],
-          "answer_de": "Spielt Alex Tennis?",
-          "hint_tr": "Spielt Alex Tennis?",
-          "verb_hint_tr": "Motor: spielt — soruda fiil polis gibi öne geçer"
+          "answer_de": "Bezahlen wir bar?",
+          "hint_tr": "Bezahlen wir bar? — fiil başta",
+          "verb_hint_tr": "Motor: bezahlen — soruda fiil polis gibi öne geçer"
         },
         {
           "id": "wo-yn-05",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
-          "statement_de": "Du joggst oft.",
-          "verb": "joggst",
+          "statement_de": "David joggt oft.",
+          "verb": "joggt",
           "word_pool": [
             "oft.",
-            "Lehrerin",
-            "joggst",
-            "Du",
-            "oft"
+            "Anna",
+            "joggt",
+            "David",
+            "Lehrerin"
           ],
           "tokens": [
-            "Joggst",
-            "du",
+            "Joggt",
+            "David",
             "oft?"
           ],
           "distractors": [
@@ -405,14 +429,15 @@
             "Ich",
             "nicht"
           ],
-          "answer_de": "Joggst du oft?",
-          "hint_tr": "Joggst du oft?",
-          "verb_hint_tr": "Motor: joggst — soruda fiil polis gibi öne geçer"
+          "answer_de": "Joggt David oft?",
+          "hint_tr": "Joggt David oft?",
+          "verb_hint_tr": "Motor: joggt — soruda fiil polis gibi öne geçer"
         },
         {
           "id": "wo-yn-06",
           "type": "spot_verb",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
           "statement_de": "Du bist müde.",
           "verb": "bist",
@@ -441,31 +466,33 @@
           "id": "wo-yn-07",
           "type": "transform",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Soruya çevir",
-          "statement_de": "Du hast einen Bruder.",
+          "statement_de": "Wir zahlen mit Karte.",
           "tokens": [
-            "Hast",
-            "du",
-            "einen",
-            "Bruder?"
+            "Zahlen",
+            "wir",
+            "mit",
+            "Karte?"
           ],
           "distractors": [
-            "Bruder.",
+            "Karte.",
             "Ich",
             "nicht"
           ],
-          "answer_de": "Hast du einen Bruder?",
-          "hint_tr": "Hast du …?"
+          "answer_de": "Zahlen wir mit Karte?",
+          "hint_tr": "Zahlen wir mit Karte?"
         },
         {
           "id": "wo-yn-08",
           "type": "transform",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Soruya çevir",
-          "statement_de": "Du lernst Deutsch.",
+          "statement_de": "Ihr lernt Deutsch.",
           "tokens": [
-            "Lernst",
-            "du",
+            "Lernt",
+            "ihr",
             "Deutsch?"
           ],
           "distractors": [
@@ -473,53 +500,57 @@
             "Ich",
             "nicht"
           ],
-          "answer_de": "Lernst du Deutsch?",
-          "hint_tr": "Lernst du …?"
+          "answer_de": "Lernt ihr Deutsch?",
+          "hint_tr": "Lernt ihr …?"
         },
         {
           "id": "wo-yn-09",
           "type": "transform",
           "category": "yes_no",
-          "prompt_tr": "Soruya çevir",
-          "statement_de": "Du wohnst in Berlin.",
+          "tier": 2,
+          "prompt_tr": "Soruya çevir (Sie)",
+          "statement_de": "Sie wohnen in München.",
           "tokens": [
-            "Wohnst",
-            "du",
+            "Wohnen",
+            "Sie",
             "in",
-            "Berlin?"
+            "München?"
           ],
           "distractors": [
-            "Berlin.",
             "Ich",
-            "nicht"
+            "nicht",
+            "München."
           ],
-          "answer_de": "Wohnst du in Berlin?",
-          "hint_tr": "Wohnst du …?"
+          "answer_de": "Wohnen Sie in München?",
+          "hint_tr": "Wohnen Sie …?"
         },
         {
           "id": "wo-yn-10",
           "type": "transform",
           "category": "yes_no",
+          "tier": 2,
           "prompt_tr": "Soruya çevir",
-          "statement_de": "Du spielst Fußball.",
+          "statement_de": "Wir essen zusammen.",
           "tokens": [
-            "Spielst",
-            "du",
-            "Fußball?"
+            "Essen",
+            "wir",
+            "zusammen?"
           ],
           "distractors": [
-            "Fußball.",
+            "zusammen.",
             "Ich",
             "nicht"
           ],
-          "answer_de": "Spielst du Fußball?",
-          "hint_tr": "Spielst du …?"
+          "answer_de": "Essen wir zusammen?",
+          "hint_tr": "Essen wir …?"
         }
       ]
     },
     {
       "id": "w_question",
       "order": 3,
+      "tier": 3,
+      "tierLabel": "Stufe 3 · Orta-Zor",
       "title": "W-Fragen",
       "titleTr": "Soru kelimeli sorular",
       "rule_de": "W-Wort + Verb + Subjekt",
@@ -551,6 +582,7 @@
           "id": "wo-w-01",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Eksik W-Frage kelimesi",
           "context_de": "___ heißt du?",
           "options": [
@@ -566,6 +598,7 @@
           "id": "wo-w-02",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Eksik fiili yerleştir",
           "context_de": "Wo ___ du?",
           "options": [
@@ -581,6 +614,7 @@
           "id": "wo-w-03",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Eksik fiil",
           "context_de": "Woher ___ du?",
           "options": [
@@ -596,6 +630,7 @@
           "id": "wo-w-04",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Eksik fiil",
           "context_de": "Was ___ du?",
           "options": [
@@ -611,6 +646,7 @@
           "id": "wo-w-05",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Eksik fiil",
           "context_de": "Wann ___ du?",
           "options": [
@@ -626,6 +662,7 @@
           "id": "wo-w-06",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Wie alt = kaç yaşında",
           "context_de": "___ alt bist du?",
           "options": [
@@ -641,6 +678,7 @@
           "id": "wo-w-07",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Was = ne",
           "context_de": "___ ist das?",
           "options": [
@@ -656,6 +694,7 @@
           "id": "wo-w-08",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Wo = nerede",
           "context_de": "___ wohnst du?",
           "options": [
@@ -671,6 +710,7 @@
           "id": "wo-w-09",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Woher = nereden",
           "context_de": "___ kommst du?",
           "options": [
@@ -686,6 +726,7 @@
           "id": "wo-w-10",
           "type": "gap",
           "category": "w_question",
+          "tier": 3,
           "prompt_tr": "Wann = ne zaman",
           "context_de": "___ spielst du Fußball?",
           "options": [
@@ -696,12 +737,111 @@
           ],
           "correct_index": 0,
           "hint_tr": "Wann spielst du …?"
+        },
+        {
+          "id": "wo-wq-extra-01",
+          "type": "reorder",
+          "category": "w_question",
+          "tier": 3,
+          "prompt_tr": "Wohin sorusu",
+          "tokens": [
+            "Wohin",
+            "gehst",
+            "du?"
+          ],
+          "distractors": [
+            "Er",
+            "Wir",
+            "Sie"
+          ],
+          "answer_de": "Wohin gehst du?",
+          "hint_tr": "Wohin = nereye"
+        },
+        {
+          "id": "wo-wq-extra-02",
+          "type": "reorder",
+          "category": "w_question",
+          "tier": 3,
+          "prompt_tr": "Woher sorusu",
+          "tokens": [
+            "Woher",
+            "kommst",
+            "du?"
+          ],
+          "distractors": [
+            "Er",
+            "Wir",
+            "Sie"
+          ],
+          "answer_de": "Woher kommst du?",
+          "hint_tr": "Woher = nereden"
+        },
+        {
+          "id": "wo-wq-extra-03",
+          "type": "reorder",
+          "category": "w_question",
+          "tier": 3,
+          "prompt_tr": "Warum sorusu",
+          "tokens": [
+            "Warum",
+            "lernst",
+            "du",
+            "Deutsch?"
+          ],
+          "distractors": [
+            "Er",
+            "Wir",
+            "Sie"
+          ],
+          "answer_de": "Warum lernst du Deutsch?",
+          "hint_tr": "Warum = neden"
+        },
+        {
+          "id": "wo-wq-extra-04",
+          "type": "reorder",
+          "category": "w_question",
+          "tier": 3,
+          "prompt_tr": "Wann sorusu",
+          "tokens": [
+            "Wann",
+            "beginnt",
+            "der",
+            "Kurs?"
+          ],
+          "distractors": [
+            "Er",
+            "Wir",
+            "Sie"
+          ],
+          "answer_de": "Wann beginnt der Kurs?",
+          "hint_tr": "Wann = ne zaman"
+        },
+        {
+          "id": "wo-wq-extra-05",
+          "type": "reorder",
+          "category": "w_question",
+          "tier": 3,
+          "prompt_tr": "Wer sorusu",
+          "tokens": [
+            "Wer",
+            "ist",
+            "das?"
+          ],
+          "distractors": [
+            "nicht",
+            "Sie",
+            "Er"
+          ],
+          "answer_de": "Wer ist das?",
+          "hint_tr": "Wer = kim"
         }
       ]
     },
     {
       "id": "compare",
       "order": 4,
+      "tier": 3,
+      "tierLabel": "Stufe 3 · Orta-Zor",
       "title": "Pattern Recognition",
       "titleTr": "Kalıp farkı",
       "rule_de": "Aussage: Subjekt zuerst · Frage: Verb zuerst",
@@ -721,6 +861,7 @@
           "id": "wo-cp-01",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du kommst aus Deutschland.",
           "question_de": "Kommst du aus Deutschland?",
@@ -737,6 +878,7 @@
           "id": "wo-cp-02",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du joggst oft.",
           "question_de": "Joggst du oft?",
@@ -753,6 +895,7 @@
           "id": "wo-cp-03",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du bist müde.",
           "question_de": "Bist du müde?",
@@ -769,6 +912,7 @@
           "id": "wo-cp-04",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du arbeitest heute.",
           "question_de": "Arbeitest du heute?",
@@ -785,6 +929,7 @@
           "id": "wo-cp-05",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Ich komme aus Istanbul.",
           "question_de": "Kommst du aus Istanbul?",
@@ -801,6 +946,7 @@
           "id": "wo-cp-06",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du hast einen Bruder.",
           "question_de": "Hast du einen Bruder?",
@@ -817,6 +963,7 @@
           "id": "wo-cp-07",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du lernst Deutsch.",
           "question_de": "Lernst du Deutsch?",
@@ -833,6 +980,7 @@
           "id": "wo-cp-08",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Du wohnst in Berlin.",
           "question_de": "Wohnst du in Berlin?",
@@ -849,6 +997,7 @@
           "id": "wo-cp-09",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Er spielt Fußball.",
           "question_de": "Spielt er Fußball?",
@@ -865,6 +1014,7 @@
           "id": "wo-cp-10",
           "type": "compare",
           "category": "compare",
+          "tier": 3,
           "prompt_tr": "İki cümle arasındaki fark nedir?",
           "statement_de": "Wir lernen Deutsch.",
           "question_de": "Lernt ihr Deutsch?",
@@ -878,6 +1028,256 @@
           "explanation_tr": "Soru: fiil + özne"
         }
       ]
+    },
+    {
+      "id": "conjunction",
+      "order": 5,
+      "tier": 4,
+      "tierLabel": "Stufe 4 · Zor",
+      "title": "Bağlaçlar",
+      "titleTr": "und / aber / denn",
+      "rule_de": "Hauptsatz + Konjunktion + Hauptsatz",
+      "rule_tr": "Cümle + bağlaç + cümle",
+      "examples": [
+        {
+          "de": "Ich lerne Deutsch, aber es ist schwer.",
+          "tr": "Almanca öğreniyorum ama zor."
+        },
+        {
+          "de": "Er isst Brot und trinkt Kaffee.",
+          "tr": "Ekmek yiyor ve kahve içiyor."
+        },
+        {
+          "de": "Ich bleibe zu Hause, denn ich bin müde.",
+          "tr": "Evde kalıyorum çünkü yorgunum."
+        }
+      ],
+      "drill": [
+        {
+          "id": "wo-kon-01",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "und ile birleştir",
+          "tokens": [
+            "Er",
+            "isst",
+            "Brot",
+            "und",
+            "trinkt",
+            "Kaffee."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Er isst Brot und trinkt Kaffee.",
+          "hint_tr": "… und …"
+        },
+        {
+          "id": "wo-kon-02",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "aber ile birleştir",
+          "tokens": [
+            "Ich",
+            "lerne",
+            "Deutsch,",
+            "aber",
+            "es",
+            "ist",
+            "schwer."
+          ],
+          "distractors": [
+            "Wir",
+            "bin",
+            "auch"
+          ],
+          "answer_de": "Ich lerne Deutsch, aber es ist schwer.",
+          "hint_tr": "… , aber …"
+        },
+        {
+          "id": "wo-kon-03",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "denn ile birleştir",
+          "tokens": [
+            "Ich",
+            "bleibe",
+            "zu",
+            "Hause,",
+            "denn",
+            "ich",
+            "bin",
+            "müde."
+          ],
+          "distractors": [
+            "Wir",
+            "ist",
+            "auch"
+          ],
+          "answer_de": "Ich bleibe zu Hause, denn ich bin müde.",
+          "hint_tr": "… , denn …"
+        },
+        {
+          "id": "wo-kon-04",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "Sırayı kur",
+          "tokens": [
+            "Sie",
+            "kommt",
+            "und",
+            "er",
+            "geht."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Wir"
+          ],
+          "answer_de": "Sie kommt und er geht.",
+          "hint_tr": "und bağlar"
+        },
+        {
+          "id": "wo-kon-05",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "aber — olumsuz ikinci cümle",
+          "tokens": [
+            "Ich",
+            "habe",
+            "Zeit,",
+            "aber",
+            "ich",
+            "komme",
+            "nicht."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Ich habe Zeit, aber ich komme nicht.",
+          "hint_tr": "… , aber …"
+        },
+        {
+          "id": "wo-kon-06",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "und — iki fiil",
+          "tokens": [
+            "Wir",
+            "zahlen",
+            "und",
+            "gehen."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Wir zahlen und gehen.",
+          "hint_tr": "… und …"
+        },
+        {
+          "id": "wo-kon-07",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "denn — sebep",
+          "tokens": [
+            "Ich",
+            "kaufe",
+            "Brot,",
+            "denn",
+            "ich",
+            "habe",
+            "Hunger."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Ich kaufe Brot, denn ich habe Hunger.",
+          "hint_tr": "… , denn …"
+        },
+        {
+          "id": "wo-kon-08",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "aber — zıtlık",
+          "tokens": [
+            "Er",
+            "isst",
+            "gern,",
+            "aber",
+            "er",
+            "kocht",
+            "nicht."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Er isst gern, aber er kocht nicht.",
+          "hint_tr": "… , aber …"
+        },
+        {
+          "id": "wo-kon-09",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "und — alışveriş",
+          "tokens": [
+            "Ich",
+            "kaufe",
+            "Brot",
+            "und",
+            "Milch."
+          ],
+          "distractors": [
+            "nicht",
+            "auch",
+            "Sie"
+          ],
+          "answer_de": "Ich kaufe Brot und Milch.",
+          "hint_tr": "… und …"
+        },
+        {
+          "id": "wo-kon-10",
+          "type": "reorder",
+          "category": "statement",
+          "tier": 4,
+          "prompt_tr": "denn — yorgunluk",
+          "tokens": [
+            "Sie",
+            "bleibt",
+            "zu",
+            "Hause,",
+            "denn",
+            "sie",
+            "ist",
+            "krank."
+          ],
+          "distractors": [
+            "Er",
+            "bin",
+            "auch"
+          ],
+          "answer_de": "Sie bleibt zu Hause, denn sie ist krank.",
+          "hint_tr": "… , denn …"
+        }
+      ]
     }
   ],
   "megaDrill": [
@@ -885,6 +1285,7 @@
       "id": "wo-mg-r0",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Pizzayı severim — sırayı kur",
       "tokens": [
         "Ich",
@@ -904,6 +1305,7 @@
       "id": "wo-mg-r1",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Su içiyorsun — sırayı kur",
       "tokens": [
         "Du",
@@ -922,6 +1324,7 @@
       "id": "wo-mg-r2",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Kitap okuyor — sırayı kur",
       "tokens": [
         "Er",
@@ -941,6 +1344,7 @@
       "id": "wo-mg-r3",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Bugün gidiyoruz — sırayı kur",
       "tokens": [
         "Wir",
@@ -959,6 +1363,7 @@
       "id": "wo-mg-r4",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Almanca konuşuyor — sırayı kur",
       "tokens": [
         "Sie",
@@ -977,6 +1382,7 @@
       "id": "wo-mg-r5",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Münih'te oturuyorum — sırayı kur",
       "tokens": [
         "Ich",
@@ -996,6 +1402,7 @@
       "id": "wo-mg-r6",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Vaktin var — sırayı kur",
       "tokens": [
         "Du",
@@ -1014,6 +1421,7 @@
       "id": "wo-mg-r7",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Öğretmen — sırayı kur",
       "tokens": [
         "Er",
@@ -1032,6 +1440,7 @@
       "id": "wo-mg-r8",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Annem yemek yapıyor — sırayı kur",
       "tokens": [
         "Meine",
@@ -1050,6 +1459,7 @@
       "id": "wo-mg-r9",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Çocuk oynuyor — sırayı kur",
       "tokens": [
         "Das",
@@ -1068,6 +1478,7 @@
       "id": "wo-mg-r10",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Otobüsle gidiyorum — sırayı kur",
       "tokens": [
         "Ich",
@@ -1088,6 +1499,7 @@
       "id": "wo-mg-r11",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Yarın geliyorsun — sırayı kur",
       "tokens": [
         "Du",
@@ -1106,6 +1518,7 @@
       "id": "wo-mg-r12",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Burada çalışıyor — sırayı kur",
       "tokens": [
         "Er",
@@ -1124,6 +1537,7 @@
       "id": "wo-mg-r13",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Arkadaşız — sırayı kur",
       "tokens": [
         "Wir",
@@ -1142,6 +1556,7 @@
       "id": "wo-mg-r14",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Adım Timur — sırayı kur",
       "tokens": [
         "Ich",
@@ -1160,6 +1575,129 @@
       "id": "wo-mg-t15",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Wir zahlen mit Karte.",
+      "tokens": [
+        "Zahlen",
+        "wir",
+        "mit",
+        "Karte?"
+      ],
+      "distractors": [
+        "zahlen",
+        "Ich",
+        "nicht"
+      ],
+      "answer_de": "Zahlen wir mit Karte?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t16",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Ihr bezahlt bar.",
+      "tokens": [
+        "Bezahlt",
+        "ihr",
+        "bar?"
+      ],
+      "distractors": [
+        "bezahlt",
+        "Ich",
+        "nicht"
+      ],
+      "answer_de": "Bezahlt ihr bar?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t17",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Wir essen zusammen.",
+      "tokens": [
+        "Essen",
+        "wir",
+        "zusammen?"
+      ],
+      "distractors": [
+        "essen",
+        "Ich",
+        "nicht"
+      ],
+      "answer_de": "Essen wir zusammen?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t18",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Ihr wohnt in Berlin.",
+      "tokens": [
+        "Wohnt",
+        "ihr",
+        "in",
+        "Berlin?"
+      ],
+      "distractors": [
+        "wohnt",
+        "Ich",
+        "nicht"
+      ],
+      "answer_de": "Wohnt ihr in Berlin?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t19",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Sie wohnen hier.",
+      "tokens": [
+        "Wohnen",
+        "Sie",
+        "hier?"
+      ],
+      "distractors": [
+        "hier.",
+        "nicht",
+        "Ich"
+      ],
+      "answer_de": "Wohnen Sie hier?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t20",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
+      "prompt_tr": "Soruya çevir",
+      "statement_de": "Wir lernen Deutsch.",
+      "tokens": [
+        "Lernen",
+        "wir",
+        "Deutsch?"
+      ],
+      "distractors": [
+        "lernen",
+        "Ich",
+        "nicht"
+      ],
+      "answer_de": "Lernen wir Deutsch?",
+      "hint_tr": "Fiil başta"
+    },
+    {
+      "id": "wo-mg-t21",
+      "type": "transform",
+      "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du isst Pizza.",
       "tokens": [
@@ -1176,9 +1714,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t16",
+      "id": "wo-mg-t22",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du trinkst Kaffee.",
       "tokens": [
@@ -1195,9 +1734,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t17",
+      "id": "wo-mg-t23",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du liest heute.",
       "tokens": [
@@ -1214,9 +1754,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t18",
+      "id": "wo-mg-t24",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du gehst nach Hause.",
       "tokens": [
@@ -1234,9 +1775,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t19",
+      "id": "wo-mg-t25",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du sprichst Türkisch.",
       "tokens": [
@@ -1253,9 +1795,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t20",
+      "id": "wo-mg-t26",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du hast Hunger.",
       "tokens": [
@@ -1272,9 +1815,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t21",
+      "id": "wo-mg-t27",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du bist Student.",
       "tokens": [
@@ -1291,9 +1835,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t22",
+      "id": "wo-mg-t28",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du fährst mit dem Zug.",
       "tokens": [
@@ -1312,9 +1857,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t23",
+      "id": "wo-mg-t29",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du kommst heute.",
       "tokens": [
@@ -1331,9 +1877,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t24",
+      "id": "wo-mg-t30",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du arbeitest hier.",
       "tokens": [
@@ -1350,9 +1897,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t25",
+      "id": "wo-mg-t31",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du lernst Englisch.",
       "tokens": [
@@ -1369,9 +1917,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t26",
+      "id": "wo-mg-t32",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du wohnst allein.",
       "tokens": [
@@ -1388,9 +1937,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t27",
+      "id": "wo-mg-t33",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du machst Hausaufgaben.",
       "tokens": [
@@ -1407,9 +1957,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t28",
+      "id": "wo-mg-t34",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du spielst Gitarre.",
       "tokens": [
@@ -1426,9 +1977,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-t29",
+      "id": "wo-mg-t35",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du bist aus der Türkei.",
       "tokens": [
@@ -1447,9 +1999,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-sv30",
+      "id": "wo-mg-sv36",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "David joggt oft.",
       "verb": "joggt",
@@ -1475,9 +2028,10 @@
       "verb_hint_tr": "Motor: joggt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv31",
+      "id": "wo-mg-sv37",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Maria arbeitet heute.",
       "verb": "arbeitet",
@@ -1503,9 +2057,10 @@
       "verb_hint_tr": "Motor: arbeitet — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv32",
+      "id": "wo-mg-sv38",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Alex spielt Tennis.",
       "verb": "spielt",
@@ -1531,9 +2086,10 @@
       "verb_hint_tr": "Motor: spielt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv33",
+      "id": "wo-mg-sv39",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Timur kommt morgen.",
       "verb": "kommt",
@@ -1559,9 +2115,10 @@
       "verb_hint_tr": "Motor: kommt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv34",
+      "id": "wo-mg-sv40",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Lisa wohnt in Berlin.",
       "verb": "wohnt",
@@ -1589,9 +2146,10 @@
       "verb_hint_tr": "Motor: wohnt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv35",
+      "id": "wo-mg-sv41",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Emma lernt Deutsch.",
       "verb": "lernt",
@@ -1617,9 +2175,10 @@
       "verb_hint_tr": "Motor: lernt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv36",
+      "id": "wo-mg-sv42",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Paul hat Zeit.",
       "verb": "hat",
@@ -1645,9 +2204,10 @@
       "verb_hint_tr": "Motor: hat — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv37",
+      "id": "wo-mg-sv43",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Anna ist müde.",
       "verb": "ist",
@@ -1673,9 +2233,10 @@
       "verb_hint_tr": "Motor: ist — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv38",
+      "id": "wo-mg-sv44",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Mehmet spielt Fußball.",
       "verb": "spielt",
@@ -1701,9 +2262,10 @@
       "verb_hint_tr": "Motor: spielt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv39",
+      "id": "wo-mg-sv45",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Du arbeitest heute.",
       "verb": "arbeitest",
@@ -1729,9 +2291,10 @@
       "verb_hint_tr": "Motor: arbeitest — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv40",
+      "id": "wo-mg-sv46",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Du kommst aus Istanbul.",
       "verb": "kommst",
@@ -1759,9 +2322,10 @@
       "verb_hint_tr": "Motor: kommst — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv41",
+      "id": "wo-mg-sv47",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Er joggt oft.",
       "verb": "joggt",
@@ -1787,9 +2351,10 @@
       "verb_hint_tr": "Motor: joggt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv42",
+      "id": "wo-mg-sv48",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Sie wohnt hier.",
       "verb": "wohnt",
@@ -1815,9 +2380,10 @@
       "verb_hint_tr": "Motor: wohnt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv43",
+      "id": "wo-mg-sv49",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Ihr lernt Deutsch.",
       "verb": "lernt",
@@ -1843,9 +2409,10 @@
       "verb_hint_tr": "Motor: lernt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-sv44",
+      "id": "wo-mg-sv50",
       "type": "spot_verb",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Önce fiili (motoru) bul, sonra soruyu kur",
       "statement_de": "Ihr spielt Tennis.",
       "verb": "spielt",
@@ -1871,9 +2438,10 @@
       "verb_hint_tr": "Motor: spielt — soruda fiil polis gibi öne geçer"
     },
     {
-      "id": "wo-mg-g45",
+      "id": "wo-mg-g51",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "___ heißt du?",
       "options": [
@@ -1886,9 +2454,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g46",
+      "id": "wo-mg-g52",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wo ___ du?",
       "options": [
@@ -1901,9 +2470,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g47",
+      "id": "wo-mg-g53",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Woher ___ du?",
       "options": [
@@ -1916,9 +2486,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g48",
+      "id": "wo-mg-g54",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Was ___ du?",
       "options": [
@@ -1931,9 +2502,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g49",
+      "id": "wo-mg-g55",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wann ___ du?",
       "options": [
@@ -1946,9 +2518,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g50",
+      "id": "wo-mg-g56",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wie ___ du?",
       "options": [
@@ -1961,9 +2534,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g51",
+      "id": "wo-mg-g57",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wo ___ er?",
       "options": [
@@ -1976,9 +2550,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g52",
+      "id": "wo-mg-g58",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Was ___ das?",
       "options": [
@@ -1991,9 +2566,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g53",
+      "id": "wo-mg-g59",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wann ___ wir?",
       "options": [
@@ -2006,9 +2582,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g54",
+      "id": "wo-mg-g60",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Woher ___ Sie?",
       "options": [
@@ -2021,9 +2598,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g55",
+      "id": "wo-mg-g61",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wie ___ Sie?",
       "options": [
@@ -2036,9 +2614,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g56",
+      "id": "wo-mg-g62",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Was ___ du heute?",
       "options": [
@@ -2051,9 +2630,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g57",
+      "id": "wo-mg-g63",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wo ___ ihr?",
       "options": [
@@ -2066,9 +2646,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g58",
+      "id": "wo-mg-g64",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wann ___ du?",
       "options": [
@@ -2081,9 +2662,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-g59",
+      "id": "wo-mg-g65",
       "type": "gap",
       "category": "mixed",
+      "tier": 3,
       "prompt_tr": "Eksik parçayı seç",
       "context_de": "Wie alt ___ du?",
       "options": [
@@ -2096,9 +2678,10 @@
       "hint_tr": "W + fiil + özne"
     },
     {
-      "id": "wo-mg-c60",
+      "id": "wo-mg-c66",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du isst Pizza.",
       "question_de": "Isst du Pizza?",
@@ -2112,9 +2695,10 @@
       "explanation_tr": "Du isst Pizza. → Isst du Pizza?: fiil başa"
     },
     {
-      "id": "wo-mg-c61",
+      "id": "wo-mg-c67",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du trinkst Wasser.",
       "question_de": "Trinkst du Wasser?",
@@ -2128,9 +2712,10 @@
       "explanation_tr": "Du trinkst Wasser. → Trinkst du Wasser?: fiil başa"
     },
     {
-      "id": "wo-mg-c62",
+      "id": "wo-mg-c68",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Er liest ein Buch.",
       "question_de": "Liest er ein Buch?",
@@ -2144,9 +2729,10 @@
       "explanation_tr": "Er liest ein Buch. → Liest er ein Buch?: fiil başa"
     },
     {
-      "id": "wo-mg-c63",
+      "id": "wo-mg-c69",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du bist hier.",
       "question_de": "Bist du hier?",
@@ -2160,9 +2746,10 @@
       "explanation_tr": "Du bist hier. → Bist du hier?: fiil başa"
     },
     {
-      "id": "wo-mg-c64",
+      "id": "wo-mg-c70",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du hast Zeit.",
       "question_de": "Hast du Zeit?",
@@ -2176,9 +2763,10 @@
       "explanation_tr": "Du hast Zeit. → Hast du Zeit?: fiil başa"
     },
     {
-      "id": "wo-mg-c65",
+      "id": "wo-mg-c71",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Wir lernen.",
       "question_de": "Lernt ihr?",
@@ -2192,9 +2780,10 @@
       "explanation_tr": "Wir lernen. → Lernt ihr?: fiil başa"
     },
     {
-      "id": "wo-mg-c66",
+      "id": "wo-mg-c72",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Sie kommt.",
       "question_de": "Kommt sie?",
@@ -2208,9 +2797,10 @@
       "explanation_tr": "Sie kommt. → Kommt sie?: fiil başa"
     },
     {
-      "id": "wo-mg-c67",
+      "id": "wo-mg-c73",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du wohnst hier.",
       "question_de": "Wohnst du hier?",
@@ -2224,9 +2814,10 @@
       "explanation_tr": "Du wohnst hier. → Wohnst du hier?: fiil başa"
     },
     {
-      "id": "wo-mg-c68",
+      "id": "wo-mg-c74",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Ich bin müde.",
       "question_de": "Bist du müde?",
@@ -2240,9 +2831,10 @@
       "explanation_tr": "Ich bin müde. → Bist du müde?: fiil başa"
     },
     {
-      "id": "wo-mg-c69",
+      "id": "wo-mg-c75",
       "type": "compare",
       "category": "compare",
+      "tier": 3,
       "prompt_tr": "İki cümle arasındaki fark nedir?",
       "statement_de": "Du machst Sport.",
       "question_de": "Machst du Sport?",
@@ -2256,9 +2848,10 @@
       "explanation_tr": "Du machst Sport. → Machst du Sport?: fiil başa"
     },
     {
-      "id": "wo-mg-x70",
+      "id": "wo-mg-x76",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Ich",
@@ -2275,9 +2868,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x71",
+      "id": "wo-mg-x77",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Du",
@@ -2293,9 +2887,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x72",
+      "id": "wo-mg-x78",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Er",
@@ -2311,9 +2906,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x73",
+      "id": "wo-mg-x79",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Wir",
@@ -2329,9 +2925,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x74",
+      "id": "wo-mg-x80",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Sie",
@@ -2347,9 +2944,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x75",
+      "id": "wo-mg-x81",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Ich",
@@ -2365,9 +2963,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x76",
+      "id": "wo-mg-x82",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Du",
@@ -2383,9 +2982,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x77",
+      "id": "wo-mg-x83",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Er",
@@ -2401,9 +3001,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x78",
+      "id": "wo-mg-x84",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Wir",
@@ -2420,9 +3021,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-x79",
+      "id": "wo-mg-x85",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Cümle sırası",
       "tokens": [
         "Du",
@@ -2438,9 +3040,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-y80",
+      "id": "wo-mg-y86",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du kaufst Brot.",
       "tokens": [
@@ -2457,9 +3060,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y81",
+      "id": "wo-mg-y87",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du gehst ins Bett.",
       "tokens": [
@@ -2477,9 +3081,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y82",
+      "id": "wo-mg-y88",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du siehst fern.",
       "tokens": [
@@ -2496,9 +3101,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y83",
+      "id": "wo-mg-y89",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du rufst mich an.",
       "tokens": [
@@ -2516,9 +3122,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y84",
+      "id": "wo-mg-y90",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du kommst spät.",
       "tokens": [
@@ -2535,9 +3142,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y85",
+      "id": "wo-mg-y91",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du isst gern.",
       "tokens": [
@@ -2554,9 +3162,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y86",
+      "id": "wo-mg-y92",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du trinkst Tee.",
       "tokens": [
@@ -2573,9 +3182,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y87",
+      "id": "wo-mg-y93",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du liest Zeitung.",
       "tokens": [
@@ -2592,9 +3202,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y88",
+      "id": "wo-mg-y94",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du fährst Auto.",
       "tokens": [
@@ -2611,9 +3222,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y89",
+      "id": "wo-mg-y95",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du schläfst viel.",
       "tokens": [
@@ -2630,9 +3242,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y90",
+      "id": "wo-mg-y96",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du tanzt gut.",
       "tokens": [
@@ -2649,9 +3262,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y91",
+      "id": "wo-mg-y97",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du singst laut.",
       "tokens": [
@@ -2668,9 +3282,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y92",
+      "id": "wo-mg-y98",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du kochst heute.",
       "tokens": [
@@ -2687,9 +3302,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y93",
+      "id": "wo-mg-y99",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du wartest hier.",
       "tokens": [
@@ -2706,9 +3322,10 @@
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y94",
+      "id": "wo-mg-y100",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du findest es.",
       "tokens": [
@@ -2719,15 +3336,16 @@
       "distractors": [
         "findest",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Findest du es?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y95",
+      "id": "wo-mg-y101",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du nimmst den Bus.",
       "tokens": [
@@ -2739,15 +3357,16 @@
       "distractors": [
         "nimmst",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Nimmst du den Bus?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y96",
+      "id": "wo-mg-y102",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du gibst mir Zeit.",
       "tokens": [
@@ -2759,15 +3378,16 @@
       "distractors": [
         "gibst",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Gibst du mir Zeit?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y97",
+      "id": "wo-mg-y103",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du zeigst den Weg.",
       "tokens": [
@@ -2779,15 +3399,16 @@
       "distractors": [
         "zeigst",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Zeigst du den Weg?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y98",
+      "id": "wo-mg-y104",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du heißt Anna.",
       "tokens": [
@@ -2798,15 +3419,16 @@
       "distractors": [
         "heißt",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Heißt du Anna?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-y99",
+      "id": "wo-mg-y105",
       "type": "transform",
       "category": "mixed",
+      "tier": 2,
       "prompt_tr": "Soruya çevir",
       "statement_de": "Du bleibst hier.",
       "tokens": [
@@ -2817,15 +3439,16 @@
       "distractors": [
         "bleibst",
         "Ich",
-        "nicht"
+        "Er"
       ],
       "answer_de": "Bleibst du hier?",
       "hint_tr": "Fiil başta"
     },
     {
-      "id": "wo-mg-z100",
+      "id": "wo-mg-z106",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Du",
@@ -2842,9 +3465,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z101",
+      "id": "wo-mg-z107",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Ich",
@@ -2862,9 +3486,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z102",
+      "id": "wo-mg-z108",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Er",
@@ -2881,9 +3506,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z103",
+      "id": "wo-mg-z109",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Wir",
@@ -2899,9 +3525,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z104",
+      "id": "wo-mg-z110",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Sie",
@@ -2917,9 +3544,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z105",
+      "id": "wo-mg-z111",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Ich",
@@ -2935,9 +3563,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z106",
+      "id": "wo-mg-z112",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Du",
@@ -2953,9 +3582,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z107",
+      "id": "wo-mg-z113",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Er",
@@ -2971,9 +3601,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z108",
+      "id": "wo-mg-z114",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Wir",
@@ -2989,9 +3620,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z109",
+      "id": "wo-mg-z115",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Ich",
@@ -3007,9 +3639,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z110",
+      "id": "wo-mg-z116",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Du",
@@ -3025,9 +3658,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z111",
+      "id": "wo-mg-z117",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Er",
@@ -3044,9 +3678,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z112",
+      "id": "wo-mg-z118",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Wir",
@@ -3062,9 +3697,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z113",
+      "id": "wo-mg-z119",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Sie",
@@ -3080,9 +3716,10 @@
       "hint_tr": "SVO"
     },
     {
-      "id": "wo-mg-z114",
+      "id": "wo-mg-z120",
       "type": "reorder",
       "category": "mixed",
+      "tier": 1,
       "prompt_tr": "Sırayı kur",
       "tokens": [
         "Ich",

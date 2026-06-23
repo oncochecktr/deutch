@@ -1,0 +1,159 @@
+[
+  {
+    "id": "d_a2_01",
+    "level": "A2",
+    "title_de": "Am Bahnhof",
+    "title_tr": "Tren istasyonunda",
+    "theme": "Reisen · Verspätung",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Reisende", "kind": "dialogue", "text_de": "Entschuldigung, wo ist Gleis fünf?", "text_tr": "Affedersiniz, beş numaralı peron nerede?" },
+      { "id": "l02", "speaker": "Mitarbeiter", "kind": "dialogue", "text_de": "Gleis fünf ist rechts, unten.", "text_tr": "Beş numaralı peron sağda, aşağıda." },
+      { "id": "l03", "speaker": "Reisende", "kind": "dialogue", "text_de": "Danke. Ist der Zug pünktlich?", "text_tr": "Teşekkürler. Tren zamanında mı?" },
+      { "id": "l04", "speaker": "Mitarbeiter", "kind": "dialogue", "text_de": "Nein, er hat zwanzig Minuten Verspätung.", "text_tr": "Hayır, yirmi dakika gecikmesi var." },
+      { "id": "l05", "speaker": "Reisende", "kind": "dialogue", "text_de": "Oh nein! Ich habe einen Termin um drei Uhr.", "text_tr": "Ah hayır! Saat üçte randevum var." },
+      { "id": "l06", "speaker": "Mitarbeiter", "kind": "dialogue", "text_de": "Der Zug kommt um halb drei an.", "text_tr": "Tren iki buçukta varır." },
+      { "id": "l07", "speaker": "Reisende", "kind": "dialogue", "text_de": "Gut, dann schaffe ich es noch.", "text_tr": "Tamam, o zaman yetişirim." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Trenin gecikmesi ne kadar?", "options_tr": ["10 dk", "20 dk", "30 dk", "Yok"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Peron nerede?", "options_tr": ["Links oben", "Rechts unten", "Mitte", "Draußen"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_02",
+    "level": "A2",
+    "title_de": "Beim Arzt",
+    "title_tr": "Doktorda",
+    "theme": "Gesundheit · Symptome",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Arzt", "kind": "dialogue", "text_de": "Guten Tag. Was fehlt Ihnen?", "text_tr": "İyi günler. Neyiniz var?" },
+      { "id": "l02", "speaker": "Patient", "kind": "dialogue", "text_de": "Ich habe seit drei Tagen Kopfschmerzen.", "text_tr": "Üç gündür baş ağrım var." },
+      { "id": "l03", "speaker": "Arzt", "kind": "dialogue", "text_de": "Haben Sie auch Fieber?", "text_tr": "Ateşiniz de var mı?" },
+      { "id": "l04", "speaker": "Patient", "kind": "dialogue", "text_de": "Ja, ein bisschen.", "text_tr": "Evet, biraz." },
+      { "id": "l05", "speaker": "Arzt", "kind": "dialogue", "text_de": "Sie sollten sich ausruhen und viel trinken.", "text_tr": "Dinlenmeli ve bol su içmelisiniz." },
+      { "id": "l06", "speaker": "Arzt", "kind": "dialogue", "text_de": "Ich schreibe Ihnen ein Rezept.", "text_tr": "Size reçete yazıyorum." },
+      { "id": "l07", "speaker": "Patient", "kind": "dialogue", "text_de": "Vielen Dank, Herr Doktor.", "text_tr": "Çok teşekkürler doktor bey." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Hasta ne şikayet ediyor?", "options_tr": ["Karın ağrısı", "Baş ağrısı", "Boğaz", "Sırt"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Doktor ne öneriyor?", "options_tr": ["Spor", "Dinlenme", "İş", "Seyahat"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_03",
+    "level": "A2",
+    "title_de": "Im Bewerbungsgespräch",
+    "title_tr": "İş görüşmesinde",
+    "theme": "Beruf · Perfekt",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Chef", "kind": "dialogue", "text_de": "Erzählen Sie bitte von Ihrer Erfahrung.", "text_tr": "Lütfen deneyiminizden bahsedin." },
+      { "id": "l02", "speaker": "Bewerber", "kind": "dialogue", "text_de": "Ich habe fünf Jahre in einem Lager gearbeitet.", "text_tr": "Beş yıl bir depoda çalıştım." },
+      { "id": "l03", "speaker": "Chef", "kind": "dialogue", "text_de": "Warum möchten Sie wechseln?", "text_tr": "Neden değiştirmek istiyorsunuz?" },
+      { "id": "l04", "speaker": "Bewerber", "kind": "dialogue", "text_de": "Ich möchte mehr Verantwortung.", "text_tr": "Daha fazla sorumluluk istiyorum." },
+      { "id": "l05", "speaker": "Chef", "kind": "dialogue", "text_de": "Gut. Wann können Sie anfangen?", "text_tr": "Güzel. Ne zaman başlayabilirsiniz?" },
+      { "id": "l06", "speaker": "Bewerber", "kind": "dialogue", "text_de": "Ab nächsten Monat.", "text_tr": "Gelecek aydan itibaren." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Aday kaç yıl depoda çalışmış?", "options_tr": ["2", "3", "5", "10"], "correct_index": 2 }
+    ]
+  },
+  {
+    "id": "d_a2_04",
+    "level": "A2",
+    "title_de": "Im Hotel",
+    "title_tr": "Otelde",
+    "theme": "Reisen · Beschwerde",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Gast", "kind": "dialogue", "text_de": "Guten Abend. Ich habe ein Problem mit dem Zimmer.", "text_tr": "İyi akşamlar. Oda ile ilgili bir sorunum var." },
+      { "id": "l02", "speaker": "Rezeption", "kind": "dialogue", "text_de": "Was ist los?", "text_tr": "Ne oldu?" },
+      { "id": "l03", "speaker": "Gast", "kind": "dialogue", "text_de": "Die Heizung funktioniert nicht.", "text_tr": "Kalorifer çalışmıyor." },
+      { "id": "l04", "speaker": "Rezeption", "kind": "dialogue", "text_de": "Es tut mir leid. Wir schicken sofort jemanden.", "text_tr": "Özür dileriz. Hemen birini gönderiyoruz." },
+      { "id": "l05", "speaker": "Gast", "kind": "dialogue", "text_de": "Danke. Wann kommt der Techniker?", "text_tr": "Teşekkürler. Teknisyen ne zaman gelir?" },
+      { "id": "l06", "speaker": "Rezeption", "kind": "dialogue", "text_de": "In zehn Minuten.", "text_tr": "On dakika içinde." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Sorun ne?", "options_tr": ["TV", "Heizung", "Dusche", "Fenster"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_05",
+    "level": "A2",
+    "title_de": "Regen und Pläne",
+    "title_tr": "Yağmur ve planlar",
+    "theme": "Wetter · Perfekt",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Sara", "kind": "dialogue", "text_de": "Es regnet seit dem Morgen.", "text_tr": "Sabahdan beri yağmur yağıyor." },
+      { "id": "l02", "speaker": "Jonas", "kind": "dialogue", "text_de": "Schade! Wir wollten spazieren gehen.", "text_tr": "Yazık! Yürüyüşe çıkmak istiyorduk." },
+      { "id": "l03", "speaker": "Sara", "kind": "dialogue", "text_de": "Gehen wir ins Kino?", "text_tr": "Sinemaya gidelim mi?" },
+      { "id": "l04", "speaker": "Jonas", "kind": "dialogue", "text_de": "Gute Idee! Ich habe schon lange keinen Film gesehen.", "text_tr": "İyi fikir! Uzun zamandır film izlemedim." },
+      { "id": "l05", "speaker": "Sara", "kind": "dialogue", "text_de": "Der Film beginnt um sieben Uhr.", "text_tr": "Film saat yedide başlıyor." },
+      { "id": "l06", "speaker": "Jonas", "kind": "dialogue", "text_de": "Perfekt, dann treffen wir uns um halb sieben.", "text_tr": "Mükemmel, o zaman altı buçukta buluşalım." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Hava nasıl?", "options_tr": ["Güneşli", "Karlı", "Yağmurlu", "Rüzgarlı"], "correct_index": 2 },
+      { "id": "c02", "prompt_tr": "Ne yapmayı planlıyorlar?", "options_tr": ["Park", "Kino", "Strand", "Sport"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_06",
+    "level": "A2",
+    "title_de": "Umtausch im Geschäft",
+    "title_tr": "Mağazada değişim",
+    "theme": "Einkaufen · Größe",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Kundin", "kind": "dialogue", "text_de": "Guten Tag. Ich möchte diese Jacke umtauschen.", "text_tr": "İyi günler. Bu ceketi değiştirmek istiyorum." },
+      { "id": "l02", "speaker": "Verkäufer", "kind": "dialogue", "text_de": "Was ist das Problem?", "text_tr": "Sorun ne?" },
+      { "id": "l03", "speaker": "Kundin", "kind": "dialogue", "text_de": "Sie ist zu klein. Haben Sie Größe M?", "text_tr": "Çok küçük. M beden var mı?" },
+      { "id": "l04", "speaker": "Verkäufer", "kind": "dialogue", "text_de": "Ja, einen Moment bitte.", "text_tr": "Evet, bir dakika lütfen." },
+      { "id": "l05", "speaker": "Verkäufer", "kind": "dialogue", "text_de": "Hier, Größe M. Passt das?", "text_tr": "Buyurun, M beden. Uyar mı?" },
+      { "id": "l06", "speaker": "Kundin", "kind": "dialogue", "text_de": "Ja, perfekt. Danke!", "text_tr": "Evet, mükemmel. Teşekkürler!" }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Müşteri ne istiyor?", "options_tr": ["İade", "Değişim", "İndirim", "Yeni ürün"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_07",
+    "level": "A2",
+    "title_de": "Letztes Wochenende",
+    "title_tr": "Geçen hafta sonu",
+    "theme": "Freizeit · Perfekt",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Lena", "kind": "dialogue", "text_de": "Was hast du am Wochenende gemacht?", "text_tr": "Hafta sonu ne yaptın?" },
+      { "id": "l02", "speaker": "Paul", "kind": "dialogue", "text_de": "Ich bin nach Hamburg gefahren.", "text_tr": "Hamburg'a gittim." },
+      { "id": "l03", "speaker": "Lena", "kind": "dialogue", "text_de": "Allein oder mit Freunden?", "text_tr": "Yalnız mı arkadaşlarla mı?" },
+      { "id": "l04", "speaker": "Paul", "kind": "dialogue", "text_de": "Mit meinem Bruder. Wir haben den Hafen besucht.", "text_tr": "Erkek kardeşimle. Limanı gezdik." },
+      { "id": "l05", "speaker": "Lena", "kind": "dialogue", "text_de": "War es schön?", "text_tr": "Güzel miydi?" },
+      { "id": "l06", "speaker": "Paul", "kind": "dialogue", "text_de": "Ja, sehr! Das Wetter war gut.", "text_tr": "Evet, çok! Hava güzeldi." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Paul nereye gitmiş?", "options_tr": ["Berlin", "Münih", "Hamburg", "Köln"], "correct_index": 2 }
+    ]
+  },
+  {
+    "id": "d_a2_08",
+    "level": "A2",
+    "title_de": "Nach der Schicht",
+    "title_tr": "Vardiyadan sonra",
+    "theme": "Arbeit · Kollegen",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Mehmet", "kind": "dialogue", "text_de": "Endlich Feierabend!", "text_tr": "Sonunda iş bitti!" },
+      { "id": "l02", "speaker": "Anna", "kind": "dialogue", "text_de": "Ja, heute war anstrengend.", "text_tr": "Evet, bugün yorucuydu." },
+      { "id": "l03", "speaker": "Mehmet", "kind": "dialogue", "text_de": "Gehen wir etwas trinken?", "text_tr": "Bir şeyler içmeye gidelim mi?" },
+      { "id": "l04", "speaker": "Anna", "kind": "dialogue", "text_de": "Gern! Ich kenne ein gutes Café.", "text_tr": "Memnuniyetle! İyi bir kafe biliyorum." },
+      { "id": "l05", "speaker": "Mehmet", "kind": "dialogue", "text_de": "Super. Ich zahle heute.", "text_tr": "Harika. Bugün ben öderim." },
+      { "id": "l06", "speaker": "Anna", "kind": "dialogue", "text_de": "Nein, wir teilen uns die Rechnung.", "text_tr": "Hayır, hesabı paylaşırız." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "İşten sonra ne yapmayı planlıyorlar?", "options_tr": ["Ev", "Kafe", "Sinema", "Spor"], "correct_index": 1 }
+    ]
+  }
+]

@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import { IconCheck, IconX } from "@/components/icons";
 import type { GrammarPackSection } from "@/lib/grundlagen";
 import { recordGrammarPackScore } from "@/lib/progress";
@@ -12,8 +13,20 @@ interface GrammarPackViewProps {
 }
 
 export function GrammarPackView({ sections }: GrammarPackViewProps) {
-  const [sectionIdx, setSectionIdx] = useState(0);
+  const searchParams = useSearchParams();
+  const sectionParam = searchParams.get("section");
+  const initialIdx = sectionParam
+    ? Math.max(0, sections.findIndex((s) => s.id === sectionParam))
+    : 0;
+  const [sectionIdx, setSectionIdx] = useState(initialIdx >= 0 ? initialIdx : 0);
   const section = sections[sectionIdx];
+
+  useEffect(() => {
+    if (sectionParam) {
+      const idx = sections.findIndex((s) => s.id === sectionParam);
+      if (idx >= 0) setSectionIdx(idx);
+    }
+  }, [sectionParam, sections]);
 
   if (!section) return null;
 
@@ -137,6 +150,14 @@ function SectionPanel({ section }: { section: GrammarPackSection }) {
             </div>
           ))}
         </div>
+        {(section.id === "jaNein" || section.id === "w-fragen") && (
+          <Link
+            href="/grundlagen/word-order"
+            className="mt-3 inline-flex text-sm font-medium text-goethe-blue underline"
+          >
+            Kelime sırası drill&apos;i → Stufe {section.id === "jaNein" ? "2" : "3"}
+          </Link>
+        )}
       </div>
 
       <div className="card-soft p-5">

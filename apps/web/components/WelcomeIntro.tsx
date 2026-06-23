@@ -76,11 +76,11 @@ export function WelcomeIntro() {
           <ul className="space-y-2 text-sm text-sage-600">
             <li className="flex gap-2">
               <span className="text-goethe-gold">1.</span>
-              Kelime kartları ile başla
+              Gramer yol haritasından başla (der/die/das)
             </li>
             <li className="flex gap-2">
               <span className="text-goethe-gold">2.</span>
-              Gramer modüllerini tamamla
+              Kelime kartları ile devam et
             </li>
             <li className="flex gap-2">
               <span className="text-goethe-gold">3.</span>
@@ -88,13 +88,18 @@ export function WelcomeIntro() {
             </li>
           </ul>
 
+          <p className="rounded-lg border border-amber-200/80 bg-amber-50 px-3 py-2 text-xs text-amber-950">
+            İlerlemeniz bu tarayıcıda saklanır. Verileri temizlerseniz veya gizli mod kullanırsanız
+            kaybolur.
+          </p>
+
           <div className="flex flex-col gap-2 pt-1">
-            <Link href="/cards" className="btn-primary-lg text-center" onClick={dismiss}>
-              Kartlara başla
+            <Link href="/grundlagen/roadmap" className="btn-primary-lg text-center" onClick={dismiss}>
+              Gramer yol haritası →
             </Link>
-            <button type="button" className="btn-secondary-lg" onClick={dismiss}>
-              Panelde kal
-            </button>
+            <Link href="/cards" className="btn-secondary-lg text-center" onClick={dismiss}>
+              Kelime kartları
+            </Link>
           </div>
         </div>
       </div>
