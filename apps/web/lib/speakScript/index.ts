@@ -1,13 +1,14 @@
-import { runA1L01Script } from "./a1_l01";
+import { runScriptSteps } from "./engine";
+import { SCRIPT_LESSON_REGISTRY, SCRIPT_LESSON_IDS } from "./registry";
 import type { ScriptProfessorInput } from "./types";
 import type { ChatResponse } from "@/lib/speakTypes";
 
-export const SCRIPT_LESSON_IDS = ["a1_l01"] as const;
+export { SCRIPT_LESSON_IDS };
 
-export type ScriptLessonId = (typeof SCRIPT_LESSON_IDS)[number];
+export type ScriptLessonId = string;
 
-export function isScriptLesson(lessonId: string): lessonId is ScriptLessonId {
-  return (SCRIPT_LESSON_IDS as readonly string[]).includes(lessonId);
+export function isScriptLesson(lessonId: string): boolean {
+  return lessonId in SCRIPT_LESSON_REGISTRY;
 }
 
 /** API anahtarı yokken script destekli derslerde yerel profesör kullanılır */
@@ -16,10 +17,11 @@ export function shouldUseScriptProfessor(lessonId: string, hasApiKey: boolean): 
 }
 
 export function runScriptProfessor(input: ScriptProfessorInput): ChatResponse {
-  if (input.lessonId === "a1_l01") {
-    return runA1L01Script(input);
+  const steps = SCRIPT_LESSON_REGISTRY[input.lessonId];
+  if (!steps) {
+    throw new Error(`Script not found for lesson ${input.lessonId}`);
   }
-  throw new Error(`Script not found for lesson ${input.lessonId}`);
+  return runScriptSteps(steps, input);
 }
 
 export type { ScriptProfessorInput } from "./types";
