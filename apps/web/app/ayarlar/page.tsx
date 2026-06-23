@@ -6,9 +6,9 @@ import { PageShell } from "@/components/PageShell";
 import { StorageWarningBanner } from "@/components/StorageWarningBanner";
 import type { ChatProviderId } from "@/lib/chat/types";
 import {
-  PROVIDER_KEY_URLS,
-  PROVIDER_LABELS,
+  PROVIDER_MODE_LABELS,
   clearUserApiCredentials,
+  inferProviderFromApiKey,
   loadUserApiCredentials,
   maskApiKey,
   saveUserApiCredentials,
@@ -21,6 +21,7 @@ export default function AyarlarPage() {
   const [saved, setSaved] = useState<ReturnType<typeof loadUserApiCredentials>>(null);
   const [testStatus, setTestStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
   const [testMessage, setTestMessage] = useState("");
+  const [showAdvanced, setShowAdvanced] = useState(false);
 
   useEffect(() => {
     const creds = loadUserApiCredentials();
@@ -31,9 +32,14 @@ export default function AyarlarPage() {
     }
   }, []);
 
+  const resolveProvider = (key: string): ChatProviderId =>
+    showAdvanced ? provider : inferProviderFromApiKey(key);
+
   const handleSave = () => {
     if (!apiKey.trim()) return;
-    saveUserApiCredentials(provider, apiKey);
+    const resolved = resolveProvider(apiKey);
+    saveUserApiCredentials(resolved, apiKey);
+    setProvider(resolved);
     setSaved(loadUserApiCredentials());
     setTestStatus("idle");
     setTestMessage("");
@@ -49,6 +55,7 @@ export default function AyarlarPage() {
 
   const handleTest = async () => {
     if (!apiKey.trim()) return;
+    const resolved = resolveProvider(apiKey);
     setTestStatus("loading");
     setTestMessage("");
     try {
@@ -60,7 +67,7 @@ export default function AyarlarPage() {
           level: "A1",
           history: [],
           userApiKey: apiKey.trim(),
-          userProvider: provider,
+          userProvider: resolved,
         }),
         signal: AbortSignal.timeout(60_000),
       });
@@ -80,68 +87,81 @@ export default function AyarlarPage() {
 
   return (
     <PageShell
-      title="API Ayarları"
-      subtitle="Profesör (Sınıf) modülü için kendi anahtarınız"
+      title="AI API Ayarları"
+      subtitle="Profesör (Sınıf) modülü için kişisel anahtarınız"
       backHref="/"
       maxWidth="md"
     >
       <StorageWarningBanner className="mb-4" />
 
       <section className="card-soft space-y-4 p-5">
-        <h2 className="text-sm font-bold uppercase text-goethe-blue">Neden kendi anahtarınız?</h2>
+        <h2 className="text-sm font-bold uppercase text-goethe-blue">Neden AI API anahtarı?</h2>
         <p className="text-sm leading-relaxed text-sage-600">
-          Sınıf modülündeki Profesör, seçtiğiniz sağlayıcı üzerinden çalışır. Kendi API
-          anahtarınızı girerek eğitime devam edebilirsiniz. Anahtar yalnızca bu tarayıcıda
-          saklanır; sunucuya kaydedilmez.
+          Sınıf modülündeki Profesör, gelişmiş geri bildirim için bir AI API anahtarı kullanır.
+          Ücretsiz veya düşük maliyetli anahtar oluşturup buraya ekleyebilirsiniz. Anahtar yalnızca
+          bu tarayıcıda saklanır; sunucuya kaydedilmez.
+        </p>
+        <p className="text-xs text-sage-500">
+          Anahtar olmadan da A1/A2 derslerinin çoğu çalışır —{" "}
+          <Link href="/speak" className="font-medium text-goethe-blue underline">
+            Sınıf modülüne git
+          </Link>
+          .
         </p>
         <p className="text-xs text-sage-500">{getStorageWarningText()}</p>
       </section>
 
       <section className="card-soft mt-4 space-y-4 p-5">
-        <h2 className="text-sm font-bold uppercase text-goethe-blue">Sağlayıcı</h2>
-        <div className="flex flex-wrap gap-2">
-          {(["deepseek", "gemini", "anthropic"] as ChatProviderId[]).map((p) => (
-            <button
-              key={p}
-              type="button"
-              onClick={() => setProvider(p)}
-              className={`rounded-full px-4 py-2 text-sm font-semibold ${
-                provider === p
-                  ? "bg-goethe-blue text-white"
-                  : "bg-sage-100 text-sage-600"
-              }`}
-            >
-              {PROVIDER_LABELS[p]}
-            </button>
-          ))}
-        </div>
-        <p className="text-xs text-sage-500">
-          Anahtar al:{" "}
-          <a
-            href={PROVIDER_KEY_URLS[provider]}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-goethe-blue underline"
-          >
-            {PROVIDER_KEY_URLS[provider]}
-          </a>
+        <h2 className="text-sm font-bold uppercase text-goethe-blue">AI API anahtarı</h2>
+        <p className="text-sm text-sage-600">
+          Kullandığınız AI servisinin panelinden oluşturduğunuz anahtarı aşağıya yapıştırın.
+          Çoğu servis ücretsiz başlangıç kotası sunar.
         </p>
 
         <label className="block">
-          <span className="text-sm font-semibold text-goethe-blue">API anahtarı</span>
+          <span className="text-sm font-semibold text-goethe-blue">Anahtar</span>
           <input
             type="password"
             value={apiKey}
             onChange={(e) => setApiKey(e.target.value)}
-            placeholder="sk-…"
+            placeholder="API anahtarınızı buraya yapıştırın"
             className="mt-2 w-full rounded-xl border border-sage-200 px-4 py-3 text-sm"
             autoComplete="off"
           />
         </label>
 
+        <details
+          className="rounded-xl border border-sage-200 bg-sage-50/80 p-3"
+          onToggle={(e) => setShowAdvanced((e.target as HTMLDetailsElement).open)}
+        >
+          <summary className="cursor-pointer text-xs font-semibold text-sage-600">
+            Gelişmiş — anahtar türü (isteğe bağlı)
+          </summary>
+          <p className="mt-2 text-xs text-sage-500">
+            Çoğu kullanıcı için otomatik algılama yeterlidir. Bağlantı hatası alırsanız türü elle
+            seçin.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {(["deepseek", "gemini", "anthropic"] as ChatProviderId[]).map((p) => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => setProvider(p)}
+                className={`rounded-full px-3 py-1.5 text-xs font-semibold ${
+                  provider === p
+                    ? "bg-goethe-blue text-white"
+                    : "bg-white text-sage-600 ring-1 ring-sage-200"
+                }`}
+              >
+                {PROVIDER_MODE_LABELS[p]}
+              </button>
+            ))}
+          </div>
+        </details>
+
         {saved && (
           <p className="text-xs text-sage-500">
-            Kayıtlı: {PROVIDER_LABELS[saved.provider]} · {maskApiKey(saved.apiKey)}
+            Kayıtlı AI API anahtarı · {maskApiKey(saved.apiKey)}
           </p>
         )}
 

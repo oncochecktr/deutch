@@ -8,7 +8,7 @@ export function ScriptProfessorBanner({ lessonTitle }: { lessonTitle: string }) 
         Bu ders API anahtarı olmadan çalışır — tüm A1/A2 müfredat dersleri desteklenir.
         Serbest konuşma ve gelişmiş geri bildirim için{" "}
         <Link href="/ayarlar" className="font-semibold underline">
-          API ayarlarına
+          AI API ayarlarına
         </Link>{" "}
         anahtar ekleyebilirsiniz.
       </p>

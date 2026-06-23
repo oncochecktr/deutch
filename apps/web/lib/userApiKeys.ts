@@ -48,16 +48,19 @@ export function maskApiKey(key: string): string {
   return `${key.slice(0, 4)}••••${key.slice(-4)}`;
 }
 
-export const PROVIDER_LABELS: Record<ChatProviderId, string> = {
-  deepseek: "Ekonomik",
-  gemini: "Google",
-  anthropic: "Claude",
-};
+/** Anahtar önekine göre arka planda sağlayıcı seçer — kullanıcıya marka gösterilmez */
+export function inferProviderFromApiKey(key: string): ChatProviderId {
+  const k = key.trim();
+  if (k.startsWith("sk-ant-")) return "anthropic";
+  if (k.startsWith("AIza")) return "gemini";
+  return "deepseek";
+}
 
-export const PROVIDER_KEY_URLS: Record<ChatProviderId, string> = {
-  deepseek: "https://platform.deepseek.com/api_keys",
-  gemini: "https://aistudio.google.com/apikey",
-  anthropic: "https://console.anthropic.com/settings/keys",
+/** Gelişmiş seçim — kullanıcıya markasız etiketler */
+export const PROVIDER_MODE_LABELS: Record<ChatProviderId, string> = {
+  deepseek: "Standart (önerilen)",
+  gemini: "Alternatif 1",
+  anthropic: "Alternatif 2",
 };
 
 export interface ClientChatAuth {

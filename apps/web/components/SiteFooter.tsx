@@ -24,7 +24,7 @@ export function SiteFooter() {
             İletişim
           </Link>
           <Link href="/ayarlar" className="hover:text-goethe-blue">
-            API ayarları
+            AI API ayarları
           </Link>
         </nav>
 

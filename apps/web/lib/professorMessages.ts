@@ -1,7 +1,7 @@
 /** Profesör (Sınıf) modülü — kullanıcıya gösterilen hata ve yönlendirme metinleri */
 
 export const PROFESSOR_MISSING_API_KEY =
-  "Profesörünüzle eğitime devam etmek için API anahtarı eklemeniz gerekir. Ayarlar sayfasından tercih ettiğiniz sağlayıcı için anahtar oluşturup kaydedin.";
+  "Profesörünüzle gelişmiş eğitime devam etmek için AI API anahtarı eklemeniz gerekir. Ayarlar sayfasından anahtarınızı oluşturup kaydedin.";
 
 export const PROFESSOR_INVALID_API_KEY =
   "API anahtarınız geçersiz veya süresi dolmuş. Ayarlar sayfasından anahtarı kontrol edin.";

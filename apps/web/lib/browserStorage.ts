@@ -51,7 +51,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/grammar-pack": "Grammar Pack",
   "/grundlagen/roadmap": "Gramer Yol Haritası",
   "/grundlagen/form": "Goethe Form",
-  "/ayarlar": "Ayarlar",
+  "/ayarlar": "AI API Ayarları",
   "/blog": "Blog",
   "/iletisim": "İletişim",
   "/harita": "Öğrenme Haritası",

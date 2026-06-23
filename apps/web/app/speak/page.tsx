@@ -1238,15 +1238,14 @@ export default function SpeakPage() {
               {chatError && !sttError && isProfessorMissingApiKeyError(chatError) && (
                 <>
                   <p className="mt-3 leading-relaxed text-sage-700">
-                    Profesörünüzle bire bir ders almak için tercih ettiğiniz sağlayıcıda ücretsiz veya
-                    düşük maliyetli bir API anahtarı oluşturup kaydedin. Ardından eğitime kaldığınız
-                    yerden devam edebilirsiniz.
+                    Profesörünüzle bire bir ders almak için ücretsiz veya düşük maliyetli bir AI API
+                    anahtarı oluşturup kaydedin. Ardından eğitime kaldığınız yerden devam edebilirsiniz.
                   </p>
                   <Link
                     href="/ayarlar"
                     className="mt-3 inline-block font-semibold text-goethe-blue underline"
                   >
-                    API ayarlarına git →
+                    AI API ayarlarına git →
                   </Link>
                 </>
               )}
