@@ -73,12 +73,7 @@ function buildDrills(setId, examples, articleFilter, seed) {
   examples.forEach((ex, i) => {
     if (i >= 10) return;
     const type = i % 3 === 0 ? "pick_article" : i % 3 === 1 ? "noun_gap" : "article_match";
-    const correct =
-      type === "pick_article"
-        ? ex.article
-        : type === "noun_gap"
-          ? ex.article
-          : ex.noun;
+    const correct = type === "pick_article" ? ex.article : ex.noun;
     const wrongArticles = articles.filter((a) => a !== ex.article);
     const wrongNouns = shuffle(
       Object.values(wordMap).filter((w) => w.article !== ex.article),

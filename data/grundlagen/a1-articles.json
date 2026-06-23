@@ -213,7 +213,7 @@
             "Küche",
             "Pass"
           ],
-          "correct_index": 0,
+          "correct_index": 3,
           "explanation_tr": "Pass → der (pasaport)"
         },
         {
@@ -254,7 +254,7 @@
             "Bruder",
             "Sofa"
           ],
-          "correct_index": 0,
+          "correct_index": 2,
           "explanation_tr": "Bruder → der (erkek kardeş)"
         },
         {
@@ -295,7 +295,7 @@
             "Video",
             "Adresse"
           ],
-          "correct_index": 0,
+          "correct_index": 1,
           "explanation_tr": "Onkel → der (amca/dayı)"
         }
       ]
@@ -492,7 +492,7 @@
             "Arzt",
             "Rezept"
           ],
-          "correct_index": 0,
+          "correct_index": 1,
           "explanation_tr": "Kopie → die (kopya)"
         },
         {
@@ -533,7 +533,7 @@
             "Chef",
             "Kind"
           ],
-          "correct_index": 0,
+          "correct_index": 1,
           "explanation_tr": "Bezahlung → die (ödeme işlemi)"
         },
         {
@@ -574,7 +574,7 @@
             "Krankenhaus",
             "Eltern"
           ],
-          "correct_index": 0,
+          "correct_index": 3,
           "explanation_tr": "Eltern → die (ebeveynler)"
         }
       ]
@@ -771,7 +771,7 @@
             "Juni",
             "Gemüse"
           ],
-          "correct_index": 0,
+          "correct_index": 3,
           "explanation_tr": "Gemüse → das (sebze)"
         },
         {
@@ -812,7 +812,7 @@
             "Juni",
             "Kaffee"
           ],
-          "correct_index": 0,
+          "correct_index": 1,
           "explanation_tr": "Viertel → das (çeyrek)"
         },
         {
@@ -853,7 +853,7 @@
             "Frage",
             "Husten"
           ],
-          "correct_index": 0,
+          "correct_index": 1,
           "explanation_tr": "Wasser → das (su)"
         }
       ]
