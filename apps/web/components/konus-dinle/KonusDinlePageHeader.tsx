@@ -21,7 +21,7 @@ export function KonusDinlePageHeader() {
           <h1 className="mt-1 text-2xl font-bold sm:text-3xl">Konuş-Dinle</h1>
           <p className="mt-2 max-w-xl text-sm text-white/85">
             Soldaki hedef ağacından dal seç. Platform konuşur, sen dinlersin ve tekrar edersin — istediğin
-            kadar tekrar dinle. AI gerekmez.
+            kadar tekrar dinle. Ekstra kurulum gerekmez.
           </p>
         </div>
         <div className="hidden shrink-0 flex-col gap-1 rounded-xl bg-white/10 px-4 py-3 text-center sm:flex">

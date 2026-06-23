@@ -49,9 +49,9 @@ export function maskApiKey(key: string): string {
 }
 
 export const PROVIDER_LABELS: Record<ChatProviderId, string> = {
-  deepseek: "DeepSeek",
-  gemini: "Google Gemini",
-  anthropic: "Anthropic Claude",
+  deepseek: "Ekonomik",
+  gemini: "Google",
+  anthropic: "Claude",
 };
 
 export const PROVIDER_KEY_URLS: Record<ChatProviderId, string> = {

@@ -4,6 +4,15 @@ import { buildLessonContext, getSpeakSystemPrompt, parseChatResponse } from "@/l
 import type { ApiUsageInfo } from "@/lib/speakTypes";
 import { CHAT_HISTORY_LIMIT, ChatProviderError, type ChatAuthOverride, type ChatCompletionInput, type ChatProviderConfig } from "./types";
 import { resolveApiKeyForProvider } from "./auth";
+import {
+  PROFESSOR_CONNECTION_ERROR,
+  PROFESSOR_INVALID_API_KEY,
+  PROFESSOR_MISSING_API_KEY,
+  PROFESSOR_QUOTA_EXCEEDED,
+  PROFESSOR_RATE_LIMIT,
+  PROFESSOR_RESPONSE_ERROR,
+  PROFESSOR_UNAVAILABLE,
+} from "@/lib/professorMessages";
 
 const DEFAULT_MODEL = "deepseek-chat";
 const API_BASE = "https://api.deepseek.com";
@@ -30,7 +39,7 @@ function errorText(err: unknown): string {
 export function getDeepseekConfig(auth?: ChatAuthOverride): ChatProviderConfig {
   const apiKey = resolveApiKeyForProvider("deepseek", auth);
   if (!apiKey) {
-    throw new ChatProviderError("DEEPSEEK_API_KEY yapılandırılmamış.", 503, "deepseek");
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
   return {
     id: "deepseek",
@@ -82,7 +91,7 @@ async function callDeepseekChat(
   try {
     data = (await response.json()) as DeepseekChatResponse;
   } catch {
-    throw new ChatProviderError("DeepSeek yanıtı okunamadı.", 502, "deepseek");
+    throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek");
   }
 
   return { data, response };
@@ -119,7 +128,7 @@ function buildUsage(
 export async function completeWithDeepseek(input: ChatCompletionInput, auth?: ChatAuthOverride) {
   const apiKey = resolveApiKeyForProvider("deepseek", auth);
   if (!apiKey) {
-    throw new ChatProviderError("DEEPSEEK_API_KEY yapılandırılmamış.", 503, "deepseek");
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
 
   const model = process.env.DEEPSEEK_MODEL?.trim() || DEFAULT_MODEL;
@@ -165,7 +174,7 @@ export async function completeWithDeepseek(input: ChatCompletionInput, auth?: Ch
     } catch (err) {
       if (err instanceof ChatProviderError) throw err;
       throw new ChatProviderError(
-        "DeepSeek API'ye bağlanılamadı (ağ kesintisi veya zaman aşımı).",
+        PROFESSOR_CONNECTION_ERROR,
         503,
         "deepseek",
         errorText(err).slice(0, 200)
@@ -174,31 +183,21 @@ export async function completeWithDeepseek(input: ChatCompletionInput, auth?: Ch
 
     const apiMessage = data.error?.message ?? "";
     if (response.status === 429) {
-      throw new ChatProviderError(
-        "DeepSeek rate limit aşıldı. Biraz bekleyip tekrar deneyin.",
-        429,
-        "deepseek",
-        apiMessage.slice(0, 300)
-      );
+      throw new ChatProviderError(PROFESSOR_RATE_LIMIT, 429, "deepseek", apiMessage.slice(0, 300));
     }
     if (response.status === 401 || response.status === 403) {
-      throw new ChatProviderError("DeepSeek API anahtarı geçersiz.", 503, "deepseek", apiMessage.slice(0, 200));
+      throw new ChatProviderError(PROFESSOR_INVALID_API_KEY, 503, "deepseek", apiMessage.slice(0, 200));
     }
     if (response.status === 402 || apiMessage.toLowerCase().includes("insufficient balance")) {
       throw new ChatProviderError(
-        "DeepSeek hesabında yeterli bakiye yok. platform.deepseek.com → Billing.",
+        PROFESSOR_QUOTA_EXCEEDED,
         503,
         "deepseek",
         apiMessage.slice(0, 300)
       );
     }
     if (!response.ok) {
-      throw new ChatProviderError(
-        "DeepSeek isteği reddedildi.",
-        502,
-        "deepseek",
-        apiMessage.slice(0, 300) || `HTTP ${response.status}`
-      );
+      throw new ChatProviderError(PROFESSOR_UNAVAILABLE, 502, "deepseek", apiMessage.slice(0, 300) || `HTTP ${response.status}`);
     }
 
     const finishReason = data.choices?.[0]?.finish_reason ?? "unknown";
@@ -210,7 +209,7 @@ export async function completeWithDeepseek(input: ChatCompletionInput, auth?: Ch
         await sleep(RETRY_DELAY_MS * (attempt + 1));
         continue;
       }
-      throw new ChatProviderError("Model yanıt vermedi.", 502, "deepseek", lastParseDetail);
+      throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek", lastParseDetail);
     }
 
     try {
@@ -225,9 +224,9 @@ export async function completeWithDeepseek(input: ChatCompletionInput, auth?: Ch
           continue;
         }
       }
-      throw new ChatProviderError("Model yanıtı işlenemedi (JSON).", 502, "deepseek", lastParseDetail);
+      throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek", lastParseDetail);
     }
   }
 
-  throw new ChatProviderError("Model yanıtı işlenemedi (JSON).", 502, "deepseek", lastParseDetail);
+  throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek", lastParseDetail);
 }

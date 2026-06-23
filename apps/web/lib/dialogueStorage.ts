@@ -101,7 +101,7 @@ export function canGenerateAiStory(state: DialogueStorageState): { ok: boolean; 
   const count =
     state.aiGenerations.dayKey === dayKey ? state.aiGenerations.count : 0;
   if (count >= MAX_AI_GENERATIONS_PER_DAY) {
-    return { ok: false, reason: `Günde en fazla ${MAX_AI_GENERATIONS_PER_DAY} AI hikaye.` };
+    return { ok: false, reason: `Günde en fazla ${MAX_AI_GENERATIONS_PER_DAY} yeni hikaye oluşturabilirsiniz.` };
   }
   return { ok: true };
 }

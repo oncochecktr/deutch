@@ -1,5 +1,10 @@
 import { ChatProviderError } from "@/lib/chat/types";
 import {
+  PROFESSOR_MISSING_API_KEY,
+  PROFESSOR_RESPONSE_ERROR,
+  PROFESSOR_UNAVAILABLE,
+} from "@/lib/professorMessages";
+import {
   buildDialogueUserMessage,
   getDialogueSystemPrompt,
   isValidDialogueGenerateBody,
@@ -46,22 +51,18 @@ async function callDeepseekDialogue(
   };
 
   if (!response.ok) {
-    throw new ChatProviderError(
-      data.error?.message ?? "DeepSeek isteği reddedildi.",
-      response.status === 429 ? 429 : 502,
-      "deepseek"
-    );
+    throw new ChatProviderError(PROFESSOR_UNAVAILABLE, response.status === 429 ? 429 : 502, "deepseek");
   }
 
   const text = (data.choices?.[0]?.message?.content ?? "").trim();
-  if (!text) throw new ChatProviderError("Model yanıt vermedi.", 502, "deepseek");
+  if (!text) throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek");
   return text;
 }
 
 export async function generateDialogueStory(req: DialogueGenerateRequest): Promise<DialogueStory> {
   const apiKey = process.env.DEEPSEEK_API_KEY?.trim();
   if (!apiKey) {
-    throw new ChatProviderError("DEEPSEEK_API_KEY yapılandırılmamış.", 503, "deepseek");
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
 
   const model = process.env.DEEPSEEK_MODEL?.trim() || DEFAULT_MODEL;
@@ -92,7 +93,7 @@ export async function generateDialogueStory(req: DialogueGenerateRequest): Promi
     }
   }
 
-  throw new ChatProviderError("Hikaye üretilemedi.", 502, "deepseek", lastErr);
+  throw new ChatProviderError("Hikaye şu an oluşturulamadı. Lütfen tekrar deneyin.", 502, "deepseek", lastErr);
 }
 
 export { isValidDialogueGenerateBody };

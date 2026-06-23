@@ -6,7 +6,8 @@ import Link from "next/link";
 
 import { usePathname } from "next/navigation";
 
-import { NavIcon, type NavIconKey } from "@/components/icons";
+import { IconLinkedIn, NavIcon, type NavIconKey } from "@/components/icons";
+import { SITE_LINKEDIN_URL } from "@/lib/site";
 
 
 
@@ -107,17 +108,25 @@ export function NavBar() {
 
         </nav>
 
-        <Link
+        <div className="flex items-center gap-2">
+          <a
+            href={SITE_LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Timur Sadullayev — LinkedIn profili"
+            title="LinkedIn"
+            className="flex h-9 w-9 items-center justify-center rounded-lg text-sage-500 transition hover:bg-[#0A66C2]/10 hover:text-[#0A66C2]"
+          >
+            <IconLinkedIn size={18} />
+          </a>
 
-          href="/"
-
-          className="rounded-lg px-3 py-2 text-sm font-medium text-goethe-blue lg:hidden"
-
-        >
-
-          Panel
-
-        </Link>
+          <Link
+            href="/"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-goethe-blue lg:hidden"
+          >
+            Panel
+          </Link>
+        </div>
 
       </div>
 

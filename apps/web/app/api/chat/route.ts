@@ -70,7 +70,7 @@ export async function POST(request: Request) {
 
     console.error("Chat API hata:", err);
     return Response.json(
-      { error: "Konuşma partneri şu an kullanılamıyor." } satisfies ChatErrorResponse,
+      { error: "Profesör şu an kullanılamıyor." } satisfies ChatErrorResponse,
       { status: 500 }
     );
   }

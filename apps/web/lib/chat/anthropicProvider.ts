@@ -5,6 +5,14 @@ import { buildLessonContext, getSpeakSystemPrompt, parseChatResponse } from "@/l
 import type { ApiUsageInfo } from "@/lib/speakTypes";
 import { CHAT_HISTORY_LIMIT, ChatProviderError, type ChatAuthOverride, type ChatCompletionInput, type ChatProviderConfig } from "./types";
 import { resolveApiKeyForProvider } from "./auth";
+import {
+  PROFESSOR_INVALID_API_KEY,
+  PROFESSOR_MISSING_API_KEY,
+  PROFESSOR_QUOTA_EXCEEDED,
+  PROFESSOR_RATE_LIMIT,
+  PROFESSOR_RESPONSE_ERROR,
+  PROFESSOR_UNAVAILABLE,
+} from "@/lib/professorMessages";
 
 function resolveLessonContext(input: ChatCompletionInput): string | null {
   if (!input.lessonId) return null;
@@ -16,11 +24,7 @@ function resolveLessonContext(input: ChatCompletionInput): string | null {
 export function getAnthropicConfig(auth?: ChatAuthOverride): ChatProviderConfig {
   const apiKey = resolveApiKeyForProvider("anthropic", auth);
   if (!apiKey) {
-    throw new ChatProviderError(
-      "ANTHROPIC_API_KEY yapılandırılmamış.",
-      503,
-      "anthropic"
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "anthropic");
   }
   return {
     id: "anthropic",
@@ -31,7 +35,7 @@ export function getAnthropicConfig(auth?: ChatAuthOverride): ChatProviderConfig 
 export async function completeWithAnthropic(input: ChatCompletionInput, auth?: ChatAuthOverride) {
   const apiKey = resolveApiKeyForProvider("anthropic", auth);
   if (!apiKey) {
-    throw new ChatProviderError("ANTHROPIC_API_KEY yapılandırılmamış.", 503, "anthropic");
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "anthropic");
   }
 
   const model = process.env.CLAUDE_MODEL?.trim() || "claude-sonnet-4-6";
@@ -61,7 +65,7 @@ export async function completeWithAnthropic(input: ChatCompletionInput, auth?: C
 
     const textBlock = response.content.find((b) => b.type === "text");
     if (!textBlock || textBlock.type !== "text") {
-      throw new ChatProviderError("Model yanıt vermedi.", 502, "anthropic");
+      throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "anthropic");
     }
 
     const parsed = parseChatResponse(textBlock.text);
@@ -84,31 +88,23 @@ export async function completeWithAnthropic(input: ChatCompletionInput, auth?: C
     const status = err instanceof Anthropic.APIError ? err.status : undefined;
 
     if (status === 429) {
-      throw new ChatProviderError(
-        "Rate limit aşıldı. Biraz bekleyip tekrar deneyin.",
-        429,
-        "anthropic"
-      );
+      throw new ChatProviderError(PROFESSOR_RATE_LIMIT, 429, "anthropic");
     }
     if (status === 401) {
-      throw new ChatProviderError("API anahtarı geçersiz.", 503, "anthropic");
+      throw new ChatProviderError(PROFESSOR_INVALID_API_KEY, 503, "anthropic");
     }
     if (
       err instanceof Anthropic.APIError &&
       typeof err.message === "string" &&
       err.message.toLowerCase().includes("credit balance")
     ) {
-      throw new ChatProviderError(
-        "Anthropic hesabında yeterli kredi yok. Billing sayfasından kredi ekleyin.",
-        503,
-        "anthropic"
-      );
+      throw new ChatProviderError(PROFESSOR_QUOTA_EXCEEDED, 503, "anthropic");
     }
     if (err instanceof SyntaxError) {
-      throw new ChatProviderError("Model yanıtı işlenemedi.", 502, "anthropic");
+      throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "anthropic");
     }
 
     console.error("Anthropic chat hata:", err);
-    throw new ChatProviderError("Konuşma partneri şu an kullanılamıyor.", 500, "anthropic");
+    throw new ChatProviderError(PROFESSOR_UNAVAILABLE, 500, "anthropic");
   }
 }

@@ -15,6 +15,14 @@ import {
   saveProfessorAudioEnabled,
 } from "@/lib/speakAudioPrefs";
 import { mapSpeechCorrectionToWordId } from "@/lib/mapSpeechCorrectionToWordId";
+import {
+  isProfessorMissingApiKeyError,
+  isProfessorQuotaError,
+  isProfessorRateLimitError,
+  PROFESSOR_TIMEOUT,
+  PROFESSOR_UNAVAILABLE,
+  sanitizeProfessorErrorForUser,
+} from "@/lib/professorMessages";
 import { recordSRSReview } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
 import type { ChatHistoryItem, ChatResponse, SpeakInputLanguage, BoardPhase, TeachingExample } from "@/lib/speakTypes";
@@ -133,7 +141,6 @@ export default function SpeakPage() {
   const [loading, setLoading] = useState(false);
   const [loadingSlow, setLoadingSlow] = useState(false);
   const [chatError, setChatError] = useState<string | null>(null);
-  const [chatErrorDetail, setChatErrorDetail] = useState<string | null>(null);
   const [infoMessage, setInfoMessage] = useState<string | null>(null);
   const [inputLanguage, setInputLanguage] = useState<SpeakInputLanguage>("tr");
   const [memoryReady, setMemoryReady] = useState(false);
@@ -432,7 +439,6 @@ export default function SpeakPage() {
       setLoading(true);
       setLoadingSlow(false);
       setChatError(null);
-      setChatErrorDetail(null);
       setInfoMessage(null);
       const slowTimer = window.setTimeout(() => setLoadingSlow(true), 8000);
       // Tahtayı temizleme — hata olursa son cevap kalır
@@ -475,11 +481,8 @@ export default function SpeakPage() {
         try {
           data = (await res.json()) as ChatResponse | { error: string; detail?: string; code?: string };
         } catch {
-          const msg = res.ok
-            ? "Sunucu yanıtı okunamadı."
-            : `Sunucu hatası (${res.status}). stop.bat → start.bat --rebuild`;
+          const msg = res.ok ? "Sunucu yanıtı okunamadı." : PROFESSOR_UNAVAILABLE;
           setChatError(msg);
-          setChatErrorDetail(null);
           addLog("error", "JSON okunamadı", `HTTP ${res.status}`);
           return;
         }
@@ -487,8 +490,7 @@ export default function SpeakPage() {
         if (!res.ok) {
           const errMsg = "error" in data ? data.error : "Bir hata oluştu.";
           const detail = "detail" in data && data.detail ? data.detail : null;
-          setChatError(errMsg);
-          setChatErrorDetail(detail);
+          setChatError(sanitizeProfessorErrorForUser(errMsg));
           addLog("error", errMsg, detail ?? `HTTP ${res.status}`);
           return;
         }
@@ -596,11 +598,8 @@ export default function SpeakPage() {
         }
       } catch (err) {
         const isTimeout = err instanceof Error && err.name === "TimeoutError";
-        const msg = isTimeout
-          ? "Profesör yanıtı çok uzun sürdü (2 dk). Tekrar dene veya GEMINI_MODEL=gemini-2.5-flash kullan."
-          : "Bağlantı hatası. Tekrar deneyin.";
+        const msg = isTimeout ? PROFESSOR_TIMEOUT : "Bağlantı hatası. Tekrar deneyin.";
         setChatError(msg);
-        setChatErrorDetail(err instanceof Error ? err.message : null);
         addLog("error", "İstek başarısız", err instanceof Error ? err.message : String(err));
       } finally {
         inFlightMessageRef.current = null;
@@ -725,8 +724,7 @@ export default function SpeakPage() {
 
         const data = (await res.json()) as ExerciseCheckResponse & { error?: string; detail?: string };
         if (!res.ok) {
-          setChatError(data.error ?? "Egzersiz kontrolü başarısız.");
-          setChatErrorDetail(data.detail ?? null);
+          setChatError(sanitizeProfessorErrorForUser(data.error ?? "Egzersiz kontrolü başarısız."));
           return;
         }
 
@@ -757,7 +755,6 @@ export default function SpeakPage() {
         }
       } catch (err) {
         setChatError("Egzersiz bağlantı hatası.");
-        setChatErrorDetail(err instanceof Error ? err.message : null);
       } finally {
         setExerciseLoading(false);
       }
@@ -1210,35 +1207,30 @@ export default function SpeakPage() {
           )}
           {(sttError || chatError) && (
             <div className="rounded-xl border border-goethe-red/30 bg-red-50 px-4 py-3 text-sm text-goethe-red">
-              <p>{sttError || chatError}</p>
-              {chatErrorDetail && !sttError && (
-                <p className="mt-2 text-xs opacity-80">{chatErrorDetail}</p>
-              )}
-              {chatError && !sttError && chatError.includes("limit") && (
-                <p className="mt-2 text-xs leading-relaxed">
-                  <span className="font-medium">Önemli:</span> Gemini Advanced / Google One “Pro” aboneliği, bu
-                  uygulamanın API anahtarını <span className="font-medium">otomatik ücretli yapmaz</span>.
-                  AI Studio → Billing’de bu anahtarın projesine faturalandırma + (gerekirse) prepaid kredi
-                  bağlı olmalı. Ücretli planda bile dakikalık istek sınırı (RPM) vardır.
-                </p>
-              )}
-              {chatError && !sttError && chatError.includes("kotası") && (
-                <p className="mt-2 text-xs">
-                  Kontrol:{" "}
-                  <a
-                    href="https://aistudio.google.com/apikey"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline"
+              <p>{sttError || sanitizeProfessorErrorForUser(chatError)}</p>
+              {chatError && !sttError && isProfessorMissingApiKeyError(chatError) && (
+                <>
+                  <p className="mt-3 leading-relaxed text-sage-700">
+                    Profesörünüzle bire bir ders almak için tercih ettiğiniz sağlayıcıda ücretsiz veya
+                    düşük maliyetli bir API anahtarı oluşturup kaydedin. Ardından eğitime kaldığınız
+                    yerden devam edebilirsiniz.
+                  </p>
+                  <Link
+                    href="/ayarlar"
+                    className="mt-3 inline-block font-semibold text-goethe-blue underline"
                   >
-                    aistudio.google.com/apikey
-                  </a>{" "}
-                  → proje → Billing / Usage tier. Detay satırında Google’ın ham hatası görünür.
+                    API ayarlarına git →
+                  </Link>
+                </>
+              )}
+              {chatError && !sttError && isProfessorQuotaError(chatError) && (
+                <p className="mt-2 text-xs leading-relaxed text-sage-600">
+                  Sağlayıcı hesabınızdaki bakiye veya günlük limiti kontrol edin.
                 </p>
               )}
-              {chatError && !sttError && !chatError.includes("Rate limit") && (
-                <p className="mt-2 text-xs">
-                  Çözüm: stop.bat → start.bat --rebuild → Ctrl+F5.
+              {chatError && !sttError && isProfessorRateLimitError(chatError) && (
+                <p className="mt-2 text-xs leading-relaxed text-sage-600">
+                  Birkaç saniye bekleyip tekrar deneyin.
                 </p>
               )}
             </div>

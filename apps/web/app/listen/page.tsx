@@ -54,7 +54,12 @@ function ListenPageContent() {
   const [intervalSec, setIntervalSec] = useState(4);
   const [playExample, setPlayExample] = useState(true);
   const [a1Offline, setA1Offline] = useState<{ ready: number; total: number } | null>(null);
-  const cancelRef = useRef(false);
+  const playbackGenRef = useRef(0);
+
+  const interruptPlayback = useCallback(() => {
+    playbackGenRef.current += 1;
+    stopAudio();
+  }, []);
 
   useEffect(() => {
     fetch("/audio/manifest.json")
@@ -101,33 +106,41 @@ function ListenPageContent() {
 
   const word = playlist[index % Math.max(playlist.length, 1)];
 
-  const playCurrent = useCallback(async () => {
-    if (!word) return;
-    const display = formatWord(word.word, word.article);
-    await playGermanAudio(display, word.audio_word);
-    if (playExample && !cancelRef.current) {
-      await sleep(600);
-      await playGermanAudio(word.example_de, word.audio_example);
-    }
-  }, [word, playExample]);
+  const playCurrent = useCallback(
+    async (gen: number) => {
+      if (!word) return;
+      const alive = () => playbackGenRef.current === gen;
+
+      const display = formatWord(word.word, word.article);
+      await playGermanAudio(display, word.audio_word);
+      if (!alive()) return;
+
+      if (playExample) {
+        await sleep(600);
+        if (!alive()) return;
+        await playGermanAudio(word.example_de, word.audio_example);
+      }
+    },
+    [word, playExample]
+  );
 
   useEffect(() => {
-    cancelRef.current = false;
     return () => {
-      cancelRef.current = true;
-      stopAudio();
+      interruptPlayback();
     };
-  }, []);
+  }, [interruptPlayback]);
 
   useEffect(() => {
     if (!playing || !word) return;
+    const gen = ++playbackGenRef.current;
+
     let active = true;
 
     (async () => {
-      await playCurrent();
-      if (!active || cancelRef.current) return;
+      await playCurrent(gen);
+      if (!active || playbackGenRef.current !== gen) return;
       await sleep(intervalSec * 1000);
-      if (active && !cancelRef.current) {
+      if (active && playbackGenRef.current === gen) {
         setIndex((i) => (i + 1) % playlist.length);
         setShowTranslation(false);
       }
@@ -135,15 +148,21 @@ function ListenPageContent() {
 
     return () => {
       active = false;
+      interruptPlayback();
     };
-  }, [playing, index, word?.id, intervalSec, playCurrent, playlist.length]);
+  }, [playing, index, word?.id, intervalSec, playCurrent, playlist.length, interruptPlayback]);
 
   useEffect(() => {
-    if (playing && word) {
+    if (!word) {
+      setShowTranslation(false);
+      return;
+    }
+    if (playing) {
+      setShowTranslation(false);
       const t = setTimeout(() => setShowTranslation(true), 1500);
       return () => clearTimeout(t);
     }
-    setShowTranslation(false);
+    setShowTranslation(true);
   }, [playing, index, word?.id]);
 
   if (!word) {
@@ -175,6 +194,7 @@ function ListenPageContent() {
         <select
           value={pack}
           onChange={(e) => {
+            interruptPlayback();
             setPack(e.target.value as ListenPack);
             setIndex(0);
             setPlaying(false);
@@ -221,9 +241,16 @@ function ListenPageContent() {
             <p className="mt-2 text-sm text-white/70">Plural: {word.plural}</p>
           )}
           {showTranslation && (
-            <div className="mt-6 animate-pulse text-lg">
-              <p>{word.translation_tr}</p>
-              <p className="mt-1 text-sm text-white/70 italic">{word.example_de}</p>
+            <div className="mt-6 space-y-2 text-left sm:text-center">
+              <p className="text-lg font-medium text-white">{word.translation_tr}</p>
+              {word.example_de && (
+                <div className="rounded-lg bg-white/10 px-4 py-3">
+                  <p className="text-sm italic text-white/80">{word.example_de}</p>
+                  {word.example_tr && (
+                    <p className="mt-1 text-sm text-white/65">{word.example_tr}</p>
+                  )}
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -232,6 +259,7 @@ function ListenPageContent() {
             type="button"
             className="btn-secondary inline-flex flex-1 items-center justify-center gap-1"
             onClick={() => {
+              interruptPlayback();
               setPlaying(false);
               setIndex((i) => (i - 1 + playlist.length) % playlist.length);
             }}
@@ -246,11 +274,9 @@ function ListenPageContent() {
             }`}
             onClick={() => {
               if (playing) {
+                interruptPlayback();
                 setPlaying(false);
-                stopAudio();
-                cancelRef.current = true;
               } else {
-                cancelRef.current = false;
                 setPlaying(true);
               }
             }}
@@ -271,6 +297,7 @@ function ListenPageContent() {
             type="button"
             className="btn-secondary inline-flex flex-1 items-center justify-center gap-1"
             onClick={() => {
+              interruptPlayback();
               setPlaying(false);
               setIndex((i) => (i + 1) % playlist.length);
             }}
@@ -283,7 +310,10 @@ function ListenPageContent() {
           <button
             type="button"
             className="text-sm text-sage-500 underline"
-            onClick={() => playCurrent()}
+            onClick={() => {
+              const gen = ++playbackGenRef.current;
+              void playCurrent(gen);
+            }}
           >
             Tekrar dinle
           </button>

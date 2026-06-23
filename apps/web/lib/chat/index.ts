@@ -1,4 +1,5 @@
 import { completeWithAnthropic, getAnthropicConfig } from "./anthropicProvider";
+import { PROFESSOR_MISSING_API_KEY } from "@/lib/professorMessages";
 import { resolveApiKeyForProvider, resolveChatProviderWithAuth, parseChatAuth } from "./auth";
 import { completeWithDeepseek, getDeepseekConfig } from "./deepseekProvider";
 import { completeWithGemini, getGeminiConfig } from "./geminiProvider";
@@ -20,11 +21,7 @@ export function resolveChatProvider(auth?: ChatAuthOverride): ChatProviderId {
   try {
     return resolveChatProviderWithAuth(auth);
   } catch {
-    throw new ChatProviderError(
-      "API anahtarı için sağlayıcı seçin (Ayarlar).",
-      503,
-      "deepseek"
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
 }
 
@@ -45,19 +42,11 @@ export async function completeChat(
   try {
     provider = resolveChatProviderWithAuth(auth);
   } catch {
-    throw new ChatProviderError(
-      "API anahtarı için sağlayıcı seçin (Ayarlar).",
-      503,
-      "deepseek"
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
 
   if (!resolveApiKeyForProvider(provider, auth)) {
-    throw new ChatProviderError(
-      "LLM anahtarı yok. Ayarlar sayfasından kendi API anahtarınızı ekleyin veya sunucu yapılandırmasını kontrol edin.",
-      503,
-      provider
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, provider);
   }
 
   if (provider === "anthropic") return completeWithAnthropic(input, auth);

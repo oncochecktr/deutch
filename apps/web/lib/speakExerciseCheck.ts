@@ -9,6 +9,11 @@ import {
 } from "@/lib/speakExercisePrompts";
 import { gradeExerciseLocally } from "@/lib/speakExercise";
 import { ChatProviderError } from "@/lib/chat/types";
+import {
+  PROFESSOR_MISSING_API_KEY,
+  PROFESSOR_RESPONSE_ERROR,
+  PROFESSOR_UNAVAILABLE,
+} from "@/lib/professorMessages";
 
 const DEFAULT_MODEL = "deepseek-chat";
 const API_BASE = "https://api.deepseek.com";
@@ -50,16 +55,12 @@ async function callDeepseekExercise(
   };
 
   if (!response.ok) {
-    throw new ChatProviderError(
-      data.error?.message ?? "DeepSeek egzersiz isteği reddedildi.",
-      response.status === 429 ? 429 : 502,
-      "deepseek"
-    );
+    throw new ChatProviderError(PROFESSOR_UNAVAILABLE, response.status === 429 ? 429 : 502, "deepseek");
   }
 
   const text = (data.choices?.[0]?.message?.content ?? "").trim();
   if (!text) {
-    throw new ChatProviderError("Model yanıt vermedi.", 502, "deepseek");
+    throw new ChatProviderError(PROFESSOR_RESPONSE_ERROR, 502, "deepseek");
   }
   return { text, usage: data.usage };
 }
@@ -113,11 +114,7 @@ export async function completeExerciseCheck(
         localGrade
       );
     }
-    throw new ChatProviderError(
-      "DEEPSEEK_API_KEY yapılandırılmamış. Ayarlar sayfasından API anahtarı ekleyin.",
-      503,
-      "deepseek"
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "deepseek");
   }
 
   const model = process.env.DEEPSEEK_MODEL?.trim() || DEFAULT_MODEL;

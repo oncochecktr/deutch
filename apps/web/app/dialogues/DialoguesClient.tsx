@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { sanitizeProfessorErrorForUser } from "@/lib/professorMessages";
 import { PageShell } from "@/components/PageShell";
 import { DialogueReader } from "@/components/dialogue/DialogueReader";
 import { getDialogueById, getDialoguesByLevel, getSeedDialogues } from "@/lib/dialogues";
@@ -90,7 +91,7 @@ export default function DialoguesClient() {
       });
       const data = (await res.json()) as DialogueStory & { error?: string; detail?: string };
       if (!res.ok) {
-        setGenError(data.error ?? "Üretim başarısız.");
+        setGenError(sanitizeProfessorErrorForUser(data.error ?? "Üretim başarısız."));
         return;
       }
       const story: DialogueStory = {
@@ -171,11 +172,11 @@ export default function DialoguesClient() {
               onClick={() => void handleGenerate()}
               className="w-full rounded-lg bg-indigo-700 py-2 text-sm font-semibold text-white disabled:opacity-40"
             >
-              {generating ? "Profesör yazıyor…" : "AI hikaye üret"}
+              {generating ? "Profesör yazıyor…" : "Yeni hikaye oluştur"}
             </button>
             {genError && <p className="text-xs text-goethe-red">{genError}</p>}
             <p className="text-[10px] text-sage-400">
-              Günde 3 AI hikaye · {getSeedDialogues().length} hazır hikaye
+              Günde 3 yeni hikaye · {getSeedDialogues().length} hazır hikaye
             </p>
           </div>
 
@@ -183,7 +184,7 @@ export default function DialoguesClient() {
             {stories.length === 0 && (
               <p className="text-sm text-sage-500">
                 {tab === "saved"
-                  ? "Henüz AI hikaye yok — yukarıdan üret."
+                  ? "Henüz özel hikaye yok — yukarıdan oluşturun."
                   : "Bu seviyede hikaye yok."}
               </p>
             )}
@@ -209,7 +210,7 @@ export default function DialoguesClient() {
                   <p className="text-xs text-sage-500">{s.title_tr}</p>
                   <p className="mt-1 text-[10px] text-sage-400">
                     {s.lines.length} satır · {s.theme}
-                    {s.source === "ai" ? " · AI" : ""}
+                    {s.source === "ai" ? " · özel" : ""}
                   </p>
                 </button>
               );

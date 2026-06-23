@@ -90,9 +90,9 @@ export default function AyarlarPage() {
       <section className="card-soft space-y-4 p-5">
         <h2 className="text-sm font-bold uppercase text-goethe-blue">Neden kendi anahtarınız?</h2>
         <p className="text-sm leading-relaxed text-sage-600">
-          Sınıf modülündeki AI profesör DeepSeek, Gemini veya Claude API kullanır. Kendi
-          anahtarınızı girerek ücretsiz veya düşük maliyetli planlarla çalışabilirsiniz.
-          Anahtar yalnızca bu tarayıcıda saklanır; sunucuya loglanmaz.
+          Sınıf modülündeki Profesör, seçtiğiniz sağlayıcı üzerinden çalışır. Kendi API
+          anahtarınızı girerek eğitime devam edebilirsiniz. Anahtar yalnızca bu tarayıcıda
+          saklanır; sunucuya kaydedilmez.
         </p>
         <p className="text-xs text-sage-500">{getStorageWarningText()}</p>
       </section>

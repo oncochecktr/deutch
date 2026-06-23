@@ -422,7 +422,7 @@ export function computeLearningMap(
           {
             id: "practice-speak",
             label: "Konuşma sınıfı",
-            labelTr: "AI profesör",
+            labelTr: "Profesör — Sınıf",
             description: "A1/A2/B1 dersleri",
             href: "/speak",
             progress: Math.min(100, progress.dailyStats.speakSteps * 15),

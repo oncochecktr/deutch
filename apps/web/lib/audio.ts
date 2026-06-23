@@ -5,6 +5,14 @@ import { TTS_MAX_CHARS, TTS_MAX_CHARS_TR } from "@/lib/ttsConfig";
 
 let currentAudio: HTMLAudioElement | null = null;
 let voicesReady: Promise<SpeechSynthesisVoice[]> | null = null;
+/** Aktif oynatmayı iptal ettiğinde bekleyen play* promise'lerini çözer */
+let abortPlayback: (() => void) | null = null;
+/** stopAudio() her çağrıda artar; eski fetch/play zincirleri bunu kontrol eder */
+let audioSession = 0;
+
+function isStaleSession(session: number): boolean {
+  return session !== audioSession;
+}
 
 export type TtsLang = "de" | "tr";
 
@@ -58,7 +66,16 @@ function pickVoice(voices: SpeechSynthesisVoice[], lang: TtsLang): SpeechSynthes
   return filtered.sort((a, b) => scoreVoice(b, lang) - scoreVoice(a, lang))[0];
 }
 
+const ABORTED = "aborted";
+
+function isAbortedError(err: unknown): boolean {
+  return err instanceof Error && err.message === ABORTED;
+}
+
 export function stopAudio(): void {
+  audioSession += 1;
+  abortPlayback?.();
+  abortPlayback = null;
   if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0;
@@ -76,31 +93,74 @@ async function playBlobAudio(blob: Blob): Promise<void> {
   const url = URL.createObjectURL(blob);
   const audio = new Audio(url);
   currentAudio = audio;
-  await new Promise<void>((resolve, reject) => {
-    audio.onended = () => {
-      URL.revokeObjectURL(url);
-      resolve();
-    };
-    audio.onerror = () => {
-      URL.revokeObjectURL(url);
-      reject(new Error("audio play failed"));
-    };
-    audio.play().catch(reject);
-  });
+  try {
+    await new Promise<void>((resolve, reject) => {
+      const cleanup = () => {
+        audio.onended = null;
+        audio.onerror = null;
+        if (abortPlayback === onAbort) abortPlayback = null;
+      };
+      const onAbort = () => {
+        audio.pause();
+        cleanup();
+        reject(new Error(ABORTED));
+      };
+      abortPlayback = onAbort;
+      audio.onended = () => {
+        cleanup();
+        resolve();
+      };
+      audio.onerror = () => {
+        cleanup();
+        reject(new Error("audio play failed"));
+      };
+      audio.play().catch((e) => {
+        cleanup();
+        reject(e);
+      });
+    });
+  } finally {
+    if (currentAudio === audio) currentAudio = null;
+    URL.revokeObjectURL(url);
+  }
 }
 
 async function playMp3Url(src: string): Promise<boolean> {
   const audio = new Audio(src);
   currentAudio = audio;
-  await new Promise<void>((resolve, reject) => {
-    audio.onended = () => resolve();
-    audio.onerror = () => reject(new Error("mp3 load failed"));
-    audio.play().catch(reject);
-  });
+  try {
+    await new Promise<void>((resolve, reject) => {
+      const cleanup = () => {
+        audio.onended = null;
+        audio.onerror = null;
+        if (abortPlayback === onAbort) abortPlayback = null;
+      };
+      const onAbort = () => {
+        audio.pause();
+        cleanup();
+        reject(new Error(ABORTED));
+      };
+      abortPlayback = onAbort;
+      audio.onended = () => {
+        cleanup();
+        resolve();
+      };
+      audio.onerror = () => {
+        cleanup();
+        reject(new Error("mp3 load failed"));
+      };
+      audio.play().catch((e) => {
+        cleanup();
+        reject(e);
+      });
+    });
+  } finally {
+    if (currentAudio === audio) currentAudio = null;
+  }
   return true;
 }
 
-async function playServerTts(text: string, lang: TtsLang): Promise<boolean> {
+async function playServerTts(text: string, lang: TtsLang, session: number): Promise<boolean> {
   const max = lang === "tr" ? TTS_MAX_CHARS_TR : TTS_MAX_CHARS;
   const trimmed = sanitizeForTts(text.trim(), lang).slice(0, max);
   if (!trimmed) return false;
@@ -108,10 +168,13 @@ async function playServerTts(text: string, lang: TtsLang): Promise<boolean> {
     const res = await fetch(
       `/api/tts?lang=${lang}&text=${encodeURIComponent(trimmed)}`
     );
+    if (isStaleSession(session)) return false;
     if (!res.ok) return false;
     await playBlobAudio(await res.blob());
+    if (isStaleSession(session)) return false;
     return true;
-  } catch {
+  } catch (err) {
+    if (isAbortedError(err)) throw err;
     return false;
   }
 }
@@ -130,9 +193,24 @@ async function speakBrowser(text: string, lang: TtsLang, rate?: number): Promise
     utterance.voice = voice;
     utterance.lang = voice.lang;
   }
-  await new Promise<void>((resolve) => {
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
+  await new Promise<void>((resolve, reject) => {
+    const cleanup = () => {
+      if (abortPlayback === onAbort) abortPlayback = null;
+    };
+    const onAbort = () => {
+      window.speechSynthesis.cancel();
+      cleanup();
+      reject(new Error(ABORTED));
+    };
+    abortPlayback = onAbort;
+    utterance.onend = () => {
+      cleanup();
+      resolve();
+    };
+    utterance.onerror = () => {
+      cleanup();
+      resolve();
+    };
     window.speechSynthesis.speak(utterance);
   });
 }
@@ -140,25 +218,35 @@ async function speakBrowser(text: string, lang: TtsLang, rate?: number): Promise
 async function playLangAudio(
   text: string,
   lang: TtsLang,
-  audioSrc?: string | null
+  audioSrc: string | null | undefined,
+  session: number
 ): Promise<"mp3" | "server" | "browser"> {
-  stopAudio();
-
-  if (audioSrc && typeof window !== "undefined") {
-    try {
-      await playMp3Url(audioSrc);
-      return "mp3";
-    } catch {
-      /* fallback */
+  try {
+    if (audioSrc && typeof window !== "undefined") {
+      try {
+        await playMp3Url(audioSrc);
+        if (isStaleSession(session)) return "browser";
+        return "mp3";
+      } catch (err) {
+        if (isAbortedError(err)) throw err;
+        /* fallback */
+      }
     }
-  }
 
-  if (await playServerTts(text, lang)) {
-    return "server";
-  }
+    if (isStaleSession(session)) return "browser";
 
-  await speakBrowser(text, lang);
-  return "browser";
+    if (await playServerTts(text, lang, session)) {
+      return "server";
+    }
+
+    if (isStaleSession(session)) return "browser";
+
+    await speakBrowser(text, lang);
+    return "browser";
+  } catch (err) {
+    if (isAbortedError(err)) return "browser";
+    throw err;
+  }
 }
 
 /** Almanca TTS — MP3 → sunucu Edge → tarayıcı */
@@ -166,12 +254,16 @@ export async function playGermanAudio(
   text: string,
   audioSrc?: string | null
 ): Promise<"mp3" | "server" | "browser"> {
-  return playLangAudio(text, "de", audioSrc);
+  stopAudio();
+  const session = audioSession;
+  return playLangAudio(text, "de", audioSrc, session);
 }
 
 /** Türkçe TTS — sunucu Edge → tarayıcı */
 export async function playTurkishAudio(text: string): Promise<"mp3" | "server" | "browser"> {
-  return playLangAudio(text, "tr");
+  stopAudio();
+  const session = audioSession;
+  return playLangAudio(text, "tr", null, session);
 }
 
 /** Profesör turu: önce Almanca, sonra Türkçe açıklama, sonra düzeltme modeli */

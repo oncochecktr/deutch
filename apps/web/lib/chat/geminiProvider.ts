@@ -12,6 +12,14 @@ import { extractGeminiResponseText, geminiEmptyResponseError } from "./geminiExt
 
 import { CHAT_HISTORY_LIMIT, ChatProviderError, type ChatAuthOverride, type ChatCompletionInput, type ChatProviderConfig } from "./types";
 import { resolveApiKeyForProvider } from "./auth";
+import {
+  PROFESSOR_CONNECTION_ERROR,
+  PROFESSOR_INVALID_API_KEY,
+  PROFESSOR_MISSING_API_KEY,
+  PROFESSOR_QUOTA_EXCEEDED,
+  PROFESSOR_RATE_LIMIT,
+  PROFESSOR_UNAVAILABLE,
+} from "@/lib/professorMessages";
 
 
 
@@ -116,9 +124,7 @@ function mapGeminiError(err: unknown, modelTried?: string): ChatProviderError {
       lower.includes("rpm") ||
       lower.includes("rate");
     return new ChatProviderError(
-      isRpm
-        ? "Dakikalık istek limiti (RPM) aşıldı — birkaç saniye bekleyip tekrar deneyin."
-        : "Gemini API kotası/limiti doldu. AI Studio’da Billing ve Usage Tier kontrol edin.",
+      isRpm ? PROFESSOR_RATE_LIMIT : PROFESSOR_QUOTA_EXCEEDED,
       429,
       "gemini",
       text.slice(0, 400)
@@ -127,17 +133,7 @@ function mapGeminiError(err: unknown, modelTried?: string): ChatProviderError {
 
   if (lower.includes("404") && lower.includes("model")) {
 
-    return new ChatProviderError(
-
-      "Model bulunamadı. .env.local içinde GEMINI_MODEL=gemini-2.5-flash yapın ve stop.bat → start.bat --rebuild.",
-
-      503,
-
-      "gemini",
-
-      text.slice(0, 300)
-
-    );
+    return new ChatProviderError(PROFESSOR_UNAVAILABLE, 503, "gemini", text.slice(0, 300));
 
   }
 
@@ -155,53 +151,23 @@ function mapGeminiError(err: unknown, modelTried?: string): ChatProviderError {
 
   ) {
 
-    return new ChatProviderError("API anahtarı geçersiz veya yetkisiz.", 503, "gemini", text);
+    return new ChatProviderError(PROFESSOR_INVALID_API_KEY, 503, "gemini", text);
 
   }
 
   if (lower.includes("400") || lower.includes("bad request")) {
 
-    return new ChatProviderError(
-
-      "Gemini isteği reddedildi — model ayarı veya parametre hatası.",
-
-      502,
-
-      "gemini",
-
-      text.slice(0, 300)
-
-    );
+    return new ChatProviderError(PROFESSOR_UNAVAILABLE, 502, "gemini", text.slice(0, 300));
 
   }
 
   if (isTransientGeminiError(err)) {
 
-    return new ChatProviderError(
-
-      "Google API'ye bağlanılamadı (ağ kesintisi veya zaman aşımı). Tekrar dene; devam ederse GEMINI_MODEL=gemini-2.5-flash kullan.",
-
-      503,
-
-      "gemini",
-
-      `${text.slice(0, 180)}${modelHint}`
-
-    );
+    return new ChatProviderError(PROFESSOR_CONNECTION_ERROR, 503, "gemini", `${text.slice(0, 180)}${modelHint}`);
 
   }
 
-  return new ChatProviderError(
-
-    "Konuşma partneri şu an kullanılamıyor.",
-
-    500,
-
-    "gemini",
-
-    `${text.slice(0, 180)}${modelHint}`
-
-  );
+  return new ChatProviderError(PROFESSOR_UNAVAILABLE, 500, "gemini", `${text.slice(0, 180)}${modelHint}`);
 
 }
 
@@ -213,15 +179,7 @@ export function getGeminiConfig(auth?: ChatAuthOverride): ChatProviderConfig {
 
   if (!apiKey) {
 
-    throw new ChatProviderError(
-
-      "GEMINI_API_KEY yapılandırılmamış.",
-
-      503,
-
-      "gemini"
-
-    );
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "gemini");
 
   }
 
@@ -243,7 +201,7 @@ async function runGeminiChat(modelName: string, input: ChatCompletionInput, auth
 
   if (!apiKey) {
 
-    throw new ChatProviderError("GEMINI_API_KEY yapılandırılmamış.", 503, "gemini");
+    throw new ChatProviderError(PROFESSOR_MISSING_API_KEY, 503, "gemini");
 
   }
 
