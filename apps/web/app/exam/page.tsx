@@ -134,8 +134,8 @@ export default function ExamHubPage() {
             <h2 className="mt-2 font-semibold text-goethe-blue group-hover:text-sage-600">
               {m.tr}
             </h2>
-            <p className="mt-1 text-xs text-sage-400">{m.desc}</p>
-            <p className="mt-2 text-[10px] text-sage-300">Hedef {m.target}</p>
+            <p className="mt-1 text-sm leading-relaxed text-sage-600">{m.desc}</p>
+            <p className="mt-2 text-xs font-medium text-sage-500">Hedef {m.target}</p>
           </Link>
         ))}
       </div>
@@ -237,8 +237,8 @@ export default function ExamHubPage() {
 function Stat({ n, label, done }: { n: number; label: string; done: number }) {
   return (
     <div className="text-center">
-      <p className="text-lg font-bold text-goethe-blue">{done}/{n}</p>
-      <p className="text-[10px] uppercase text-sage-400">{label}</p>
+      <p className="text-xl font-bold text-goethe-blue sm:text-2xl">{done}/{n}</p>
+      <p className="mt-0.5 text-xs font-semibold uppercase tracking-wide text-sage-500">{label}</p>
     </div>
   );
 }

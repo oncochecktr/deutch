@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { getHoerenQuestions } from "@german-coach/exams";
 import { McqQuestion } from "@/components/exam/McqQuestion";
 import { ExamModuleShell, ExamScoreBar } from "@/components/exam/ExamModuleShell";
+import { ExamEvaluateButton, ExamInstructionBanner } from "@/components/exam/examUi";
 import { useProgress } from "@/lib/ProgressContext";
 import Link from "next/link";
 
@@ -30,11 +31,11 @@ export default function HoerenExamPage() {
   }, [session, answers]);
 
   const allAnswered = session.every((q) => answers[q.id] !== undefined);
+  const answeredCount = session.filter((q) => answers[q.id] !== undefined).length;
 
   if (finished) {
-    const pct = Math.round((score / session.length) * 100);
     return (
-      <ExamModuleShell title="Teil Hören" subtitle="Dinleme oturumu tamamlandı">
+      <ExamModuleShell title="Dinleme — Hören" subtitle="Bu oturum tamamlandı">
         <ExamScoreBar correct={score} total={session.length} label="Hören — Bu oturum" />
         <div className="flex flex-wrap justify-center gap-3">
           {offset + SESSION_SIZE < all.length && (
@@ -54,7 +55,7 @@ export default function HoerenExamPage() {
             Modüllere dön
           </Link>
         </div>
-        <p className="text-center text-xs text-sage-400">
+        <p className="text-center text-sm text-sage-500">
           Toplam banka: {all.length} soru · Çözülen: {Object.keys(progress.goethe.hoeren).length}
         </p>
       </ExamModuleShell>
@@ -63,12 +64,13 @@ export default function HoerenExamPage() {
 
   return (
     <ExamModuleShell
-      title="Teil 1: Hören"
-      subtitle={`Dinleme — soru ${offset + 1}–${Math.min(offset + SESSION_SIZE, all.length)} / ${all.length}`}
+      title="1. Dinleme — Hören"
+      subtitle={`Soru ${offset + 1}–${Math.min(offset + SESSION_SIZE, all.length)} / ${all.length} · hepsini işaretle, sonra değerlendir`}
     >
-      <p className="rounded-xl bg-sage-50 p-3 text-xs text-sage-600">
-        A1 Hören: Ses kaydını dinle (max. 2×), soruyu cevapla. Hedef: ≥ %75.
-      </p>
+      <ExamInstructionBanner>
+        Her soruda <strong>önce dinle</strong> (en fazla 2 kez), sonra doğru seçeneği işaretle. Tüm sorular
+        bitince alttaki <strong>Değerlendir</strong> düğmesine bas.
+      </ExamInstructionBanner>
 
       {session.map((q, i) => (
         <McqQuestion
@@ -85,10 +87,10 @@ export default function HoerenExamPage() {
         />
       ))}
 
-      <button
-        type="button"
-        className="btn-primary w-full py-3"
+      <ExamEvaluateButton
         disabled={!allAnswered}
+        answered={answeredCount}
+        total={session.length}
         onClick={() => {
           const hoeren = { ...progress.goethe.hoeren };
           for (const q of session) {
@@ -111,9 +113,7 @@ export default function HoerenExamPage() {
           });
           setFinished(true);
         }}
-      >
-        Auswerten — Değerlendir
-      </button>
+      />
     </ExamModuleShell>
   );
 }

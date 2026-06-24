@@ -32,8 +32,8 @@ export function ExamTimer({ endsAt, onExpire, label = "Kalan süre" }: ExamTimer
         urgent ? "bg-red-600 text-white" : "bg-goethe-blue text-white"
       }`}
     >
-      <span>{label}</span>
-      <span className="tabular-nums text-lg font-bold">
+      <span className="text-base font-medium">{label}</span>
+      <span className="tabular-nums text-2xl font-bold">
         {String(mins).padStart(2, "0")}:{String(secs).padStart(2, "0")}
       </span>
     </div>

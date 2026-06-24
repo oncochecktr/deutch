@@ -45,30 +45,30 @@ export function SprechenRealSimulator() {
       {phase === "intro" && (
         <div className="space-y-4">
           <div className="card-soft border-2 border-goethe-gold/40 p-5">
-            <p className="text-sm text-sage-600">
-              Yazılı bölümler (Lesen, Hören, Schreiben) bittikten sonra <strong>4 aday</strong> ayrı
+            <p className="text-base leading-relaxed text-sage-700">
+              Yazılı bölümler (okuma, dinleme, yazma) bittikten sonra <strong>4 aday</strong> ayrı
               odada yan yana oturur. Karşınızda <strong>2 Almanca öğretmeni</strong> vardır. Konuşma 3
               ana bölümden oluşur.
             </p>
           </div>
 
-          <div className="grid gap-2 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2">
             {SPRECHEN_FLOW.map((f) => (
               <div key={f.id} className="rounded-xl border border-sage-100 bg-white p-4">
-                <p className="text-xs font-bold text-goethe-blue">{f.step}. {f.title}</p>
-                <p className="mt-1 text-sm text-sage-600">{f.subtitle}</p>
-                <p className="mt-1 text-xs text-sage-400">{f.rounds}</p>
+                <p className="text-sm font-bold text-goethe-blue">{f.step}. {f.title}</p>
+                <p className="mt-1 text-base text-sage-700">{f.subtitle}</p>
+                <p className="mt-1 text-sm text-sage-500">{f.rounds}</p>
               </div>
             ))}
           </div>
 
           <section className="card-soft p-4">
-            <h2 className="mb-3 text-xs font-semibold uppercase text-sage-400">Altın kurallar</h2>
+            <h2 className="mb-3 text-sm font-semibold uppercase text-sage-500">Altın kurallar</h2>
             <ul className="space-y-3">
               {SPRECHEN_EXAM_RULES.map((r) => (
-                <li key={r.title} className="text-sm">
+                <li key={r.title} className="text-base leading-relaxed">
                   <span className="font-semibold text-goethe-blue">{r.title}:</span>{" "}
-                  <span className="text-sage-600">{r.text}</span>
+                  <span className="text-sage-700">{r.text}</span>
                 </li>
               ))}
             </ul>
@@ -85,31 +85,31 @@ export function SprechenRealSimulator() {
           <PhaseHeader step={1} title={TEIL1_FORM.title} hint={TEIL1_FORM.tip} />
 
           <div className="card-soft p-4">
-            <p className="mb-3 text-xs font-semibold uppercase text-sage-400">A4 form — sırayla söyle</p>
+            <p className="mb-3 text-sm font-semibold uppercase text-sage-500">A4 form — sırayla söyle</p>
             <ul className="space-y-2">
               {TEIL1_FORM.fields.map((f) => (
-                <li key={f.de} className="rounded-lg bg-sage-50 px-3 py-2 text-sm">
-                  <span className="font-medium text-goethe-blue">{f.de}</span>
-                  <span className="text-sage-400"> — {f.tr}</span>
-                  <p className="mt-0.5 text-xs italic text-sage-500">{f.example}</p>
+                <li key={f.de} className="rounded-lg bg-sage-50 px-4 py-3">
+                  <span className="text-base font-semibold text-goethe-blue">{f.de}</span>
+                  <span className="text-base text-sage-600"> — {f.tr}</span>
+                  <p className="mt-1 text-sm italic text-sage-600">{f.example}</p>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="card-soft p-4">
-            <p className="mb-3 text-xs font-semibold uppercase text-sage-400">Öğretmen sorar</p>
+            <p className="mb-3 text-sm font-semibold uppercase text-sage-500">Öğretmen sorar</p>
             {TEIL1_FORM.examinerTasks.map((t) => (
-              <div key={t.de} className="mb-3 last:mb-0">
-                <p className="font-medium text-goethe-blue">{t.de}</p>
-                <p className="text-sm text-sage-600">{t.tr}</p>
-                <p className="mt-1 text-xs italic text-sage-500">{t.example}</p>
+              <div key={t.de} className="mb-4 last:mb-0">
+                <p className="text-base font-semibold text-goethe-blue">{t.de}</p>
+                <p className="text-base text-sage-700">{t.tr}</p>
+                <p className="mt-1 text-sm italic text-sage-600">{t.example}</p>
                 <AudioButton text={t.example} label="Örnek dinle" size="sm" />
               </div>
             ))}
           </div>
 
-          <label className="flex items-center gap-2 text-sm">
+          <label className="flex items-center gap-3 text-base text-sage-700">
             <input type="checkbox" checked={spoken} onChange={(e) => setSpoken(e.target.checked)} />
             Yüksek sesle prova yaptım (sadece Almanca)
           </label>
@@ -155,7 +155,7 @@ export function SprechenRealSimulator() {
             </div>
           </div>
 
-          <label className="flex items-center gap-2 text-sm">
+          <label className="flex items-center gap-3 text-base text-sage-700">
             <input type="checkbox" checked={spoken} onChange={(e) => setSpoken(e.target.checked)} />
             Soruyu sordum / cevapladım (basit A1)
           </label>
@@ -211,7 +211,7 @@ export function SprechenRealSimulator() {
             </div>
           </div>
 
-          <label className="flex items-center gap-2 text-sm">
+          <label className="flex items-center gap-3 text-base text-sage-700">
             <input type="checkbox" checked={spoken} onChange={(e) => setSpoken(e.target.checked)} />
             Rica cümlesini yüksek sesle söyledim
           </label>
@@ -256,7 +256,7 @@ export function SprechenRealSimulator() {
             </div>
           </div>
 
-          <label className="flex items-center gap-2 text-sm">
+          <label className="flex items-center gap-3 text-base text-sage-700">
             <input type="checkbox" checked={spoken} onChange={(e) => setSpoken(e.target.checked)} />
             Yasak + Entschuldigung provası yaptım
           </label>
@@ -304,10 +304,10 @@ export function SprechenRealSimulator() {
 
 function PhaseHeader({ step, title, hint }: { step: number; title: string; hint: string }) {
   return (
-    <div className="rounded-xl border border-sage-100 bg-white px-4 py-3">
-      <p className="text-xs font-bold uppercase text-goethe-gold">Adım {step}/4</p>
-      <h2 className="text-lg font-bold text-goethe-blue">{title}</h2>
-      <p className="text-sm text-sage-500">{hint}</p>
+    <div className="rounded-xl border border-sage-100 bg-white px-4 py-4">
+      <p className="text-sm font-bold uppercase text-goethe-gold">Adım {step}/4</p>
+      <h2 className="mt-1 text-xl font-bold text-goethe-blue">{title}</h2>
+      <p className="mt-1 text-base text-sage-600">{hint}</p>
     </div>
   );
 }

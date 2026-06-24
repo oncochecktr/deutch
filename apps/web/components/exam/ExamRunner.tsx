@@ -11,11 +11,15 @@ import {
   getSprechenById,
 } from "@german-coach/exams";
 import type { GoetheExam, HoerenExamItem, HoerenQuestion, HoerenTrueFalse, LesenMatching, LesenPassage, LesenTrueFalse, SprechenCard } from "@german-coach/exams";
-import { IconCheck } from "@/components/icons";
-import { AudioButton } from "@/components/AudioButton";
 import { ExamLockGuard } from "@/components/exam/ExamLockGuard";
 import { ExamScoreBar } from "@/components/exam/ExamModuleShell";
 import { ExamTimer } from "@/components/exam/ExamTimer";
+import {
+  ExamAdvanceButton,
+  ExamAnswerBar,
+  ExamProgressBar,
+  ExamQuestionSlide,
+} from "@/components/exam/examUi";
 import { MatchingQuestion } from "@/components/exam/MatchingQuestion";
 import { McqQuestion } from "@/components/exam/McqQuestion";
 import { SchreibenExamFlow } from "@/components/exam/SchreibenExamFlow";
@@ -228,10 +232,10 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
   );
 
   useEffect(() => {
-    if (mode === "real" && session.expired && activeStep !== "result") {
+    if (mode === "real" && session.expired && !finalPoints) {
       finishExam(answers.sprechenScores);
     }
-  }, [mode, session.expired, activeStep, finishExam, answers.sprechenScores]);
+  }, [mode, session.expired, finalPoints, finishExam, answers.sprechenScores]);
 
   if (!exam) {
     return (
@@ -256,20 +260,20 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
             {minutes} Minuten · 4 Teile · {mode === "real" ? "60/100 puan" : "Praxis"}
           </p>
         </div>
-        <ul className="space-y-2 p-6 text-sm text-sage-600">
-          <li>Teil 1 Hören — {hoerenItems.length} Aufgaben</li>
+        <ul className="space-y-2 p-6 text-sm leading-relaxed text-sage-600">
+          <li><strong>1. Dinleme (Hören)</strong> — {hoerenItems.length} soru, tek tek</li>
           <li>
-            Teil 2 Lesen —{" "}
+            <strong>2. Okuma (Lesen)</strong> —{" "}
             {mode === "real"
-              ? `${lesenRf.length} R/F + ${lesenMatch.length} Zuordnung + ${lesenPassages.length} Texte`
-              : `${lesenPassages.length} Texte`}
+              ? `${lesenRf.length} doğru/yanlış + eşleştirme + ${lesenPassages.length} metin`
+              : `${lesenPassages.length} metin`}
           </li>
-          <li>Teil 3 Schreiben — Form + Mektup</li>
-          <li>Teil 4 Sprechen — {sprechenCards.length} Karten</li>
+          <li><strong>3. Yazma (Schreiben)</strong> — form + mektup</li>
+          <li><strong>4. Konuşma (Sprechen)</strong> — {sprechenCards.length} kart</li>
         </ul>
         {mode === "real" && (
-          <p className="border-t border-sage-100 px-6 py-3 text-xs text-red-700">
-            Sınav başlayınca geri dönemezsin. Süre bitince otomatik teslim edilir. Geçme: 60/100.
+          <p className="border-t border-sage-100 px-6 py-3 text-sm leading-relaxed text-red-700">
+            Sınav başlayınca geri dönemezsin. Süre bitince otomatik teslim edilir. Geçme notu: 60/100.
           </p>
         )}
         <div className="border-t border-sage-100 p-4">
@@ -311,74 +315,80 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
       const next = () => (mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen"));
       return wrap(locked, timerEl, (
         <ModuleFrame title="Teil 1: Hören" n={hoerenItems.length} total={hoerenItems.length} mode={mode}>
-          <p className="text-center text-sage-500">Hören abgeschlossen.</p>
-          <button type="button" className="btn-primary w-full py-3" onClick={next}>
-            Weiter → Lesen
+          <p className="text-center text-base text-sage-600">Dinleme bölümü tamamlandı.</p>
+          <button type="button" className="btn-primary w-full py-3.5 text-base font-semibold" onClick={next}>
+            Okumaya geç — Lesen →
           </button>
         </ModuleFrame>
       ));
     }
 
     if (isHoerenTrueFalse(item)) {
+      const sel = answers.trueFalse[item.id];
       return wrap(locked, timerEl, (
-        <ModuleFrame title="Teil 1: Hören" n={hoerenIdx + 1} total={hoerenItems.length} mode={mode}>
-          <TrueFalseQuestion
-            index={hoerenIdx}
-            total={hoerenItems.length}
-            statementDe={item.statement_de}
-            statementTr={item.statement_tr}
-            audioText={item.audio_text}
-            selected={answers.trueFalse[item.id] ?? null}
-            onSelect={(v) => setAnswers({ trueFalse: { ...answers.trueFalse, [item.id]: v } })}
-          />
-          <AudioButton
-            text={item.audio_text}
-            label="Anhören"
-            maxPlays={mode === "real" ? 2 : undefined}
-            playsUsed={session.audioPlays[item.id] ?? 0}
-            onPlay={() => (mode === "real" ? recordAudioPlay(item.id, 2) : true)}
-          />
-          <AdvanceButton
-            disabled={answers.trueFalse[item.id] === undefined}
-            onClick={() => {
-              if (hoerenIdx + 1 < hoerenItems.length) setHoerenIdx((i) => i + 1);
-              else mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen");
-            }}
-          />
+        <ModuleFrame title="1. Dinleme — Hören" n={hoerenIdx + 1} total={hoerenItems.length} mode={mode}>
+          <ExamQuestionSlide qKey={`h-tf-${item.id}`}>
+            <TrueFalseQuestion
+              index={hoerenIdx}
+              total={hoerenItems.length}
+              statementDe={item.statement_de}
+              statementTr={item.statement_tr}
+              audioText={item.audio_text}
+              selected={sel ?? null}
+              onSelect={(v) => setAnswers({ trueFalse: { ...answers.trueFalse, [item.id]: v } })}
+              maxPlays={mode === "real" ? 2 : undefined}
+              playCount={session.audioPlays[item.id] ?? 0}
+              onPlay={() => (mode === "real" ? recordAudioPlay(item.id, 2) : true)}
+            />
+            {sel !== undefined ? (
+              <ExamAnswerBar>{sel ? "Doğru (Richtig)" : "Yanlış (Falsch)"}</ExamAnswerBar>
+            ) : null}
+            <ExamAdvanceButton
+              disabled={sel === undefined}
+              label={hoerenIdx + 1 < hoerenItems.length ? "Sonraki soru" : "Okumaya geç"}
+              onClick={() => {
+                if (hoerenIdx + 1 < hoerenItems.length) setHoerenIdx((i) => i + 1);
+                else mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen");
+              }}
+            />
+          </ExamQuestionSlide>
         </ModuleFrame>
       ));
     }
 
     const q = item as HoerenQuestion;
+    const mcqSel = answers.mcq[q.id];
     return wrap(locked, timerEl, (
-      <ModuleFrame title="Teil 1: Hören" n={hoerenIdx + 1} total={hoerenItems.length} mode={mode}>
-        <McqQuestion
-          index={hoerenIdx}
-          total={hoerenItems.length}
-          questionDe={q.question_de}
-          questionTr={q.question_tr}
-          audioText={q.audio_text}
-          options={q.options}
-          selected={answers.mcq[q.id] ?? null}
-          correctIndex={null}
-          onSelect={(idx) => setAnswers({ mcq: { ...answers.mcq, [q.id]: idx } })}
-        />
-        {q.audio_text ? (
-          <AudioButton
-            text={q.audio_text}
-            label="Anhören"
+      <ModuleFrame title="1. Dinleme — Hören" n={hoerenIdx + 1} total={hoerenItems.length} mode={mode}>
+        <ExamQuestionSlide qKey={`h-mcq-${q.id}`}>
+          <McqQuestion
+            index={hoerenIdx}
+            total={hoerenItems.length}
+            questionDe={q.question_de}
+            questionTr={q.question_tr}
+            audioText={q.audio_text}
+            options={q.options}
+            selected={mcqSel ?? null}
+            correctIndex={null}
+            onSelect={(idx) => setAnswers({ mcq: { ...answers.mcq, [q.id]: idx } })}
             maxPlays={mode === "real" ? 2 : undefined}
             playsUsed={session.audioPlays[q.id] ?? 0}
             onPlay={() => (mode === "real" ? recordAudioPlay(q.id, 2) : true)}
           />
-        ) : null}
-        <AdvanceButton
-          disabled={answers.mcq[q.id] === undefined}
-          onClick={() => {
-            if (hoerenIdx + 1 < hoerenItems.length) setHoerenIdx((i) => i + 1);
-            else mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen");
-          }}
-        />
+          {mcqSel !== undefined ? (
+            <ExamAnswerBar>
+              {String.fromCharCode(97 + mcqSel)}) {q.options[mcqSel]}
+            </ExamAnswerBar>
+          ) : null}
+          <ExamAdvanceButton
+            disabled={mcqSel === undefined}
+            label={hoerenIdx + 1 < hoerenItems.length ? "Sonraki soru" : "Okumaya geç"}
+            onClick={() => {
+              if (hoerenIdx + 1 < hoerenItems.length) setHoerenIdx((i) => i + 1);
+              else mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen");
+            }}
+          />
+        </ExamQuestionSlide>
       </ModuleFrame>
     ));
   }
@@ -386,21 +396,29 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
   if (activeStep === "lesen") {
     if (mode === "real" && lesenRfIdx < lesenRf.length) {
       const q = lesenRf[lesenRfIdx];
+      const sel = answers.trueFalse[q.id];
       return wrap(locked, timerEl, (
-        <ModuleFrame title="Teil 2: Lesen (R/F)" n={lesenRfIdx + 1} total={lesenRf.length} mode={mode}>
-          <TrueFalseQuestion
-            index={lesenRfIdx}
-            total={lesenRf.length}
-            contextDe={q.context_de}
-            statementDe={q.statement_de}
-            statementTr={q.statement_tr}
-            selected={answers.trueFalse[q.id] ?? null}
-            onSelect={(v) => setAnswers({ trueFalse: { ...answers.trueFalse, [q.id]: v } })}
-          />
-          <AdvanceButton
-            disabled={answers.trueFalse[q.id] === undefined}
-            onClick={() => setLesenRfIdx((i) => i + 1)}
-          />
+        <ModuleFrame title="2. Okuma — Doğru/Yanlış" n={lesenRfIdx + 1} total={lesenRf.length} mode={mode}>
+          <ExamQuestionSlide qKey={`l-rf-${q.id}`}>
+            <TrueFalseQuestion
+              index={lesenRfIdx}
+              total={lesenRf.length}
+              contextDe={q.context_de}
+              contextTitle={q.context_title}
+              statementDe={q.statement_de}
+              statementTr={q.statement_tr}
+              selected={sel ?? null}
+              onSelect={(v) => setAnswers({ trueFalse: { ...answers.trueFalse, [q.id]: v } })}
+            />
+            {sel !== undefined ? (
+              <ExamAnswerBar>{sel ? "Doğru (Richtig)" : "Yanlış (Falsch)"}</ExamAnswerBar>
+            ) : null}
+            <ExamAdvanceButton
+              disabled={sel === undefined}
+              label={lesenRfIdx + 1 < lesenRf.length ? "Sonraki soru" : "Eşleştirmeye geç"}
+              onClick={() => setLesenRfIdx((i) => i + 1)}
+            />
+          </ExamQuestionSlide>
         </ModuleFrame>
       ));
     }
@@ -408,31 +426,38 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
     if (mode === "real" && !lesenMatchDone && lesenMatch[0]) {
       const m = lesenMatch[0];
       const sel = answers.matching[m.id] ?? [];
+      const matchDone = sel.length >= m.prompts.length && !sel.some((v) => Number.isNaN(v));
       return wrap(locked, timerEl, (
-        <ModuleFrame title="Teil 2: Lesen (Zuordnung)" n={1} total={1} mode={mode}>
-          <MatchingQuestion
-            item={m}
-            selected={sel}
-            onChange={(indices) => setAnswers({ matching: { ...answers.matching, [m.id]: indices } })}
-          />
-          <AdvanceButton
-            disabled={sel.length < m.prompts.length || sel.some((v) => Number.isNaN(v))}
-            onClick={() => setLesenMatchDone(true)}
-          />
+        <ModuleFrame title="2. Okuma — Eşleştirme" n={1} total={1} mode={mode}>
+          <ExamQuestionSlide qKey={`l-match-${m.id}`}>
+            <MatchingQuestion
+              item={m}
+              selected={sel}
+              onChange={(indices) => setAnswers({ matching: { ...answers.matching, [m.id]: indices } })}
+            />
+            {matchDone ? (
+              <ExamAnswerBar>{m.prompts.length} eşleştirme tamamlandı</ExamAnswerBar>
+            ) : null}
+            <ExamAdvanceButton
+              disabled={!matchDone}
+              label="Metinlere geç"
+              onClick={() => setLesenMatchDone(true)}
+            />
+          </ExamQuestionSlide>
         </ModuleFrame>
       ));
     }
 
     if (lesenMcqIdx >= lesenPassages.length) {
       return wrap(locked, timerEl, (
-        <ModuleFrame title="Teil 2: Lesen" n={lesenPassages.length} total={lesenPassages.length} mode={mode}>
-          <p className="text-center text-sage-500">Lesen abgeschlossen.</p>
+        <ModuleFrame title="2. Okuma — Lesen" n={lesenPassages.length} total={lesenPassages.length} mode={mode}>
+          <p className="text-center text-base text-sage-600">Okuma bölümü tamamlandı.</p>
           <button
             type="button"
-            className="btn-primary w-full py-3"
+            className="btn-primary w-full py-3.5 text-base font-semibold"
             onClick={() => (mode === "real" ? patchSession({ step: "schreiben" }) : setPracticeStep("schreiben"))}
           >
-            Weiter → Schreiben
+            Yazmaya geç — Schreiben →
           </button>
         </ModuleFrame>
       ));
@@ -440,32 +465,42 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
 
     const p = lesenPassages[lesenMcqIdx];
     const allDone = p.questions.every((q) => answers.mcq[q.id] !== undefined);
+    const answeredCount = p.questions.filter((q) => answers.mcq[q.id] !== undefined).length;
     return wrap(locked, timerEl, (
-      <ModuleFrame title="Teil 2: Lesen" n={lesenMcqIdx + 1} total={lesenPassages.length} mode={mode}>
-        <div className="card-soft p-4">
-          <p className="mb-2 text-xs uppercase text-sage-400">{p.title_de}</p>
-          <p className="whitespace-pre-line text-sm leading-relaxed">{p.text_de}</p>
-        </div>
-        {p.questions.map((q, i) => (
-          <McqQuestion
-            key={q.id}
-            index={i}
-            total={p.questions.length}
-            questionDe={q.question_de}
-            questionTr={q.question_tr}
-            options={q.options}
-            selected={answers.mcq[q.id] ?? null}
-            correctIndex={null}
-            onSelect={(idx) => setAnswers({ mcq: { ...answers.mcq, [q.id]: idx } })}
+      <ModuleFrame title="2. Okuma — Metin" n={lesenMcqIdx + 1} total={lesenPassages.length} mode={mode}>
+        <ExamQuestionSlide qKey={`l-passage-${p.id}`}>
+          <div className="card-soft p-4">
+            <p className="mb-2 text-xs font-bold uppercase tracking-wide text-sage-500">{p.title_de}</p>
+            <p className="whitespace-pre-line rounded-xl border border-sage-100 bg-white p-4 text-base leading-relaxed text-sage-800">
+              {p.text_de}
+            </p>
+          </div>
+          {p.questions.map((q, i) => (
+            <McqQuestion
+              key={q.id}
+              index={i}
+              total={p.questions.length}
+              questionDe={q.question_de}
+              questionTr={q.question_tr}
+              options={q.options}
+              selected={answers.mcq[q.id] ?? null}
+              correctIndex={null}
+              onSelect={(idx) => setAnswers({ mcq: { ...answers.mcq, [q.id]: idx } })}
+              compact
+            />
+          ))}
+          <p className="text-center text-sm text-sage-600">
+            {answeredCount}/{p.questions.length} soru işaretlendi
+          </p>
+          <ExamAdvanceButton
+            disabled={!allDone}
+            label={lesenMcqIdx + 1 < lesenPassages.length ? "Sonraki metin" : "Yazmaya geç"}
+            onClick={() => {
+              if (lesenMcqIdx + 1 < lesenPassages.length) setLesenMcqIdx((i) => i + 1);
+              else mode === "real" ? patchSession({ step: "schreiben" }) : setPracticeStep("schreiben");
+            }}
           />
-        ))}
-        <AdvanceButton
-          disabled={!allDone}
-          onClick={() => {
-            if (lesenMcqIdx + 1 < lesenPassages.length) setLesenMcqIdx((i) => i + 1);
-            else mode === "real" ? patchSession({ step: "schreiben" }) : setPracticeStep("schreiben");
-          }}
-        />
+        </ExamQuestionSlide>
       </ModuleFrame>
     ));
   }
@@ -528,19 +563,19 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
   return (
     <div className="mx-auto max-w-lg space-y-6">
       <div className="card-soft p-8 text-center">
-        <span className="goethe-badge mb-4">Prüfung beendet</span>
+        <span className="goethe-badge mb-4">Sınav bitti</span>
         <h1 className="text-xl font-bold text-goethe-blue">{exam.title}</h1>
         {points ? (
           <>
             <p className="mt-4 text-4xl font-bold text-goethe-gold">{points.total}/100</p>
-            <p className={`mt-2 text-sm font-semibold ${points.passed ? "text-sage-600" : "text-red-600"}`}>
-              {points.passed ? "Bestanden — Geçtin!" : "Nicht bestanden — 60 gerekli"}
+            <p className={`mt-2 text-base font-semibold ${points.passed ? "text-sage-600" : "text-red-600"}`}>
+              {points.passed ? "Geçtin — Bestanden!" : "Geçemedin — 60 puan gerekli"}
             </p>
-            <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-sage-500">
-              <p>Hören: {points.hoeren}/25</p>
-              <p>Lesen: {points.lesen}/25</p>
-              <p>Schreiben: {points.schreiben}/25</p>
-              <p>Sprechen: {points.sprechen}/25</p>
+            <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-sage-600">
+              <p>Dinleme: {points.hoeren}/25</p>
+              <p>Okuma: {points.lesen}/25</p>
+              <p>Yazma: {points.schreiben}/25</p>
+              <p>Konuşma: {points.sprechen}/25</p>
             </div>
           </>
         ) : (
@@ -567,14 +602,6 @@ function wrap(locked: boolean, timer: React.ReactNode, content: React.ReactNode)
   );
 }
 
-function AdvanceButton({ disabled, onClick }: { disabled: boolean; onClick: () => void }) {
-  return (
-    <button type="button" className="btn-primary w-full py-3" disabled={disabled} onClick={onClick}>
-      Weiter →
-    </button>
-  );
-}
-
 function ModuleFrame({
   title,
   n,
@@ -590,11 +617,12 @@ function ModuleFrame({
 }) {
   return (
     <>
-      <div className="border-b border-sage-100 pb-3">
+      <div className="border-b border-sage-100 pb-4">
         <span className="goethe-badge">{title}</span>
-        <p className="mt-1 text-xs text-sage-400">
-          {n}/{total} · {mode === "real" ? "Gerçek Sınav" : "Modellprüfung"}
+        <p className="mt-2 text-sm font-medium text-sage-600">
+          {mode === "real" ? "Gerçek sınav simülasyonu" : "Deneme sınavı"}
         </p>
+        <ExamProgressBar current={n} total={total} />
       </div>
       {children}
     </>

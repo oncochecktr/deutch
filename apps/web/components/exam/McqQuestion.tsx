@@ -1,6 +1,7 @@
 "use client";
 
 import { AudioButton } from "@/components/AudioButton";
+import { ExamQuestionMeta } from "@/components/exam/examUi";
 
 interface McqQuestionProps {
   index: number;
@@ -13,6 +14,10 @@ interface McqQuestionProps {
   correctIndex: number | null;
   onSelect: (index: number) => void;
   showResult?: boolean;
+  maxPlays?: number;
+  playsUsed?: number;
+  onPlay?: () => boolean;
+  compact?: boolean;
 }
 
 export function McqQuestion({
@@ -26,31 +31,46 @@ export function McqQuestion({
   correctIndex,
   onSelect,
   showResult,
+  maxPlays,
+  playsUsed,
+  onPlay,
+  compact,
 }: McqQuestionProps) {
   return (
-    <div className="card-soft p-4">
-      <p className="mb-1 text-xs text-sage-400">
-        Aufgabe {index + 1} / {total}
-      </p>
-      <p className="mb-1 font-medium text-goethe-blue">{questionDe}</p>
-      {questionTr && <p className="mb-3 text-xs text-sage-400">{questionTr}</p>}
-      {audioText && (
-        <div className="mb-3">
-          <AudioButton text={audioText} label="Anhören — Dinle" />
-        </div>
+    <div className={`card-soft ${compact ? "p-3" : "p-4"}`}>
+      <ExamQuestionMeta index={index} total={total} />
+      <p className="text-base font-semibold leading-snug text-goethe-blue sm:text-lg">{questionDe}</p>
+      {questionTr ? (
+        <p className="mb-3 mt-1 text-sm leading-relaxed text-sage-600">{questionTr}</p>
+      ) : (
+        <div className="mb-3" />
       )}
-      <div className="grid gap-2 sm:grid-cols-2">
+      {audioText ? (
+        <div className="mb-4">
+          <AudioButton
+            text={audioText}
+            label="Dinle — Anhören"
+            maxPlays={maxPlays}
+            playsUsed={playsUsed}
+            onPlay={onPlay}
+          />
+        </div>
+      ) : null}
+      <div className="grid gap-2.5 sm:grid-cols-2">
         {options.map((opt, i) => {
-          let cls = "rounded-lg border px-3 py-2 text-left text-sm transition ";
-          if (showResult && correctIndex !== null) {
-            if (i === correctIndex) cls += "border-sage-400 bg-sage-100 text-sage-700";
-            else if (i === selected) cls += "border-red-200 bg-red-50 text-red-700";
-            else cls += "border-sage-100 opacity-50";
-          } else if (selected === i) {
-            cls += "border-sage-400 bg-sage-100 cursor-pointer";
-          } else {
-            cls += "border-sage-200 hover:bg-sage-50 cursor-pointer";
-          }
+          const isSelected = selected === i;
+          const isCorrect = showResult && correctIndex !== null && i === correctIndex;
+          const isWrong = showResult && correctIndex !== null && isSelected && i !== correctIndex;
+
+          let cls =
+            "relative rounded-xl border-2 px-3 py-3 text-left text-sm transition active:scale-[0.98] sm:text-base ";
+          if (isCorrect) cls += "border-sage-500 bg-sage-100 font-medium text-sage-800";
+          else if (isWrong) cls += "border-red-300 bg-red-50 text-red-800";
+          else if (showResult) cls += "border-sage-100 opacity-45";
+          else if (isSelected)
+            cls += "border-goethe-blue bg-goethe-blue/10 font-semibold text-goethe-blue shadow-sm";
+          else cls += "border-sage-200 hover:border-goethe-blue/30 hover:bg-sage-50 cursor-pointer";
+
           return (
             <button
               key={i}
@@ -59,7 +79,10 @@ export function McqQuestion({
               disabled={showResult}
               onClick={() => onSelect(i)}
             >
-              {String.fromCharCode(97 + i)}) {opt}
+              {isSelected && !showResult ? (
+                <span className="absolute right-2 top-2 text-xs font-bold text-goethe-blue">✓</span>
+              ) : null}
+              <span className="font-medium text-sage-500">{String.fromCharCode(97 + i)})</span> {opt}
             </button>
           );
         })}

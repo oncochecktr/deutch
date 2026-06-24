@@ -17,11 +17,11 @@ export function ExamModuleShell({
     <div className="mx-auto max-w-2xl space-y-4">
       <div className="flex items-start justify-between gap-4 border-b border-sage-100 pb-4">
         <div>
-          <Link href={backHref} className="text-xs text-sage-400 hover:text-sage-600">
+          <Link href={backHref} className="text-sm text-sage-500 hover:text-goethe-blue">
             ← A1 Sınav Modülleri
           </Link>
           <span className="goethe-badge mt-2 block w-fit">{title}</span>
-          <p className="mt-2 text-sm text-sage-400">{subtitle}</p>
+          <p className="mt-2 text-base leading-relaxed text-sage-600">{subtitle}</p>
         </div>
       </div>
       {children}
@@ -42,12 +42,12 @@ export function ExamScoreBar({
   const pass = pct >= 75;
   return (
     <div className="card-soft p-6 text-center">
-      <p className="text-sm text-sage-400">{label}</p>
-      <p className="mt-2 text-3xl font-bold text-goethe-blue">
+      <p className="text-base text-sage-600">{label}</p>
+      <p className="mt-2 text-4xl font-bold text-goethe-blue">
         {correct}/{total}
       </p>
-      <p className={`mt-1 text-lg ${pass ? "text-sage-600" : "text-goethe-red"}`}>%{pct}</p>
-      <p className="mt-2 text-xs text-sage-400">
+      <p className={`mt-1 text-xl font-semibold ${pass ? "text-sage-600" : "text-goethe-red"}`}>%{pct}</p>
+      <p className="mt-2 text-sm text-sage-500">
         {pass ? "A1 hedefi geçildi (≥%75)" : "Hedef: en az %75 — tekrar dene"}
       </p>
     </div>
