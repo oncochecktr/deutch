@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import type { SlideDirection } from "@/components/ContentTransition";
+import { ContentTransition } from "@/components/ContentTransition";
 import type { WordOrderExercise } from "@/lib/grundlagen";
 import { WordOrderMcq, WordOrderReorder } from "@/components/grundlagen/WordOrderExercise";
 import { WordOrderSpotVerb } from "@/components/grundlagen/WordOrderSpotVerb";
@@ -12,6 +14,7 @@ interface WordOrderDrillPanelProps {
 
 export function WordOrderDrillPanel({ exercises, onFinish }: WordOrderDrillPanelProps) {
   const [qIdx, setQIdx] = useState(0);
+  const [slideDir, setSlideDir] = useState<SlideDirection>(1);
   const [correct, setCorrect] = useState(0);
 
   const question = exercises[qIdx];
@@ -24,6 +27,7 @@ export function WordOrderDrillPanel({ exercises, onFinish }: WordOrderDrillPanel
       return;
     }
     setCorrect(running);
+    setSlideDir(1);
     setQIdx((i) => i + 1);
   };
 
@@ -38,13 +42,15 @@ export function WordOrderDrillPanel({ exercises, onFinish }: WordOrderDrillPanel
           {qIdx + 1} / {exercises.length} · {correct} doğru
         </span>
       </div>
-      {isSpotVerb ? (
-        <WordOrderSpotVerb key={question.id} exercise={question} onAnswer={handleAnswer} />
-      ) : isReorder ? (
-        <WordOrderReorder key={question.id} exercise={question} onAnswer={handleAnswer} />
-      ) : (
-        <WordOrderMcq key={question.id} exercise={question} onAnswer={handleAnswer} />
-      )}
+      <ContentTransition stepKey={question.id} direction={slideDir}>
+        {isSpotVerb ? (
+          <WordOrderSpotVerb exercise={question} onAnswer={handleAnswer} />
+        ) : isReorder ? (
+          <WordOrderReorder exercise={question} onAnswer={handleAnswer} />
+        ) : (
+          <WordOrderMcq exercise={question} onAnswer={handleAnswer} />
+        )}
+      </ContentTransition>
     </div>
   );
 }

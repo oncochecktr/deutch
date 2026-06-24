@@ -2,12 +2,15 @@
 
 import { useMemo, useState } from "react";
 import { AudioButton } from "@/components/AudioButton";
+import { ContentTransition } from "@/components/ContentTransition";
+import { TurkishTranslation } from "@/components/TurkishTranslation";
 import { IconCheck } from "@/components/icons";
 import { PatternQuiz } from "@/components/grundlagen/PatternQuiz";
 import { WordBreakdown } from "@/components/grundlagen/WordBreakdown";
 import type { A1Pattern } from "@/lib/grundlagen";
 import { markPatternCompleted } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
+import { useStepDirection } from "@/lib/useStepDirection";
 
 function shuffleExamples<T>(arr: T[], seed: number): T[] {
   const copy = [...arr];
@@ -30,7 +33,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
   const { progress, updateProgress } = useProgress();
   const [activeId, setActiveId] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("list");
-  const [exampleIdx, setExampleIdx] = useState(0);
+  const { index: exampleIdx, direction, goNext, goPrev, reset: resetExample } = useStepDirection(0);
   const [showBreakdown, setShowBreakdown] = useState(true);
   const [quizScore, setQuizScore] = useState(0);
 
@@ -47,7 +50,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
   const openPattern = (id: string) => {
     setActiveId(id);
     setPhase("learn");
-    setExampleIdx(0);
+    resetExample(0);
     setShowBreakdown(true);
     setQuizScore(0);
   };
@@ -123,7 +126,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
             className="btn-primary"
             onClick={() => {
               setPhase("learn");
-              setExampleIdx(0);
+              resetExample(0);
               setQuizScore(0);
             }}
           >
@@ -177,38 +180,40 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
         </div>
       )}
 
-      <div className="card-soft space-y-4 p-5">
-        <p className="text-xs text-sage-400">
-          Örnek {exampleIdx + 1} / {active.examples.length}
-        </p>
-        <p className="text-xl font-bold text-goethe-blue">{example.de}</p>
-        <p className="text-base text-sage-700">{example.tr}</p>
-        <AudioButton text={example.de} label="Cümleyi dinle" />
-        <button
-          type="button"
-          className="text-xs font-medium text-goethe-blue underline"
-          onClick={() => setShowBreakdown((v) => !v)}
-        >
-          {showBreakdown ? "Parçalamayı gizle" : "Kelime kelime göster"}
-        </button>
-        <WordBreakdown parts={example.breakdown} expanded={showBreakdown} />
-      </div>
+      <ContentTransition stepKey={`${active.id}-ex-${exampleIdx}`} direction={direction}>
+        <div className="card-soft space-y-4 p-5 sm:p-6">
+          <p className="text-sm font-medium tabular-nums text-sage-500">
+            Örnek {exampleIdx + 1} / {active.examples.length}
+          </p>
+          <p className="text-2xl font-bold text-goethe-blue sm:text-3xl">{example.de}</p>
+          <TurkishTranslation text={example.tr} />
+          <AudioButton text={example.de} label="Cümleyi dinle" />
+          <button
+            type="button"
+            className="text-sm font-medium text-goethe-blue underline"
+            onClick={() => setShowBreakdown((v) => !v)}
+          >
+            {showBreakdown ? "Parçalamayı gizle" : "Kelime kelime göster"}
+          </button>
+          <WordBreakdown parts={example.breakdown} expanded={showBreakdown} />
+        </div>
+      </ContentTransition>
 
       <div className="flex gap-2">
         <button
           type="button"
-          className="btn-secondary flex-1"
+          className="btn-secondary flex-1 transition active:scale-[0.98]"
           disabled={exampleIdx === 0}
-          onClick={() => setExampleIdx((i) => Math.max(0, i - 1))}
+          onClick={() => goPrev()}
         >
           ← Önceki
         </button>
         <button
           type="button"
-          className="btn-primary flex-1"
+          className="btn-primary flex-1 transition active:scale-[0.98]"
           onClick={() => {
             if (atEnd) setPhase("quiz");
-            else setExampleIdx((i) => i + 1);
+            else goNext();
           }}
         >
           {atEnd ? "Quiz'e geç →" : "Sonraki →"}

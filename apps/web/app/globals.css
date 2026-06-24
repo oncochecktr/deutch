@@ -19,7 +19,9 @@ html {
 }
 
 body {
-  @apply bg-cream-100 font-sans text-[var(--text)] antialiased;
+  @apply bg-cream-100 font-sans text-body text-[var(--text)] antialiased;
+  font-size: 1.0625rem;
+  line-height: 1.625;
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: hidden;
@@ -29,6 +31,47 @@ body {
 
 ::selection {
   @apply bg-sage-200 text-sage-600;
+}
+
+@keyframes contentSlideInForward {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes contentSlideInBack {
+  from {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.content-transition {
+  will-change: opacity, transform;
+}
+
+.content-transition-forward {
+  animation: contentSlideInForward 0.22s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.content-transition-back {
+  animation: contentSlideInBack 0.22s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-transition-forward,
+  .content-transition-back {
+    animation: none;
+  }
 }
 
 @keyframes slideIn {
@@ -136,7 +179,7 @@ body {
 }
 
 .btn-primary {
-  @apply rounded-xl bg-sage-500 px-5 py-2.5 font-medium text-white transition hover:bg-sage-600 active:scale-[0.98];
+  @apply rounded-xl bg-sage-500 px-5 py-2.5 text-base font-medium text-white transition hover:bg-sage-600 active:scale-[0.98];
 }
 
 .btn-primary-lg {
@@ -144,7 +187,7 @@ body {
 }
 
 .btn-secondary {
-  @apply rounded-xl border border-sage-200 bg-white px-5 py-2.5 font-medium text-sage-600 transition hover:bg-sage-50;
+  @apply rounded-xl border border-sage-200 bg-white px-5 py-2.5 text-base font-medium text-sage-600 transition hover:bg-sage-50;
 }
 
 .btn-secondary-lg {
@@ -170,5 +213,12 @@ details.app-collapse > summary::-webkit-details-marker {
 }
 
 .goethe-badge {
-  @apply inline-flex items-center gap-1 rounded-full bg-goethe-blue px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white;
+  @apply inline-flex items-center gap-1 rounded-full bg-goethe-blue px-3 py-1 text-label font-semibold uppercase text-white;
+}
+
+/* Okunabilirlik: form alanları min 16px (iOS zoom önleme) */
+input,
+select,
+textarea {
+  font-size: max(1rem, 16px);
 }

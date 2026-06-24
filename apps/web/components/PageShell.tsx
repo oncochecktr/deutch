@@ -39,8 +39,8 @@ export function PageShell({
           <IconArrowLeft size={18} />
         </Link>
         <div className="min-w-0 flex-1">
-          <h1 className="text-xl font-bold text-goethe-blue">{title}</h1>
-          {subtitle && <p className="mt-0.5 text-sm text-sage-400">{subtitle}</p>}
+          <h1 className="text-2xl font-bold text-goethe-blue">{title}</h1>
+          {subtitle && <p className="mt-1 text-base text-sage-500">{subtitle}</p>}
         </div>
         {headerExtra}
       </header>

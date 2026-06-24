@@ -62,9 +62,9 @@ export function NavBar() {
 
           <div className="hidden sm:block">
 
-            <p className="text-sm font-semibold leading-tight text-goethe-blue">German Coach</p>
+            <p className="text-base font-semibold leading-tight text-goethe-blue">German Coach</p>
 
-            <p className="text-[10px] uppercase tracking-wider text-sage-400">A1 Hazırlık v0.8</p>
+            <p className="text-label uppercase text-sage-500">A1 Hazırlık v0.8</p>
 
           </div>
 
@@ -84,7 +84,7 @@ export function NavBar() {
 
                 href={l.href}
 
-                className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-sm transition ${
+                className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-base transition ${
 
                   active
 

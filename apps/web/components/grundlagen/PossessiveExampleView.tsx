@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AudioButton } from "@/components/AudioButton";
+import { TurkishTranslation } from "@/components/TurkishTranslation";
 import type { PossessiveExample } from "@/lib/grundlagen";
 
 interface PossessiveExampleViewProps {
@@ -18,8 +19,8 @@ export function PossessiveExampleView({ example, index, total }: PossessiveExamp
       <p className="text-xs text-sage-400">
         Örnek {index + 1} / {total}
       </p>
-      <p className="text-xl font-bold text-goethe-blue">{example.de}</p>
-      <p className="text-base text-sage-700">{example.tr}</p>
+      <p className="text-2xl font-bold text-goethe-blue sm:text-3xl">{example.de}</p>
+      <TurkishTranslation text={example.tr} className="mt-2" />
       <div className="flex flex-wrap items-center gap-2 text-xs">
         <span className="rounded-full bg-goethe-gold/20 px-2 py-0.5 font-medium text-goethe-blue">
           {example.article} {example.noun}

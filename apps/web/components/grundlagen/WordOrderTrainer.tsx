@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { AudioButton } from "@/components/AudioButton";
+import { ContentTransition } from "@/components/ContentTransition";
+import { TurkishTranslation } from "@/components/TurkishTranslation";
 import { IconCheck } from "@/components/icons";
 import { WordOrderDrillPanel } from "@/components/grundlagen/WordOrderDrill";
 import type { WordOrderTrainerData } from "@/lib/grundlagen";
@@ -12,6 +14,7 @@ import {
 } from "@/lib/grundlagen";
 import { markWordOrderCompleted, WORD_ORDER_PASS_SCORE } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
+import { useStepDirection } from "@/lib/useStepDirection";
 
 type Phase = "list" | "learn" | "drill" | "done";
 
@@ -71,7 +74,7 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
   const { progress, updateProgress } = useProgress();
   const [activeId, setActiveId] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("list");
-  const [exampleIdx, setExampleIdx] = useState(0);
+  const { index: exampleIdx, direction, goNext, goPrev, reset: resetExample } = useStepDirection(0);
   const [drillScore, setDrillScore] = useState(0);
 
   const completed = progress.grundlagen.wordOrderCompleted;
@@ -123,7 +126,7 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
     if (isUnitLocked(unitIndex)) return;
     setActiveId(id);
     setPhase("learn");
-    setExampleIdx(0);
+    resetExample(0);
     setDrillScore(0);
   };
 
@@ -239,7 +242,7 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
             className="btn-primary"
             onClick={() => {
               setPhase("learn");
-              setExampleIdx(0);
+              resetExample(0);
               setDrillScore(0);
             }}
           >
@@ -303,35 +306,41 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
       </div>
 
       {example && (
-        <div className="card-soft space-y-3 p-5">
-          <p className="text-xs text-sage-400">
-            Örnek {exampleIdx + 1} / {active.examples.length}
-          </p>
-          <p className="text-xl font-bold text-goethe-blue">{example.de}</p>
-          <p className="text-base text-sage-700">{example.tr}</p>
-          <AudioButton text={example.de.replace(/→.*/, "").trim()} label="Cümleyi dinle" />
-        </div>
+        <ContentTransition stepKey={`${active.id}-ex-${exampleIdx}`} direction={direction}>
+          <div className="card-soft space-y-3 p-5 sm:p-6">
+            <p className="text-sm font-medium tabular-nums text-sage-500">
+              Örnek {exampleIdx + 1} / {active.examples.length}
+            </p>
+            <p className="text-2xl font-bold tracking-tight text-goethe-blue sm:text-3xl">{example.de}</p>
+            <TurkishTranslation text={example.tr} />
+            <AudioButton text={example.de.replace(/→.*/, "").trim()} label="Cümleyi dinle" />
+          </div>
+        </ContentTransition>
       )}
 
       <div className="flex gap-2">
         <button
           type="button"
-          className="btn-secondary flex-1"
+          className="btn-secondary flex-1 transition active:scale-[0.98]"
           disabled={exampleIdx === 0}
-          onClick={() => setExampleIdx((i) => i - 1)}
+          onClick={() => goPrev()}
         >
           ← Önceki
         </button>
         {!atEnd ? (
           <button
             type="button"
-            className="btn-primary flex-1"
-            onClick={() => setExampleIdx((i) => i + 1)}
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => goNext()}
           >
             Sonraki →
           </button>
         ) : (
-          <button type="button" className="btn-primary flex-1" onClick={() => setPhase("drill")}>
+          <button
+            type="button"
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => setPhase("drill")}
+          >
             Drill&apos;e geç ({data.drillsPerSection} soru) →
           </button>
         )}

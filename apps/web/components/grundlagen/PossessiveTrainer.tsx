@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ContentTransition } from "@/components/ContentTransition";
 import { IconCheck } from "@/components/icons";
 import { PossessiveDrillPanel } from "@/components/grundlagen/PossessiveDrill";
 import { PossessiveExampleView } from "@/components/grundlagen/PossessiveExampleView";
@@ -8,6 +9,7 @@ import { PossessiveRuleTable } from "@/components/grundlagen/PossessiveRuleTable
 import type { PossessiveSet, PossessiveTrainerData } from "@/lib/grundlagen";
 import { markPossessiveCompleted, POSSESSIVE_PASS_SCORE } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
+import { useStepDirection } from "@/lib/useStepDirection";
 
 type Phase = "list" | "learn" | "drill" | "done";
 
@@ -19,7 +21,7 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
   const { progress, updateProgress } = useProgress();
   const [activeId, setActiveId] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("list");
-  const [exampleIdx, setExampleIdx] = useState(0);
+  const { index: exampleIdx, direction, goNext, goPrev, reset: resetExample } = useStepDirection(0);
   const [drillScore, setDrillScore] = useState(0);
 
   const completed = progress.grundlagen.possessivesCompleted;
@@ -29,7 +31,7 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
   const openSet = (id: string) => {
     setActiveId(id);
     setPhase("learn");
-    setExampleIdx(0);
+    resetExample(0);
     setDrillScore(0);
   };
 
@@ -90,7 +92,7 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
             className="btn-primary"
             onClick={() => {
               setPhase("learn");
-              setExampleIdx(0);
+              resetExample(0);
               setDrillScore(0);
             }}
           >
@@ -124,30 +126,36 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
     <div className="space-y-4">
       <SetHeader set={active} onBack={backToList} />
       <PossessiveRuleTable rules={data.rules} highlightOwner={active.owner} />
-      <PossessiveExampleView
-        example={example}
-        index={exampleIdx}
-        total={active.examples.length}
-      />
+      <ContentTransition stepKey={`${active.id}-ex-${exampleIdx}`} direction={direction}>
+        <PossessiveExampleView
+          example={example}
+          index={exampleIdx}
+          total={active.examples.length}
+        />
+      </ContentTransition>
       <div className="flex gap-2">
         <button
           type="button"
-          className="btn-secondary flex-1"
+          className="btn-secondary flex-1 transition active:scale-[0.98]"
           disabled={exampleIdx === 0}
-          onClick={() => setExampleIdx((i) => i - 1)}
+          onClick={() => goPrev()}
         >
           ← Önceki
         </button>
         {!atEnd ? (
           <button
             type="button"
-            className="btn-primary flex-1"
-            onClick={() => setExampleIdx((i) => i + 1)}
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => goNext()}
           >
             Sonraki →
           </button>
         ) : (
-          <button type="button" className="btn-primary flex-1" onClick={() => setPhase("drill")}>
+          <button
+            type="button"
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => setPhase("drill")}
+          >
             Drill&apos;e geç ({data.drillsPerSet} soru) →
           </button>
         )}

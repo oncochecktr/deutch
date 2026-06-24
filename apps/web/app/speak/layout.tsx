@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+import { SEO_PAGES } from "@/lib/seoPages";
+
+export const metadata: Metadata = SEO_PAGES.speak;
+
 /** Sınıf — ana max-w-5xl sınırını genişletir */
 export default function SpeakLayout({ children }: { children: React.ReactNode }) {
   return (

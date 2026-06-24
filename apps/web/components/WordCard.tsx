@@ -39,7 +39,7 @@ function ExampleBlock({
   return (
     <div className={`w-full space-y-2 text-left ${compact ? "" : "space-y-3"}`}>
       {!compact && (
-        <p className="text-xs font-semibold uppercase tracking-wide text-sage-400">Örnek cümle</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-sage-400">Örnek cümle</p>
       )}
       {examples.map((ex) => (
         <div
@@ -55,7 +55,7 @@ function ExampleBlock({
           >
             {ex.de && ex.de !== "—" ? (
               <>
-                <span className="mr-1.5 text-xs font-semibold uppercase not-italic text-sage-400 sm:text-sm">
+                <span className="mr-1.5 text-sm font-semibold uppercase not-italic text-sage-400">
                   DE ·
                 </span>
                 „{ex.de}"
@@ -75,7 +75,7 @@ function ExampleBlock({
           >
             {ex.tr ? (
               <>
-                <span className="mr-1.5 text-xs font-semibold uppercase text-sage-400 sm:text-sm">
+                <span className="mr-1.5 text-sm font-semibold uppercase text-sage-400">
                   TR ·
                 </span>
                 {ex.tr}
@@ -159,7 +159,7 @@ export function WordCard({
               aria-hidden
             />
             <div className="mt-4 w-full max-w-md">
-              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-sage-400">
+              <p className="mb-1 text-sm font-semibold uppercase tracking-wide text-sage-400">
                 Anlam
               </p>
               <ul className="space-y-1">
@@ -195,7 +195,7 @@ export function WordCard({
             </p>
 
             <div className="mb-4 w-full text-left">
-              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-sage-400">Anlam</p>
+              <p className="mb-1 text-sm font-semibold uppercase tracking-wide text-sage-400">Anlam</p>
               <ul className="space-y-1">
                 {meanings.map((m) => (
                   <li

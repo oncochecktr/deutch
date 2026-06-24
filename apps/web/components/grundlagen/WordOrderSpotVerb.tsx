@@ -130,7 +130,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
         <p className="text-base font-medium text-goethe-blue">
           Bu cümlede motor hangisi? Fiil = hareket bildiren kelime.
         </p>
-        <p className="rounded-lg border border-goethe-gold/30 bg-goethe-gold/10 px-3 py-2 text-xs text-sage-700">
+        <p className="rounded-lg border border-goethe-gold/30 bg-goethe-gold/10 px-3 py-2.5 text-sm text-sage-700">
           Alman polisi kuralı: Normal cümlede fiil yerinde oturur. Soruda fiil öne geçer.
         </p>
         <div className="flex flex-wrap gap-2">
@@ -138,7 +138,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
             <button
               key={`${w}-${i}`}
               type="button"
-              className="rounded-lg border border-sage-200 bg-white px-4 py-2 text-sm font-medium text-goethe-blue transition hover:border-goethe-blue hover:bg-goethe-blue/5"
+                className="rounded-lg border border-sage-200 bg-white px-4 py-2.5 text-base font-medium text-goethe-blue transition hover:border-goethe-blue hover:bg-goethe-blue/5"
               onClick={() => handleVerbPick(w)}
             >
               {w}
@@ -152,20 +152,16 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
   return (
     <div className="card-soft space-y-4 p-5">
       <StepBadge step={2} label="Soruyu kur" />
-      <div className="flex items-center gap-2 rounded-lg bg-sage-100 px-3 py-2 text-sm">
+      {exercise.statement_de && <StatementBox text={exercise.statement_de} />}
+      <div className="flex items-center gap-2 rounded-lg bg-sage-100 px-3 py-2.5 text-base">
         <IconCheck size={16} className="text-sage-600" />
         <span>
-          Motor: <strong className="text-goethe-blue">{verb}</strong> — şimdi fiili başa al
+          Motor: <strong className="text-goethe-blue">{verb}</strong> — bu düz cümleden Ja/Nein sorusunu
+          kur
         </span>
       </div>
-      {exercise.statement_de && (
-        <p className="text-sm text-sage-600">
-          <span className="text-sage-400">Düz cümle: </span>
-          {exercise.statement_de}
-        </p>
-      )}
       <p className="text-base font-medium text-goethe-blue">
-        Ja/Nein sorusunu kur — fiil + özne + …
+        Fiili başa al — fiil + özne + …
       </p>
 
       <div className="min-h-[48px] rounded-xl border-2 border-dashed border-goethe-blue/30 bg-goethe-blue/5 p-3">
@@ -178,7 +174,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
                 key={`${t}-${i}`}
                 type="button"
                 disabled={buildChecked}
-                className="rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-goethe-blue shadow-sm"
+                className="rounded-lg bg-white px-3 py-2 text-base font-medium text-goethe-blue shadow-sm"
                 onClick={() => removeToken(i)}
               >
                 {t}
@@ -194,7 +190,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
             key={`${t}-${i}`}
             type="button"
             disabled={buildChecked}
-            className="rounded-lg border border-sage-200 bg-white px-3 py-1.5 text-sm text-sage-700 hover:border-goethe-blue/40"
+            className="rounded-lg border border-sage-200 bg-white px-3 py-2 text-base text-sage-700 hover:border-goethe-blue/40"
             onClick={() => pickToken(t, i)}
           >
             {t}
@@ -239,7 +235,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
 
 function StepBadge({ step, label }: { step: number; label: string }) {
   return (
-    <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
+    <p className="text-label font-bold uppercase tracking-widest text-goethe-blue">
       Adım {step} · {label}
     </p>
   );
@@ -247,9 +243,9 @@ function StepBadge({ step, label }: { step: number; label: string }) {
 
 function StatementBox({ text }: { text: string }) {
   return (
-    <div className="rounded-lg border border-sage-100 bg-sage-50 p-3">
-      <p className="text-[10px] font-bold uppercase text-sage-400">Düz cümle</p>
-      <p className="mt-1 font-semibold text-goethe-blue">{text}</p>
+    <div className="rounded-lg border border-sage-200 bg-sage-50 p-4">
+      <p className="text-label font-bold uppercase text-sage-500">Düz cümle</p>
+      <p className="mt-1.5 text-lg font-semibold text-goethe-blue">{text}</p>
     </div>
   );
 }

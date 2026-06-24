@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { ContentTransition } from "@/components/ContentTransition";
 import { IconCheck, IconX } from "@/components/icons";
 import type { TrainerDrill } from "@/lib/grundlagen";
+import type { SlideDirection } from "@/components/ContentTransition";
 
 interface GrundlagenDrillProps {
   drills: TrainerDrill[];
@@ -12,6 +14,7 @@ interface GrundlagenDrillProps {
 
 export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: GrundlagenDrillProps) {
   const [qIdx, setQIdx] = useState(0);
+  const [slideDir, setSlideDir] = useState<SlideDirection>(1);
   const [selected, setSelected] = useState<number | null>(null);
   const [correct, setCorrect] = useState(0);
 
@@ -36,15 +39,17 @@ export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: Grun
       return;
     }
     setCorrect(running);
+    setSlideDir(1);
     setQIdx((i) => i + 1);
     setSelected(null);
   };
 
   return (
-    <div className="card-soft space-y-4 p-5">
+    <ContentTransition stepKey={`drill-${qIdx}`} direction={slideDir}>
+      <div className="card-soft space-y-4 p-5">
       <div className="flex items-center justify-between">
-        <p className="text-xs font-semibold uppercase text-goethe-blue">{label}</p>
-        <span className="text-xs text-sage-500">
+        <p className="text-label font-semibold uppercase text-goethe-blue">{label}</p>
+        <span className="text-sm text-sage-500">
           {qIdx + 1} / {drills.length} · {correct} doğru
         </span>
       </div>
@@ -52,7 +57,7 @@ export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: Grun
       <p className="text-lg font-bold text-goethe-blue">{question.context_de}</p>
       <div className="space-y-2">
         {question.options.map((opt, i) => {
-          let cls = "w-full rounded-xl border px-4 py-3 text-left text-sm transition ";
+          let cls = "w-full rounded-xl border px-4 py-3.5 text-left text-base transition ";
           if (!showResult) {
             cls +=
               selected === i
@@ -80,7 +85,7 @@ export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: Grun
       </div>
       {showResult && (
         <div
-          className={`flex flex-col gap-2 rounded-lg p-3 text-sm ${
+          className={`flex flex-col gap-2 rounded-lg p-3 text-base ${
             isCorrect ? "bg-sage-100 text-sage-800" : "bg-red-50 text-red-900"
           }`}
         >
@@ -91,7 +96,7 @@ export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: Grun
               : `Doğrusu: ${question.options[question.correct_index]}`}
           </div>
           {!isCorrect && question.explanation_tr && (
-            <p className="text-xs text-sage-600">{question.explanation_tr}</p>
+            <p className="text-sm text-sage-600">{question.explanation_tr}</p>
           )}
         </div>
       )}
@@ -100,6 +105,7 @@ export function GrundlagenDrillPanel({ drills, onFinish, label = "Drill" }: Grun
           {isLast ? "Drill bitir" : "Sonraki →"}
         </button>
       )}
-    </div>
+      </div>
+    </ContentTransition>
   );
 }

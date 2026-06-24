@@ -29,7 +29,12 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Segoe UI", "system-ui", "sans-serif"],
+        sans: ["var(--font-source-sans)", "Source Sans 3", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        body: ["1.0625rem", { lineHeight: "1.625" }],
+        caption: ["0.875rem", { lineHeight: "1.5" }],
+        label: ["0.8125rem", { lineHeight: "1.4", letterSpacing: "0.02em" }],
       },
     },
   },

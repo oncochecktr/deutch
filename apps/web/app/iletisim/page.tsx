@@ -2,7 +2,10 @@ import Link from "next/link";
 import { IletisimContact } from "@/components/iletisim/IletisimContact";
 import { PageShell } from "@/components/PageShell";
 import { SiteSocialLinks } from "@/components/SiteSocialLinks";
+import { SEO_PAGES } from "@/lib/seoPages";
 import { SITE_EMAIL } from "@/lib/site";
+
+export const metadata = SEO_PAGES.iletisim;
 
 export default function IletisimPage() {
   return (

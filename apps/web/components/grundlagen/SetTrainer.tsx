@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { ContentTransition } from "@/components/ContentTransition";
 import { IconCheck } from "@/components/icons";
 import { GrundlagenDrillPanel } from "@/components/grundlagen/GrundlagenDrill";
 import { GrundlagenExampleView } from "@/components/grundlagen/GrundlagenExampleView";
 import type { SetTrainerData, TrainerSet } from "@/lib/grundlagen";
+import { useStepDirection } from "@/lib/useStepDirection";
 
 type Phase = "list" | "learn" | "drill" | "done";
 
@@ -29,7 +31,7 @@ export function SetTrainer({
 }: SetTrainerConfig) {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("list");
-  const [exampleIdx, setExampleIdx] = useState(0);
+  const { index: exampleIdx, direction, goNext, goPrev, reset: resetExample } = useStepDirection(0);
   const [drillScore, setDrillScore] = useState(0);
 
   const active = data.sets.find((s) => s.id === activeId) ?? null;
@@ -37,7 +39,7 @@ export function SetTrainer({
   const openSet = (id: string) => {
     setActiveId(id);
     setPhase("learn");
-    setExampleIdx(0);
+    resetExample(0);
     setDrillScore(0);
   };
 
@@ -113,7 +115,7 @@ export function SetTrainer({
             className="btn-primary"
             onClick={() => {
               setPhase("learn");
-              setExampleIdx(0);
+              resetExample(0);
               setDrillScore(0);
             }}
           >
@@ -147,26 +149,35 @@ export function SetTrainer({
   return (
     <div className="space-y-4">
       <SetHeader set={active} onBack={backToList} />
-      <GrundlagenExampleView example={example} index={exampleIdx} total={active.examples.length} />
+      <ContentTransition
+        stepKey={`${active.id}-ex-${exampleIdx}`}
+        direction={direction}
+      >
+        <GrundlagenExampleView example={example} index={exampleIdx} total={active.examples.length} />
+      </ContentTransition>
       <div className="flex gap-2">
         <button
           type="button"
-          className="btn-secondary flex-1"
+          className="btn-secondary flex-1 transition active:scale-[0.98]"
           disabled={exampleIdx === 0}
-          onClick={() => setExampleIdx((i) => i - 1)}
+          onClick={() => goPrev()}
         >
           ← Önceki
         </button>
         {!atEnd ? (
           <button
             type="button"
-            className="btn-primary flex-1"
-            onClick={() => setExampleIdx((i) => i + 1)}
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => goNext()}
           >
             Sonraki →
           </button>
         ) : (
-          <button type="button" className="btn-primary flex-1" onClick={() => setPhase("drill")}>
+          <button
+            type="button"
+            className="btn-primary flex-1 transition active:scale-[0.98]"
+            onClick={() => setPhase("drill")}
+          >
             Drill&apos;e geç ({data.drillsPerSet} soru) →
           </button>
         )}

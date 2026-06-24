@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { SEO_PAGES } from "@/lib/seoPages";
+
+export const metadata = SEO_PAGES.blog;
 
 const POSTS = [
   {
