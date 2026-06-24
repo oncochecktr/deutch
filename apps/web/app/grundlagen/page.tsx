@@ -16,7 +16,7 @@ export default function GrundlagenPage() {
   return (
     <PageShell
       title="Gramer temeli"
-      subtitle="Adım 2 · Satz · Matrix · Possessive · Sıra · Pattern · Grammar Pack"
+      subtitle="6 modül"
       backHref="/"
       maxWidth="lg"
     >
@@ -29,7 +29,7 @@ export default function GrundlagenPage() {
             Almanca Motoru
           </p>
           <h2 className="mt-1 text-lg font-bold text-goethe-blue">Gramer yol haritası</h2>
-          <p className="mt-1 text-sm text-sage-600">24 A1 kuralı — der/die/das&apos;tan Perfekt&apos;e sıralı</p>
+          <p className="mt-1 text-sm text-sage-600">24 A1 kuralı</p>
         </div>
         <span className="shrink-0 text-goethe-blue">→</span>
       </Link>
@@ -38,15 +38,13 @@ export default function GrundlagenPage() {
         <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
           Öğrenme yolu — Adım 2
         </p>
-        <h2 className="mt-1 text-lg font-bold text-goethe-blue">Kelimeden cümleye, cümleden sınav metnine</h2>
-        <p className="mt-2 text-sm text-sage-600">
-          Sırayla ilerle. Her modül kısa — tek seferde bir tane bitir.
-        </p>
+        <h2 className="mt-1 text-lg font-bold text-goethe-blue">Gramer modülleri</h2>
+        <p className="mt-2 text-sm text-sage-600">Sırayla ilerle.</p>
         <Link
           href={grammarStage.href}
           className="btn-primary mt-4 inline-flex items-center gap-2"
         >
-          Kaldığın yerden devam →
+          Devam et →
         </Link>
       </div>
 
@@ -61,12 +59,8 @@ export default function GrundlagenPage() {
           <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
             Satzstellung · Kelime sırası
           </p>
-          <h2 className="mt-1 text-lg font-bold text-goethe-blue">
-            Önce motoru (fiili) bul — soruda fiil başa
-          </h2>
-          <p className="mt-1 text-sm text-sage-600">
-            Stufe 1→4: düz cümle (SVO) · Ja/Nein · W-Fragen · karışık drill. Duolingo tarzı taşla kur.
-          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">Kelime sırası</h2>
+          <p className="mt-1 text-sm text-sage-600">SVO · Ja/Nein · W-Fragen</p>
           <p className="mt-2 text-xs font-medium text-goethe-blue">
             {progress.grundlagen.wordOrderCompleted.length} /{" "}
             {GRUNDLAGEN_MODULES.find((m) => m.id === "word-order")?.sections ?? 6} bölüm tamam →

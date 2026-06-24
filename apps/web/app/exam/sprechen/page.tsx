@@ -27,7 +27,7 @@ export default function SprechenExamPage() {
       <div className="card-soft border-2 border-goethe-gold/30 p-4">
         <p className="text-xs font-semibold uppercase text-goethe-gold">Gerçek sınav formatı</p>
         <p className="mt-1 text-sm text-sage-600">
-          4 kişilik oda · Teil 1 tanıtım · Tema kartları · Bitte / Verbot — gerceksinav.md
+          4 kişilik oda · Teil 1 · Tema · Bitte / Verbot
         </p>
         <Link
           href="/exam/sprechen/gercek"

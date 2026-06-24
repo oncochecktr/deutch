@@ -36,7 +36,7 @@ export function MektupWriter() {
   return (
     <PageShell
       title="Mektup Yazma"
-      subtitle="Goethe A1 Schreiben — gerceksinav.md + PDF örnekleri"
+      subtitle="Goethe A1 Schreiben"
       backHref="/exam/schreiben"
       backLabel="Schreiben modülüne dön"
       maxWidth="md"
@@ -122,7 +122,7 @@ export function MektupWriterInner({
           <div className="card-soft border-2 border-goethe-gold/40 p-5">
             <p className="text-sm text-sage-600">
               Schreiben <strong>{SCHREIBEN_OVERVIEW.duration}</strong> — form (5 puan) + mektup (
-              <strong>20 puan</strong>, ~30+ kelime). gerceksinav.md ve PDF&apos;teki 5 örnekle
+              <strong>20 puan</strong>, ~30+ kelime). 5 örnekle
               adım adım yaz.
             </p>
             <p className="mt-2 text-xs font-medium text-goethe-red">{SCHREIBEN_OVERVIEW.warning}</p>

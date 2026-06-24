@@ -103,10 +103,10 @@ export default function ExamHubPage() {
         href="/exam/schreiben/gercek"
         className="card-soft block border-2 border-goethe-gold/40 p-5 transition hover:border-goethe-gold"
       >
-        <p className="text-xs font-semibold uppercase text-goethe-gold">Yeni — gerceksinav.md</p>
+        <p className="text-xs font-semibold uppercase text-goethe-gold">Schreiben rehberi</p>
         <h2 className="mt-1 font-bold text-goethe-blue">Gerçek Schreiben rehberi</h2>
         <p className="mt-1 text-sm text-sage-500">
-          Form (5 puan) + Mektup (20 puan) · kein/Ort kuralları · kalıp cümleler · 2 form örneği
+          Form + mektup · kalıp cümleler
         </p>
         <span className="mt-3 inline-block text-sm font-medium text-goethe-blue">Rehbere git →</span>
       </Link>

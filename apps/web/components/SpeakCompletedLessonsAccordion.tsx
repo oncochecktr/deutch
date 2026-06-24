@@ -34,12 +34,12 @@ export function SpeakCompletedLessonsAccordion({
         Geçilen dersler
       </p>
       <p className="mt-1 text-xs text-sage-500">
-        Tamamladıkça burada birikir — başlığa tıkla, içeriği aç.
+        Tamamlanan dersler.
       </p>
 
       {sorted.length === 0 ? (
         <p className="mt-3 rounded-lg bg-sage-50 px-3 py-2.5 text-sm italic text-sage-500">
-          Henüz bitmiş ders yok. Profesör dersi tamamlayınca burada görünür.
+          Henüz bitmiş ders yok.
         </p>
       ) : (
         <div className="mt-3 space-y-2">

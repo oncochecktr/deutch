@@ -43,7 +43,7 @@ export function KonusDinleProfilePanel({
           <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
             Antrenman profilin
           </p>
-          <p className="mt-0.5 text-xs text-sage-500">Sınav hazırlığı · acele yok</p>
+          <p className="mt-0.5 text-xs text-sage-500">Sınav hazırlığı</p>
         </div>
         <span className="rounded-full bg-goethe-blue px-2 py-0.5 text-[10px] font-bold text-white">
           A1→B1

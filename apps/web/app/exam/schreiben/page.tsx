@@ -33,9 +33,9 @@ export default function SchreibenExamPage() {
         href="/exam/schreiben/gercek"
         className="card-soft block border-2 border-goethe-gold/40 p-4 transition hover:border-goethe-gold"
       >
-        <p className="text-xs font-semibold text-goethe-gold">gerceksinav.md</p>
+        <p className="text-xs font-semibold text-goethe-gold">Schreiben rehberi</p>
         <p className="mt-1 text-sm font-medium text-goethe-blue">
-          Gerçek Schreiben — form + mektup kuralları ve simülasyon
+          Form + mektup kuralları
         </p>
         <span className="mt-2 inline-block text-xs text-sage-500">Tam rehbere git →</span>
       </Link>

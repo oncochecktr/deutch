@@ -22,7 +22,7 @@ export function SchreibenRealSimulator() {
   return (
     <PageShell
       title="Gerçek Schreiben Sınavı"
-      subtitle="gerceksinav.md — Form + Mektup rehberi"
+      subtitle="Form + mektup rehberi"
       backHref="/exam/schreiben"
       backLabel="Schreiben modülüne dön"
       maxWidth="md"
@@ -124,7 +124,7 @@ export function SchreibenRealSimulator() {
         <div className="space-y-4">
           <details className="card-soft p-4">
             <summary className="cursor-pointer text-sm font-semibold text-goethe-blue">
-              Kalıp cümle bankası (gerceksinav.md)
+              Kalıp cümle bankası
             </summary>
             <div className="mt-3 space-y-2">
               {MEKTUP_PHRASE_BANK.map((p) => (

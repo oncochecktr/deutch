@@ -13,7 +13,7 @@ export default function SatzPage() {
       title={core.sentenceBuilder.title}
       subtitle={`${core.sentenceBuilder.titleTr} — kelime parçalarından A1 cümlesi`}
       backHref="/grundlagen"
-      backLabel="A1 çekirdek modüllere dön"
+      backLabel="A1 modüllere dön"
       maxWidth="md"
     >
       <SentenceBuilder exercises={exercises} />

@@ -11,9 +11,9 @@ export default function PatternsPage() {
   return (
     <PageShell
       title={meta.title}
-      subtitle={`${meta.titleTr} — ${meta.description}`}
+      subtitle={meta.titleTr}
       backHref="/grundlagen"
-      backLabel="A1 çekirdek modüllere dön"
+      backLabel="A1 modüllere dön"
       maxWidth="md"
     >
       <PatternTrainer patterns={patterns} />

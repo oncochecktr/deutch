@@ -107,7 +107,7 @@ export function computeOverallCurriculumProgress(professor: SpeakProfessorState)
 export function formatProgressLabel(progress: LevelProgress): string {
   if (progress.completedPercent === 0 && progress.completedLessons === 0) {
     const lesson = progress.currentLessonTitle;
-    return `Henüz %0 — ${lesson} başlıyor (${progress.totalSteps} adım müfredat)`;
+    return `Başla: ${lesson} (${progress.totalSteps} adım)`;
   }
   return `${progress.level}: %${progress.completedPercent} tamam · %${progress.remainingPercent} kaldı`;
 }
@@ -117,22 +117,22 @@ export function getLocalProfessorAdvice(
   weaknesses: string[]
 ): string {
   if (progress.completedPercent === 0) {
-    return "Günde 15–20 dk Sınıf yeterli. Önce tahta notlarını defterine yaz, sonra sesli tekrar et.";
+    return "Günde 15–20 dk yeterli. Not al, sesle tekrar et.";
   }
   if (progress.completedPercent < 25) {
-    return "A1 temelinde kal — her gün 3 yeni kalıp + 5 kelime kartı. Acele etme.";
+    return "Her gün 3 kalıp + 5 kelime kartı.";
   }
   if (progress.completedPercent < 50) {
-    return "Yazılı ödevleri atlama; yazmak konuşmayı hızlandırır. Schwächen listene her ders bak.";
+    return "Yazmayı atlama. Eksik listene bak.";
   }
   if (progress.completedPercent < 75) {
-    return "Yarı yoldasın! Dinle (Hören) modülüne haftada 2 kez gir — kulak alışkanlığı şart.";
+    return "Hören modülüne haftada 2 kez gir.";
   }
   if (progress.completedPercent < 100) {
-    return "Son düzlük: her ders sonunda kendi cümlelerini Almanca yaz, profesöre kontrol ettir.";
+    return "Ders sonunda kendi cümlelerini yaz.";
   }
   if (weaknesses.length > 0) {
-    return `Eksiklerin var (${weaknesses.length} madde) — bir sonraki oturumda bunları tekrar iste.`;
+    return `${weaknesses.length} eksik var — tekrar iste.`;
   }
-  return "A1 konuşma müfredatını bitirdin! Goethe Sprechen kartlarına geç — gerçek sınav formatı.";
+  return "Müfredat bitti! Sprechen kartlarına geç.";
 }

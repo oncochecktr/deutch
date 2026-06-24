@@ -216,7 +216,7 @@ export function SpeakExercisePanel({
                 }
                 className="w-full rounded-lg bg-goethe-blue py-2 text-sm font-semibold text-white disabled:opacity-40"
               >
-                {loading ? "Profesör kontrol ediyor…" : "Gönder — kontrol ettir"}
+                {loading ? "Kontrol…" : "Gönder"}
               </button>
             </div>
           )}

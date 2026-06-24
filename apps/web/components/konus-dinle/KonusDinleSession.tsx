@@ -261,7 +261,7 @@ export function KonusDinleSession() {
       />
       <div className="card-soft space-y-4 p-6 text-center">
         <p className="text-sm text-sage-600">
-          Hazırsan başla — acele yok, istediğin kadar tekrar dinleyebilirsin.
+          Başla
         </p>
         <button
           type="button"
@@ -328,7 +328,6 @@ export function KonusDinleSession() {
             item={currentItem}
             playing={playing}
             onReplay={handleReplay}
-            showReplayHint
           />
         )}
 

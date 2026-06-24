@@ -428,11 +428,9 @@ export function formatSpeakResumeMessage(store: SpeakMemoryStore, lessonTitle?: 
       : lastUser.content
     : null;
   const lessonPart = lessonTitle ? `“${lessonTitle}” dersine` : "Derse";
-  if (when && preview) {
-    return `${lessonPart} kaldığın yerden devam (${when}). Son: “${preview}”`;
-  }
-  if (when) return `${lessonPart} kaldığın yerden devam (${when}).`;
-  return `${lessonPart} kaldığın yerden devam edebilirsin.`;
+  if (when && preview) return `${lessonPart} devam (${when}).`;
+  if (when) return `${lessonPart} devam (${when}).`;
+  return `${lessonPart} devam edebilirsin.`;
 }
 
 /** @deprecated v1 API — speak page artık patchSpeakMemory kullanır */

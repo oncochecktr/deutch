@@ -29,8 +29,7 @@ export function GrammarRoadmapHomeSummary() {
           {active ? `${active.order}. ${active.title}` : "Gramer yolculuğuna başla"}
         </h1>
         <p className="mt-1 text-sm text-white/85">
-          {roadmap.completedCount}/{roadmap.totalCount} A1 kuralı · Der/die/das&apos;tan Perfekt&apos;e
-          sıralı ilerleme
+          {roadmap.completedCount}/{roadmap.totalCount} kural
         </p>
         <div className="mt-4">
           <ProgressBar value={roadmap.completionPct} size="lg" variant="hero" showPercent />
@@ -40,14 +39,14 @@ export function GrammarRoadmapHomeSummary() {
             href={roadmap.continueHref}
             className="btn-primary-lg flex flex-1 items-center justify-center gap-2 bg-goethe-gold text-goethe-blue"
           >
-            Kaldığın yerden devam
+            Devam et
             <IconArrowRight size={18} />
           </Link>
           <Link
             href="/grundlagen/roadmap"
             className="flex flex-1 items-center justify-center rounded-xl border-2 border-white/30 px-4 py-3 text-sm font-bold text-white transition hover:bg-white/10"
           >
-            Tüm haritayı gör
+            Tüm harita
           </Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ export const EXAM_PROVIDERS = ["Goethe", "TELC", "ÖSD", "DTZ"] as const;
 export const EXAM_LABEL_SHORT = "Sınav";
 export const EXAM_LABEL_FULL = "A1 sınav modülleri";
 export const EXAM_LABEL_DESC =
-  "Goethe · TELC · ÖSD — aynı A1 becerileri (dinle, oku, yaz, konuş)";
+  "Goethe · TELC · ÖSD — dinle, oku, yaz, konuş";
 
 export const EXAM_HUB_TITLE = "A1 Sınav Merkezi";
 export const READINESS_LABEL = "A1 hazırlık seviyesi";

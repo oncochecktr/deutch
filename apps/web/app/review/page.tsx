@@ -264,8 +264,7 @@ export default function ReviewPage() {
 
         {!flipped && isLive && (
           <p className="text-center text-sm text-sage-500">
-            Altın çizgi = dokun ve anlamı gör. Örnek cümledeki <strong>Türkçe</strong> büyütüldü — hazırsan{" "}
-            <strong>Sonraki kelime</strong> yeter.
+            Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
           </p>
         )}
 
@@ -310,7 +309,7 @@ export default function ReviewPage() {
 
         {isLive && (
           <p className="text-center text-xs text-sage-400">
-            İleri deyince kelime kaybolmaz — 1, 3, 7 gün sonra tekrar gelir. Acele etme, cümleyi sesle oku.
+            Tekrar: 1, 3, 7 gün.
           </p>
         )}
 

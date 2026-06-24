@@ -52,7 +52,6 @@ export function SetTrainer({
     return (
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
-          <p className="text-sm text-sage-600">{data.description}</p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {data.sets.length} set tamam
           </p>
@@ -103,8 +102,8 @@ export function SetTrainer({
         </p>
         <p className="text-sm text-sage-600">
           {passed
-            ? "Set tamam — sonrakine geç!"
-            : `${passScore}/${data.drillsPerSet} lazım — tekrar dene.`}
+            ? "Set tamam!"
+            : `${passScore}/${data.drillsPerSet} lazım.`}
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           <button type="button" className="btn-secondary" onClick={backToList}>

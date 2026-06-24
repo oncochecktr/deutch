@@ -65,8 +65,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
           <p className="text-sm text-sage-600">
-            Aynı kalıbı 20 kez gör — fiil çekimini refleks haline getir. Her kalıpta 5 soruluk mini
-            quiz (4/5 geç).
+            20 örnek + quiz (4/5 geç).
           </p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {patterns.length} kalıp tamam
@@ -115,7 +114,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
           {quizScore} / 5
         </p>
         <p className="text-sm text-sage-600">
-          {passed ? "Kalıp tamamlandı — refleks oturuyor!" : "4/5 lazım — bir kez daha dene."}
+          {passed ? "Kalıp tamam!" : "4/5 lazım — tekrar dene."}
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           <button type="button" className="btn-secondary" onClick={backToList}>

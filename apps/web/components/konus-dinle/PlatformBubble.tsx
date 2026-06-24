@@ -8,10 +8,9 @@ interface PlatformBubbleProps {
   item: KonusDinleItem;
   playing: boolean;
   onReplay: () => void;
-  showReplayHint?: boolean;
 }
 
-export function PlatformBubble({ item, playing, onReplay, showReplayHint }: PlatformBubbleProps) {
+export function PlatformBubble({ item, playing, onReplay }: PlatformBubbleProps) {
   return (
     <div className="flex justify-start">
       <div className="max-w-[92%] rounded-2xl rounded-tl-md border border-goethe-blue/20 bg-white px-4 py-3 shadow-sm">
@@ -28,9 +27,6 @@ export function PlatformBubble({ item, playing, onReplay, showReplayHint }: Plat
             {playing ? "Dinleniyor…" : "Tekrar dinle"}
           </button>
         </div>
-        {showReplayHint && !playing && (
-          <p className="mb-2 text-[10px] text-sage-400">İstediğin kadar tekrar dinleyebilirsin.</p>
-        )}
         <p className="text-base font-medium leading-relaxed text-goethe-blue sm:text-lg">
           {item.textDe}
         </p>

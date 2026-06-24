@@ -40,7 +40,7 @@ export function HomePageClient() {
           </p>
           <h2 className="mt-1 text-xl font-bold sm:text-2xl">Konuş-Dinle</h2>
           <p className="mt-1 max-w-md text-sm text-white/85">
-            Dinle, tekrar et, yapıcı geri bildirim al — A1&apos;den B1&apos;e, kendi temponda.
+            Dinle, tekrar et, geri bildirim al.
           </p>
           <span className="mt-4 inline-flex items-center gap-1 rounded-full bg-goethe-gold px-4 py-2 text-sm font-bold text-goethe-blue">
             Antrenmana başla →
@@ -55,9 +55,7 @@ export function HomePageClient() {
         >
           <div>
             <p className="text-sm font-bold text-goethe-blue">Öğrenme haritası</p>
-            <p className="text-xs text-sage-500">
-              Kök → dal → meyve · Kelime, gramer, sınav — A1’den B1’e neredesin?
-            </p>
+            <p className="text-sm text-sage-500">Kelime, gramer, sınav</p>
           </div>
           <span className="shrink-0 rounded-full bg-goethe-gold/20 px-3 py-1 text-xs font-bold text-goethe-blue">
             %{report.overallPercent}

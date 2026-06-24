@@ -27,7 +27,7 @@ export function ContinueSessionBanner() {
       href={route}
       className="card-soft block border-2 border-goethe-blue/20 p-4 transition hover:border-goethe-blue/40"
     >
-      <p className="text-xs font-semibold uppercase text-goethe-blue">Kaldığın yerden devam</p>
+      <p className="text-xs font-semibold uppercase text-goethe-blue">Devam et</p>
       <p className="mt-1 font-semibold text-sage-700">{label}</p>
       {saved && <p className="mt-1 text-xs text-sage-400">Son kayıt: {saved}</p>}
       <span className="mt-2 inline-block text-sm font-medium text-goethe-blue">Devam et →</span>

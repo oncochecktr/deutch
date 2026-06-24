@@ -131,7 +131,7 @@ export function WordOrderSpotVerb({ exercise, onAnswer }: WordOrderSpotVerbProps
           Bu cümlede motor hangisi? Fiil = hareket bildiren kelime.
         </p>
         <p className="rounded-lg border border-goethe-gold/30 bg-goethe-gold/10 px-3 py-2.5 text-sm text-sage-700">
-          Alman polisi kuralı: Normal cümlede fiil yerinde oturur. Soruda fiil öne geçer.
+          Soruda fiil başa geçer.
         </p>
         <div className="flex flex-wrap gap-2">
           {pool.map((w, i) => (

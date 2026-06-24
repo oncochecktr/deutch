@@ -1,10 +1,10 @@
 /** Profesör (Sınıf) modülü — kullanıcıya gösterilen hata ve yönlendirme metinleri */
 
 export const PROFESSOR_MISSING_API_KEY =
-  "Profesörünüzle gelişmiş eğitime devam etmek için AI API anahtarı eklemeniz gerekir. Ayarlar sayfasından anahtarınızı oluşturup kaydedin.";
+  "Gelişmiş ders için API anahtarı gerekir. Ayarlar sayfasından ekleyin.";
 
 export const PROFESSOR_INVALID_API_KEY =
-  "API anahtarınız geçersiz veya süresi dolmuş. Ayarlar sayfasından anahtarı kontrol edin.";
+  "API anahtarı geçersiz. Ayarları kontrol edin.";
 
 export const PROFESSOR_CONNECTION_ERROR =
   "Profesöre bağlanılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin.";
@@ -13,7 +13,7 @@ export const PROFESSOR_RATE_LIMIT =
   "Çok fazla istek gönderildi. Birkaç saniye bekleyip tekrar deneyin.";
 
 export const PROFESSOR_QUOTA_EXCEEDED =
-  "API kotanız veya bakiyeniz yetersiz. Sağlayıcı hesabınızdan limit ve fatura bilgilerinizi kontrol edin.";
+  "API kotası yetersiz. Sağlayıcı hesabınızı kontrol edin.";
 
 export const PROFESSOR_RESPONSE_ERROR =
   "Profesör yanıt veremedi. Lütfen tekrar deneyin.";

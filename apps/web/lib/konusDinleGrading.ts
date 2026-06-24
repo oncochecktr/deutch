@@ -73,7 +73,7 @@ export function gradeKonusDinleAttempt(
       score,
       tier: "retry",
       isGood: false,
-      message: `Duydum seni. Bir kez daha dinle, acele etme. Doğrusu: «${expectedDisplay}»`,
+      message: `Tekrar dene. Doğrusu: «${expectedDisplay}»`,
       shortVoice: "Bir kez daha dene.",
       expected: expectedDisplay,
       userHeard,

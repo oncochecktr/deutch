@@ -40,8 +40,7 @@ export function ConjugationMatrix({ data }: ConjugationMatrixProps) {
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
           <p className="text-sm text-sage-600">
-            11 A1 fiili × 9 kişi. du / er / sie satırları vurgulu. Her fiilde 10 soruluk drill —{" "}
-            {CONJUGATION_PASS_SCORE}/10 geç.
+            11 fiil × 9 kişi. {CONJUGATION_PASS_SCORE}/10 geç.
           </p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {data.verbs.length} fiil tamam

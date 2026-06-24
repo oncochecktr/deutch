@@ -130,7 +130,7 @@ export default function CardsPage() {
 
         {!flipped && isLive && (
           <p className="text-center text-sm text-sage-400">
-            Çeviri kelimenin altında · hazırsan <strong className="text-sage-500">Sonraki kelime</strong>
+            Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
           </p>
         )}
 

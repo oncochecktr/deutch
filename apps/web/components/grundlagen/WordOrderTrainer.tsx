@@ -140,8 +140,7 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
           <p className="text-sm text-sage-600">
-            Kelime biliyorsun ama sıra karışıyor mu? Önce motoru (fiili) bul, sonra kur.
-            Stufe 1→4: SVO → Ja/Nein (fiil başa) → W-Fragen → karışık. {WORD_ORDER_PASS_SCORE}/10 geç.
+            SVO → Ja/Nein → W-Fragen. {WORD_ORDER_PASS_SCORE}/10 geç.
           </p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {units.length} bölüm tamam

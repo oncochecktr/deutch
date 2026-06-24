@@ -26,7 +26,7 @@ export function StorageWarningBanner({ className = "" }: { className?: string })
       </span>
       <div className="min-w-0 flex-1">
         <p className="font-semibold">İlerleme bu tarayıcıda saklanır</p>
-        <p className="mt-0.5 text-xs leading-relaxed opacity-90">{getStorageWarningText()}</p>
+        <p className="mt-0.5 text-sm opacity-90">{getStorageWarningText()}</p>
       </div>
       <button
         type="button"

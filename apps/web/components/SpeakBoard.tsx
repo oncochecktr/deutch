@@ -188,7 +188,7 @@ export function SpeakBoard({
             {germanQuestion && (
               <div className="rounded-lg border border-white/10 bg-black/15 p-4 sm:p-5">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[#a8c4b8]">
-                  {boardPhase === "practice" ? "Şimdi deneyelim — profesör soruyor" : "Profesör soruyor"}
+                  Soru
                 </p>
                 <div className="mt-3 flex items-start gap-3">
                   <SpeakAudioButton text={germanQuestion} size="md" />
@@ -225,7 +225,7 @@ export function SpeakBoard({
 
             {!germanQuestion && !showTeaching && (
               <p className="text-xl italic text-[#8fa89c] sm:text-2xl">
-                Derse gir — profesör önce öğretir, sonra sorar.
+                Derse gir.
               </p>
             )}
 

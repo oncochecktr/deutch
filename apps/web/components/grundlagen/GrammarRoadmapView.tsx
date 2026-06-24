@@ -25,7 +25,7 @@ export function GrammarRoadmapView() {
         <div className="card-soft border-2 border-dashed border-sage-200 p-8 text-center">
           <p className="text-lg font-bold text-goethe-blue">B1 — Yakında</p>
           <p className="mt-2 text-sm text-sage-600">
-            Relativsätze, genişletilmiş Nebensätze ve B1 gramer kartları hazırlanıyor.
+            Relativsätze ve B1 gramer yakında.
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ export function GrammarRoadmapView() {
               Almanca Motoru · {level}
             </p>
             <p className="mt-1 text-sm text-sage-600">
-              {roadmap.completedCount}/{roadmap.totalCount} kural · çekirdek gramer yol haritası
+              {roadmap.completedCount}/{roadmap.totalCount} kural
             </p>
           </div>
           <span className="text-2xl font-bold tabular-nums text-goethe-blue">
@@ -56,7 +56,7 @@ export function GrammarRoadmapView() {
           href={roadmap.continueHref}
           className="btn-primary mt-4 flex w-full items-center justify-center gap-2"
         >
-          Kaldığın yerden devam et
+          Devam et
           <IconArrowRight size={18} />
         </Link>
       </div>

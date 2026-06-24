@@ -95,7 +95,7 @@ interface BoardSnapshot {
 }
 
 const INPUT_LANGUAGES: { id: SpeakInputLanguage; label: string; hint: string }[] = [
-  { id: "tr", label: "Türkçe", hint: "Profesör anlatır, sen not alırsın" },
+  { id: "tr", label: "Türkçe", hint: "Not al" },
   { id: "de", label: "Almanca", hint: "Doğrudan konuşma pratiği" },
 ];
 
@@ -706,11 +706,11 @@ export default function SpeakPage() {
         saveBoardSnapshot();
         setExerciseResult(null);
         if (focusMode) setFocusMode(false);
-        setInfoMessage("Egzersiz alanı açıldı — profesör seni burada test eder.");
+        setInfoMessage("Egzersiz modu.");
       } else {
         restoreBoardSnapshot();
         setExerciseResult(null);
-        setInfoMessage("Derse döndün — kaldığın yerden devam edebilirsin.");
+        setInfoMessage("Derse döndün.");
       }
       return next;
     });
@@ -816,7 +816,7 @@ export default function SpeakPage() {
     if (history.length > 0) {
       setInfoMessage(
         formatSpeakResumeMessage(memoryRef.current, currentLesson.title) ??
-          "Kaldığın yerdesin — konuş veya yaz, API harcanmaz."
+          "Devam et."
       );
       return;
     }
@@ -923,7 +923,7 @@ export default function SpeakPage() {
   return (
     <PageShell
       title="Sınıf"
-      subtitle="Öğretim → örnek → soru · profesör sesli anlatır · tahta merkezde"
+      subtitle="Öğretim → örnek → soru"
       maxWidth="full"
     >
       {scriptModeActive && (
@@ -1021,13 +1021,9 @@ export default function SpeakPage() {
                     ? "bg-[#1a3d32] text-[#e8edd8]"
                     : "border border-sage-200 text-sage-500"
                 }`}
-                title={
-                  professorAudio
-                    ? "Profesör otomatik seslendirir — kapat"
-                    : "Profesör sesini aç — 🔊 butonları her zaman çalışır"
-                }
+                title={professorAudio ? "Otomatik sesi kapat" : "Otomatik sesi aç"}
               >
-                {professorAudio ? "🔊 Profesör sesi" : "🔇 Sessiz mod"}
+                {professorAudio ? "🔊 Ses açık" : "🔇 Sessiz"}
               </button>
               <button
                 type="button"
@@ -1113,7 +1109,7 @@ export default function SpeakPage() {
           {/* Öğrenci masası — kompakt */}
           <div className="shrink-0 rounded-xl border border-[#5c4033]/30 bg-[#faf8f3] p-3 shadow-sm">
             <p className="mb-2 text-center text-xs font-semibold uppercase tracking-wider text-[#5c4033]">
-              {exerciseOpen ? "Egzersiz — cevap ver" : "Senin sıran — cevap ver"}
+              {exerciseOpen ? "Egzersiz" : "Cevap ver"}
             </p>
             <div className="mb-2 flex gap-2">
               <button
@@ -1162,7 +1158,7 @@ export default function SpeakPage() {
                   </svg>
                 </button>
                 <p className="text-center text-xs text-sage-500">
-                  {activeLoading ? "Profesör kontrol ediyor…" : listening ? "Konuş… bitirmek için dokun" : exerciseOpen ? "Mikrofon — egzersiz cevabı" : "Mikrofon — sesli cevap ver"}
+                  {activeLoading ? "Kontrol…" : listening ? "Konuş…" : "Mikrofon"}
                 </p>
                 {(displayTranscript || listening) && (
                   <p className="text-sm text-goethe-blue">
@@ -1177,7 +1173,7 @@ export default function SpeakPage() {
                   ref={writtenInputRef}
                   value={writtenText}
                   onChange={(e) => setWrittenText(e.target.value)}
-                  placeholder="Almanca cümleini yaz… (profesör kontrol edecek)"
+                  placeholder="Almanca cümleini yaz…"
                   rows={3}
                   readOnly={activeLoading}
                   aria-busy={activeLoading}
@@ -1190,9 +1186,7 @@ export default function SpeakPage() {
                   }}
                 />
                 <p className="text-xs text-sage-500">
-                  Q klavye: <span className="font-medium">ss</span>=ß,{" "}
-                  <span className="font-medium">oe</span>=ö,{" "}
-                  <span className="font-medium">ue</span>=ü — profesör bunları kabul eder.
+                  ss→ß · oe→ö · ue→ü
                 </p>
                 <button
                   type="button"
@@ -1200,7 +1194,7 @@ export default function SpeakPage() {
                   disabled={activeLoading || !writtenText.trim()}
                   className="w-full rounded-xl bg-goethe-blue py-2.5 text-sm font-semibold text-white disabled:opacity-40"
                 >
-                  Gönder — kontrol ettir
+                  Gönder
                 </button>
               </div>
             )}
@@ -1237,15 +1231,11 @@ export default function SpeakPage() {
               <p>{sttError || sanitizeProfessorErrorForUser(chatError)}</p>
               {chatError && !sttError && isProfessorMissingApiKeyError(chatError) && (
                 <>
-                  <p className="mt-3 leading-relaxed text-sage-700">
-                    Profesörünüzle bire bir ders almak için ücretsiz veya düşük maliyetli bir AI API
-                    anahtarı oluşturup kaydedin. Ardından eğitime kaldığınız yerden devam edebilirsiniz.
-                  </p>
                   <Link
                     href="/ayarlar"
                     className="mt-3 inline-block font-semibold text-goethe-blue underline"
                   >
-                    AI API ayarlarına git →
+                    API ayarları →
                   </Link>
                 </>
               )}

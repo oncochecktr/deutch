@@ -45,8 +45,7 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
           <p className="text-sm text-sage-600">
-            der/die/das → mein/deine kuralı. Her sahip için 8 örnek + 8 soruluk drill —{" "}
-            {POSSESSIVE_PASS_SCORE}/8 geç.
+            8 örnek + drill — {POSSESSIVE_PASS_SCORE}/8 geç.
           </p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {data.sets.length} set tamam
@@ -80,8 +79,8 @@ export function PossessiveTrainer({ data }: PossessiveTrainerProps) {
         </p>
         <p className="text-sm text-sage-600">
           {passed
-            ? "Set tamam — sonraki sahibe geç!"
-            : `${POSSESSIVE_PASS_SCORE}/8 lazım — tekrar dene.`}
+            ? "Set tamam!"
+            : `${POSSESSIVE_PASS_SCORE}/8 lazım.`}
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           <button type="button" className="btn-secondary" onClick={backToList}>

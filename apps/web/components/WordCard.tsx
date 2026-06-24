@@ -181,7 +181,7 @@ export function WordCard({
               </p>
             )}
             <p className={`mt-4 text-sage-400 ${large ? "text-base" : "text-sm"}`}>
-              Detay için dokun · hazırsan alttan <strong className="text-sage-500">Sonraki kelime</strong>
+              Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
             </p>
           </>
         ) : (
@@ -235,7 +235,7 @@ export function WordCard({
 
       {readOnly && flipped && (
         <p className="border-t border-sage-100 p-3 text-center text-sm text-sage-500">
-          Geçmiş kelime — sadece tekrar oku. İleri ile canlı karta dön.
+          Geçmiş kelime — tekrar oku.
         </p>
       )}
 

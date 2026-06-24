@@ -105,7 +105,7 @@ function FormExampleCard({
         className="text-xs text-sage-500 underline"
         onClick={() => setShowGlossary(!showGlossary)}
       >
-        {showGlossary ? "Form kelimelerini gizle" : "Form kelime sözlüğü (gerceksinav.md)"}
+        {showGlossary ? "Sözlüğü gizle" : "Form sözlüğü"}
       </button>
       {showGlossary && (
         <div className="grid gap-1 rounded-xl bg-sage-50 p-3 sm:grid-cols-2">

@@ -123,7 +123,7 @@ export default function DialoguesClient() {
   return (
     <PageShell
       title="Hikayeler & Diyaloglar"
-      subtitle="Satır satır oku — Türkçe çeviri gizli · sesli dinle · anlama soruları"
+      subtitle="Satır satır oku · ses · quiz"
       maxWidth="full"
     >
       <div className="grid gap-4 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)]">
@@ -225,7 +225,7 @@ export default function DialoguesClient() {
             <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center text-sage-500">
               <p className="text-lg font-medium text-goethe-blue">Bir hikaye seç</p>
               <p className="mt-2 max-w-sm text-sm">
-                Soldan A1/A2/B1 hikayelerini aç — her satırda Türkçe çeviriyi göz butonuyla aç.
+                Soldan hikaye seç.
               </p>
             </div>
           )}

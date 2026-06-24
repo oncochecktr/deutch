@@ -13,7 +13,6 @@ import {
   maskApiKey,
   saveUserApiCredentials,
 } from "@/lib/userApiKeys";
-import { getStorageWarningText } from "@/lib/browserStorage";
 
 export default function AyarlarPage() {
   const [provider, setProvider] = useState<ChatProviderId>("deepseek");
@@ -78,7 +77,7 @@ export default function AyarlarPage() {
         return;
       }
       setTestStatus("ok");
-      setTestMessage("Bağlantı başarılı — Profesör modülü kullanılabilir.");
+      setTestMessage("Bağlantı başarılı.");
     } catch {
       setTestStatus("error");
       setTestMessage("Ağ hatası — tekrar deneyin.");
@@ -88,35 +87,24 @@ export default function AyarlarPage() {
   return (
     <PageShell
       title="AI API Ayarları"
-      subtitle="Profesör (Sınıf) modülü için kişisel anahtarınız"
+      subtitle="Sınıf modülü"
       backHref="/"
       maxWidth="md"
     >
       <StorageWarningBanner className="mb-4" />
 
-      <section className="card-soft space-y-4 p-5">
-        <h2 className="text-sm font-bold uppercase text-goethe-blue">Neden AI API anahtarı?</h2>
-        <p className="text-sm leading-relaxed text-sage-600">
-          Sınıf modülündeki Profesör, gelişmiş geri bildirim için bir AI API anahtarı kullanır.
-          Ücretsiz veya düşük maliyetli anahtar oluşturup buraya ekleyebilirsiniz. Anahtar yalnızca
-          bu tarayıcıda saklanır; sunucuya kaydedilmez.
-        </p>
-        <p className="text-xs text-sage-500">
-          Anahtar olmadan da A1/A2 derslerinin çoğu çalışır —{" "}
+      <section className="card-soft space-y-3 p-5">
+        <p className="text-sm text-sage-600">
+          Gelişmiş geri bildirim için anahtar gerekir. Yalnızca bu cihazda saklanır.{" "}
           <Link href="/speak" className="font-medium text-goethe-blue underline">
-            Sınıf modülüne git
+            Sınıf
           </Link>
-          .
+          {" "}— anahtarsız da A1/A2 dersleri çalışır.
         </p>
-        <p className="text-xs text-sage-500">{getStorageWarningText()}</p>
       </section>
 
       <section className="card-soft mt-4 space-y-4 p-5">
-        <h2 className="text-sm font-bold uppercase text-goethe-blue">AI API anahtarı</h2>
-        <p className="text-sm text-sage-600">
-          Kullandığınız AI servisinin panelinden oluşturduğunuz anahtarı aşağıya yapıştırın.
-          Çoğu servis ücretsiz başlangıç kotası sunar.
-        </p>
+        <h2 className="text-sm font-bold uppercase text-goethe-blue">Anahtar</h2>
 
         <label className="block">
           <span className="text-sm font-semibold text-goethe-blue">Anahtar</span>
@@ -124,7 +112,7 @@ export default function AyarlarPage() {
             type="password"
             value={apiKey}
             onChange={(e) => setApiKey(e.target.value)}
-            placeholder="API anahtarınızı buraya yapıştırın"
+            placeholder="API anahtarı"
             className="mt-2 w-full rounded-xl border border-sage-200 px-4 py-3 text-sm"
             autoComplete="off"
           />
@@ -135,12 +123,9 @@ export default function AyarlarPage() {
           onToggle={(e) => setShowAdvanced((e.target as HTMLDetailsElement).open)}
         >
           <summary className="cursor-pointer text-xs font-semibold text-sage-600">
-            Gelişmiş — anahtar türü (isteğe bağlı)
+            Gelişmiş (isteğe bağlı)
           </summary>
-          <p className="mt-2 text-xs text-sage-500">
-            Çoğu kullanıcı için otomatik algılama yeterlidir. Bağlantı hatası alırsanız türü elle
-            seçin.
-          </p>
+          <p className="mt-2 text-xs text-sage-500">Bağlantı hatasında türü elle seçin.</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {(["deepseek", "gemini", "anthropic"] as ChatProviderId[]).map((p) => (
               <button

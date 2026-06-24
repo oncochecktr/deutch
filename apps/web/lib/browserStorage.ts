@@ -18,11 +18,11 @@ export function isBrowserStorageAvailable(): boolean {
 }
 
 export function getStorageUsageHint(): string {
-  return "İlerlemen bu tarayıcıda saklanır (localStorage). Aynı cihaz ve tarayıcıda kaldığın yerden devam edersin.";
+  return "İlerleme bu tarayıcıda saklanır.";
 }
 
 export function getStorageWarningText(): string {
-  return "Tüm ilerlemeniz (kelimeler, gramer, sınav) bu tarayıcının yerel deposunda tutulur. Tarayıcı verilerini temizlerseniz, gizli mod kullanırsanız veya farklı bir cihaz/tarayıcıya geçerseniz verileriniz kaybolur. API anahtarınız da yalnızca bu cihazda saklanır.";
+  return "Gizli mod veya veri temizliğinde kaybolur.";
 }
 
 const ROUTE_LABELS: Record<string, string> = {

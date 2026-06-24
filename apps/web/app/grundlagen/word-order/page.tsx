@@ -10,9 +10,9 @@ export default function WordOrderPage() {
   return (
     <PageShell
       title={data.title}
-      subtitle={`${data.titleTr} — ${data.description}`}
+      subtitle={data.titleTr}
       backHref="/grundlagen"
-      backLabel="A1 çekirdek modüllere dön"
+      backLabel="A1 modüllere dön"
       maxWidth="md"
     >
       <WordOrderTrainer data={data} />

@@ -212,12 +212,12 @@ export function computeLearningPath(
 
   let persona: LearningPathState["persona"] = "building_pool";
   let headline = "Kelime havuzunu kur";
-  let subline = "Buradan başla — kartlarla devam et.";
+  let subline = "Kartlarla devam.";
 
   if (wordsDone && !grammarDone) {
     persona = "grammar_focus";
     headline = "Havuzun hazır — gramer zamanı";
-    subline = "Tek tıkla gramer modülüne geç.";
+    subline = "Gramer modülü.";
   } else if (grammarDone && !goetheDone) {
     persona = "exam_focus";
     headline = "Sınav modüllerine geç";
@@ -225,7 +225,7 @@ export function computeLearningPath(
   } else if (goetheDone && !examDone) {
     persona = "exam_focus";
     headline = "Deneme sınavı zamanı";
-    subline = "Gerçek mod: 65 dk, geçme 60 puan.";
+    subline = "65 dk · geçme 60";
   } else if (examDone) {
     persona = "ready";
     headline = "Sınava hazırsın";

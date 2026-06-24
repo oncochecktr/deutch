@@ -14,7 +14,7 @@ export default function GrammarPackPage() {
       title={core.grammarPack.title}
       subtitle={`${core.grammarPack.titleTr} — ${sections.length} bölüm, referans + mini quiz`}
       backHref="/grundlagen"
-      backLabel="A1 çekirdek modüllere dön"
+      backLabel="A1 modüllere dön"
       maxWidth="md"
     >
       <Suspense fallback={<p className="text-sm text-sage-500">Yükleniyor…</p>}>

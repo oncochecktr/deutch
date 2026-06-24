@@ -7,62 +7,62 @@ export interface DailyTaskMeta {
 export const DAILY_TASK_META: Record<string, DailyTaskMeta> = {
   srs: {
     title: "SRS Tekrar",
-    subtitle: "Ezberlediğin kelimeleri kartla tekrar et — unutmamak için",
+    subtitle: "Kartla tekrar et",
     shortLabel: "SRS tekrar",
   },
   new: {
     title: "Yeni kelime (Kartlar)",
-    subtitle: "Bugün öğreneceğin A1 kelimeleri — çevir, Biliyorum de",
+    subtitle: "Yeni A1 kelimeler",
     shortLabel: "Yeni kelime",
   },
   hoeren: {
     title: "Hören (Dinleme)",
-    subtitle: "A1 dinleme — sesi dinle, çoktan seçmeli soruları cevapla (Goethe · TELC formatı)",
+    subtitle: "Dinle ve cevapla",
     shortLabel: "Hören oturumu",
   },
   lesen: {
     title: "Lesen (Okuma)",
-    subtitle: "A1 okuma — kısa metni oku, alttaki soruları işaretle",
+    subtitle: "Metin oku, soruları işaretle",
     shortLabel: "Lesen metni",
   },
   schreiben: {
     title: "Schreiben (Yazma)",
-    subtitle: "A1 yazma — form doldur veya kısa mesaj / e-posta yaz",
+    subtitle: "Form veya kısa mesaj",
     shortLabel: "Schreiben görevi",
   },
   sprechen: {
     title: "Sprechen (Konuşma)",
-    subtitle: "A1 konuşma — soruları yüksek sesle cevapla, checklist işaretle",
+    subtitle: "Soruları sesle cevapla",
     shortLabel: "Sprechen kartları",
   },
   listen: {
     title: "Dinleme (MP3)",
-    subtitle: "Kulaklıkla yürürken kelime ve cümle dinle — telaffuz alışkanlığı",
+    subtitle: "Kelime ve cümle dinle",
     shortLabel: "Dinleme (MP3)",
   },
   speakClass: {
     title: "Sınıf — Profesör",
-    subtitle: "Tahtada 1 adım bitir (öğret → dene → cevap) — 60 gün A1+A2 yolu",
+    subtitle: "1 tahta adımı bitir",
     shortLabel: "Sınıf adımı",
   },
   speakExercise: {
     title: "Sınıf — Egzersiz",
-    subtitle: "Profesörle kelime, yazma ve konuşma egzersizi — A1/A2/B1",
+    subtitle: "Kelime ve yazma egzersizi",
     shortLabel: "Egzersiz alanı",
   },
   dialogues: {
     title: "Hikayeler & Diyaloglar",
-    subtitle: "Satır satır oku — gizli Türkçe çeviri, ses, anlama soruları",
+    subtitle: "Satır satır oku",
     shortLabel: "Hikaye oku",
   },
   exam: {
     title: "Deneme sınavı (Prüfung)",
-    subtitle: "Tam A1 simülasyonu — Hören, Lesen, Schreiben, Sprechen (Goethe · TELC · ÖSD)",
+    subtitle: "Tam A1 simülasyonu",
     shortLabel: "Deneme sınavı",
   },
   rest: {
     title: "Günlük hedef tamam",
-    subtitle: "Bugünkü plan bitti — mola ver veya Mesleki Almanca çalış",
+    subtitle: "Bugün bitti — mola ver",
     shortLabel: "Tamamlandı",
   },
 };
