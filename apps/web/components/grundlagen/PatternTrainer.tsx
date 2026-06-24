@@ -1,9 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AudioButton } from "@/components/AudioButton";
 import { ContentTransition } from "@/components/ContentTransition";
-import { TurkishTranslation } from "@/components/TurkishTranslation";
+import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import { IconCheck } from "@/components/icons";
 import { PatternQuiz } from "@/components/grundlagen/PatternQuiz";
 import { WordBreakdown } from "@/components/grundlagen/WordBreakdown";
@@ -180,13 +179,12 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
       )}
 
       <ContentTransition stepKey={`${active.id}-ex-${exampleIdx}`} direction={direction}>
-        <div className="card-soft space-y-4 p-5 sm:p-6">
-          <p className="text-sm font-medium tabular-nums text-sage-500">
-            Örnek {exampleIdx + 1} / {active.examples.length}
-          </p>
-          <p className="text-2xl font-bold text-goethe-blue sm:text-3xl">{example.de}</p>
-          <TurkishTranslation text={example.tr} />
-          <AudioButton text={example.de} label="Cümleyi dinle" />
+        <TrainerExampleCard
+          index={exampleIdx}
+          total={active.examples.length}
+          de={example.de}
+          tr={example.tr}
+        >
           <button
             type="button"
             className="text-sm font-medium text-goethe-blue underline"
@@ -195,7 +193,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
             {showBreakdown ? "Parçalamayı gizle" : "Kelime kelime göster"}
           </button>
           <WordBreakdown parts={example.breakdown} expanded={showBreakdown} />
-        </div>
+        </TrainerExampleCard>
       </ContentTransition>
 
       <div className="flex gap-2">

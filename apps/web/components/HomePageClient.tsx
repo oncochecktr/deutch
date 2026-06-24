@@ -5,11 +5,15 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { CATEGORIES_A1 } from "@german-coach/vocabulary";
 import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
-import { GrammarRoadmapHomeSummary } from "@/components/grundlagen/GrammarRoadmapHomeSummary";
+import { HomeHero } from "@/components/home/HomeHero";
+import { HomePathPicker } from "@/components/home/HomePathPicker";
+import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
 import { LearningPathHub } from "@/components/LearningPathHub";
 import { StorageWarningBanner } from "@/components/StorageWarningBanner";
 import { NavIcon, type NavIconKey } from "@/components/icons";
+import { resolveRecommendedIntent, isEarlyLearner } from "@/lib/homeLearningPath";
 import { computeLearningPath } from "@/lib/learningPath";
+import { countStudiedA1Words } from "@/lib/progress";
 import { useDashboardReport } from "@/lib/useDashboardReport";
 
 const A1ControlPanel = dynamic(
@@ -24,31 +28,50 @@ const A1ControlPanel = dynamic(
 export function HomePageClient() {
   const { report, srs, a1, mesleki, progress } = useDashboardReport();
   const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
+  const a1Studied = countStudiedA1Words(progress);
+  const early = isEarlyLearner(report.overallPercent, a1Studied);
+  const recommended = useMemo(
+    () =>
+      resolveRecommendedIntent({
+        activeStageId: path.activeStageId,
+        a1Studied,
+        srsDue: srs.due,
+        primaryHref: path.primaryHref,
+      }),
+    [path.activeStageId, path.primaryHref, a1Studied, srs.due]
+  );
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
-      <div className="space-y-4">
-        <GrammarRoadmapHomeSummary />
+      <div className="space-y-6">
+        <HomeHero />
+        <LearningMethodGuide />
+        <HomePathPicker recommended={recommended} progress={progress} />
 
         <StorageWarningBanner />
+        <ContinueSessionBanner />
 
-        <Link
-          href="/konus-dinle"
-          className="card-soft block overflow-hidden border-2 border-goethe-gold/40 bg-gradient-to-br from-goethe-blue to-goethe-blue/90 p-5 text-white shadow-md transition hover:brightness-105 active:scale-[0.99]"
-        >
-          <p className="text-[10px] font-bold uppercase tracking-widest text-white/70">
-            Ana antrenman
-          </p>
-          <h2 className="mt-1 text-xl font-bold sm:text-2xl">Konuş-Dinle</h2>
-          <p className="mt-1 max-w-md text-sm text-white/85">
-            Dinle, tekrar et, geri bildirim al.
-          </p>
-          <span className="mt-4 inline-flex items-center gap-1 rounded-full bg-goethe-gold px-4 py-2 text-sm font-bold text-goethe-blue">
-            Antrenmana başla →
-          </span>
-        </Link>
-
-        <LearningPathHub path={path} overallPercent={report.overallPercent} />
+        {early ? (
+          <div className="card-soft flex flex-wrap items-center justify-between gap-3 border border-goethe-blue/15 p-4">
+            <p className="text-sm text-sage-600">Kart açınca ilerleme burada artar.</p>
+            <Link
+              href="/harita"
+              className="shrink-0 rounded-full border border-goethe-blue/25 px-4 py-2 text-sm font-semibold text-goethe-blue transition hover:bg-goethe-blue/5"
+            >
+              Öğrenme haritası →
+            </Link>
+          </div>
+        ) : (
+          <div className="space-y-3">
+            <LearningPathHub path={path} overallPercent={report.overallPercent} />
+            <Link
+              href="/grundlagen/roadmap"
+              className="block text-center text-sm font-medium text-goethe-blue underline-offset-2 hover:underline"
+            >
+              Gramer haritası →
+            </Link>
+          </div>
+        )}
 
         <Link
           href="/harita"
@@ -56,14 +79,12 @@ export function HomePageClient() {
         >
           <div>
             <p className="text-sm font-bold text-goethe-blue">Öğrenme haritası</p>
-            <p className="text-sm text-sage-500">Kelime, gramer, sınav</p>
+            <p className="text-sm text-sage-500">Kelime · gramer · sınav</p>
           </div>
           <span className="shrink-0 rounded-full bg-goethe-gold/20 px-3 py-1 text-xs font-bold text-goethe-blue">
             %{report.overallPercent}
           </span>
         </Link>
-
-        <ContinueSessionBanner />
 
         <details className="app-collapse card-soft">
           <summary className="flex items-center justify-between p-4 text-sm font-medium text-sage-600">

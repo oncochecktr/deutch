@@ -1,9 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AudioButton } from "@/components/AudioButton";
 import { ContentTransition } from "@/components/ContentTransition";
-import { TurkishTranslation } from "@/components/TurkishTranslation";
+import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import { IconCheck } from "@/components/icons";
 import { WordOrderDrillPanel } from "@/components/grundlagen/WordOrderDrill";
 import type { WordOrderTrainerData } from "@/lib/grundlagen";
@@ -306,14 +305,12 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
 
       {example && (
         <ContentTransition stepKey={`${active.id}-ex-${exampleIdx}`} direction={direction}>
-          <div className="card-soft space-y-3 p-5 sm:p-6">
-            <p className="text-sm font-medium tabular-nums text-sage-500">
-              Örnek {exampleIdx + 1} / {active.examples.length}
-            </p>
-            <p className="text-2xl font-bold tracking-tight text-goethe-blue sm:text-3xl">{example.de}</p>
-            <TurkishTranslation text={example.tr} />
-            <AudioButton text={example.de.replace(/→.*/, "").trim()} label="Cümleyi dinle" />
-          </div>
+          <TrainerExampleCard
+            index={exampleIdx}
+            total={active.examples.length}
+            de={example.de}
+            tr={example.tr}
+          />
         </ContentTransition>
       )}
 

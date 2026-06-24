@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ProgressBar } from "@/components/ProgressBar";
 import { APP_NAME, APP_TAGLINE } from "@/lib/brand";
+import { LEARNING_METHOD_STEPS } from "@/lib/homeLearningPath";
 
-const STORAGE_KEY = "german-coach-welcome-v1";
+const STORAGE_KEY = "german-coach-welcome-v2";
 
 export function WelcomeIntro() {
   const [open, setOpen] = useState(false);
@@ -47,34 +47,23 @@ export function WelcomeIntro() {
           <p className="mt-1 text-sm text-white/80">{APP_TAGLINE}</p>
         </div>
 
-        <div className="space-y-4 p-6">
+        <div className="space-y-3 p-6">
           <p className="text-sm text-sage-600">
-            A1 Almanca — kelime, gramer ve sınav tek yerde.
+            Cümle → dikte → konuş → gramer. Bugün 5 dakika yeter.
           </p>
 
-          <div className="rounded-xl border border-sage-100 bg-white p-4">
-            <p className="mb-2 text-sm font-semibold text-goethe-blue">İlerleme</p>
-            <ProgressBar value={35} size="lg" variant="gold" showPercent />
-          </div>
-
-          <ul className="space-y-2 text-sm text-sage-600">
-            <li className="flex gap-2">
-              <span className="text-goethe-gold">1.</span>
-              Gramer yol haritası
-            </li>
-            <li className="flex gap-2">
-              <span className="text-goethe-gold">2.</span>
-              Kelime kartları
-            </li>
-            <li className="flex gap-2">
-              <span className="text-goethe-gold">3.</span>
-              Sınav modülleri
-            </li>
-          </ul>
+          <ol className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-sage-600">
+            {LEARNING_METHOD_STEPS.map((step) => (
+              <li key={step.order}>
+                <span className="font-bold text-goethe-gold">{step.order}.</span>{" "}
+                {step.title}
+              </li>
+            ))}
+          </ol>
 
           <div className="flex flex-col gap-2 pt-1">
-            <Link href="/grundlagen/roadmap" className="btn-primary-lg text-center" onClick={dismiss}>
-              Başla →
+            <Link href="/cards" className="btn-primary-lg text-center" onClick={dismiss}>
+              Hemen dene →
             </Link>
             <button type="button" className="btn-secondary-lg" onClick={dismiss}>
               Kapat

@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AudioButton } from "@/components/AudioButton";
-import { TurkishTranslation } from "@/components/TurkishTranslation";
+import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import type { PossessiveExample } from "@/lib/grundlagen";
 
 interface PossessiveExampleViewProps {
@@ -15,12 +14,7 @@ export function PossessiveExampleView({ example, index, total }: PossessiveExamp
   const [showBreakdown, setShowBreakdown] = useState(true);
 
   return (
-    <div className="card-soft space-y-4 p-5">
-      <p className="text-xs text-sage-400">
-        Örnek {index + 1} / {total}
-      </p>
-      <p className="text-2xl font-bold text-goethe-blue sm:text-3xl">{example.de}</p>
-      <TurkishTranslation text={example.tr} className="mt-2" />
+    <TrainerExampleCard index={index} total={total} de={example.de} tr={example.tr}>
       <div className="flex flex-wrap items-center gap-2 text-xs">
         <span className="rounded-full bg-goethe-gold/20 px-2 py-0.5 font-medium text-goethe-blue">
           {example.article} {example.noun}
@@ -29,7 +23,6 @@ export function PossessiveExampleView({ example, index, total }: PossessiveExamp
           → {example.possessive_form}
         </span>
       </div>
-      <AudioButton text={example.de} label="Cümleyi dinle" />
       <button
         type="button"
         className="text-xs font-medium text-goethe-blue underline"
@@ -61,6 +54,6 @@ export function PossessiveExampleView({ example, index, total }: PossessiveExamp
           </div>
         </div>
       )}
-    </div>
+    </TrainerExampleCard>
   );
 }

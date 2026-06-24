@@ -12,6 +12,7 @@ interface AudioButtonProps {
   maxPlays?: number;
   playsUsed?: number;
   onPlay?: () => boolean;
+  className?: string;
 }
 
 export function AudioButton({
@@ -22,6 +23,7 @@ export function AudioButton({
   maxPlays,
   playsUsed = 0,
   onPlay,
+  className = "",
 }: AudioButtonProps) {
   const [playing, setPlaying] = useState(false);
   const cls =
@@ -45,7 +47,7 @@ export function AudioButton({
           setPlaying(false);
         }
       }}
-      className={`${cls} inline-flex items-center gap-2 border border-sage-200 bg-white font-medium text-sage-600 transition hover:border-sage-300 hover:bg-sage-50 disabled:opacity-60`}
+      className={`${cls} inline-flex shrink-0 items-center gap-2 border border-sage-200 bg-white font-medium text-sage-600 transition hover:border-goethe-blue/30 hover:bg-sage-50 disabled:opacity-60 ${className}`}
       title={
         limitReached
           ? "Maksimum dinleme sayısına ulaşıldı"

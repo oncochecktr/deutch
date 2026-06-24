@@ -1,7 +1,6 @@
 "use client";
 
-import { AudioButton } from "@/components/AudioButton";
-import { TurkishTranslation } from "@/components/TurkishTranslation";
+import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import type { TrainerExample } from "@/lib/grundlagen";
 
 export function GrundlagenExampleView({
@@ -14,15 +13,7 @@ export function GrundlagenExampleView({
   total: number;
 }) {
   return (
-    <div className="card-soft space-y-4 p-5 sm:p-6">
-      <p className="text-sm font-medium tabular-nums text-sage-500">
-        Örnek {index + 1} / {total}
-      </p>
-      <div className="flex flex-wrap items-center gap-3">
-        <p className="text-2xl font-bold tracking-tight text-goethe-blue sm:text-3xl">{example.de}</p>
-        <AudioButton text={example.de} size="sm" />
-      </div>
-      <TurkishTranslation text={example.tr} />
+    <TrainerExampleCard index={index} total={total} de={example.de} tr={example.tr}>
       {example.breakdown.length > 0 && (
         <ul className="space-y-2 border-t border-sage-100 pt-4 text-base">
           {example.breakdown.map((part) => (
@@ -33,6 +24,6 @@ export function GrundlagenExampleView({
           ))}
         </ul>
       )}
-    </div>
+    </TrainerExampleCard>
   );
 }
