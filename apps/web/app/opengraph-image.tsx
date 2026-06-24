@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "German Coach — Sıfırdan Goethe A1";
+export const alt = "German Coach — Sıfırdan A1";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,7 +49,7 @@ export default function OpenGraphImage() {
           </span>
         </div>
         <p style={{ fontSize: "42px", fontWeight: 600, color: "#2c3e35", lineHeight: 1.3, margin: 0 }}>
-          Sıfırdan Goethe A1
+          Sıfırdan A1
         </p>
         <p style={{ fontSize: "28px", color: "#5a785a", marginTop: "20px", lineHeight: 1.4 }}>
           Kelime · Gramer · Sınav · Konuşma pratiği

@@ -77,7 +77,7 @@ export const A1_L06_STEPS: ScriptStepDef[] = [
   },
   {
     teach: {
-      reply: "Goethe Sprechen tarzı mini sınav.",
+      reply: "Sprechen tarzı mini sınav.",
       teachingIntro: "Yol sorma + yön verme — sınav formatı.",
       teachingTopicGerman: "Sprechen — Wegbeschreibung",
       teachingTopicTurkish: "Konuşma — yol tarifi",

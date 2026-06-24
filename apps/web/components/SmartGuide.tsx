@@ -136,7 +136,7 @@ export function SmartGuide({ report }: SmartGuideProps) {
             Bugünün sırası
           </p>
           <p className="mb-3 text-xs text-sage-500">
-            Goethe bölümleri Almanca adıyla — parantez içinde Türkçe anlamı.
+            A1 bölümleri Almanca adıyla — parantez içinde Türkçe anlamı.
           </p>
           <ol className="space-y-2">
             {report.dailyPlan.map((step) => {

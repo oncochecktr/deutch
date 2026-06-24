@@ -195,8 +195,8 @@ export default function ReviewPage() {
 
   if (!hydrated) {
     return (
-      <PageShell title="Tekrar Motoru">
-        <div className="card-soft p-8 text-center text-sage-500">Yükleniyor…</div>
+      <PageShell title="Tekrar Motoru" subtitle="SRS">
+        <div className="card-soft h-64 animate-pulse rounded-xl bg-sage-50" />
       </PageShell>
     );
   }

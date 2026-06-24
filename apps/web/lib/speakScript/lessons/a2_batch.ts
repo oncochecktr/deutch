@@ -270,8 +270,8 @@ export const A2_L11_STEPS: ScriptStepDef[] = mk(
 export const A2_L12_STEPS: ScriptStepDef[] = mk(
   "A2 sınav simülasyonu — Sprechen.",
   "Teil 1: Planen · Teil 2: Präsentation · Teil 3: Fragen",
-  "Goethe A2 Sprechen",
-  "Goethe A2 konuşma",
+  "A2 Sprechen",
+  "A2 konuşma",
   [
     { german: "Lass uns einen Plan machen.", turkish: "Plan yapalım." },
     { german: "Ich möchte über mein Hobby sprechen.", turkish: "Hobim hakkında konuşmak istiyorum." },

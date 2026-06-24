@@ -7,7 +7,7 @@ export const metadata = SEO_PAGES.blog;
 const POSTS = [
   {
     slug: "sifirdan-goethe-a1",
-    title: "Sıfırdan Goethe A1: 3–6 ayda mümkün mü?",
+    title: "Sıfırdan A1: 3–6 ayda mümkün mü?",
     excerpt:
       "Hiç Almanca bilmeyen biri günde 30–60 dakika ile 3–6 ayda A1 sınavına hazırlanabilir mi? Gerçekçi bir yol haritası.",
   },

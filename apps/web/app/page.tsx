@@ -15,7 +15,7 @@ export default function HomePage() {
             "@type": "WebSite",
             name: "German Coach",
             url: SITE_URL,
-            description: "Sıfırdan Goethe A1 — Almanca öğrenme platformu",
+            description: "Sıfırdan A1 — Almanca öğrenme platformu",
             inLanguage: "tr",
           },
           {

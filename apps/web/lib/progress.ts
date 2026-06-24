@@ -596,7 +596,7 @@ export function getNextStudyTip(
   if (readiness < 10) return `Bugün ${progress.dailyNewWordGoal} yeni kelime öğren. Selamlama ile başla.`;
   if (accuracy < 70) return "Doğruluk %70 altında. Yanlış kelimeler yarın tekrar gelecek — bugün tekrar et.";
   if (readiness < 50) return "Quiz + Tekrar döngüsü: 15 dk SRS, 15 dk quiz, 10 dk mola.";
-  if (readiness >= 85) return "Goethe A1 hazırlığı iyi! Deneme sınavını dene — Prüfungssimulation.";
+  if (readiness >= 85) return "A1 hazırlığı iyi! Deneme sınavını dene — Prüfungssimulation.";
   return "Kart → Tekrar → Quiz. Her gün 20 yeni + tekrar listesi.";
 }
 

@@ -37,7 +37,7 @@ export function buildDialogueUserMessage(req: DialogueGenerateRequest): string {
     `Seviye: ${req.level}`,
     req.theme ? `Tema: ${req.theme}` : "Tema: günlük hayat",
     req.style === "funny" ? "Stil: komik, hafif mizah (Junior/Papa tarzı olabilir)" : null,
-    req.style === "exam" ? "Stil: sınav gerçekçi (Goethe)" : null,
+    req.style === "exam" ? "Stil: sınav gerçekçi (A1 formatı)" : null,
     req.style === "daily" ? "Stil: günlük konuşma" : null,
     `Satır sayısı: en fazla ${req.maxLines ?? 16}`,
     `id benzersiz olsun: ai_${Date.now()}`,

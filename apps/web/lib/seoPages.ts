@@ -3,15 +3,15 @@ import { pageMetadata } from "@/lib/seo";
 /** Merkezi sayfa SEO tanımları — layout.tsx dosyalarında kullanılır */
 export const SEO_PAGES = {
   home: pageMetadata({
-    title: "Sıfırdan Goethe A1 — Ücretsiz Almanca Öğrenme",
+    title: "Sıfırdan A1 — Ücretsiz Almanca Öğrenme",
     description:
-      "German Coach ile sıfırdan Almanca A1: kelime kartları, gramer yol haritası, Goethe sınav simülasyonu ve konuşma pratiği. 3–6 ayda A1 hedefi.",
+      "German Coach ile sıfırdan Almanca A1: kelime kartları, gramer yol haritası, sınav simülasyonu ve konuşma pratiği. 3–6 ayda A1 hedefi.",
     path: "/",
   }),
   blog: pageMetadata({
     title: "Blog — Almanca Öğrenme Rehberleri",
     description:
-      "Goethe A1 hazırlık, der die das rehberi ve Almanya planı. Sıfırdan Almanca öğrenenler için Türkçe blog yazıları.",
+      "A1 sınav hazırlığı, der die das rehberi ve Almanya planı. Sıfırdan Almanca öğrenenler için Türkçe blog yazıları.",
     path: "/blog",
   }),
   iletisim: pageMetadata({
@@ -35,31 +35,31 @@ export const SEO_PAGES = {
   roadmap: pageMetadata({
     title: "Gramer Yol Haritası — Sıfırdan A1",
     description:
-      "Almanca gramer yol haritası: der/die/das'tan Goethe A1 sınavına kadar adım adım ilerleme. Hangi konuyu ne zaman çalışmalısınız?",
+      "Almanca gramer yol haritası: der/die/das'tan A1 sınavına kadar adım adım ilerleme. Hangi konuyu ne zaman çalışmalısınız?",
     path: "/grundlagen/roadmap",
   }),
   artikel: pageMetadata({
     title: "Artikel Trainer — der, die, das",
     description:
-      "Almanca artikel alıştırması: der, die, das, ein/eine ve çoğul. Goethe A1 için interaktif artikel drill.",
+      "Almanca artikel alıştırması: der, die, das, ein/eine ve çoğul. A1 için interaktif artikel drill.",
     path: "/grundlagen/artikel",
   }),
   wordOrder: pageMetadata({
     title: "Word Order Trainer — Kelime Sırası",
     description:
-      "Almanca kelime sırası: SVO, Ja/Nein soruları ve W-Fragen. Goethe A1 kalıplarıyla interaktif alıştırma.",
+      "Almanca kelime sırası: SVO, Ja/Nein soruları ve W-Fragen. A1 kalıplarıyla interaktif alıştırma.",
     path: "/grundlagen/word-order",
   }),
   exam: pageMetadata({
-    title: "A1 Sınav Merkezi — Goethe · TELC · ÖSD",
+    title: "A1 Sınav Merkezi — TELC · ÖSD · DTZ",
     description:
-      "Goethe A1 sınav simülasyonu: dinleme, okuma, yazma ve konuşma modülleri. Gerçek sınav formatında pratik.",
+      "A1 sınav simülasyonu: dinleme, okuma, yazma ve konuşma modülleri. Resmi sınav formatında pratik.",
     path: "/exam",
   }),
   cards: pageMetadata({
     title: "Kelime Kartları — A1 Almanca",
     description:
-      "Almanca A1 kelime kartları: görsel flashcard ile kelime öğrenin. Goethe A1 kelime hazırlığı.",
+      "Almanca A1 kelime kartları: görsel flashcard ile kelime öğrenin. A1 kelime hazırlığı.",
     path: "/cards",
   }),
   speak: pageMetadata({

@@ -1,108 +1,105 @@
 "use client";
 
-import { useState } from "react";
-import { IconMail, IconWhatsApp } from "@/components/icons";
+import { IconLinkedIn, IconMail, IconWhatsApp } from "@/components/icons";
 import {
   SITE_EMAIL,
-  SITE_WHATSAPP_DISPLAY,
+  SITE_LINKEDIN_URL,
   SITE_WHATSAPP_URL,
 } from "@/lib/site";
 
-const CONTACTS = [
-  { label: "Genel iletişim", subject: "German Coach — Genel" },
-  { label: "Öneri ve geri bildirim", subject: "German Coach — Öneri" },
-  { label: "İş birliği", subject: "German Coach — İş birliği" },
-  { label: "Bağış / destek", subject: "German Coach — Bağış" },
+const TOPICS = [
+  {
+    label: "Genel soru",
+    subject: "German Coach — Genel",
+    desc: "Platform, hesap ve teknik konular",
+  },
+  {
+    label: "Öneri",
+    subject: "German Coach — Öneri",
+    desc: "Geri bildirim ve iyileştirme fikirleri",
+  },
+  {
+    label: "İş birliği",
+    subject: "German Coach — İş birliği",
+    desc: "Kurumsal ve ortaklık talepleri",
+  },
 ] as const;
 
-type Channel = "email" | "whatsapp";
-
 export function IletisimContact() {
-  const [channel, setChannel] = useState<Channel>("email");
+  const whatsappText = encodeURIComponent("Merhaba, German Coach hakkında yazmak istiyorum.");
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_17rem] lg:items-start">
-      <div>
-        {channel === "email" ? (
-          <ul className="space-y-3">
-            {CONTACTS.map((c) => (
-              <li key={c.label}>
-                <a
-                  href={`mailto:${SITE_EMAIL}?subject=${encodeURIComponent(c.subject)}`}
-                  className="card-soft flex items-center justify-between gap-3 p-4 transition hover:border-goethe-blue/30"
-                >
-                  <span className="font-semibold text-goethe-blue">{c.label}</span>
-                  <span className="text-right text-sm text-sage-500">{SITE_EMAIL}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div className="card-soft space-y-4 p-6">
-            <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
-                <IconWhatsApp size={24} />
-              </span>
-              <div>
-                <p className="font-semibold text-goethe-blue">WhatsApp ile yazın</p>
-                <p className="text-sm text-sage-500">{SITE_WHATSAPP_DISPLAY}</p>
-              </div>
-            </div>
-            <p className="text-sm leading-relaxed text-sage-600">
-              Sorularınız, önerileriniz veya iş birliği teklifleriniz için doğrudan mesaj
-              gönderebilirsiniz. Türkçe veya Almanca yazabilirsiniz.
-            </p>
-            <a
-              href={`${SITE_WHATSAPP_URL}?text=${encodeURIComponent("Merhaba, German Coach hakkında yazmak istiyorum.")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
-            >
-              <IconWhatsApp size={18} />
-              WhatsApp&apos;ta aç
-            </a>
-          </div>
-        )}
-      </div>
-
-      <aside className="lg:sticky lg:top-24">
-        <div className="card-soft p-4">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-sage-400">
-            İletişim kanalı
+    <div className="space-y-6">
+      <section className="overflow-hidden rounded-2xl border border-goethe-blue/15 bg-white shadow-sm">
+        <div className="bg-goethe-blue px-6 py-8 text-white sm:px-8">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-gold">
+            German Coach
           </p>
-          <div className="mt-3 flex rounded-xl border border-sage-200 bg-sage-50 p-1">
-            <button
-              type="button"
-              onClick={() => setChannel("email")}
-              className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg px-2 py-2.5 text-xs font-semibold transition ${
-                channel === "email"
-                  ? "bg-white text-goethe-blue shadow-sm"
-                  : "text-sage-500 hover:text-sage-700"
-              }`}
-            >
-              <IconMail size={14} />
-              E-posta
-            </button>
-            <button
-              type="button"
-              onClick={() => setChannel("whatsapp")}
-              className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg px-2 py-2.5 text-xs font-semibold transition ${
-                channel === "whatsapp"
-                  ? "bg-white text-emerald-700 shadow-sm"
-                  : "text-sage-500 hover:text-sage-700"
-              }`}
-            >
-              <IconWhatsApp size={14} />
-              WhatsApp
-            </button>
-          </div>
-          <p className="mt-3 text-xs leading-relaxed text-sage-500">
-            {channel === "email"
-              ? "Konuya göre e-posta şablonu seçin."
-              : "Hızlı yanıt için WhatsApp tercih edin."}
+          <h2 className="mt-2 text-2xl font-bold">İletişim</h2>
+          <p className="mt-2 max-w-lg text-sm text-white/80">
+            Almanca öğrenme platformu ile ilgili sorularınız, önerileriniz ve iş birliği
+            talepleriniz için aşağıdaki kanallardan bize ulaşabilirsiniz.
           </p>
         </div>
-      </aside>
+
+        <div className="grid gap-3 p-4 sm:grid-cols-3 sm:p-6">
+          {TOPICS.map((topic) => (
+            <a
+              key={topic.subject}
+              href={`mailto:${SITE_EMAIL}?subject=${encodeURIComponent(topic.subject)}`}
+              className="group rounded-xl border border-sage-100 bg-cream-50/50 p-4 transition hover:border-goethe-blue/25 hover:bg-white hover:shadow-sm"
+            >
+              <p className="font-semibold text-goethe-blue group-hover:underline">{topic.label}</p>
+              <p className="mt-1 text-sm leading-snug text-sage-500">{topic.desc}</p>
+            </a>
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-3 border-t border-sage-100 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-sage-400">
+              Doğrudan kanallar
+            </p>
+            <a
+              href={`mailto:${SITE_EMAIL}`}
+              className="mt-1 block text-sm font-medium text-goethe-blue hover:underline"
+            >
+              {SITE_EMAIL}
+            </a>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href={`mailto:${SITE_EMAIL}`}
+              className="inline-flex items-center gap-2 rounded-lg bg-goethe-blue px-4 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+            >
+              <IconMail size={16} />
+              E-posta gönder
+            </a>
+            <a
+              href={`${SITE_WHATSAPP_URL}?text=${whatsappText}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-sage-200 bg-white px-4 py-2.5 text-sm font-semibold text-sage-700 transition hover:border-emerald-300 hover:text-emerald-800"
+            >
+              <IconWhatsApp size={16} />
+              WhatsApp
+            </a>
+            <a
+              href={SITE_LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-sage-200 bg-white px-4 py-2.5 text-sm font-semibold text-sage-700 transition hover:border-[#0A66C2]/40 hover:text-[#0A66C2]"
+            >
+              <IconLinkedIn size={16} />
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <p className="text-center text-xs text-sage-400">
+        Yanıt süresi genelde 1–2 iş günüdür. Türkçe veya Almanca yazabilirsiniz.
+      </p>
     </div>
   );
 }

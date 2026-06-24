@@ -5,9 +5,9 @@ import { articleMetadata } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 
 const SLUG = "sifirdan-goethe-a1";
-const TITLE = "Sıfırdan Goethe A1: 3–6 ayda mümkün mü?";
+const TITLE = "Sıfırdan A1: 3–6 ayda mümkün mü?";
 const DESCRIPTION =
-  "Hiç Almanca bilmeyenler için gerçekçi A1 hazırlık planı. Günde 30–60 dakika ile Goethe A1 hedefi.";
+  "Hiç Almanca bilmeyenler için gerçekçi A1 hazırlık planı. Günde 30–60 dakika ile A1 hedefi.";
 
 export const metadata = articleMetadata({
   title: TITLE,
@@ -32,10 +32,10 @@ export default function BlogPostA1Page() {
           inLanguage: "tr",
         }}
       />
-      <PageShell title="Sıfırdan Goethe A1" backHref="/blog" maxWidth="md">
+      <PageShell title="Sıfırdan A1" backHref="/blog" maxWidth="md">
         <article className="prose-sage space-y-4 text-sm leading-relaxed text-sage-700">
           <p>
-            Evet — <strong>sıfır Almanca</strong> ile başlayıp 3–6 ayda Goethe A1 seviyesine ulaşmak
+            Evet — <strong>sıfır Almanca</strong> ile başlayıp 3–6 ayda A1 seviyesine ulaşmak
             mümkün. Anahtar: her gün küçük ama tutarlı çalışma.
           </p>
           <h2 className="text-lg font-bold text-goethe-blue">Önerilen günlük rutin (45 dk)</h2>

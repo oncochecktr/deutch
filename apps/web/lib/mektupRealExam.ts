@@ -10,7 +10,7 @@ export const MEKTUP_EXAM_INFO = {
     },
     {
       title: "Deshalb schreibe ich…",
-      text: "Neden yazdığını mutlaka belirt. Bu cümle Goethe A1’de standart kalıptır.",
+      text: "Neden yazdığını mutlaka belirt. Bu cümle A1 yazma bölümünde standart kalıptır.",
     },
     {
       title: "Resmi / samimi selamlama",
@@ -107,7 +107,7 @@ export const MEKTUP_EXAMPLES: MektupExample[] = [
         id: "schluss",
         labelDe: "Bitte & Danke",
         labelTr: "Kapanış cümleleri",
-        hintTr: "Her Goethe mektubunda bu iki cümle olmalı.",
+        hintTr: "Her resmi mektupta bu iki cümle olmalı.",
         placeholder: "Ich bitte um eine Antwort.\nVielen Dank im Voraus.",
         phrases: CLOSING_PHRASES,
       },

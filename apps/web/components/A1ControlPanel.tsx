@@ -46,7 +46,7 @@ function PanelSection({
 }
 
 export function A1ControlPanel() {
-  const { progress, updateProgress, hydrated, storageOk } = useProgress();
+  const { progress, updateProgress, storageOk } = useProgress();
   const a1 = getA1Vocabulary();
   const mesleki = getTimurVocabulary();
   const allIds = [...a1.words.map((w) => w.id), ...mesleki.words.map((w) => w.id)];
@@ -216,15 +216,13 @@ export function A1ControlPanel() {
               Çalışma: {studyMin}/{progress.studyBlockMinutes} dk
             </p>
             <p className="rounded-lg bg-sage-50 p-2 text-sage-600">
-              {hydrated
-                ? storageOk
-                  ? `${a1Studied} kelime kayıtlı · ${a1Known} bilinen${
-                      progress.lastSavedAt
-                        ? ` · ${new Date(progress.lastSavedAt).toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" })}`
-                        : ""
-                    }`
-                  : "Kayıt uyarısı: gizli mod veya depolama dolu."
-                : "Yükleniyor…"}
+              {storageOk
+                ? `${a1Studied} kelime kayıtlı · ${a1Known} bilinen${
+                    progress.lastSavedAt
+                      ? ` · ${new Date(progress.lastSavedAt).toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" })}`
+                      : ""
+                  }`
+                : "Kayıt uyarısı: gizli mod veya depolama dolu."}
             </p>
             <ResetSRSButton
               label="İstatistiği sıfırla"

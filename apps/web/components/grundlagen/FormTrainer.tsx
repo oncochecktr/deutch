@@ -23,7 +23,7 @@ export function FormTrainer({ fields }: FormTrainerProps) {
       <div className="card-soft border-l-4 border-goethe-blue p-4">
         <p className="text-sm font-medium text-goethe-blue">Anmeldung / Meldebogen (örnek)</p>
         <p className="mt-1 text-xs text-sage-500">
-          Goethe sınavında ve resmi formlarda bu alanlar çıkar. Almanca etiketleri ezberle.
+          A1 sınavında ve resmi formlarda bu alanlar çıkar. Almanca etiketleri ezberle.
         </p>
         <p className="mt-2 text-xs text-sage-400">
           Doldurulan: {filled}/{fields.length}
@@ -58,7 +58,7 @@ export function FormTrainer({ fields }: FormTrainerProps) {
       </button>
       {checked && filled === fields.length && (
         <p className="rounded-xl bg-sage-50 p-4 text-center text-sm font-medium text-sage-700">
-          Form tamam — Goethe Schreiben&apos;de benzer alanlar gelir.
+          Form tamam — Schreiben bölümünde benzer alanlar gelir.
         </p>
       )}
     </div>

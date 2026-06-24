@@ -5,6 +5,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -76,7 +77,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [persist]
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const loaded = loadProgress();
     progressRef.current = loaded;
     setProgress(loaded);

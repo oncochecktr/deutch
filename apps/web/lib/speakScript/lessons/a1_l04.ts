@@ -76,7 +76,7 @@ export const A1_L04_STEPS: ScriptStepDef[] = [
   {
     teach: {
       reply: "Mini sınav: sayılar ve saat.",
-      teachingIntro: "Goethe formatında kısa cevaplar.",
+      teachingIntro: "Sınav formatında kısa cevaplar.",
       teachingTopicGerman: "Mini-Test",
       teachingTopicTurkish: "Mini test",
       teachingExamples: [

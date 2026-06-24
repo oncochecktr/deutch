@@ -37,7 +37,7 @@ export function SprechenRealSimulator() {
   return (
     <PageShell
       title="Gerçek Sprechen Sınavı"
-      subtitle="Goethe A1 konuşma simülasyonu"
+      subtitle="A1 konuşma simülasyonu"
       backHref="/exam/sprechen"
       backLabel="Sprechen modülüne dön"
       maxWidth="md"

@@ -593,7 +593,7 @@ export const GRUNDLAGEN_MODULES = [
     id: "form",
     href: "/grundlagen/form",
     de: "Formular",
-    tr: "Goethe Form",
+    tr: "Resmi form",
     desc: "Ad, adres, telefon, doğum tarihi, ülke",
     sections: data.goetheForm.fields.length,
   },

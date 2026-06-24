@@ -39,7 +39,7 @@ export default function SprechenExamPage() {
 
       <div className="card-soft p-6 text-center">
         <span className="rounded-full bg-goethe-gold/20 px-3 py-1 text-xs font-medium text-goethe-blue">
-          Goethe Sprechen · Teil {card.part}
+          Sprechen · Teil {card.part}
         </span>
         <p className="mt-4 text-lg font-medium text-goethe-blue">{card.prompt_de}</p>
         <p className="mt-2 text-sm text-sage-400">{card.prompt_tr}</p>

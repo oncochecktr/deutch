@@ -67,7 +67,7 @@ export default function HoerenExamPage() {
       subtitle={`Dinleme — soru ${offset + 1}–${Math.min(offset + SESSION_SIZE, all.length)} / ${all.length}`}
     >
       <p className="rounded-xl bg-sage-50 p-3 text-xs text-sage-600">
-        Goethe A1 Hören: Ses kaydını dinle (max. 2×), soruyu cevapla. Hedef: ≥ %75.
+        A1 Hören: Ses kaydını dinle (max. 2×), soruyu cevapla. Hedef: ≥ %75.
       </p>
 
       {session.map((q, i) => (

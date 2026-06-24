@@ -13,7 +13,7 @@ export default function RoadmapLayout({ children }: { children: React.ReactNode 
           "@type": "Course",
           name: "Almanca A1 Gramer Yol Haritası",
           description:
-            "Sıfırdan Goethe A1 gramer yol haritası: der/die/das, fiil çekimi, kelime sırası ve sınav hazırlığı.",
+            "Sıfırdan A1 gramer yol haritası: der/die/das, fiil çekimi, kelime sırası ve sınav hazırlığı.",
           provider: { "@type": "Organization", name: "German Coach", url: SITE_URL },
           inLanguage: ["tr", "de"],
           educationalLevel: "Beginner",

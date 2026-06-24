@@ -3,7 +3,7 @@
 
 
 import Link from "next/link";
-
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import { IconLinkedIn, NavIcon, type NavIconKey } from "@/components/icons";
@@ -53,12 +53,14 @@ export function NavBar() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-3 py-3 sm:px-4">
 
         <Link href="/" className="flex items-center gap-2">
-
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-goethe-blue text-sm font-bold text-white">
-
-            GC
-
-          </span>
+          <Image
+            src="/icon-192.png"
+            alt="German Coach"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-xl"
+            priority
+          />
 
           <div className="hidden sm:block">
 

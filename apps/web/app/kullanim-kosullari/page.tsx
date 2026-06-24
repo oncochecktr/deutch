@@ -19,7 +19,7 @@ export default function KullanimKosullariPage() {
         <h2 className="text-lg font-bold text-goethe-blue">Hizmetin niteliği</h2>
         <p>
           Platform, Almanca A1 seviyesine hazırlık için eğitim içeriği, alıştırmalar ve sınav
-          simülasyonu sunar. Resmi Goethe, TELC veya ÖSD sınavı değildir; sertifika vermez.
+          simülasyonu sunar. Resmi A1 sınavı veya sertifika programı değildir (TELC, ÖSD vb.); sertifika vermez.
         </p>
 
         <h2 className="text-lg font-bold text-goethe-blue">İçerik ve doğruluk</h2>

@@ -85,7 +85,7 @@ export default function QuizPage() {
           <p className="text-lg text-sage-600">Doğruluk: %{pct}</p>
           <p className={`mt-2 text-sm ${pass ? "text-sage-600" : "text-goethe-red"}`}>
             {pass
-              ? "Goethe A1 kelime hedefine uygun — devam!"
+              ? "A1 kelime hedefine uygun — devam!"
               : "Hedef %85+. Yanlış kelimeleri kart modunda tekrar et."}
           </p>
           <div className="mt-6 flex justify-center gap-3">
@@ -107,7 +107,7 @@ export default function QuizPage() {
     <div className="mx-auto max-w-lg space-y-6">
       <header className="flex items-center justify-between">
         <div>
-          <h1 className="text-xl font-bold text-goethe-blue">Goethe Quiz</h1>
+          <h1 className="text-xl font-bold text-goethe-blue">Kelime Quiz</h1>
           <p className="text-sm text-sage-400">
             Soru {questionNum}/{totalQuestions}
           </p>
@@ -124,7 +124,7 @@ export default function QuizPage() {
 
       <div className="card-soft p-6">
         <p className="mb-1 text-xs uppercase tracking-wide text-sage-400">
-          {currentWord.category} · Goethe A1 Format
+          {currentWord.category} · A1 format
         </p>
         <p className="mb-4 text-sm text-sage-500">
           Bu kelimenin Türkçe karşılığı nedir?

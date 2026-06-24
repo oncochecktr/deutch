@@ -114,8 +114,8 @@ export default function DialoguesClient() {
 
   if (!hydrated) {
     return (
-      <PageShell title="Hikayeler" subtitle="Yükleniyor…">
-        <div className="card-soft p-8 text-center text-sm text-sage-500">…</div>
+      <PageShell title="Hikayeler & Diyaloglar" subtitle="Satır satır oku · ses · quiz" maxWidth="full">
+        <div className="card-soft h-72 animate-pulse rounded-xl bg-sage-50" />
       </PageShell>
     );
   }

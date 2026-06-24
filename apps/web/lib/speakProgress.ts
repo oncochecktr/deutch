@@ -48,7 +48,7 @@ export function computeLevelProgress(professor: SpeakProfessorState): LevelProgr
 
   let nextMilestone = "A1 müfredatını tamamla";
   if (completedPercent >= 100) {
-    nextMilestone = level === "A1" ? "A2 seviyesine geçiş" : level === "A2" ? "B1 seviyesine geçiş" : "Goethe sınav simülasyonu";
+    nextMilestone = level === "A1" ? "A2 seviyesine geçiş" : level === "A2" ? "B1 seviyesine geçiş" : "A1 sınav simülasyonu";
   } else if (nextIncomplete) {
     nextMilestone = `Sırada: ${nextIncomplete.title}`;
   }
@@ -99,7 +99,7 @@ export function computeOverallCurriculumProgress(professor: SpeakProfessorState)
     currentLessonTitle: getLessonById(professor.currentLessonId)?.title ?? "—",
     nextMilestone:
       completedPercent >= 100
-        ? "A1+A2 konuşma müfredatı bitti — Goethe Sprechen modülüne geç"
+        ? "A1+A2 konuşma müfredatı bitti — Sprechen modülüne geç"
         : computeLevelProgress(professor).nextMilestone,
   };
 }

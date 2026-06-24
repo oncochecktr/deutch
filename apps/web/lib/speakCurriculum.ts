@@ -100,7 +100,7 @@ export const SPEAK_LESSONS: SpeakLesson[] = [
       { title: "Soru", instruction: "Wo ist der Bahnhof? / Entschuldigung öğret." },
       { title: "Yön", instruction: "links, rechts, geradeaus." },
       { title: "Pratik", instruction: "Kullanıcı yön sorsun." },
-      { title: "Özet", instruction: "Goethe Sprechen tarzı mini sınav; dersi bitir." },
+      { title: "Özet", instruction: "Sprechen tarzı mini sınav; dersi bitir." },
     ],
   },
   {
@@ -262,7 +262,7 @@ export const SPEAK_LESSONS: SpeakLesson[] = [
     level: "A2",
     order: 18,
     title: "A2 sınav simülasyonu",
-    goal: "Goethe A2 Sprechen Teil 1–3 formatında konuşursun.",
+    goal: "A2 Sprechen Teil 1–3 formatında konuşursun.",
     phrases: ["Gemeinsam planen", "Präsentation", "Fragen stellen", "Zusammenfassung"],
     steps: [
       { title: "Teil 1", instruction: "Planlama: gemeinsam etwas planen (ör. doğum günü)." },

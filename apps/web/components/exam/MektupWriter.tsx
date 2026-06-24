@@ -36,7 +36,7 @@ export function MektupWriter() {
   return (
     <PageShell
       title="Mektup Yazma"
-      subtitle="Goethe A1 Schreiben"
+      subtitle="A1 Schreiben"
       backHref="/exam/schreiben"
       backLabel="Schreiben modülüne dön"
       maxWidth="md"

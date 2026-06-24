@@ -1,9 +1,9 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useMemo } from "react";
 import { CATEGORIES_A1 } from "@german-coach/vocabulary";
-import { A1ControlPanel } from "@/components/A1ControlPanel";
 import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
 import { GrammarRoadmapHomeSummary } from "@/components/grundlagen/GrammarRoadmapHomeSummary";
 import { LearningPathHub } from "@/components/LearningPathHub";
@@ -12,17 +12,18 @@ import { NavIcon, type NavIconKey } from "@/components/icons";
 import { computeLearningPath } from "@/lib/learningPath";
 import { useDashboardReport } from "@/lib/useDashboardReport";
 
-export function HomePageClient() {
-  const { report, srs, a1, mesleki, progress, hydrated } = useDashboardReport();
-  const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
-
-  if (!hydrated) {
-    return (
-      <div className="card-soft p-8 text-center text-sm text-sage-500">
-        İlerleme yükleniyor…
-      </div>
-    );
+const A1ControlPanel = dynamic(
+  () => import("@/components/A1ControlPanel").then((m) => ({ default: m.A1ControlPanel })),
+  {
+    loading: () => (
+      <aside className="card-soft hidden min-h-[420px] animate-pulse rounded-xl bg-sage-50 lg:block" />
+    ),
   }
+);
+
+export function HomePageClient() {
+  const { report, srs, a1, mesleki, progress } = useDashboardReport();
+  const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">

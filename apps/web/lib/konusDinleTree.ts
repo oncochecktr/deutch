@@ -28,7 +28,7 @@ export interface KonusDinleLevelNode {
 }
 
 const LEVEL_GOALS: Record<KonusDinleLevel, string> = {
-  A1: "Temel kelime ve kısa cümleler — Goethe A1",
+  A1: "Temel kelime ve kısa cümleler — A1 seviyesi",
   A2: "Günlük konuşma cümleleri — A2 akıcılık",
   B1: "Bağlam ve sebep cümleleri — B1 hazırlık",
 };

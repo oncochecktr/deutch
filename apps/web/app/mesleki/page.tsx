@@ -49,7 +49,7 @@ export default function MeslekiPage() {
             <h1 className="text-2xl font-bold">İş & Kariyer Paketi</h1>
             <p className="mt-2 max-w-xl text-sm text-white/80">
               Genel A1&apos;in ötesinde — depo, lojistik, vardiya ve iş görüşmesi Almancası.
-              Goethe sınavına ek olarak Almanya iş hayatına hazırlık.
+              A1 sınavına ek olarak Almanya iş hayatına hazırlık.
             </p>
           </div>
           <div className="grid gap-3 p-6 sm:grid-cols-3">

@@ -18,7 +18,7 @@ type ListenPack = "mesleki" | "work" | "a1" | "srs";
 const PACK_LABELS: Record<ListenPack, string> = {
   mesleki: "Mesleki Almanca",
   work: "İş Almancası (Mesleki + A1 iş)",
-  a1: "Goethe A1 — Tüm kelimeler",
+  a1: "A1 — Tüm kelimeler",
   srs: "SRS — Bugün tekrar edilecekler",
 };
 

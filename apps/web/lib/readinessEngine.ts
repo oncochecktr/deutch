@@ -110,7 +110,7 @@ const GUIDE_COPY: Record<
   },
   exam: {
     cta: "Deneme Sınavına Git",
-    instruction: "Bugünkü hedefler bitti. Tam Goethe denemesi çöz.",
+    instruction: "Bugünkü hedefler bitti. Tam deneme sınavı çöz.",
     estMinutes: 45,
   },
   rest: {

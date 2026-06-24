@@ -166,7 +166,7 @@ function estimateLevel(
     return {
       level: "A1",
       label: "A1 — Sınav hazır",
-      detail: "Goethe A1 hedeflerini karşılıyorsun. A2 dalına geçebilirsin.",
+      detail: "A1 hedeflerini karşılıyorsun. A2 dalına geçebilirsin.",
     };
   }
   const a1WordsPct = report.moduleScores.words;
@@ -319,7 +319,7 @@ export function computeLearningMap(
     id: "branch-a1",
     label: "A1 Dalı",
     labelTr: "Temel seviye",
-    description: "Goethe A1 — kelime, gramer, sınav",
+    description: "A1 — kelime, gramer, sınav",
     progress: report.overallPercent,
     status: "available",
     cefr: "A1",
@@ -464,7 +464,7 @@ export function computeLearningMap(
       {
         id: "trunk-exam",
         label: "4 · Sınav hazırlığı",
-        labelTr: "Meyve — Goethe A1",
+        labelTr: "Meyve — A1",
         description: "Hören · Lesen · Schreiben · Sprechen",
         progress: Math.round(
           (report.moduleScores.hoeren +

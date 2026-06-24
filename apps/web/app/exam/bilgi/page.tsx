@@ -18,9 +18,9 @@ export default function ExamBilgiPage() {
   return (
     <PageShell
       title="Sınav & Kayıt Bilgisi"
-      subtitle="Goethe-Institut Ankara · 2026 takvimi (PDF)"
+      subtitle="Ankara · 2026 sınav takvimi (PDF)"
       backHref="/exam"
-      backLabel="Goethe modüllerine dön"
+      backLabel="Sınav modüllerine dön"
       maxWidth="md"
     >
       <div className="card-soft border-2 border-goethe-gold/30 p-5">

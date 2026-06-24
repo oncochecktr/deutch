@@ -5,14 +5,13 @@ export const SITE_LINKEDIN_URL = "https://linkedin.com/in/timur-sadullayev";
 export const SITE_WHATSAPP_E164 = "905319642257";
 export const SITE_WHATSAPP_DISPLAY = "+90 531 964 2257";
 export const SITE_WHATSAPP_URL = `https://wa.me/${SITE_WHATSAPP_E164}`;
-export const SITE_TAGLINE = "Sıfırdan Goethe A1 — Almanca öğrenme platformu";
+export const SITE_TAGLINE = "Sıfırdan A1 — Almanca öğrenme platformu";
 
 export const SITE_KEYWORDS = [
   "Almanca kursu",
   "Almanca öğren",
-  "Goethe A1",
-  "Goethe A1 sınavı",
-  "Goethe A1 hazırlık",
+  "Almanca A1 sınavı",
+  "A1 sınav hazırlığı",
   "Almanca sınav",
   "A1 Almanca sınavı",
   "sıfır Almanca",
@@ -31,7 +30,7 @@ export const SITE_KEYWORDS = [
   "ücretsiz Almanca öğrenme",
   "Almanca başlangıç",
   "Almanya'ya gitmek için Almanca",
-  "Goethe A1 Türkiye",
+  "A1 sınav Türkiye",
   "Almanca online kurs",
   "Almanca konuşma pratiği",
 ];

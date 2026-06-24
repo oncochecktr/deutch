@@ -36,7 +36,7 @@ export default function BlogPostPlanPage() {
         <article className="space-y-4 text-sm leading-relaxed text-sage-700">
           <p>
             Almanya&apos;da çalışmak, okumak veya aile birleşimi için çoğu adayın{" "}
-            <strong>A1 sertifikası</strong> (Goethe, TELC, ÖSD) gerekir. 3–6 ay yeterli bir pencere —
+            <strong>A1 sertifikası</strong> (TELC, ÖSD vb.) gerekir. 3–6 ay yeterli bir pencere —
             özellikle günde 45–60 dakika ayırırsanız.
           </p>
           <h2 className="text-lg font-bold text-goethe-blue">Ay ay hedef</h2>
