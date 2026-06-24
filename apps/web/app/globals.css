@@ -165,6 +165,141 @@ body {
   animation: fadeInUp 0.5s ease-out forwards;
 }
 
+@keyframes feedbackEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-feedback-in {
+  animation: feedbackEnter 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes rewardPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-reward-pop {
+  animation: rewardPop 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes tokenPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-token-pop {
+  animation: tokenPop 0.15s ease-out forwards;
+}
+
+@keyframes shakeSoft {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+}
+
+.animate-shake-soft {
+  animation: shakeSoft 0.35s ease-out forwards;
+}
+
+@keyframes counterBump {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.12);
+  }
+}
+
+.animate-counter-bump {
+  animation: counterBump 0.4s ease-out forwards;
+}
+
+@keyframes checkPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-check-pulse {
+  animation: checkPulse 0.35s ease-out forwards;
+}
+
+@keyframes reasonStagger {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-reason-stagger {
+  animation: reasonStagger 0.25s ease-out forwards;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-transition-forward,
+  .content-transition-back,
+  .welcome-pop,
+  .animate-fade-in-up,
+  .animate-feedback-in,
+  .animate-reward-pop,
+  .animate-token-pop,
+  .animate-shake-soft,
+  .animate-counter-bump,
+  .animate-check-pulse,
+  .animate-reason-stagger {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .card-soft {
   @apply rounded-2xl border border-sage-100 bg-cream-50 shadow-sm;
 }

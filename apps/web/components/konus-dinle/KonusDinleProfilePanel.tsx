@@ -66,7 +66,7 @@ export function KonusDinleProfilePanel({
         </div>
         <div className="rounded-xl bg-sage-50 px-2 py-2">
           <p className="text-[10px] text-sage-500">Seri</p>
-          <p className="text-sm font-bold text-orange-600">{p.streak > 0 ? `🔥 ${p.streak}` : "—"}</p>
+          <p className="text-sm font-bold text-orange-600">{p.streak > 0 ? `Seri: ${p.streak}` : "—"}</p>
         </div>
       </div>
 

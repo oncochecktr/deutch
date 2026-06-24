@@ -65,6 +65,8 @@ export interface SentenceExercise {
   distractors: string[];
   answer_de: string;
   hint: string;
+  /** Yanlış cevapta öncelikli Türkçe açıklama */
+  explanation_tr?: string;
   /** Satzstellung zorluk: 1 kolay … 4 zor */
   tier?: WordOrderTier;
 }

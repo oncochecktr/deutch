@@ -36,8 +36,11 @@ export function KonusDinleGoalTree({
     <div className="card-soft overflow-hidden border-2 border-goethe-blue/15">
       <div className="border-b border-sage-100 bg-goethe-blue/5 px-4 py-3">
         <div className="flex items-center gap-2">
-          <span className="text-lg" aria-hidden>
-            🌳
+          <span
+            className="flex h-8 w-8 items-center justify-center rounded-full bg-goethe-blue text-xs font-bold text-white"
+            aria-hidden
+          >
+            H
           </span>
           <div>
             <p className="text-sm font-bold text-goethe-blue">Hedef ağacı</p>

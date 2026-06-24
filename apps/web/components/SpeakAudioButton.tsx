@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { IconVolume } from "@/components/icons";
 import { playGermanAudio, stopAudio } from "@/lib/audio";
 
 interface SpeakAudioButtonProps {
@@ -43,7 +44,11 @@ export function SpeakAudioButton({
       title="Profesör seslendirsin"
       className={`inline-flex shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/10 text-[#e8edd8] transition hover:bg-white/20 disabled:opacity-50 ${sizeClass} ${className}`}
     >
-      {playing ? "…" : "🔊"}
+      {playing ? (
+        <span className="text-xs">…</span>
+      ) : (
+        <IconVolume size={size === "md" ? 18 : 14} />
+      )}
     </button>
   );
 }

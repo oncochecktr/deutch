@@ -2,9 +2,13 @@
 
 import { useCallback, useMemo, useState } from "react";
 import { AudioButton } from "@/components/AudioButton";
-import { getA1Core } from "@/lib/grundlagen";
+import { ContentTransition } from "@/components/ContentTransition";
+import { RewardBurst } from "@/components/RewardBurst";
 import { recordZeitQuizScore } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
+import { pickSessionReward } from "@/lib/trainerRewards";
+import { useSessionStreak } from "@/lib/useSessionStreak";
+import type { TrainerReward } from "@/lib/trainerRewards";
 
 type Mode = "clock" | "weekday" | "date";
 
@@ -47,11 +51,14 @@ function clockAnswer(h: number, m: number): string {
 
 export function ZeitQuiz() {
   const { progress, updateProgress } = useProgress();
+  const { recordCorrect, recordWrong } = useSessionStreak();
   const [mode, setMode] = useState<Mode>("clock");
   const [showAnswer, setShowAnswer] = useState(false);
   const [correct, setCorrect] = useState(0);
   const [total, setTotal] = useState(0);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [rewardTrigger, setRewardTrigger] = useState(0);
+  const [lastReward, setLastReward] = useState<TrainerReward | null>(null);
 
   const question = useMemo(() => {
     void refreshKey;
@@ -90,24 +97,32 @@ export function ZeitQuiz() {
     setShowAnswer(false);
     setTotal((t) => t + 1);
     setRefreshKey((k) => k + 1);
+    setLastReward(null);
   }, []);
 
   const markCorrect = useCallback(() => {
     const newCorrect = correct + 1;
     setCorrect(newCorrect);
+    const streak = recordCorrect();
+    const reward = pickSessionReward(streak, true);
+    setLastReward(reward);
+    if (reward) setRewardTrigger((t) => t + 1);
     const pct = total > 0 ? Math.round((newCorrect / (total + 1)) * 100) : 100;
     updateProgress(recordZeitQuizScore(progress, pct));
     next();
-  }, [correct, total, progress, updateProgress, next]);
+  }, [correct, total, progress, updateProgress, next, recordCorrect]);
 
   const markWrong = useCallback(() => {
+    recordWrong();
+    setLastReward(null);
     const pct = total > 0 ? Math.round((correct / (total + 1)) * 100) : 0;
     updateProgress(recordZeitQuizScore(progress, pct));
     next();
-  }, [correct, total, progress, updateProgress, next]);
+  }, [correct, total, progress, updateProgress, next, recordWrong]);
 
   return (
-    <div className="card-soft space-y-4 p-5">
+    <div className="relative card-soft space-y-4 p-5">
+      <RewardBurst trigger={rewardTrigger} reward={lastReward} />
       <p className="text-sm text-sage-600">
         <strong className="text-goethe-blue">Zeit Alıştırma:</strong> Soruyu oku → cevabı düşün → kontrol et.
       </p>
@@ -134,16 +149,18 @@ export function ZeitQuiz() {
           </button>
         ))}
       </div>
-      <div className="rounded-xl border-2 border-goethe-blue/15 bg-goethe-blue/5 py-10 text-center">
-        <p className="text-xs font-semibold uppercase tracking-wide text-sage-500">{question.label}</p>
-        <p className="mt-3 text-4xl font-bold text-goethe-blue">{question.prompt}</p>
-      </div>
+      <ContentTransition stepKey={`${mode}-${refreshKey}`} direction={1}>
+        <div className="rounded-xl border-2 border-goethe-blue/15 bg-goethe-blue/5 py-10 text-center">
+          <p className="text-xs font-semibold uppercase tracking-wide text-sage-500">{question.label}</p>
+          <p className="mt-3 text-4xl font-bold text-goethe-blue">{question.prompt}</p>
+        </div>
+      </ContentTransition>
       {!showAnswer ? (
         <button type="button" className="btn-primary-lg w-full" onClick={() => setShowAnswer(true)}>
           Cevabı göster
         </button>
       ) : (
-        <div className="space-y-3">
+        <div className="animate-feedback-in space-y-3">
           <div className="flex items-center justify-center gap-2 rounded-lg bg-sage-100 p-4">
             <p className="text-lg font-bold text-goethe-blue">{question.answer}</p>
             <AudioButton text={question.answer} size="sm" />

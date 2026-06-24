@@ -33,7 +33,7 @@ export function SessionHeader({
           {totalXp} XP
         </span>
         {sessionXp > 0 && <span className="text-sage-500">Oturum: +{sessionXp}</span>}
-        {streak > 0 && <span className="font-medium text-orange-600">🔥 {streak} seri</span>}
+        {streak > 0 && <span className="font-medium text-orange-600">Seri: {streak}</span>}
         {todayTurns !== undefined && dailyGoalTurns !== undefined && (
           <span className="text-emerald-700">
             Bugün: {todayTurns}/{dailyGoalTurns}

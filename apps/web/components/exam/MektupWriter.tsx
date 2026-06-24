@@ -345,7 +345,8 @@ function WritePhase({
             {section.labelDe} · {section.labelTr}
           </p>
           <p className="mt-1 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-900">
-            💡 {section.hintTr}
+            <span className="text-xs font-semibold text-goethe-blue">İpucu: </span>
+            {section.hintTr}
           </p>
 
           <div className="mt-3 flex flex-wrap gap-2">

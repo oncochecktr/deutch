@@ -211,7 +211,7 @@ export function SpeakBoard({
                       onClick={() => setShowTurkish((v) => !v)}
                       className="rounded-md border border-white/20 bg-white/5 px-3 py-1.5 text-sm text-[#e8edd8] hover:bg-white/10"
                     >
-                      {showTurkish ? "Türkçeyi gizle" : "👁 Türkçe göster"}
+                      {showTurkish ? "Türkçeyi gizle" : "Türkçe göster"}
                     </button>
                     {showTurkish && (
                       <p className="mt-2 text-base italic text-[#c5d4cc] sm:text-lg">

@@ -163,8 +163,10 @@ export default function QuizPage() {
         </div>
 
         {phase === "result" && (
-          <div className="mt-4 space-y-3">
-            <p className={`text-center text-sm font-medium ${isCorrect ? "text-sage-600" : "text-goethe-red"}`}>
+          <div className="animate-feedback-in mt-4 space-y-3">
+            <p
+              className={`text-center text-sm font-medium ${isCorrect ? "text-sage-600" : "text-goethe-red"} ${!isCorrect ? "animate-shake-soft" : ""}`}
+            >
               {isCorrect ? "Richtig! — Doğru" : `Falsch — Doğru: ${currentWord.translation_tr}`}
             </p>
             <p className="text-center text-xs italic text-sage-400">{currentWord.example_de}</p>

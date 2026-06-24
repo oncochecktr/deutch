@@ -64,7 +64,7 @@ export function LearningMapTree({ map }: LearningMapTreeProps) {
       <div className="card-soft overflow-hidden border-2 border-goethe-blue/15 p-4 sm:p-6">
         <div className="mb-4 flex items-center gap-2">
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-goethe-blue text-xs font-bold text-white">
-            🌳
+            H
           </span>
           <div>
             <p className="text-sm font-bold text-goethe-blue">{map.root.label}</p>

@@ -19,8 +19,14 @@ const TIER_STYLES: Record<KonusDinleGradeResult["tier"], string> = {
 };
 
 export function FeedbackPanel({ result, xpEarned, onContinue, onRetry }: FeedbackPanelProps) {
+  const showReward = result.isGood || result.tier === "perfect";
   return (
-    <div className={`rounded-2xl border-2 p-4 ${TIER_STYLES[result.tier]}`}>
+    <div className={`animate-feedback-in welcome-pop rounded-2xl border-2 p-4 ${TIER_STYLES[result.tier]}`}>
+      {showReward && (
+        <div className="animate-reward-pop mb-2 inline-flex rounded-lg border border-goethe-gold/50 bg-goethe-gold/15 px-2.5 py-1">
+          <span className="text-xs font-bold text-goethe-blue">+{xpEarned} XP</span>
+        </div>
+      )}
       <div className="mb-2 flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-white/80 px-2 py-0.5 text-[10px] font-bold uppercase text-goethe-blue">
           {tierLabelTr(result.tier)}

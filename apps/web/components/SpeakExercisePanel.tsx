@@ -115,7 +115,7 @@ export function SpeakExercisePanel({
             onClick={() => setShowHint((v) => !v)}
             className="rounded-lg border border-sage-200 px-2 py-1 text-xs text-sage-600 hover:bg-white"
           >
-            {showHint ? "İpucunu gizle" : "💡 İpucu"}
+            {showHint ? "İpucunu gizle" : "İpucu"}
           </button>
           <span className="self-center text-[10px] text-sage-400">destek {hintLevel}/3</span>
         </div>
@@ -222,7 +222,20 @@ export function SpeakExercisePanel({
           )}
 
         {showResult && lastResult && (
-          <div className="space-y-2 rounded-lg border border-sage-200 bg-white p-3">
+          <div
+            className={`animate-feedback-in space-y-2 rounded-lg border p-3 ${
+              lastResult.score === "good" || lastResult.score === "excellent"
+                ? "border-goethe-gold/40 bg-goethe-gold/10"
+                : "border-sage-200 bg-white"
+            }`}
+          >
+            {(lastResult.score === "good" || lastResult.score === "excellent") && (
+              <div className="animate-reward-pop rounded-lg border border-goethe-gold/40 bg-white/60 px-2 py-1 text-center">
+                <span className="text-xs font-bold text-goethe-blue">
+                  {lastResult.score === "excellent" ? "Mükemmel!" : "İyi iş!"}
+                </span>
+              </div>
+            )}
             <p className="text-sm font-semibold text-goethe-blue">
               {scoreLabelTr(lastResult.score)}
               {lastResult.praise ? ` — ${lastResult.praise}` : ""}
@@ -240,7 +253,7 @@ export function SpeakExercisePanel({
               </div>
             )}
             {lastResult.tip && (
-              <p className="text-xs text-emerald-800">💡 {lastResult.tip}</p>
+              <p className="text-xs text-emerald-800">{lastResult.tip}</p>
             )}
             {!doneToday ? (
               <button

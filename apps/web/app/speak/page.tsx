@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { IconVolume } from "@/components/icons";
 import { PageShell } from "@/components/PageShell";
 import { SpeakBoard } from "@/components/SpeakBoard";
 import { SpeakExercisePanel } from "@/components/SpeakExercisePanel";
@@ -1023,7 +1024,10 @@ export default function SpeakPage() {
                 }`}
                 title={professorAudio ? "Otomatik sesi kapat" : "Otomatik sesi aç"}
               >
-                {professorAudio ? "🔊 Ses açık" : "🔇 Sessiz"}
+                <span className="inline-flex items-center gap-1.5">
+                  {professorAudio && <IconVolume size={14} />}
+                  {professorAudio ? "Ses açık" : "Sessiz"}
+                </span>
               </button>
               <button
                 type="button"
