@@ -2,14 +2,20 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import {
+  createWordPatternEngine,
+  VOCAB_PATTERN_IDS,
+} from "./lib/wordPatternSlots.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const OUT = path.join(ROOT, "data/grundlagen/a1-patterns.json");
+const WORD_PATTERNS_OUT = path.join(ROOT, "data/a1/word-patterns.json");
 
 const core = JSON.parse(fs.readFileSync(path.join(ROOT, "data/grundlagen/a1-core.json"), "utf8"));
 const vocab = JSON.parse(fs.readFileSync(path.join(ROOT, "data/a1/vocabulary.json"), "utf8"));
 const artRef = JSON.parse(fs.readFileSync(path.join(ROOT, "data/a1/article-reference.json"), "utf8"));
+const engine = createWordPatternEngine(vocab.words);
 
 const articleMap = {};
 for (const e of Object.values(artRef.entries)) articleMap[e.word.toLowerCase()] = e.article;
@@ -216,8 +222,15 @@ function completionQuiz(de, tr, allDe) {
   };
 }
 
-function ex(id, de, tr, breakdown, quiz) {
-  return { id, de, tr, breakdown, quiz };
+function ex(id, de, tr, breakdown, quiz, meta = {}) {
+  return {
+    id,
+    de,
+    tr,
+    breakdown,
+    quiz,
+    ...(meta.wordId ? { wordId: meta.wordId, word: meta.word } : {}),
+  };
 }
 
 function mkBreakdown(parts) {
@@ -414,6 +427,73 @@ const PLACES = [
 
 const OBJECTS = byCategory("Market", "Ev", "Günlük ihtiyaçlar").filter((w) => w.article).slice(0, 30);
 
+const VOCAB_QUIZ = {
+  "ich-bin": () => conjQuiz("sein", "bin", "Ben …ım — hangi fiil?"),
+  "ich-habe": () => conjQuiz("haben", "habe", "Benim … var — hangi fiil?"),
+  "ich-moechte": () => conjQuiz("moechten", "möchte", "Ben … istiyorum — hangi fiil?"),
+  "ich-kann": () => conjQuiz("koennen", "kann", "Ben … yapabilirim — hangi fiil?"),
+  "ich-muss": () => conjQuiz("muessen", "muss", "Ben … zorundayım — hangi fiil?"),
+  "ich-will": () => conjQuiz("wollen", "will", "Ben … istiyorum — hangi fiil?"),
+  "ich-brauche": () => conjQuiz("brauchen", "brauche", "Ben … lazım — hangi fiil?"),
+  "ich-esse": () => conjQuiz("essen", "esse", "Ben … yiyorum — hangi fiil?"),
+  "ich-trinke": () => conjQuiz("trinken", "trinke", "Ben … içiyorum — hangi fiil?"),
+  "ich-kaufe": () => conjQuiz("kaufen", "kaufe", "Ben … satın alıyorum — hangi fiil?"),
+  "ich-lerne": () => conjQuiz("lernen", "lerne", "Ben … öğreniyorum — hangi fiil?"),
+  "ich-arbeite": () => conjQuiz("arbeiten", "arbeite", "Ben … çalışıyorum — hangi fiil?"),
+  "ich-wohne-in": () => conjQuiz("wohnen", "wohne", "Ben … oturuyorum — hangi fiil?"),
+  "ich-komme-aus": () => conjQuiz("kommen", "komme", "Ben … geliyorum — hangi fiil?"),
+  "ich-arbeite-als": () => conjQuiz("arbeiten", "arbeite", "Ben … olarak çalışıyorum — hangi fiil?"),
+  "ich-spreche": () => conjQuiz("sprechen", "spreche", "Ben … konuşuyorum — hangi fiil?"),
+  "ich-verstehe": () => conjQuiz("verstehen", "verstehe", "Ben … anlıyorum — hangi fiil?"),
+  "das-ist": () => conjQuiz("sein", "ist", "Bu … — hangi fiil?"),
+  "ich-habe-keine": () => conjQuiz("haben", "habe", "Benim … yok — hangi fiil?"),
+  "wo-ist": () => conjQuiz("sein", "ist", "… nerede? — hangi fiil?"),
+  "hast-du": () => conjQuiz("haben", "hast", "Sende … var mı? — hangi fiil?"),
+  "gibt-es": () => ({
+    type: "conjugation",
+    prompt_tr: "… var mı? — hangi fiil?",
+    blank: "Gibt",
+    options: ["Gibt", "Gebe", "Gibst", "Geben"],
+    correct_index: 0,
+  }),
+  "was-ist": () => conjQuiz("sein", "ist", "… nedir? — hangi fiil?"),
+  "wie-viel-kostet": () => conjQuiz("kosten", "kostet", "Ne kadar? — hangi fiil?"),
+};
+
+function buildVocabPattern(patternId, seed, fallbackBuild) {
+  const picked = engine.pickWordsForPattern(patternId, 20, seed);
+  const examples = [];
+  for (const w of picked) {
+    const sent = engine.buildSentence(w, patternId);
+    if (!sent) continue;
+    const quizFn = VOCAB_QUIZ[patternId];
+    examples.push(
+      ex(
+        `${patternId}-${w.id}`,
+        sent.de,
+        sent.tr,
+        sent.breakdown,
+        quizFn ? quizFn(w, sent) : conjQuiz("sein", "bin", "Kalıp"),
+        { wordId: w.id, word: w.word }
+      )
+    );
+  }
+  if (examples.length < 20) {
+    const fallback = fallbackBuild();
+    for (let i = 0; examples.length < 20 && i < fallback.length; i++) {
+      const fb = fallback[i];
+      examples.push({
+        ...fb,
+        id: `${patternId}-fb-${i}`,
+      });
+    }
+  }
+  if (examples.length !== 20) {
+    throw new Error(`${patternId}: expected 20 examples, got ${examples.length}`);
+  }
+  return examples;
+}
+
 function buildPattern(def) {
   const examples = def.build();
   if (examples.length !== 20) throw new Error(`${def.id}: expected 20 examples, got ${examples.length}`);
@@ -424,6 +504,9 @@ function buildPattern(def) {
     template_tr: def.template_tr,
     category: def.category,
     anchor: def.anchor,
+    eligibleWordCount: VOCAB_PATTERN_IDS.includes(def.id)
+      ? engine.getEligibleWords(def.id).length
+      : undefined,
     examples,
   };
 }
@@ -1290,7 +1373,15 @@ function validate(data) {
       if (!e.quiz?.options?.length) throw new Error(`${e.id}: empty quiz`);
     }
   }
-  return { patterns: data.patterns.length, examples: ids.size };
+  return { patterns: data.patterns.length, examples: ids.size   };
+}
+
+for (const def of PATTERN_DEFS) {
+  if (VOCAB_PATTERN_IDS.includes(def.id)) {
+    const fallbackBuild = def.build;
+    const seed = def.order;
+    def.build = () => buildVocabPattern(def.id, seed, fallbackBuild);
+  }
 }
 
 const patterns = PATTERN_DEFS.map(buildPattern);
@@ -1305,5 +1396,21 @@ const output = {
 
 const stats = validate(output);
 fs.writeFileSync(OUT, JSON.stringify(output, null, 2), "utf8");
+
+const wordPatternEntries = engine.buildWordPatternMap(8);
+const coverage = engine.patternCoverage();
+const wordPatternsOutput = {
+  version: "1.0.0",
+  level: "A1",
+  description: "Kelime başına geçerli kalıp cümleleri (max 8)",
+  patternCoverage: coverage,
+  totalWords: Object.keys(wordPatternEntries).length,
+  entries: wordPatternEntries,
+};
+fs.writeFileSync(WORD_PATTERNS_OUT, JSON.stringify(wordPatternsOutput, null, 2), "utf8");
+
 console.log(`✓ a1-patterns.json — ${stats.patterns} patterns, ${stats.examples} examples → ${OUT}`);
+console.log(
+  `✓ word-patterns.json — ${wordPatternsOutput.totalWords} words with patterns → ${WORD_PATTERNS_OUT}`
+);
 

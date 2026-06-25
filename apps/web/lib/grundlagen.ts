@@ -106,6 +106,9 @@ export interface PatternExample {
   tr: string;
   breakdown: PatternBreakdownPart[];
   quiz: PatternQuiz;
+  /** Kelime bankası kökeni (build:patterns) */
+  wordId?: string;
+  word?: string;
 }
 
 export interface PatternAnchor {
@@ -121,6 +124,8 @@ export interface A1Pattern {
   template_tr: string;
   category: "statement" | "question" | "modal" | "location" | "time" | "price";
   anchor?: PatternAnchor;
+  /** Kelime bankasında bu kalıba uyan kelime sayısı */
+  eligibleWordCount?: number;
   examples: PatternExample[];
 }
 

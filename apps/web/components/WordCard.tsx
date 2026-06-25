@@ -1,10 +1,13 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
 import { AudioButton } from "./AudioButton";
 import { HearAndWrite } from "./HearAndWrite";
 import { IconStar } from "./icons";
 import { formatWord } from "@/lib/audio";
+import { PATTERN_LABEL_TR, type VocabPatternId } from "@/lib/wordPatternSlots";
+import { getWordPatterns } from "@/lib/wordPatterns";
 import {
   getWordKindLabel,
   isCriticalWord,
@@ -86,6 +89,55 @@ function ExampleBlock({
           </p>
         </div>
       ))}
+    </div>
+  );
+}
+
+function WordPatternBlock({ wordId, large }: { wordId: string; large?: boolean }) {
+  const [open, setOpen] = useState(false);
+  const entry = useMemo(() => getWordPatterns(wordId), [wordId]);
+  if (!entry || entry.patterns.length === 0) return null;
+
+  return (
+    <div className="mt-4 w-full text-left">
+      <button
+        type="button"
+        className="flex w-full items-center justify-between rounded-xl border border-goethe-blue/20 bg-goethe-blue/5 px-3 py-2 text-left text-sm font-semibold text-goethe-blue"
+        onClick={(e) => {
+          e.stopPropagation();
+          setOpen((v) => !v);
+        }}
+      >
+        <span>Kalıp cümleler ({entry.patterns.length})</span>
+        <span className="text-xs text-sage-500">{open ? "Gizle" : "Göster"}</span>
+      </button>
+      {open ? (
+        <ul className="mt-2 space-y-2">
+          {entry.patterns.map((p) => (
+            <li
+              key={p.patternId}
+              className="rounded-xl border border-sage-100 bg-white p-3"
+            >
+              <p className="text-[10px] font-bold uppercase tracking-wide text-sage-400">
+                {PATTERN_LABEL_TR[p.patternId as VocabPatternId] ?? p.patternId}
+              </p>
+              <p
+                className={`mt-1 font-medium text-sage-800 ${
+                  large ? "text-base" : "text-sm"
+                }`}
+              >
+                {p.de}
+              </p>
+              <p className={`mt-0.5 text-goethe-blue ${large ? "text-sm" : "text-xs"}`}>
+                {p.tr}
+              </p>
+              <div className="mt-2">
+                <AudioButton text={p.de} label="Dinle" size="sm" />
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </div>
   );
 }
@@ -231,6 +283,8 @@ export function WordCard({
         {primaryExample && (
           <ExampleBlock examples={[primaryExample]} large={large} compact />
         )}
+
+        {flipped ? <WordPatternBlock wordId={word.id} large={large} /> : null}
       </div>
 
       {readOnly && flipped && (

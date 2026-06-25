@@ -64,7 +64,7 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
       <div className="space-y-4">
         <div className="card-soft border border-goethe-blue/20 p-4">
           <p className="text-sm text-sage-600">
-            20 örnek + quiz (4/5 geç).
+            20 örnek kelime bankasından · quiz 4/5 geç.
           </p>
           <p className="mt-2 text-xs tabular-nums text-sage-500">
             {completed.length} / {patterns.length} kalıp tamam
@@ -91,6 +91,11 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
                   <div className="min-w-0 flex-1">
                     <p className="font-semibold text-goethe-blue">{p.template_de}</p>
                     <p className="text-sm text-sage-600">{p.template_tr}</p>
+                    {p.eligibleWordCount != null && p.eligibleWordCount > 0 ? (
+                      <p className="mt-0.5 text-xs text-sage-400">
+                        {p.eligibleWordCount} kelimeyle çalışır
+                      </p>
+                    ) : null}
                   </div>
                   {score !== undefined && (
                     <span className="shrink-0 text-xs text-sage-400">{score}/5</span>
@@ -185,6 +190,14 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
           de={example.de}
           tr={example.tr}
         >
+          {example.wordId && example.word ? (
+            <p className="mb-2 text-xs font-semibold text-sage-500">
+              Kelime:{" "}
+              <span className="rounded-full bg-goethe-blue/10 px-2 py-0.5 text-goethe-blue">
+                {example.word}
+              </span>
+            </p>
+          ) : null}
           <button
             type="button"
             className="text-sm font-medium text-goethe-blue underline"
@@ -229,6 +242,11 @@ function PatternHeader({ pattern, onBack }: { pattern: A1Pattern; onBack: () => 
         </button>
         <h2 className="mt-1 text-lg font-bold text-goethe-blue">{pattern.template_de}</h2>
         <p className="text-sm text-sage-600">{pattern.template_tr}</p>
+        {pattern.eligibleWordCount != null && pattern.eligibleWordCount > 0 ? (
+          <p className="mt-1 text-xs text-sage-400">
+            Bu kalıp {pattern.eligibleWordCount} kelimeyle çalışır
+          </p>
+        ) : null}
       </div>
     </div>
   );

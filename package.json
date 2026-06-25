@@ -18,6 +18,7 @@
     "audit:articles": "node scripts/audit-a1-articles.mjs",
     "seed:articles": "node scripts/seed-article-reference.mjs",
     "build:patterns": "node scripts/build-a1-patterns.mjs",
+    "test:word-patterns": "node scripts/test-word-patterns.mjs",
     "build:conjugation": "node scripts/build-a1-conjugation.mjs",
     "build:possessives": "node scripts/build-a1-possessives.mjs",
     "build:articles": "node scripts/build-a1-articles.mjs",
