@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "source": "seed-from-vocabulary",
-  "generated": "2026-06-14T17:59:43.216Z",
-  "total": 392,
+  "generated": "2026-06-25T15:27:59.768Z",
+  "total": 560,
   "verifiedSpotChecks": 19,
   "entries": {
     "a1_0015": {
@@ -2748,6 +2748,1182 @@
       "article": "der",
       "verified": false,
       "category": "Basit yön tarifleri"
+    },
+    "a1_0578": {
+      "id": "a1_0578",
+      "word": "Gast",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0579": {
+      "id": "a1_0579",
+      "word": "Job",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0580": {
+      "id": "a1_0580",
+      "word": "Text",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0581": {
+      "id": "a1_0581",
+      "word": "Test",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0582": {
+      "id": "a1_0582",
+      "word": "Getränk",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0583": {
+      "id": "a1_0583",
+      "word": "Glas",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0584": {
+      "id": "a1_0584",
+      "word": "Hobby",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0585": {
+      "id": "a1_0585",
+      "word": "Kilo",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0586": {
+      "id": "a1_0586",
+      "word": "Kino",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0587": {
+      "id": "a1_0587",
+      "word": "Programm",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0588": {
+      "id": "a1_0588",
+      "word": "Batterie",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0589": {
+      "id": "a1_0589",
+      "word": "Oma",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0590": {
+      "id": "a1_0590",
+      "word": "Person",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0591": {
+      "id": "a1_0591",
+      "word": "Situation",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0592": {
+      "id": "a1_0592",
+      "word": "Bier",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0593": {
+      "id": "a1_0593",
+      "word": "Brief",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0594": {
+      "id": "a1_0594",
+      "word": "Baum",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0595": {
+      "id": "a1_0595",
+      "word": "Berg",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0596": {
+      "id": "a1_0596",
+      "word": "Koffer",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0597": {
+      "id": "a1_0597",
+      "word": "Hunger",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0598": {
+      "id": "a1_0598",
+      "word": "Papa",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0599": {
+      "id": "a1_0599",
+      "word": "Mama",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0600": {
+      "id": "a1_0600",
+      "word": "Satz",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0601": {
+      "id": "a1_0601",
+      "word": "Koch",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0602": {
+      "id": "a1_0602",
+      "word": "Brille",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0603": {
+      "id": "a1_0603",
+      "word": "Dialog",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0604": {
+      "id": "a1_0604",
+      "word": "Freizeit",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0605": {
+      "id": "a1_0605",
+      "word": "Exkursion",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0606": {
+      "id": "a1_0606",
+      "word": "Sonne",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0607": {
+      "id": "a1_0607",
+      "word": "Post",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0608": {
+      "id": "a1_0608",
+      "word": "Pflanze",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0609": {
+      "id": "a1_0609",
+      "word": "Liste",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0610": {
+      "id": "a1_0610",
+      "word": "Arm",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0611": {
+      "id": "a1_0611",
+      "word": "Bein",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0612": {
+      "id": "a1_0612",
+      "word": "Bauch",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0613": {
+      "id": "a1_0613",
+      "word": "Blume",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0614": {
+      "id": "a1_0614",
+      "word": "Dorf",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0615": {
+      "id": "a1_0615",
+      "word": "Meer",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0616": {
+      "id": "a1_0616",
+      "word": "Hemd",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0617": {
+      "id": "a1_0617",
+      "word": "Kleid",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0618": {
+      "id": "a1_0618",
+      "word": "Theater",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0619": {
+      "id": "a1_0619",
+      "word": "Fußball",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0620": {
+      "id": "a1_0620",
+      "word": "Mensch",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0621": {
+      "id": "a1_0621",
+      "word": "Moment",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0622": {
+      "id": "a1_0622",
+      "word": "Trainer",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0623": {
+      "id": "a1_0623",
+      "word": "Dusche",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0624": {
+      "id": "a1_0624",
+      "word": "Farbe",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0625": {
+      "id": "a1_0625",
+      "word": "Garage",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0626": {
+      "id": "a1_0626",
+      "word": "Gitarre",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0627": {
+      "id": "a1_0627",
+      "word": "Hauptstadt",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0628": {
+      "id": "a1_0628",
+      "word": "Hausaufgabe",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0629": {
+      "id": "a1_0629",
+      "word": "Klasse",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0630": {
+      "id": "a1_0630",
+      "word": "Zigarette",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0631": {
+      "id": "a1_0631",
+      "word": "Zeitung",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0632": {
+      "id": "a1_0632",
+      "word": "Kaufhaus",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0633": {
+      "id": "a1_0633",
+      "word": "Joghurt",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0634": {
+      "id": "a1_0634",
+      "word": "Pullover",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0635": {
+      "id": "a1_0635",
+      "word": "Rock",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0636": {
+      "id": "a1_0636",
+      "word": "Schreibtisch",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0637": {
+      "id": "a1_0637",
+      "word": "Schwimmbad",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0638": {
+      "id": "a1_0638",
+      "word": "Polizist",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0639": {
+      "id": "a1_0639",
+      "word": "Patient",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0640": {
+      "id": "a1_0640",
+      "word": "Partner",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0641": {
+      "id": "a1_0641",
+      "word": "Kultur",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0642": {
+      "id": "a1_0642",
+      "word": "Medizin",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0643": {
+      "id": "a1_0643",
+      "word": "Meinung",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0644": {
+      "id": "a1_0644",
+      "word": "Mineralwasser",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0645": {
+      "id": "a1_0645",
+      "word": "Regen",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0646": {
+      "id": "a1_0646",
+      "word": "Wind",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0647": {
+      "id": "a1_0647",
+      "word": "Durst",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0648": {
+      "id": "a1_0648",
+      "word": "Schaf",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0649": {
+      "id": "a1_0649",
+      "word": "Wein",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0650": {
+      "id": "a1_0650",
+      "word": "Gärtner",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0651": {
+      "id": "a1_0651",
+      "word": "Feier",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0652": {
+      "id": "a1_0652",
+      "word": "Fest",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0653": {
+      "id": "a1_0653",
+      "word": "Gespräch",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0654": {
+      "id": "a1_0654",
+      "word": "Glück",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0655": {
+      "id": "a1_0655",
+      "word": "Grund",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0656": {
+      "id": "a1_0656",
+      "word": "Gruß",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0657": {
+      "id": "a1_0657",
+      "word": "Gürtel",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0658": {
+      "id": "a1_0658",
+      "word": "Bild",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0659": {
+      "id": "a1_0659",
+      "word": "Diplom",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0660": {
+      "id": "a1_0660",
+      "word": "Mietpreis",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0661": {
+      "id": "a1_0661",
+      "word": "Note",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0662": {
+      "id": "a1_0662",
+      "word": "Nase",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0663": {
+      "id": "a1_0663",
+      "word": "Ohr",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0664": {
+      "id": "a1_0664",
+      "word": "Mund",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0665": {
+      "id": "a1_0665",
+      "word": "Finger",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0666": {
+      "id": "a1_0666",
+      "word": "Becher",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0667": {
+      "id": "a1_0667",
+      "word": "Ausgang",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0668": {
+      "id": "a1_0668",
+      "word": "Eingang",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0669": {
+      "id": "a1_0669",
+      "word": "Einkauf",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0670": {
+      "id": "a1_0670",
+      "word": "Ausländer",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0671": {
+      "id": "a1_0671",
+      "word": "Badewanne",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0672": {
+      "id": "a1_0672",
+      "word": "Badezimmer",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0673": {
+      "id": "a1_0673",
+      "word": "Drucker",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0750": {
+      "id": "a1_0750",
+      "word": "Adressat",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0751": {
+      "id": "a1_0751",
+      "word": "Alkohol",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0752": {
+      "id": "a1_0752",
+      "word": "Alphabet",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0753": {
+      "id": "a1_0753",
+      "word": "Apartment",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0754": {
+      "id": "a1_0754",
+      "word": "Apfelsaft",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0755": {
+      "id": "a1_0755",
+      "word": "Arbeiter",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0756": {
+      "id": "a1_0756",
+      "word": "Besuch",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0757": {
+      "id": "a1_0757",
+      "word": "Bluse",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0758": {
+      "id": "a1_0758",
+      "word": "Brieffreund",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0759": {
+      "id": "a1_0759",
+      "word": "Buchstabe",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0760": {
+      "id": "a1_0760",
+      "word": "Cent",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0761": {
+      "id": "a1_0761",
+      "word": "Deutschkurs",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0762": {
+      "id": "a1_0762",
+      "word": "Deutschtest",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0763": {
+      "id": "a1_0763",
+      "word": "Deutschunterricht",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0764": {
+      "id": "a1_0764",
+      "word": "Flug",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0765": {
+      "id": "a1_0765",
+      "word": "Fluss",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0766": {
+      "id": "a1_0766",
+      "word": "Formel",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0767": {
+      "id": "a1_0767",
+      "word": "Fremdsprache",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0768": {
+      "id": "a1_0768",
+      "word": "Friseursalon",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0769": {
+      "id": "a1_0769",
+      "word": "Garantie",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0770": {
+      "id": "a1_0770",
+      "word": "Gemüseladen",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0771": {
+      "id": "a1_0771",
+      "word": "Grad",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0772": {
+      "id": "a1_0772",
+      "word": "Gramm",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0773": {
+      "id": "a1_0773",
+      "word": "Grammatik",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0774": {
+      "id": "a1_0774",
+      "word": "Hausfrau",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0775": {
+      "id": "a1_0775",
+      "word": "Haushaltshilfe",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0776": {
+      "id": "a1_0776",
+      "word": "Heft",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0777": {
+      "id": "a1_0777",
+      "word": "Informatik",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0778": {
+      "id": "a1_0778",
+      "word": "Intensivkurs",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0779": {
+      "id": "a1_0779",
+      "word": "Korb",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0780": {
+      "id": "a1_0780",
+      "word": "Leben",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0781": {
+      "id": "a1_0781",
+      "word": "Lektion",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0782": {
+      "id": "a1_0782",
+      "word": "Licht",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0783": {
+      "id": "a1_0783",
+      "word": "Liter",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0784": {
+      "id": "a1_0784",
+      "word": "Lust",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0785": {
+      "id": "a1_0785",
+      "word": "Mantel",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0786": {
+      "id": "a1_0786",
+      "word": "Mechaniker",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0787": {
+      "id": "a1_0787",
+      "word": "Meister",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0788": {
+      "id": "a1_0788",
+      "word": "Moder",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0789": {
+      "id": "a1_0789",
+      "word": "Nachrichten",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0790": {
+      "id": "a1_0790",
+      "word": "Ober",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0791": {
+      "id": "a1_0791",
+      "word": "Plan",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0792": {
+      "id": "a1_0792",
+      "word": "Produkt",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0793": {
+      "id": "a1_0793",
+      "word": "Programmierer",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0794": {
+      "id": "a1_0794",
+      "word": "Prospekt",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0795": {
+      "id": "a1_0795",
+      "word": "Prüfung",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0796": {
+      "id": "a1_0796",
+      "word": "Radio",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0797": {
+      "id": "a1_0797",
+      "word": "See",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0798": {
+      "id": "a1_0798",
+      "word": "Seite",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0799": {
+      "id": "a1_0799",
+      "word": "Sekretär",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0800": {
+      "id": "a1_0800",
+      "word": "Sekretärin",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0801": {
+      "id": "a1_0801",
+      "word": "Service",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0802": {
+      "id": "a1_0802",
+      "word": "Ski",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0803": {
+      "id": "a1_0803",
+      "word": "Sprachschule",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0804": {
+      "id": "a1_0804",
+      "word": "Start",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0805": {
+      "id": "a1_0805",
+      "word": "Station",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0806": {
+      "id": "a1_0806",
+      "word": "Stelle",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0807": {
+      "id": "a1_0807",
+      "word": "Stift",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0808": {
+      "id": "a1_0808",
+      "word": "Stock",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0809": {
+      "id": "a1_0809",
+      "word": "Stress",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0810": {
+      "id": "a1_0810",
+      "word": "T-Shirt",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0811": {
+      "id": "a1_0811",
+      "word": "Team",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0812": {
+      "id": "a1_0812",
+      "word": "Teil",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0813": {
+      "id": "a1_0813",
+      "word": "Temperatur",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0814": {
+      "id": "a1_0814",
+      "word": "Terrasse",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0815": {
+      "id": "a1_0815",
+      "word": "Training",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0816": {
+      "id": "a1_0816",
+      "word": "TV",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0817": {
+      "id": "a1_0817",
+      "word": "U-Bahnhof",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0818": {
+      "id": "a1_0818",
+      "word": "USA",
+      "article": "die",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0819": {
+      "id": "a1_0819",
+      "word": "Wagen",
+      "article": "der",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0820": {
+      "id": "a1_0820",
+      "word": "Wörterbuch",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
+    },
+    "a1_0821": {
+      "id": "a1_0821",
+      "word": "Lied",
+      "article": "das",
+      "verified": false,
+      "category": "Text.md tamamlama"
     }
   },
   "byWord": {
@@ -4628,6 +5804,846 @@
       "id": "a1_0573",
       "article": "der",
       "word": "Kilometer"
+    },
+    "gast": {
+      "id": "a1_0578",
+      "article": "der",
+      "word": "Gast"
+    },
+    "job": {
+      "id": "a1_0579",
+      "article": "der",
+      "word": "Job"
+    },
+    "text": {
+      "id": "a1_0580",
+      "article": "der",
+      "word": "Text"
+    },
+    "test": {
+      "id": "a1_0581",
+      "article": "der",
+      "word": "Test"
+    },
+    "getränk": {
+      "id": "a1_0582",
+      "article": "das",
+      "word": "Getränk"
+    },
+    "glas": {
+      "id": "a1_0583",
+      "article": "das",
+      "word": "Glas"
+    },
+    "hobby": {
+      "id": "a1_0584",
+      "article": "das",
+      "word": "Hobby"
+    },
+    "kilo": {
+      "id": "a1_0585",
+      "article": "das",
+      "word": "Kilo"
+    },
+    "kino": {
+      "id": "a1_0586",
+      "article": "das",
+      "word": "Kino"
+    },
+    "programm": {
+      "id": "a1_0587",
+      "article": "das",
+      "word": "Programm"
+    },
+    "batterie": {
+      "id": "a1_0588",
+      "article": "die",
+      "word": "Batterie"
+    },
+    "oma": {
+      "id": "a1_0589",
+      "article": "die",
+      "word": "Oma"
+    },
+    "person": {
+      "id": "a1_0590",
+      "article": "die",
+      "word": "Person"
+    },
+    "situation": {
+      "id": "a1_0591",
+      "article": "die",
+      "word": "Situation"
+    },
+    "bier": {
+      "id": "a1_0592",
+      "article": "das",
+      "word": "Bier"
+    },
+    "brief": {
+      "id": "a1_0593",
+      "article": "der",
+      "word": "Brief"
+    },
+    "baum": {
+      "id": "a1_0594",
+      "article": "der",
+      "word": "Baum"
+    },
+    "berg": {
+      "id": "a1_0595",
+      "article": "der",
+      "word": "Berg"
+    },
+    "koffer": {
+      "id": "a1_0596",
+      "article": "der",
+      "word": "Koffer"
+    },
+    "hunger": {
+      "id": "a1_0597",
+      "article": "der",
+      "word": "Hunger"
+    },
+    "papa": {
+      "id": "a1_0598",
+      "article": "der",
+      "word": "Papa"
+    },
+    "mama": {
+      "id": "a1_0599",
+      "article": "die",
+      "word": "Mama"
+    },
+    "satz": {
+      "id": "a1_0600",
+      "article": "der",
+      "word": "Satz"
+    },
+    "koch": {
+      "id": "a1_0601",
+      "article": "der",
+      "word": "Koch"
+    },
+    "brille": {
+      "id": "a1_0602",
+      "article": "die",
+      "word": "Brille"
+    },
+    "dialog": {
+      "id": "a1_0603",
+      "article": "der",
+      "word": "Dialog"
+    },
+    "freizeit": {
+      "id": "a1_0604",
+      "article": "die",
+      "word": "Freizeit"
+    },
+    "exkursion": {
+      "id": "a1_0605",
+      "article": "die",
+      "word": "Exkursion"
+    },
+    "sonne": {
+      "id": "a1_0606",
+      "article": "die",
+      "word": "Sonne"
+    },
+    "post": {
+      "id": "a1_0607",
+      "article": "die",
+      "word": "Post"
+    },
+    "pflanze": {
+      "id": "a1_0608",
+      "article": "die",
+      "word": "Pflanze"
+    },
+    "liste": {
+      "id": "a1_0609",
+      "article": "die",
+      "word": "Liste"
+    },
+    "arm": {
+      "id": "a1_0610",
+      "article": "der",
+      "word": "Arm"
+    },
+    "bein": {
+      "id": "a1_0611",
+      "article": "das",
+      "word": "Bein"
+    },
+    "bauch": {
+      "id": "a1_0612",
+      "article": "der",
+      "word": "Bauch"
+    },
+    "blume": {
+      "id": "a1_0613",
+      "article": "die",
+      "word": "Blume"
+    },
+    "dorf": {
+      "id": "a1_0614",
+      "article": "das",
+      "word": "Dorf"
+    },
+    "meer": {
+      "id": "a1_0615",
+      "article": "das",
+      "word": "Meer"
+    },
+    "hemd": {
+      "id": "a1_0616",
+      "article": "das",
+      "word": "Hemd"
+    },
+    "kleid": {
+      "id": "a1_0617",
+      "article": "das",
+      "word": "Kleid"
+    },
+    "theater": {
+      "id": "a1_0618",
+      "article": "das",
+      "word": "Theater"
+    },
+    "fußball": {
+      "id": "a1_0619",
+      "article": "der",
+      "word": "Fußball"
+    },
+    "mensch": {
+      "id": "a1_0620",
+      "article": "der",
+      "word": "Mensch"
+    },
+    "moment": {
+      "id": "a1_0621",
+      "article": "der",
+      "word": "Moment"
+    },
+    "trainer": {
+      "id": "a1_0622",
+      "article": "der",
+      "word": "Trainer"
+    },
+    "dusche": {
+      "id": "a1_0623",
+      "article": "die",
+      "word": "Dusche"
+    },
+    "farbe": {
+      "id": "a1_0624",
+      "article": "die",
+      "word": "Farbe"
+    },
+    "garage": {
+      "id": "a1_0625",
+      "article": "die",
+      "word": "Garage"
+    },
+    "gitarre": {
+      "id": "a1_0626",
+      "article": "die",
+      "word": "Gitarre"
+    },
+    "hauptstadt": {
+      "id": "a1_0627",
+      "article": "die",
+      "word": "Hauptstadt"
+    },
+    "hausaufgabe": {
+      "id": "a1_0628",
+      "article": "die",
+      "word": "Hausaufgabe"
+    },
+    "klasse": {
+      "id": "a1_0629",
+      "article": "die",
+      "word": "Klasse"
+    },
+    "zigarette": {
+      "id": "a1_0630",
+      "article": "die",
+      "word": "Zigarette"
+    },
+    "zeitung": {
+      "id": "a1_0631",
+      "article": "die",
+      "word": "Zeitung"
+    },
+    "kaufhaus": {
+      "id": "a1_0632",
+      "article": "das",
+      "word": "Kaufhaus"
+    },
+    "joghurt": {
+      "id": "a1_0633",
+      "article": "der",
+      "word": "Joghurt"
+    },
+    "pullover": {
+      "id": "a1_0634",
+      "article": "der",
+      "word": "Pullover"
+    },
+    "rock": {
+      "id": "a1_0635",
+      "article": "der",
+      "word": "Rock"
+    },
+    "schreibtisch": {
+      "id": "a1_0636",
+      "article": "der",
+      "word": "Schreibtisch"
+    },
+    "schwimmbad": {
+      "id": "a1_0637",
+      "article": "das",
+      "word": "Schwimmbad"
+    },
+    "polizist": {
+      "id": "a1_0638",
+      "article": "der",
+      "word": "Polizist"
+    },
+    "patient": {
+      "id": "a1_0639",
+      "article": "der",
+      "word": "Patient"
+    },
+    "partner": {
+      "id": "a1_0640",
+      "article": "der",
+      "word": "Partner"
+    },
+    "kultur": {
+      "id": "a1_0641",
+      "article": "die",
+      "word": "Kultur"
+    },
+    "medizin": {
+      "id": "a1_0642",
+      "article": "die",
+      "word": "Medizin"
+    },
+    "meinung": {
+      "id": "a1_0643",
+      "article": "die",
+      "word": "Meinung"
+    },
+    "mineralwasser": {
+      "id": "a1_0644",
+      "article": "das",
+      "word": "Mineralwasser"
+    },
+    "regen": {
+      "id": "a1_0645",
+      "article": "der",
+      "word": "Regen"
+    },
+    "wind": {
+      "id": "a1_0646",
+      "article": "der",
+      "word": "Wind"
+    },
+    "durst": {
+      "id": "a1_0647",
+      "article": "der",
+      "word": "Durst"
+    },
+    "schaf": {
+      "id": "a1_0648",
+      "article": "das",
+      "word": "Schaf"
+    },
+    "wein": {
+      "id": "a1_0649",
+      "article": "der",
+      "word": "Wein"
+    },
+    "gärtner": {
+      "id": "a1_0650",
+      "article": "der",
+      "word": "Gärtner"
+    },
+    "feier": {
+      "id": "a1_0651",
+      "article": "die",
+      "word": "Feier"
+    },
+    "fest": {
+      "id": "a1_0652",
+      "article": "das",
+      "word": "Fest"
+    },
+    "gespräch": {
+      "id": "a1_0653",
+      "article": "das",
+      "word": "Gespräch"
+    },
+    "glück": {
+      "id": "a1_0654",
+      "article": "das",
+      "word": "Glück"
+    },
+    "grund": {
+      "id": "a1_0655",
+      "article": "der",
+      "word": "Grund"
+    },
+    "gruß": {
+      "id": "a1_0656",
+      "article": "der",
+      "word": "Gruß"
+    },
+    "gürtel": {
+      "id": "a1_0657",
+      "article": "der",
+      "word": "Gürtel"
+    },
+    "bild": {
+      "id": "a1_0658",
+      "article": "das",
+      "word": "Bild"
+    },
+    "diplom": {
+      "id": "a1_0659",
+      "article": "das",
+      "word": "Diplom"
+    },
+    "mietpreis": {
+      "id": "a1_0660",
+      "article": "der",
+      "word": "Mietpreis"
+    },
+    "note": {
+      "id": "a1_0661",
+      "article": "die",
+      "word": "Note"
+    },
+    "nase": {
+      "id": "a1_0662",
+      "article": "die",
+      "word": "Nase"
+    },
+    "ohr": {
+      "id": "a1_0663",
+      "article": "das",
+      "word": "Ohr"
+    },
+    "mund": {
+      "id": "a1_0664",
+      "article": "der",
+      "word": "Mund"
+    },
+    "finger": {
+      "id": "a1_0665",
+      "article": "der",
+      "word": "Finger"
+    },
+    "becher": {
+      "id": "a1_0666",
+      "article": "der",
+      "word": "Becher"
+    },
+    "ausgang": {
+      "id": "a1_0667",
+      "article": "der",
+      "word": "Ausgang"
+    },
+    "eingang": {
+      "id": "a1_0668",
+      "article": "der",
+      "word": "Eingang"
+    },
+    "einkauf": {
+      "id": "a1_0669",
+      "article": "der",
+      "word": "Einkauf"
+    },
+    "ausländer": {
+      "id": "a1_0670",
+      "article": "der",
+      "word": "Ausländer"
+    },
+    "badewanne": {
+      "id": "a1_0671",
+      "article": "die",
+      "word": "Badewanne"
+    },
+    "badezimmer": {
+      "id": "a1_0672",
+      "article": "das",
+      "word": "Badezimmer"
+    },
+    "drucker": {
+      "id": "a1_0673",
+      "article": "der",
+      "word": "Drucker"
+    },
+    "adressat": {
+      "id": "a1_0750",
+      "article": "der",
+      "word": "Adressat"
+    },
+    "alkohol": {
+      "id": "a1_0751",
+      "article": "der",
+      "word": "Alkohol"
+    },
+    "alphabet": {
+      "id": "a1_0752",
+      "article": "das",
+      "word": "Alphabet"
+    },
+    "apartment": {
+      "id": "a1_0753",
+      "article": "das",
+      "word": "Apartment"
+    },
+    "apfelsaft": {
+      "id": "a1_0754",
+      "article": "der",
+      "word": "Apfelsaft"
+    },
+    "arbeiter": {
+      "id": "a1_0755",
+      "article": "der",
+      "word": "Arbeiter"
+    },
+    "besuch": {
+      "id": "a1_0756",
+      "article": "der",
+      "word": "Besuch"
+    },
+    "bluse": {
+      "id": "a1_0757",
+      "article": "die",
+      "word": "Bluse"
+    },
+    "brieffreund": {
+      "id": "a1_0758",
+      "article": "der",
+      "word": "Brieffreund"
+    },
+    "buchstabe": {
+      "id": "a1_0759",
+      "article": "der",
+      "word": "Buchstabe"
+    },
+    "cent": {
+      "id": "a1_0760",
+      "article": "der",
+      "word": "Cent"
+    },
+    "deutschkurs": {
+      "id": "a1_0761",
+      "article": "der",
+      "word": "Deutschkurs"
+    },
+    "deutschtest": {
+      "id": "a1_0762",
+      "article": "der",
+      "word": "Deutschtest"
+    },
+    "deutschunterricht": {
+      "id": "a1_0763",
+      "article": "der",
+      "word": "Deutschunterricht"
+    },
+    "flug": {
+      "id": "a1_0764",
+      "article": "der",
+      "word": "Flug"
+    },
+    "fluss": {
+      "id": "a1_0765",
+      "article": "der",
+      "word": "Fluss"
+    },
+    "formel": {
+      "id": "a1_0766",
+      "article": "die",
+      "word": "Formel"
+    },
+    "fremdsprache": {
+      "id": "a1_0767",
+      "article": "die",
+      "word": "Fremdsprache"
+    },
+    "friseursalon": {
+      "id": "a1_0768",
+      "article": "der",
+      "word": "Friseursalon"
+    },
+    "garantie": {
+      "id": "a1_0769",
+      "article": "die",
+      "word": "Garantie"
+    },
+    "gemüseladen": {
+      "id": "a1_0770",
+      "article": "der",
+      "word": "Gemüseladen"
+    },
+    "grad": {
+      "id": "a1_0771",
+      "article": "der",
+      "word": "Grad"
+    },
+    "gramm": {
+      "id": "a1_0772",
+      "article": "das",
+      "word": "Gramm"
+    },
+    "grammatik": {
+      "id": "a1_0773",
+      "article": "die",
+      "word": "Grammatik"
+    },
+    "hausfrau": {
+      "id": "a1_0774",
+      "article": "die",
+      "word": "Hausfrau"
+    },
+    "haushaltshilfe": {
+      "id": "a1_0775",
+      "article": "die",
+      "word": "Haushaltshilfe"
+    },
+    "heft": {
+      "id": "a1_0776",
+      "article": "das",
+      "word": "Heft"
+    },
+    "informatik": {
+      "id": "a1_0777",
+      "article": "die",
+      "word": "Informatik"
+    },
+    "intensivkurs": {
+      "id": "a1_0778",
+      "article": "der",
+      "word": "Intensivkurs"
+    },
+    "korb": {
+      "id": "a1_0779",
+      "article": "der",
+      "word": "Korb"
+    },
+    "leben": {
+      "id": "a1_0780",
+      "article": "das",
+      "word": "Leben"
+    },
+    "lektion": {
+      "id": "a1_0781",
+      "article": "die",
+      "word": "Lektion"
+    },
+    "licht": {
+      "id": "a1_0782",
+      "article": "das",
+      "word": "Licht"
+    },
+    "liter": {
+      "id": "a1_0783",
+      "article": "der",
+      "word": "Liter"
+    },
+    "lust": {
+      "id": "a1_0784",
+      "article": "die",
+      "word": "Lust"
+    },
+    "mantel": {
+      "id": "a1_0785",
+      "article": "der",
+      "word": "Mantel"
+    },
+    "mechaniker": {
+      "id": "a1_0786",
+      "article": "der",
+      "word": "Mechaniker"
+    },
+    "meister": {
+      "id": "a1_0787",
+      "article": "der",
+      "word": "Meister"
+    },
+    "moder": {
+      "id": "a1_0788",
+      "article": "der",
+      "word": "Moder"
+    },
+    "nachrichten": {
+      "id": "a1_0789",
+      "article": "die",
+      "word": "Nachrichten"
+    },
+    "ober": {
+      "id": "a1_0790",
+      "article": "der",
+      "word": "Ober"
+    },
+    "plan": {
+      "id": "a1_0791",
+      "article": "der",
+      "word": "Plan"
+    },
+    "produkt": {
+      "id": "a1_0792",
+      "article": "das",
+      "word": "Produkt"
+    },
+    "programmierer": {
+      "id": "a1_0793",
+      "article": "der",
+      "word": "Programmierer"
+    },
+    "prospekt": {
+      "id": "a1_0794",
+      "article": "der",
+      "word": "Prospekt"
+    },
+    "prüfung": {
+      "id": "a1_0795",
+      "article": "die",
+      "word": "Prüfung"
+    },
+    "radio": {
+      "id": "a1_0796",
+      "article": "das",
+      "word": "Radio"
+    },
+    "see": {
+      "id": "a1_0797",
+      "article": "die",
+      "word": "See"
+    },
+    "seite": {
+      "id": "a1_0798",
+      "article": "die",
+      "word": "Seite"
+    },
+    "sekretär": {
+      "id": "a1_0799",
+      "article": "der",
+      "word": "Sekretär"
+    },
+    "sekretärin": {
+      "id": "a1_0800",
+      "article": "die",
+      "word": "Sekretärin"
+    },
+    "service": {
+      "id": "a1_0801",
+      "article": "der",
+      "word": "Service"
+    },
+    "ski": {
+      "id": "a1_0802",
+      "article": "der",
+      "word": "Ski"
+    },
+    "sprachschule": {
+      "id": "a1_0803",
+      "article": "die",
+      "word": "Sprachschule"
+    },
+    "start": {
+      "id": "a1_0804",
+      "article": "der",
+      "word": "Start"
+    },
+    "station": {
+      "id": "a1_0805",
+      "article": "die",
+      "word": "Station"
+    },
+    "stelle": {
+      "id": "a1_0806",
+      "article": "die",
+      "word": "Stelle"
+    },
+    "stift": {
+      "id": "a1_0807",
+      "article": "der",
+      "word": "Stift"
+    },
+    "stock": {
+      "id": "a1_0808",
+      "article": "der",
+      "word": "Stock"
+    },
+    "stress": {
+      "id": "a1_0809",
+      "article": "der",
+      "word": "Stress"
+    },
+    "t-shirt": {
+      "id": "a1_0810",
+      "article": "das",
+      "word": "T-Shirt"
+    },
+    "team": {
+      "id": "a1_0811",
+      "article": "das",
+      "word": "Team"
+    },
+    "teil": {
+      "id": "a1_0812",
+      "article": "das",
+      "word": "Teil"
+    },
+    "temperatur": {
+      "id": "a1_0813",
+      "article": "die",
+      "word": "Temperatur"
+    },
+    "terrasse": {
+      "id": "a1_0814",
+      "article": "die",
+      "word": "Terrasse"
+    },
+    "training": {
+      "id": "a1_0815",
+      "article": "das",
+      "word": "Training"
+    },
+    "tv": {
+      "id": "a1_0816",
+      "article": "das",
+      "word": "TV"
+    },
+    "u-bahnhof": {
+      "id": "a1_0817",
+      "article": "der",
+      "word": "U-Bahnhof"
+    },
+    "usa": {
+      "id": "a1_0818",
+      "article": "die",
+      "word": "USA"
+    },
+    "wagen": {
+      "id": "a1_0819",
+      "article": "der",
+      "word": "Wagen"
+    },
+    "wörterbuch": {
+      "id": "a1_0820",
+      "article": "das",
+      "word": "Wörterbuch"
+    },
+    "lied": {
+      "id": "a1_0821",
+      "article": "das",
+      "word": "Lied"
     }
   }
 }

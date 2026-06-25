@@ -1,7 +1,7 @@
 {
   "level": "A1",
-  "version": "2.0.0",
-  "total": 577,
+  "version": "2.1.0",
+  "total": 852,
   "categories": [
     "Selamlama",
     "Tanışma",
@@ -17,7 +17,8 @@
     "Telefon",
     "Form doldurma",
     "Günlük ihtiyaçlar",
-    "Basit yön tarifleri"
+    "Basit yön tarifleri",
+    "Text.md tamamlama"
   ],
   "words": [
     {
@@ -1286,8 +1287,8 @@
       "plural": "Väter",
       "translation_tr": "baba",
       "translation_ru": "отец",
-      "example_de": "Sein Vater ist Lehrer.",
-      "example_tr": "Babası öğretmen.",
+      "example_de": "Mein Vater arbeitet viel.",
+      "example_tr": "Babam çok çalışıyor.",
       "audio_word": "/audio/a1/vater.mp3",
       "audio_example": "/audio/a1/mein-vater-arbeitet-viel.mp3",
       "tags": [
@@ -1304,8 +1305,8 @@
       "plural": "Kinder",
       "translation_tr": "çocuk",
       "translation_ru": "ребёнок",
-      "example_de": "Ihr Kind spielt gern.",
-      "example_tr": "Çocuğu oynamayı sever.",
+      "example_de": "Das Kind spielt im Garten.",
+      "example_tr": "Çocuk bahçede oynuyor.",
       "audio_word": "/audio/a1/kind.mp3",
       "audio_example": "/audio/a1/das-kind-spielt-im-garten.mp3",
       "tags": [
@@ -1322,8 +1323,8 @@
       "plural": "Söhne",
       "translation_tr": "oğul",
       "translation_ru": "сын",
-      "example_de": "Dein Sohn ist nett.",
-      "example_tr": "Oğlun nazik.",
+      "example_de": "Mein Sohn ist fünf Jahre alt.",
+      "example_tr": "Oğlum beş yaşında.",
       "audio_word": "/audio/a1/sohn.mp3",
       "audio_example": "/audio/a1/mein-sohn-ist-fuenf-jahre-alt.mp3",
       "tags": [
@@ -1358,8 +1359,8 @@
       "plural": "Brüder",
       "translation_tr": "erkek kardeş",
       "translation_ru": "брат",
-      "example_de": "Sein Bruder wohnt in Berlin.",
-      "example_tr": "Erkek kardeşi Berlin'de oturuyor.",
+      "example_de": "Mein Bruder wohnt in Hamburg.",
+      "example_tr": "Erkek kardeşim Hamburg'da.",
       "audio_word": "/audio/a1/bruder.mp3",
       "audio_example": "/audio/a1/mein-bruder-wohnt-in-hamburg.mp3",
       "tags": [
@@ -1376,8 +1377,8 @@
       "plural": "Schwestern",
       "translation_tr": "kız kardeş",
       "translation_ru": "сестра",
-      "example_de": "Seine Schwester ist Ärztin.",
-      "example_tr": "Kız kardeşi doktor.",
+      "example_de": "Meine Schwester ist Ärztin.",
+      "example_tr": "Kız kardeşim doktor.",
       "audio_word": "/audio/a1/schwester.mp3",
       "audio_example": "/audio/a1/meine-schwester-ist-aerztin.mp3",
       "tags": [
@@ -1448,8 +1449,8 @@
       "plural": "Familien",
       "translation_tr": "aile",
       "translation_ru": "семья",
-      "example_de": "Unsere Familie ist groß.",
-      "example_tr": "Ailemiz büyük.",
+      "example_de": "Meine Familie ist groß.",
+      "example_tr": "Ailem büyük.",
       "audio_word": "/audio/a1/familie.mp3",
       "audio_example": "/audio/a1/meine-familie-ist-gross.mp3",
       "tags": [
@@ -1882,8 +1883,8 @@
       "plural": "Häuser",
       "translation_tr": "ev",
       "translation_ru": "дом",
-      "example_de": "Euer Haus ist schön.",
-      "example_tr": "Eviniz güzel.",
+      "example_de": "Das ist mein Haus.",
+      "example_tr": "Bu benim evim.",
       "audio_word": "/audio/a1/haus.mp3",
       "audio_example": "/audio/a1/das-ist-mein-haus.mp3",
       "tags": [
@@ -3921,8 +3922,8 @@
       "plural": "Autos",
       "translation_tr": "araba",
       "translation_ru": "машина",
-      "example_de": "Das ist dein Auto.",
-      "example_tr": "Bu senin araban.",
+      "example_de": "Das Auto ist neu.",
+      "example_tr": "Araba yeni.",
       "audio_word": "/audio/a1/auto.mp3",
       "audio_example": "/audio/a1/das-auto-ist-neu.mp3",
       "tags": [
@@ -10602,6 +10603,4976 @@
       "audio_example": "/audio/a1/ich-habe-mich-verlaufen.mp3",
       "tags": [
         "direction",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0578",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gast",
+      "article": "der",
+      "plural": "Gäste",
+      "translation_tr": "misafir",
+      "translation_ru": "гость",
+      "example_de": "Der Gast kommt heute.",
+      "example_tr": "Misafir bugün geliyor.",
+      "audio_word": "/audio/a1/gast.mp3",
+      "audio_example": "/audio/a1/der-gast-kommt-heute.mp3",
+      "tags": [
+        "people",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0579",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Job",
+      "article": "der",
+      "plural": "Jobs",
+      "translation_tr": "iş",
+      "translation_ru": "работа",
+      "example_de": "Ich suche einen Job.",
+      "example_tr": "Bir iş arıyorum.",
+      "audio_word": "/audio/a1/job.mp3",
+      "audio_example": "/audio/a1/ich-suche-einen-job.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0580",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Text",
+      "article": "der",
+      "plural": "Texte",
+      "translation_tr": "metin",
+      "translation_ru": "текст",
+      "example_de": "Ich lese den Text.",
+      "example_tr": "Metni okuyorum.",
+      "audio_word": "/audio/a1/text.mp3",
+      "audio_example": "/audio/a1/ich-lese-den-text.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0581",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Test",
+      "article": "der",
+      "plural": "Tests",
+      "translation_tr": "test",
+      "translation_ru": "тест",
+      "example_de": "Der Test ist einfach.",
+      "example_tr": "Test kolay.",
+      "audio_word": "/audio/a1/test.mp3",
+      "audio_example": "/audio/a1/der-test-ist-einfach.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0582",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Getränk",
+      "article": "das",
+      "plural": "Getränke",
+      "translation_tr": "içecek",
+      "translation_ru": "напиток",
+      "example_de": "Das Getränk ist kalt.",
+      "example_tr": "İçecek soğuk.",
+      "audio_word": "/audio/a1/getraenk.mp3",
+      "audio_example": "/audio/a1/das-getraenk-ist-kalt.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0583",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Glas",
+      "article": "das",
+      "plural": "Gläser",
+      "translation_tr": "bardak",
+      "translation_ru": "стакан",
+      "example_de": "Das Glas ist voll.",
+      "example_tr": "Bardak dolu.",
+      "audio_word": "/audio/a1/glas.mp3",
+      "audio_example": "/audio/a1/das-glas-ist-voll.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0584",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hobby",
+      "article": "das",
+      "plural": "Hobbys",
+      "translation_tr": "hobi",
+      "translation_ru": "хобби",
+      "example_de": "Mein Hobby ist Lesen.",
+      "example_tr": "Hobim okumak.",
+      "audio_word": "/audio/a1/hobby.mp3",
+      "audio_example": "/audio/a1/mein-hobby-ist-lesen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0585",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Kilo",
+      "article": "das",
+      "plural": "Kilo",
+      "translation_tr": "kilo",
+      "translation_ru": "килограмм",
+      "example_de": "Ein Kilo Äpfel, bitte.",
+      "example_tr": "Bir kilo elma lütfen.",
+      "audio_word": "/audio/a1/kilo.mp3",
+      "audio_example": "/audio/a1/ein-kilo-aepfel-bitte.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0586",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Kino",
+      "article": "das",
+      "plural": "Kinos",
+      "translation_tr": "sinema",
+      "translation_ru": "кинотеатр",
+      "example_de": "Wir gehen ins Kino.",
+      "example_tr": "Sinemaya gidiyoruz.",
+      "audio_word": "/audio/a1/kino.mp3",
+      "audio_example": "/audio/a1/wir-gehen-ins-kino.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0587",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Programm",
+      "article": "das",
+      "plural": "Programme",
+      "translation_tr": "program",
+      "translation_ru": "программа",
+      "example_de": "Das Programm beginnt um acht.",
+      "example_tr": "Program saat sekizde başlıyor.",
+      "audio_word": "/audio/a1/programm.mp3",
+      "audio_example": "/audio/a1/das-programm-beginnt-um-acht.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0588",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Batterie",
+      "article": "die",
+      "plural": "Batterien",
+      "translation_tr": "pil",
+      "translation_ru": "батарейка",
+      "example_de": "Die Batterie ist leer.",
+      "example_tr": "Pil bitti.",
+      "audio_word": "/audio/a1/batterie.mp3",
+      "audio_example": "/audio/a1/die-batterie-ist-leer.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0589",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Oma",
+      "article": "die",
+      "plural": "Omas",
+      "translation_tr": "büyükanne",
+      "translation_ru": "бабушка",
+      "example_de": "Meine Oma wohnt in Berlin.",
+      "example_tr": "Büyükannem Berlin'de yaşıyor.",
+      "audio_word": "/audio/a1/oma.mp3",
+      "audio_example": "/audio/a1/meine-oma-wohnt-in-berlin.mp3",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0590",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Person",
+      "article": "die",
+      "plural": "Personen",
+      "translation_tr": "kişi",
+      "translation_ru": "человек",
+      "example_de": "Eine Person wartet draußen.",
+      "example_tr": "Dışarıda bir kişi bekliyor.",
+      "audio_word": "/audio/a1/person.mp3",
+      "audio_example": "/audio/a1/eine-person-wartet-draussen.mp3",
+      "tags": [
+        "people",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0591",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Situation",
+      "article": "die",
+      "plural": "Situationen",
+      "translation_tr": "durum",
+      "translation_ru": "ситуация",
+      "example_de": "Die Situation ist schwierig.",
+      "example_tr": "Durum zor.",
+      "audio_word": "/audio/a1/situation.mp3",
+      "audio_example": "/audio/a1/die-situation-ist-schwierig.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0592",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Bier",
+      "article": "das",
+      "plural": "Biere",
+      "translation_tr": "bira",
+      "translation_ru": "пиво",
+      "example_de": "Ein Bier, bitte.",
+      "example_tr": "Bir bira lütfen.",
+      "audio_word": "/audio/a1/bier.mp3",
+      "audio_example": "/audio/a1/ein-bier-bitte.mp3",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0593",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Brief",
+      "article": "der",
+      "plural": "Briefe",
+      "translation_tr": "mektup",
+      "translation_ru": "письмо",
+      "example_de": "Ich schreibe einen Brief.",
+      "example_tr": "Bir mektup yazıyorum.",
+      "audio_word": "/audio/a1/brief.mp3",
+      "audio_example": "/audio/a1/ich-schreibe-einen-brief.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0594",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Baum",
+      "article": "der",
+      "plural": "Bäume",
+      "translation_tr": "ağaç",
+      "translation_ru": "дерево",
+      "example_de": "Der Baum ist groß.",
+      "example_tr": "Ağaç büyük.",
+      "audio_word": "/audio/a1/baum.mp3",
+      "audio_example": "/audio/a1/der-baum-ist-gross.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0595",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Berg",
+      "article": "der",
+      "plural": "Berge",
+      "translation_tr": "dağ",
+      "translation_ru": "гора",
+      "example_de": "Der Berg ist hoch.",
+      "example_tr": "Dağ yüksek.",
+      "audio_word": "/audio/a1/berg.mp3",
+      "audio_example": "/audio/a1/der-berg-ist-hoch.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0596",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Koffer",
+      "article": "der",
+      "plural": "Koffer",
+      "translation_tr": "bavul",
+      "translation_ru": "чемодан",
+      "example_de": "Mein Koffer ist schwer.",
+      "example_tr": "Bavulum ağır.",
+      "audio_word": "/audio/a1/koffer.mp3",
+      "audio_example": "/audio/a1/mein-koffer-ist-schwer.mp3",
+      "tags": [
+        "travel",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0597",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hunger",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "açlık",
+      "translation_ru": "голод",
+      "example_de": "Ich habe Hunger.",
+      "example_tr": "Açım.",
+      "audio_word": "/audio/a1/hunger.mp3",
+      "audio_example": "/audio/a1/ich-habe-hunger.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0598",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Papa",
+      "article": "der",
+      "plural": "Papas",
+      "translation_tr": "baba",
+      "translation_ru": "папа",
+      "example_de": "Mein Papa arbeitet viel.",
+      "example_tr": "Babam çok çalışıyor.",
+      "audio_word": "/audio/a1/papa.mp3",
+      "audio_example": "/audio/a1/mein-papa-arbeitet-viel.mp3",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0599",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mama",
+      "article": "die",
+      "plural": "Mamas",
+      "translation_tr": "anne",
+      "translation_ru": "мама",
+      "example_de": "Meine Mama kocht gut.",
+      "example_tr": "Annem iyi yemek yapar.",
+      "audio_word": "/audio/a1/mama.mp3",
+      "audio_example": "/audio/a1/meine-mama-kocht-gut.mp3",
+      "tags": [
+        "family",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0600",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Satz",
+      "article": "der",
+      "plural": "Sätze",
+      "translation_tr": "cümle",
+      "translation_ru": "предложение",
+      "example_de": "Das ist ein kurzer Satz.",
+      "example_tr": "Bu kısa bir cümle.",
+      "audio_word": "/audio/a1/satz.mp3",
+      "audio_example": "/audio/a1/das-ist-ein-kurzer-satz.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0601",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Koch",
+      "article": "der",
+      "plural": "Köche",
+      "translation_tr": "aşçı",
+      "translation_ru": "повар",
+      "example_de": "Der Koch arbeitet im Restaurant.",
+      "example_tr": "Aşçı restoranda çalışıyor.",
+      "audio_word": "/audio/a1/koch.mp3",
+      "audio_example": "/audio/a1/der-koch-arbeitet-im-restaurant.mp3",
+      "tags": [
+        "work",
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0602",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Brille",
+      "article": "die",
+      "plural": "Brillen",
+      "translation_tr": "gözlük",
+      "translation_ru": "очки",
+      "example_de": "Ich trage eine Brille.",
+      "example_tr": "Gözlük takıyorum.",
+      "audio_word": "/audio/a1/brille.mp3",
+      "audio_example": "/audio/a1/ich-trage-eine-brille.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0603",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Dialog",
+      "article": "der",
+      "plural": "Dialoge",
+      "translation_tr": "diyalog",
+      "translation_ru": "диалог",
+      "example_de": "Wir üben einen Dialog.",
+      "example_tr": "Bir diyalog çalışıyoruz.",
+      "audio_word": "/audio/a1/dialog.mp3",
+      "audio_example": "/audio/a1/wir-ueben-einen-dialog.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0604",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Freizeit",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "boş zaman",
+      "translation_ru": "свободное время",
+      "example_de": "In der Freizeit lese ich.",
+      "example_tr": "Boş zamanımda okurum.",
+      "audio_word": "/audio/a1/freizeit.mp3",
+      "audio_example": "/audio/a1/in-der-freizeit-lese-ich.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0605",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Exkursion",
+      "article": "die",
+      "plural": "Exkursionen",
+      "translation_tr": "gezi",
+      "translation_ru": "экскурсия",
+      "example_de": "Die Exkursion ist morgen.",
+      "example_tr": "Gezi yarın.",
+      "audio_word": "/audio/a1/exkursion.mp3",
+      "audio_example": "/audio/a1/die-exkursion-ist-morgen.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0606",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Sonne",
+      "article": "die",
+      "plural": "Sonnen",
+      "translation_tr": "güneş",
+      "translation_ru": "солнце",
+      "example_de": "Die Sonne scheint.",
+      "example_tr": "Güneş parlıyor.",
+      "audio_word": "/audio/a1/sonne.mp3",
+      "audio_example": "/audio/a1/die-sonne-scheint.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0607",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Post",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "posta",
+      "translation_ru": "почта",
+      "example_de": "Ich gehe zur Post.",
+      "example_tr": "Postaya gidiyorum.",
+      "audio_word": "/audio/a1/post.mp3",
+      "audio_example": "/audio/a1/ich-gehe-zur-post.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0608",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Pflanze",
+      "article": "die",
+      "plural": "Pflanzen",
+      "translation_tr": "bitki",
+      "translation_ru": "растение",
+      "example_de": "Die Pflanze braucht Wasser.",
+      "example_tr": "Bitkinin suya ihtiyacı var.",
+      "audio_word": "/audio/a1/pflanze.mp3",
+      "audio_example": "/audio/a1/die-pflanze-braucht-wasser.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0609",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Liste",
+      "article": "die",
+      "plural": "Listen",
+      "translation_tr": "liste",
+      "translation_ru": "список",
+      "example_de": "Ich schreibe eine Liste.",
+      "example_tr": "Bir liste yazıyorum.",
+      "audio_word": "/audio/a1/liste.mp3",
+      "audio_example": "/audio/a1/ich-schreibe-eine-liste.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0610",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Arm",
+      "article": "der",
+      "plural": "Arme",
+      "translation_tr": "kol",
+      "translation_ru": "рука",
+      "example_de": "Mein Arm tut weh.",
+      "example_tr": "Kolum ağrıyor.",
+      "audio_word": "/audio/a1/arm.mp3",
+      "audio_example": "/audio/a1/mein-arm-tut-weh.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0611",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Bein",
+      "article": "das",
+      "plural": "Beine",
+      "translation_tr": "bacak",
+      "translation_ru": "нога",
+      "example_de": "Mein Bein ist lang.",
+      "example_tr": "Bacağım uzun.",
+      "audio_word": "/audio/a1/bein.mp3",
+      "audio_example": "/audio/a1/mein-bein-ist-lang.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0612",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Bauch",
+      "article": "der",
+      "plural": "Bäuche",
+      "translation_tr": "karın",
+      "translation_ru": "живот",
+      "example_de": "Mein Bauch tut weh.",
+      "example_tr": "Karnım ağrıyor.",
+      "audio_word": "/audio/a1/bauch.mp3",
+      "audio_example": "/audio/a1/mein-bauch-tut-weh.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0613",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Blume",
+      "article": "die",
+      "plural": "Blumen",
+      "translation_tr": "çiçek",
+      "translation_ru": "цветок",
+      "example_de": "Die Blume ist schön.",
+      "example_tr": "Çiçek güzel.",
+      "audio_word": "/audio/a1/blume.mp3",
+      "audio_example": "/audio/a1/die-blume-ist-schoen.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0614",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Dorf",
+      "article": "das",
+      "plural": "Dörfer",
+      "translation_tr": "köy",
+      "translation_ru": "деревня",
+      "example_de": "Das Dorf ist klein.",
+      "example_tr": "Köy küçük.",
+      "audio_word": "/audio/a1/dorf.mp3",
+      "audio_example": "/audio/a1/das-dorf-ist-klein.mp3",
+      "tags": [
+        "place",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0615",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Meer",
+      "article": "das",
+      "plural": "Meere",
+      "translation_tr": "deniz",
+      "translation_ru": "море",
+      "example_de": "Das Meer ist blau.",
+      "example_tr": "Deniz mavi.",
+      "audio_word": "/audio/a1/meer.mp3",
+      "audio_example": "/audio/a1/das-meer-ist-blau.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0616",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hemd",
+      "article": "das",
+      "plural": "Hemden",
+      "translation_tr": "gömlek",
+      "translation_ru": "рубашка",
+      "example_de": "Das Hemd ist weiß.",
+      "example_tr": "Gömlek beyaz.",
+      "audio_word": "/audio/a1/hemd.mp3",
+      "audio_example": "/audio/a1/das-hemd-ist-weiss.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0617",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Kleid",
+      "article": "das",
+      "plural": "Kleider",
+      "translation_tr": "elbise",
+      "translation_ru": "платье",
+      "example_de": "Das Kleid ist rot.",
+      "example_tr": "Elbise kırmızı.",
+      "audio_word": "/audio/a1/kleid.mp3",
+      "audio_example": "/audio/a1/das-kleid-ist-rot.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0618",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Theater",
+      "article": "das",
+      "plural": "Theater",
+      "translation_tr": "tiyatro",
+      "translation_ru": "театр",
+      "example_de": "Wir gehen ins Theater.",
+      "example_tr": "Tiyatroya gidiyoruz.",
+      "audio_word": "/audio/a1/theater.mp3",
+      "audio_example": "/audio/a1/wir-gehen-ins-theater.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0619",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Fußball",
+      "article": "der",
+      "plural": "Fußbälle",
+      "translation_tr": "futbol",
+      "translation_ru": "футбол",
+      "example_de": "Ich spiele Fußball.",
+      "example_tr": "Futbol oynuyorum.",
+      "audio_word": "/audio/a1/fussball.mp3",
+      "audio_example": "/audio/a1/ich-spiele-fussball.mp3",
+      "tags": [
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0620",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mensch",
+      "article": "der",
+      "plural": "Menschen",
+      "translation_tr": "insan",
+      "translation_ru": "человек",
+      "example_de": "Der Mensch ist freundlich.",
+      "example_tr": "İnsan nazik.",
+      "audio_word": "/audio/a1/mensch.mp3",
+      "audio_example": "/audio/a1/der-mensch-ist-freundlich.mp3",
+      "tags": [
+        "people",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0621",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Moment",
+      "article": "der",
+      "plural": "Momente",
+      "translation_tr": "an",
+      "translation_ru": "момент",
+      "example_de": "Einen Moment, bitte.",
+      "example_tr": "Bir an lütfen.",
+      "audio_word": "/audio/a1/moment.mp3",
+      "audio_example": "/audio/a1/einen-moment-bitte.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0622",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Trainer",
+      "article": "der",
+      "plural": "Trainer",
+      "translation_tr": "antrenör",
+      "translation_ru": "тренер",
+      "example_de": "Der Trainer ist nett.",
+      "example_tr": "Antrenör nazik.",
+      "audio_word": "/audio/a1/trainer.mp3",
+      "audio_example": "/audio/a1/der-trainer-ist-nett.mp3",
+      "tags": [
+        "sport",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0623",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Dusche",
+      "article": "die",
+      "plural": "Duschen",
+      "translation_tr": "duş",
+      "translation_ru": "душ",
+      "example_de": "Die Dusche ist warm.",
+      "example_tr": "Duş sıcak.",
+      "audio_word": "/audio/a1/dusche.mp3",
+      "audio_example": "/audio/a1/die-dusche-ist-warm.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0624",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Farbe",
+      "article": "die",
+      "plural": "Farben",
+      "translation_tr": "renk",
+      "translation_ru": "цвет",
+      "example_de": "Die Farbe ist schön.",
+      "example_tr": "Renk güzel.",
+      "audio_word": "/audio/a1/farbe.mp3",
+      "audio_example": "/audio/a1/die-farbe-ist-schoen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0625",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Garage",
+      "article": "die",
+      "plural": "Garagen",
+      "translation_tr": "garaj",
+      "translation_ru": "гараж",
+      "example_de": "Die Garage ist voll.",
+      "example_tr": "Garaj dolu.",
+      "audio_word": "/audio/a1/garage.mp3",
+      "audio_example": "/audio/a1/die-garage-ist-voll.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0626",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gitarre",
+      "article": "die",
+      "plural": "Gitarren",
+      "translation_tr": "gitar",
+      "translation_ru": "гитара",
+      "example_de": "Ich spiele Gitarre.",
+      "example_tr": "Gitar çalıyorum.",
+      "audio_word": "/audio/a1/gitarre.mp3",
+      "audio_example": "/audio/a1/ich-spiele-gitarre.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0627",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hauptstadt",
+      "article": "die",
+      "plural": "Hauptstädte",
+      "translation_tr": "başkent",
+      "translation_ru": "столица",
+      "example_de": "Berlin ist die Hauptstadt.",
+      "example_tr": "Berlin başkenttir.",
+      "audio_word": "/audio/a1/hauptstadt.mp3",
+      "audio_example": "/audio/a1/berlin-ist-die-hauptstadt.mp3",
+      "tags": [
+        "place",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0628",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hausaufgabe",
+      "article": "die",
+      "plural": "Hausaufgaben",
+      "translation_tr": "ödev",
+      "translation_ru": "домашнее задание",
+      "example_de": "Ich mache Hausaufgaben.",
+      "example_tr": "Ödev yapıyorum.",
+      "audio_word": "/audio/a1/hausaufgabe.mp3",
+      "audio_example": "/audio/a1/ich-mache-hausaufgaben.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0629",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Klasse",
+      "article": "die",
+      "plural": "Klassen",
+      "translation_tr": "sınıf",
+      "translation_ru": "класс",
+      "example_de": "Die Klasse beginnt um neun.",
+      "example_tr": "Sınıf dokuzda başlıyor.",
+      "audio_word": "/audio/a1/klasse.mp3",
+      "audio_example": "/audio/a1/die-klasse-beginnt-um-neun.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0630",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Zigarette",
+      "article": "die",
+      "plural": "Zigaretten",
+      "translation_tr": "sigara",
+      "translation_ru": "сигарета",
+      "example_de": "Er raucht eine Zigarette.",
+      "example_tr": "Sigara içiyor.",
+      "audio_word": "/audio/a1/zigarette.mp3",
+      "audio_example": "/audio/a1/er-raucht-eine-zigarette.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0631",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Zeitung",
+      "article": "die",
+      "plural": "Zeitungen",
+      "translation_tr": "gazete",
+      "translation_ru": "газета",
+      "example_de": "Ich lese die Zeitung.",
+      "example_tr": "Gazete okuyorum.",
+      "audio_word": "/audio/a1/zeitung.mp3",
+      "audio_example": "/audio/a1/ich-lese-die-zeitung.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0632",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Kaufhaus",
+      "article": "das",
+      "plural": "Kaufhäuser",
+      "translation_tr": "mağaza",
+      "translation_ru": "универмаг",
+      "example_de": "Das Kaufhaus ist groß.",
+      "example_tr": "Mağaza büyük.",
+      "audio_word": "/audio/a1/kaufhaus.mp3",
+      "audio_example": "/audio/a1/das-kaufhaus-ist-gross.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0633",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Joghurt",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "yoğurt",
+      "translation_ru": "йогурт",
+      "example_de": "Ich esse Joghurt.",
+      "example_tr": "Yoğurt yiyorum.",
+      "audio_word": "/audio/a1/joghurt.mp3",
+      "audio_example": "/audio/a1/ich-esse-joghurt.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0634",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Pullover",
+      "article": "der",
+      "plural": "Pullover",
+      "translation_tr": "kazak",
+      "translation_ru": "свитер",
+      "example_de": "Der Pullover ist warm.",
+      "example_tr": "Kazak sıcak.",
+      "audio_word": "/audio/a1/pullover.mp3",
+      "audio_example": "/audio/a1/der-pullover-ist-warm.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0635",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Rock",
+      "article": "der",
+      "plural": "Röcke",
+      "translation_tr": "etek",
+      "translation_ru": "юбка",
+      "example_de": "Der Rock ist blau.",
+      "example_tr": "Etek mavi.",
+      "audio_word": "/audio/a1/rock.mp3",
+      "audio_example": "/audio/a1/der-rock-ist-blau.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0636",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Schreibtisch",
+      "article": "der",
+      "plural": "Schreibtische",
+      "translation_tr": "yazı masası",
+      "translation_ru": "письменный стол",
+      "example_de": "Der Schreibtisch ist neu.",
+      "example_tr": "Yazı masası yeni.",
+      "audio_word": "/audio/a1/schreibtisch.mp3",
+      "audio_example": "/audio/a1/der-schreibtisch-ist-neu.mp3",
+      "tags": [
+        "home",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0637",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Schwimmbad",
+      "article": "das",
+      "plural": "Schwimmbäder",
+      "translation_tr": "yüzme havuzu",
+      "translation_ru": "бассейн",
+      "example_de": "Das Schwimmbad ist offen.",
+      "example_tr": "Yüzme havuzu açık.",
+      "audio_word": "/audio/a1/schwimmbad.mp3",
+      "audio_example": "/audio/a1/das-schwimmbad-ist-offen.mp3",
+      "tags": [
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0638",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Polizist",
+      "article": "der",
+      "plural": "Polizisten",
+      "translation_tr": "polis",
+      "translation_ru": "полицейский",
+      "example_de": "Der Polizist hilft uns.",
+      "example_tr": "Polis bize yardım ediyor.",
+      "audio_word": "/audio/a1/polizist.mp3",
+      "audio_example": "/audio/a1/der-polizist-hilft-uns.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0639",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Patient",
+      "article": "der",
+      "plural": "Patienten",
+      "translation_tr": "hasta",
+      "translation_ru": "пациент",
+      "example_de": "Der Patient wartet.",
+      "example_tr": "Hasta bekliyor.",
+      "audio_word": "/audio/a1/patient.mp3",
+      "audio_example": "/audio/a1/der-patient-wartet.mp3",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0640",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Partner",
+      "article": "der",
+      "plural": "Partner",
+      "translation_tr": "partner",
+      "translation_ru": "партнёр",
+      "example_de": "Mein Partner ist nett.",
+      "example_tr": "Partnerim nazik.",
+      "audio_word": "/audio/a1/partner.mp3",
+      "audio_example": "/audio/a1/mein-partner-ist-nett.mp3",
+      "tags": [
+        "people",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0641",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Kultur",
+      "article": "die",
+      "plural": "Kulturen",
+      "translation_tr": "kültür",
+      "translation_ru": "культура",
+      "example_de": "Die Kultur ist interessant.",
+      "example_tr": "Kültür ilginç.",
+      "audio_word": "/audio/a1/kultur.mp3",
+      "audio_example": "/audio/a1/die-kultur-ist-interessant.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0642",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Medizin",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "tıp/ilaç",
+      "translation_ru": "медицина",
+      "example_de": "Sie studiert Medizin.",
+      "example_tr": "Tıp okuyor.",
+      "audio_word": "/audio/a1/medizin.mp3",
+      "audio_example": "/audio/a1/sie-studiert-medizin.mp3",
+      "tags": [
+        "health",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0643",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Meinung",
+      "article": "die",
+      "plural": "Meinungen",
+      "translation_tr": "görüş",
+      "translation_ru": "мнение",
+      "example_de": "Das ist meine Meinung.",
+      "example_tr": "Bu benim görüşüm.",
+      "audio_word": "/audio/a1/meinung.mp3",
+      "audio_example": "/audio/a1/das-ist-meine-meinung.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0644",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mineralwasser",
+      "article": "das",
+      "plural": null,
+      "translation_tr": "maden suyu",
+      "translation_ru": "минеральная вода",
+      "example_de": "Ein Mineralwasser, bitte.",
+      "example_tr": "Bir maden suyu lütfen.",
+      "audio_word": "/audio/a1/mineralwasser.mp3",
+      "audio_example": "/audio/a1/ein-mineralwasser-bitte.mp3",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0645",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Regen",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "yağmur",
+      "translation_ru": "дождь",
+      "example_de": "Es gibt Regen.",
+      "example_tr": "Yağmur var.",
+      "audio_word": "/audio/a1/regen.mp3",
+      "audio_example": "/audio/a1/es-gibt-regen.mp3",
+      "tags": [
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0646",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Wind",
+      "article": "der",
+      "plural": "Winde",
+      "translation_tr": "rüzgar",
+      "translation_ru": "ветер",
+      "example_de": "Der Wind ist stark.",
+      "example_tr": "Rüzgar güçlü.",
+      "audio_word": "/audio/a1/wind.mp3",
+      "audio_example": "/audio/a1/der-wind-ist-stark.mp3",
+      "tags": [
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0647",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Durst",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "susuzluk",
+      "translation_ru": "жажда",
+      "example_de": "Ich habe Durst.",
+      "example_tr": "Susadım.",
+      "audio_word": "/audio/a1/durst.mp3",
+      "audio_example": "/audio/a1/ich-habe-durst.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0648",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Schaf",
+      "article": "das",
+      "plural": "Schafe",
+      "translation_tr": "koyun",
+      "translation_ru": "овца",
+      "example_de": "Das Schaf ist weiß.",
+      "example_tr": "Koyun beyaz.",
+      "audio_word": "/audio/a1/schaf.mp3",
+      "audio_example": "/audio/a1/das-schaf-ist-weiss.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0649",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Wein",
+      "article": "der",
+      "plural": "Weine",
+      "translation_tr": "şarap",
+      "translation_ru": "вино",
+      "example_de": "Der Wein ist teuer.",
+      "example_tr": "Şarap pahalı.",
+      "audio_word": "/audio/a1/wein.mp3",
+      "audio_example": "/audio/a1/der-wein-ist-teuer.mp3",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0650",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gärtner",
+      "article": "der",
+      "plural": "Gärtner",
+      "translation_tr": "bahçıvan",
+      "translation_ru": "садовник",
+      "example_de": "Der Gärtner arbeitet im Garten.",
+      "example_tr": "Bahçıvan bahçede çalışıyor.",
+      "audio_word": "/audio/a1/gaertner.mp3",
+      "audio_example": "/audio/a1/der-gaertner-arbeitet-im-garten.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0651",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Feier",
+      "article": "die",
+      "plural": "Feiern",
+      "translation_tr": "kutlama",
+      "translation_ru": "праздник",
+      "example_de": "Die Feier ist schön.",
+      "example_tr": "Kutlama güzel.",
+      "audio_word": "/audio/a1/feier.mp3",
+      "audio_example": "/audio/a1/die-feier-ist-schoen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0652",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Fest",
+      "article": "das",
+      "plural": "Feste",
+      "translation_tr": "festival/bayram",
+      "translation_ru": "праздник",
+      "example_de": "Das Fest ist heute.",
+      "example_tr": "Festival bugün.",
+      "audio_word": "/audio/a1/fest.mp3",
+      "audio_example": "/audio/a1/das-fest-ist-heute.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0653",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gespräch",
+      "article": "das",
+      "plural": "Gespräche",
+      "translation_tr": "konuşma",
+      "translation_ru": "разговор",
+      "example_de": "Das Gespräch ist lang.",
+      "example_tr": "Konuşma uzun.",
+      "audio_word": "/audio/a1/gespraech.mp3",
+      "audio_example": "/audio/a1/das-gespraech-ist-lang.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0654",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Glück",
+      "article": "das",
+      "plural": null,
+      "translation_tr": "şans/mutluluk",
+      "translation_ru": "счастье",
+      "example_de": "Viel Glück!",
+      "example_tr": "İyi şanslar!",
+      "audio_word": "/audio/a1/glueck.mp3",
+      "audio_example": "/audio/a1/viel-glueck.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0655",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Grund",
+      "article": "der",
+      "plural": "Gründe",
+      "translation_tr": "sebep",
+      "translation_ru": "причина",
+      "example_de": "Das ist der Grund.",
+      "example_tr": "Bu sebep.",
+      "audio_word": "/audio/a1/grund.mp3",
+      "audio_example": "/audio/a1/das-ist-der-grund.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0656",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gruß",
+      "article": "der",
+      "plural": "Grüße",
+      "translation_tr": "selam",
+      "translation_ru": "привет",
+      "example_de": "Viele Grüße!",
+      "example_tr": "Selamlar!",
+      "audio_word": "/audio/a1/gruss.mp3",
+      "audio_example": "/audio/a1/viele-gruesse.mp3",
+      "tags": [
+        "greeting",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0657",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gürtel",
+      "article": "der",
+      "plural": "Gürtel",
+      "translation_tr": "kemer",
+      "translation_ru": "ремень",
+      "example_de": "Der Gürtel ist schwarz.",
+      "example_tr": "Kemer siyah.",
+      "audio_word": "/audio/a1/guertel.mp3",
+      "audio_example": "/audio/a1/der-guertel-ist-schwarz.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0658",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Bild",
+      "article": "das",
+      "plural": "Bilder",
+      "translation_tr": "resim",
+      "translation_ru": "картина",
+      "example_de": "Das Bild ist schön.",
+      "example_tr": "Resim güzel.",
+      "audio_word": "/audio/a1/bild.mp3",
+      "audio_example": "/audio/a1/das-bild-ist-schoen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0659",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Diplom",
+      "article": "das",
+      "plural": "Diplome",
+      "translation_tr": "diploma",
+      "translation_ru": "диплом",
+      "example_de": "Ich habe ein Diplom.",
+      "example_tr": "Diplomum var.",
+      "audio_word": "/audio/a1/diplom.mp3",
+      "audio_example": "/audio/a1/ich-habe-ein-diplom.mp3",
+      "tags": [
+        "school",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0660",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mietpreis",
+      "article": "der",
+      "plural": "Mietpreise",
+      "translation_tr": "kira fiyatı",
+      "translation_ru": "арендная плата",
+      "example_de": "Der Mietpreis ist hoch.",
+      "example_tr": "Kira fiyatı yüksek.",
+      "audio_word": "/audio/a1/mietpreis.mp3",
+      "audio_example": "/audio/a1/der-mietpreis-ist-hoch.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0661",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Note",
+      "article": "die",
+      "plural": "Noten",
+      "translation_tr": "not",
+      "translation_ru": "оценка",
+      "example_de": "Die Note ist gut.",
+      "example_tr": "Not iyi.",
+      "audio_word": "/audio/a1/note.mp3",
+      "audio_example": "/audio/a1/die-note-ist-gut.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0662",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Nase",
+      "article": "die",
+      "plural": "Nasen",
+      "translation_tr": "burun",
+      "translation_ru": "нос",
+      "example_de": "Meine Nase ist kalt.",
+      "example_tr": "Burnum soğuk.",
+      "audio_word": "/audio/a1/nase.mp3",
+      "audio_example": "/audio/a1/meine-nase-ist-kalt.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0663",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Ohr",
+      "article": "das",
+      "plural": "Ohren",
+      "translation_tr": "kulak",
+      "translation_ru": "ухо",
+      "example_de": "Mein Ohr tut weh.",
+      "example_tr": "Kulağım ağrıyor.",
+      "audio_word": "/audio/a1/ohr.mp3",
+      "audio_example": "/audio/a1/mein-ohr-tut-weh.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0664",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mund",
+      "article": "der",
+      "plural": "Münder",
+      "translation_tr": "ağız",
+      "translation_ru": "рот",
+      "example_de": "Mein Mund ist trocken.",
+      "example_tr": "Ağzım kuru.",
+      "audio_word": "/audio/a1/mund.mp3",
+      "audio_example": "/audio/a1/mein-mund-ist-trocken.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0665",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Finger",
+      "article": "der",
+      "plural": "Finger",
+      "translation_tr": "parmak",
+      "translation_ru": "палец",
+      "example_de": "Mein Finger ist lang.",
+      "example_tr": "Parmağım uzun.",
+      "audio_word": "/audio/a1/finger.mp3",
+      "audio_example": "/audio/a1/mein-finger-ist-lang.mp3",
+      "tags": [
+        "body",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0666",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Becher",
+      "article": "der",
+      "plural": "Becher",
+      "translation_tr": "bardak",
+      "translation_ru": "стакан",
+      "example_de": "Der Becher ist voll.",
+      "example_tr": "Bardak dolu.",
+      "audio_word": "/audio/a1/becher.mp3",
+      "audio_example": "/audio/a1/der-becher-ist-voll.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0667",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Ausgang",
+      "article": "der",
+      "plural": "Ausgänge",
+      "translation_tr": "çıkış",
+      "translation_ru": "выход",
+      "example_de": "Der Ausgang ist dort.",
+      "example_tr": "Çıkış orada.",
+      "audio_word": "/audio/a1/ausgang.mp3",
+      "audio_example": "/audio/a1/der-ausgang-ist-dort.mp3",
+      "tags": [
+        "place",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0668",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Eingang",
+      "article": "der",
+      "plural": "Eingänge",
+      "translation_tr": "giriş",
+      "translation_ru": "вход",
+      "example_de": "Der Eingang ist links.",
+      "example_tr": "Giriş solda.",
+      "audio_word": "/audio/a1/eingang.mp3",
+      "audio_example": "/audio/a1/der-eingang-ist-links.mp3",
+      "tags": [
+        "place",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0669",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Einkauf",
+      "article": "der",
+      "plural": "Einkäufe",
+      "translation_tr": "alışveriş",
+      "translation_ru": "покупка",
+      "example_de": "Der Einkauf dauert lange.",
+      "example_tr": "Alışveriş uzun sürüyor.",
+      "audio_word": "/audio/a1/einkauf.mp3",
+      "audio_example": "/audio/a1/der-einkauf-dauert-lange.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0670",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Ausländer",
+      "article": "der",
+      "plural": "Ausländer",
+      "translation_tr": "yabancı",
+      "translation_ru": "иностранец",
+      "example_de": "Er ist Ausländer.",
+      "example_tr": "O yabancı.",
+      "audio_word": "/audio/a1/auslaender.mp3",
+      "audio_example": "/audio/a1/er-ist-auslaender.mp3",
+      "tags": [
+        "people",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0671",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Badewanne",
+      "article": "die",
+      "plural": "Badewannen",
+      "translation_tr": "küvet",
+      "translation_ru": "ванна",
+      "example_de": "Die Badewanne ist groß.",
+      "example_tr": "Küvet büyük.",
+      "audio_word": "/audio/a1/badewanne.mp3",
+      "audio_example": "/audio/a1/die-badewanne-ist-gross.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0672",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Badezimmer",
+      "article": "das",
+      "plural": "Badezimmer",
+      "translation_tr": "banyo",
+      "translation_ru": "ванная",
+      "example_de": "Das Badezimmer ist sauber.",
+      "example_tr": "Banyo temiz.",
+      "audio_word": "/audio/a1/badezimmer.mp3",
+      "audio_example": "/audio/a1/das-badezimmer-ist-sauber.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0673",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Drucker",
+      "article": "der",
+      "plural": "Drucker",
+      "translation_tr": "yazıcı",
+      "translation_ru": "принтер",
+      "example_de": "Der Drucker funktioniert nicht.",
+      "example_tr": "Yazıcı çalışmıyor.",
+      "audio_word": "/audio/a1/drucker.mp3",
+      "audio_example": "/audio/a1/der-drucker-funktioniert-nicht.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0674",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "anfragen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sormak",
+      "translation_ru": "спрашивать",
+      "example_de": "Ich möchte etwas anfragen.",
+      "example_tr": "Bir şey sormak istiyorum.",
+      "audio_word": "/audio/a1/anfragen.mp3",
+      "audio_example": "/audio/a1/ich-moechte-etwas-anfragen.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0675",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "benutzen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kullanmak",
+      "translation_ru": "использовать",
+      "example_de": "Ich benutze den Computer.",
+      "example_tr": "Bilgisayarı kullanıyorum.",
+      "audio_word": "/audio/a1/benutzen.mp3",
+      "audio_example": "/audio/a1/ich-benutze-den-computer.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0676",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "bringen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "getirmek",
+      "translation_ru": "приносить",
+      "example_de": "Ich bringe das Buch.",
+      "example_tr": "Kitabı getiriyorum.",
+      "audio_word": "/audio/a1/bringen.mp3",
+      "audio_example": "/audio/a1/ich-bringe-das-buch.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0677",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "folgen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "takip etmek",
+      "translation_ru": "следовать",
+      "example_de": "Bitte folgen Sie mir.",
+      "example_tr": "Lütfen beni takip edin.",
+      "audio_word": "/audio/a1/folgen.mp3",
+      "audio_example": "/audio/a1/bitte-folgen-sie-mir.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0678",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "gehören",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ait olmak",
+      "translation_ru": "принадлежать",
+      "example_de": "Das gehört mir.",
+      "example_tr": "Bu bana ait.",
+      "audio_word": "/audio/a1/gehoeren.mp3",
+      "audio_example": "/audio/a1/das-gehoert-mir.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0679",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "hoffen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ummak",
+      "translation_ru": "надеяться",
+      "example_de": "Ich hoffe auf gutes Wetter.",
+      "example_tr": "İyi hava umarım.",
+      "audio_word": "/audio/a1/hoffen.mp3",
+      "audio_example": "/audio/a1/ich-hoffe-auf-gutes-wetter.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0680",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "informieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bilgilendirmek",
+      "translation_ru": "информировать",
+      "example_de": "Ich informiere dich später.",
+      "example_tr": "Seni sonra bilgilendiririm.",
+      "audio_word": "/audio/a1/informieren.mp3",
+      "audio_example": "/audio/a1/ich-informiere-dich-spaeter.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0681",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "lachen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "gülmek",
+      "translation_ru": "смеяться",
+      "example_de": "Die Kinder lachen.",
+      "example_tr": "Çocuklar gülüyor.",
+      "audio_word": "/audio/a1/lachen.mp3",
+      "audio_example": "/audio/a1/die-kinder-lachen.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0682",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "stellen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "koymak/sormak",
+      "translation_ru": "ставить",
+      "example_de": "Ich stelle eine Frage.",
+      "example_tr": "Bir soru soruyorum.",
+      "audio_word": "/audio/a1/stellen.mp3",
+      "audio_example": "/audio/a1/ich-stelle-eine-frage.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0683",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "verdienen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kazanmak",
+      "translation_ru": "зарабатывать",
+      "example_de": "Ich verdiene genug Geld.",
+      "example_tr": "Yeterli para kazanıyorum.",
+      "audio_word": "/audio/a1/verdienen.mp3",
+      "audio_example": "/audio/a1/ich-verdiene-genug-geld.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0684",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "vergessen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "unutmak",
+      "translation_ru": "забывать",
+      "example_de": "Ich vergesse oft den Schlüssel.",
+      "example_tr": "Anahtarı sık unuturum.",
+      "audio_word": "/audio/a1/vergessen.mp3",
+      "audio_example": "/audio/a1/ich-vergesse-oft-den-schluessel.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0685",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "wiederholen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tekrarlamak",
+      "translation_ru": "повторять",
+      "example_de": "Bitte wiederholen Sie das.",
+      "example_tr": "Lütfen tekrarlayın.",
+      "audio_word": "/audio/a1/wiederholen.mp3",
+      "audio_example": "/audio/a1/bitte-wiederholen-sie-das.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0686",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "bleiben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kalmak",
+      "translation_ru": "оставаться",
+      "example_de": "Ich bleibe zu Hause.",
+      "example_tr": "Evde kalıyorum.",
+      "audio_word": "/audio/a1/bleiben.mp3",
+      "audio_example": "/audio/a1/ich-bleibe-zu-hause.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0687",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "bitten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "rica etmek",
+      "translation_ru": "просить",
+      "example_de": "Ich bitte um Hilfe.",
+      "example_tr": "Yardım rica ediyorum.",
+      "audio_word": "/audio/a1/bitten.mp3",
+      "audio_example": "/audio/a1/ich-bitte-um-hilfe.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0688",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "danken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "teşekkür etmek",
+      "translation_ru": "благодарить",
+      "example_de": "Ich danke dir.",
+      "example_tr": "Sana teşekkür ederim.",
+      "audio_word": "/audio/a1/danken.mp3",
+      "audio_example": "/audio/a1/ich-danke-dir.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0689",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "enden",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bitmek",
+      "translation_ru": "заканчиваться",
+      "example_de": "Der Film endet um zehn.",
+      "example_tr": "Film onda bitiyor.",
+      "audio_word": "/audio/a1/enden.mp3",
+      "audio_example": "/audio/a1/der-film-endet-um-zehn.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0690",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "entschuldigen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "özür dilemek",
+      "translation_ru": "извиняться",
+      "example_de": "Entschuldigen Sie bitte!",
+      "example_tr": "Özür dilerim!",
+      "audio_word": "/audio/a1/entschuldigen.mp3",
+      "audio_example": "/audio/a1/entschuldigen-sie-bitte.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0691",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "erklären",
+      "article": null,
+      "plural": null,
+      "translation_tr": "açıklamak",
+      "translation_ru": "объяснять",
+      "example_de": "Kannst du das erklären?",
+      "example_tr": "Bunu açıklayabilir misin?",
+      "audio_word": "/audio/a1/erklaeren.mp3",
+      "audio_example": "/audio/a1/kannst-du-das-erklaeren.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0692",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "freuen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sevinmek",
+      "translation_ru": "радоваться",
+      "example_de": "Ich freue mich auf dich.",
+      "example_tr": "Seni görmek için sabırsızlanıyorum.",
+      "audio_word": "/audio/a1/freuen.mp3",
+      "audio_example": "/audio/a1/ich-freue-mich-auf-dich.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0693",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "glauben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "inanmak",
+      "translation_ru": "верить",
+      "example_de": "Ich glaube dir.",
+      "example_tr": "Sana inanıyorum.",
+      "audio_word": "/audio/a1/glauben.mp3",
+      "audio_example": "/audio/a1/ich-glaube-dir.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0694",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "halten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tutmak/durmak",
+      "translation_ru": "держать",
+      "example_de": "Bitte halten Sie an.",
+      "example_tr": "Lütfen durun.",
+      "audio_word": "/audio/a1/halten.mp3",
+      "audio_example": "/audio/a1/bitte-halten-sie-an.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0695",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "klingen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ses vermek",
+      "translation_ru": "звучать",
+      "example_de": "Das klingt gut.",
+      "example_tr": "Bu iyi geliyor.",
+      "audio_word": "/audio/a1/klingen.mp3",
+      "audio_example": "/audio/a1/das-klingt-gut.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0696",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "lassen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bırakmak",
+      "translation_ru": "оставлять",
+      "example_de": "Lass mich in Ruhe.",
+      "example_tr": "Beni rahat bırak.",
+      "audio_word": "/audio/a1/lassen.mp3",
+      "audio_example": "/audio/a1/lass-mich-in-ruhe.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0697",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "legen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "koymak",
+      "translation_ru": "класть",
+      "example_de": "Ich lege das Buch auf den Tisch.",
+      "example_tr": "Kitabı masaya koyuyorum.",
+      "audio_word": "/audio/a1/legen.mp3",
+      "audio_example": "/audio/a1/ich-lege-das-buch-auf-den-tisch.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0698",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "liegen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yatmak/uzanmak",
+      "translation_ru": "лежать",
+      "example_de": "Das Buch liegt auf dem Tisch.",
+      "example_tr": "Kitap masanın üstünde.",
+      "audio_word": "/audio/a1/liegen.mp3",
+      "audio_example": "/audio/a1/das-buch-liegt-auf-dem-tisch.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0699",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "passieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "olmak",
+      "translation_ru": "происходить",
+      "example_de": "Was ist passiert?",
+      "example_tr": "Ne oldu?",
+      "audio_word": "/audio/a1/passieren.mp3",
+      "audio_example": "/audio/a1/was-ist-passiert.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0700",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "rauchen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sigara içmek",
+      "translation_ru": "курить",
+      "example_de": "Er raucht nicht.",
+      "example_tr": "Sigara içmiyor.",
+      "audio_word": "/audio/a1/rauchen.mp3",
+      "audio_example": "/audio/a1/er-raucht-nicht.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0701",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "regnen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yağmur yağmak",
+      "translation_ru": "идти (о дожде)",
+      "example_de": "Es regnet heute.",
+      "example_tr": "Bugün yağmur yağıyor.",
+      "audio_word": "/audio/a1/regnen.mp3",
+      "audio_example": "/audio/a1/es-regnet-heute.mp3",
+      "tags": [
+        "verb",
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0702",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "schauen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bakmak",
+      "translation_ru": "смотреть",
+      "example_de": "Ich schaue fern.",
+      "example_tr": "Televizyon izliyorum.",
+      "audio_word": "/audio/a1/schauen.mp3",
+      "audio_example": "/audio/a1/ich-schaue-fern.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0703",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "springen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "zıplamak",
+      "translation_ru": "прыгать",
+      "example_de": "Die Kinder springen.",
+      "example_tr": "Çocuklar zıplıyor.",
+      "audio_word": "/audio/a1/springen.mp3",
+      "audio_example": "/audio/a1/die-kinder-springen.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0704",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "tragen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "taşımak/giymek",
+      "translation_ru": "носить",
+      "example_de": "Ich trage eine Jacke.",
+      "example_tr": "Ceket giyiyorum.",
+      "audio_word": "/audio/a1/tragen.mp3",
+      "audio_example": "/audio/a1/ich-trage-eine-jacke.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0705",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "treiben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yapmak/sürmek",
+      "translation_ru": "заниматься",
+      "example_de": "Ich treibe Sport.",
+      "example_tr": "Spor yapıyorum.",
+      "audio_word": "/audio/a1/treiben.mp3",
+      "audio_example": "/audio/a1/ich-treibe-sport.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0706",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "tun",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yapmak",
+      "translation_ru": "делать",
+      "example_de": "Was tust du?",
+      "example_tr": "Ne yapıyorsun?",
+      "audio_word": "/audio/a1/tun.mp3",
+      "audio_example": "/audio/a1/was-tust-du.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0707",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "verkaufen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "satmak",
+      "translation_ru": "продавать",
+      "example_de": "Er verkauft Autos.",
+      "example_tr": "Araba satıyor.",
+      "audio_word": "/audio/a1/verkaufen.mp3",
+      "audio_example": "/audio/a1/er-verkauft-autos.mp3",
+      "tags": [
+        "verb",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0708",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "verletzen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "incitmek",
+      "translation_ru": "ранить",
+      "example_de": "Ich verletze mich nicht.",
+      "example_tr": "Kendimi incitmiyorum.",
+      "audio_word": "/audio/a1/verletzen.mp3",
+      "audio_example": "/audio/a1/ich-verletze-mich-nicht.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0709",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "verlieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kaybetmek",
+      "translation_ru": "терять",
+      "example_de": "Ich verliere oft den Schlüssel.",
+      "example_tr": "Anahtarı sık kaybederim.",
+      "audio_word": "/audio/a1/verlieren.mp3",
+      "audio_example": "/audio/a1/ich-verliere-oft-den-schluessel.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0710",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "parken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "park etmek",
+      "translation_ru": "парковать",
+      "example_de": "Ich parke das Auto hier.",
+      "example_tr": "Arabayı buraya park ediyorum.",
+      "audio_word": "/audio/a1/parken.mp3",
+      "audio_example": "/audio/a1/ich-parke-das-auto-hier.mp3",
+      "tags": [
+        "verb",
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0711",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "sparen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "biriktirmek",
+      "translation_ru": "копить",
+      "example_de": "Ich spare Geld.",
+      "example_tr": "Para biriktiriyorum.",
+      "audio_word": "/audio/a1/sparen.mp3",
+      "audio_example": "/audio/a1/ich-spare-geld.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0712",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "gewinnen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kazanmak",
+      "translation_ru": "выигрывать",
+      "example_de": "Wir gewinnen das Spiel.",
+      "example_tr": "Maçı kazanıyoruz.",
+      "audio_word": "/audio/a1/gewinnen.mp3",
+      "audio_example": "/audio/a1/wir-gewinnen-das-spiel.mp3",
+      "tags": [
+        "verb",
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0713",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "bequem",
+      "article": null,
+      "plural": null,
+      "translation_tr": "rahat",
+      "translation_ru": "удобный",
+      "example_de": "Das Sofa ist bequem.",
+      "example_tr": "Kanepe rahat.",
+      "audio_word": "/audio/a1/bequem.mp3",
+      "audio_example": "/audio/a1/das-sofa-ist-bequem.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0714",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "klar",
+      "article": null,
+      "plural": null,
+      "translation_tr": "açık/net",
+      "translation_ru": "ясный",
+      "example_de": "Das ist klar.",
+      "example_tr": "Bu açık.",
+      "audio_word": "/audio/a1/klar.mp3",
+      "audio_example": "/audio/a1/das-ist-klar.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0715",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "lustig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "komik",
+      "translation_ru": "смешной",
+      "example_de": "Der Film ist lustig.",
+      "example_tr": "Film komik.",
+      "audio_word": "/audio/a1/lustig.mp3",
+      "audio_example": "/audio/a1/der-film-ist-lustig.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0716",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "offiziell",
+      "article": null,
+      "plural": null,
+      "translation_tr": "resmi",
+      "translation_ru": "официальный",
+      "example_de": "Das ist offiziell.",
+      "example_tr": "Bu resmi.",
+      "audio_word": "/audio/a1/offiziell.mp3",
+      "audio_example": "/audio/a1/das-ist-offiziell.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0717",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "privat",
+      "article": null,
+      "plural": null,
+      "translation_tr": "özel",
+      "translation_ru": "частный",
+      "example_de": "Das ist privat.",
+      "example_tr": "Bu özel.",
+      "audio_word": "/audio/a1/privat.mp3",
+      "audio_example": "/audio/a1/das-ist-privat.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0718",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "informell",
+      "article": null,
+      "plural": null,
+      "translation_tr": "gayri resmi",
+      "translation_ru": "неформальный",
+      "example_de": "Das Treffen ist informell.",
+      "example_tr": "Toplantı gayri resmi.",
+      "audio_word": "/audio/a1/informell.mp3",
+      "audio_example": "/audio/a1/das-treffen-ist-informell.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0719",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "toll",
+      "article": null,
+      "plural": null,
+      "translation_tr": "harika",
+      "translation_ru": "отличный",
+      "example_de": "Das ist toll!",
+      "example_tr": "Bu harika!",
+      "audio_word": "/audio/a1/toll.mp3",
+      "audio_example": "/audio/a1/das-ist-toll.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0720",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "schwer",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ağır/zor",
+      "translation_ru": "тяжёлый",
+      "example_de": "Das ist schwer.",
+      "example_tr": "Bu zor.",
+      "audio_word": "/audio/a1/schwer.mp3",
+      "audio_example": "/audio/a1/das-ist-schwer.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0721",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "anders",
+      "article": null,
+      "plural": null,
+      "translation_tr": "farklı",
+      "translation_ru": "другой",
+      "example_de": "Das ist anders.",
+      "example_tr": "Bu farklı.",
+      "audio_word": "/audio/a1/anders.mp3",
+      "audio_example": "/audio/a1/das-ist-anders.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0722",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "beide",
+      "article": null,
+      "plural": null,
+      "translation_tr": "her ikisi",
+      "translation_ru": "оба",
+      "example_de": "Beide sind nett.",
+      "example_tr": "İkisi de nazik.",
+      "audio_word": "/audio/a1/beide.mp3",
+      "audio_example": "/audio/a1/beide-sind-nett.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0723",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "besonders",
+      "article": null,
+      "plural": null,
+      "translation_tr": "özellikle",
+      "translation_ru": "особенно",
+      "example_de": "Das ist besonders wichtig.",
+      "example_tr": "Bu özellikle önemli.",
+      "audio_word": "/audio/a1/besonders.mp3",
+      "audio_example": "/audio/a1/das-ist-besonders-wichtig.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0724",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "genau",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tam",
+      "translation_ru": "точно",
+      "example_de": "Das ist genau richtig.",
+      "example_tr": "Bu tam doğru.",
+      "audio_word": "/audio/a1/genau.mp3",
+      "audio_example": "/audio/a1/das-ist-genau-richtig.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0725",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "offen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "açık",
+      "translation_ru": "открытый",
+      "example_de": "Das Geschäft ist offen.",
+      "example_tr": "Dükkan açık.",
+      "audio_word": "/audio/a1/offen.mp3",
+      "audio_example": "/audio/a1/das-geschaeft-ist-offen.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0726",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "selbst",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kendi",
+      "translation_ru": "сам",
+      "example_de": "Ich mache es selbst.",
+      "example_tr": "Kendim yapıyorum.",
+      "audio_word": "/audio/a1/selbst.mp3",
+      "audio_example": "/audio/a1/ich-mache-es-selbst.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0727",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "sofort",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hemen",
+      "translation_ru": "сразу",
+      "example_de": "Komm sofort!",
+      "example_tr": "Hemen gel!",
+      "audio_word": "/audio/a1/sofort.mp3",
+      "audio_example": "/audio/a1/komm-sofort.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0728",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "weiter",
+      "article": null,
+      "plural": null,
+      "translation_tr": "devam",
+      "translation_ru": "дальше",
+      "example_de": "Geh weiter!",
+      "example_tr": "Devam et!",
+      "audio_word": "/audio/a1/weiter.mp3",
+      "audio_example": "/audio/a1/geh-weiter.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0729",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "wieder",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yine/tekrar",
+      "translation_ru": "снова",
+      "example_de": "Ich komme wieder.",
+      "example_tr": "Yine geliyorum.",
+      "audio_word": "/audio/a1/wieder.mp3",
+      "audio_example": "/audio/a1/ich-komme-wieder.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0730",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "gern",
+      "article": null,
+      "plural": null,
+      "translation_tr": "severek",
+      "translation_ru": "охотно",
+      "example_de": "Ich trinke gern Tee.",
+      "example_tr": "Çay içmeyi severim.",
+      "audio_word": "/audio/a1/gern.mp3",
+      "audio_example": "/audio/a1/ich-trinke-gern-tee.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0731",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "falsch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yanlış",
+      "translation_ru": "неправильный",
+      "example_de": "Das ist falsch.",
+      "example_tr": "Bu yanlış.",
+      "audio_word": "/audio/a1/falsch.mp3",
+      "audio_example": "/audio/a1/das-ist-falsch.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0732",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "faul",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tembel",
+      "translation_ru": "ленивый",
+      "example_de": "Er ist faul.",
+      "example_tr": "O tembel.",
+      "audio_word": "/audio/a1/faul.mp3",
+      "audio_example": "/audio/a1/er-ist-faul.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0733",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "ruhig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sakin",
+      "translation_ru": "спокойный",
+      "example_de": "Sei ruhig!",
+      "example_tr": "Sakin ol!",
+      "audio_word": "/audio/a1/ruhig.mp3",
+      "audio_example": "/audio/a1/sei-ruhig.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0734",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "sonnig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "güneşli",
+      "translation_ru": "солнечный",
+      "example_de": "Es ist sonnig.",
+      "example_tr": "Hava güneşli.",
+      "audio_word": "/audio/a1/sonnig.mp3",
+      "audio_example": "/audio/a1/es-ist-sonnig.mp3",
+      "tags": [
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0735",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "sympathisch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sempatik",
+      "translation_ru": "симпатичный",
+      "example_de": "Er ist sympathisch.",
+      "example_tr": "O sempatik.",
+      "audio_word": "/audio/a1/sympathisch.mp3",
+      "audio_example": "/audio/a1/er-ist-sympathisch.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0736",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "langweilig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sıkıcı",
+      "translation_ru": "скучный",
+      "example_de": "Der Film ist langweilig.",
+      "example_tr": "Film sıkıcı.",
+      "audio_word": "/audio/a1/langweilig.mp3",
+      "audio_example": "/audio/a1/der-film-ist-langweilig.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0737",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "seltsam",
+      "article": null,
+      "plural": null,
+      "translation_tr": "garip",
+      "translation_ru": "странный",
+      "example_de": "Das ist seltsam.",
+      "example_tr": "Bu garip.",
+      "audio_word": "/audio/a1/seltsam.mp3",
+      "audio_example": "/audio/a1/das-ist-seltsam.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0738",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "sicher",
+      "article": null,
+      "plural": null,
+      "translation_tr": "emin/güvenli",
+      "translation_ru": "уверенный",
+      "example_de": "Ich bin sicher.",
+      "example_tr": "Eminim.",
+      "audio_word": "/audio/a1/sicher.mp3",
+      "audio_example": "/audio/a1/ich-bin-sicher.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0739",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "dunkel",
+      "article": null,
+      "plural": null,
+      "translation_tr": "karanlık",
+      "translation_ru": "тёмный",
+      "example_de": "Es ist dunkel.",
+      "example_tr": "Hava karanlık.",
+      "audio_word": "/audio/a1/dunkel.mp3",
+      "audio_example": "/audio/a1/es-ist-dunkel.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0740",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "heiß",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sıcak",
+      "translation_ru": "горячий",
+      "example_de": "Das Wasser ist heiß.",
+      "example_tr": "Su sıcak.",
+      "audio_word": "/audio/a1/heiss.mp3",
+      "audio_example": "/audio/a1/das-wasser-ist-heiss.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0741",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "hart",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sert",
+      "translation_ru": "твёрдый",
+      "example_de": "Das Brot ist hart.",
+      "example_tr": "Ekmek sert.",
+      "audio_word": "/audio/a1/hart.mp3",
+      "audio_example": "/audio/a1/das-brot-ist-hart.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0742",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "hässlich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "çirkin",
+      "translation_ru": "уродливый",
+      "example_de": "Das ist hässlich.",
+      "example_tr": "Bu çirkin.",
+      "audio_word": "/audio/a1/haesslich.mp3",
+      "audio_example": "/audio/a1/das-ist-haesslich.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0743",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "jung",
+      "article": null,
+      "plural": null,
+      "translation_tr": "genç",
+      "translation_ru": "молодой",
+      "example_de": "Sie ist jung.",
+      "example_tr": "O genç.",
+      "audio_word": "/audio/a1/jung.mp3",
+      "audio_example": "/audio/a1/sie-ist-jung.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0744",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "klug",
+      "article": null,
+      "plural": null,
+      "translation_tr": "akıllı",
+      "translation_ru": "умный",
+      "example_de": "Er ist klug.",
+      "example_tr": "O akıllı.",
+      "audio_word": "/audio/a1/klug.mp3",
+      "audio_example": "/audio/a1/er-ist-klug.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0745",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "voll",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dolu",
+      "translation_ru": "полный",
+      "example_de": "Das Glas ist voll.",
+      "example_tr": "Bardak dolu.",
+      "audio_word": "/audio/a1/voll.mp3",
+      "audio_example": "/audio/a1/das-glas-ist-voll.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0746",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "unwichtig",
+      "article": null,
+      "plural": null,
+      "translation_tr": "önemsiz",
+      "translation_ru": "неважный",
+      "example_de": "Das ist unwichtig.",
+      "example_tr": "Bu önemsiz.",
+      "audio_word": "/audio/a1/unwichtig.mp3",
+      "audio_example": "/audio/a1/das-ist-unwichtig.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0747",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "gebraucht",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kullanılmış",
+      "translation_ru": "б/у",
+      "example_de": "Das Auto ist gebraucht.",
+      "example_tr": "Araba ikinci el.",
+      "audio_word": "/audio/a1/gebraucht.mp3",
+      "audio_example": "/audio/a1/das-auto-ist-gebraucht.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0748",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "bekannt",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tanınmış",
+      "translation_ru": "известный",
+      "example_de": "Er ist bekannt.",
+      "example_tr": "O tanınmış.",
+      "audio_word": "/audio/a1/bekannt.mp3",
+      "audio_example": "/audio/a1/er-ist-bekannt.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0749",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "geschlossen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kapalı",
+      "translation_ru": "закрытый",
+      "example_de": "Das Geschäft ist geschlossen.",
+      "example_tr": "Dükkan kapalı.",
+      "audio_word": "/audio/a1/geschlossen.mp3",
+      "audio_example": "/audio/a1/das-geschaeft-ist-geschlossen.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0750",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Adressat",
+      "article": "der",
+      "plural": "Adressaten",
+      "translation_tr": "muhatap",
+      "translation_ru": "адресат",
+      "example_de": "Der Adressat ist unbekannt.",
+      "example_tr": "Muhatap bilinmiyor.",
+      "audio_word": "/audio/a1/adressat.mp3",
+      "audio_example": "/audio/a1/der-adressat-ist-unbekannt.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0751",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Alkohol",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "alkol",
+      "translation_ru": "алкоголь",
+      "example_de": "Alkohol ist nicht erlaubt.",
+      "example_tr": "Alkole izin yok.",
+      "audio_word": "/audio/a1/alkohol.mp3",
+      "audio_example": "/audio/a1/alkohol-ist-nicht-erlaubt.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0752",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Alphabet",
+      "article": "das",
+      "plural": "Alphabete",
+      "translation_tr": "alfabe",
+      "translation_ru": "алфавит",
+      "example_de": "Das Alphabet hat 26 Buchstaben.",
+      "example_tr": "Alfabede 26 harf var.",
+      "audio_word": "/audio/a1/alphabet.mp3",
+      "audio_example": "/audio/a1/das-alphabet-hat-26-buchstaben.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0753",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Apartment",
+      "article": "das",
+      "plural": "Apartments",
+      "translation_tr": "apartman",
+      "translation_ru": "апартамент",
+      "example_de": "Das Apartment ist klein.",
+      "example_tr": "Apartman küçük.",
+      "audio_word": "/audio/a1/apartment.mp3",
+      "audio_example": "/audio/a1/das-apartment-ist-klein.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0754",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Apfelsaft",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "elma suyu",
+      "translation_ru": "яблочный сок",
+      "example_de": "Ich trinke Apfelsaft.",
+      "example_tr": "Elma suyu içiyorum.",
+      "audio_word": "/audio/a1/apfelsaft.mp3",
+      "audio_example": "/audio/a1/ich-trinke-apfelsaft.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0755",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Arbeiter",
+      "article": "der",
+      "plural": "Arbeiter",
+      "translation_tr": "işçi",
+      "translation_ru": "рабочий",
+      "example_de": "Der Arbeiter ist müde.",
+      "example_tr": "İşçi yorgun.",
+      "audio_word": "/audio/a1/arbeiter.mp3",
+      "audio_example": "/audio/a1/der-arbeiter-ist-muede.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0756",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Besuch",
+      "article": "der",
+      "plural": "Besuche",
+      "translation_tr": "ziyaret",
+      "translation_ru": "визит",
+      "example_de": "Der Besuch dauert eine Stunde.",
+      "example_tr": "Ziyaret bir saat sürüyor.",
+      "audio_word": "/audio/a1/besuch.mp3",
+      "audio_example": "/audio/a1/der-besuch-dauert-eine-stunde.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0757",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Bluse",
+      "article": "die",
+      "plural": "Blusen",
+      "translation_tr": "bluz",
+      "translation_ru": "блузка",
+      "example_de": "Die Bluse ist blau.",
+      "example_tr": "Bluz mavi.",
+      "audio_word": "/audio/a1/bluse.mp3",
+      "audio_example": "/audio/a1/die-bluse-ist-blau.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0758",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Brieffreund",
+      "article": "der",
+      "plural": "Brieffreunde",
+      "translation_tr": "mektup arkadaşı",
+      "translation_ru": "друг по переписке",
+      "example_de": "Ich habe einen Brieffreund.",
+      "example_tr": "Mektup arkadaşım var.",
+      "audio_word": "/audio/a1/brieffreund.mp3",
+      "audio_example": "/audio/a1/ich-habe-einen-brieffreund.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0759",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Buchstabe",
+      "article": "der",
+      "plural": "Buchstaben",
+      "translation_tr": "harf",
+      "translation_ru": "буква",
+      "example_de": "Der Buchstabe A ist rot.",
+      "example_tr": "A harfi kırmızı.",
+      "audio_word": "/audio/a1/buchstabe.mp3",
+      "audio_example": "/audio/a1/der-buchstabe-a-ist-rot.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0760",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Cent",
+      "article": "der",
+      "plural": "Cent",
+      "translation_tr": "sent",
+      "translation_ru": "цент",
+      "example_de": "Das kostet fünfzig Cent.",
+      "example_tr": "Bu elli sent.",
+      "audio_word": "/audio/a1/cent.mp3",
+      "audio_example": "/audio/a1/das-kostet-fuenfzig-cent.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0761",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Deutschkurs",
+      "article": "der",
+      "plural": "Deutschkurse",
+      "translation_tr": "Almanca kursu",
+      "translation_ru": "курс немецкого",
+      "example_de": "Ich besuche einen Deutschkurs.",
+      "example_tr": "Almanca kursuna gidiyorum.",
+      "audio_word": "/audio/a1/deutschkurs.mp3",
+      "audio_example": "/audio/a1/ich-besuche-einen-deutschkurs.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0762",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Deutschtest",
+      "article": "der",
+      "plural": "Deutschtests",
+      "translation_tr": "Almanca testi",
+      "translation_ru": "тест по немецкому",
+      "example_de": "Der Deutschtest ist morgen.",
+      "example_tr": "Almanca testi yarın.",
+      "audio_word": "/audio/a1/deutschtest.mp3",
+      "audio_example": "/audio/a1/der-deutschtest-ist-morgen.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0763",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Deutschunterricht",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "Almanca dersi",
+      "translation_ru": "урок немецкого",
+      "example_de": "Der Deutschunterricht beginnt um neun.",
+      "example_tr": "Almanca dersi dokuzda başlıyor.",
+      "audio_word": "/audio/a1/deutschunterricht.mp3",
+      "audio_example": "/audio/a1/der-deutschunterricht-beginnt-um-neun.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0764",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Flug",
+      "article": "der",
+      "plural": "Flüge",
+      "translation_tr": "uçuş",
+      "translation_ru": "полёт",
+      "example_de": "Der Flug ist pünktlich.",
+      "example_tr": "Uçuş zamanında.",
+      "audio_word": "/audio/a1/flug.mp3",
+      "audio_example": "/audio/a1/der-flug-ist-puenktlich.mp3",
+      "tags": [
+        "travel",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0765",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Fluss",
+      "article": "der",
+      "plural": "Flüsse",
+      "translation_tr": "nehir",
+      "translation_ru": "река",
+      "example_de": "Der Fluss ist lang.",
+      "example_tr": "Nehir uzun.",
+      "audio_word": "/audio/a1/fluss.mp3",
+      "audio_example": "/audio/a1/der-fluss-ist-lang.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0766",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Formel",
+      "article": "die",
+      "plural": "Formeln",
+      "translation_tr": "formül",
+      "translation_ru": "формула",
+      "example_de": "Die Formel ist einfach.",
+      "example_tr": "Formül basit.",
+      "audio_word": "/audio/a1/formel.mp3",
+      "audio_example": "/audio/a1/die-formel-ist-einfach.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0767",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Fremdsprache",
+      "article": "die",
+      "plural": "Fremdsprachen",
+      "translation_tr": "yabancı dil",
+      "translation_ru": "иностранный язык",
+      "example_de": "Englisch ist eine Fremdsprache.",
+      "example_tr": "İngilizce bir yabancı dil.",
+      "audio_word": "/audio/a1/fremdsprache.mp3",
+      "audio_example": "/audio/a1/englisch-ist-eine-fremdsprache.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0768",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Friseursalon",
+      "article": "der",
+      "plural": "Friseursalons",
+      "translation_tr": "kuaför",
+      "translation_ru": "парикмахерская",
+      "example_de": "Ich gehe zum Friseursalon.",
+      "example_tr": "Kuaföre gidiyorum.",
+      "audio_word": "/audio/a1/friseursalon.mp3",
+      "audio_example": "/audio/a1/ich-gehe-zum-friseursalon.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0769",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Garantie",
+      "article": "die",
+      "plural": "Garantien",
+      "translation_tr": "garanti",
+      "translation_ru": "гарантия",
+      "example_de": "Die Garantie ist zwei Jahre.",
+      "example_tr": "Garanti iki yıl.",
+      "audio_word": "/audio/a1/garantie.mp3",
+      "audio_example": "/audio/a1/die-garantie-ist-zwei-jahre.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0770",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gemüseladen",
+      "article": "der",
+      "plural": "Gemüseläden",
+      "translation_tr": "manav",
+      "translation_ru": "овощной магазин",
+      "example_de": "Der Gemüseladen ist offen.",
+      "example_tr": "Manav açık.",
+      "audio_word": "/audio/a1/gemueseladen.mp3",
+      "audio_example": "/audio/a1/der-gemueseladen-ist-offen.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0771",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Grad",
+      "article": "der",
+      "plural": "Grade",
+      "translation_tr": "derece",
+      "translation_ru": "градус",
+      "example_de": "Es sind zwanzig Grad.",
+      "example_tr": "Yirmi derece.",
+      "audio_word": "/audio/a1/grad.mp3",
+      "audio_example": "/audio/a1/es-sind-zwanzig-grad.mp3",
+      "tags": [
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0772",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Gramm",
+      "article": "das",
+      "plural": "Gramm",
+      "translation_tr": "gram",
+      "translation_ru": "грамм",
+      "example_de": "Zweihundert Gramm, bitte.",
+      "example_tr": "İki yüz gram lütfen.",
+      "audio_word": "/audio/a1/gramm.mp3",
+      "audio_example": "/audio/a1/zweihundert-gramm-bitte.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0773",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Grammatik",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "dilbilgisi",
+      "translation_ru": "грамматика",
+      "example_de": "Grammatik ist wichtig.",
+      "example_tr": "Dilbilgisi önemli.",
+      "audio_word": "/audio/a1/grammatik.mp3",
+      "audio_example": "/audio/a1/grammatik-ist-wichtig.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0774",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Hausfrau",
+      "article": "die",
+      "plural": "Hausfrauen",
+      "translation_tr": "ev hanımı",
+      "translation_ru": "домохозяйка",
+      "example_de": "Sie ist Hausfrau.",
+      "example_tr": "O ev hanımı.",
+      "audio_word": "/audio/a1/hausfrau.mp3",
+      "audio_example": "/audio/a1/sie-ist-hausfrau.mp3",
+      "tags": [
+        "family",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0775",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Haushaltshilfe",
+      "article": "die",
+      "plural": "Haushaltshilfen",
+      "translation_tr": "ev yardımcısı",
+      "translation_ru": "помощница по хозяйству",
+      "example_de": "Wir brauchen eine Haushaltshilfe.",
+      "example_tr": "Ev yardımcısına ihtiyacımız var.",
+      "audio_word": "/audio/a1/haushaltshilfe.mp3",
+      "audio_example": "/audio/a1/wir-brauchen-eine-haushaltshilfe.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0776",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Heft",
+      "article": "das",
+      "plural": "Hefte",
+      "translation_tr": "defter",
+      "translation_ru": "тетрадь",
+      "example_de": "Das Heft ist neu.",
+      "example_tr": "Defter yeni.",
+      "audio_word": "/audio/a1/heft.mp3",
+      "audio_example": "/audio/a1/das-heft-ist-neu.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0777",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Informatik",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "bilişim",
+      "translation_ru": "информатика",
+      "example_de": "Er studiert Informatik.",
+      "example_tr": "Bilişim okuyor.",
+      "audio_word": "/audio/a1/informatik.mp3",
+      "audio_example": "/audio/a1/er-studiert-informatik.mp3",
+      "tags": [
+        "school",
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0778",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Intensivkurs",
+      "article": "der",
+      "plural": "Intensivkurse",
+      "translation_tr": "yoğun kurs",
+      "translation_ru": "интенсивный курс",
+      "example_de": "Der Intensivkurs dauert vier Wochen.",
+      "example_tr": "Yoğun kurs dört hafta sürüyor.",
+      "audio_word": "/audio/a1/intensivkurs.mp3",
+      "audio_example": "/audio/a1/der-intensivkurs-dauert-vier-wochen.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0779",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Korb",
+      "article": "der",
+      "plural": "Körbe",
+      "translation_tr": "sepet",
+      "translation_ru": "корзина",
+      "example_de": "Der Korb ist voll.",
+      "example_tr": "Sepet dolu.",
+      "audio_word": "/audio/a1/korb.mp3",
+      "audio_example": "/audio/a1/der-korb-ist-voll.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0780",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Leben",
+      "article": "das",
+      "plural": null,
+      "translation_tr": "hayat",
+      "translation_ru": "жизнь",
+      "example_de": "Das Leben ist schön.",
+      "example_tr": "Hayat güzel.",
+      "audio_word": "/audio/a1/leben.mp3",
+      "audio_example": "/audio/a1/das-leben-ist-schoen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0781",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Lektion",
+      "article": "die",
+      "plural": "Lektionen",
+      "translation_tr": "ders",
+      "translation_ru": "урок",
+      "example_de": "Die Lektion ist interessant.",
+      "example_tr": "Ders ilginç.",
+      "audio_word": "/audio/a1/lektion.mp3",
+      "audio_example": "/audio/a1/die-lektion-ist-interessant.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0782",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Licht",
+      "article": "das",
+      "plural": null,
+      "translation_tr": "ışık",
+      "translation_ru": "свет",
+      "example_de": "Das Licht ist an.",
+      "example_tr": "Işık açık.",
+      "audio_word": "/audio/a1/licht.mp3",
+      "audio_example": "/audio/a1/das-licht-ist-an.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0783",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Liter",
+      "article": "der",
+      "plural": "Liter",
+      "translation_tr": "litre",
+      "translation_ru": "литр",
+      "example_de": "Ein Liter Milch, bitte.",
+      "example_tr": "Bir litre süt lütfen.",
+      "audio_word": "/audio/a1/liter.mp3",
+      "audio_example": "/audio/a1/ein-liter-milch-bitte.mp3",
+      "tags": [
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0784",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Lust",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "istek",
+      "translation_ru": "желание",
+      "example_de": "Ich habe Lust auf Eis.",
+      "example_tr": "Dondurma istiyorum.",
+      "audio_word": "/audio/a1/lust.mp3",
+      "audio_example": "/audio/a1/ich-habe-lust-auf-eis.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0785",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mantel",
+      "article": "der",
+      "plural": "Mäntel",
+      "translation_tr": "palto",
+      "translation_ru": "пальто",
+      "example_de": "Der Mantel ist warm.",
+      "example_tr": "Palto sıcak.",
+      "audio_word": "/audio/a1/mantel.mp3",
+      "audio_example": "/audio/a1/der-mantel-ist-warm.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0786",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Mechaniker",
+      "article": "der",
+      "plural": "Mechaniker",
+      "translation_tr": "tamirci",
+      "translation_ru": "механик",
+      "example_de": "Der Mechaniker repariert das Auto.",
+      "example_tr": "Tamirci arabayı tamir ediyor.",
+      "audio_word": "/audio/a1/mechaniker.mp3",
+      "audio_example": "/audio/a1/der-mechaniker-repariert-das-auto.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0787",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Meister",
+      "article": "der",
+      "plural": "Meister",
+      "translation_tr": "usta",
+      "translation_ru": "мастер",
+      "example_de": "Er ist ein Meister.",
+      "example_tr": "O bir usta.",
+      "audio_word": "/audio/a1/meister.mp3",
+      "audio_example": "/audio/a1/er-ist-ein-meister.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0788",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Moder",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "küf",
+      "translation_ru": "плесень",
+      "example_de": "Der Moder ist schwarz.",
+      "example_tr": "Küf siyah.",
+      "audio_word": "/audio/a1/moder.mp3",
+      "audio_example": "/audio/a1/der-moder-ist-schwarz.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0789",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Nachrichten",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "haberler",
+      "translation_ru": "новости",
+      "example_de": "Ich sehe die Nachrichten.",
+      "example_tr": "Haberleri izliyorum.",
+      "audio_word": "/audio/a1/nachrichten.mp3",
+      "audio_example": "/audio/a1/ich-sehe-die-nachrichten.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0790",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Ober",
+      "article": "der",
+      "plural": "Ober",
+      "translation_tr": "garson",
+      "translation_ru": "официант",
+      "example_de": "Der Ober bringt die Speisekarte.",
+      "example_tr": "Garson menüyü getiriyor.",
+      "audio_word": "/audio/a1/ober.mp3",
+      "audio_example": "/audio/a1/der-ober-bringt-die-speisekarte.mp3",
+      "tags": [
+        "restaurant",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0791",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Plan",
+      "article": "der",
+      "plural": "Pläne",
+      "translation_tr": "plan",
+      "translation_ru": "план",
+      "example_de": "Der Plan ist gut.",
+      "example_tr": "Plan iyi.",
+      "audio_word": "/audio/a1/plan.mp3",
+      "audio_example": "/audio/a1/der-plan-ist-gut.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0792",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Produkt",
+      "article": "das",
+      "plural": "Produkte",
+      "translation_tr": "ürün",
+      "translation_ru": "продукт",
+      "example_de": "Das Produkt ist neu.",
+      "example_tr": "Ürün yeni.",
+      "audio_word": "/audio/a1/produkt.mp3",
+      "audio_example": "/audio/a1/das-produkt-ist-neu.mp3",
+      "tags": [
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0793",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Programmierer",
+      "article": "der",
+      "plural": "Programmierer",
+      "translation_tr": "programcı",
+      "translation_ru": "программист",
+      "example_de": "Er ist Programmierer.",
+      "example_tr": "O programcı.",
+      "audio_word": "/audio/a1/programmierer.mp3",
+      "audio_example": "/audio/a1/er-ist-programmierer.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0794",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Prospekt",
+      "article": "der",
+      "plural": "Prospekte",
+      "translation_tr": "broşür",
+      "translation_ru": "проспект",
+      "example_de": "Ich lese den Prospekt.",
+      "example_tr": "Broşürü okuyorum.",
+      "audio_word": "/audio/a1/prospekt.mp3",
+      "audio_example": "/audio/a1/ich-lese-den-prospekt.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0795",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Prüfung",
+      "article": "die",
+      "plural": "Prüfungen",
+      "translation_tr": "sınav",
+      "translation_ru": "экзамен",
+      "example_de": "Die Prüfung ist schwer.",
+      "example_tr": "Sınav zor.",
+      "audio_word": "/audio/a1/pruefung.mp3",
+      "audio_example": "/audio/a1/die-pruefung-ist-schwer.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0796",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Radio",
+      "article": "das",
+      "plural": "Radios",
+      "translation_tr": "radyo",
+      "translation_ru": "радио",
+      "example_de": "Das Radio ist laut.",
+      "example_tr": "Radyo yüksek sesle.",
+      "audio_word": "/audio/a1/radio.mp3",
+      "audio_example": "/audio/a1/das-radio-ist-laut.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0797",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "See",
+      "article": "die",
+      "plural": "Seen",
+      "translation_tr": "deniz/göl",
+      "translation_ru": "море/озеро",
+      "example_de": "Die See ist schön.",
+      "example_tr": "Deniz güzel.",
+      "audio_word": "/audio/a1/see.mp3",
+      "audio_example": "/audio/a1/die-see-ist-schoen.mp3",
+      "tags": [
+        "nature",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0798",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Seite",
+      "article": "die",
+      "plural": "Seiten",
+      "translation_tr": "sayfa",
+      "translation_ru": "страница",
+      "example_de": "Die Seite ist leer.",
+      "example_tr": "Sayfa boş.",
+      "audio_word": "/audio/a1/seite.mp3",
+      "audio_example": "/audio/a1/die-seite-ist-leer.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0799",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Sekretär",
+      "article": "der",
+      "plural": "Sekretäre",
+      "translation_tr": "sekreter",
+      "translation_ru": "секретарь",
+      "example_de": "Der Sekretär arbeitet im Büro.",
+      "example_tr": "Sekreter ofiste çalışıyor.",
+      "audio_word": "/audio/a1/sekretaer.mp3",
+      "audio_example": "/audio/a1/der-sekretaer-arbeitet-im-buero.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0800",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Sekretärin",
+      "article": "die",
+      "plural": "Sekretärinnen",
+      "translation_tr": "sekreter (kadın)",
+      "translation_ru": "секретарша",
+      "example_de": "Die Sekretärin ist nett.",
+      "example_tr": "Sekreter nazik.",
+      "audio_word": "/audio/a1/sekretaerin.mp3",
+      "audio_example": "/audio/a1/die-sekretaerin-ist-nett.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0801",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Service",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "servis",
+      "translation_ru": "сервис",
+      "example_de": "Der Service ist gut.",
+      "example_tr": "Servis iyi.",
+      "audio_word": "/audio/a1/service.mp3",
+      "audio_example": "/audio/a1/der-service-ist-gut.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0802",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Ski",
+      "article": "der",
+      "plural": "Skier",
+      "translation_tr": "kayak",
+      "translation_ru": "лыжи",
+      "example_de": "Ich fahre Ski.",
+      "example_tr": "Kayak yapıyorum.",
+      "audio_word": "/audio/a1/ski.mp3",
+      "audio_example": "/audio/a1/ich-fahre-ski.mp3",
+      "tags": [
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0803",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Sprachschule",
+      "article": "die",
+      "plural": "Sprachschulen",
+      "translation_tr": "dil okulu",
+      "translation_ru": "языковая школа",
+      "example_de": "Die Sprachschule ist in der Stadt.",
+      "example_tr": "Dil okulu şehirde.",
+      "audio_word": "/audio/a1/sprachschule.mp3",
+      "audio_example": "/audio/a1/die-sprachschule-ist-in-der-stadt.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0804",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Start",
+      "article": "der",
+      "plural": "Starts",
+      "translation_tr": "başlangıç",
+      "translation_ru": "старт",
+      "example_de": "Der Start ist um zehn.",
+      "example_tr": "Başlangıç onda.",
+      "audio_word": "/audio/a1/start.mp3",
+      "audio_example": "/audio/a1/der-start-ist-um-zehn.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0805",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Station",
+      "article": "die",
+      "plural": "Stationen",
+      "translation_tr": "istasyon",
+      "translation_ru": "станция",
+      "example_de": "Die Station ist dort.",
+      "example_tr": "İstasyon orada.",
+      "audio_word": "/audio/a1/station.mp3",
+      "audio_example": "/audio/a1/die-station-ist-dort.mp3",
+      "tags": [
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0806",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Stelle",
+      "article": "die",
+      "plural": "Stellen",
+      "translation_tr": "yer",
+      "translation_ru": "место",
+      "example_de": "Die Stelle ist frei.",
+      "example_tr": "Yer boş.",
+      "audio_word": "/audio/a1/stelle.mp3",
+      "audio_example": "/audio/a1/die-stelle-ist-frei.mp3",
+      "tags": [
+        "work",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0807",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Stift",
+      "article": "der",
+      "plural": "Stifte",
+      "translation_tr": "kalem",
+      "translation_ru": "ручка",
+      "example_de": "Der Stift schreibt gut.",
+      "example_tr": "Kalem iyi yazıyor.",
+      "audio_word": "/audio/a1/stift.mp3",
+      "audio_example": "/audio/a1/der-stift-schreibt-gut.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0808",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Stock",
+      "article": "der",
+      "plural": "Stockwerke",
+      "translation_tr": "kat",
+      "translation_ru": "этаж",
+      "example_de": "Ich wohne im dritten Stock.",
+      "example_tr": "Üçüncü katta yaşıyorum.",
+      "audio_word": "/audio/a1/stock.mp3",
+      "audio_example": "/audio/a1/ich-wohne-im-dritten-stock.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0809",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Stress",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "stres",
+      "translation_ru": "стресс",
+      "example_de": "Ich habe Stress.",
+      "example_tr": "Stresim var.",
+      "audio_word": "/audio/a1/stress.mp3",
+      "audio_example": "/audio/a1/ich-habe-stress.mp3",
+      "tags": [
+        "health",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0810",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "T-Shirt",
+      "article": "das",
+      "plural": "T-Shirts",
+      "translation_tr": "tişört",
+      "translation_ru": "футболка",
+      "example_de": "Das T-Shirt ist blau.",
+      "example_tr": "Tişört mavi.",
+      "audio_word": "/audio/a1/t-shirt.mp3",
+      "audio_example": "/audio/a1/das-t-shirt-ist-blau.mp3",
+      "tags": [
+        "clothing",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0811",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Team",
+      "article": "das",
+      "plural": "Teams",
+      "translation_tr": "takım",
+      "translation_ru": "команда",
+      "example_de": "Das Team arbeitet gut.",
+      "example_tr": "Takım iyi çalışıyor.",
+      "audio_word": "/audio/a1/team.mp3",
+      "audio_example": "/audio/a1/das-team-arbeitet-gut.mp3",
+      "tags": [
+        "work",
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0812",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Teil",
+      "article": "das",
+      "plural": "Teile",
+      "translation_tr": "parça",
+      "translation_ru": "часть",
+      "example_de": "Das ist ein wichtiger Teil.",
+      "example_tr": "Bu önemli bir parça.",
+      "audio_word": "/audio/a1/teil.mp3",
+      "audio_example": "/audio/a1/das-ist-ein-wichtiger-teil.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0813",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Temperatur",
+      "article": "die",
+      "plural": "Temperaturen",
+      "translation_tr": "sıcaklık",
+      "translation_ru": "температура",
+      "example_de": "Die Temperatur ist hoch.",
+      "example_tr": "Sıcaklık yüksek.",
+      "audio_word": "/audio/a1/temperatur.mp3",
+      "audio_example": "/audio/a1/die-temperatur-ist-hoch.mp3",
+      "tags": [
+        "weather",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0814",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Terrasse",
+      "article": "die",
+      "plural": "Terrassen",
+      "translation_tr": "teras",
+      "translation_ru": "терраса",
+      "example_de": "Die Terrasse ist schön.",
+      "example_tr": "Teras güzel.",
+      "audio_word": "/audio/a1/terrasse.mp3",
+      "audio_example": "/audio/a1/die-terrasse-ist-schoen.mp3",
+      "tags": [
+        "home",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0815",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Training",
+      "article": "das",
+      "plural": "Trainings",
+      "translation_tr": "antrenman",
+      "translation_ru": "тренировка",
+      "example_de": "Das Training ist um sechs.",
+      "example_tr": "Antrenman altıda.",
+      "audio_word": "/audio/a1/training.mp3",
+      "audio_example": "/audio/a1/das-training-ist-um-sechs.mp3",
+      "tags": [
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0816",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "TV",
+      "article": "das",
+      "plural": "TVs",
+      "translation_tr": "televizyon",
+      "translation_ru": "телевизор",
+      "example_de": "Der TV ist neu.",
+      "example_tr": "Televizyon yeni.",
+      "audio_word": "/audio/a1/tv.mp3",
+      "audio_example": "/audio/a1/der-tv-ist-neu.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0817",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "U-Bahnhof",
+      "article": "der",
+      "plural": "U-Bahnhöfe",
+      "translation_tr": "metro istasyonu",
+      "translation_ru": "станция метро",
+      "example_de": "Der U-Bahnhof ist nah.",
+      "example_tr": "Metro istasyonu yakın.",
+      "audio_word": "/audio/a1/u-bahnhof.mp3",
+      "audio_example": "/audio/a1/der-u-bahnhof-ist-nah.mp3",
+      "tags": [
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0818",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "USA",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "ABD",
+      "translation_ru": "США",
+      "example_de": "Die USA sind groß.",
+      "example_tr": "ABD büyük.",
+      "audio_word": "/audio/a1/usa.mp3",
+      "audio_example": "/audio/a1/die-usa-sind-gross.mp3",
+      "tags": [
+        "place",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0819",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Wagen",
+      "article": "der",
+      "plural": "Wagen",
+      "translation_tr": "vagon/araba",
+      "translation_ru": "вагон/машина",
+      "example_de": "Der Wagen ist voll.",
+      "example_tr": "Vagon dolu.",
+      "audio_word": "/audio/a1/wagen.mp3",
+      "audio_example": "/audio/a1/der-wagen-ist-voll.mp3",
+      "tags": [
+        "transport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0820",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Wörterbuch",
+      "article": "das",
+      "plural": "Wörterbücher",
+      "translation_tr": "sözlük",
+      "translation_ru": "словарь",
+      "example_de": "Ich benutze ein Wörterbuch.",
+      "example_tr": "Sözlük kullanıyorum.",
+      "audio_word": "/audio/a1/woerterbuch.mp3",
+      "audio_example": "/audio/a1/ich-benutze-ein-woerterbuch.mp3",
+      "tags": [
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0821",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "Lied",
+      "article": "das",
+      "plural": "Lieder",
+      "translation_tr": "şarkı",
+      "translation_ru": "песня",
+      "example_de": "Das Lied ist schön.",
+      "example_tr": "Şarkı güzel.",
+      "audio_word": "/audio/a1/lied.mp3",
+      "audio_example": "/audio/a1/das-lied-ist-schoen.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0822",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "anmachen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yürünmek/flört etmek",
+      "translation_ru": "знакомиться",
+      "example_de": "Er macht sie an.",
+      "example_tr": "Ona yürüyor.",
+      "audio_word": "/audio/a1/anmachen.mp3",
+      "audio_example": "/audio/a1/er-macht-sie-an.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0823",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "beschreiben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tanımlamak",
+      "translation_ru": "описывать",
+      "example_de": "Kannst du das beschreiben?",
+      "example_tr": "Bunu tanımlayabilir misin?",
+      "audio_word": "/audio/a1/beschreiben.mp3",
+      "audio_example": "/audio/a1/kannst-du-das-beschreiben.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0824",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "brechen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kırmak",
+      "translation_ru": "ломать",
+      "example_de": "Bitte nicht brechen!",
+      "example_tr": "Lütfen kırma!",
+      "audio_word": "/audio/a1/brechen.mp3",
+      "audio_example": "/audio/a1/bitte-nicht-brechen.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0825",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "buchstabieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hecelemek",
+      "translation_ru": "произносить по буквам",
+      "example_de": "Wie buchstabierst du das?",
+      "example_tr": "Bunu nasıl heceliyorsun?",
+      "audio_word": "/audio/a1/buchstabieren.mp3",
+      "audio_example": "/audio/a1/wie-buchstabierst-du-das.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0826",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "dauern",
+      "article": null,
+      "plural": null,
+      "translation_tr": "sürmek",
+      "translation_ru": "длиться",
+      "example_de": "Wie lange dauert es?",
+      "example_tr": "Ne kadar sürüyor?",
+      "audio_word": "/audio/a1/dauern.mp3",
+      "audio_example": "/audio/a1/wie-lange-dauert-es.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0827",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "erzählen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "anlatmak",
+      "translation_ru": "рассказывать",
+      "example_de": "Erzähl mir eine Geschichte!",
+      "example_tr": "Bana bir hikaye anlat!",
+      "audio_word": "/audio/a1/erzaehlen.mp3",
+      "audio_example": "/audio/a1/erzaehl-mir-eine-geschichte.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0828",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "fallen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "düşmek",
+      "translation_ru": "падать",
+      "example_de": "Die Blätter fallen.",
+      "example_tr": "Yapraklar düşüyor.",
+      "audio_word": "/audio/a1/fallen.mp3",
+      "audio_example": "/audio/a1/die-blaetter-fallen.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0829",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "frühstücken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kahvaltı yapmak",
+      "translation_ru": "завтракать",
+      "example_de": "Ich frühstücke um acht.",
+      "example_tr": "Saat sekizde kahvaltı yapıyorum.",
+      "audio_word": "/audio/a1/fruehstuecken.mp3",
+      "audio_example": "/audio/a1/ich-fruehstuecke-um-acht.mp3",
+      "tags": [
+        "verb",
+        "food",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0830",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "gefallen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "beğenmek",
+      "translation_ru": "нравиться",
+      "example_de": "Das gefällt mir.",
+      "example_tr": "Bu hoşuma gidiyor.",
+      "audio_word": "/audio/a1/gefallen.mp3",
+      "audio_example": "/audio/a1/das-gefaellt-mir.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0831",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "prüfen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kontrol etmek",
+      "translation_ru": "проверять",
+      "example_de": "Der Lehrer prüft die Tests.",
+      "example_tr": "Öğretmen testleri kontrol ediyor.",
+      "audio_word": "/audio/a1/pruefen.mp3",
+      "audio_example": "/audio/a1/der-lehrer-prueft-die-tests.mp3",
+      "tags": [
+        "verb",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0832",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "stimmen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "doğru olmak",
+      "translation_ru": "соответствовать",
+      "example_de": "Das stimmt nicht.",
+      "example_tr": "Bu doğru değil.",
+      "audio_word": "/audio/a1/stimmen.mp3",
+      "audio_example": "/audio/a1/das-stimmt-nicht.mp3",
+      "tags": [
+        "verb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0833",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "telefonieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "telefon etmek",
+      "translation_ru": "звонить",
+      "example_de": "Ich telefoniere mit Mama.",
+      "example_tr": "Annemle telefon ediyorum.",
+      "audio_word": "/audio/a1/telefonieren.mp3",
+      "audio_example": "/audio/a1/ich-telefoniere-mit-mama.mp3",
+      "tags": [
+        "verb",
+        "telefon",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0834",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "trainieren",
+      "article": null,
+      "plural": null,
+      "translation_tr": "antrenman yapmak",
+      "translation_ru": "тренироваться",
+      "example_de": "Ich trainiere jeden Tag.",
+      "example_tr": "Her gün antrenman yapıyorum.",
+      "audio_word": "/audio/a1/trainieren.mp3",
+      "audio_example": "/audio/a1/ich-trainiere-jeden-tag.mp3",
+      "tags": [
+        "verb",
+        "sport",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0835",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "üben",
+      "article": null,
+      "plural": null,
+      "translation_tr": "çalışmak/alıştırmak",
+      "translation_ru": "упражняться",
+      "example_de": "Ich übe Deutsch.",
+      "example_tr": "Almanca çalışıyorum.",
+      "audio_word": "/audio/a1/ueben.mp3",
+      "audio_example": "/audio/a1/ich-uebe-deutsch.mp3",
+      "tags": [
+        "verb",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0836",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "übersetzen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "çevirmek",
+      "translation_ru": "переводить",
+      "example_de": "Ich übersetze den Text.",
+      "example_tr": "Metni çeviriyorum.",
+      "audio_word": "/audio/a1/uebersetzen.mp3",
+      "audio_example": "/audio/a1/ich-uebersetze-den-text.mp3",
+      "tags": [
+        "verb",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0837",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "zahlen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ödemek",
+      "translation_ru": "платить",
+      "example_de": "Ich zahle bar.",
+      "example_tr": "Nakit ödüyorum.",
+      "audio_word": "/audio/a1/zahlen.mp3",
+      "audio_example": "/audio/a1/ich-zahle-bar.mp3",
+      "tags": [
+        "verb",
+        "shopping",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0838",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "zählen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "saymak",
+      "translation_ru": "считать",
+      "example_de": "Kannst du bis zehn zählen?",
+      "example_tr": "Ona kadar sayabilir misin?",
+      "audio_word": "/audio/a1/zaehlen.mp3",
+      "audio_example": "/audio/a1/kannst-du-bis-zehn-zaehlen.mp3",
+      "tags": [
+        "verb",
+        "school",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0839",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "andere",
+      "article": null,
+      "plural": null,
+      "translation_tr": "diğer",
+      "translation_ru": "другой",
+      "example_de": "Andere Leute warten.",
+      "example_tr": "Diğer insanlar bekliyor.",
+      "audio_word": "/audio/a1/andere.mp3",
+      "audio_example": "/audio/a1/andere-leute-warten.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0840",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "draußen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dışarıda",
+      "translation_ru": "снаружи",
+      "example_de": "Es ist kalt draußen.",
+      "example_tr": "Dışarısı soğuk.",
+      "audio_word": "/audio/a1/draussen.mp3",
+      "audio_example": "/audio/a1/es-ist-kalt-draussen.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0841",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "dreimal",
+      "article": null,
+      "plural": null,
+      "translation_tr": "üç kez",
+      "translation_ru": "три раза",
+      "example_de": "Ich war dreimal dort.",
+      "example_tr": "Oraya üç kez gittim.",
+      "audio_word": "/audio/a1/dreimal.mp3",
+      "audio_example": "/audio/a1/ich-war-dreimal-dort.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0842",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "echt",
+      "article": null,
+      "plural": null,
+      "translation_tr": "gerçek",
+      "translation_ru": "настоящий",
+      "example_de": "Das ist echt.",
+      "example_tr": "Bu gerçek.",
+      "audio_word": "/audio/a1/echt.mp3",
+      "audio_example": "/audio/a1/das-ist-echt.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0843",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "einmal",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bir kez",
+      "translation_ru": "один раз",
+      "example_de": "Komm bitte einmal her.",
+      "example_tr": "Lütfen bir kez buraya gel.",
+      "audio_word": "/audio/a1/einmal.mp3",
+      "audio_example": "/audio/a1/komm-bitte-einmal-her.mp3",
+      "tags": [
+        "adverb",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0844",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "freundlich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "nazik",
+      "translation_ru": "дружелюбный",
+      "example_de": "Sie ist freundlich.",
+      "example_tr": "O nazik.",
+      "audio_word": "/audio/a1/freundlich.mp3",
+      "audio_example": "/audio/a1/sie-ist-freundlich.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0845",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "groß",
+      "article": null,
+      "plural": null,
+      "translation_tr": "büyük",
+      "translation_ru": "большой",
+      "example_de": "Das Haus ist groß.",
+      "example_tr": "Ev büyük.",
+      "audio_word": "/audio/a1/gross.mp3",
+      "audio_example": "/audio/a1/das-haus-ist-gross.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0846",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "italienisch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "İtalyan",
+      "translation_ru": "итальянский",
+      "example_de": "Das Essen ist italienisch.",
+      "example_tr": "Yemek İtalyan.",
+      "audio_word": "/audio/a1/italienisch.mp3",
+      "audio_example": "/audio/a1/das-essen-ist-italienisch.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0847",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "japanisch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "Japon",
+      "translation_ru": "японский",
+      "example_de": "Er spricht japanisch.",
+      "example_tr": "Japonca konuşuyor.",
+      "audio_word": "/audio/a1/japanisch.mp3",
+      "audio_example": "/audio/a1/er-spricht-japanisch.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0848",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "jemand",
+      "article": null,
+      "plural": null,
+      "translation_tr": "birisi",
+      "translation_ru": "кто-то",
+      "example_de": "Jemand klopft an die Tür.",
+      "example_tr": "Biri kapıyı çalıyor.",
+      "audio_word": "/audio/a1/jemand.mp3",
+      "audio_example": "/audio/a1/jemand-klopft-an-die-tuer.mp3",
+      "tags": [
+        "pronoun",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0849",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "minus",
+      "article": null,
+      "plural": null,
+      "translation_tr": "eksi",
+      "translation_ru": "минус",
+      "example_de": "Fünf minus zwei ist drei.",
+      "example_tr": "Beş eksi iki üç.",
+      "audio_word": "/audio/a1/minus.mp3",
+      "audio_example": "/audio/a1/fuenf-minus-zwei-ist-drei.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0850",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "plus",
+      "article": null,
+      "plural": null,
+      "translation_tr": "artı",
+      "translation_ru": "плюс",
+      "example_de": "Zwei plus zwei ist vier.",
+      "example_tr": "İki artı iki dört.",
+      "audio_word": "/audio/a1/plus.mp3",
+      "audio_example": "/audio/a1/zwei-plus-zwei-ist-vier.mp3",
+      "tags": [
+        "daily",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0851",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "rund",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yuvarlak/yaklaşık",
+      "translation_ru": "круглый",
+      "example_de": "Der Tisch ist rund.",
+      "example_tr": "Masa yuvarlak.",
+      "audio_word": "/audio/a1/rund.mp3",
+      "audio_example": "/audio/a1/der-tisch-ist-rund.mp3",
+      "tags": [
+        "adjective",
+        "a1"
+      ]
+    },
+    {
+      "id": "a1_0852",
+      "level": "A1",
+      "category": "Text.md tamamlama",
+      "word": "wunderschön",
+      "article": null,
+      "plural": null,
+      "translation_tr": "muhteşem",
+      "translation_ru": "великолепный",
+      "example_de": "Das Wetter ist wunderschön.",
+      "example_tr": "Hava muhteşem.",
+      "audio_word": "/audio/a1/wunderschoen.mp3",
+      "audio_example": "/audio/a1/das-wetter-ist-wunderschoen.mp3",
+      "tags": [
+        "adjective",
         "a1"
       ]
     }

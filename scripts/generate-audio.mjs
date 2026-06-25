@@ -20,7 +20,8 @@ const MAX_RETRIES = 3;
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dir, "..");
-const PUBLIC_AUDIO = join(ROOT, "apps/web/public/audio");
+const PUBLIC_ROOT = join(ROOT, "apps/web/public");
+const PUBLIC_AUDIO = join(PUBLIC_ROOT, "audio");
 const ERROR_LOG = join(ROOT, "scripts/audio-errors.log");
 const DELAY_MS = 300;
 
@@ -126,7 +127,7 @@ async function main() {
 
   let jobs = [];
   for (const p of packs) {
-    jobs.push(...collectJobs(p.data, PUBLIC_AUDIO));
+    jobs.push(...collectJobs(p.data, PUBLIC_ROOT));
   }
 
   if (!force) {
@@ -177,8 +178,8 @@ function writeManifest(packs) {
     let audioReady = 0;
     let examplesReady = 0;
     for (const w of p.data.words) {
-      const wPath = join(PUBLIC_AUDIO, w.audio_word.replace(/^\//, ""));
-      const exPath = join(PUBLIC_AUDIO, w.audio_example.replace(/^\//, ""));
+      const wPath = join(PUBLIC_ROOT, w.audio_word.replace(/^\//, ""));
+      const exPath = join(PUBLIC_ROOT, w.audio_example.replace(/^\//, ""));
       if (existsSync(wPath)) audioReady++;
       if (existsSync(exPath)) examplesReady++;
     }

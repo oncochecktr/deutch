@@ -16,6 +16,7 @@
     "goethe": "node scripts/build-goethe-a1-bank.mjs",
     "audio": "node scripts/generate-audio.mjs",
     "audit:articles": "node scripts/audit-a1-articles.mjs",
+    "audit:text-md": "node scripts/audit-text-md-vocab.mjs",
     "seed:articles": "node scripts/seed-article-reference.mjs",
     "build:patterns": "node scripts/build-a1-patterns.mjs",
     "test:word-patterns": "node scripts/test-word-patterns.mjs",

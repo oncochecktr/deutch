@@ -9,6 +9,8 @@ import { SEED } from "./a1-seed-part1.mjs";
 import { SEED_PART2 } from "./a1-seed-part2.mjs";
 import { SEED_PART3 } from "./a1-seed-part3.mjs";
 import { GOETHE_FORM_WORDS } from "./a1-seed-goethe-form.mjs";
+import { SEED_TEXTMD } from "./a1-seed-textmd.mjs";
+import { SEED_TEXTMD2 } from "./a1-seed-textmd2.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dir, "../data/a1/vocabulary.json");
@@ -18,11 +20,12 @@ ALL_SEED["Form doldurma"] = [
   ...(ALL_SEED["Form doldurma"] ?? []),
   ...GOETHE_FORM_WORDS,
 ];
+ALL_SEED["Text.md tamamlama"] = [...SEED_TEXTMD, ...SEED_TEXTMD2];
 
 const CATEGORIES = [
   "Selamlama", "Tanışma", "Aile", "Ev", "Market", "İş", "Ulaşım",
   "Saat", "Tarih", "Doktor", "Restoran", "Telefon", "Form doldurma",
-  "Günlük ihtiyaçlar", "Basit yön tarifleri",
+  "Günlük ihtiyaçlar", "Basit yön tarifleri", "Text.md tamamlama",
 ];
 
 function slug(s) {
@@ -58,6 +61,7 @@ function buildWord(id, category, entry) {
 
 let id = 1;
 const words = [];
+const seen = new Set();
 
 for (const cat of CATEGORIES) {
   const entries = ALL_SEED[cat];
@@ -65,14 +69,25 @@ for (const cat of CATEGORIES) {
     console.error(`Missing category: ${cat}`);
     process.exit(1);
   }
+  const dedup = cat === "Text.md tamamlama";
   for (const entry of entries) {
+    const key = entry[0].toLowerCase();
+    if (dedup) {
+      if (seen.has(key)) {
+        console.warn(`⊘ Duplicate skipped: ${entry[0]} (${cat})`);
+        continue;
+      }
+      seen.add(key);
+    } else {
+      seen.add(key);
+    }
     words.push(buildWord(id++, cat, entry));
   }
 }
 
 const pack = {
   level: "A1",
-  version: "2.0.0",
+  version: "2.1.0",
   total: words.length,
   categories: CATEGORIES,
   words,
