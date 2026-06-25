@@ -13,21 +13,30 @@ import { playGermanAudio, formatWord, stopAudio } from "@/lib/audio";
 import { buildReviewQueue } from "@/lib/srs";
 import { useProgress } from "@/lib/ProgressContext";
 
-type ListenPack = "mesleki" | "work" | "a1" | "srs";
+type ListenPack = "a1" | "all" | "mesleki" | "work" | "srs";
 
 const PACK_LABELS: Record<ListenPack, string> = {
+  a1: "A1 — Tüm kelimeler",
+  all: "Tümü (A1 + Mesleki)",
   mesleki: "Mesleki Almanca",
   work: "İş Almancası (Mesleki + A1 iş)",
-  a1: "A1 — Tüm kelimeler",
   srs: "SRS — Bugün tekrar edilecekler",
 };
 
+const PACK_ORDER: ListenPack[] = ["a1", "all", "mesleki", "work", "srs"];
+
 function parsePack(value: string | null): ListenPack {
   if (value === "timur") return "mesleki";
-  if (value === "mesleki" || value === "work" || value === "a1" || value === "srs") {
+  if (
+    value === "mesleki" ||
+    value === "work" ||
+    value === "a1" ||
+    value === "all" ||
+    value === "srs"
+  ) {
     return value;
   }
-  return "mesleki";
+  return "a1";
 }
 
 export default function ListenPage() {
@@ -77,12 +86,14 @@ function ListenPageContent() {
 
   const playlist = useMemo((): VocabularyWord[] => {
     switch (pack) {
+      case "a1":
+        return getA1Vocabulary().words;
+      case "all":
+        return [...getA1Vocabulary().words, ...getTimurVocabulary().words];
       case "mesleki":
         return getTimurVocabulary().words;
       case "work":
         return getWorkVocabulary();
-      case "a1":
-        return getA1Vocabulary().words;
       case "srs": {
         const ids = buildReviewQueue(
           getA1Vocabulary().words.map((w) => w.id),
@@ -181,12 +192,14 @@ function ListenPageContent() {
         <span className="goethe-badge mb-2 bg-goethe-blue">Kulak Eğitimi</span>
         <h1 className="text-xl font-bold text-goethe-blue">Yürüyüş Dinleme</h1>
         <p className="text-sm text-sage-400">{PACK_LABELS[pack]}</p>
-        {pack === "a1" && a1Offline && (
-          <p className="mt-2 text-xs text-sage-500">
-            MP3 offline: {a1Offline.ready}/{a1Offline.total}
-            {a1Offline.ready >= a1Offline.total ? " · tam paket" : " · eksikler TTS ile tamamlanır"}
-          </p>
-        )}
+        {pack === "a1" || pack === "all" ? (
+          a1Offline && (
+            <p className="mt-2 text-xs text-sage-500">
+              MP3 offline: {a1Offline.ready}/{a1Offline.total}
+              {a1Offline.ready >= a1Offline.total ? " · tam paket" : " · eksikler TTS ile tamamlanır"}
+            </p>
+          )
+        ) : null}
       </header>
 
       <div className="card-soft p-4 space-y-3">
@@ -201,7 +214,7 @@ function ListenPageContent() {
           }}
           className="w-full rounded-xl border border-sage-200 bg-white px-3 py-2 text-sm"
         >
-          {(Object.keys(PACK_LABELS) as ListenPack[]).map((k) => (
+          {PACK_ORDER.map((k) => (
             <option key={k} value={k}>
               {PACK_LABELS[k]}
             </option>
@@ -321,8 +334,8 @@ function ListenPageContent() {
       </div>
 
       <p className="text-center text-xs text-sage-400">
-        MP3 yoksa tarayıcı sesi kullanılır. Önce:{" "}
-        <code className="rounded bg-sage-100 px-1">npm run audio -- --pack timur</code>
+        MP3 yoksa tarayıcı sesi kullanılır. Ses üretimi:{" "}
+        <code className="rounded bg-sage-100 px-1">npm run audio -- --pack a1</code>
       </p>
     </div>
   );
