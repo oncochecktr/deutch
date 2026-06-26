@@ -146,4 +146,10 @@ export const SEO_PAGES = {
     description: "Almanca A1 diyalogları okuyun ve dinleyin. Günlük konuşma pratiği.",
     path: "/dialogues",
   }),
+  diktat: pageMetadata({
+    title: "Diktat — Yazarak Öğren",
+    description:
+      "Serbest Almanca yazım defteri: 852 kelime yan listede, dinle-yaz kontrolü. Profil ve taslak tarayıcıda kalır.",
+    path: "/diktat",
+  }),
 } as const;

@@ -44,8 +44,8 @@ export const LEARNING_METHOD_STEPS: LearningMethodStep[] = [
     order: 2,
     title: "Dikte yaz",
     body: "Dinle, yaz, kontrol et.",
-    href: "/cards",
-    cta: "Dikte",
+    href: "/diktat",
+    cta: "Diktat",
   },
   {
     order: 3,

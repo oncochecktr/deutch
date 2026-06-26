@@ -95,6 +95,7 @@ export function HomePageClient() {
           </summary>
           <div className="border-t border-sage-100 p-4">
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <MiniTile href="/diktat" icon="list" label="Diktat" stat="Yazarak öğren" />
               <MiniTile href="/grundlagen/cumle-motoru" icon="cards" label="Oyun" stat="852 kelime" />
               <MiniTile href="/review" icon="review" label="Tekrar" stat={srs.due > 0 ? `${srs.due} bekliyor` : "OK"} />
               <MiniTile href="/cards" icon="cards" label="Kartlar" stat={`${a1.total} kelime`} />
