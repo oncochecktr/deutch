@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { APP_NAME } from "@/lib/brand";
+import { mergeKeywords } from "@/lib/seoKeywords";
 import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export interface PageMetadataInput {
@@ -25,7 +26,7 @@ export function pageMetadata({
   return {
     title: fullTitle,
     description,
-    keywords: keywords ?? SITE_KEYWORDS,
+    keywords: keywords ? mergeKeywords(SITE_KEYWORDS, keywords) : SITE_KEYWORDS,
     alternates: { canonical: url },
     robots: noindex ? { index: false, follow: false } : { index: true, follow: true },
     openGraph: {

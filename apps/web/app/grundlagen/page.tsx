@@ -21,6 +21,22 @@ export default function GrundlagenPage() {
       maxWidth="lg"
     >
       <Link
+        href="/grundlagen/wo-ist"
+        className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-blue/30 bg-goethe-blue/5 p-5 transition hover:border-goethe-blue/50"
+      >
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
+            Lego gramer
+          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">Wo ist …?</h2>
+          <p className="mt-1 text-sm text-sage-600">
+            Wo · ist · Artikel · ? — Bahnhof, Park, Café …
+          </p>
+        </div>
+        <span className="shrink-0 text-goethe-blue">→</span>
+      </Link>
+
+      <Link
         href="/grundlagen/cumle-motoru"
         className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-gold/40 bg-goethe-gold/5 p-5 transition hover:border-goethe-gold/60"
       >

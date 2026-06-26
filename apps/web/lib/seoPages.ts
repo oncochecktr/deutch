@@ -1,18 +1,21 @@
 import { pageMetadata } from "@/lib/seo";
+import { PAGE_KEYWORDS } from "@/lib/seoKeywords";
 
 /** Merkezi sayfa SEO tanımları — layout.tsx dosyalarında kullanılır */
 export const SEO_PAGES = {
   home: pageMetadata({
-    title: "Sıfırdan A1 — Ücretsiz Almanca Öğrenme",
+    title: "Sıfırdan A1 — Ücretsiz Almanca Öğrenme Uygulaması",
     description:
-      "German Coach ile sıfırdan Almanca A1: kelime kartları, gramer yol haritası, sınav simülasyonu ve konuşma pratiği. 3–6 ayda A1 hedefi.",
+      "German Coach: ücretsiz Almanca A1 uygulaması — 852 kelime kartı, diktat, dinleme, Goethe/TELC sınav hazırlığı, gramer yol haritası. Sıfırdan 3–6 ayda A1.",
     path: "/",
+    keywords: [...PAGE_KEYWORDS.home],
   }),
   blog: pageMetadata({
     title: "Blog — Almanca Öğrenme Rehberleri",
     description:
-      "A1 sınav hazırlığı, der die das rehberi ve Almanya planı. Sıfırdan Almanca öğrenenler için Türkçe blog yazıları.",
+      "Goethe A1, TELC, der die das ve Almanya planı. Sıfırdan Almanca öğrenenler için Türkçe rehber yazıları.",
     path: "/blog",
+    keywords: [...PAGE_KEYWORDS.blog],
   }),
   iletisim: pageMetadata({
     title: "İletişim",
@@ -29,8 +32,9 @@ export const SEO_PAGES = {
   grundlagen: pageMetadata({
     title: "Gramer Modülleri — A1 Temel Bilgiler",
     description:
-      "Almanca A1 gramer: artikel, fiil çekimi, kelime sırası, dativ, edatlar ve daha fazlası. Türkçe açıklamalı interaktif dersler.",
+      "Almanca A1 gramer dersleri Türkçe: der die das, fiil çekimi, kelime sırası, dativ. Ücretsiz interaktif alıştırmalar.",
     path: "/grundlagen",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
   }),
   roadmap: pageMetadata({
     title: "Gramer Yol Haritası — Sıfırdan A1",
@@ -53,20 +57,23 @@ export const SEO_PAGES = {
   cumleMotoru: pageMetadata({
     title: "Kelime Oyunu — Cümle Hafızası",
     description:
-      "852 A1 kelimeyi gerçek cümlelerle öğren. Türkçe isteğe bağlı, okunuş, puan ve oyun modu.",
+      "852 A1 kelimeyi cümle oyunu ile öğren: dinle, yaz, puan kazan. Duolingo alternatifi Türkçe Almanca uygulama.",
     path: "/grundlagen/cumle-motoru",
+    keywords: [...PAGE_KEYWORDS.cumleMotoru],
   }),
   exam: pageMetadata({
-    title: "A1 Sınav Merkezi — TELC · ÖSD · DTZ",
+    title: "A1 Sınav Merkezi — Goethe · TELC · ÖSD · DTZ",
     description:
-      "A1 sınav simülasyonu: dinleme, okuma, yazma ve konuşma modülleri. Resmi sınav formatında pratik.",
+      "Goethe A1, TELC A1, ÖSD ve DTZ sınav simülasyonu: dinleme, okuma, yazma, konuşma. Ücretsiz deneme modülleri.",
     path: "/exam",
+    keywords: [...PAGE_KEYWORDS.exam],
   }),
   cards: pageMetadata({
-    title: "Kelime Kartları — A1 Almanca",
+    title: "Kelime Kartları — A1 Almanca Flashcard",
     description:
-      "Almanca A1 kelime kartları: görsel flashcard ile kelime öğrenin. A1 kelime hazırlığı.",
+      "Ücretsiz Almanca A1 flashcard: 852 kelime, Türkçe anlam, sesli dinleme. Kelime ezberleme ve SRS tekrar.",
     path: "/cards",
+    keywords: [...PAGE_KEYWORDS.cards],
   }),
   speak: pageMetadata({
     title: "Sınıf — Profesör ile Almanca Dersi",
@@ -77,8 +84,9 @@ export const SEO_PAGES = {
   konusDinle: pageMetadata({
     title: "Konuş-Dinle — Almanca Konuşma Pratiği",
     description:
-      "Dinle, tekrar et, geri bildirim al. A1'den B1'e Almanca konuşma antrenmanı ve telaffuz pratiği.",
+      "Almanca konuşma pratiği: dinle, tekrar et, telaffuz geri bildirimi. A1 konuşma kursu online ücretsiz.",
     path: "/konus-dinle",
+    keywords: [...PAGE_KEYWORDS.konusDinle],
   }),
   harita: pageMetadata({
     title: "Öğrenme Haritası",
@@ -118,8 +126,9 @@ export const SEO_PAGES = {
   listen: pageMetadata({
     title: "Dinle — Yürüyüş Dinleme Modu",
     description:
-      "Almanca A1 kelime ve cümle dinleme: MP3 veya tarayıcı sesi ile yürürken 852 kelime çalışın.",
+      "Almanca dinleme pratiği A1: 852 kelime MP3, yürürken dinle. Telaffuz ve kulak eğitimi ücretsiz.",
     path: "/listen",
+    keywords: [...PAGE_KEYWORDS.listen],
   }),
   words: pageMetadata({
     title: "Kelime Listesi — A1 Almanca",
@@ -147,9 +156,10 @@ export const SEO_PAGES = {
     path: "/dialogues",
   }),
   diktat: pageMetadata({
-    title: "Diktat — Yazarak Öğren",
+    title: "Diktat — Almanca Dinle Yaz",
     description:
-      "Serbest Almanca yazım defteri: 852 kelime yan listede, dinle-yaz kontrolü. Profil ve taslak tarayıcıda kalır.",
+      "Almanca diktat ve yazma pratiği: haben/sehen, ein/eine/einen. Serbest defter + akıllı tekrar. 852 kelime yan listede.",
     path: "/diktat",
+    keywords: [...PAGE_KEYWORDS.diktat],
   }),
 } as const;

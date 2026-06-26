@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     default: `${APP_NAME} — ${APP_TAGLINE}`,
     template: `%s | ${APP_NAME}`,
   },
-  description: `${SITE_TAGLINE}. ${EXAM_LABEL_DESC} — kelime, gramer yol haritası, sınav simülasyonu. 3–6 ayda A1 hedefi.`,
+  description: `${SITE_TAGLINE}. Ücretsiz Almanca A1 uygulaması: Goethe/TELC hazırlık, kelime kartları, diktat, dinleme, gramer. 3–6 ayda A1 hedefi.`,
   keywords: SITE_KEYWORDS,
   openGraph: {
     type: "website",

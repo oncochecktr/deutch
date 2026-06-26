@@ -533,6 +533,14 @@ export const GRUNDLAGEN_MODULES = [
     sections: articlesData.sets.length,
   },
   {
+    id: "wo-ist",
+    href: "/grundlagen/wo-ist",
+    de: "Wo ist …?",
+    tr: "Lego kalıp · yer sorusu",
+    desc: "Wo · ist · der/die/das · ? — Bahnhof, Park, Café …",
+    sections: 3,
+  },
+  {
     id: "possessives",
     href: "/grundlagen/possessives",
     de: "Possessive Trainer",

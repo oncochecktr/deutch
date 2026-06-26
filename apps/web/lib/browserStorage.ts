@@ -42,6 +42,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/grammar": "Grammar A1",
   "/grundlagen/satz": "Satz Builder",
   "/grundlagen/artikel": "Artikel Trainer",
+  "/grundlagen/wo-ist": "Wo ist …? Lego",
   "/grundlagen/dativ": "Dativ Trainer",
   "/grundlagen/negation": "Negation Trainer",
   "/grundlagen/prepositions": "Prepositions Trainer",
