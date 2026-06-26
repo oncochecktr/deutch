@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { ContentTransition } from "@/components/ContentTransition";
 import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import { IconCheck } from "@/components/icons";
+import { TrainerLessonIntro } from "@/components/grundlagen/TrainerLessonIntro";
 import { WordOrderDrillPanel } from "@/components/grundlagen/WordOrderDrill";
 import type { WordOrderTrainerData } from "@/lib/grundlagen";
 import {
@@ -137,14 +138,13 @@ export function WordOrderTrainer({ data }: WordOrderTrainerProps) {
   if (phase === "list" || !active) {
     return (
       <div className="space-y-4">
-        <div className="card-soft border border-goethe-blue/20 p-4">
-          <p className="text-sm text-sage-600">
-            SVO → Ja/Nein → W-Fragen. {WORD_ORDER_PASS_SCORE}/10 geç.
-          </p>
-          <p className="mt-2 text-xs tabular-nums text-sage-500">
-            {completed.length} / {units.length} bölüm tamam
-          </p>
-        </div>
+        <TrainerLessonIntro
+          title={data.titleTr}
+          summary={`${data.description} Önce kural ve örnekleri oku, sonra drill. ${WORD_ORDER_PASS_SCORE}/10 geç.`}
+        />
+        <p className="text-xs tabular-nums text-sage-500">
+          {completed.length} / {units.length} bölüm tamam
+        </p>
 
         <div className="grid gap-2 sm:grid-cols-3">
           {RULE_CARDS.map((card) => (

@@ -8,7 +8,8 @@ export type SentencePatternId =
   | "07"
   | "08"
   | "09"
-  | "10";
+  | "10"
+  | "11";
 
 export type SentencePatternStatus = "active" | "soon";
 
@@ -51,6 +52,17 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
   {
     id: "03",
     order: 3,
+    title_de: "Das ist → Er / Es / Sie",
+    title_tr: "Tanıştır + yorum",
+    formula: "Das ist ein Hotel. Es ist sehr schön.",
+    example_de: "Das ist ein Supermarkt. Er ist sehr gut.",
+    example_tr: "Bu bir süpermarket. Çok iyi.",
+    href: "/grundlagen/sentence-engine/das-ist",
+    status: "active",
+  },
+  {
+    id: "04",
+    order: 4,
     title_de: "Pronomen + Verb",
     title_tr: "Özne + Fiil",
     formula: "Ich + arbeite",
@@ -61,8 +73,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     relatedHrefs: ["/grundlagen/patterns"],
   },
   {
-    id: "04",
-    order: 4,
+    id: "05",
+    order: 5,
     title_de: "Modal + Infinitiv",
     title_tr: "Modal fiil + mastar",
     formula: "Ich + möchte + schlafen",
@@ -72,8 +84,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "05",
-    order: 5,
+    id: "06",
+    order: 6,
     title_de: "Verb + Akkusativ",
     title_tr: "Fiil + akkusativ nesne",
     formula: "Ich + sehe + einen Mann",
@@ -84,8 +96,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     relatedHrefs: ["/grundlagen/artikel"],
   },
   {
-    id: "06",
-    order: 6,
+    id: "07",
+    order: 7,
     title_de: "W-Frage",
     title_tr: "W-Frage",
     formula: "Wo + ist + …?",
@@ -95,8 +107,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "07",
-    order: 7,
+    id: "08",
+    order: 8,
     title_de: "Ja/Nein-Frage",
     title_tr: "Evet/hayır sorusu",
     formula: "Ist + das + gut?",
@@ -106,8 +118,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "08",
-    order: 8,
+    id: "09",
+    order: 9,
     title_de: "Negation",
     title_tr: "Olumsuzluk",
     formula: "nicht / kein",
@@ -117,8 +129,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "09",
-    order: 9,
+    id: "10",
+    order: 10,
     title_de: "Dativ",
     title_tr: "Dativ kalıbı",
     formula: "mit + dem Freund",
@@ -128,8 +140,8 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "10",
-    order: 10,
+    id: "11",
+    order: 11,
     title_de: "Es gibt",
     title_tr: "Var (es gibt)",
     formula: "Es + gibt + …",

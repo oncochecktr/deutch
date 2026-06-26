@@ -5,6 +5,7 @@ import { ContentTransition } from "@/components/ContentTransition";
 import { IconCheck } from "@/components/icons";
 import { GrundlagenDrillPanel } from "@/components/grundlagen/GrundlagenDrill";
 import { GrundlagenExampleView } from "@/components/grundlagen/GrundlagenExampleView";
+import { TrainerLessonIntro } from "@/components/grundlagen/TrainerLessonIntro";
 import type { SetTrainerData, TrainerSet } from "@/lib/grundlagen";
 import { useStepDirection } from "@/lib/useStepDirection";
 
@@ -51,31 +52,14 @@ export function SetTrainer({
   if (phase === "list" || !active) {
     return (
       <div className="space-y-4">
-        <div className="card-soft border border-goethe-blue/20 p-4">
-          <p className="mt-2 text-xs tabular-nums text-sage-500">
-            {completed.length} / {data.sets.length} set tamam
-          </p>
-        </div>
-        {showRules && data.rules && data.rules.length > 0 && (
-          <div className="card-soft overflow-x-auto p-4">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-sage-100 text-left text-xs uppercase text-sage-500">
-                  <th className="pb-2 pr-3">Kural</th>
-                  <th className="pb-2">Açıklama</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.rules.map((r) => (
-                  <tr key={r.label} className="border-b border-sage-50">
-                    <td className="py-2 pr-3 font-medium text-goethe-blue">{r.label}</td>
-                    <td className="py-2 text-sage-600">{r.tr}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+        <TrainerLessonIntro
+          title={data.titleTr}
+          summary={data.description}
+          rules={showRules && data.rules?.length ? data.rules : undefined}
+        />
+        <p className="text-xs tabular-nums text-sage-500">
+          {completed.length} / {data.sets.length} set tamam
+        </p>
         <ol className="space-y-2">
           {data.sets.map((s) => (
             <SetListItem

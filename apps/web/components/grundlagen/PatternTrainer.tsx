@@ -5,6 +5,7 @@ import { ContentTransition } from "@/components/ContentTransition";
 import { TrainerExampleCard } from "@/components/grundlagen/TrainerExampleCard";
 import { IconCheck } from "@/components/icons";
 import { PatternQuiz } from "@/components/grundlagen/PatternQuiz";
+import { TrainerLessonIntro } from "@/components/grundlagen/TrainerLessonIntro";
 import { WordBreakdown } from "@/components/grundlagen/WordBreakdown";
 import type { A1Pattern } from "@/lib/grundlagen";
 import { markPatternCompleted } from "@/lib/progress";
@@ -62,14 +63,13 @@ export function PatternTrainer({ patterns }: PatternTrainerProps) {
   if (phase === "list" || !active) {
     return (
       <div className="space-y-4">
-        <div className="card-soft border border-goethe-blue/20 p-4">
-          <p className="text-sm text-sage-600">
-            20 örnek kelime bankasından · quiz 4/5 geç.
-          </p>
-          <p className="mt-2 text-xs tabular-nums text-sage-500">
-            {completed.length} / {patterns.length} kalıp tamam
-          </p>
-        </div>
+        <TrainerLessonIntro
+          title="A1 cümle kalıpları"
+          summary="Her kalıp önce örneklerle anlatılır, sonra quiz. Kelime kelime ayrıştırma açıkken oku — anlamayı drill'e geçmeden bitirme."
+        />
+        <p className="text-xs tabular-nums text-sage-500">
+          {completed.length} / {patterns.length} kalıp tamam · quiz 4/5 geç
+        </p>
         <ol className="space-y-2">
           {patterns.map((p) => {
             const done = completed.includes(p.id);

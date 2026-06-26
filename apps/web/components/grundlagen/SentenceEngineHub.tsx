@@ -15,7 +15,7 @@ export function SentenceEngineHub() {
           Cümle motoru
         </p>
         <p className="mt-2 text-sm text-sage-700">
-          852 kelime değil — <strong>20 yeniden kullanılabilir kalıp</strong>. Her kelime bu
+          852 kelime değil — <strong>11 cümle kalıbı</strong>. Her kelime bu
           motorlara takılır; sen parçayı öğrenirsin.
         </p>
         <p className="mt-2 text-xs tabular-nums text-sage-500">
@@ -82,6 +82,11 @@ function PatternBody({
       {p.id === "02" && (
         <p className="mt-1 text-[10px] font-bold uppercase text-goethe-gold">
           Adjective Engine · Lego
+        </p>
+      )}
+      {p.id === "03" && (
+        <p className="mt-1 text-[10px] font-bold uppercase text-goethe-gold">
+          Tanıştır + yorum · Es / Er / Sie
         </p>
       )}
     </div>

@@ -119,6 +119,15 @@ export const APP_FEATURES: AppFeature[] = [
     badge: "Yeni",
   },
   {
+    id: "das-ist",
+    href: "/grundlagen/sentence-engine/das-ist",
+    title: "Das ist → Er/Es/Sie",
+    description: "Pattern 03: tanıştır + yorum · iki satır",
+    category: "gramer",
+    icon: "exam",
+    badge: "P03",
+  },
+  {
     id: "adjektiv-engine",
     href: "/grundlagen/sentence-engine/adjektiv",
     title: "Adjective Engine",

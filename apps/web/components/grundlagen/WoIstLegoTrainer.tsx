@@ -6,6 +6,7 @@ import { RewardBurst } from "@/components/RewardBurst";
 import { SpeakAudioButton } from "@/components/SpeakAudioButton";
 import { TrainerCorrectFeedback } from "@/components/grundlagen/TrainerCorrectFeedback";
 import { TrainerHint } from "@/components/grundlagen/TrainerHint";
+import { TrainerLessonIntro } from "@/components/grundlagen/TrainerLessonIntro";
 import { TrainerWrongFeedback } from "@/components/grundlagen/TrainerWrongFeedback";
 import { WordBreakdown } from "@/components/grundlagen/WordBreakdown";
 import { IconCheck } from "@/components/icons";
@@ -123,19 +124,14 @@ export function WoIstLegoTrainer() {
   if (phase === "list") {
     return (
       <div className="space-y-4">
-        <FormulaStrip />
-        <div className="card-soft overflow-x-auto p-4">
-          <table className="w-full text-sm">
-            <tbody>
-              {WO_IST_RULES.map((r) => (
-                <tr key={r.label} className="border-b border-sage-50">
-                  <td className="py-2 pr-3 font-semibold text-goethe-blue">{r.label}</td>
-                  <td className="py-2 text-sage-600">{r.tr}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <TrainerLessonIntro
+          badge="Pattern 01"
+          title="Wo ist der …?"
+          summary="Yer sorusu: Wo + ist + artikel + isim. Wo sabit, ist sabit — sadece artikel ve isim değişir."
+          rules={WO_IST_RULES}
+        >
+          <FormulaStrip />
+        </TrainerLessonIntro>
         <p className="text-xs tabular-nums text-sage-500">
           {progress.completed.length} / {WO_IST_DECKS.length} deste tamam
         </p>

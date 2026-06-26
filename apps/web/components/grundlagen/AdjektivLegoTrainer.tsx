@@ -7,6 +7,7 @@ import { RewardBurst } from "@/components/RewardBurst";
 import { SpeakAudioButton } from "@/components/SpeakAudioButton";
 import { TrainerCorrectFeedback } from "@/components/grundlagen/TrainerCorrectFeedback";
 import { TrainerHint } from "@/components/grundlagen/TrainerHint";
+import { TrainerLessonIntro } from "@/components/grundlagen/TrainerLessonIntro";
 import { TrainerWrongFeedback } from "@/components/grundlagen/TrainerWrongFeedback";
 import { WordBreakdown } from "@/components/grundlagen/WordBreakdown";
 import { IconCheck } from "@/components/icons";
@@ -143,15 +144,12 @@ export function AdjektivLegoTrainer() {
           ← Sentence Engine
         </Link>
 
-        <div className="card-soft border border-goethe-gold/30 p-4">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-sage-500">
-            Pattern 02
-          </p>
-          <p className="mt-1 text-lg font-bold text-goethe-blue">Artikel + Adjektiv + Nomen</p>
-          <p className="mt-2 text-sm text-sage-600">
-            Orta blok değişir — motor aynı kalır. Engine yeni sıfatla cümle üretir.
-          </p>
-        </div>
+        <TrainerLessonIntro
+          badge="Pattern 02"
+          title="Artikel + Adjektiv + Nomen"
+          summary="Orta blok değişir — motor aynı kalır. Sıfat isimden önce gelir; artikel cinsiyete göre sıfatı çeker (-e)."
+          rules={PATTERN02_RULES}
+        />
 
         <LegoStack article="der" adj="große" noun="Bahnhof" />
 

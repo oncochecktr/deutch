@@ -46,6 +46,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/wo-ist": "Wo ist …? Lego",
   "/grundlagen/sentence-engine": "Sentence Engine",
   "/grundlagen/sentence-engine/adjektiv": "Adjective Engine",
+  "/grundlagen/sentence-engine/das-ist": "Das ist → Er/Es/Sie",
   "/grundlagen/dativ": "Dativ Trainer",
   "/grundlagen/negation": "Negation Trainer",
   "/grundlagen/prepositions": "Prepositions Trainer",

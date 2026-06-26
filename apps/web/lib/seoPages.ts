@@ -183,4 +183,11 @@ export const SEO_PAGES = {
     path: "/grundlagen/sentence-engine/adjektiv",
     keywords: [...PAGE_KEYWORDS.grundlagen],
   }),
+  dasIstEngine: pageMetadata({
+    title: "Das ist … → Er / Es / Sie — Tanıştır + Yorum",
+    description:
+      "Das ist ein Hotel. Es ist sehr schön. İki satır taktik: ein/eine, Er/Es/Sie zamiri. Adım adım A1 Almanca.",
+    path: "/grundlagen/sentence-engine/das-ist",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
+  }),
 } as const;
