@@ -169,4 +169,18 @@ export const SEO_PAGES = {
     path: "/ozellikler",
     keywords: [...PAGE_KEYWORDS.home],
   }),
+  sentenceEngine: pageMetadata({
+    title: "Sentence Engine — 20 Cümle Kalıbı",
+    description:
+      "Almanca cümle motoru: Artikel + İsim, Artikel + Sıfat + İsim, W-Frage ve daha fazlası. German Coach Pattern 01–10.",
+    path: "/grundlagen/sentence-engine",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
+  }),
+  adjektivEngine: pageMetadata({
+    title: "Adjective Engine — Artikel + Sıfat + İsim",
+    description:
+      "der große Bahnhof, die nächste Apotheke: Almanca sıfat çekimi Lego oyunu. Pattern 02 otomatik cümle üretir.",
+    path: "/grundlagen/sentence-engine/adjektiv",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
+  }),
 } as const;

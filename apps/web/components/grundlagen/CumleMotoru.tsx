@@ -15,6 +15,7 @@ import {
 import { useProgress } from "@/lib/ProgressContext";
 import { IconCheck, IconX } from "@/components/icons";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
+import { Pattern02Hint } from "@/components/grundlagen/SentenceEngineHub";
 import { SpiegelCardView } from "@/components/grundlagen/SpiegelCardView";
 import { WordSpiegelList } from "@/components/grundlagen/WordSpiegelList";
 import {
@@ -146,6 +147,13 @@ export function CumleMotoru() {
       {mode === "kelimeler" ? (
         <>
           {selected && <SpiegelCardView card={selected} showTurkish={showTurkish} />}
+          {selected && (
+            <Pattern02Hint
+              lemma={
+                getA1Vocabulary().words.find((w) => w.id === selected.id)?.word ?? ""
+              }
+            />
+          )}
 
           <input
             type="search"

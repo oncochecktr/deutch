@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { WoIstLegoTrainer } from "@/components/grundlagen/WoIstLegoTrainer";
 
@@ -12,7 +13,18 @@ export default function WoIstPage() {
       backLabel="A1 modüllere dön"
       maxWidth="md"
     >
-      <WoIstLegoTrainer />
+        <div className="card-soft mb-4 border border-goethe-blue/15 p-3">
+          <p className="text-xs text-sage-600">
+            <Link href="/grundlagen/sentence-engine" className="font-semibold text-goethe-blue hover:underline">
+              Sentence Engine · Pattern 01
+            </Link>
+            {" "}— sonraki adım:{" "}
+            <Link href="/grundlagen/sentence-engine/adjektiv" className="font-semibold text-goethe-blue hover:underline">
+              Pattern 02 (Sıfat)
+            </Link>
+          </p>
+        </div>
+        <WoIstLegoTrainer />
     </PageShell>
   );
 }

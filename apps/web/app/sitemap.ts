@@ -20,6 +20,8 @@ const ROUTES: RouteEntry[] = [
   { path: "/grundlagen", priority: 0.85, changeFrequency: "weekly" },
   { path: "/grundlagen/artikel", priority: 0.7, changeFrequency: "monthly" },
   { path: "/grundlagen/wo-ist", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/grundlagen/sentence-engine", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/grundlagen/sentence-engine/adjektiv", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/conjugation", priority: 0.7, changeFrequency: "monthly" },
   { path: "/grundlagen/cumle-motoru", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/dativ", priority: 0.7, changeFrequency: "monthly" },

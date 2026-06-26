@@ -533,6 +533,14 @@ export const GRUNDLAGEN_MODULES = [
     sections: articlesData.sets.length,
   },
   {
+    id: "sentence-engine",
+    href: "/grundlagen/sentence-engine",
+    de: "Sentence Engine",
+    tr: "20 cümle kalıbı",
+    desc: "Pattern 01–10 · kelime değil motor",
+    sections: 10,
+  },
+  {
     id: "wo-ist",
     href: "/grundlagen/wo-ist",
     de: "Wo ist …?",

@@ -44,6 +44,8 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/satz": "Satz Builder",
   "/grundlagen/artikel": "Artikel Trainer",
   "/grundlagen/wo-ist": "Wo ist …? Lego",
+  "/grundlagen/sentence-engine": "Sentence Engine",
+  "/grundlagen/sentence-engine/adjektiv": "Adjective Engine",
   "/grundlagen/dativ": "Dativ Trainer",
   "/grundlagen/negation": "Negation Trainer",
   "/grundlagen/prepositions": "Prepositions Trainer",
