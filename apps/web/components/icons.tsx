@@ -133,6 +133,14 @@ export function IconArrowLeft(props: IconProps) {
   );
 }
 
+export function IconFlame(props: IconProps) {
+  return (
+    <SvgIcon {...props}>
+      <path d="M12 22c-4-2-6-5-6-9 0-3 2-5 4-7 1 2 2 3 2 5 0-1 1-3 2-4 1 2 2 4 2 6 0 4-2 7-4 9z" />
+    </SvgIcon>
+  );
+}
+
 export function IconCheck(props: IconProps) {
   return (
     <SvgIcon {...props}>

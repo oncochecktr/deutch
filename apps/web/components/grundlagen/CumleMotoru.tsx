@@ -13,7 +13,7 @@ import {
   recordCumleMotoruQuiz,
 } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
-import { IconCheck, IconX } from "@/components/icons";
+import { IconCheck, IconFlame, IconX } from "@/components/icons";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
 import { Pattern02Hint } from "@/components/grundlagen/SentenceEngineHub";
 import { SpiegelCardView } from "@/components/grundlagen/SpiegelCardView";
@@ -99,7 +99,10 @@ export function CumleMotoru() {
             {points} puan
           </span>
           {streak > 0 && (
-            <span className="text-sm text-sage-500">🔥 {streak}</span>
+            <span className="inline-flex items-center gap-1 text-sm text-sage-500">
+              <IconFlame size={14} className="text-sage-400" />
+              {streak}
+            </span>
           )}
           <span className="text-xs text-sage-400">
             {seenCount}/{total} kelime
@@ -273,6 +276,8 @@ function WordQuizCard({
   const [selected, setSelected] = useState<number | null>(null);
   const show = selected !== null;
   const ok = selected === quiz.correctIndex;
+  const correctDe = quiz.options[quiz.correctIndex];
+  const correctTr = quiz.optionTranslations[quiz.correctIndex];
 
   return (
     <div className="space-y-4 rounded-2xl border border-sage-100 bg-white p-5">
@@ -281,33 +286,74 @@ function WordQuizCard({
       </p>
       <p className="text-lg font-medium text-sage-700">{quiz.prompt_tr}</p>
       <div className="space-y-2">
-        {quiz.options.map((opt, i) => (
-          <button
-            key={opt}
-            type="button"
-            disabled={show}
-            onClick={() => setSelected(i)}
-            className={`w-full rounded-xl border px-4 py-3 text-left text-sm font-medium ${
-              !show
-                ? "border-sage-100 text-goethe-blue hover:border-sage-300"
-                : i === quiz.correctIndex
-                  ? "border-sage-500 bg-sage-50"
-                  : i === selected
-                    ? "border-red-200 bg-red-50"
-                    : "opacity-40"
-            }`}
-          >
-            {opt}
-          </button>
-        ))}
+        {quiz.options.map((opt, i) => {
+          const isSelected = selected === i;
+          const isCorrect = i === quiz.correctIndex;
+          const reveal = show;
+          return (
+            <button
+              key={opt}
+              type="button"
+              disabled={show}
+              onClick={() => setSelected(i)}
+              className={`w-full rounded-xl border px-4 py-3 text-left transition ${
+                !reveal
+                  ? "border-sage-100 text-goethe-blue hover:border-sage-300"
+                  : isCorrect
+                    ? "border-goethe-blue/40 bg-sage-50/80"
+                    : isSelected
+                      ? "border-sage-300 bg-sage-50/50"
+                      : "border-sage-100 opacity-50"
+              }`}
+            >
+              <p className="text-sm font-medium">{opt}</p>
+              {reveal && (
+                <p className="mt-1 text-xs leading-relaxed text-sage-500">
+                  {quiz.optionTranslations[i]}
+                </p>
+              )}
+            </button>
+          );
+        })}
       </div>
       {show && (
         <>
-          <div className={`flex items-center gap-2 text-sm ${ok ? "text-sage-600" : "text-red-600"}`}>
-            {ok ? <IconCheck size={18} /> : <IconX size={18} />}
-            {ok ? "Doğru cümle!" : `Doğrusu: ${quiz.options[quiz.correctIndex]}`}
+          <div
+            className={`rounded-xl border px-4 py-3 text-sm ${
+              ok ? "border-sage-200 bg-sage-50 text-sage-700" : "border-sage-200 bg-sage-50 text-sage-700"
+            }`}
+          >
+            <div className="flex items-start gap-2">
+              {ok ? (
+                <IconCheck size={16} className="mt-0.5 shrink-0 text-goethe-blue" />
+              ) : (
+                <IconX size={16} className="mt-0.5 shrink-0 text-sage-500" />
+              )}
+              <div className="min-w-0">
+                {ok ? (
+                  <>
+                    <p className="font-medium text-goethe-blue">Doğru cümle</p>
+                    <p className="mt-1 text-xs text-sage-500">
+                      <span className="font-medium text-sage-600">{correctDe}</span>
+                      {" — "}
+                      {correctTr}
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="font-medium text-sage-700">Doğru cevap</p>
+                    <p className="mt-1 font-medium text-goethe-blue">{correctDe}</p>
+                    <p className="mt-0.5 text-xs text-sage-500">{correctTr}</p>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
-          <button type="button" className="btn-primary w-full" onClick={() => onDone(ok)}>
+          <button
+            type="button"
+            className="w-full rounded-xl border-2 border-goethe-blue py-3 text-sm font-semibold text-goethe-blue transition hover:bg-goethe-blue/5"
+            onClick={() => onDone(ok)}
+          >
             Sonraki →
           </button>
         </>

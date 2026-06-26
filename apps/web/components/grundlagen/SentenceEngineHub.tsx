@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { IconArrowRight } from "@/components/icons";
+import { IconArrowRight, IconCheck } from "@/components/icons";
 import { generatePattern02Examples, pattern02ForLemma } from "@/lib/adjektivDeclension";
 import { SENTENCE_PATTERNS } from "@/lib/sentenceEngine";
 
@@ -101,8 +101,9 @@ export function Pattern02Hint({
 
   return (
     <div className={`rounded-xl border border-goethe-gold/30 bg-goethe-gold/10 p-3 ${className}`}>
-      <p className="text-[10px] font-bold uppercase tracking-wide text-goethe-blue">
-        ✓ Pattern 02 ile kullanılabilir
+      <p className="text-[10px] font-bold uppercase tracking-wide text-goethe-blue flex items-center gap-1.5">
+        <IconCheck size={12} className="shrink-0" />
+        Pattern 02 ile kullanılabilir
       </p>
       <ul className="mt-2 space-y-1 text-sm text-sage-700">
         {examples.map((ex) => (

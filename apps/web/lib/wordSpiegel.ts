@@ -69,6 +69,8 @@ export interface WordQuiz {
   id: string;
   prompt_tr: string;
   options: string[];
+  /** Her Almanca seçenek için Türkçe karşılık */
+  optionTranslations: string[];
   correctIndex: number;
   wordId: string;
 }
@@ -83,21 +85,36 @@ export function generateWordQuizzes(count = 10, seed = Date.now()): WordQuiz[] {
     const idx = s % words.length;
     const target = words[idx];
     const correct = target.example_de.replace(/\.$/, "");
-    const wrongPool = words
-      .filter((w) => w.id !== target.id)
-      .map((w) => w.example_de.replace(/\.$/, ""));
+    const correctTr = exampleLineTr(target);
+    const wrongPool = words.filter((w) => w.id !== target.id);
     s = (s * 1103515245 + 12345) & 0x7fffffff;
-    const wrong = shufflePick(wrongPool, 3, s);
-    const options = shufflePick([correct, ...wrong], 4, s + i);
+    const wrongWords = shufflePick(wrongPool, 3, s);
+    const wrong = wrongWords.map((w) => w.example_de.replace(/\.$/, ""));
+    const wrongTr = wrongWords.map(exampleLineTr);
+    const optionPairs = shufflePick(
+      [
+        { de: correct, tr: correctTr },
+        ...wrong.map((de, j) => ({ de, tr: wrongTr[j] })),
+      ],
+      4,
+      s + i
+    );
     quizzes.push({
       id: `wq-${target.id}-${i}`,
       prompt_tr: target.example_tr || target.translation_tr,
-      options,
-      correctIndex: options.indexOf(correct),
+      options: optionPairs.map((p) => p.de),
+      optionTranslations: optionPairs.map((p) => p.tr),
+      correctIndex: optionPairs.findIndex((p) => p.de === correct),
       wordId: target.id,
     });
   }
   return quizzes;
+}
+
+function exampleLineTr(w: VocabularyWord): string {
+  const tr = w.example_tr?.trim();
+  if (tr) return tr.replace(/\.$/, "");
+  return w.translation_tr;
 }
 
 function shufflePick<T>(arr: T[], n: number, seed: number): T[] {

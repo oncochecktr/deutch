@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { IconCheck } from "@/components/icons";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
 import { useProgress } from "@/lib/ProgressContext";
 import type { SpiegelDisplay } from "@/lib/wordSpiegel";
@@ -34,11 +35,11 @@ export function WordSpiegelList({ items, selectedId, onSelect }: WordSpiegelList
               }`}
             >
               <span
-                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
+                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs ${
                   touched ? "bg-sage-200 text-sage-600" : "bg-goethe-blue/10 text-goethe-blue"
                 }`}
               >
-                {touched ? "✓" : "·"}
+                {touched ? <IconCheck size={14} /> : <span className="text-sage-300">·</span>}
               </span>
               <div className="min-w-0 flex-1">
                 <p className="truncate font-semibold text-goethe-blue">
