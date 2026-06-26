@@ -965,6 +965,12 @@
           "example_tr": "İki çocuğum var."
         },
         {
+          "de": "Ich habe eine …",
+          "tr": "Bir … var (dişil)",
+          "example_de": "Ich habe eine Wohnung.",
+          "example_tr": "Bir dairem var."
+        },
+        {
           "de": "Ich komme aus …",
           "tr": "…den geliyorum",
           "example_de": "Ich komme aus der Türkei.",
@@ -993,6 +999,12 @@
           "tr": "… lazım",
           "example_de": "Ich brauche Hilfe.",
           "example_tr": "Yardıma ihtiyacım var."
+        },
+        {
+          "de": "Ich brauche ein …",
+          "tr": "Bir … lazım",
+          "example_de": "Ich brauche ein Taxi.",
+          "example_tr": "Bir taksiye ihtiyacım var."
         }
       ]
     },
@@ -1025,6 +1037,18 @@
           "tr": "Vaktin var mı?",
           "example_de": "Nein, ich habe keine Zeit.",
           "example_tr": "Hayır, vaktim yok."
+        },
+        {
+          "de": "Hast du ein Auto?",
+          "tr": "Araban var mı?",
+          "example_de": "Ja, ich habe ein Auto.",
+          "example_tr": "Evet, arabam var."
+        },
+        {
+          "de": "Haben Sie irgendwelche Fragen?",
+          "tr": "Sorunuz var mı? (resmi)",
+          "example_de": "Ja, ich habe einige Fragen.",
+          "example_tr": "Evet, birkaç sorum var."
         },
         {
           "de": "Lernst du Deutsch?",

@@ -13,10 +13,13 @@ import {
 import { SmartDiktatDrill } from "@/components/diktat/SmartDiktatDrill";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
 
-const STARTER_LINES = `Ich habe ein Handy. Das Handy ist neu.
-Ich sehe ein Restaurant. Das Restaurant ist sehr beliebt.
-Ich habe ein Buch. Das Buch ist sehr interessant.
-Ich sehe ein Haus. Das Haus ist sehr klein.
+const STARTER_LINES = `Hast du ein Auto? Ja, ich habe ein Auto.
+Ich brauche Hilfe. Ich brauche Zeit.
+Wo ist der Strand? Wo ist dein Vater? Er ist hier.
+Das ist ein Strand. Viele Leute gehen dorthin.
+Das ist meine Uhr. Sie ist neu.
+Ich habe eine Wohnung. Die Wohnung ist sehr gut.
+Ich sehe einen Mann. Er ist sehr seltsam.
 `;
 
 export function DiktatWorkspace() {

@@ -21,6 +21,22 @@ export default function GrundlagenPage() {
       maxWidth="lg"
     >
       <Link
+        href="/grundlagen/motor-cumleler"
+        className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-blue/25 bg-goethe-blue/5 p-5 transition hover:border-goethe-blue/45"
+      >
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
+            Ezber kalıpları
+          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">A1 Motor Cümleleri</h2>
+          <p className="mt-1 text-sm text-sage-600">
+            Hast du …? · Ich brauche … · Wo ist …? · Das ist …
+          </p>
+        </div>
+        <span className="shrink-0 text-goethe-blue">→</span>
+      </Link>
+
+      <Link
         href="/grundlagen/sentence-engine"
         className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-gold/50 bg-goethe-gold/10 p-5 transition hover:border-goethe-gold/70"
       >

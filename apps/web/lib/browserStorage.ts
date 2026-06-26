@@ -43,6 +43,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/grammar": "Grammar A1",
   "/grundlagen/satz": "Satz Builder",
   "/grundlagen/artikel": "Artikel Trainer",
+  "/grundlagen/motor-cumleler": "A1 Motor Cümleleri",
   "/grundlagen/wo-ist": "Wo ist …? Lego",
   "/grundlagen/sentence-engine": "Sentence Engine",
   "/grundlagen/sentence-engine/adjektiv": "Adjective Engine",

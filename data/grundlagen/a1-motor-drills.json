@@ -1,0 +1,268 @@
+{
+  "version": "1.0.0",
+  "title": "A1 Motor Cümleleri",
+  "titleTr": "Ezber kalıpları — soru & cevap",
+  "groups": [
+    {
+      "id": "haben-du-sie",
+      "patternIds": ["haben-qa", "patterns"],
+      "title": "Haben — Hast du / Haben Sie",
+      "titleTr": "Var mı? — sen / siz (resmi)",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "dialogue",
+          "question_de": "Hast du ein Auto?",
+          "question_tr": "Araban var mı?",
+          "answer_de": "Ja, ich habe ein Auto.",
+          "answer_tr": "Evet, arabam var."
+        },
+        {
+          "type": "dialogue",
+          "question_de": "Haben Sie Zeit?",
+          "question_tr": "Vaktiniz var mı? (resmi)",
+          "answer_de": "Ja, ich habe Zeit.",
+          "answer_tr": "Evet, vaktim var."
+        },
+        {
+          "type": "dialogue",
+          "question_de": "Hast du Geld?",
+          "question_tr": "Paran var mı?",
+          "answer_de": "Ja, ich habe Geld.",
+          "answer_tr": "Evet, param var."
+        }
+      ]
+    },
+    {
+      "id": "haben-plural",
+      "patternIds": ["haben-qa", "patterns"],
+      "title": "Haben — einige / Plural",
+      "titleTr": "Birkaç / çoğul — artikel değişir",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "dialogue",
+          "question_de": "Haben Sie irgendwelche Fragen?",
+          "question_tr": "Herhangi bir sorunuz var mı?",
+          "answer_de": "Ja, ich habe einige Fragen.",
+          "answer_tr": "Evet, birkaç sorum var."
+        },
+        {
+          "type": "example",
+          "de": "Ich habe eine Frage.",
+          "tr": "Bir sorum var."
+        },
+        {
+          "type": "example",
+          "de": "Ich habe zwei Fragen.",
+          "tr": "İki sorum var."
+        },
+        {
+          "type": "dialogue",
+          "question_de": "Haben Sie irgendwelche Fehler?",
+          "question_tr": "Herhangi bir hatanız var mı?",
+          "answer_de": "Ja, ich habe einige Fehler.",
+          "answer_tr": "Evet, birkaç hatam var."
+        },
+        {
+          "type": "example",
+          "de": "Ich habe einen Fehler.",
+          "tr": "Bir hatam var."
+        },
+        {
+          "type": "example",
+          "de": "Ich habe zwei Fehler.",
+          "tr": "İki hatam var."
+        }
+      ]
+    },
+    {
+      "id": "haben-familie",
+      "patternIds": ["haben-qa", "patterns"],
+      "title": "Haben — Aile",
+      "titleTr": "Akraba — einen / eine",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "dialogue",
+          "question_de": "Hast du einen Bruder oder Schwestern?",
+          "question_tr": "Erkek kardeşin veya kız kardeşlerin var mı?",
+          "answer_de": "Ich habe einen Bruder und eine Schwester.",
+          "answer_tr": "Bir erkek kardeşim ve bir kız kardeşim var."
+        }
+      ]
+    },
+    {
+      "id": "sehen-pronomen",
+      "patternIds": ["sehen-pronomen", "patterns"],
+      "title": "Ich sehe … → Er / Sie",
+      "titleTr": "Görüyorum → o (eril/dişil)",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Ich sehe einen Mann. Er ist sehr seltsam.",
+          "tr": "Bir adam görüyorum. O çok garip."
+        },
+        {
+          "type": "example",
+          "de": "Ich sehe eine Frau. Sie wartet.",
+          "tr": "Bir kadın görüyorum. O bekliyor."
+        }
+      ]
+    },
+    {
+      "id": "das-ist-ein",
+      "patternIds": ["das-ist-ein"],
+      "title": "Das ist ein …",
+      "titleTr": "Bu bir … — tanıtım",
+      "moduleHref": "/grundlagen/sentence-engine/das-ist",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Das ist ein Strand. Viele Leute gehen dorthin.",
+          "tr": "Bu bir sahil. Birçok insan oraya gidiyor."
+        }
+      ]
+    },
+    {
+      "id": "das-ist-mein",
+      "patternIds": ["das-ist-mein"],
+      "title": "Das ist mein/meine … → Sie",
+      "titleTr": "Bu benim … — sahiplik + yorum",
+      "moduleHref": "/grundlagen/sentence-engine/das-ist-mein",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Das ist meine Uhr. Sie ist neu.",
+          "tr": "Bu benim saatim. O yeni."
+        }
+      ]
+    },
+    {
+      "id": "wo-ist-artikel",
+      "patternIds": ["wo-ist"],
+      "title": "Wo ist der/die …?",
+      "titleTr": "… nerede? — artikel + isim",
+      "moduleHref": "/grundlagen/wo-ist",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Wo ist der Strand?",
+          "tr": "Sahil nerede?"
+        },
+        {
+          "type": "example",
+          "de": "Wo ist der Lehrer?",
+          "tr": "Öğretmen nerede? (erkek)"
+        },
+        {
+          "type": "example",
+          "de": "Wo ist die Lehrerin?",
+          "tr": "Öğretmen nerede? (kadın)"
+        }
+      ]
+    },
+    {
+      "id": "wo-ist-possessiv",
+      "patternIds": ["wo-ist"],
+      "title": "Wo ist dein/deine …?",
+      "titleTr": "Senin … nerede? — sahiplik",
+      "moduleHref": "/grundlagen/wo-ist",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Wo ist dein Vater? Er ist hier.",
+          "tr": "Baban nerede? O burada."
+        },
+        {
+          "type": "example",
+          "de": "Wo ist deine Mutter? Sie ist zu Hause.",
+          "tr": "Annen nerede? O evde."
+        }
+      ]
+    },
+    {
+      "id": "wo-ist-antwort",
+      "patternIds": ["wo-ist"],
+      "title": "Wo ist …? — Cevap kalıpları",
+      "titleTr": "Nerede? — hier / zu Hause / in der Schule",
+      "moduleHref": "/grundlagen/wo-ist",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Wo ist der Lehrer? Er ist in der Schule.",
+          "tr": "Öğretmen nerede? O okulda."
+        },
+        {
+          "type": "example",
+          "de": "Wo ist der Lehrer? Er ist zu Hause.",
+          "tr": "Öğretmen nerede? O evde."
+        }
+      ]
+    },
+    {
+      "id": "haben-zweite-satz",
+      "patternIds": ["haben-qa", "patterns"],
+      "title": "Ich habe … — Die … ist …",
+      "titleTr": "Bir … var → O … (ikinci cümle)",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Ich habe eine Wohnung. Die Wohnung ist sehr gut.",
+          "tr": "Bir dairem var. Daire çok iyi."
+        }
+      ]
+    },
+    {
+      "id": "brauchen",
+      "patternIds": ["brauchen", "patterns"],
+      "title": "Ich brauche …",
+      "titleTr": "… lazım / ihtiyacım var",
+      "moduleHref": "/grundlagen/patterns",
+      "lines": [
+        {
+          "type": "example",
+          "de": "Ich brauche ein Auto.",
+          "tr": "Bir arabaya ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche ein Taxi.",
+          "tr": "Bir taksiye ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche eine Jacke.",
+          "tr": "Bir cekete ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche eine Tasche.",
+          "tr": "Bir çantaya ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche Hilfe.",
+          "tr": "Yardıma ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche Zeit.",
+          "tr": "Zamana ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche Geld.",
+          "tr": "Paraya ihtiyacım var."
+        },
+        {
+          "type": "example",
+          "de": "Ich brauche deine Hilfe.",
+          "tr": "Senin yardımına ihtiyacım var."
+        }
+      ]
+    }
+  ]
+}

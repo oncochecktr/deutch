@@ -53,7 +53,14 @@ export const SPEAK_LESSONS: SpeakLesson[] = [
     order: 3,
     title: "Aile",
     goal: "Ailen hakkında 3–4 cümle kurabilirsin.",
-    phrases: ["die Familie", "Ich habe …", "Meine Frau / Mein Mann", "Kinder"],
+    phrases: [
+      "die Familie",
+      "Ich habe …",
+      "Hast du einen Bruder?",
+      "Ich habe einen Bruder und eine Schwester.",
+      "Meine Frau / Mein Mann",
+      "Kinder",
+    ],
     steps: [
       { title: "Kelime", instruction: "Familie, Frau, Mann, Kind kelimelerini öğret." },
       { title: "Ich habe", instruction: "Ich habe eine Frau und zwei Kinder kalıbı." },

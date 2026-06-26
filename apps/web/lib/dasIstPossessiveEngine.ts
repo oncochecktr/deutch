@@ -17,7 +17,7 @@ const EXTRA_NOUNS: PossessiveNoun[] = [
   { id: "lieblingsort", word: "Lieblingsort", article: "der", translation_tr: "favori yer" },
 ];
 
-const NOUN_NAMES = ["Zimmer", "Familie", "Park", "Küche", "Büro"] as const;
+const NOUN_NAMES = ["Zimmer", "Familie", "Park", "Küche", "Büro", "Uhr"] as const;
 
 export const POSSESSIVE_OWNERS: {
   id: PossessiveOwnerId;

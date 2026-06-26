@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { MotorDrillPanel } from "@/components/grundlagen/MotorDrillPanel";
 import { WoIstLegoTrainer } from "@/components/grundlagen/WoIstLegoTrainer";
+import { getMotorDrillsForPattern } from "@/lib/motorDrills";
+
+const WO_IST_DRILLS = getMotorDrillsForPattern("wo-ist");
 
 export default function WoIstPage() {
   return (
@@ -24,6 +28,7 @@ export default function WoIstPage() {
             </Link>
           </p>
         </div>
+        <MotorDrillPanel groups={WO_IST_DRILLS} showAllLink />
         <WoIstLegoTrainer />
     </PageShell>
   );

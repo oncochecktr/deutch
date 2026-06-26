@@ -31,6 +31,7 @@ export interface DasIstPair {
 const EXTRA_NOUNS: Omit<DasIstNoun, "deck">[] = [
   { id: "hotel", word: "Hotel", article: "das", translation_tr: "otel" },
   { id: "markt", word: "Markt", article: "der", translation_tr: "pazar" },
+  { id: "strand", word: "Strand", article: "der", translation_tr: "sahil" },
   { id: "zoo", word: "Zoo", article: "der", translation_tr: "hayvanat bahçesi" },
 ];
 
@@ -43,6 +44,7 @@ const NOUN_LIST: { name: string; deck: DasIstDeckId }[] = [
   { name: "Supermarkt", deck: "er" },
   { name: "Bahnhof", deck: "er" },
   { name: "Park", deck: "er" },
+  { name: "Strand", deck: "er" },
   { name: "Markt", deck: "er" },
   { name: "Zoo", deck: "er" },
   { name: "Apotheke", deck: "sie" },
@@ -117,6 +119,7 @@ export const DAS_IST_ADJECTIVES: DasIstAdj[] = [
   { id: "gross", lemma: "groß", translation_tr: "büyük" },
   { id: "klein", lemma: "klein", translation_tr: "küçük" },
   { id: "neu", lemma: "neu", translation_tr: "yeni" },
+  { id: "seltsam", lemma: "seltsam", translation_tr: "garip" },
 ];
 
 export const DAS_IST_DECKS: {

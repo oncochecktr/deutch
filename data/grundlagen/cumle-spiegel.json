@@ -163,6 +163,105 @@
       "tr": "Almanya'da çalışmak istediğim için Almanca öğreniyorum.",
       "ipa": "[ɪç 'lɛʁnə dɔɪtʃ vaɪl ɪç ɪn 'dɔɪtʃlant 'aʁbaɪtən 'mœçtə]",
       "tags": ["a2"]
+    },
+    {
+      "id": "motor-hast-auto",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Hast du ein Auto?",
+      "tr": "Araban var mı?",
+      "ipa": "[hast duː aɪn 'aʊto]",
+      "tags": ["motor", "haben"]
+    },
+    {
+      "id": "motor-habe-auto",
+      "level": ["a1", "unsure"],
+      "aspect": "answer",
+      "de": "Ja, ich habe ein Auto.",
+      "tr": "Evet, arabam var.",
+      "ipa": "[jaː ɪç 'haːbə aɪn 'aʊto]",
+      "tags": ["motor", "haben"]
+    },
+    {
+      "id": "motor-haben-sie-zeit",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Haben Sie Zeit?",
+      "tr": "Vaktiniz var mı?",
+      "ipa": "['haːbən ziː tsait]",
+      "tags": ["motor", "haben"]
+    },
+    {
+      "id": "motor-habe-zeit",
+      "level": ["a1", "unsure"],
+      "aspect": "answer",
+      "de": "Ja, ich habe Zeit.",
+      "tr": "Evet, vaktim var.",
+      "ipa": "[jaː ɪç 'haːbə tsait]",
+      "tags": ["motor", "haben"]
+    },
+    {
+      "id": "motor-brauche-hilfe",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich brauche Hilfe.",
+      "tr": "Yardıma ihtiyacım var.",
+      "ipa": "[ɪç 'bʁaʊxə 'hɪlfə]",
+      "tags": ["motor", "brauchen"]
+    },
+    {
+      "id": "motor-wo-strand",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Wo ist der Strand?",
+      "tr": "Sahil nerede?",
+      "ipa": "[voː ɪst deːɐ ʃtʁant]",
+      "tags": ["motor", "wo-ist"]
+    },
+    {
+      "id": "motor-wo-vater",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Wo ist dein Vater?",
+      "tr": "Baban nerede?",
+      "ipa": "[voː ɪst daɪn 'faːtɐ]",
+      "tags": ["motor", "wo-ist"]
+    },
+    {
+      "id": "motor-das-ist-strand",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Das ist ein Strand. Viele Leute gehen dorthin.",
+      "tr": "Bu bir sahil. Birçok insan oraya gidiyor.",
+      "ipa": "[das ɪst aɪn ʃtʁant]",
+      "tags": ["motor", "das-ist"]
+    },
+    {
+      "id": "motor-das-ist-uhr",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Das ist meine Uhr. Sie ist neu.",
+      "tr": "Bu benim saatim. O yeni.",
+      "ipa": "[das ɪst 'maɪnə uːɐ]",
+      "tags": ["motor", "das-ist-mein"]
+    },
+    {
+      "id": "motor-sehe-mann",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich sehe einen Mann. Er ist sehr seltsam.",
+      "tr": "Bir adam görüyorum. O çok garip.",
+      "ipa": "[ɪç 'zeːə 'aɪnən man]",
+      "tags": ["motor", "sehen"]
+    },
+    {
+      "id": "motor-habe-wohnung",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich habe eine Wohnung. Die Wohnung ist sehr gut.",
+      "tr": "Bir dairem var. Daire çok iyi.",
+      "ipa": "[ɪç 'haːbə 'aɪnə 'voːnʊŋ]",
+      "tags": ["motor", "haben"]
     }
   ]
 }
