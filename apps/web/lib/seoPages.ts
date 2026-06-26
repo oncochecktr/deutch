@@ -50,6 +50,12 @@ export const SEO_PAGES = {
       "Almanca kelime sırası: SVO, Ja/Nein soruları ve W-Fragen. A1 kalıplarıyla interaktif alıştırma.",
     path: "/grundlagen/word-order",
   }),
+  cumleMotoru: pageMetadata({
+    title: "Kelime Oyunu — Cümle Hafızası",
+    description:
+      "852 A1 kelimeyi gerçek cümlelerle öğren. Türkçe isteğe bağlı, okunuş, puan ve oyun modu.",
+    path: "/grundlagen/cumle-motoru",
+  }),
   exam: pageMetadata({
     title: "A1 Sınav Merkezi — TELC · ÖSD · DTZ",
     description:

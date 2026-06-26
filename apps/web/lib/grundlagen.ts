@@ -493,6 +493,14 @@ export function getPrepositionsTrainer(): SetTrainerData {
 
 export const GRUNDLAGEN_MODULES = [
   {
+    id: "cumle-motoru",
+    href: "/grundlagen/cumle-motoru",
+    de: "Kelime Oyunu",
+    tr: "852 kelime · cümle",
+    desc: "Gerçek cümle + okunuş + puan — sıkılmadan öğren",
+    sections: 852,
+  },
+  {
     id: "word-order",
     href: "/grundlagen/word-order",
     de: "Word Order Trainer",

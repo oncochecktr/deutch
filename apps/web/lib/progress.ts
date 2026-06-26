@@ -23,6 +23,11 @@ export interface GrundlagenProgress {
   prepositionsCompleted: string[];
   prepositionScores: Record<string, number>;
   zeitQuizBest: number;
+  /** Cümle Motoru — puan & ilerleme */
+  cumleMotoruPoints: number;
+  cumleMotoruStreak: number;
+  cumleMotoruCardIndex: number;
+  cumleMotoruSeenCards: string[];
 }
 
 export const DEFAULT_GRUNDLAGEN: GrundlagenProgress = {
@@ -45,6 +50,10 @@ export const DEFAULT_GRUNDLAGEN: GrundlagenProgress = {
   prepositionsCompleted: [],
   prepositionScores: {},
   zeitQuizBest: 0,
+  cumleMotoruPoints: 0,
+  cumleMotoruStreak: 0,
+  cumleMotoruCardIndex: 0,
+  cumleMotoruSeenCards: [],
 };
 
 export interface WordProgress {
@@ -259,6 +268,10 @@ function normalizeGrundlagen(
         ? g.prepositionScores
         : {},
     zeitQuizBest: typeof g.zeitQuizBest === "number" ? g.zeitQuizBest : 0,
+    cumleMotoruPoints: typeof g.cumleMotoruPoints === "number" ? g.cumleMotoruPoints : 0,
+    cumleMotoruStreak: typeof g.cumleMotoruStreak === "number" ? g.cumleMotoruStreak : 0,
+    cumleMotoruCardIndex: typeof g.cumleMotoruCardIndex === "number" ? g.cumleMotoruCardIndex : 0,
+    cumleMotoruSeenCards: Array.isArray(g.cumleMotoruSeenCards) ? g.cumleMotoruSeenCards : [],
   };
 }
 
@@ -886,6 +899,50 @@ export function recordKonusDinleDailyTurn(
       konusDinleTurns: dailyStats.konusDinleTurns + 1,
       correct: dailyStats.correct + (isGood ? 1 : 0),
       wrong: dailyStats.wrong + (isGood ? 0 : 1),
+    },
+  };
+}
+
+const CUMLE_CARD_POINTS = 5;
+const CUMLE_QUIZ_CORRECT = 10;
+const CUMLE_QUIZ_WRONG_STREAK_RESET = true;
+
+/** Kart görüntülendi — ilk kez +5 puan */
+export function recordCumleMotoruCardSeen(
+  progress: UserProgress,
+  cardId: string,
+  cardIndex: number
+): UserProgress {
+  const g = progress.grundlagen;
+  const seen = g.cumleMotoruSeenCards.includes(cardId);
+  return {
+    ...progress,
+    grundlagen: {
+      ...g,
+      cumleMotoruCardIndex: cardIndex,
+      cumleMotoruPoints: seen ? g.cumleMotoruPoints : g.cumleMotoruPoints + CUMLE_CARD_POINTS,
+      cumleMotoruSeenCards: seen ? g.cumleMotoruSeenCards : [...g.cumleMotoruSeenCards, cardId],
+    },
+  };
+}
+
+export function recordCumleMotoruQuiz(
+  progress: UserProgress,
+  correct: boolean
+): UserProgress {
+  const g = progress.grundlagen;
+  const streak = correct
+    ? g.cumleMotoruStreak + 1
+    : CUMLE_QUIZ_WRONG_STREAK_RESET
+      ? 0
+      : g.cumleMotoruStreak;
+  const bonus = correct ? CUMLE_QUIZ_CORRECT + Math.min(streak, 5) : 0;
+  return {
+    ...progress,
+    grundlagen: {
+      ...g,
+      cumleMotoruStreak: streak,
+      cumleMotoruPoints: g.cumleMotoruPoints + bonus,
     },
   };
 }

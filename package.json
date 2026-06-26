@@ -17,6 +17,8 @@
     "audio": "node scripts/generate-audio.mjs",
     "audit:articles": "node scripts/audit-a1-articles.mjs",
     "audit:text-md": "node scripts/audit-text-md-vocab.mjs",
+    "audit:audio": "node scripts/audit-audio-paths.mjs",
+    "fix:audio-paths": "node scripts/fix-a1-audio-paths.mjs --write",
     "verify:seo": "node scripts/verify-seo.mjs",
     "seed:articles": "node scripts/seed-article-reference.mjs",
     "build:patterns": "node scripts/build-a1-patterns.mjs",

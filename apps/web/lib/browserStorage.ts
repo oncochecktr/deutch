@@ -48,6 +48,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/possessives": "Possessive Trainer",
   "/grundlagen/patterns": "Pattern Trainer",
   "/grundlagen/word-order": "Word Order Trainer",
+  "/grundlagen/cumle-motoru": "Kelime Oyunu",
   "/grundlagen/grammar-pack": "Grammar Pack",
   "/grundlagen/roadmap": "Gramer Yol Haritası",
   "/grundlagen/form": "Resmi form",

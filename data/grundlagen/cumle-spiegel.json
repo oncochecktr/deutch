@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "title": "Cümle Aynası",
+  "cards": [
+    {
+      "id": "intro-name",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich heiße {{firstName}}.",
+      "tr": "Benim adım {{firstName}}.",
+      "ipa": "[ɪç 'haɪsə …]",
+      "tags": ["intro"]
+    },
+    {
+      "id": "intro-full",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich heiße {{firstName}} {{lastName}}.",
+      "tr": "Benim adım {{firstName}} {{lastName}}.",
+      "ipa": "[ɪç 'haɪsə … …]",
+      "tags": ["intro"]
+    },
+    {
+      "id": "intro-student",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich bin {{beruf}}.",
+      "tr": "Ben {{berufTr}}.",
+      "ipa": "[ɪç bɪn …]",
+      "tags": ["intro"]
+    },
+    {
+      "id": "intro-hobby",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Meine Hobbys sind Lesen und Reisen.",
+      "tr": "Hobilerim okumak ve seyahat.",
+      "ipa": "['maɪnə 'hɔbɪs zɪnt 'leːzən ʊnt 'raɪzən]",
+      "tags": ["intro"]
+    },
+    {
+      "id": "stm-mache",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich mache Hausaufgaben.",
+      "tr": "Ödev yapıyorum.",
+      "ipa": "[ɪç 'maxə 'haʊsʔaʊfgɑːbən]",
+      "tags": ["verb"]
+    },
+    {
+      "id": "stm-du-machst",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Du machst Sport.",
+      "tr": "Sen spor yapıyorsun.",
+      "ipa": "[duː maxt ʃpɔʁt]",
+      "tags": ["verb", "person"]
+    },
+    {
+      "id": "stm-wir",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Wir lernen Deutsch.",
+      "tr": "Almanca öğreniyoruz.",
+      "ipa": "[viːɐ 'lɛʁnən dɔɪtʃ]",
+      "tags": ["verb", "person"]
+    },
+    {
+      "id": "stm-will",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich will Deutsch lernen.",
+      "tr": "Almanca öğrenmek istiyorum.",
+      "ipa": "[ɪç vɪl dɔɪtʃ 'lɛʁnən]",
+      "tags": ["modal"]
+    },
+    {
+      "id": "stm-moechte",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich möchte einen Kaffee.",
+      "tr": "Bir kahve istiyorum.",
+      "ipa": "[ɪç 'mœçtə 'aɪnən ka'feː]",
+      "tags": ["modal"]
+    },
+    {
+      "id": "stm-kann",
+      "level": ["a1", "unsure"],
+      "aspect": "statement",
+      "de": "Ich kann gut kochen.",
+      "tr": "İyi yemek yapabilirim.",
+      "ipa": "[ɪç kan guːt 'kɔxən]",
+      "tags": ["modal"]
+    },
+    {
+      "id": "q-was",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Was machst du?",
+      "tr": "Ne yapıyorsun?",
+      "ipa": "[vas maxt duː]",
+      "tags": ["question"]
+    },
+    {
+      "id": "q-moechtest",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Möchtest du Kaffee?",
+      "tr": "Kahve ister misin?",
+      "ipa": "['mœçtest duː ka'feː]",
+      "tags": ["question", "modal"]
+    },
+    {
+      "id": "q-bist",
+      "level": ["a1", "unsure"],
+      "aspect": "question",
+      "de": "Bist du müde?",
+      "tr": "Yorgun musun?",
+      "ipa": "[bɪst duː 'myːdə]",
+      "tags": ["question"]
+    },
+    {
+      "id": "q-woher",
+      "level": ["a1", "a2"],
+      "aspect": "question",
+      "de": "Woher kommst du?",
+      "tr": "Nerelisin?",
+      "ipa": "[vo'heːɐ 'kɔmst duː]",
+      "tags": ["question"]
+    },
+    {
+      "id": "ans-ja",
+      "level": ["a1", "unsure"],
+      "aspect": "answer",
+      "de": "Ja, ich möchte.",
+      "tr": "Evet, isterim.",
+      "ipa": "[jaː ɪç 'mœçtə]",
+      "tags": ["answer"]
+    },
+    {
+      "id": "ans-nein",
+      "level": ["a1", "unsure"],
+      "aspect": "answer",
+      "de": "Nein, danke.",
+      "tr": "Hayır, teşekkürler.",
+      "ipa": "[naɪn 'daŋkə]",
+      "tags": ["answer"]
+    },
+    {
+      "id": "ans-turkey",
+      "level": ["a1", "unsure"],
+      "aspect": "answer",
+      "de": "Ich komme aus der Türkei.",
+      "tr": "Türkiye'den geliyorum.",
+      "ipa": "[ɪç 'kɔmə aʊs deːɐ tʏʁ'kaɪ]",
+      "tags": ["answer"]
+    },
+    {
+      "id": "a2-weil",
+      "level": ["a2", "b1"],
+      "aspect": "statement",
+      "de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.",
+      "tr": "Almanya'da çalışmak istediğim için Almanca öğreniyorum.",
+      "ipa": "[ɪç 'lɛʁnə dɔɪtʃ vaɪl ɪç ɪn 'dɔɪtʃlant 'aʁbaɪtən 'mœçtə]",
+      "tags": ["a2"]
+    }
+  ]
+}

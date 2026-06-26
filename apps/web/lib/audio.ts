@@ -1,6 +1,7 @@
 "use client";
 
 import { buildTeacherSpeakText, sanitizeForTts, trimGermanProfessorText } from "@/lib/speakTts";
+import { audioPathMatchesText } from "@/lib/audioSlug";
 import { TTS_MAX_CHARS, TTS_MAX_CHARS_TR } from "@/lib/ttsConfig";
 
 let currentAudio: HTMLAudioElement | null = null;
@@ -127,6 +128,9 @@ async function playBlobAudio(blob: Blob): Promise<void> {
 
 async function playMp3Url(src: string): Promise<boolean> {
   const audio = new Audio(src);
+  audio.setAttribute("playsinline", "");
+  audio.setAttribute("webkit-playsinline", "");
+  audio.preload = "auto";
   currentAudio = audio;
   try {
     await new Promise<void>((resolve, reject) => {
@@ -222,7 +226,12 @@ async function playLangAudio(
   session: number
 ): Promise<"mp3" | "server" | "browser"> {
   try {
-    if (audioSrc && typeof window !== "undefined") {
+    const mp3Ok =
+      audioSrc &&
+      typeof window !== "undefined" &&
+      (lang !== "de" || audioPathMatchesText(audioSrc, text));
+
+    if (mp3Ok) {
       try {
         await playMp3Url(audioSrc);
         if (isStaleSession(session)) return "browser";

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { CATEGORIES_A1 } from "@german-coach/vocabulary";
 import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
+import { HomeGameBanner } from "@/components/home/HomeGameBanner";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomePathPicker } from "@/components/home/HomePathPicker";
 import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
@@ -45,6 +46,7 @@ export function HomePageClient() {
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
       <div className="space-y-6">
         <HomeHero />
+        <HomeGameBanner />
         <LearningMethodGuide />
         <HomePathPicker recommended={recommended} progress={progress} />
 
@@ -93,6 +95,7 @@ export function HomePageClient() {
           </summary>
           <div className="border-t border-sage-100 p-4">
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <MiniTile href="/grundlagen/cumle-motoru" icon="cards" label="Oyun" stat="852 kelime" />
               <MiniTile href="/review" icon="review" label="Tekrar" stat={srs.due > 0 ? `${srs.due} bekliyor` : "OK"} />
               <MiniTile href="/cards" icon="cards" label="Kartlar" stat={`${a1.total} kelime`} />
               <MiniTile href="/grundlagen" icon="exam" label="Gramer" stat="6 modül" />

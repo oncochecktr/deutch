@@ -12,6 +12,7 @@ import { IconArrowLeft, IconArrowRight, IconPause, IconPlay } from "@/components
 import { playGermanAudio, formatWord, stopAudio } from "@/lib/audio";
 import { buildReviewQueue } from "@/lib/srs";
 import { useProgress } from "@/lib/ProgressContext";
+import { useListenMediaSession } from "@/lib/useListenMediaSession";
 
 type ListenPack = "a1" | "all" | "mesleki" | "work" | "srs";
 
@@ -176,6 +177,39 @@ function ListenPageContent() {
     setShowTranslation(true);
   }, [playing, index, word?.id]);
 
+  const display = word ? formatWord(word.word, word.article) : "";
+
+  const goPrevious = useCallback(() => {
+    interruptPlayback();
+    setPlaying(false);
+    setIndex((i) => (i - 1 + playlist.length) % playlist.length);
+  }, [interruptPlayback, playlist.length]);
+
+  const goNext = useCallback(() => {
+    interruptPlayback();
+    setPlaying(false);
+    setIndex((i) => (i + 1) % playlist.length);
+  }, [interruptPlayback, playlist.length]);
+
+  useListenMediaSession(
+    playing && !!word,
+    {
+      title: display || "German Coach",
+      subtitle: PACK_LABELS[pack],
+      index,
+      total: playlist.length,
+    },
+    {
+      onPause: () => {
+        interruptPlayback();
+        setPlaying(false);
+      },
+      onPlay: () => setPlaying(true),
+      onPrevious: goPrevious,
+      onNext: goNext,
+    }
+  );
+
   if (!word) {
     return (
       <div className="card-soft mx-auto max-w-lg p-8 text-center">
@@ -183,8 +217,6 @@ function ListenPageContent() {
       </div>
     );
   }
-
-  const display = formatWord(word.word, word.article);
 
   return (
     <div className="mx-auto max-w-lg space-y-6">
@@ -271,11 +303,7 @@ function ListenPageContent() {
           <button
             type="button"
             className="btn-secondary inline-flex flex-1 items-center justify-center gap-1"
-            onClick={() => {
-              interruptPlayback();
-              setPlaying(false);
-              setIndex((i) => (i - 1 + playlist.length) % playlist.length);
-            }}
+            onClick={goPrevious}
           >
             <IconArrowLeft size={16} />
             Önceki
@@ -309,11 +337,7 @@ function ListenPageContent() {
           <button
             type="button"
             className="btn-secondary inline-flex flex-1 items-center justify-center gap-1"
-            onClick={() => {
-              interruptPlayback();
-              setPlaying(false);
-              setIndex((i) => (i + 1) % playlist.length);
-            }}
+            onClick={goNext}
           >
             Sonraki
             <IconArrowRight size={16} />
@@ -334,8 +358,11 @@ function ListenPageContent() {
       </div>
 
       <p className="text-center text-xs text-sage-400">
-        MP3 yoksa tarayıcı sesi kullanılır. Ses üretimi:{" "}
-        <code className="rounded bg-sage-100 px-1">npm run audio -- --pack a1</code>
+        Ekran kapalıyken dinlemek için Başlat&apos;a bas, telefonu kilitle — kilit ekranından
+        ileri/geri çalışır. MP3 yoksa sunucu sesi kullanılır.
+      </p>
+      <p className="text-center text-[10px] text-sage-300">
+        Ses üretimi: <code className="rounded bg-sage-100 px-1">npm run audio -- --pack a1</code>
       </p>
     </div>
   );

@@ -41,7 +41,8 @@ function slug(s) {
 
 function buildWord(id, category, entry) {
   const [word, article, plural, tr, ru, exDe, exTr, tags] = entry;
-  const base = slug(word.split(" ")[0]);
+  const speak = article ? `${article} ${word}` : word;
+  const base = slug(word);
   return {
     id: `a1_${String(id).padStart(4, "0")}`,
     level: "A1",

@@ -50,7 +50,7 @@
       "translation_ru": "доброе утро",
       "example_de": "Guten Morgen! Schönen Tag!",
       "example_tr": "Günaydın! İyi günler!",
-      "audio_word": "/audio/a1/guten.mp3",
+      "audio_word": "/audio/a1/guten-morgen.mp3",
       "audio_example": "/audio/a1/guten-morgen-schoenen-tag.mp3",
       "tags": [
         "greeting",
@@ -68,7 +68,7 @@
       "translation_ru": "добрый день",
       "example_de": "Guten Tag, Frau Müller!",
       "example_tr": "İyi günler, Bayan Müller!",
-      "audio_word": "/audio/a1/guten.mp3",
+      "audio_word": "/audio/a1/guten-tag.mp3",
       "audio_example": "/audio/a1/guten-tag-frau-mueller.mp3",
       "tags": [
         "greeting",
@@ -86,7 +86,7 @@
       "translation_ru": "добрый вечер",
       "example_de": "Guten Abend! Wie geht es?",
       "example_tr": "İyi akşamlar! Nasılsınız?",
-      "audio_word": "/audio/a1/guten.mp3",
+      "audio_word": "/audio/a1/guten-abend.mp3",
       "audio_example": "/audio/a1/guten-abend-wie-geht-es.mp3",
       "tags": [
         "greeting",
@@ -104,7 +104,7 @@
       "translation_ru": "спокойной ночи",
       "example_de": "Gute Nacht und schlaf gut!",
       "example_tr": "İyi geceler ve iyi uyu!",
-      "audio_word": "/audio/a1/gute.mp3",
+      "audio_word": "/audio/a1/gute-nacht.mp3",
       "audio_example": "/audio/a1/gute-nacht-und-schlaf-gut.mp3",
       "tags": [
         "greeting",
@@ -140,7 +140,7 @@
       "translation_ru": "до свидания",
       "example_de": "Auf Wiedersehen, Herr Schmidt!",
       "example_tr": "Güle güle, Bay Schmidt!",
-      "audio_word": "/audio/a1/auf.mp3",
+      "audio_word": "/audio/a1/auf-wiedersehen.mp3",
       "audio_example": "/audio/a1/auf-wiedersehen-herr-schmidt.mp3",
       "tags": [
         "greeting",
@@ -248,7 +248,7 @@
       "translation_ru": "привет",
       "example_de": "Grüß Gott! Schönen Tag!",
       "example_tr": "Selam! İyi günler!",
-      "audio_word": "/audio/a1/gruess.mp3",
+      "audio_word": "/audio/a1/gruess-gott.mp3",
       "audio_example": "/audio/a1/gruess-gott-schoenen-tag.mp3",
       "tags": [
         "greeting",
@@ -304,7 +304,7 @@
       "translation_ru": "как дела?",
       "example_de": "Wie geht es Ihnen?",
       "example_tr": "Nasılsınız?",
-      "audio_word": "/audio/a1/wie.mp3",
+      "audio_word": "/audio/a1/wie-geht-es.mp3",
       "audio_example": "/audio/a1/wie-geht-es-ihnen.mp3",
       "tags": [
         "greeting",
@@ -322,7 +322,7 @@
       "translation_ru": "всё в порядке",
       "example_de": "Alles klar? — Ja, alles klar!",
       "example_tr": "Her şey yolunda mı? — Evet!",
-      "audio_word": "/audio/a1/alles.mp3",
+      "audio_word": "/audio/a1/alles-klar.mp3",
       "audio_example": "/audio/a1/alles-klar-ja-alles-klar.mp3",
       "tags": [
         "greeting",
@@ -358,7 +358,7 @@
       "translation_ru": "приятно познакомиться",
       "example_de": "Freut mich, Sie kennenzulernen.",
       "example_tr": "Tanıştığımıza memnun oldum.",
-      "audio_word": "/audio/a1/freut.mp3",
+      "audio_word": "/audio/a1/freut-mich.mp3",
       "audio_example": "/audio/a1/freut-mich-sie-kennenzulernen.mp3",
       "tags": [
         "greeting",
@@ -376,7 +376,7 @@
       "translation_ru": "до скорого",
       "example_de": "Bis bald!",
       "example_tr": "Yakında görüşürüz!",
-      "audio_word": "/audio/a1/bis.mp3",
+      "audio_word": "/audio/a1/bis-bald.mp3",
       "audio_example": "/audio/a1/bis-bald.mp3",
       "tags": [
         "greeting",
@@ -394,7 +394,7 @@
       "translation_ru": "до later",
       "example_de": "Bis später!",
       "example_tr": "Sonra görüşürüz!",
-      "audio_word": "/audio/a1/bis.mp3",
+      "audio_word": "/audio/a1/bis-spaeter.mp3",
       "audio_example": "/audio/a1/bis-spaeter.mp3",
       "tags": [
         "greeting",
@@ -412,7 +412,7 @@
       "translation_ru": "приятного аппетита",
       "example_de": "Guten Appetit!",
       "example_tr": "Afiyet olsun!",
-      "audio_word": "/audio/a1/guten.mp3",
+      "audio_word": "/audio/a1/guten-appetit.mp3",
       "audio_example": "/audio/a1/guten-appetit.mp3",
       "tags": [
         "greeting",
@@ -448,7 +448,7 @@
       "translation_ru": "поздравляю",
       "example_de": "Herzlichen Glückwunsch zum Geburtstag!",
       "example_tr": "Doğum günün kutlu olsun!",
-      "audio_word": "/audio/a1/herzlichen.mp3",
+      "audio_word": "/audio/a1/herzlichen-glueckwunsch.mp3",
       "audio_example": "/audio/a1/herzlichen-glueckwunsch-zum-geburtstag.mp3",
       "tags": [
         "greeting",
@@ -466,7 +466,7 @@
       "translation_ru": "удачи",
       "example_de": "Viel Glück bei der Prüfung!",
       "example_tr": "Sınavda bol şans!",
-      "audio_word": "/audio/a1/viel.mp3",
+      "audio_word": "/audio/a1/viel-glueck.mp3",
       "audio_example": "/audio/a1/viel-glueck-bei-der-pruefung.mp3",
       "tags": [
         "greeting",
@@ -484,7 +484,7 @@
       "translation_ru": "выздоравливай",
       "example_de": "Gute Besserung!",
       "example_tr": "Geçmiş olsun!",
-      "audio_word": "/audio/a1/gute.mp3",
+      "audio_word": "/audio/a1/gute-besserung.mp3",
       "audio_example": "/audio/a1/gute-besserung.mp3",
       "tags": [
         "greeting",
@@ -502,7 +502,7 @@
       "translation_ru": "хороших выходных",
       "example_de": "Schönes Wochenende!",
       "example_tr": "İyi hafta sonları!",
-      "audio_word": "/audio/a1/schoenes.mp3",
+      "audio_word": "/audio/a1/schoenes-wochenende.mp3",
       "audio_example": "/audio/a1/schoenes-wochenende.mp3",
       "tags": [
         "greeting",
@@ -520,7 +520,7 @@
       "translation_ru": "с Рождеством",
       "example_de": "Frohe Weihnachten!",
       "example_tr": "Mutlu Noel!",
-      "audio_word": "/audio/a1/frohe.mp3",
+      "audio_word": "/audio/a1/frohe-weihnachten.mp3",
       "audio_example": "/audio/a1/frohe-weihnachten.mp3",
       "tags": [
         "greeting",
@@ -538,7 +538,7 @@
       "translation_ru": "с Новым годом",
       "example_de": "Frohes neues Jahr!",
       "example_tr": "Mutlu yıllar!",
-      "audio_word": "/audio/a1/frohes.mp3",
+      "audio_word": "/audio/a1/frohes-neues-jahr.mp3",
       "audio_example": "/audio/a1/frohes-neues-jahr.mp3",
       "tags": [
         "greeting",
@@ -876,7 +876,7 @@
       "translation_ru": "лет",
       "example_de": "Ich bin 25 Jahre alt.",
       "example_tr": "25 yaşındayım.",
-      "audio_word": "/audio/a1/jahre.mp3",
+      "audio_word": "/audio/a1/jahre-alt.mp3",
       "audio_example": "/audio/a1/ich-bin-25-jahre-alt.mp3",
       "tags": [
         "introduction",
@@ -913,7 +913,7 @@
       "translation_ru": "работать как",
       "example_de": "Ich arbeite als Fahrer.",
       "example_tr": "Şoför olarak çalışıyorum.",
-      "audio_word": "/audio/a1/arbeiten.mp3",
+      "audio_word": "/audio/a1/arbeiten-als.mp3",
       "audio_example": "/audio/a1/ich-arbeite-als-fahrer.mp3",
       "tags": [
         "introduction",
@@ -4434,7 +4434,7 @@
       "translation_ru": "завтра",
       "example_de": "Morgen gehe ich zum Arzt.",
       "example_tr": "Yarın doktora gidiyorum.",
-      "audio_word": "/audio/a1/morgen.mp3",
+      "audio_word": "/audio/a1/morgen-0241.mp3",
       "audio_example": "/audio/a1/morgen-gehe-ich-zum-arzt.mp3",
       "tags": [
         "time",
@@ -4650,7 +4650,7 @@
       "translation_ru": "сколько времени",
       "example_de": "Wie spät ist es?",
       "example_tr": "Saat kaç?",
-      "audio_word": "/audio/a1/wie.mp3",
+      "audio_word": "/audio/a1/wie-spaet.mp3",
       "audio_example": "/audio/a1/wie-spaet-ist-es.mp3",
       "tags": [
         "time",
@@ -8207,7 +8207,7 @@
       "translation_ru": "печатными буквами",
       "example_de": "Bitte in Druckbuchstaben schreiben.",
       "example_tr": "Lütfen büyük harflerle yazın.",
-      "audio_word": "/audio/a1/bitte.mp3",
+      "audio_word": "/audio/a1/bitte-in-druckbuchstaben.mp3",
       "audio_example": "/audio/a1/bitte-in-druckbuchstaben-schreiben.mp3",
       "tags": [
         "form",
@@ -8245,7 +8245,7 @@
       "translation_ru": "дата регистрации",
       "example_de": "Datum der Anmeldung: 12.04.",
       "example_tr": "Kayıt tarihi: 12.04.",
-      "audio_word": "/audio/a1/datum.mp3",
+      "audio_word": "/audio/a1/datum-der-anmeldung.mp3",
       "audio_example": "/audio/a1/datum-der-anmeldung-12-04.mp3",
       "tags": [
         "form",
@@ -8417,7 +8417,7 @@
       "translation_ru": "действует с",
       "example_de": "Gültig ab: 01.01.2025",
       "example_tr": "Geçerlilik başlangıcı: 01.01.2025",
-      "audio_word": "/audio/a1/gueltig.mp3",
+      "audio_word": "/audio/a1/gueltig-ab.mp3",
       "audio_example": "/audio/a1/gueltig-ab-01-01-2025.mp3",
       "tags": [
         "form",
@@ -8436,7 +8436,7 @@
       "translation_ru": "действует до",
       "example_de": "Gültig bis: 31.12.2025",
       "example_tr": "Geçerlilik süresi: 31.12.2025",
-      "audio_word": "/audio/a1/gueltig.mp3",
+      "audio_word": "/audio/a1/gueltig-bis.mp3",
       "audio_example": "/audio/a1/gueltig-bis-31-12-2025.mp3",
       "tags": [
         "form",
@@ -8664,7 +8664,7 @@
       "translation_ru": "как долго",
       "example_de": "Wie lange dauert der Kurs?",
       "example_tr": "Kurs ne kadar sürüyor?",
-      "audio_word": "/audio/a1/wie.mp3",
+      "audio_word": "/audio/a1/wie-lange.mp3",
       "audio_example": "/audio/a1/wie-lange-dauert-der-kurs.mp3",
       "tags": [
         "form",
@@ -8930,7 +8930,7 @@
       "translation_ru": "язык на уровне",
       "example_de": "Sprache auf Niveau A1",
       "example_tr": "A1 seviyesinde dil",
-      "audio_word": "/audio/a1/sprache.mp3",
+      "audio_word": "/audio/a1/sprache-auf-niveau.mp3",
       "audio_example": "/audio/a1/sprache-auf-niveau-a1.mp3",
       "tags": [
         "form",
@@ -9025,7 +9025,7 @@
       "translation_ru": "дата выдачи",
       "example_de": "Tag der Ausstellung: 10.01.",
       "example_tr": "Belgenin verildiği gün: 10.01.",
-      "audio_word": "/audio/a1/tag.mp3",
+      "audio_word": "/audio/a1/tag-der-ausstellung.mp3",
       "audio_example": "/audio/a1/tag-der-ausstellung-10-01.mp3",
       "tags": [
         "form",
@@ -9120,7 +9120,7 @@
       "translation_ru": "подпись родителей",
       "example_de": "Unterschrift der Eltern hier.",
       "example_tr": "Ebeveyn imzası buraya.",
-      "audio_word": "/audio/a1/unterschrift.mp3",
+      "audio_word": "/audio/a1/unterschrift-der-eltern.mp3",
       "audio_example": "/audio/a1/unterschrift-der-eltern-hier.mp3",
       "tags": [
         "form",
@@ -9139,7 +9139,7 @@
       "translation_ru": "подпись участника",
       "example_de": "Unterschrift des Teilnehmers.",
       "example_tr": "Katılımcının imzası.",
-      "audio_word": "/audio/a1/unterschrift.mp3",
+      "audio_word": "/audio/a1/unterschrift-des-teilnehmers.mp3",
       "audio_example": "/audio/a1/unterschrift-des-teilnehmers.mp3",
       "tags": [
         "form",
@@ -9273,7 +9273,7 @@
       "translation_ru": "из них дети",
       "example_de": "Davon Kinder: 2",
       "example_tr": "Bunlardan çocuk: 2",
-      "audio_word": "/audio/a1/davon.mp3",
+      "audio_word": "/audio/a1/davon-kinder.mp3",
       "audio_example": "/audio/a1/davon-kinder-2.mp3",
       "tags": [
         "form",
@@ -9330,7 +9330,7 @@
       "translation_ru": "родился в",
       "example_de": "Geboren in: Istanbul",
       "example_tr": "Doğum yeri: İstanbul",
-      "audio_word": "/audio/a1/geboren.mp3",
+      "audio_word": "/audio/a1/geboren-in.mp3",
       "audio_example": "/audio/a1/geboren-in-istanbul.mp3",
       "tags": [
         "form",
@@ -9349,7 +9349,7 @@
       "translation_ru": "пить",
       "example_de": "Ich trinke Wasser.",
       "example_tr": "Su içiyorum.",
-      "audio_word": "/audio/a1/trinken.mp3",
+      "audio_word": "/audio/a1/trinken-0509.mp3",
       "audio_example": "/audio/a1/ich-trinke-wasser.mp3",
       "tags": [
         "daily",
@@ -9403,7 +9403,7 @@
       "translation_ru": "есть",
       "example_de": "Ich esse Brot.",
       "example_tr": "Ekmek yiyorum.",
-      "audio_word": "/audio/a1/essen.mp3",
+      "audio_word": "/audio/a1/essen-0512.mp3",
       "audio_example": "/audio/a1/ich-esse-brot.mp3",
       "tags": [
         "verb",
@@ -9517,7 +9517,7 @@
       "translation_ru": "ложиться спать",
       "example_de": "Ich gehe ins Bett.",
       "example_tr": "Yatıyorum.",
-      "audio_word": "/audio/a1/ins.mp3",
+      "audio_word": "/audio/a1/ins-bett-gehen.mp3",
       "audio_example": "/audio/a1/ich-gehe-ins-bett.mp3",
       "tags": [
         "daily",
@@ -10041,7 +10041,7 @@
       "translation_ru": "где",
       "example_de": "Wo ist der Bahnhof?",
       "example_tr": "Tren istasyonu nerede?",
-      "audio_word": "/audio/a1/wo.mp3",
+      "audio_word": "/audio/a1/wo-ist.mp3",
       "audio_example": "/audio/a1/wo-ist-der-bahnhof.mp3",
       "tags": [
         "direction",
