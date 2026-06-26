@@ -18,6 +18,7 @@ import { nextGrammarHref } from "./learningPathGrammar";
 import type { UserProgress } from "./progress";
 import { countStudiedA1Words } from "./progress";
 import { calcAccuracy } from "./progress";
+import { A1_WORD_TIERS } from "./wordTiers";
 
 export type MapNodeStatus = "locked" | "available" | "active" | "done" | "future";
 
@@ -49,27 +50,6 @@ export interface LearningMapState {
   summary: LearningMapSummary;
   root: MapNode;
 }
-
-const A1_WORD_TIERS = {
-  easy: {
-    id: "words-easy",
-    label: "Kolay kelimeler",
-    labelTr: "Stufe 1",
-    categories: ["Selamlama", "Tanışma", "Aile", "Ev"] as const,
-  },
-  medium: {
-    id: "words-medium",
-    label: "Orta kelimeler",
-    labelTr: "Stufe 2",
-    categories: ["Market", "İş", "Ulaşım", "Saat", "Tarih", "Restoran", "Telefon"] as const,
-  },
-  hard: {
-    id: "words-hard",
-    label: "İleri kelimeler",
-    labelTr: "Stufe 3",
-    categories: ["Doktor", "Form doldurma", "Günlük ihtiyaçlar", "Basit yön tarifleri"] as const,
-  },
-} as const;
 
 function studiedIds(progress: UserProgress, prefix: string): Set<string> {
   const ids = new Set<string>();
