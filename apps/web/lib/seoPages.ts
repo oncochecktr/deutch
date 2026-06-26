@@ -109,4 +109,35 @@ export const SEO_PAGES = {
     path: "/exam",
     noindex: true,
   }),
+  listen: pageMetadata({
+    title: "Dinle — Yürüyüş Dinleme Modu",
+    description:
+      "Almanca A1 kelime ve cümle dinleme: MP3 veya tarayıcı sesi ile yürürken 852 kelime çalışın.",
+    path: "/listen",
+  }),
+  words: pageMetadata({
+    title: "Kelime Listesi — A1 Almanca",
+    description: "Almanca A1 kelime listesi: Türkçe anlamlar, artikel ve kategoriler.",
+    path: "/words",
+  }),
+  quiz: pageMetadata({
+    title: "Quiz — Almanca Kelime Testi",
+    description: "A1 Almanca kelime quizi: çoktan seçmeli test ile bilginizi ölçün.",
+    path: "/quiz",
+  }),
+  review: pageMetadata({
+    title: "Tekrar — SRS Kelime Tekrarı",
+    description: "Aralıklı tekrar (SRS) ile A1 Almanca kelimeleri pekiştirin.",
+    path: "/review",
+  }),
+  mesleki: pageMetadata({
+    title: "Mesleki Almanca — İş ve Lojistik",
+    description: "Depo, lojistik ve iş yerinde Almanca: mesleki kelime kartları ve dinleme.",
+    path: "/mesleki",
+  }),
+  dialogues: pageMetadata({
+    title: "Hikayeler — A1 Diyaloglar",
+    description: "Almanca A1 diyalogları okuyun ve dinleyin. Günlük konuşma pratiği.",
+    path: "/dialogues",
+  }),
 } as const;

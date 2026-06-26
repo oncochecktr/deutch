@@ -65,6 +65,13 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

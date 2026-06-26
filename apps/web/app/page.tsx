@@ -17,6 +17,7 @@ export default function HomePage() {
             url: SITE_URL,
             description: "Sıfırdan A1 — Almanca öğrenme platformu",
             inLanguage: "tr",
+            publisher: { "@type": "Organization", name: "German Coach", url: SITE_URL },
           },
           {
             "@context": "https://schema.org",

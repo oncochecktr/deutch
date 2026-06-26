@@ -1,6 +1,13 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
+/** Build-time static sitemap — runtime Date() Vercel'de 500'e yol açabiliyor */
+export const dynamic = "force-static";
+export const revalidate = false;
+
+/** Build anında sabitlenir (force-static) */
+const LAST_MOD = new Date();
+
 type RouteEntry = {
   path: string;
   priority: number;
@@ -53,10 +60,9 @@ const ROUTES: RouteEntry[] = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   return ROUTES.map(({ path, priority, changeFrequency }) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: now,
+    lastModified: LAST_MOD,
     changeFrequency,
     priority,
   }));

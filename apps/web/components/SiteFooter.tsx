@@ -20,6 +20,9 @@ export function SiteFooter() {
           <Link href="/blog" className="hover:text-goethe-blue">
             Blog
           </Link>
+          <Link href="/sitemap.xml" className="hover:text-goethe-blue">
+            Site haritası
+          </Link>
           <Link href="/iletisim" className="hover:text-goethe-blue">
             İletişim
           </Link>
