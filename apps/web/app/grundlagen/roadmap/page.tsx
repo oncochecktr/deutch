@@ -8,7 +8,7 @@ export default function GrammarRoadmapPage() {
   return (
     <PageShell
       title="Gramer yol haritası"
-      subtitle="A1 çekirdek kurallar"
+      subtitle="A1 motor yolu + çekirdek kurallar"
       backHref="/"
       backLabel="Panele dön"
       maxWidth="lg"

@@ -9,52 +9,57 @@ import { TrainerHint } from "@/components/grundlagen/TrainerHint";
 import {
   TrainerLessonCompare,
   TrainerLessonIntro,
+  TrainerLessonRulesTable,
 } from "@/components/grundlagen/TrainerLessonIntro";
 import { TrainerWrongFeedback } from "@/components/grundlagen/TrainerWrongFeedback";
 import { IconCheck, IconLock } from "@/components/icons";
 import { checkSentenceBuilt } from "@/lib/germanTextCompare";
+import { DAS_IST_ADJECTIVES } from "@/lib/dasIstEngine";
 import {
-  buildDasIstDeckExercises,
-  buildPair,
-  DAS_IST_ADJECTIVES,
-  DAS_IST_DECKS,
-  DAS_IST_LESSON,
-  DAS_IST_PASS_SCORE,
-  DAS_IST_RULES,
-  getDasIstNouns,
+  buildPossessiveDeckExercises,
+  buildPossessivePair,
+  DAS_IST_MEIN_LESSON,
+  DAS_IST_MEIN_PASS_SCORE,
+  DAS_IST_MEIN_RULES,
+  DAS_IST_POSSESSIVE_DECKS,
+  getPossessiveNouns,
   pairFullDe,
-  PRONOUN_BRIDGE,
-  type DasIstDeckId,
-  type DasIstExercise,
-  type DasIstPair,
-} from "@/lib/dasIstEngine";
+  POSSESSIVE_BRIDGE,
+  POSSESSIVE_OWNERS,
+  type DasIstPossessiveDeckId,
+  type DasIstPossessivePair,
+  type PossessiveExercise,
+} from "@/lib/dasIstPossessiveEngine";
 import {
-  isDasIstDeckUnlocked,
-  loadDasIstProgress,
-  markDasIstDeckDone,
-  saveDasIstProgress,
-} from "@/lib/dasIstStorage";
+  isDasIstPossessiveDeckUnlocked,
+  isDasIstPossessiveModuleUnlocked,
+  loadDasIstPossessiveProgress,
+  markDasIstPossessiveDeckDone,
+  saveDasIstPossessiveProgress,
+} from "@/lib/dasIstPossessiveStorage";
 import { useSessionStreak } from "@/lib/useSessionStreak";
 
 type Phase = "list" | "learn" | "play" | "done";
 
-function TwoLinePreview({ pair, highlight }: { pair: DasIstPair; highlight?: "1" | "2" | "both" }) {
+function TwoLinePreview({
+  pair,
+  highlight,
+}: {
+  pair: DasIstPossessivePair;
+  highlight?: "1" | "2" | "both";
+}) {
   return (
     <div className="space-y-2 rounded-xl border border-sage-100 bg-sage-50/80 p-4">
-      <p
-        className={`text-sm font-medium ${
-          highlight === "2" ? "text-sage-400" : "text-goethe-blue"
-        }`}
-      >
+      <p className={`text-sm font-medium ${highlight === "2" ? "text-sage-400" : "text-goethe-blue"}`}>
         <span className="text-sage-500">1 · </span>
-        {pair.line1_de}
+        Das ist{" "}
+        <span className="underline decoration-goethe-gold/60 decoration-2 underline-offset-2">
+          {pair.possessive}
+        </span>{" "}
+        {pair.noun.word}.
         <span className="mt-0.5 block text-xs font-normal text-sage-500">{pair.line1_tr}</span>
       </p>
-      <p
-        className={`text-sm font-medium ${
-          highlight === "1" ? "text-sage-400" : "text-goethe-blue"
-        }`}
-      >
+      <p className={`text-sm font-medium ${highlight === "1" ? "text-sage-400" : "text-goethe-blue"}`}>
         <span className="text-sage-500">2 · </span>
         <span className="underline decoration-goethe-gold/60 decoration-2 underline-offset-2">
           {pair.pronoun}
@@ -66,71 +71,53 @@ function TwoLinePreview({ pair, highlight }: { pair: DasIstPair; highlight?: "1"
   );
 }
 
-function PronounBridgeTable({ activeArticle }: { activeArticle?: string }) {
+function PossessiveBridgeTable() {
   return (
-    <div className="overflow-x-auto rounded-xl border border-sage-100">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-sage-100 text-left text-[10px] uppercase text-sage-400">
-            <th className="px-3 py-2">Artikel</th>
-            <th className="px-3 py-2">ein / eine</th>
-            <th className="px-3 py-2">2. cümle</th>
-          </tr>
-        </thead>
-        <tbody>
-          {PRONOUN_BRIDGE.map((row) => (
-            <tr
-              key={row.article}
-              className={`border-b border-sage-50 ${
-                activeArticle === row.article ? "bg-goethe-gold/10" : ""
-              }`}
-            >
-              <td className="px-3 py-2 font-medium text-goethe-blue">{row.article}</td>
-              <td className="px-3 py-2 text-sage-600">{row.indef}</td>
-              <td className="px-3 py-2 font-medium text-goethe-blue">
-                {row.pronoun} ist …
-                <span className="ml-1 text-xs font-normal text-sage-400">({row.tr})</span>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <TrainerLessonRulesTable
+      title="Artikel → sahiplik → zamir"
+      rules={POSSESSIVE_BRIDGE.map((r) => ({
+        label: `${r.article} → ${r.pronoun}`,
+        tr: `${r.form} · ${r.tr}`,
+      }))}
+    />
   );
 }
 
-export function DasIstLegoTrainer() {
+export function DasIstPossessiveLegoTrainer() {
   const [phase, setPhase] = useState<Phase>("list");
-  const [deckId, setDeckId] = useState<DasIstDeckId | null>(null);
-  const [progress, setProgress] = useState(loadDasIstProgress);
+  const [deckId, setDeckId] = useState<DasIstPossessiveDeckId | null>(null);
+  const [progress, setProgress] = useState(loadDasIstPossessiveProgress);
+  const [moduleUnlocked, setModuleUnlocked] = useState(false);
   const [exerciseIdx, setExerciseIdx] = useState(0);
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    setProgress(loadDasIstProgress());
+    setProgress(loadDasIstPossessiveProgress());
+    setModuleUnlocked(isDasIstPossessiveModuleUnlocked());
   }, []);
 
   const exercises = useMemo(() => {
     if (!deckId) return [];
-    return buildDasIstDeckExercises(deckId, 8, deckId.length * 9923);
+    return buildPossessiveDeckExercises(deckId, 8, deckId.length * 7727);
   }, [deckId]);
 
-  const activeDeck = DAS_IST_DECKS.find((d) => d.id === deckId);
+  const activeDeck = DAS_IST_POSSESSIVE_DECKS.find((d) => d.id === deckId);
 
   const samplePair = useMemo(() => {
     if (!deckId) return null;
-    const nouns = getDasIstNouns(deckId);
-    const noun = nouns[0];
-    if (!noun) return null;
+    const nouns = getPossessiveNouns();
+    const zimmer = nouns.find((n) => n.word === "Zimmer") ?? nouns[0];
+    if (!zimmer) return null;
+    const owner = activeDeck?.owners?.[0] ?? "mein";
     const adj =
-      deckId === "er"
-        ? DAS_IST_ADJECTIVES.find((a) => a.id === "gut")!
-        : DAS_IST_ADJECTIVES.find((a) => a.id === "schoen")!;
-    return buildPair(noun, adj);
-  }, [deckId]);
+      deckId === "unser"
+        ? DAS_IST_ADJECTIVES.find((a) => a.id === "klein")!
+        : DAS_IST_ADJECTIVES.find((a) => a.id === "gross")!;
+    return buildPossessivePair(zimmer, owner, adj);
+  }, [deckId, activeDeck]);
 
-  const openDeck = (id: DasIstDeckId) => {
-    if (!isDasIstDeckUnlocked(id, progress)) return;
+  const openDeck = (id: DasIstPossessiveDeckId) => {
+    if (!isDasIstPossessiveDeckUnlocked(id, progress)) return;
     setDeckId(id);
     setPhase("learn");
     setExerciseIdx(0);
@@ -140,9 +127,9 @@ export function DasIstLegoTrainer() {
   const finishDeck = useCallback(
     (finalScore: number) => {
       if (!deckId) return;
-      const next = markDasIstDeckDone(progress, deckId, finalScore);
+      const next = markDasIstPossessiveDeckDone(progress, deckId, finalScore);
       setProgress(next);
-      saveDasIstProgress(next);
+      saveDasIstPossessiveProgress(next);
       setPhase("done");
     },
     [deckId, progress]
@@ -156,38 +143,59 @@ export function DasIstLegoTrainer() {
     else setExerciseIdx(nextIdx);
   };
 
+  if (!moduleUnlocked) {
+    return (
+      <div className="card-soft space-y-4 border border-sage-200 p-6 text-center">
+        <IconLock size={28} className="mx-auto text-sage-400" />
+        <p className="text-lg font-bold text-goethe-blue">Önce Pattern 03</p>
+        <p className="text-sm text-sage-600">
+          Das ist <strong>ein</strong> … → Er/Es/Sie modülünü bitir (karışık deste). Sonra mein/dein/unser
+          açılır.
+        </p>
+        <Link href="/grundlagen/sentence-engine/das-ist" className="btn-primary inline-block">
+          Pattern 03&apos;e git →
+        </Link>
+      </div>
+    );
+  }
+
   if (phase === "list") {
     return (
       <div className="space-y-4">
-        <Link
-          href="/grundlagen/sentence-engine"
-          className="text-sm text-goethe-blue hover:underline"
-        >
+        <Link href="/grundlagen/sentence-engine" className="text-sm text-goethe-blue hover:underline">
           ← Sentence Engine
         </Link>
 
         <TrainerLessonIntro
-          badge={DAS_IST_LESSON.badge}
-          title={DAS_IST_LESSON.title}
-          summary={DAS_IST_LESSON.summary}
-          sections={DAS_IST_LESSON.sections}
-          rules={DAS_IST_RULES}
+          badge={DAS_IST_MEIN_LESSON.badge}
+          title={DAS_IST_MEIN_LESSON.title}
+          summary={DAS_IST_MEIN_LESSON.summary}
+          sections={DAS_IST_MEIN_LESSON.sections}
+          rules={DAS_IST_MEIN_RULES}
         >
-          <TrainerLessonCompare
-            title="Das ≠ das"
-            left={DAS_IST_LESSON.twoDas.left}
-            right={DAS_IST_LESSON.twoDas.right}
+          <div className="space-y-2">
+            {DAS_IST_MEIN_LESSON.examples.map((ex) => (
+              <div key={ex.de} className="rounded-xl border border-sage-100 bg-sage-50/80 px-3 py-2 text-sm">
+                <p className="font-medium text-goethe-blue">{ex.de}</p>
+                <p className="text-xs text-sage-500">{ex.tr}</p>
+              </div>
+            ))}
+          </div>
+          <PossessiveBridgeTable />
+          <TrainerLessonRulesTable
+            title="Sahiplik formları"
+            rules={POSSESSIVE_OWNERS.map((o) => ({
+              label: o.tr,
+              tr: `${o.mascNeut} / ${o.fem}`,
+            }))}
           />
-          <PronounBridgeTable />
         </TrainerLessonIntro>
 
-        <p className="text-xs text-sage-500">
-          Sırayla: Es → Er → Sie → karışık
-        </p>
+        <p className="text-xs text-sage-500">Sırayla: mein → dein → unser → onun → sizin → karışık</p>
 
         <ol className="space-y-2">
-          {DAS_IST_DECKS.map((d) => {
-            const unlocked = isDasIstDeckUnlocked(d.id, progress);
+          {DAS_IST_POSSESSIVE_DECKS.map((d) => {
+            const unlocked = isDasIstPossessiveDeckUnlocked(d.id, progress);
             const done = progress.completed.includes(d.id);
             const best = progress.scores[d.id];
             return (
@@ -211,7 +219,7 @@ export function DasIstLegoTrainer() {
                           : "bg-sage-100 text-sage-400"
                     }`}
                   >
-                    {done ? <IconCheck size={16} /> : !unlocked ? <IconLock size={14} /> : d.pronounOnly?.[0] ?? "?"}
+                    {done ? <IconCheck size={16} /> : !unlocked ? <IconLock size={14} /> : d.titleTr[0]}
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="font-semibold text-goethe-blue">{d.title}</p>
@@ -226,19 +234,6 @@ export function DasIstLegoTrainer() {
             );
           })}
         </ol>
-
-        {progress.completed.includes("mixed") && (
-          <Link
-            href="/grundlagen/sentence-engine/das-ist-mein"
-            className="card-soft flex items-center gap-3 border border-goethe-gold/40 bg-goethe-gold/10 p-4 transition hover:border-goethe-gold/60"
-          >
-            <span className="text-2xl">→</span>
-            <div>
-              <p className="font-semibold text-goethe-blue">Sonraki: Das ist mein / unser …</p>
-              <p className="text-sm text-sage-600">benim · senin · bizim · onların</p>
-            </div>
-          </Link>
-        )}
       </div>
     );
   }
@@ -258,42 +253,23 @@ export function DasIstLegoTrainer() {
         </button>
 
         <h2 className="text-lg font-bold text-goethe-blue">{activeDeck.title}</h2>
-
-        {deckId === "es" && (
-          <p className="text-sm text-sage-600">
-            Bu adımda <strong>sadece Es</strong> — das kelimeler (Hotel, Café …). İlk tanıtım:{" "}
-            <strong>ein</strong>. Sonra <strong>Es</strong> ile yorum.
-          </p>
-        )}
-        {deckId === "er" && (
-          <p className="text-sm text-sage-600">
-            Şimdi <strong>der → Er</strong> (Supermarkt, Bahnhof …). Satır 1: ein · Satır 2: Er.
-          </p>
-        )}
-        {deckId === "sie" && (
-          <p className="text-sm text-sage-600">
-            Şimdi <strong>die → Sie</strong> (Apotheke, Bank …). die isimlerde satır 1:{" "}
-            <strong>eine</strong>.
-          </p>
-        )}
-        {deckId === "mixed" && (
-          <p className="text-sm text-sage-600">
-            Artikel → zamir köprüsünü hatırla: der→Er, die→Sie, das→Es.
-          </p>
-        )}
+        <p className="text-sm text-sage-600">{activeDeck.desc}</p>
 
         <TrainerLessonCompare
-          title="Bu adımda hatırla"
-          left={DAS_IST_LESSON.twoDas.left}
+          title="Bu adımda"
+          left={{
+            label: "Satır 1",
+            de: samplePair.line1_de,
+            tr: samplePair.line1_tr,
+          }}
           right={{
-            label: `Bu deste: ${activeDeck.titleTr}`,
-            de: `${samplePair.line1_de} ${samplePair.pronoun} ist …`,
+            label: "Satır 2",
+            de: samplePair.line2_de,
             tr: `${samplePair.noun.article} → ${samplePair.pronoun}`,
           }}
         />
 
-        <PronounBridgeTable activeArticle={samplePair.noun.article} />
-
+        <PossessiveBridgeTable />
         <TwoLinePreview pair={samplePair} highlight="both" />
 
         <div className="flex items-center gap-2">
@@ -309,7 +285,7 @@ export function DasIstLegoTrainer() {
   }
 
   if (phase === "done" && activeDeck) {
-    const passed = score >= DAS_IST_PASS_SCORE;
+    const passed = score >= DAS_IST_MEIN_PASS_SCORE;
     return (
       <div className="card-soft space-y-4 p-6 text-center">
         <p className="text-lg font-bold text-goethe-blue">{activeDeck.title}</p>
@@ -318,16 +294,9 @@ export function DasIstLegoTrainer() {
         </p>
         <p className="text-sm text-sage-600">
           {passed
-            ? deckId === "mixed"
-              ? "Pattern 03 tamam — şimdi mein/unser modülüne geçebilirsin."
-              : "Adım tamam — sonraki zamire geçebilirsin."
-            : `${DAS_IST_PASS_SCORE}/8 lazım — tekrar dene.`}
+            ? "Adım tamam — sonraki sahiplik formuna geç."
+            : `${DAS_IST_MEIN_PASS_SCORE}/8 lazım — tekrar dene.`}
         </p>
-        {passed && deckId === "mixed" && (
-          <Link href="/grundlagen/sentence-engine/das-ist-mein" className="btn-primary inline-block">
-            Adım 5: Das ist mein … →
-          </Link>
-        )}
         <div className="flex flex-wrap justify-center gap-2">
           <button type="button" className="btn-secondary" onClick={() => { setDeckId(null); setPhase("list"); }}>
             Adımlar
@@ -360,7 +329,7 @@ export function DasIstLegoTrainer() {
           </span>
         </div>
         <ContentTransition stepKey={exercises[exerciseIdx].id}>
-          <DasIstExerciseCard exercise={exercises[exerciseIdx]} onAnswer={handleAnswer} />
+          <PossessiveExerciseCard exercise={exercises[exerciseIdx]} onAnswer={handleAnswer} />
         </ContentTransition>
       </div>
     );
@@ -369,31 +338,31 @@ export function DasIstLegoTrainer() {
   return null;
 }
 
-function DasIstExerciseCard({
+function PossessiveExerciseCard({
   exercise,
   onAnswer,
 }: {
-  exercise: DasIstExercise;
+  exercise: PossessiveExercise;
   onAnswer: (correct: boolean) => void;
 }) {
-  if (exercise.kind === "pronoun" || exercise.kind === "ein") {
-    return <DasIstPickCard exercise={exercise} onAnswer={onAnswer} />;
+  if (exercise.kind === "possessive" || exercise.kind === "pronoun") {
+    return <PossessivePickCard exercise={exercise} onAnswer={onAnswer} />;
   }
-  return <DasIstBuildCard exercise={exercise} onAnswer={onAnswer} />;
+  return <PossessiveBuildCard exercise={exercise} onAnswer={onAnswer} />;
 }
 
-function DasIstPickCard({
+function PossessivePickCard({
   exercise,
   onAnswer,
 }: {
-  exercise: DasIstExercise;
+  exercise: PossessiveExercise;
   onAnswer: (correct: boolean) => void;
 }) {
   const { recordCorrect, recordWrong } = useSessionStreak();
   const [picked, setPicked] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
   const options = useMemo(
-    () => [...exercise.tokens, ...exercise.distractors],
+    () => [...new Set([...exercise.tokens, ...exercise.distractors])],
     [exercise]
   );
 
@@ -410,13 +379,10 @@ function DasIstPickCard({
 
   return (
     <div className="card-soft space-y-4 p-5">
-      <TwoLinePreview
-        pair={exercise.pair}
-        highlight={exercise.kind === "pronoun" ? "1" : "1"}
-      />
+      <TwoLinePreview pair={exercise.pair} highlight="1" />
       <p className="text-base font-medium text-goethe-blue">{exercise.prompt_tr}</p>
       {exercise.hint_tr && !checked && <TrainerHint>{exercise.hint_tr}</TrainerHint>}
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         {options.map((opt) => (
           <button
             key={opt}
@@ -442,7 +408,7 @@ function DasIstPickCard({
           ) : (
             <TrainerWrongFeedback
               correctAnswer={exercise.answer_de}
-              reasons={[`${exercise.pair.noun.article} → ${exercise.pair.pronoun}`]}
+              reasons={[`${exercise.pair.noun.article} → ${exercise.pair.possessive}`]}
               ruleTr={exercise.hint_tr}
             />
           )}
@@ -455,11 +421,11 @@ function DasIstPickCard({
   );
 }
 
-function DasIstBuildCard({
+function PossessiveBuildCard({
   exercise,
   onAnswer,
 }: {
-  exercise: DasIstExercise;
+  exercise: PossessiveExercise;
   onAnswer: (correct: boolean) => void;
 }) {
   const { recordCorrect, recordWrong } = useSessionStreak();
@@ -484,16 +450,10 @@ function DasIstBuildCard({
   };
 
   const check = () => {
-    const answer = exercise.kind === "both" ? exercise.answer_de : exercise.answer_de;
-    const built =
-      exercise.kind === "both"
-        ? selected.join(" ").replace(/\s+\./g, ".")
-        : selected.join(" ");
-    const normAnswer = answer.replace(/\./g, "").trim();
+    const built = selected.join(" ").replace(/\s+\./g, ".");
+    const normAnswer = exercise.answer_de.replace(/\./g, "").trim();
     const normBuilt = built.replace(/\./g, "").trim();
-    const isOk =
-      normBuilt === normAnswer ||
-      checkSentenceBuilt(selected, exercise.answer_de);
+    const isOk = normBuilt === normAnswer || checkSentenceBuilt(selected, exercise.answer_de);
     setChecked(true);
     setOk(isOk);
     if (isOk) recordCorrect();
@@ -556,7 +516,7 @@ function DasIstBuildCard({
           ) : (
             <TrainerWrongFeedback
               correctAnswer={exercise.answer_de}
-              reasons={["Satır 1: Das ist ein/eine … · Satır 2: Er/Sie/Es ist sehr …"]}
+              reasons={["Satır 1: Das ist mein … · Satır 2: Es/Er/Sie ist sehr …"]}
               ruleTr={exercise.hint_tr}
             />
           )}

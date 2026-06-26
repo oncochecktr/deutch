@@ -47,6 +47,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/grundlagen/sentence-engine": "Sentence Engine",
   "/grundlagen/sentence-engine/adjektiv": "Adjective Engine",
   "/grundlagen/sentence-engine/das-ist": "Das ist → Er/Es/Sie",
+  "/grundlagen/sentence-engine/das-ist-mein": "Das ist mein → Er/Es/Sie",
   "/grundlagen/dativ": "Dativ Trainer",
   "/grundlagen/negation": "Negation Trainer",
   "/grundlagen/prepositions": "Prepositions Trainer",

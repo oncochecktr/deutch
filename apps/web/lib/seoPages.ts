@@ -190,4 +190,11 @@ export const SEO_PAGES = {
     path: "/grundlagen/sentence-engine/das-ist",
     keywords: [...PAGE_KEYWORDS.grundlagen],
   }),
+  dasIstMeinEngine: pageMetadata({
+    title: "Das ist mein/unser … — Sahiplik + Er/Es/Sie",
+    description:
+      "Das ist mein Zimmer. Es ist sehr groß. mein, dein, unser, sein — Pattern 03 devamı. Benim, bizim, onların.",
+    path: "/grundlagen/sentence-engine/das-ist-mein",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
+  }),
 } as const;

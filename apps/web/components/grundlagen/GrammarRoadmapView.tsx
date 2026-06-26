@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IconArrowRight } from "@/components/icons";
 import { ProgressBar } from "@/components/ProgressBar";
 import { GrammarRoadmapCard } from "@/components/grundlagen/GrammarRoadmapCard";
+import { MotorJourneyPanel } from "@/components/grundlagen/MotorJourneyPanel";
 import { buildGrammarRoadmap, type RoadmapLevel } from "@/lib/grammarRoadmap";
 import { useDashboardReport } from "@/lib/useDashboardReport";
 
@@ -37,6 +38,7 @@ export function GrammarRoadmapView() {
   return (
     <div className="space-y-4">
       <LevelTabs level={level} onChange={setLevel} />
+      {level === "A1" && <MotorJourneyPanel progress={progress} />}
       <div className="card-soft border-2 border-goethe-blue/20 p-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>

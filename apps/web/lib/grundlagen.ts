@@ -536,9 +536,9 @@ export const GRUNDLAGEN_MODULES = [
     id: "sentence-engine",
     href: "/grundlagen/sentence-engine",
     de: "Sentence Engine",
-    tr: "11 cümle kalıbı",
-    desc: "Pattern 01–11 · kelime değil motor",
-    sections: 11,
+    tr: "12 cümle kalıbı",
+    desc: "Pattern 01–12 · kelime değil motor",
+    sections: 12,
   },
   {
     id: "wo-ist",

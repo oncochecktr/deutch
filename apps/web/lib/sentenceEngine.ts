@@ -9,7 +9,8 @@ export type SentencePatternId =
   | "08"
   | "09"
   | "10"
-  | "11";
+  | "11"
+  | "12";
 
 export type SentencePatternStatus = "active" | "soon";
 
@@ -61,8 +62,19 @@ export const SENTENCE_PATTERNS: SentencePattern[] = [
     status: "active",
   },
   {
-    id: "04",
+    id: "12",
     order: 4,
+    title_de: "Das ist mein → Er / Es / Sie",
+    title_tr: "Sahiplik + yorum",
+    formula: "Das ist mein Zimmer. Es ist sehr groß.",
+    example_de: "Das ist unser Zimmer. Es ist sehr klein.",
+    example_tr: "Bu bizim odamız. Çok küçük.",
+    href: "/grundlagen/sentence-engine/das-ist-mein",
+    status: "active",
+  },
+  {
+    id: "04",
+    order: 5,
     title_de: "Pronomen + Verb",
     title_tr: "Özne + Fiil",
     formula: "Ich + arbeite",

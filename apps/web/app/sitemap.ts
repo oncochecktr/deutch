@@ -23,6 +23,7 @@ const ROUTES: RouteEntry[] = [
   { path: "/grundlagen/sentence-engine", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/sentence-engine/adjektiv", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/sentence-engine/das-ist", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/grundlagen/sentence-engine/das-ist-mein", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/conjugation", priority: 0.7, changeFrequency: "monthly" },
   { path: "/grundlagen/cumle-motoru", priority: 0.8, changeFrequency: "weekly" },
   { path: "/grundlagen/dativ", priority: 0.7, changeFrequency: "monthly" },
