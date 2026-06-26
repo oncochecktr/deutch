@@ -1,7 +1,7 @@
 {
   "level": "A1",
-  "version": "2.1.0",
-  "total": 852,
+  "version": "2.2.0",
+  "total": 906,
   "categories": [
     "Selamlama",
     "Tanışma",
@@ -18,7 +18,8 @@
     "Form doldurma",
     "Günlük ihtiyaçlar",
     "Basit yön tarifleri",
-    "Text.md tamamlama"
+    "Text.md tamamlama",
+    "Extra · Sam aus Amerika"
   ],
   "words": [
     {
@@ -15574,6 +15575,1086 @@
       "tags": [
         "adjective",
         "a1"
+      ]
+    },
+    {
+      "id": "a1_0853",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "gut",
+      "article": null,
+      "plural": null,
+      "translation_tr": "iyi",
+      "translation_ru": "хороший",
+      "example_de": "Das Essen ist gut.",
+      "example_tr": "Yemek iyi.",
+      "audio_word": "/audio/a1/gut.mp3",
+      "audio_example": "/audio/a1/das-essen-ist-gut.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0854",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Geschichte",
+      "article": "die",
+      "plural": "Geschichten",
+      "translation_tr": "hikaye",
+      "translation_ru": "история",
+      "example_de": "Das ist die Geschichte von Sascha und Anna.",
+      "example_tr": "Bu Sascha ve Anna'nın hikayesi.",
+      "audio_word": "/audio/a1/geschichte.mp3",
+      "audio_example": "/audio/a1/das-ist-die-geschichte-von-sascha-und-anna.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0855",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Nachbar",
+      "article": "der",
+      "plural": "Nachbarn",
+      "translation_tr": "komşu",
+      "translation_ru": "сосед",
+      "example_de": "Wir haben einen Nachbarn.",
+      "example_tr": "Bir komşumuz var.",
+      "audio_word": "/audio/a1/nachbar.mp3",
+      "audio_example": "/audio/a1/wir-haben-einen-nachbarn.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0856",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Freund",
+      "article": "der",
+      "plural": "Freunde",
+      "translation_tr": "arkadaş",
+      "translation_ru": "друг",
+      "example_de": "Sam ist mein Freund.",
+      "example_tr": "Sam benim arkadaşım.",
+      "audio_word": "/audio/a1/freund.mp3",
+      "audio_example": "/audio/a1/sam-ist-mein-freund.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0857",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Freundin",
+      "article": "die",
+      "plural": "Freundinnen",
+      "translation_tr": "kız arkadaş",
+      "translation_ru": "подруга",
+      "example_de": "Anna ist meine Freundin.",
+      "example_tr": "Anna benim kız arkadaşım.",
+      "audio_word": "/audio/a1/freundin.mp3",
+      "audio_example": "/audio/a1/anna-ist-meine-freundin.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0858",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Freunde",
+      "article": null,
+      "plural": null,
+      "translation_tr": "arkadaşlar",
+      "translation_ru": "друзья",
+      "example_de": "Ich will echte Freunde.",
+      "example_tr": "Gerçek arkadaşlar istiyorum.",
+      "audio_word": "/audio/a1/freunde.mp3",
+      "audio_example": "/audio/a1/ich-will-echte-freunde.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0859",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Kissen",
+      "article": "das",
+      "plural": "Kissen",
+      "translation_tr": "yastık",
+      "translation_ru": "подушка",
+      "example_de": "Hier ist ein Kissen für dich.",
+      "example_tr": "İşte senin için bir yastık.",
+      "audio_word": "/audio/a1/kissen.mp3",
+      "audio_example": "/audio/a1/hier-ist-ein-kissen-fuer-dich.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0860",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "vorbei",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bitti",
+      "translation_ru": "кончилось",
+      "example_de": "Aber es ist vorbei!",
+      "example_tr": "Ama bitti!",
+      "audio_word": "/audio/a1/vorbei.mp3",
+      "audio_example": "/audio/a1/aber-es-ist-vorbei.mp3",
+      "tags": [
+        "adverb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0861",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "heulen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ağlamak",
+      "translation_ru": "плакать",
+      "example_de": "Und jetzt heul bitte nicht!",
+      "example_tr": "Ve şimdi lütfen ağlama!",
+      "audio_word": "/audio/a1/heulen.mp3",
+      "audio_example": "/audio/a1/und-jetzt-heul-bitte-nicht.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0862",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Männer",
+      "article": null,
+      "plural": null,
+      "translation_tr": "adamlar",
+      "translation_ru": "мужчины",
+      "example_de": "Männer!",
+      "example_tr": "Adamlar!",
+      "audio_word": "/audio/a1/maenner.mp3",
+      "audio_example": "/audio/a1/maenner.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0863",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Pickel",
+      "article": "der",
+      "plural": "Pickel",
+      "translation_tr": "sivilce",
+      "translation_ru": "прыщ",
+      "example_de": "Hast du immer noch so viele Pickel?",
+      "example_tr": "Hâlâ bu kadar çok sivilcen var mı?",
+      "audio_word": "/audio/a1/pickel.mp3",
+      "audio_example": "/audio/a1/hast-du-immer-noch-so-viele-pickel.mp3",
+      "tags": [
+        "noun",
+        "health",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0864",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Amerika",
+      "article": null,
+      "plural": null,
+      "translation_tr": "Amerika",
+      "translation_ru": "Америка",
+      "example_de": "Der Brief ist aus Amerika.",
+      "example_tr": "Mektup Amerika'dan.",
+      "audio_word": "/audio/a1/amerika.mp3",
+      "audio_example": "/audio/a1/der-brief-ist-aus-amerika.mp3",
+      "tags": [
+        "noun",
+        "travel",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0865",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Deutsch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "Almanca",
+      "translation_ru": "немецкий",
+      "example_de": "Ich spreche jetzt gut Deutsch.",
+      "example_tr": "Artık iyi Almanca konuşuyorum.",
+      "audio_word": "/audio/a1/deutsch.mp3",
+      "audio_example": "/audio/a1/ich-spreche-jetzt-gut-deutsch.mp3",
+      "tags": [
+        "noun",
+        "language",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0866",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Deutschland",
+      "article": null,
+      "plural": null,
+      "translation_tr": "Almanya",
+      "translation_ru": "Германия",
+      "example_de": "Ich komme nach Deutschland.",
+      "example_tr": "Almanya'ya geliyorum.",
+      "audio_word": "/audio/a1/deutschland.mp3",
+      "audio_example": "/audio/a1/ich-komme-nach-deutschland.mp3",
+      "tags": [
+        "noun",
+        "travel",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0867",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Amerikaner",
+      "article": "der",
+      "plural": "Amerikaner",
+      "translation_tr": "Amerikalı",
+      "translation_ru": "американец",
+      "example_de": "Ein Amerikaner kommt heute.",
+      "example_tr": "Bugün bir Amerikalı geliyor.",
+      "audio_word": "/audio/a1/amerikaner.mp3",
+      "audio_example": "/audio/a1/ein-amerikaner-kommt-heute.mp3",
+      "tags": [
+        "noun",
+        "travel",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0868",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "übernachten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "gece kalmak",
+      "translation_ru": "ночевать",
+      "example_de": "Er will hier übernachten.",
+      "example_tr": "Burada gece kalmak istiyor.",
+      "audio_word": "/audio/a1/uebernachten.mp3",
+      "audio_example": "/audio/a1/er-will-hier-uebernachten.mp3",
+      "tags": [
+        "verb",
+        "travel",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0869",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Cola",
+      "article": "die",
+      "plural": "Colas",
+      "translation_tr": "kola",
+      "translation_ru": "кола",
+      "example_de": "Eine Cola, bitte.",
+      "example_tr": "Bir kola lütfen.",
+      "audio_word": "/audio/a1/cola.mp3",
+      "audio_example": "/audio/a1/eine-cola-bitte.mp3",
+      "tags": [
+        "noun",
+        "restaurant",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0870",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "cool",
+      "article": null,
+      "plural": null,
+      "translation_tr": "havalı",
+      "translation_ru": "крутой",
+      "example_de": "Ein cooler Ami, ja?",
+      "example_tr": "Havalı bir Amerikalı, değil mi?",
+      "audio_word": "/audio/a1/cool.mp3",
+      "audio_example": "/audio/a1/ein-cooler-ami-ja.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0871",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "anfassen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "dokunmak",
+      "translation_ru": "трогать",
+      "example_de": "Niemand darf mein Fahrrad anfassen!",
+      "example_tr": "Kimse bisikletime dokunamaz!",
+      "audio_word": "/audio/a1/anfassen.mp3",
+      "audio_example": "/audio/a1/niemand-darf-mein-fahrrad-anfassen.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0872",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Spielzeug",
+      "article": "das",
+      "plural": "Spielzeuge",
+      "translation_tr": "oyuncak",
+      "translation_ru": "игрушка",
+      "example_de": "Er spielt mit Spielzeug-Autos.",
+      "example_tr": "Oyuncak arabalarla oynuyor.",
+      "audio_word": "/audio/a1/spielzeug.mp3",
+      "audio_example": "/audio/a1/er-spielt-mit-spielzeug-autos.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0873",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Buch",
+      "article": "das",
+      "plural": "Bücher",
+      "translation_tr": "kitap",
+      "translation_ru": "книга",
+      "example_de": "Ich lese ein Buch.",
+      "example_tr": "Bir kitap okuyorum.",
+      "audio_word": "/audio/a1/buch.mp3",
+      "audio_example": "/audio/a1/ich-lese-ein-buch.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0874",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Bücherei",
+      "article": "die",
+      "plural": "Büchereien",
+      "translation_tr": "kütüphane",
+      "translation_ru": "библиотека",
+      "example_de": "Ich liebe die Bücherei!",
+      "example_tr": "Kütüphaneyi seviyorum!",
+      "audio_word": "/audio/a1/buecherei.mp3",
+      "audio_example": "/audio/a1/ich-liebe-die-buecherei.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0875",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Museum",
+      "article": "das",
+      "plural": "Museen",
+      "translation_tr": "müze",
+      "translation_ru": "музей",
+      "example_de": "Ich wohne in einem Museum.",
+      "example_tr": "Bir müzede yaşıyorum.",
+      "audio_word": "/audio/a1/museum.mp3",
+      "audio_example": "/audio/a1/ich-wohne-in-einem-museum.mp3",
+      "tags": [
+        "noun",
+        "travel",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0876",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Ofen",
+      "article": "der",
+      "plural": "Öfen",
+      "translation_tr": "fırın",
+      "translation_ru": "духовка",
+      "example_de": "Der Hund ist im Ofen!",
+      "example_tr": "Köpek fırında!",
+      "audio_word": "/audio/a1/ofen.mp3",
+      "audio_example": "/audio/a1/der-hund-ist-im-ofen.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0877",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Hund",
+      "article": "der",
+      "plural": "Hunde",
+      "translation_tr": "köpek",
+      "translation_ru": "собака",
+      "example_de": "Louis ist ein guter Hund.",
+      "example_tr": "Louis iyi bir köpek.",
+      "audio_word": "/audio/a1/hund.mp3",
+      "audio_example": "/audio/a1/louis-ist-ein-guter-hund.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0878",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "stark",
+      "article": null,
+      "plural": null,
+      "translation_tr": "güçlü",
+      "translation_ru": "сильный",
+      "example_de": "Sascha steht auf starke Männer.",
+      "example_tr": "Sascha güçlü erkeklerden hoşlanır.",
+      "audio_word": "/audio/a1/stark.mp3",
+      "audio_example": "/audio/a1/sascha-steht-auf-starke-maenner.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0879",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "blau",
+      "article": null,
+      "plural": null,
+      "translation_tr": "mavi",
+      "translation_ru": "синий",
+      "example_de": "Rot oder blau?",
+      "example_tr": "Kırmızı mı mavi mi?",
+      "audio_word": "/audio/a1/blau.mp3",
+      "audio_example": "/audio/a1/rot-oder-blau.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0880",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "rot",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kırmızı",
+      "translation_ru": "красный",
+      "example_de": "Blau finde ich besser.",
+      "example_tr": "Maviyi daha iyi buluyorum.",
+      "audio_word": "/audio/a1/rot.mp3",
+      "audio_example": "/audio/a1/blau-finde-ich-besser.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0881",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Ordnung",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "durum / sorun yok",
+      "translation_ru": "порядок",
+      "example_de": "Alles in Ordnung?",
+      "example_tr": "Her şey yolunda mı?",
+      "audio_word": "/audio/a1/ordnung.mp3",
+      "audio_example": "/audio/a1/alles-in-ordnung.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0882",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "nett",
+      "article": null,
+      "plural": null,
+      "translation_tr": "nazik",
+      "translation_ru": "милый",
+      "example_de": "Er ist so nett.",
+      "example_tr": "O çok nazik.",
+      "audio_word": "/audio/a1/nett.mp3",
+      "audio_example": "/audio/a1/er-ist-so-nett.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0883",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Witz",
+      "article": "der",
+      "plural": "Witze",
+      "translation_tr": "şaka",
+      "translation_ru": "шутка",
+      "example_de": "So ein blöder Witz.",
+      "example_tr": "Ne aptal bir şaka.",
+      "audio_word": "/audio/a1/witz.mp3",
+      "audio_example": "/audio/a1/so-ein-bloeder-witz.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0884",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "böse",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kötü",
+      "translation_ru": "злой",
+      "example_de": "So ein böser Junge!",
+      "example_tr": "Ne kötü çocuk!",
+      "audio_word": "/audio/a1/boese.mp3",
+      "audio_example": "/audio/a1/so-ein-boeser-junge.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0885",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Junge",
+      "article": "der",
+      "plural": "Jungen",
+      "translation_tr": "çocuk / oğlan",
+      "translation_ru": "мальчик",
+      "example_de": "Louis ist ein böser Junge.",
+      "example_tr": "Louis kötü bir çocuk.",
+      "audio_word": "/audio/a1/junge.mp3",
+      "audio_example": "/audio/a1/louis-ist-ein-boeser-junge.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0886",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "frei",
+      "article": null,
+      "plural": null,
+      "translation_tr": "boş / serbest",
+      "translation_ru": "свободный",
+      "example_de": "Du hast doch ein freies Zimmer!",
+      "example_tr": "Boş bir odan var!",
+      "audio_word": "/audio/a1/frei.mp3",
+      "audio_example": "/audio/a1/du-hast-doch-ein-freies-zimmer.mp3",
+      "tags": [
+        "adjective",
+        "home",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0887",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Leute",
+      "article": null,
+      "plural": null,
+      "translation_tr": "insanlar",
+      "translation_ru": "люди",
+      "example_de": "Hey Leute!",
+      "example_tr": "Selam millet!",
+      "audio_word": "/audio/a1/leute.mp3",
+      "audio_example": "/audio/a1/hey-leute.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0888",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Party",
+      "article": "die",
+      "plural": "Partys",
+      "translation_tr": "parti",
+      "translation_ru": "вечеринка",
+      "example_de": "Heute ist die Love Parade — eine Party!",
+      "example_tr": "Bugün Love Parade — bir parti!",
+      "audio_word": "/audio/a1/party.mp3",
+      "audio_example": "/audio/a1/heute-ist-die-love-parade-eine-party.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0889",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "verstecken",
+      "article": null,
+      "plural": null,
+      "translation_tr": "saklanmak",
+      "translation_ru": "прятаться",
+      "example_de": "Schnell, versteck dich!",
+      "example_tr": "Çabuk, saklan!",
+      "audio_word": "/audio/a1/verstecken.mp3",
+      "audio_example": "/audio/a1/schnell-versteck-dich.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0890",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "bekommen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "almak",
+      "translation_ru": "получать",
+      "example_de": "Sascha bekommt Post aus Amerika.",
+      "example_tr": "Sascha Amerika'dan posta alıyor.",
+      "audio_word": "/audio/a1/bekommen.mp3",
+      "audio_example": "/audio/a1/sascha-bekommt-post-aus-amerika.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0891",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Lehrer",
+      "article": "der",
+      "plural": "Lehrer",
+      "translation_tr": "öğretmen",
+      "translation_ru": "учитель",
+      "example_de": "Nic ist ein guter Lehrer.",
+      "example_tr": "Nic iyi bir öğretmen.",
+      "audio_word": "/audio/a1/lehrer.mp3",
+      "audio_example": "/audio/a1/nic-ist-ein-guter-lehrer.mp3",
+      "tags": [
+        "noun",
+        "work",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0892",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Lehrerin",
+      "article": "die",
+      "plural": "Lehrerinnen",
+      "translation_tr": "öğretmen (kadın)",
+      "translation_ru": "учительница",
+      "example_de": "Die Lehrerin ist nett.",
+      "example_tr": "Öğretmen nazik.",
+      "audio_word": "/audio/a1/lehrerin.mp3",
+      "audio_example": "/audio/a1/die-lehrerin-ist-nett.mp3",
+      "tags": [
+        "noun",
+        "work",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0893",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Couch",
+      "article": "die",
+      "plural": "Couches",
+      "translation_tr": "kanepe",
+      "translation_ru": "диван",
+      "example_de": "Das ist eine Klapp-Couch.",
+      "example_tr": "Bu bir açılır kanepe.",
+      "audio_word": "/audio/a1/couch.mp3",
+      "audio_example": "/audio/a1/das-ist-eine-klapp-couch.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0894",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "zeigen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "göstermek",
+      "translation_ru": "показывать",
+      "example_de": "Wir zeigen dir die Wohnung.",
+      "example_tr": "Sana daireyi gösteriyoruz.",
+      "audio_word": "/audio/a1/zeigen.mp3",
+      "audio_example": "/audio/a1/wir-zeigen-dir-die-wohnung.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0895",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "spielen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "oynamak",
+      "translation_ru": "играть",
+      "example_de": "Ich spiele mit Autos.",
+      "example_tr": "Arabalarla oynuyorum.",
+      "audio_word": "/audio/a1/spielen.mp3",
+      "audio_example": "/audio/a1/ich-spiele-mit-autos.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0896",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "interessant",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ilginç",
+      "translation_ru": "интересный",
+      "example_de": "Oh, wie interessant.",
+      "example_tr": "Ah, ne kadar ilginç.",
+      "audio_word": "/audio/a1/interessant.mp3",
+      "audio_example": "/audio/a1/oh-wie-interessant.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0897",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "tot",
+      "article": null,
+      "plural": null,
+      "translation_tr": "ölü",
+      "translation_ru": "мёртвый",
+      "example_de": "Jetzt bin ich tot!",
+      "example_tr": "Şimdi öldüm!",
+      "audio_word": "/audio/a1/tot.mp3",
+      "audio_example": "/audio/a1/jetzt-bin-ich-tot.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0898",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Chance",
+      "article": "die",
+      "plural": "Chancen",
+      "translation_tr": "şans",
+      "translation_ru": "шанс",
+      "example_de": "Keine Chance.",
+      "example_tr": "Şans yok.",
+      "audio_word": "/audio/a1/chance.mp3",
+      "audio_example": "/audio/a1/keine-chance.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0899",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Wort",
+      "article": "das",
+      "plural": "Wörter",
+      "translation_tr": "söz / kelime",
+      "translation_ru": "слово",
+      "example_de": "Kein Wort zu den Mädchen!",
+      "example_tr": "Kızlara tek kelime etme!",
+      "audio_word": "/audio/a1/wort.mp3",
+      "audio_example": "/audio/a1/kein-wort-zu-den-maedchen.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0900",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Ahnung",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "fikir / bilmek",
+      "translation_ru": "понятие",
+      "example_de": "Keine Ahnung.",
+      "example_tr": "Hiç fikrim yok.",
+      "audio_word": "/audio/a1/ahnung.mp3",
+      "audio_example": "/audio/a1/keine-ahnung.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0901",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "wieso",
+      "article": null,
+      "plural": null,
+      "translation_tr": "neden",
+      "translation_ru": "почему",
+      "example_de": "Aber wieso?",
+      "example_tr": "Ama neden?",
+      "audio_word": "/audio/a1/wieso.mp3",
+      "audio_example": "/audio/a1/aber-wieso.mp3",
+      "tags": [
+        "adverb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0902",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "egal",
+      "article": null,
+      "plural": null,
+      "translation_tr": "fark etmez",
+      "translation_ru": "всё равно",
+      "example_de": "Das ist mir egal!",
+      "example_tr": "Umurumda değil!",
+      "audio_word": "/audio/a1/egal.mp3",
+      "audio_example": "/audio/a1/das-ist-mir-egal.mp3",
+      "tags": [
+        "adverb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0903",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "niemals",
+      "article": null,
+      "plural": null,
+      "translation_tr": "asla",
+      "translation_ru": "никогда",
+      "example_de": "Ich vergesse nie etwas!",
+      "example_tr": "Asla bir şey unutmam!",
+      "audio_word": "/audio/a1/niemals.mp3",
+      "audio_example": "/audio/a1/ich-vergesse-nie-etwas.mp3",
+      "tags": [
+        "adverb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0904",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "selber",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kendi / bizzat",
+      "translation_ru": "сам",
+      "example_de": "Sam geht selber einkaufen.",
+      "example_tr": "Sam kendi alışverişine gidiyor.",
+      "audio_word": "/audio/a1/selber.mp3",
+      "audio_example": "/audio/a1/sam-geht-selber-einkaufen.mp3",
+      "tags": [
+        "adverb",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0905",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "wahr",
+      "article": null,
+      "plural": null,
+      "translation_tr": "doğru",
+      "translation_ru": "правда",
+      "example_de": "Nicht wahr, Sam?",
+      "example_tr": "Değil mi Sam?",
+      "audio_word": "/audio/a1/wahr.mp3",
+      "audio_example": "/audio/a1/nicht-wahr-sam.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a1",
+        "extra"
+      ]
+    },
+    {
+      "id": "a1_0906",
+      "level": "A1",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Spaß",
+      "article": "der",
+      "plural": null,
+      "translation_tr": "eğlence",
+      "translation_ru": "веселье",
+      "example_de": "Ihr habt bestimmt viel Spaß miteinander!",
+      "example_tr": "Kesin birlikte çok eğlenirsiniz!",
+      "audio_word": "/audio/a1/spass.mp3",
+      "audio_example": "/audio/a1/ihr-habt-bestimmt-viel-spass-miteinander.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a1",
+        "extra"
       ]
     }
   ]

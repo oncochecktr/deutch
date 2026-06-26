@@ -7,6 +7,7 @@
  *   node scripts/generate-audio.mjs --pack all
  *   node scripts/generate-audio.mjs --pack a1 --resume
  *   node scripts/generate-audio.mjs --pack timur --force
+ *   node scripts/generate-audio.mjs --pack a2 --tag extra
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from "fs";
 import { dirname, join } from "path";
@@ -54,9 +55,10 @@ function loadPack(path) {
   return JSON.parse(readFileSync(path, "utf8"));
 }
 
-function collectJobs(pack, publicRoot) {
+function collectJobs(pack, publicRoot, tagFilter) {
   const jobs = [];
   for (const w of pack.words) {
+    if (tagFilter && !(w.tags ?? []).includes(tagFilter)) continue;
     const speakWord = w.article ? `${w.article} ${w.word}` : w.word;
     jobs.push({
       kind: "word",
@@ -108,6 +110,9 @@ async function main() {
   const limitArg = args.includes("--limit")
     ? parseInt(args[args.indexOf("--limit") + 1], 10)
     : Infinity;
+  const tagFilter = args.includes("--tag")
+    ? args[args.indexOf("--tag") + 1]
+    : null;
 
   const packs = [];
   if (packArg === "a1" || packArg === "all") {
@@ -127,7 +132,7 @@ async function main() {
 
   let jobs = [];
   for (const p of packs) {
-    jobs.push(...collectJobs(p.data, PUBLIC_ROOT));
+    jobs.push(...collectJobs(p.data, PUBLIC_ROOT, tagFilter));
   }
 
   if (!force) {
@@ -141,7 +146,9 @@ async function main() {
   jobs = jobs.slice(0, limitArg);
 
   console.log(`Ses üretimi: ${VOICE} (Almanca)`);
-  console.log(`İş sayısı: ${jobs.length}${force ? " (force)" : resume ? " (resume)" : " (eksikler)"}`);
+  console.log(
+    `İş sayısı: ${jobs.length}${tagFilter ? ` (tag=${tagFilter})` : ""}${force ? " (force)" : resume ? " (resume)" : " (eksikler)"}`
+  );
 
   if (jobs.length === 0) {
     console.log("Tüm MP3 dosyaları mevcut.");

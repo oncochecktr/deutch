@@ -1,7 +1,7 @@
 {
   "level": "A2",
-  "version": "1.0.0",
-  "total": 400,
+  "version": "1.1.0",
+  "total": 430,
   "categories": [
     "Seyahat",
     "Alışveriş & Hizmetler",
@@ -10,7 +10,8 @@
     "Günlük rutin",
     "Hava & Doğa",
     "Duygular",
-    "Geçmiş zaman"
+    "Geçmiş zaman",
+    "Extra · Sam aus Amerika"
   ],
   "words": [
     {
@@ -7625,6 +7626,606 @@
         "past",
         "perfekt",
         "a2"
+      ]
+    },
+    {
+      "id": "a2_0401",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Telefonrechnung",
+      "article": "die",
+      "plural": "Telefonrechnungen",
+      "translation_tr": "telefon faturası",
+      "translation_ru": "счёт за телефон",
+      "example_de": "Telefonrechnung, Gasrechnung, Stromrechnung.",
+      "example_tr": "Telefon, doğalgaz, elektrik faturası.",
+      "audio_word": "/audio/a2/telefonrechnung.mp3",
+      "audio_example": "/audio/a2/telefonrechnung-gasrechnung-stromrechnung.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0402",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Gasrechnung",
+      "article": "die",
+      "plural": "Gasrechnungen",
+      "translation_tr": "doğalgaz faturası",
+      "translation_ru": "счёт за газ",
+      "example_de": "Die Gasrechnung ist hoch.",
+      "example_tr": "Doğalgaz faturası yüksek.",
+      "audio_word": "/audio/a2/gasrechnung.mp3",
+      "audio_example": "/audio/a2/die-gasrechnung-ist-hoch.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0403",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Stromrechnung",
+      "article": "die",
+      "plural": "Stromrechnungen",
+      "translation_tr": "elektrik faturası",
+      "translation_ru": "счёт за электричество",
+      "example_de": "Die Stromrechnung kommt jeden Monat.",
+      "example_tr": "Elektrik faturası her ay gelir.",
+      "audio_word": "/audio/a2/stromrechnung.mp3",
+      "audio_example": "/audio/a2/die-stromrechnung-kommt-jeden-monat.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0404",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Tarantel",
+      "article": "die",
+      "plural": "Taranteln",
+      "translation_tr": "tarantula",
+      "translation_ru": "тарантул",
+      "example_de": "Was? Die Tarantel?",
+      "example_tr": "Ne? Tarantula mı?",
+      "audio_word": "/audio/a2/tarantel.mp3",
+      "audio_example": "/audio/a2/was-die-tarantel.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0405",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "sportlich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "atletik",
+      "translation_ru": "спортивный",
+      "example_de": "Groß, sportlich und reich!",
+      "example_tr": "Uzun, atletik ve zengin!",
+      "audio_word": "/audio/a2/sportlich.mp3",
+      "audio_example": "/audio/a2/gross-sportlich-und-reich.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0406",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "reich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "zengin",
+      "translation_ru": "богатый",
+      "example_de": "Du bist total reich.",
+      "example_tr": "Tamamen zenginsin.",
+      "audio_word": "/audio/a2/reich.mp3",
+      "audio_example": "/audio/a2/du-bist-total-reich.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0407",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Kontrolle",
+      "article": "die",
+      "plural": "Kontrollen",
+      "translation_tr": "kontrol",
+      "translation_ru": "контроль",
+      "example_de": "Alles unter Kontrolle.",
+      "example_tr": "Her şey kontrol altında.",
+      "audio_word": "/audio/a2/kontrolle.mp3",
+      "audio_example": "/audio/a2/alles-unter-kontrolle.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0408",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Muskel",
+      "article": "der",
+      "plural": "Muskeln",
+      "translation_tr": "kas",
+      "translation_ru": "мышца",
+      "example_de": "Hey, du hast aber Muskeln!",
+      "example_tr": "Hey, kasların var!",
+      "audio_word": "/audio/a2/muskel.mp3",
+      "audio_example": "/audio/a2/hey-du-hast-aber-muskeln.mp3",
+      "tags": [
+        "noun",
+        "health",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0409",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "begründen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "gerekçelendirmek",
+      "translation_ru": "обосновывать",
+      "example_de": "Muss ich das begründen?",
+      "example_tr": "Bunu gerekçelendirmem mi gerekiyor?",
+      "audio_word": "/audio/a2/begruenden.mp3",
+      "audio_example": "/audio/a2/muss-ich-das-begruenden.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0410",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Klappcouch",
+      "article": "die",
+      "plural": "Klappcouches",
+      "translation_tr": "açılır kanepe",
+      "translation_ru": "раскладной диван",
+      "example_de": "Das ist eine Klapp-Couch.",
+      "example_tr": "Bu bir açılır kanepe.",
+      "audio_word": "/audio/a2/klappcouch.mp3",
+      "audio_example": "/audio/a2/das-ist-eine-klapp-couch.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0411",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Fernbedienung",
+      "article": "die",
+      "plural": "Fernbedienungen",
+      "translation_tr": "kumanda",
+      "translation_ru": "пульт",
+      "example_de": "Und das ist die Fernbedienung.",
+      "example_tr": "Ve bu kumanda.",
+      "audio_word": "/audio/a2/fernbedienung.mp3",
+      "audio_example": "/audio/a2/und-das-ist-die-fernbedienung.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0412",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Klamotten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kıyafetler",
+      "translation_ru": "одежда",
+      "example_de": "Aber seine Klamotten!",
+      "example_tr": "Ama kıyafetleri!",
+      "audio_word": "/audio/a2/klamotten.mp3",
+      "audio_example": "/audio/a2/aber-seine-klamotten.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0413",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "altmodisch",
+      "article": null,
+      "plural": null,
+      "translation_tr": "modası geçmiş",
+      "translation_ru": "старомодный",
+      "example_de": "Er ist so altmodisch!",
+      "example_tr": "O çok modası geçmiş!",
+      "audio_word": "/audio/a2/altmodisch.mp3",
+      "audio_example": "/audio/a2/er-ist-so-altmodisch.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0414",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "süß",
+      "article": null,
+      "plural": null,
+      "translation_tr": "tatlı / sevimli",
+      "translation_ru": "милый",
+      "example_de": "Aber er ist süß.",
+      "example_tr": "Ama o sevimli.",
+      "audio_word": "/audio/a2/suess.mp3",
+      "audio_example": "/audio/a2/aber-er-ist-suess.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0415",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "höflich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "nazik / kibar",
+      "translation_ru": "вежливый",
+      "example_de": "Und er ist höflich.",
+      "example_tr": "Ve o kibar.",
+      "audio_word": "/audio/a2/hoeflich.mp3",
+      "audio_example": "/audio/a2/und-er-ist-hoeflich.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0416",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "sexy",
+      "article": null,
+      "plural": null,
+      "translation_tr": "seksi",
+      "translation_ru": "сексуальный",
+      "example_de": "Und besonders sexy ist er auch nicht!",
+      "example_tr": "Ve özellikle seksi de değil!",
+      "audio_word": "/audio/a2/sexy.mp3",
+      "audio_example": "/audio/a2/und-besonders-sexy-ist-er-auch-nicht.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0417",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Gepäck",
+      "article": "das",
+      "plural": null,
+      "translation_tr": "bagaj",
+      "translation_ru": "багаж",
+      "example_de": "Bitte bringen Sie mir mein Gepäck.",
+      "example_tr": "Lütfen bagajımı getirin.",
+      "audio_word": "/audio/a2/gepaeck.mp3",
+      "audio_example": "/audio/a2/bitte-bringen-sie-mir-mein-gepaeck.mp3",
+      "tags": [
+        "noun",
+        "travel",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0418",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Portier",
+      "article": "der",
+      "plural": "Portiers",
+      "translation_tr": "kapıcı",
+      "translation_ru": "портье",
+      "example_de": "Du bist der Portier, right?",
+      "example_tr": "Sen kapıcısın, değil mi?",
+      "audio_word": "/audio/a2/portier.mp3",
+      "audio_example": "/audio/a2/du-bist-der-portier-right.mp3",
+      "tags": [
+        "noun",
+        "work",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0419",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "nebenan",
+      "article": null,
+      "plural": null,
+      "translation_tr": "yan tarafta / komşu",
+      "translation_ru": "рядом",
+      "example_de": "Ich wohne nebenan.",
+      "example_tr": "Yan tarafta oturuyorum.",
+      "audio_word": "/audio/a2/nebenan.mp3",
+      "audio_example": "/audio/a2/ich-wohne-nebenan.mp3",
+      "tags": [
+        "adverb",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0420",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Lieblingsessen",
+      "article": "das",
+      "plural": "Lieblingsessen",
+      "translation_tr": "favori yemek",
+      "translation_ru": "любимая еда",
+      "example_de": "Was ist dein Lieblingsessen?",
+      "example_tr": "Favori yemeğin ne?",
+      "audio_word": "/audio/a2/lieblingsessen.mp3",
+      "audio_example": "/audio/a2/was-ist-dein-lieblingsessen.mp3",
+      "tags": [
+        "noun",
+        "restaurant",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0421",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Currywurst",
+      "article": "die",
+      "plural": "Currywürste",
+      "translation_tr": "currywurst",
+      "translation_ru": "карри-колбаса",
+      "example_de": "Currywurst, okay.",
+      "example_tr": "Currywurst, tamam.",
+      "audio_word": "/audio/a2/currywurst.mp3",
+      "audio_example": "/audio/a2/currywurst-okay.mp3",
+      "tags": [
+        "noun",
+        "restaurant",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0422",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Shopping",
+      "article": null,
+      "plural": null,
+      "translation_tr": "alışveriş",
+      "translation_ru": "шопинг",
+      "example_de": "Viel Shopping?",
+      "example_tr": "Çok alışveriş mi?",
+      "audio_word": "/audio/a2/shopping.mp3",
+      "audio_example": "/audio/a2/viel-shopping.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0423",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Dienstboten",
+      "article": null,
+      "plural": null,
+      "translation_tr": "hizmetkârlar",
+      "translation_ru": "слуги",
+      "example_de": "Meine Dienstboten.",
+      "example_tr": "Hizmetkârlarım.",
+      "audio_word": "/audio/a2/dienstboten.mp3",
+      "audio_example": "/audio/a2/meine-dienstboten.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0424",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "schrecklich",
+      "article": null,
+      "plural": null,
+      "translation_tr": "korkunç",
+      "translation_ru": "ужасный",
+      "example_de": "Mensch, das ist ja schrecklich!",
+      "example_tr": "Vay be, bu korkunç!",
+      "audio_word": "/audio/a2/schrecklich.mp3",
+      "audio_example": "/audio/a2/mensch-das-ist-ja-schrecklich.mp3",
+      "tags": [
+        "adjective",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0425",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Vermieterin",
+      "article": "die",
+      "plural": "Vermieterinnen",
+      "translation_tr": "ev sahibi (kadın)",
+      "translation_ru": "хозяйка",
+      "example_de": "Hilfe, es ist die Vermieterin!",
+      "example_tr": "Yardım, ev sahibi geldi!",
+      "audio_word": "/audio/a2/vermieterin.mp3",
+      "audio_example": "/audio/a2/hilfe-es-ist-die-vermieterin.mp3",
+      "tags": [
+        "noun",
+        "home",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0426",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Zeitschrift",
+      "article": "die",
+      "plural": "Zeitschriften",
+      "translation_tr": "dergi",
+      "translation_ru": "журнал",
+      "example_de": "Hat jemand meine neue Zeitschrift gesehen?",
+      "example_tr": "Kimse yeni dergimi gördü mü?",
+      "audio_word": "/audio/a2/zeitschrift.mp3",
+      "audio_example": "/audio/a2/hat-jemand-meine-neue-zeitschrift-gesehen.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0427",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Make-up",
+      "article": null,
+      "plural": null,
+      "translation_tr": "makyaj",
+      "translation_ru": "макияж",
+      "example_de": "Mein Make-up.",
+      "example_tr": "Makyajım.",
+      "audio_word": "/audio/a2/make-up.mp3",
+      "audio_example": "/audio/a2/mein-make-up.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0428",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Love Parade",
+      "article": "die",
+      "plural": null,
+      "translation_tr": "Love Parade",
+      "translation_ru": "Love Parade",
+      "example_de": "Heute ist die Love Parade!",
+      "example_tr": "Bugün Love Parade!",
+      "audio_word": "/audio/a2/love-parade.mp3",
+      "audio_example": "/audio/a2/heute-ist-die-love-parade.mp3",
+      "tags": [
+        "noun",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0429",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "verpassen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "kaçırmak",
+      "translation_ru": "пропустить",
+      "example_de": "Das dürft ihr nicht verpassen!",
+      "example_tr": "Bunu kaçırmamalısınız!",
+      "audio_word": "/audio/a2/verpassen.mp3",
+      "audio_example": "/audio/a2/das-duerft-ihr-nicht-verpassen.mp3",
+      "tags": [
+        "verb",
+        "daily",
+        "a2",
+        "extra"
+      ]
+    },
+    {
+      "id": "a2_0430",
+      "level": "A2",
+      "category": "Extra · Sam aus Amerika",
+      "word": "Schwesterherz",
+      "article": null,
+      "plural": null,
+      "translation_tr": "canım kardeşim",
+      "translation_ru": "сестрёнка",
+      "example_de": "Schwesterherz, ich heiße Anna.",
+      "example_tr": "Canım kardeşim, adım Anna.",
+      "audio_word": "/audio/a2/schwesterherz.mp3",
+      "audio_example": "/audio/a2/schwesterherz-ich-heisse-anna.mp3",
+      "tags": [
+        "noun",
+        "family",
+        "a2",
+        "extra"
       ]
     }
   ]
