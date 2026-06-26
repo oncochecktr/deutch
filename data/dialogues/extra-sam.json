@@ -1,0 +1,181 @@
+[
+  {
+    "id": "d_a2_sam_01",
+    "level": "A2",
+    "title_de": "Der Brief aus Amerika",
+    "title_tr": "Amerika'dan mektup",
+    "theme": "Extra · Sam · Brief · Brieffreund",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "kind": "narration", "text_de": "Sascha und Anna wohnen zusammen in Berlin. Sie haben einen Nachbarn: Nic.", "text_tr": "Sascha ve Anna Berlin'de birlikte oturuyor. Bir komşuları var: Nic." },
+      { "id": "l02", "kind": "narration", "text_de": "Nic ist in Sascha verliebt, und Anna ist in Nic verliebt.", "text_tr": "Nic, Sascha'ya aşık; Anna ise Nic'e aşık." },
+      { "id": "l03", "speaker": "Louis", "kind": "dialogue", "text_de": "Sascha! Die Post!", "text_tr": "Sascha! Posta!" },
+      { "id": "l04", "speaker": "Sascha", "kind": "dialogue", "text_de": "Gib mir die Post, Louis.", "text_tr": "Postayı ver Louis." },
+      { "id": "l05", "speaker": "Sascha", "kind": "dialogue", "text_de": "Telefonrechnung, Gasrechnung, Stromrechnung. Oh, was ist das?", "text_tr": "Telefon, doğalgaz, elektrik faturası. Bu da ne?" },
+      { "id": "l06", "speaker": "Anna", "kind": "dialogue", "text_de": "Sascha, ein Brief für dich!", "text_tr": "Sascha, senin için bir mektup!" },
+      { "id": "l07", "speaker": "Sascha", "kind": "dialogue", "text_de": "Ein Brief für mich? Von meiner Mutter.", "text_tr": "Benim için mi? Annemden." },
+      { "id": "l08", "speaker": "Anna", "kind": "dialogue", "text_de": "Der hier ist aus Amerika. Von wem denn?", "text_tr": "Bu Amerika'dan. Kimden acaba?" },
+      { "id": "l09", "speaker": "Sascha", "kind": "dialogue", "text_de": "Hallo! Kennst du mich noch? Vor sieben Jahren waren wir Brieffreunde.", "text_tr": "Merhaba! Beni hâlâ hatırlıyor musun? Yedi yıl önce mektup arkadaşıydık." },
+      { "id": "l10", "speaker": "Sascha", "kind": "dialogue", "text_de": "Ach du liebe Zeit! Der Brief ist von Sam Scott!", "text_tr": "Aman Allahım! Mektup Sam Scott'tan!" },
+      { "id": "l11", "speaker": "Sascha", "kind": "dialogue", "text_de": "Ich spreche jetzt gut Deutsch. Und ich komme nach Deutschland.", "text_tr": "Artık iyi Almanca konuşuyorum. Ve Almanya'ya geliyorum." },
+      { "id": "l12", "speaker": "Anna", "kind": "dialogue", "text_de": "Was? Ich möchte mit dir schlafen?", "text_tr": "Ne? Seninle uyumak mı istiyorum?" },
+      { "id": "l13", "speaker": "Sascha", "kind": "dialogue", "text_de": "Ach so. Hast du ein Bett für mich? Er will hier übernachten.", "text_tr": "Ha anladım. Benim için yatağın var mı? Burada gece kalmak istiyor." },
+      { "id": "l14", "speaker": "Anna", "kind": "dialogue", "text_de": "Ein Amerikaner! Groß, sportlich… und reich! Wann kommt er? Am 7. Juli?", "text_tr": "Bir Amerikalı! Uzun, atletik… ve zengin! Ne zaman geliyor? 7 Temmuz'da mı?" },
+      { "id": "l15", "speaker": "Sascha", "kind": "dialogue", "text_de": "Aber das ist ja… heute!", "text_tr": "Ama bu… bugün!" },
+      { "id": "l16", "speaker": "Nic", "kind": "dialogue", "text_de": "Hallo Nic! Alles unter Kontrolle. Hey, du hast aber Muskeln!", "text_tr": "Selam Nic! Her şey kontrol altında. Hey, kasların var!" }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Sam kimdir?", "options_tr": ["Sascha'nın komşusu", "Eski mektup arkadaşı", "Anna'nın erkek kardeşi", "Postacı"], "correct_index": 1, "explanation_tr": "Vor sieben Jahren waren wir Brieffreunde." },
+      { "id": "c02", "prompt_tr": "Sam ne zaman geliyor?", "options_tr": ["Yarın", "Gelecek hafta", "Bugün (7 Temmuz)", "Gelecek ay"], "correct_index": 2 },
+      { "id": "c03", "prompt_tr": "Ich möchte mit dir schlafen ifadesi aslında ne anlama geliyor?", "options_tr": ["Sascha ile evlenmek istiyor", "Burada gece kalmak istiyor", "Birlikte spor yapmak istiyor", "Almanca öğrenmek istiyor"], "correct_index": 1, "explanation_tr": "Hast du ein Bett für mich? — yatak/gece kalma isteği." }
+    ]
+  },
+  {
+    "id": "d_a2_sam_02",
+    "level": "A2",
+    "title_de": "Ich heiße Amerika",
+    "title_tr": "Adım Amerika",
+    "theme": "Extra · Sam · Verwechslung · Ankunft",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Nic", "kind": "dialogue", "text_de": "Sascha hat Post von Sam. Sam aus Amerika!", "text_tr": "Sascha'ya Sam'den posta geldi. Amerika'dan Sam!" },
+      { "id": "l02", "speaker": "Anna", "kind": "dialogue", "text_de": "Sam ist männlich! Ein cooler Ami, ja?", "text_tr": "Sam erkek! Havalı bir Amerikalı, değil mi?" },
+      { "id": "l03", "speaker": "Sascha", "kind": "dialogue", "text_de": "Niemand darf mein Fahrrad anfassen! Kapiert?", "text_tr": "Kimse bisikletime dokunamaz! Anladınız mı?" },
+      { "id": "l04", "speaker": "Sam", "kind": "dialogue", "text_de": "Hallo. Ich heiße Amerika. Ich komme aus Sam.", "text_tr": "Merhaba. Adım Amerika. Sam'den geliyorum." },
+      { "id": "l05", "speaker": "Anna", "kind": "dialogue", "text_de": "Du meinst: Ich heiße Sam und ich komme aus Amerika.", "text_tr": "Demek istediğin: Adım Sam ve Amerika'dan geliyorum." },
+      { "id": "l06", "speaker": "Sam", "kind": "dialogue", "text_de": "Hilfe! Komm schon rein. Super!", "text_tr": "Yardım! Hadi içeri gel. Süper!" },
+      { "id": "l07", "speaker": "Sam", "kind": "dialogue", "text_de": "Ich spiele mit Autos! Meine kleinen Autos.", "text_tr": "Arabalarla oynuyorum! Küçük arabalarım." },
+      { "id": "l08", "speaker": "Anna", "kind": "dialogue", "text_de": "Ich lese… Ich liebe die Bücherei!", "text_tr": "Ben okurum… Kütüphaneyi seviyorum!" },
+      { "id": "l09", "speaker": "Sam", "kind": "dialogue", "text_de": "Hier wohne ich. Das ist ein Museum.", "text_tr": "Burada oturuyorum. Bu bir müze." },
+      { "id": "l10", "speaker": "Anna", "kind": "dialogue", "text_de": "Du wohnst in einem Museum? Ich glaube, er arbeitet in einem Museum.", "text_tr": "Bir müzede mi oturuyorsun? Sanırım müzede çalışıyor." },
+      { "id": "l11", "speaker": "Sascha", "kind": "dialogue", "text_de": "Sam, wir zeigen dir die Wohnung! Hier ist das Schlafzimmer.", "text_tr": "Sam, sana daireyi gösteriyoruz! İşte yatak odası." },
+      { "id": "l12", "speaker": "Sam", "kind": "dialogue", "text_de": "Wow, danke! Gutes Bett! Wo schlaft ihr?", "text_tr": "Vay, teşekkürler! İyi yatak! Siz nerede uyuyorsunuz?" },
+      { "id": "l13", "speaker": "Anna", "kind": "dialogue", "text_de": "Hier gibt es nur ein Schlafzimmer. Das ist eine Klapp-Couch.", "text_tr": "Burada tek yatak odası var. Bu bir açılır kanepe." },
+      { "id": "l14", "speaker": "Sascha", "kind": "dialogue", "text_de": "Und hier ist ein Kissen für dich. Und das ist die Fernbedienung.", "text_tr": "Ve işte senin için bir yastık. Bu da kumanda." },
+      { "id": "l15", "speaker": "Anna", "kind": "dialogue", "text_de": "Psst! Er spielt mit Spielzeug-Autos! Und besonders sexy ist er auch nicht!", "text_tr": "Şşş! Oyuncak arabalarla oynuyor! Ve özellikle seksi de değil!" },
+      { "id": "l16", "speaker": "Sascha", "kind": "dialogue", "text_de": "Aber er ist süß. Und er ist höflich. Aber seine Klamotten! Er ist so altmodisch!", "text_tr": "Ama sevimli. Ve kibar. Ama kıyafetleri! Çok modası geçmiş!" }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Sam ilk ne diyor?", "options_tr": ["Adım Sam, Amerika'danım", "Adım Amerika, Sam'denim", "Adım Anna", "Adım Nic"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Sam nerede uyuyacak?", "options_tr": ["Nic'in evinde", "Klapp-Couch'ta", "Müzede", "Otelde"], "correct_index": 1 },
+      { "id": "c03", "prompt_tr": "Kızlar Sam hakkında ne düşünüyor?", "options_tr": ["Çok zengin ve sportlich", "Sevimli ama biraz çocuksu", "Çok kızgınlar", "Hemen evden atmak istiyorlar"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_sam_03",
+    "level": "A2",
+    "title_de": "Der Hund ist im Ofen",
+    "title_tr": "Köpek fırında",
+    "theme": "Extra · Sam · Deutschunterricht · Witz",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Sam", "kind": "dialogue", "text_de": "Bitte bringen Sie mir mein Gepäck.", "text_tr": "Lütfen bagajımı getirin." },
+      { "id": "l02", "speaker": "Nic", "kind": "dialogue", "text_de": "Portier? Ich bin Nic. Ich wohne nebenan.", "text_tr": "Kapıcı mı? Ben Nic. Yan tarafta oturuyorum." },
+      { "id": "l03", "speaker": "Anna", "kind": "dialogue", "text_de": "Das hier ist Sam Scott aus Amerika. Hast du Hunger? Currywurst?", "text_tr": "Bu Amerika'dan Sam Scott. Aç mısın? Currywurst?" },
+      { "id": "l04", "speaker": "Anna", "kind": "dialogue", "text_de": "Nic, du kannst ihm Deutsch-Unterricht geben!", "text_tr": "Nic, ona Almanca dersi verebilirsin!" },
+      { "id": "l05", "speaker": "Nic", "kind": "dialogue", "text_de": "Also, pass auf. Das hier ist der Ofen. Annas Hund schläft im Ofen.", "text_tr": "Bak şimdi. Bu fırın. Anna'nın köpeği fırında uyuyor." },
+      { "id": "l06", "speaker": "Nic", "kind": "dialogue", "text_de": "Du sagst zu Anna: Anna! Der Hund ist im Ofen!", "text_tr": "Anna'ya diyorsun: Anna! Köpek fırında!" },
+      { "id": "l07", "speaker": "Sam", "kind": "dialogue", "text_de": "Anna! Der Hund ist im Ofen! Sehr gut, sehr gut.", "text_tr": "Anna! Köpek fırında! Çok iyi, çok iyi." },
+      { "id": "l08", "speaker": "Nic", "kind": "dialogue", "text_de": "Und Sascha… Sascha steht auf starke Männer mit starken Beinen.", "text_tr": "Ve Sascha… Sascha güçlü bacaklı erkeklerden hoşlanır." },
+      { "id": "l09", "speaker": "Nic", "kind": "dialogue", "text_de": "Kannst du 50 Kilometer auf dem Fahrrad fahren? Das will ich sehen!", "text_tr": "Bisikletle 50 kilometre gidebilir misin? Bunu görmek istiyorum!" },
+      { "id": "l10", "speaker": "Anna", "kind": "dialogue", "text_de": "Viel Shopping? Ähh, ja klar, Sam.", "text_tr": "Çok alışveriş mi? Ee, evet tabii Sam." },
+      { "id": "l11", "speaker": "Sam", "kind": "dialogue", "text_de": "Sascha! Schau mal — 50 Kilometer!", "text_tr": "Sascha! Bak — 50 kilometre!" },
+      { "id": "l12", "speaker": "Sam", "kind": "dialogue", "text_de": "Anna, der Hund ist im Ofen!", "text_tr": "Anna, köpek fırında!" },
+      { "id": "l13", "speaker": "Anna", "kind": "dialogue", "text_de": "Was? Louis? So ein böser Junge!", "text_tr": "Ne? Louis? Ne kötü çocuk!" },
+      { "id": "l14", "speaker": "Sascha", "kind": "dialogue", "text_de": "Der Typ fliegt raus! Er ist mit meinem Fahrrad gefahren!", "text_tr": "Bu adam defoluyor! Bisikletimle gitti!" },
+      { "id": "l15", "speaker": "Sascha", "kind": "dialogue", "text_de": "Und er hat gesagt: Der Hund ist im Ofen. So ein blöder Witz.", "text_tr": "Ve dedi ki: Köpek fırında. Ne aptal şaka." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Nic Sam'e ne öğretiyor?", "options_tr": ["Currywurst tarifi", "Der Hund ist im Ofen", "Bisiklet tamiri", "Müze gezisi"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Sascha neden kızıyor?", "options_tr": ["Sam çok yavaş konuşuyor", "Sam bisikletini kullandı ve aptal şaka yaptı", "Sam çok fazla yemek yedi", "Sam müzede kaldı"], "correct_index": 1 },
+      { "id": "c03", "prompt_tr": "Louis kim?", "options_tr": ["Komşu", "Anna'nın köpeği", "Vermieterin", "Sam'in arkadaşı"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_sam_04",
+    "level": "A2",
+    "title_de": "Familie Scott",
+    "title_tr": "Scott ailesi",
+    "theme": "Extra · Sam · reich · Freunde",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Sascha", "kind": "dialogue", "text_de": "Sam! Komm sofort raus. Wir müssen mit dir sprechen!", "text_tr": "Sam! Hemen çık dışarı. Seninle konuşmamız lazım!" },
+      { "id": "l02", "speaker": "Anna", "kind": "dialogue", "text_de": "Sag's du ihm doch, Anna. Ja, Sascha?", "text_tr": "Söyle ona Anna. Evet Sascha?" },
+      { "id": "l03", "speaker": "Sam", "kind": "dialogue", "text_de": "Brad Pitt! Sam, bist du das? Mit meinen Eltern.", "text_tr": "Brad Pitt! Sam, sen misin? Ailemle birlikte." },
+      { "id": "l04", "speaker": "Sam", "kind": "dialogue", "text_de": "Familie Scott — eine der reichsten Familien Amerikas.", "text_tr": "Scott ailesi — Amerika'nın en zengin ailelerinden biri." },
+      { "id": "l05", "speaker": "Anna", "kind": "dialogue", "text_de": "Deine Dienstboten? Deine Autos? Mensch Sam, du bist total reich.", "text_tr": "Hizmetkârların mı? Arabaların mı? Vay Sam, tamamen zenginsin." },
+      { "id": "l06", "speaker": "Sam", "kind": "dialogue", "text_de": "Warum willst du hier wohnen? Ich will echte Freunde.", "text_tr": "Neden burada kalmak istiyorsun? Gerçek arkadaşlar istiyorum." },
+      { "id": "l07", "speaker": "Anna", "kind": "dialogue", "text_de": "Die Leute mögen dich nur, weil du reich bist? Das ist ja schrecklich!", "text_tr": "İnsanlar seni sadece zengin olduğun için mi seviyor? Bu korkunç!" },
+      { "id": "l08", "speaker": "Sam", "kind": "dialogue", "text_de": "Kein Wort zu den Mädchen! Pssst.", "text_tr": "Kızlara tek kelime etme! Şşş." },
+      { "id": "l09", "speaker": "Anna", "kind": "dialogue", "text_de": "Vielleicht sollte er doch hier wohnen? Oh ja, der arme kleine Amerikaner!", "text_tr": "Belki yine de burada kalmalı? Evet, zavallı küçük Amerikalı!" },
+      { "id": "l10", "speaker": "Nic", "kind": "dialogue", "text_de": "Hey Sam! Du kannst bei mir wohnen. Ich habe zwei Betten.", "text_tr": "Hey Sam! Bende kalabilirsin. İki yatağım var." },
+      { "id": "l11", "speaker": "Sascha", "kind": "dialogue", "text_de": "Halt die Klappe, Nic! Sam bleibt hier bei uns.", "text_tr": "Kapa çeneni Nic! Sam bizde kalıyor." },
+      { "id": "l12", "speaker": "Sascha", "kind": "dialogue", "text_de": "Sam, du kannst mich Cha Cha nennen. Alle meine Freunde nennen mich Cha Cha.", "text_tr": "Sam, bana Cha Cha diyebilirsin. Tüm arkadaşlarım bana Cha Cha der." },
+      { "id": "l13", "speaker": "Sam", "kind": "dialogue", "text_de": "Louis! Da bist du ja! Der Hund ist im Ofen.", "text_tr": "Louis! İşte buradasın! Köpek fırında." },
+      { "id": "l14", "speaker": "Anna", "kind": "dialogue", "text_de": "Nic ist ein sehr guter Lehrer. Ich lerne viel Deutsch.", "text_tr": "Nic çok iyi bir öğretmen. Çok Almanca öğreniyorum." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Sam neden Berlin'de kalmak istiyor?", "options_tr": ["Müze için", "Gerçek arkadaşlar için", "Almanca sınavı için", "Currywurst için"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Sam sonunda nerede kalıyor?", "options_tr": ["Nic'te", "Otelde", "Sascha ve Anna'da", "Müzede"], "correct_index": 2 },
+      { "id": "c03", "prompt_tr": "Sascha'nın takma adı ne?", "options_tr": ["Louis", "Cha Cha", "Brad Pitt", "Tarantel"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_sam_05",
+    "level": "A2",
+    "title_de": "Love Parade und Vermieterin",
+    "title_tr": "Love Parade ve ev sahibi",
+    "theme": "Extra · Sam · Party · verstecken",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "speaker": "Anna", "kind": "dialogue", "text_de": "Hey Leute! Was sitzen wir hier rum? Heute ist die Love Parade!", "text_tr": "Selam millet! Burada ne oturuyoruz? Bugün Love Parade!" },
+      { "id": "l02", "speaker": "Sam", "kind": "dialogue", "text_de": "Love Parade? Eine Party! Oh, Party!", "text_tr": "Love Parade? Bir parti! Ah, parti!" },
+      { "id": "l03", "speaker": "Sascha", "kind": "dialogue", "text_de": "Mein Make-up. Ich muss schnell Room Service.", "text_tr": "Makyajım. Hızlıca oda servisi lazım." },
+      { "id": "l04", "speaker": "Anna", "kind": "dialogue", "text_de": "Hat jemand meine neue Zeitschrift gesehen? Keine Ahnung.", "text_tr": "Kimse yeni dergimi gördü mü? Hiç fikrim yok." },
+      { "id": "l05", "speaker": "Anna", "kind": "dialogue", "text_de": "Oh nein. Ja, kommen Sie bitte hoch. Hilfe, es ist die Vermieterin!", "text_tr": "Ah hayır. Evet, lütfen yukarı gelin. Yardım, ev sahibi geldi!" },
+      { "id": "l06", "speaker": "Sascha", "kind": "dialogue", "text_de": "Was? Die Tarantel? Schnell, Sam! Versteck dich!", "text_tr": "Ne? Tarantula mı? Çabuk Sam! Saklan!" },
+      { "id": "l07", "speaker": "Anna", "kind": "dialogue", "text_de": "Nein, ins Schlafzimmer! Ah, die Miete.", "text_tr": "Hayır, yatak odasına! Ah, kira." },
+      { "id": "l08", "kind": "narration", "text_de": "Unsere Freunde gehen für Sam einkaufen. Sam geht für die Mädchen einkaufen.", "text_tr": "Arkadaşlarımız Sam için alışverişe gidiyor. Sam de kızlar için alışverişe gidiyor." },
+      { "id": "l09", "speaker": "Nic", "kind": "dialogue", "text_de": "Kann er bei dir wohnen, Nic? Sorry, Ladies. Das geht wirklich nicht.", "text_tr": "Sende kalabilir mi Nic? Üzgünüm kızlar. Bu gerçekten olmaz." },
+      { "id": "l10", "speaker": "Sam", "kind": "dialogue", "text_de": "Mir ist heiß. Ich gehe duschen.", "text_tr": "Sıcakladım. Duşa gideceğim." },
+      { "id": "l11", "speaker": "Sascha", "kind": "dialogue", "text_de": "Das war's! Der Typ fliegt raus!", "text_tr": "Bu kadar! Bu adam defoluyor!" },
+      { "id": "l12", "speaker": "Anna", "kind": "dialogue", "text_de": "Aber wieso? Er ist doch so nett.", "text_tr": "Ama neden? O çok nazik." },
+      { "id": "l13", "speaker": "Sascha", "kind": "dialogue", "text_de": "Aber er duscht gerade! Das ist mir egal!", "text_tr": "Ama duş alıyor! Umurumda değil!" },
+      { "id": "l14", "kind": "narration", "text_de": "Das dürft ihr nicht verpassen!", "text_tr": "Bunu kaçırmamalısınız!" }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Kızlar neden Sam'i saklıyor?", "options_tr": ["Love Parade için", "Vermieterin geldiği için", "Sam uyuyor", "Polis geldi"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Bugün ne var?", "options_tr": ["Sınav", "Love Parade", "Doğum günü", "İş görüşmesi"], "correct_index": 1 },
+      { "id": "c03", "prompt_tr": "Vermieterin kim?", "options_tr": ["Komşu kız", "Ev sahibi kadın", "Sam'in annesi", "Öğretmen"], "correct_index": 1 }
+    ]
+  },
+  {
+    "id": "d_a2_sam_06",
+    "level": "A2",
+    "title_de": "Sam bleibt",
+    "title_tr": "Sam kalıyor",
+    "theme": "Extra · Sam · Wohnung · Freundschaft",
+    "source": "seed",
+    "lines": [
+      { "id": "l01", "kind": "narration", "text_de": "Das ist die Geschichte von Sascha, Anna, Nic und Sam in Berlin.", "text_tr": "Bu Berlin'deki Sascha, Anna, Nic ve Sam'in hikayesi." },
+      { "id": "l02", "speaker": "Sascha", "kind": "dialogue", "text_de": "Sam bleibt hier bei uns. Nicht wahr, Sam?", "text_tr": "Sam bizde kalıyor. Değil mi Sam?" },
+      { "id": "l03", "speaker": "Sam", "kind": "dialogue", "text_de": "Ich will echte Freunde. Die Leute mögen mich nur, weil ich reich bin.", "text_tr": "Gerçek arkadaşlar istiyorum. İnsanlar beni sadece zengin olduğum için seviyor." },
+      { "id": "l04", "speaker": "Anna", "kind": "dialogue", "text_de": "Mensch, das ist ja schrecklich! Der arme kleine Amerikaner!", "text_tr": "Vay be, bu korkunç! Zavallı küçük Amerikalı!" },
+      { "id": "l05", "speaker": "Nic", "kind": "dialogue", "text_de": "Nic ist ein guter Lehrer. Annas Hund schläft im Ofen.", "text_tr": "Nic iyi bir öğretmen. Anna'nın köpeği fırında uyuyor." },
+      { "id": "l06", "speaker": "Sam", "kind": "dialogue", "text_de": "Ich lerne viel Deutsch. Alles in Ordnung?", "text_tr": "Çok Almanca öğreniyorum. Her şey yolunda mı?" },
+      { "id": "l07", "speaker": "Anna", "kind": "dialogue", "text_de": "Super! Jetzt bin ich… tot! Nein — Mir ist heiß.", "text_tr": "Süper! Şimdi ben… öldüm! Hayır — Sıcakladım." },
+      { "id": "l08", "speaker": "Sascha", "kind": "dialogue", "text_de": "Sam, du solltest duschen gehen. Fühl dich wie zu Hause.", "text_tr": "Sam, duş almalısın. Kendini evinde gibi hisset." },
+      { "id": "l09", "speaker": "Sascha", "kind": "dialogue", "text_de": "Wir zeigen dir die Wohnung. Hier ist das Schlafzimmer — deine Klapp-Couch.", "text_tr": "Sana daireyi gösteriyoruz. İşte yatak odası — senin açılır kanepen." },
+      { "id": "l10", "speaker": "Sam", "kind": "dialogue", "text_de": "Was ist dein Lieblingsessen? Currywurst, okay.", "text_tr": "Favori yemeğin ne? Currywurst, tamam." },
+      { "id": "l11", "speaker": "Nic", "kind": "dialogue", "text_de": "Nic, Sam, ihr habt bestimmt viel Spaß miteinander!", "text_tr": "Nic, Sam, kesin birlikte çok eğlenirsiniz!" },
+      { "id": "l12", "speaker": "Anna", "kind": "dialogue", "text_de": "Schwesterherz! Heute ist die Love Parade — eine Party!", "text_tr": "Canım kardeşim! Bugün Love Parade — bir parti!" },
+      { "id": "l13", "kind": "narration", "text_de": "Sam geht selber einkaufen. Und Sam bleibt in Berlin.", "text_tr": "Sam kendi alışverişine gidiyor. Ve Sam Berlin'de kalıyor." },
+      { "id": "l14", "speaker": "Sam", "kind": "dialogue", "text_de": "Danke. Ich heiße Sam und ich komme aus Amerika.", "text_tr": "Teşekkürler. Adım Sam ve Amerika'dan geliyorum." }
+    ],
+    "comprehension": [
+      { "id": "c01", "prompt_tr": "Sam neden zenginliğini gizlemek istiyor?", "options_tr": ["Vergi kaçırıyor", "Gerçek arkadaş istiyor", "Almanya kuralları", "Nic kıskanıyor"], "correct_index": 1 },
+      { "id": "c02", "prompt_tr": "Sam'in favori yemeği ne?", "options_tr": ["Pizza", "Currywurst", "Milch", "Cola"], "correct_index": 1 },
+      { "id": "c03", "prompt_tr": "Hikâye nerede geçiyor?", "options_tr": ["Hamburg", "München", "Berlin", "Amerika"], "correct_index": 2 }
+    ]
+  }
+]
