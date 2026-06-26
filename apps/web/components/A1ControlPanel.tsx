@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getBankMeta } from "@german-coach/exams";
 import { getA1Vocabulary, getTimurVocabulary } from "@german-coach/vocabulary";
 import { IconArrowRight } from "@/components/icons";
+import { APP_FEATURES } from "@/lib/appFeatures";
 import { ProgressBar } from "@/components/ProgressBar";
 import { ResetSRSButton } from "@/components/ResetSRSButton";
 import { useProgress } from "@/lib/ProgressContext";
@@ -186,6 +187,16 @@ export function A1ControlPanel() {
               );
             })}
           </ul>
+        </PanelSection>
+
+        <PanelSection title="Özellikler" badge={`${APP_FEATURES.length} modül`}>
+          <Link
+            href="/ozellikler"
+            className="flex items-center justify-between rounded-lg border border-goethe-blue/20 bg-goethe-blue/5 px-3 py-2.5 text-sm font-semibold text-goethe-blue transition hover:border-goethe-blue/40"
+          >
+            Tüm modülleri gör
+            <IconArrowRight size={14} />
+          </Link>
         </PanelSection>
 
         <PanelSection title="Ayarlar">

@@ -11,6 +11,7 @@ const CHECKS = [
   { path: "/robots.txt", name: "robots.txt" },
   { path: "/sitemap.xml", name: "sitemap.xml" },
   { path: "/diktat", name: "Diktat" },
+  { path: "/ozellikler", name: "Özellikler" },
   { path: "/grundlagen/cumle-motoru", name: "Kelime Oyunu" },
   { path: "/listen", name: "Dinle" },
   { path: "/cards", name: "Kartlar" },
@@ -20,6 +21,7 @@ const CHECKS = [
 const REQUIRED_IN_SITEMAP = [
   "/",
   "/diktat",
+  "/ozellikler",
   "/grundlagen/cumle-motoru",
   "/listen",
   "/cards",

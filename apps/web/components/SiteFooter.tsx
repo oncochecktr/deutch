@@ -14,6 +14,9 @@ export function SiteFooter() {
         <SiteSocialLinks variant="buttons" />
 
         <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-sage-500">
+          <Link href="/ozellikler" className="hover:text-goethe-blue">
+            Tüm özellikler
+          </Link>
           <Link href="/grundlagen/roadmap" className="hover:text-goethe-blue">
             Gramer haritası
           </Link>

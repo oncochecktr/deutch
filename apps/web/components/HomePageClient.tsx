@@ -76,6 +76,17 @@ export function HomePageClient() {
         )}
 
         <Link
+          href="/ozellikler"
+          className="card-soft flex items-center justify-between gap-3 border border-goethe-gold/30 bg-goethe-gold/5 p-4 transition hover:border-goethe-gold/50"
+        >
+          <div>
+            <p className="text-sm font-bold text-goethe-blue">Tüm özellikler</p>
+            <p className="text-sm text-sage-500">Modüllere tek tıkla git</p>
+          </div>
+          <span className="shrink-0 text-goethe-blue">→</span>
+        </Link>
+
+        <Link
           href="/harita"
           className="card-soft flex items-center justify-between gap-3 border border-goethe-blue/20 p-4 transition hover:border-goethe-blue/40"
         >

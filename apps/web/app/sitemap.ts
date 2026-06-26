@@ -38,6 +38,7 @@ const ROUTES: RouteEntry[] = [
   { path: "/review", priority: 0.75, changeFrequency: "weekly" },
   { path: "/words", priority: 0.75, changeFrequency: "weekly" },
   { path: "/diktat", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/ozellikler", priority: 0.85, changeFrequency: "weekly" },
   { path: "/listen", priority: 0.75, changeFrequency: "weekly" },
   { path: "/quiz", priority: 0.7, changeFrequency: "weekly" },
   { path: "/exam", priority: 0.85, changeFrequency: "weekly" },

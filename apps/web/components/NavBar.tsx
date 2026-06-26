@@ -26,6 +26,7 @@ const PRIMARY_LINKS: NavItem[] = [
 ];
 
 const MORE_LINKS: NavItem[] = [
+  { href: "/ozellikler", label: "Özellikler", icon: "list" },
   { href: "/harita", label: "Harita", icon: "list" },
   { href: "/mesleki", label: "Mesleki", icon: "mesleki" },
   { href: "/words", label: "Liste", icon: "list" },

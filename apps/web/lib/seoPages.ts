@@ -162,4 +162,11 @@ export const SEO_PAGES = {
     path: "/diktat",
     keywords: [...PAGE_KEYWORDS.diktat],
   }),
+  ozellikler: pageMetadata({
+    title: "Tüm Özellikler — German Coach Modülleri",
+    description:
+      "German Coach özellik listesi: kelime kartları, diktat, gramer, konuşma, sınav simülasyonu ve daha fazlası. Tıkla, modüle git.",
+    path: "/ozellikler",
+    keywords: [...PAGE_KEYWORDS.home],
+  }),
 } as const;

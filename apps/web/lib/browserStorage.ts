@@ -32,6 +32,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/quiz": "Quiz",
   "/listen": "Dinleme",
   "/diktat": "Diktat",
+  "/ozellikler": "Tüm özellikler",
   "/konus-dinle": "Konuş-Dinle",
   "/speak": "Sınıf",
   "/words": "Kelime Listesi",
