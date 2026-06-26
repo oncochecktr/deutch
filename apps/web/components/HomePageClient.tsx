@@ -9,13 +9,16 @@ import { HomeGameBanner } from "@/components/home/HomeGameBanner";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomePathPicker } from "@/components/home/HomePathPicker";
 import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
+import { LearningCoachBanner } from "@/components/LearningCoachBanner";
 import { LearningPathHub } from "@/components/LearningPathHub";
+import { SmartGuide } from "@/components/SmartGuide";
 import { StorageWarningBanner } from "@/components/StorageWarningBanner";
 import { NavIcon, type NavIconKey } from "@/components/icons";
 import { resolveRecommendedIntent, isEarlyLearner } from "@/lib/homeLearningPath";
 import { computeLearningPath } from "@/lib/learningPath";
 import { countStudiedA1Words } from "@/lib/progress";
 import { useDashboardReport } from "@/lib/useDashboardReport";
+import { useLearningCoach } from "@/lib/useLearningCoach";
 
 const A1ControlPanel = dynamic(
   () => import("@/components/A1ControlPanel").then((m) => ({ default: m.A1ControlPanel })),
@@ -28,6 +31,7 @@ const A1ControlPanel = dynamic(
 
 export function HomePageClient() {
   const { report, srs, a1, mesleki, progress } = useDashboardReport();
+  const { coach } = useLearningCoach();
   const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
   const a1Studied = countStudiedA1Words(progress);
   const early = isEarlyLearner(report.overallPercent, a1Studied);
@@ -48,6 +52,8 @@ export function HomePageClient() {
         <HomeHero />
         <HomeGameBanner />
         <LearningMethodGuide />
+        {report.nextStep && <SmartGuide report={report} />}
+        <LearningCoachBanner coach={coach} />
         <HomePathPicker recommended={recommended} progress={progress} />
 
         <StorageWarningBanner />
@@ -55,7 +61,11 @@ export function HomePageClient() {
 
         {early ? (
           <div className="card-soft flex flex-wrap items-center justify-between gap-3 border border-goethe-blue/15 p-4">
-            <p className="text-sm text-sage-600">Kart açınca ilerleme burada artar.</p>
+            <p className="text-sm text-sage-600">
+              {coach.activeStep.status === "active"
+                ? `Sıradaki: ${coach.activeStep.title} — ${coach.activeStep.progressLabel}`
+                : "Kart açınca ilerleme burada artar."}
+            </p>
             <Link
               href="/harita"
               className="shrink-0 rounded-full border border-goethe-blue/25 px-4 py-2 text-sm font-semibold text-goethe-blue transition hover:bg-goethe-blue/5"

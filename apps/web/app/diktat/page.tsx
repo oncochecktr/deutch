@@ -1,4 +1,5 @@
 import { PageShell } from "@/components/PageShell";
+import { CoachMilestoneOnMount } from "@/components/CoachMilestoneOnMount";
 import { DiktatWorkspace } from "@/components/diktat/DiktatWorkspace";
 
 export default function DiktatPage() {
@@ -10,6 +11,7 @@ export default function DiktatPage() {
       backLabel="Panele dön"
       maxWidth="full"
     >
+      <CoachMilestoneOnMount milestone="diktatVisited" />
       <DiktatWorkspace />
     </PageShell>
   );

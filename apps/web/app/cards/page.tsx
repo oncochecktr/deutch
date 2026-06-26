@@ -3,17 +3,24 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
 import { PageShell } from "@/components/PageShell";
+import { LearningCoachBanner } from "@/components/LearningCoachBanner";
 import { SessionTrail } from "@/components/SessionTrail";
 import { StudyMotivation } from "@/components/StudyMotivation";
 import { WordCard } from "@/components/WordCard";
 import { IconArrowLeft, IconArrowRight } from "@/components/icons";
+import {
+  cardsCoachMessage,
+  shouldShowCardsCoachBanner,
+} from "@/lib/learningCoach";
 import { recordAnswer } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
+import { useLearningCoach } from "@/lib/useLearningCoach";
 
 const SESSION_MEMORY_MAX = 20;
 
 export default function CardsPage() {
   const { progress, updateProgress, hydrated, flushProgress } = useProgress();
+  const { coach } = useLearningCoach();
   const vocab = getA1Vocabulary();
   const [flipped, setFlipped] = useState(false);
   const [trail, setTrail] = useState<string[]>([]);
@@ -110,6 +117,9 @@ export default function CardsPage() {
   const canContinueLive = isLive;
   const canGoNext = canGoNextHistory || canContinueLive;
 
+  const showCoachBanner = shouldShowCardsCoachBanner(trail.length, coach);
+  const coachMsg = cardsCoachMessage(coach);
+
   return (
     <>
       <StudyMotivation trigger={nudgeTrigger} />
@@ -132,6 +142,17 @@ export default function CardsPage() {
           <p className="text-center text-sm text-sage-400">
             Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
           </p>
+        )}
+
+        {showCoachBanner && (
+          <LearningCoachBanner
+            coach={coach}
+            variant="session"
+            sessionTitle={coachMsg.title}
+            sessionBody={coachMsg.body}
+            sessionHref={coachMsg.href}
+            sessionCta={coachMsg.cta}
+          />
         )}
 
         <WordCard
