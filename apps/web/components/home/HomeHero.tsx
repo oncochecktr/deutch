@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { IconArrowRight } from "@/components/icons";
+import { LanguageFlags } from "@/components/ui/LanguageFlags";
 
 export function HomeHero() {
   return (
     <section className="card-soft overflow-hidden border-2 border-goethe-blue/20 bg-gradient-to-br from-goethe-blue via-goethe-blue to-goethe-blue/95 p-6 text-white shadow-md sm:p-8">
-      <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-gold">
-        4 adım · A1
-      </p>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <LanguageFlags />
+        <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-gold">
+          Almanca · Türkçe · 4 adım · A1
+        </p>
+      </div>
       <h1 className="mt-2 text-2xl font-bold leading-tight sm:text-3xl">
         Önce cümleyle öğren.
       </h1>
