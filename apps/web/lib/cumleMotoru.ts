@@ -19,21 +19,21 @@ export const ASPECTS: {
     label: "Söylem",
     labelDe: "Aussage",
     description: "Bir şey söylemek — ich mache, du willst, wir können…",
-    icon: "💬",
+    icon: "A",
   },
   {
     id: "question",
     label: "Soru",
     labelDe: "Frage",
     description: "Sormak — Möchtest du…? Was machst du?",
-    icon: "❓",
+    icon: "?",
   },
   {
     id: "answer",
     label: "Yanıt",
     labelDe: "Antwort",
     description: "Cevap vermek — Ja, ich möchte. / Nein, danke.",
-    icon: "✓",
+    icon: "+",
   },
 ];
 

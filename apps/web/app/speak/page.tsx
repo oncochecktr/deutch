@@ -1012,7 +1012,7 @@ export default function SpeakPage() {
                     : "border border-emerald-300 text-emerald-800"
                 }`}
               >
-                {exerciseOpen ? "Egzersiz ✓" : "Egzersiz alanı"}
+                {exerciseOpen ? "Egzersiz (açık)" : "Egzersiz alanı"}
               </button>
               <button
                 type="button"
@@ -1038,7 +1038,7 @@ export default function SpeakPage() {
                     : "border border-sage-200 text-sage-600"
                 }`}
               >
-                {focusMode ? "Derse odaklan ✓" : "Panelleri göster"}
+                {focusMode ? "Derse odaklan (açık)" : "Panelleri göster"}
               </button>
               <button
                 type="button"

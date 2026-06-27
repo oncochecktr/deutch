@@ -198,7 +198,7 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
 
       {hint && (
         <p className="rounded-lg border border-goethe-gold/30 bg-goethe-gold/10 px-3 py-2 text-sm text-sage-700">
-          💡 {hint}
+          Ipucu: {hint}
         </p>
       )}
 

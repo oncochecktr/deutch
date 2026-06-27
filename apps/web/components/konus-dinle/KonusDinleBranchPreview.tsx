@@ -46,7 +46,7 @@ export function KonusDinleBranchPreview({
               onClick={onUseSuggested}
               className="shrink-0 rounded-full bg-emerald-100 px-3 py-1 text-[10px] font-bold text-emerald-800"
             >
-              ★ Önerilen
+              Önerilen
             </button>
           )}
         </div>

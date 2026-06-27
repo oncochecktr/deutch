@@ -1,0 +1,31 @@
+---
+description: German Coach UI copy, emoji ban, and release summary conventions
+alwaysApply: true
+---
+
+# German Coach — UI ve sürüm kuralları
+
+Okuma: `docs/UI_AND_RELEASE.md` (tam şablon ve changelog).
+
+## Emojiler
+
+- **Asla** renkli emoji kullanma: arayüz, banner, liste, buton, ipucu, commit mesajı, kullanıcıya dönük özet.
+- Navigasyon okları (`→`) serbest.
+- Uyarı/ses/mikrofon için emoji yerine `@/components/icons` veya kısa Türkçe kelime (`Dikkat`, `Dinle`, `Ipucu`).
+
+## Yeni özellik banner’ları
+
+- Madde işareti: düz metin veya `—` / `·`, emoji değil.
+- Örnek: `Önce Almanca, sonra Türkçe (kadın ses)` — `🔊` yok.
+
+## Türkçe ses
+
+- Proje geneli: `TURKISH_TTS_VOICE = tr-TR-EmelNeural` (kadın). Erkek ses fallback ekleme.
+
+## Sürüm özeti
+
+Özellik bitince kısa madde listesi (emoji yok); gerekirse `docs/UI_AND_RELEASE.md` tablosuna bir satır ekle.
+
+## Commit
+
+Emojisiz İngilizce imperative subject line.

@@ -21,8 +21,11 @@ export function StorageWarningBanner({ className = "" }: { className?: string })
       className={`flex items-start gap-3 rounded-xl border border-amber-200/80 bg-amber-50 px-4 py-3 text-sm text-amber-950 ${className}`}
       role="status"
     >
-      <span className="shrink-0 text-base" aria-hidden>
-        ⚠
+      <span
+        className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-200/80 text-xs font-bold text-amber-900"
+        aria-hidden
+      >
+        !
       </span>
       <div className="min-w-0 flex-1">
         <p className="font-semibold">İlerleme bu tarayıcıda saklanır</p>

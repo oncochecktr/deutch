@@ -20,10 +20,10 @@ export function HomeStoryBanner() {
           <p className="mt-1 text-sm text-sage-600">
             Organik markette alışveriş — A2 · Easy German
           </p>
-          <ul className="mt-3 space-y-1 text-xs text-sage-500">
-            <li>🔊 Önce Almanca, sonra Türkçe (kadın ses)</li>
-            <li>📱 Ekran kilitli dinleme · kulaklık düğmeleri</li>
-            <li>✍️ Dinle-yaz — duyduğunu kontrol et</li>
+          <ul className="mt-3 list-inside list-disc space-y-1 text-xs text-sage-500">
+            <li>Önce Almanca, sonra Türkçe (kadın ses)</li>
+            <li>Ekran kilitli dinleme · kulaklık düğmeleri</li>
+            <li>Dinle-yaz — duyduğunu kontrol et</li>
           </ul>
         </div>
         <span className="shrink-0 rounded-full bg-goethe-blue px-4 py-2 text-sm font-semibold text-white">

@@ -114,7 +114,7 @@ export function SpeakBoard({
                       : "bg-white/10 text-[#e8edd8] hover:bg-white/20"
                   }`}
                 >
-                  {exerciseOpen ? "Egzersiz ✓" : "Egzersiz"}
+                  {exerciseOpen ? "Egzersiz (açık)" : "Egzersiz"}
                 </button>
               )}
               {exerciseMode && (

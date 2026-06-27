@@ -43,8 +43,8 @@ export function UserTurnPanel({
                 : "bg-goethe-blue text-white hover:brightness-110 active:scale-[0.98]"
           }`}
         >
-          <span className="text-lg" aria-hidden>
-            {listening ? "⏹" : "🎤"}
+          <span className="text-xs font-bold uppercase tracking-wide" aria-hidden>
+            {listening ? "■" : "Mic"}
           </span>
           {listening ? "Dinliyorum… (bitir)" : supported ? "Konuş" : "Mikrofon desteklenmiyor"}
         </button>

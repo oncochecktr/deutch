@@ -213,7 +213,7 @@ export default function DialoguesClient() {
                   <div className="flex items-start justify-between gap-2">
                     <p className="text-sm font-semibold text-goethe-blue">{s.title_de}</p>
                     {read && (
-                      <span className="shrink-0 text-[10px] font-bold text-emerald-700">✓</span>
+                      <span className="shrink-0 text-[10px] font-bold text-emerald-700">Ok</span>
                     )}
                   </div>
                   <p className="text-xs text-sage-500">{s.title_tr}</p>

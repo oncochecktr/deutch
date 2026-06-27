@@ -194,7 +194,7 @@ function BranchNode({
             )}
             {node.status === "done" && <IconCheck size={14} className="text-sage-600" />}
             {node.status === "locked" && (
-              <span className="text-[10px] text-sage-400">🔒 kilitli</span>
+              <span className="text-[10px] text-sage-400">Kilitli</span>
             )}
             {node.status === "future" && (
               <span className="text-[10px] text-sage-400">yakında</span>

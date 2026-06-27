@@ -56,7 +56,7 @@ export function SchreibenRealSimulator() {
               {SCHREIBEN_OVERVIEW.tasks.map((t) => `${t.tr} (${t.points} puan)`).join(" + ")}.
             </p>
             <p className="mt-3 rounded-lg bg-goethe-red/10 px-3 py-2 text-sm font-medium text-goethe-red">
-              ⚠ {SCHREIBEN_OVERVIEW.warning}
+              Dikkat: {SCHREIBEN_OVERVIEW.warning}
             </p>
           </div>
 

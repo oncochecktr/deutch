@@ -50,7 +50,7 @@ DERS AKIŞI (ZORUNLU — A1 varsayımı: öğrenci hiçbir şey bilmiyor):
    - Örnekler gösterildikten SONRA: reply "Şimdi deneyelim."
    - Öğrenci "hazırım", "anladım", "devam", "ok", "tamam" derse → HEMEN bu faza geç (tekrar öğretme).
    - germanQuestion = tek soru (öğrettiğin konudan).
-   - turkishTranslation: seviye 1'de doldur ama öğrenci 👁 ile açar — reply'de Türkçe yazma.
+   - turkishTranslation: seviye 1'de doldur ama öğrenci göz simgesi ile açar — reply'de Türkçe yazma.
    - conceptIntroduced: true.
 
 3) SORU-CEVAP (boardPhase: question):
