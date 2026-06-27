@@ -29,6 +29,7 @@ interface WordCardProps {
   knowLabel?: string;
   showActionHints?: boolean;
   showHearAndWrite?: boolean;
+  onDictationCorrect?: () => void;
 }
 
 function ExampleBlock({
@@ -156,6 +157,7 @@ export function WordCard({
   knowLabel = "Biliyorum",
   showActionHints = false,
   showHearAndWrite = false,
+  onDictationCorrect,
 }: WordCardProps) {
   const display = formatWord(word.word, word.article);
   const meanings = splitMeanings(word.translation_tr);
@@ -275,7 +277,12 @@ export function WordCard({
         </div>
 
         {showHearAndWrite && (
-          <HearAndWrite word={word} wordVisible={!flipped} disabled={readOnly} />
+          <HearAndWrite
+            word={word}
+            wordVisible={!flipped}
+            disabled={readOnly}
+            onCorrect={onDictationCorrect}
+          />
         )}
 
         {primaryExample && (

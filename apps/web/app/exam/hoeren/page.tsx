@@ -4,7 +4,13 @@ import { useMemo, useState } from "react";
 import { getHoerenQuestions } from "@german-coach/exams";
 import { McqQuestion } from "@/components/exam/McqQuestion";
 import { ExamModuleShell, ExamScoreBar } from "@/components/exam/ExamModuleShell";
-import { ExamEvaluateButton, ExamInstructionBanner } from "@/components/exam/examUi";
+import {
+  ExamEvaluateButton,
+  ExamInstructionBanner,
+  ExamProgressBar,
+} from "@/components/exam/examUi";
+import { SmartTip } from "@/components/ui/SmartTip";
+import { resolveHoerenAudioSrc } from "@/lib/hoerenAudio";
 import { useProgress } from "@/lib/ProgressContext";
 import Link from "next/link";
 
@@ -14,6 +20,7 @@ export default function HoerenExamPage() {
   const { progress, updateProgress } = useProgress();
   const all = getHoerenQuestions();
   const [offset, setOffset] = useState(0);
+  const [sessionIdx, setSessionIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
 
@@ -21,6 +28,8 @@ export default function HoerenExamPage() {
     () => all.slice(offset, offset + SESSION_SIZE),
     [all, offset]
   );
+
+  const currentQ = session[sessionIdx];
 
   const score = useMemo(() => {
     let c = 0;
@@ -33,6 +42,12 @@ export default function HoerenExamPage() {
   const allAnswered = session.every((q) => answers[q.id] !== undefined);
   const answeredCount = session.filter((q) => answers[q.id] !== undefined).length;
 
+  const advanceInSession = () => {
+    if (sessionIdx + 1 < session.length) {
+      setSessionIdx((i) => i + 1);
+    }
+  };
+
   if (finished) {
     return (
       <ExamModuleShell title="Dinleme — Hören" subtitle="Bu oturum tamamlandı">
@@ -44,6 +59,7 @@ export default function HoerenExamPage() {
               className="btn-primary"
               onClick={() => {
                 setOffset((o) => o + SESSION_SIZE);
+                setSessionIdx(0);
                 setAnswers({});
                 setFinished(false);
               }}
@@ -65,27 +81,71 @@ export default function HoerenExamPage() {
   return (
     <ExamModuleShell
       title="1. Dinleme — Hören"
-      subtitle={`Soru ${offset + 1}–${Math.min(offset + SESSION_SIZE, all.length)} / ${all.length} · hepsini işaretle, sonra değerlendir`}
+      subtitle={`Soru ${offset + sessionIdx + 1} / ${all.length} · oturum ${sessionIdx + 1}/${session.length}`}
     >
       <ExamInstructionBanner>
-        Her soruda <strong>önce dinle</strong> (en fazla 2 kez), sonra doğru seçeneği işaretle. Tüm sorular
-        bitince alttaki <strong>Değerlendir</strong> düğmesine bas.
+        <strong>Dinle</strong> (Almanca kelime/cümle) → Türkçe anlamını seç. Klavyede{" "}
+        <strong>Space</strong> = dinle, <strong>a–d</strong> = seç, <strong>Enter</strong> = sonraki soru.
+        Oturum bitince <strong>Değerlendir</strong>.
       </ExamInstructionBanner>
 
-      {session.map((q, i) => (
+      <SmartTip id="exam-hoeren-keyboard" className="mb-1">
+        <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+          Space
+        </kbd>{" "}
+        dinle ·{" "}
+        <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+          a
+        </kbd>
+        –
+        <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+          d
+        </kbd>{" "}
+        seç ·{" "}
+        <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+          Enter
+        </kbd>{" "}
+        sonraki soru
+      </SmartTip>
+
+      <ExamProgressBar current={answeredCount} total={session.length} />
+
+      {currentQ ? (
         <McqQuestion
-          key={q.id}
-          index={offset + i}
+          key={currentQ.id}
+          index={offset + sessionIdx}
           total={all.length}
-          questionDe={q.question_de}
-          questionTr={q.question_tr}
-          audioText={q.audio_text}
-          options={q.options}
-          selected={answers[q.id] ?? null}
+          questionDe={currentQ.question_de}
+          questionTr={currentQ.question_tr}
+          audioText={currentQ.audio_text}
+          audioSrc={resolveHoerenAudioSrc(currentQ.audio_text)}
+          options={currentQ.options}
+          selected={answers[currentQ.id] ?? null}
           correctIndex={null}
-          onSelect={(idx) => setAnswers((a) => ({ ...a, [q.id]: idx }))}
+          keyboardActive
+          onSelect={(idx) => setAnswers((a) => ({ ...a, [currentQ.id]: idx }))}
+          onAdvance={advanceInSession}
         />
-      ))}
+      ) : null}
+
+      <div className="flex flex-col gap-3 sm:flex-row">
+        <button
+          type="button"
+          className="btn-secondary flex-1"
+          disabled={sessionIdx === 0}
+          onClick={() => setSessionIdx((i) => Math.max(0, i - 1))}
+        >
+          ← Önceki soru
+        </button>
+        <button
+          type="button"
+          className="btn-secondary flex-1"
+          disabled={sessionIdx >= session.length - 1}
+          onClick={advanceInSession}
+        >
+          Sonraki soru →
+        </button>
+      </div>
 
       <ExamEvaluateButton
         disabled={!allAnswered}

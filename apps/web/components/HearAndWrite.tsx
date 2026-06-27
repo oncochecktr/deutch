@@ -1,22 +1,34 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
 import { AudioButton } from "./AudioButton";
 import { GoldCueLine } from "@/components/ui/GoldCueLine";
+import { SmartTip } from "@/components/ui/SmartTip";
 import { formatWord } from "@/lib/audio";
 import { checkDictation } from "@/lib/germanTextCompare";
 import { splitExamples } from "@/lib/vocabMeta";
 
 type Mode = "word" | "sentence";
 
+const CORRECT_ADVANCE_MS = 450;
+
 interface HearAndWriteProps {
   word: VocabularyWord;
   wordVisible?: boolean;
   disabled?: boolean;
+  /** Doğru yazıldığında çağrılır (ör. sonraki kelime kartı) */
+  onCorrect?: () => void;
+  showKeyboardHint?: boolean;
 }
 
-export function HearAndWrite({ word, wordVisible = false, disabled = false }: HearAndWriteProps) {
+export function HearAndWrite({
+  word,
+  wordVisible = false,
+  disabled = false,
+  onCorrect,
+  showKeyboardHint = true,
+}: HearAndWriteProps) {
   const display = formatWord(word.word, word.article);
   const examples = splitExamples(word.example_de, word.example_tr);
   const sentence = examples[0]?.de ?? word.example_de;
@@ -25,6 +37,7 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
   const [input, setInput] = useState("");
   const [checked, setChecked] = useState(false);
   const [result, setResult] = useState<ReturnType<typeof checkDictation> | null>(null);
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const target = mode === "word" ? display : sentence;
   const audioSrc = mode === "word" ? word.audio_word : word.audio_example;
@@ -35,14 +48,53 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
     setResult(null);
   }, [word.id, mode]);
 
+  useEffect(
+    () => () => {
+      if (advanceTimer.current) clearTimeout(advanceTimer.current);
+    },
+    []
+  );
+
+  const scheduleAdvance = useCallback(() => {
+    if (!onCorrect) return;
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
+    advanceTimer.current = setTimeout(() => {
+      onCorrect();
+      advanceTimer.current = null;
+    }, CORRECT_ADVANCE_MS);
+  }, [onCorrect]);
+
+  const advanceNow = useCallback(() => {
+    if (!onCorrect) return;
+    if (advanceTimer.current) {
+      clearTimeout(advanceTimer.current);
+      advanceTimer.current = null;
+    }
+    onCorrect();
+  }, [onCorrect]);
+
   const handleCheck = useCallback(() => {
+    if (!input.trim()) return;
     const r = checkDictation(input, target, {
       allowArticleOmit: mode === "word",
       minScore: mode === "word" ? 92 : 88,
     });
     setResult(r);
     setChecked(true);
-  }, [input, target, mode]);
+    if (r.ok) scheduleAdvance();
+  }, [input, target, mode, scheduleAdvance]);
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key !== "Enter" || e.shiftKey) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if (!input.trim() || disabled) return;
+    if (checked && result?.ok && onCorrect) {
+      advanceNow();
+      return;
+    }
+    handleCheck();
+  };
 
   return (
     <section
@@ -104,6 +156,7 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
           setChecked(false);
           setResult(null);
         }}
+        onKeyDown={handleKeyDown}
         rows={mode === "sentence" ? 3 : 1}
         placeholder={
           mode === "word"
@@ -116,6 +169,43 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
         spellCheck={false}
         lang="de"
       />
+
+      {showKeyboardHint && (
+        <SmartTip
+          id={onCorrect ? "cards-hear-write-enter" : "hear-write-enter"}
+          className="mt-2"
+        >
+          {onCorrect ? (
+            <>
+              <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+                Enter
+              </kbd>{" "}
+              = kontrol et · doğruysan sonraki kelime · cümle modunda{" "}
+              <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+                Shift+Enter
+              </kbd>{" "}
+              = yeni satır
+            </>
+          ) : (
+            <>
+              <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+                Enter
+              </kbd>{" "}
+              = kontrol et
+              {mode === "sentence" && (
+                <>
+                  {" "}
+                  ·{" "}
+                  <kbd className="rounded border border-sage-200 bg-white px-1 py-0.5 font-mono text-[10px]">
+                    Shift+Enter
+                  </kbd>{" "}
+                  = yeni satır
+                </>
+              )}
+            </>
+          )}
+        </SmartTip>
+      )}
 
       <div className="mt-2 flex flex-wrap gap-2">
         <button

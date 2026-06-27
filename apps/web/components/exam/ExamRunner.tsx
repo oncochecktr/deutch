@@ -22,6 +22,7 @@ import {
 } from "@/components/exam/examUi";
 import { MatchingQuestion } from "@/components/exam/MatchingQuestion";
 import { McqQuestion } from "@/components/exam/McqQuestion";
+import { resolveHoerenAudioSrc } from "@/lib/hoerenAudio";
 import { SchreibenExamFlow } from "@/components/exam/SchreibenExamFlow";
 import { SprechenScoredCard } from "@/components/exam/SprechenScoredCard";
 import { TrueFalseQuestion } from "@/components/exam/TrueFalseQuestion";
@@ -367,6 +368,7 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
             questionDe={q.question_de}
             questionTr={q.question_tr}
             audioText={q.audio_text}
+            audioSrc={resolveHoerenAudioSrc(q.audio_text)}
             options={q.options}
             selected={mcqSel ?? null}
             correctIndex={null}
@@ -374,6 +376,11 @@ export function ExamRunner({ examId, mode }: ExamRunnerProps) {
             maxPlays={mode === "real" ? 2 : undefined}
             playsUsed={session.audioPlays[q.id] ?? 0}
             onPlay={() => (mode === "real" ? recordAudioPlay(q.id, 2) : true)}
+            keyboardActive
+            onAdvance={() => {
+              if (hoerenIdx + 1 < hoerenItems.length) setHoerenIdx((i) => i + 1);
+              else mode === "real" ? patchSession({ step: "lesen" }) : setPracticeStep("lesen");
+            }}
           />
           {mcqSel !== undefined ? (
             <ExamAnswerBar>

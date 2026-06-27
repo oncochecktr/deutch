@@ -302,9 +302,9 @@
     "question_de": "Was hörst du?",
     "question_tr": "Ne duyuyorsun?",
     "options": [
-      "iyi günler",
-      "iyi akşamlar",
-      "iyi geceler",
+      "her şey yolunda",
+      "güzel",
+      "iyi",
       "nasılsın?"
     ],
     "correct_index": 3,
@@ -323,9 +323,9 @@
     "question_de": "Was hörst du?",
     "question_tr": "Ne duyuyorsun?",
     "options": [
-      "iyi günler",
-      "iyi akşamlar",
-      "iyi geceler",
+      "nasılsın?",
+      "güzel",
+      "iyi",
       "her şey yolunda"
     ],
     "correct_index": 3,
@@ -344,9 +344,9 @@
     "question_de": "Was hörst du?",
     "question_tr": "Ne duyuyorsun?",
     "options": [
-      "iyi günler",
-      "iyi akşamlar",
-      "iyi geceler",
+      "nasılsın?",
+      "her şey yolunda",
+      "iyi",
       "güzel"
     ],
     "correct_index": 3,

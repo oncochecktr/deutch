@@ -26,7 +26,19 @@ function shuffle(arr, seed = 0) {
 }
 
 function pickDistractors(correct, pool, n = 3) {
-  const others = pool.filter((w) => w.id !== correct.id);
+  const isTimeGreeting = (w) =>
+    /^(iyi günler|iyi akşamlar|iyi geceler|günaydın|hoşça kal|güle güle)/i.test(
+      w.translation_tr ?? ""
+    );
+  const correctIsTime = isTimeGreeting(correct);
+  let others = pool.filter((w) => w.id !== correct.id);
+  if (correctIsTime) {
+    const timeOnly = others.filter(isTimeGreeting);
+    if (timeOnly.length >= n) others = timeOnly;
+  } else {
+    const nonTime = others.filter((w) => !isTimeGreeting(w));
+    if (nonTime.length >= n) others = nonTime;
+  }
   return shuffle(others).slice(0, n);
 }
 

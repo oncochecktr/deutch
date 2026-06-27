@@ -1,7 +1,9 @@
 "use client";
 
+import { useCallback, useEffect, useRef } from "react";
 import { AudioButton } from "@/components/AudioButton";
 import { ExamQuestionMeta } from "@/components/exam/examUi";
+import { playGermanAudio } from "@/lib/audio";
 
 interface McqQuestionProps {
   index: number;
@@ -9,6 +11,7 @@ interface McqQuestionProps {
   questionDe: string;
   questionTr?: string;
   audioText?: string;
+  audioSrc?: string | null;
   options: string[];
   selected: number | null;
   correctIndex: number | null;
@@ -18,6 +21,9 @@ interface McqQuestionProps {
   playsUsed?: number;
   onPlay?: () => boolean;
   compact?: boolean;
+  /** Klavye: a–d / 1–4 seç, Space dinle, Enter sonraki */
+  keyboardActive?: boolean;
+  onAdvance?: () => void;
 }
 
 export function McqQuestion({
@@ -26,6 +32,7 @@ export function McqQuestion({
   questionDe,
   questionTr,
   audioText,
+  audioSrc,
   options,
   selected,
   correctIndex,
@@ -35,9 +42,56 @@ export function McqQuestion({
   playsUsed,
   onPlay,
   compact,
+  keyboardActive = false,
+  onAdvance,
 }: McqQuestionProps) {
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  const playAudio = useCallback(async () => {
+    if (!audioText) return;
+    if (onPlay && !onPlay()) return;
+    await playGermanAudio(audioText, audioSrc);
+  }, [audioText, audioSrc, onPlay]);
+
+  useEffect(() => {
+    if (!keyboardActive) return;
+    rootRef.current?.focus({ preventScroll: true });
+  }, [keyboardActive, index]);
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (showResult) return;
+
+    const key = e.key.toLowerCase();
+    const num = Number.parseInt(key, 10);
+    let idx: number | null = null;
+    if (key >= "a" && key <= "d") idx = key.charCodeAt(0) - 97;
+    else if (num >= 1 && num <= 4) idx = num - 1;
+
+    if (idx !== null && idx < options.length) {
+      e.preventDefault();
+      onSelect(idx);
+      return;
+    }
+    if (e.key === " " && audioText) {
+      e.preventDefault();
+      void playAudio();
+      return;
+    }
+    if (e.key === "Enter" && selected !== null && onAdvance) {
+      e.preventDefault();
+      onAdvance();
+    }
+  };
+
   return (
-    <div className={`card-soft ${compact ? "p-3" : "p-4"}`}>
+    <div
+      ref={rootRef}
+      tabIndex={keyboardActive ? 0 : undefined}
+      onKeyDown={keyboardActive ? handleKeyDown : undefined}
+      className={`card-soft outline-none ${compact ? "p-3" : "p-4"} ${
+        keyboardActive ? "ring-2 ring-goethe-gold/40 ring-offset-2" : ""
+      }`}
+    >
       <ExamQuestionMeta index={index} total={total} />
       <p className="text-base font-semibold leading-snug text-goethe-blue sm:text-lg">{questionDe}</p>
       {questionTr ? (
@@ -49,6 +103,7 @@ export function McqQuestion({
         <div className="mb-4">
           <AudioButton
             text={audioText}
+            audioSrc={audioSrc}
             label="Dinle — Anhören"
             maxPlays={maxPlays}
             playsUsed={playsUsed}

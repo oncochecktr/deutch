@@ -161,6 +161,7 @@ export default function CardsPage() {
           onFlip={() => setFlipped((f) => !f)}
           readOnly={!isLive && flipped}
           showHearAndWrite={isLive}
+          onDictationCorrect={isLive ? continueLive : undefined}
         />
 
         <div className="flex flex-col gap-3 sm:flex-row">
