@@ -170,6 +170,15 @@ export const APP_FEATURES: AppFeature[] = [
     icon: "exam",
   },
   {
+    id: "artikel-oyun",
+    href: "/grundlagen/artikel/oyun",
+    title: "Artikel Oyunu",
+    description: "Sesle dinle · der/die/das seç · 15 soru ezber",
+    category: "gramer",
+    icon: "exam",
+    badge: "Oyun",
+  },
+  {
     id: "conjugation",
     href: "/grundlagen/conjugation",
     title: "Fiil çekimi",

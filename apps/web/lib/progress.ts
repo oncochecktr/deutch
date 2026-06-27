@@ -80,6 +80,7 @@ export interface DailyStats {
   exercisesCompleted: number;
   dialoguesRead: number;
   konusDinleTurns: number;
+  artikelGameSessions: number;
 }
 
 export interface UserProgress {
@@ -89,6 +90,7 @@ export interface UserProgress {
   lastSavedAt: string | null;
   cardIndex: number;
   quizIndex: number;
+  artikelGameIndex: number;
   reviewQueue: string[];
   reviewIndex: number;
   /** Oturum hafızası — tarayıcıda kalır */
@@ -126,6 +128,7 @@ export const DEFAULT_PROGRESS: UserProgress = {
   lastSavedAt: null,
   cardIndex: 0,
   quizIndex: 0,
+  artikelGameIndex: 0,
   reviewQueue: [],
   reviewIndex: 0,
   reviewSessionWords: [],
@@ -153,6 +156,7 @@ export const DEFAULT_PROGRESS: UserProgress = {
     exercisesCompleted: 0,
     dialoguesRead: 0,
     konusDinleTurns: 0,
+    artikelGameSessions: 0,
   },
   totalStudyMinutes: 0,
   sessionStartTime: null,
@@ -198,6 +202,8 @@ export function normalizeProgress(progress: Partial<UserProgress>): UserProgress
     cardsTrail: Array.isArray(progress.cardsTrail) ? progress.cardsTrail : [],
     cardsTrailCursor:
       typeof progress.cardsTrailCursor === "number" ? progress.cardsTrailCursor : 0,
+    artikelGameIndex:
+      typeof progress.artikelGameIndex === "number" ? progress.artikelGameIndex : 0,
     scrollPositions:
       progress.scrollPositions && typeof progress.scrollPositions === "object"
         ? (progress.scrollPositions as Record<string, number>)
@@ -294,6 +300,7 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
       exercisesCompleted: ds.exercisesCompleted ?? 0,
       dialoguesRead: ds.dialoguesRead ?? 0,
       konusDinleTurns: ds.konusDinleTurns ?? 0,
+      artikelGameSessions: ds.artikelGameSessions ?? 0,
     };
     if (base.dailyStats.date !== today) {
       base.dailyStats = {
@@ -313,6 +320,7 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
         exercisesCompleted: 0,
         dialoguesRead: 0,
         konusDinleTurns: 0,
+        artikelGameSessions: 0,
       };
     }
   }
@@ -379,6 +387,7 @@ export function resetStudyProfile(progress: UserProgress): Partial<UserProgress>
     wordProgress: {},
     cardIndex: 0,
     quizIndex: 0,
+    artikelGameIndex: 0,
     cardsTrail: [],
     cardsTrailCursor: 0,
     reviewQueue: [],
@@ -407,6 +416,7 @@ export function resetStudyProfile(progress: UserProgress): Partial<UserProgress>
       exercisesCompleted: 0,
       dialoguesRead: 0,
       konusDinleTurns: 0,
+      artikelGameSessions: 0,
     },
   };
 }

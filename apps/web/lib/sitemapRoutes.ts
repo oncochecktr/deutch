@@ -36,6 +36,7 @@ const EXTRA_ROUTES: SitemapRoute[] = [
   { path: "/gizlilik", priority: 0.3, changeFrequency: "yearly" },
   { path: "/cerez", priority: 0.3, changeFrequency: "yearly" },
   { path: "/kullanim-kosullari", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/grundlagen/artikel/oyun", priority: 0.75, changeFrequency: "weekly" },
 ];
 
 const FEATURE_OVERRIDES: Record<string, Partial<SitemapRoute>> = {
@@ -47,6 +48,7 @@ const FEATURE_OVERRIDES: Record<string, Partial<SitemapRoute>> = {
   "/grundlagen/sentence-engine/das-ist": { priority: 0.8, changeFrequency: "weekly" },
   "/grundlagen/sentence-engine/das-ist-mein": { priority: 0.8, changeFrequency: "weekly" },
   "/grundlagen/wo-ist": { priority: 0.8, changeFrequency: "weekly" },
+  "/grundlagen/artikel/oyun": { priority: 0.75, changeFrequency: "weekly" },
   "/cards": { priority: 0.8, changeFrequency: "weekly" },
   "/diktat": { priority: 0.8, changeFrequency: "weekly" },
   "/review": { priority: 0.75, changeFrequency: "weekly" },

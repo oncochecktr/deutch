@@ -48,6 +48,13 @@ export const SEO_PAGES = {
       "Almanca artikel alıştırması: der, die, das, ein/eine ve çoğul. A1 için interaktif artikel drill.",
     path: "/grundlagen/artikel",
   }),
+  artikelOyun: pageMetadata({
+    title: "Artikel Oyunu — der, die, das Ezber",
+    description:
+      "Sesle dinle, der die das seç: A1 isim artikeli ezber oyunu. Bank → die, Kaffee → der — 15 soruluk hızlı oturum.",
+    path: "/grundlagen/artikel/oyun",
+    keywords: [...PAGE_KEYWORDS.grundlagen],
+  }),
   wordOrder: pageMetadata({
     title: "Word Order Trainer — Kelime Sırası",
     description:
