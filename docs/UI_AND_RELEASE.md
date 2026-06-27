@@ -11,9 +11,9 @@ Amaç: arayüzde tutarlı, profesyonel Türkçe; renkli/AI emojisi kullanılmama
 
 - **Kullanma:** Renkli emoji (🔊, 📱, ✍️, 💡, 🎤, ⭐, 🚀 vb.) arayüz metninde, banner’larda, butonlarda, ipuçlarında.
 - **Kullanma:** “AI slop” hissi veren süsleme (dekoratif emoji listeleri).
-- **İzinli:** Metin okları (`→`, `←`) navigasyon/CTA için — projede zaten kullanılıyor.
+- **Kullanma:** Cinsiyet vurgusu: “kadın ses”, “erkek ses”, “bay/bayan seslendirme” vb. Arayüzde ses tanımı yapma — sadece **Dinle · Yaz · Öğren** gibi eylem odaklı metin.
 - **İzinli:** Basit ASCII işaretler gerekiyorsa: `—`, `·`, `*`, `+`, `!` (tek karakter, renksiz).
-- **Onay işareti:** `✓` yerine mümkünse metin: “Tamam”, “Doğru”, “Okundu” veya mevcut `Icon`/CSS ile gösterim.
+- **İzinli:** Metin okları (`→`, `←`) navigasyon/CTA için — projede zaten kullanılıyor.
 
 ### Ses / ikon
 
@@ -30,9 +30,9 @@ Kötü:
 İyi:
 
 ```tsx
-<li>Önce Almanca, sonra Türkçe (kadın ses)</li>
-// veya
-<li>— Ekran kilitli dinleme · kulaklık düğmeleri</li>
+<li><strong>Dinle</strong> — önce Almanca, sonra Türkçe</li>
+<li><strong>Yaz</strong> — duyduğunu kontrol et</li>
+<li><strong>Öğren</strong> — ekran kilitli dinleme</li>
 ```
 
 ### Ton
@@ -80,16 +80,14 @@ Test:
 
 1. Ham transkripti temizle (marka/reklam satırlarını çıkar, isimleri düzelt).
 2. `data/dialogues/*.json` — `text_de` + `text_tr`, isteğe bağlı `audio_de` / `audio_tr`.
-3. Almanca ses: `de-DE-KatjaNeural` · Türkçe: **yalnızca kadın** (`tr-TR-EmelNeural`, yedek `FilizNeural`).
-4. `node scripts/generate-story-audio.mjs --story <id> --resume`
-5. Ana sayfada banner: **emoji listesi yok**; `HomeStoryBanner` stiline uy.
+3. `node scripts/generate-story-audio.mjs --story <id> --resume` (ses profili teknik ayardır — arayüzde belirtme).
+4. Ana sayfada banner: emoji yok, cinsiyet etiketi yok; `HomeStoryBanner` (Dinle · Yaz · Öğren).
 
 ---
 
 ## Kontrol listesi (PR öncesi)
 
-- [ ] Yeni UI metninde emoji yok
-- [ ] Türkçe TTS erkek ses fallback yok (`ttsConfig.ts`)
+- [ ] Yeni UI metninde emoji ve cinsiyet/ses tipi etiketi yok
 - [ ] `npm run build` (apps/web) geçiyor
 - [ ] Mobil dokunma hedefleri yeterli (buton yüksekliği)
 

@@ -1,5 +1,5 @@
 /**
- * Hikaye satırları için DE (Katja) + TR (Emel — kadın) MP3 üretimi
+ * Hikaye satırları için DE + TR MP3 üretimi
  *
  *   node scripts/generate-story-audio.mjs --story d_a2_eg_markt
  *   node scripts/generate-story-audio.mjs --story d_a2_eg_markt --resume
@@ -83,7 +83,7 @@ async function main() {
   let skipped = 0;
 
   console.log(`Hikaye: ${story.title_de} (${story.lines.length} satır)`);
-  console.log(`Sesler: DE=${VOICES.de.voice}, TR=${VOICES.tr.voice} (kadın)`);
+  console.log(`Sesler: DE=${VOICES.de.voice}, TR=${VOICES.tr.voice}`);
 
   for (const line of story.lines) {
     for (const lang of langs) {

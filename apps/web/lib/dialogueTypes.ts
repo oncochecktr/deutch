@@ -10,7 +10,7 @@ export interface DialogueLine {
   text_tr: string;
   /** Önceden üretilmiş Almanca MP3 (hikaye dinle) */
   audio_de?: string;
-  /** Önceden üretilmiş Türkçe MP3 — kadın ses */
+  /** Önceden üretilmiş Türkçe MP3 */
   audio_tr?: string;
 }
 

@@ -16,11 +16,11 @@ Okuma: `docs/UI_AND_RELEASE.md` (tam şablon ve changelog).
 ## Yeni özellik banner’ları
 
 - Madde işareti: düz metin veya `—` / `·`, emoji değil.
-- Örnek: `Önce Almanca, sonra Türkçe (kadın ses)` — `🔊` yok.
+- Örnek: `Dinle — önce Almanca, sonra Türkçe` — cinsiyet/ses tipi yazma.
 
 ## Türkçe ses
 
-- Proje geneli: `TURKISH_TTS_VOICE = tr-TR-EmelNeural` (kadın). Erkek ses fallback ekleme.
+- Teknik ayar: `TURKISH_TTS_VOICE = tr-TR-EmelNeural`. Arayüzde “kadın/erkek ses” yazma.
 
 ## Sürüm özeti
 
