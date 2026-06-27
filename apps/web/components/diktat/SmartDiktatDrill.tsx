@@ -18,6 +18,7 @@ import { IconVolume } from "@/components/icons";
 
 interface SmartDiktatDrillProps {
   showTurkish: boolean;
+  active?: boolean;
 }
 
 function placeholderForPattern(pattern: "habe" | "sehe"): string {
@@ -26,7 +27,7 @@ function placeholderForPattern(pattern: "habe" | "sehe"): string {
     : "Dinlediğin cümleyi yaz… (ör. Ich sehe … Das … ist …)";
 }
 
-export function SmartDiktatDrill({ showTurkish }: SmartDiktatDrillProps) {
+export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDrillProps) {
   const [queue, setQueue] = useState<SmartQueueItem[]>([]);
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
@@ -47,6 +48,13 @@ export function SmartDiktatDrill({ showTurkish }: SmartDiktatDrillProps) {
     },
     []
   );
+
+  useEffect(() => {
+    if (!active) {
+      stopAudio();
+      setPlaying(false);
+    }
+  }, [active]);
 
   const item = queue[index];
   const drill = item?.drill;
@@ -75,8 +83,7 @@ export function SmartDiktatDrill({ showTurkish }: SmartDiktatDrillProps) {
     setInput("");
     setChecked(false);
     autoPlayedRef.current = false;
-    if (drill) void playAudio(1);
-  }, [drill?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [drill?.id]);
 
   const handleCheck = () => {
     if (!drill || !item || checked) return;
@@ -196,7 +203,7 @@ export function SmartDiktatDrill({ showTurkish }: SmartDiktatDrillProps) {
       )}
 
       <p className="text-xs text-sage-400">
-        Duyduğunu yaz — yanlışsa bir kez daha dinlersin, aynı kart hemen tekrarlanmaz.
+        Önce <strong className="font-semibold text-sage-500">Dinle</strong> — sonra duyduğunu yaz. Yanlışsa bir kez daha dinlersin.
       </p>
 
       <textarea

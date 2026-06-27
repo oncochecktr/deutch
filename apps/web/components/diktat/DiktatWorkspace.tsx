@@ -12,7 +12,7 @@ import {
 } from "@/lib/learnerProfileStorage";
 import { SmartDiktatDrill } from "@/components/diktat/SmartDiktatDrill";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
-import { formatWord, playGermanAudio } from "@/lib/audio";
+import { formatWord, playGermanAudio, stopAudio } from "@/lib/audio";
 
 const STARTER_LINES = `Hast du ein Auto? Ja, ich habe ein Auto.
 Ich brauche Hilfe. Ich brauche Zeit.
@@ -45,6 +45,10 @@ export function DiktatWorkspace() {
     setCategory(store.sidebarCategory);
     setShowTurkish(store.showTurkish);
   }, []);
+
+  useEffect(() => {
+    if (mode !== "smart") stopAudio();
+  }, [mode]);
 
   const persistText = useCallback((value: string) => {
     if (saveTimer.current) clearTimeout(saveTimer.current);
@@ -88,7 +92,6 @@ export function DiktatWorkspace() {
 
   const handleSelectWord = useCallback(async (w: VocabularyWord) => {
     setSelectedWord(w);
-    setMode("listen");
     const display = formatWord(w.word, w.article);
     try {
       await playGermanAudio(display, w.audio_word);
@@ -177,15 +180,16 @@ export function DiktatWorkspace() {
               mode === "listen" ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
             }`}
             onClick={() => setMode("listen")}
-            disabled={!selectedWord}
           >
             Kelime
           </button>
         </div>
 
-        {mode === "smart" ? (
-          <SmartDiktatDrill showTurkish={showTurkish} />
-        ) : mode === "free" ? (
+        <div className={mode === "smart" ? "" : "hidden"}>
+          <SmartDiktatDrill showTurkish={showTurkish} active={mode === "smart"} />
+        </div>
+
+        {mode === "free" ? (
           <div className="flex min-h-0 flex-1 flex-col rounded-xl border border-sage-100 bg-white shadow-sm">
             <textarea
               ref={textareaRef}
@@ -221,16 +225,30 @@ export function DiktatWorkspace() {
               </span>
             </div>
           </div>
-        ) : selectedWord ? (
+        ) : mode === "listen" && selectedWord ? (
           <div className="rounded-xl border border-sage-100 bg-white overflow-hidden">
             <HearAndWrite word={selectedWord} wordVisible />
             <p className="border-t border-sage-50 px-4 py-2 text-xs text-sage-400">
               Yan listeden başka kelime seçebilirsin.
             </p>
           </div>
-        ) : (
-          <p className="text-sm text-sage-500">Dinle-yaz için yan listeden bir kelime seç.</p>
-        )}
+        ) : mode === "listen" ? (
+          <div className="rounded-xl border border-sage-100 bg-white p-6 text-center">
+            <p className="text-sm font-medium text-goethe-blue">Kelime dinle-yaz</p>
+            <p className="mt-2 text-sm text-sage-600">
+              Sağdaki listeden bir kelimeye dokun — sesi duyarsın, burada yazarak kontrol edersin.
+            </p>
+            {!sidebarOpen && (
+              <button
+                type="button"
+                className="btn-secondary mt-4 text-xs"
+                onClick={() => setSidebarOpen(true)}
+              >
+                Kelime listesini aç
+              </button>
+            )}
+          </div>
+        ) : null}
       </div>
 
       <div
