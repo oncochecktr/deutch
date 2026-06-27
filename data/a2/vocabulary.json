@@ -1,7 +1,7 @@
 {
   "level": "A2",
   "version": "1.1.0",
-  "total": 430,
+  "total": 434,
   "categories": [
     "Seyahat",
     "Alışveriş & Hizmetler",
@@ -11,7 +11,8 @@
     "Hava & Doğa",
     "Duygular",
     "Geçmiş zaman",
-    "Extra · Sam aus Amerika"
+    "Extra · Sam aus Amerika",
+    "Gramer"
   ],
   "words": [
     {
@@ -8226,6 +8227,82 @@
         "family",
         "a2",
         "extra"
+      ]
+    },
+    {
+      "id": "a2_0431",
+      "level": "A2",
+      "category": "Gramer",
+      "word": "dieser",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bu (erkek · Nom.)",
+      "translation_ru": "этот",
+      "example_de": "Dieser Mann ist nett.",
+      "example_tr": "Bu adam nazik.",
+      "audio_word": "/audio/a2/dieser.mp3",
+      "audio_example": "/audio/a2/dieser-mann-ist-nett.mp3",
+      "tags": [
+        "grammar",
+        "demonstrative",
+        "a2"
+      ]
+    },
+    {
+      "id": "a2_0432",
+      "level": "A2",
+      "category": "Gramer",
+      "word": "diese",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bu (dişi · Nom./Akk.)",
+      "translation_ru": "эта",
+      "example_de": "Diese Bank ist groß.",
+      "example_tr": "Bu banka büyük.",
+      "audio_word": "/audio/a2/diese.mp3",
+      "audio_example": "/audio/a2/diese-bank-ist-gross.mp3",
+      "tags": [
+        "grammar",
+        "demonstrative",
+        "a2"
+      ]
+    },
+    {
+      "id": "a2_0433",
+      "level": "A2",
+      "category": "Gramer",
+      "word": "dieses",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bu (nötr · Nom./Akk.)",
+      "translation_ru": "это",
+      "example_de": "Dieses Café ist neu.",
+      "example_tr": "Bu kafe yeni.",
+      "audio_word": "/audio/a2/dieses.mp3",
+      "audio_example": "/audio/a2/dieses-cafe-ist-neu.mp3",
+      "tags": [
+        "grammar",
+        "demonstrative",
+        "a2"
+      ]
+    },
+    {
+      "id": "a2_0434",
+      "level": "A2",
+      "category": "Gramer",
+      "word": "diesen",
+      "article": null,
+      "plural": null,
+      "translation_tr": "bu (erkek · Akk.)",
+      "translation_ru": "этого",
+      "example_de": "Ich nehme diesen Kaffee.",
+      "example_tr": "Bu kahveyi alıyorum.",
+      "audio_word": "/audio/a2/diesen.mp3",
+      "audio_example": "/audio/a2/ich-nehme-diesen-kaffee.mp3",
+      "tags": [
+        "grammar",
+        "demonstrative",
+        "a2"
       ]
     }
   ]

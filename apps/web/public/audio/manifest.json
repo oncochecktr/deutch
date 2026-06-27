@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-26T18:19:47.512Z",
+  "generated": "2026-06-27T12:08:17.606Z",
   "packs": {
     "a2": {
-      "words": 430,
-      "audioReady": 30,
-      "examplesReady": 30
+      "words": 434,
+      "audioReady": 34,
+      "examplesReady": 34
     }
   }
 }

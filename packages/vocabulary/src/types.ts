@@ -64,6 +64,7 @@ export const CATEGORIES_A2 = [
   "Hava & Doğa",
   "Duygular",
   "Geçmiş zaman",
+  "Gramer",
 ] as const;
 
 export type A1Category = (typeof CATEGORIES_A1)[number];
