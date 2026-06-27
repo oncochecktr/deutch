@@ -24,7 +24,7 @@ Ich sehe einen Mann. Er ist sehr seltsam.
 `;
 
 export function DiktatWorkspace() {
-  const [profile, setProfile] = useState<LearnerProfile | null>(null);
+  const [profile, setProfile] = useState<LearnerProfile>(loadLearnerProfile);
   const [showOnboard, setShowOnboard] = useState(false);
   const [text, setText] = useState("");
   const [category, setCategory] = useState<string | null>(null);
@@ -108,10 +108,6 @@ export function DiktatWorkspace() {
     },
     [mode, insertAtCursor]
   );
-
-  if (!profile) {
-    return <p className="text-center text-sage-500">Yükleniyor…</p>;
-  }
 
   return (
     <div className="flex min-h-[calc(100dvh-8rem)] flex-col gap-4 lg:flex-row">

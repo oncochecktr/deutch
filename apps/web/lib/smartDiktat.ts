@@ -57,8 +57,7 @@ function cap(s: string) {
 
 function pickAdj(word: VocabularyWord, seed: number) {
   const a = ADJECTIVES[seed % ADJECTIVES.length];
-  const sehr = seed % 3 === 0 ? "sehr " : "";
-  return { de: `${sehr}${a.de}`, tr: `${sehr ? "çok " : ""}${a.tr}` };
+  return { de: a.de, tr: a.tr };
 }
 
 export function buildDrill(
@@ -75,7 +74,7 @@ export function buildDrill(
     pattern === "habe"
       ? `Ich habe ${indef} ${word.word}.`
       : `Ich sehe ${indef} ${word.word}.`;
-  const line2 = `${def} ${noun} ist ${adj.de}.`;
+  const line2 = `${cap(def)} ${noun} ist ${adj.de}.`;
 
   const tr1 =
     pattern === "habe"
@@ -195,3 +194,25 @@ export const GRAMMAR_CHEATSHEET = [
   { de: "eine (f)", tr: "bir" },
   { de: "einen (m akk.)", tr: "bir (eril nesne)" },
 ];
+
+export function patternCheatsheetSummary(id: DiktatPatternId): string {
+  return id === "habe" ? "haben · ein / eine / einen" : "sehen · ein / eine / einen";
+}
+
+export function patternCheatsheetRows(id: DiktatPatternId): typeof GRAMMAR_CHEATSHEET {
+  if (id === "habe") {
+    return GRAMMAR_CHEATSHEET.filter(
+      (r) =>
+        r.de.startsWith("ich habe") ||
+        r.de.startsWith("du hast") ||
+        r.de.startsWith("er/") ||
+        r.de.includes("ein")
+    );
+  }
+  return GRAMMAR_CHEATSHEET.filter(
+    (r) =>
+      r.de.startsWith("ich sehe") ||
+      r.de.startsWith("du siehst") ||
+      r.de.includes("ein")
+  );
+}
