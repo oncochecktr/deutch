@@ -57,7 +57,9 @@ export function WordSidebar({
             </button>
           )}
         </div>
-        <p className="mt-0.5 text-[10px] text-sage-400">{vocab.total} A1 · dokun = ekle</p>
+        <p className="mt-0.5 text-[10px] text-sage-400">
+          {vocab.total} A1 · dokun = dinle · + metne ekle
+        </p>
         <input
           type="search"
           value={search}
@@ -105,6 +107,7 @@ export function WordSidebar({
                   type="button"
                   onClick={() => onSelect(w)}
                   className="min-w-0 flex-1 text-left"
+                  title="Dinle ve yaz (Kelime modu)"
                 >
                   <p className="truncate text-sm font-medium text-goethe-blue">{display}</p>
                   {showTurkish && (
@@ -113,8 +116,11 @@ export function WordSidebar({
                 </button>
                 <button
                   type="button"
-                  title="Metne ekle"
-                  onClick={() => onInsert(display)}
+                  title="Serbest yaz metnine ekle"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onInsert(display);
+                  }}
                   className="shrink-0 rounded-lg border border-sage-100 px-2 py-1 text-[10px] font-semibold text-sage-500 hover:border-goethe-blue/30 hover:text-goethe-blue"
                 >
                   +

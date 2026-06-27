@@ -12,6 +12,7 @@ import {
 } from "@/lib/learnerProfileStorage";
 import { SmartDiktatDrill } from "@/components/diktat/SmartDiktatDrill";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
+import { formatWord, playGermanAudio } from "@/lib/audio";
 
 const STARTER_LINES = `Hast du ein Auto? Ja, ich habe ein Auto.
 Ich brauche Hilfe. Ich brauche Zeit.
@@ -33,6 +34,7 @@ export function DiktatWorkspace() {
   const [mode, setMode] = useState<"free" | "smart" | "listen">("smart");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingInsert = useRef<string | null>(null);
 
   useEffect(() => {
     const p = loadLearnerProfile();
@@ -77,10 +79,35 @@ export function DiktatWorkspace() {
     });
   }, [text, persistText]);
 
-  const handleSelectWord = (w: VocabularyWord) => {
+  useEffect(() => {
+    if (mode !== "free" || !pendingInsert.current) return;
+    const snippet = pendingInsert.current;
+    pendingInsert.current = null;
+    requestAnimationFrame(() => insertAtCursor(snippet));
+  }, [mode, insertAtCursor]);
+
+  const handleSelectWord = useCallback(async (w: VocabularyWord) => {
     setSelectedWord(w);
     setMode("listen");
-  };
+    const display = formatWord(w.word, w.article);
+    try {
+      await playGermanAudio(display, w.audio_word);
+    } catch {
+      /* TTS yedek — sessiz devam */
+    }
+  }, []);
+
+  const handleInsertWord = useCallback(
+    (snippet: string) => {
+      if (mode !== "free") {
+        pendingInsert.current = snippet;
+        setMode("free");
+        return;
+      }
+      insertAtCursor(snippet);
+    },
+    [mode, insertAtCursor]
+  );
 
   if (!profile) {
     return <p className="text-center text-sage-500">Yükleniyor…</p>;
@@ -224,7 +251,7 @@ export function DiktatWorkspace() {
           }}
           selectedId={selectedWord?.id ?? null}
           onSelect={handleSelectWord}
-          onInsert={insertAtCursor}
+          onInsert={handleInsertWord}
           onToggleCollapse={() => setSidebarOpen(false)}
         />
       </div>
