@@ -52,7 +52,8 @@ function scoreVoice(v: SpeechSynthesisVoice, lang: TtsLang): number {
   } else {
     if (voiceLang === "tr-tr") score += 40;
     else if (voiceLang.startsWith("tr")) score += 20;
-    if (/ahmet|emel|turk|türk|turkish|tolga|ayşe|aysel|filiz/.test(name)) score += 30;
+    if (/emel|filiz|ayşe|aysel|zira|yelda|seda|female|kadın/.test(name)) score += 35;
+    if (/ahmet|tolga|murat|mustafa|male|erkek/.test(name)) score -= 120;
     if (/google/.test(name) && voiceLang.startsWith("tr")) score += 10;
   }
 
@@ -226,10 +227,11 @@ async function playLangAudio(
   session: number
 ): Promise<"mp3" | "server" | "browser"> {
   try {
+    const storyMp3 = !!audioSrc?.includes("/audio/stories/");
     const mp3Ok =
       audioSrc &&
       typeof window !== "undefined" &&
-      (lang !== "de" || audioPathMatchesText(audioSrc, text));
+      (storyMp3 || lang === "tr" || audioPathMatchesText(audioSrc, text));
 
     if (mp3Ok) {
       try {
@@ -268,11 +270,14 @@ export async function playGermanAudio(
   return playLangAudio(text, "de", audioSrc, session);
 }
 
-/** Türkçe TTS — sunucu Edge → tarayıcı */
-export async function playTurkishAudio(text: string): Promise<"mp3" | "server" | "browser"> {
+/** Türkçe TTS — MP3 → sunucu Edge (Emel) → tarayıcı */
+export async function playTurkishAudio(
+  text: string,
+  audioSrc?: string | null
+): Promise<"mp3" | "server" | "browser"> {
   stopAudio();
   const session = audioSession;
-  return playLangAudio(text, "tr", null, session);
+  return playLangAudio(text, "tr", audioSrc, session);
 }
 
 /** Profesör turu: önce Almanca, sonra Türkçe açıklama, sonra düzeltme modeli */

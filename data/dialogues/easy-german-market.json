@@ -1,0 +1,428 @@
+[
+  {
+    "id": "d_a2_eg_markt",
+    "level": "A2",
+    "title_de": "Einkaufen im Biomarkt",
+    "title_tr": "Organik markette alışveriş",
+    "theme": "Easy German · Market · Einkaufen",
+    "source": "seed",
+    "lines": [
+      {
+        "id": "l01",
+        "kind": "narration",
+        "text_de": "Hallo Leute! Wir stehen gerade vor einem Supermarkt, und Janusz kauft jetzt ein.",
+        "text_tr": "Merhaba arkadaşlar! Şu an bir süpermarketin önündeyiz ve Janusz alışveriş yapacak.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l01-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l01-tr.mp3"
+      },
+      {
+        "id": "l02",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Janusz, was wirst du einkaufen?",
+        "text_tr": "Janusz, ne alacaksın?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l02-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l02-tr.mp3"
+      },
+      {
+        "id": "l03",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich bin gestern aus dem Urlaub zurückgekommen, und mein Kühlschrank ist leer. Ich brauche alles.",
+        "text_tr": "Dün tatilden döndüm ve buzdolabım boş. Her şeye ihtiyacım var.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l03-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l03-tr.mp3"
+      },
+      {
+        "id": "l04",
+        "kind": "narration",
+        "text_de": "Heute geht es in langsam Deutsch. Wir besuchen Denns Biomarkt — eine Supermarktkette, die es überall in Deutschland gibt.",
+        "text_tr": "Bugün yavaş Almanca konuşuyoruz. Denns Biomarkt'ı ziyaret ediyoruz — Almanya'nın her yerinde olan bir market zinciri.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l04-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l04-tr.mp3"
+      },
+      {
+        "id": "l05",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Janusz, was ist ein Biomarkt?",
+        "text_tr": "Janusz, Biomarkt nedir?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l05-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l05-tr.mp3"
+      },
+      {
+        "id": "l06",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Biomärkte haben den Fokus auf Produkte aus biologischem Anbau — hochqualitative Lebensmittel.",
+        "text_tr": "Organik marketler, organik tarım ürünlerine odaklanır — yüksek kaliteli gıdalar.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l06-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l06-tr.mp3"
+      },
+      {
+        "id": "l07",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Was braucht man im Supermarkt — einen Einkaufskorb oder einen Einkaufswagen?",
+        "text_tr": "Süpermarkette ne lazım — alışveriş sepeti mi, alışveriş arabası mı?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l07-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l07-tr.mp3"
+      },
+      {
+        "id": "l08",
+        "kind": "narration",
+        "text_de": "Janusz holt sich einen Einkaufswagen. Den Chip stecken wir in den Wagen — los geht's!",
+        "text_tr": "Janusz bir alışveriş arabası alıyor. Jetonu arabaya takıyoruz — haydi başlayalım!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l08-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l08-tr.mp3"
+      },
+      {
+        "id": "l09",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Bevor wir anfangen: Hast du eine Einkaufsliste — digital oder handgeschrieben?",
+        "text_tr": "Başlamadan önce: Alışveriş listesi var mı — dijital mi, el yazısı mı?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l09-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l09-tr.mp3"
+      },
+      {
+        "id": "l10",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich hasse einkaufen. Deshalb habe ich kein System — keine Liste, null Vorbereitung. Ich gehe rein, und die Jagd beginnt.",
+        "text_tr": "Alışverişten nefret ederim. Bu yüzden sistemim yok — liste yok, hazırlık sıfır. İçeri girerim ve av başlar.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l10-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l10-tr.mp3"
+      },
+      {
+        "id": "l11",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Alles, was mir gefällt, kaufe ich. Was mir nicht gefällt, kaufe ich nicht. Deshalb ist unser Konto manchmal leer.",
+        "text_tr": "Beğendiğim her şeyi alırım. Beğenmediklerimi almam. Bu yüzden hesabımız bazen boş kalır.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l11-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l11-tr.mp3"
+      },
+      {
+        "id": "l12",
+        "kind": "narration",
+        "text_de": "Jetzt sind wir in der Obst- und Gemüseabteilung.",
+        "text_tr": "Şimdi meyve ve sebze reyonundayız.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l12-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l12-tr.mp3"
+      },
+      {
+        "id": "l13",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Was hast du schon eingekauft, Janusz?",
+        "text_tr": "Janusz, şimdiye kadar ne aldın?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l13-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l13-tr.mp3"
+      },
+      {
+        "id": "l14",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Äpfel, Pflaumen oder Zwetschgen, Weintrauben — und eine Paprika.",
+        "text_tr": "Elmalar, erik veya zwetschge, üzüm — ve bir biber.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l14-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l14-tr.mp3"
+      },
+      {
+        "id": "l15",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Die Möhre — oder Karotte? In Deutschland gibt es zwei Namen dafür.",
+        "text_tr": "Havuç — veya Karotte? Almanya'da bunun için iki isim var.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l15-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l15-tr.mp3"
+      },
+      {
+        "id": "l16",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Das hier ist Rettich — wie Radieschen, nur groß. Ich mache damit einen polnischen Rohkostsalat mit Sauerkraut und Möhren.",
+        "text_tr": "Bu turp — turp gibi ama büyük. Bununla lahana turşusu ve havuçlu Polonya usulü çiğ sebze salatası yapacağım.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l16-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l16-tr.mp3"
+      },
+      {
+        "id": "l17",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Janusz, was ist das?",
+        "text_tr": "Janusz, bu ne?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l17-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l17-tr.mp3"
+      },
+      {
+        "id": "l18",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Lauch! Das Wort wusste ich gerade nicht.",
+        "text_tr": "Pırasa! Kelimesini tam hatırlayamadım.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l18-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l18-tr.mp3"
+      },
+      {
+        "id": "l19",
+        "kind": "narration",
+        "text_de": "Weiter geht's — jetzt sind wir an der Käsetheke.",
+        "text_tr": "Devam ediyoruz — şimdi peynir reyonundayız.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l19-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l19-tr.mp3"
+      },
+      {
+        "id": "l20",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich habe einen Bio-Butterkäse ausgewählt — und einen italienischen Rauchkäse. Super lecker!",
+        "text_tr": "Organik tereyağlı peynir seçtim — ve bir de İtalyan füme peyniri. Çok lezzetli!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l20-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l20-tr.mp3"
+      },
+      {
+        "id": "l21",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Janusz, achtest du beim Einkaufen auf die Preise?",
+        "text_tr": "Janusz, alışverişte fiyatlara dikkat eder misin?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l21-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l21-tr.mp3"
+      },
+      {
+        "id": "l22",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Nie. Ich hasse einkaufen — und dann noch auf Preise achten? Unmachbar für mich.",
+        "text_tr": "Asla. Alışverişten nefret ederim — bir de fiyatlara mı bakayım? Benim için imkânsız.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l22-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l22-tr.mp3"
+      },
+      {
+        "id": "l23",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Hier gibt es Angebote. Dieser Tee hat zwanzig Prozent Rabatt.",
+        "text_tr": "Burada indirimler var. Bu çayda yüzde yirmi indirim var.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l23-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l23-tr.mp3"
+      },
+      {
+        "id": "l24",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Normalerweise kaufe ich keine Angebote — aber dieser Tee ist Süßholz-Minze. Den will ich haben!",
+        "text_tr": "Genelde indirimli ürün almam — ama bu çay meyan nanesi. Bunu istiyorum!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l24-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l24-tr.mp3"
+      },
+      {
+        "id": "l25",
+        "kind": "narration",
+        "text_de": "Jetzt sind wir bei den Milchprodukten.",
+        "text_tr": "Şimdi süt ürünleri reyonundayız.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l25-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l25-tr.mp3"
+      },
+      {
+        "id": "l26",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich bin ein totaler Fan von Milchprodukten — Milch nur für den Kaffee, morgens frische Vollmilch, und Kirschjoghurt. Ich esse jeden Tag mehrere.",
+        "text_tr": "Süt ürünlerinin büyük hayranıyım — süt sadece kahve için, sabahları taze tam yağlı süt ve vişneli yoğurt. Her gün birkaç tane yerim.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l26-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l26-tr.mp3"
+      },
+      {
+        "id": "l27",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "In Deutschland macht man kalte Aufschnitte — Wurst auf das Butterbrot. Was machst du gerne drauf?",
+        "text_tr": "Almanya'da soğuk et dilimleri yapılır — ekmeğe sosis. Sen ne koymayı seversin?",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l27-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l27-tr.mp3"
+      },
+      {
+        "id": "l28",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Salami — am besten Salami im Pfeffermantel.",
+        "text_tr": "Salam — en iyisi biber kaplı salam.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l28-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l28-tr.mp3"
+      },
+      {
+        "id": "l29",
+        "kind": "narration",
+        "text_de": "Das ist das Getränkeregale. Wasser, Säfte — jeder darf sich ein Getränk aussuchen.",
+        "text_tr": "Bu içecek reyonu. Su, meyve suları — herkes bir içecek seçebilir.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l29-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l29-tr.mp3"
+      },
+      {
+        "id": "l30",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Mein Lieblingsgetränk ist Sprudelwasser, Medium. Von Säften mag ich eigentlich nur Apfelsaft.",
+        "text_tr": "En sevdiğim içecek orta gazlı soda. Meyve sularından aslında sadece elma suyunu severim.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l30-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l30-tr.mp3"
+      },
+      {
+        "id": "l31",
+        "speaker": "Moderator",
+        "kind": "dialogue",
+        "text_de": "Am schönsten mischt man Apfelsaft mit Sprudel — dann hat man eine Apfelschorle. Ein Muss in Deutschland!",
+        "text_tr": "En güzeli elma suyunu soda ile karıştırmak — böylece Apfelschorle olur. Almanya'da olmazsa olmaz!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l31-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l31-tr.mp3"
+      },
+      {
+        "id": "l32",
+        "kind": "narration",
+        "text_de": "In diesem Gang gibt es alles fürs Frühstück: Aufstriche, Marmeladen, Haferflocken, Cornflakes, Kaffee.",
+        "text_tr": "Bu koridorda kahvaltılık her şey var: sürülebilir ürünler, reçeller, yulaf ezmesi, mısır gevreği, kahve.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l32-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l32-tr.mp3"
+      },
+      {
+        "id": "l33",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Kirschmarmelade, glutenfreie Haferflocken und veganer Schokoladenaufstrich — hell und dunkel. Ein glücklicher Tag!",
+        "text_tr": "Vişne reçeli, glutensiz yulaf ezmesi ve vegan çikolata kreması — açık ve bitter. Mutlu bir gün!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l33-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l33-tr.mp3"
+      },
+      {
+        "id": "l34",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Und Kekse mit Apfel und Zimt — besonders lecker. Geheimtipp: die beste vegane Schokolade.",
+        "text_tr": "Ve elma tarçınlı kurabiyeler — özellikle lezzetli. Gizli ipucu: en iyi vegan çikolata.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l34-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l34-tr.mp3"
+      },
+      {
+        "id": "l35",
+        "kind": "narration",
+        "text_de": "Jetzt sind wir bei den Konserven — Lebensmittel im Glas oder in der Dose.",
+        "text_tr": "Şimdi konserve reyonundayız — cam kavanoz veya teneke kutudaki gıdalar.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l35-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l35-tr.mp3"
+      },
+      {
+        "id": "l36",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Sauerkraut und Salzgurken — populär in Deutschland und Polen. In Deutschland gibt es verschiedene Gurkenarten.",
+        "text_tr": "Lahana turşusu ve salamura salatalık — Almanya ve Polonya'da popüler. Almanya'da farklı salatalık çeşitleri var.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l36-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l36-tr.mp3"
+      },
+      {
+        "id": "l37",
+        "kind": "narration",
+        "text_de": "Jetzt stehen wir an der Kasse. Janusz ist fertig mit einkaufen und bezahlt.",
+        "text_tr": "Şimdi kasadayız. Janusz alışverişi bitirdi ve ödeme yapıyor.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l37-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l37-tr.mp3"
+      },
+      {
+        "id": "l38",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich zahle mit Karte. Möchten Sie den Kassenbon mitnehmen? Sehr gerne.",
+        "text_tr": "Kartla ödüyorum. Fişi almak ister misiniz? Tabii ki.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l38-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l38-tr.mp3"
+      },
+      {
+        "id": "l39",
+        "kind": "narration",
+        "text_de": "Das war unser Einkauf bei Denns Biomarkt. Vielen Dank, dass wir hier filmen durften.",
+        "text_tr": "Denns Biomarkt'taki alışverişimiz buydu. Burada çekim yapmamıza izin verdiğiniz için çok teşekkürler.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l39-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l39-tr.mp3"
+      },
+      {
+        "id": "l40",
+        "speaker": "Janusz",
+        "kind": "dialogue",
+        "text_de": "Ich esse noch eine Zwetschge, und dann gehen wir nach Hause.",
+        "text_tr": "Bir zwetschge yiyeceğim, sonra eve gideceğiz.",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l40-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l40-tr.mp3"
+      },
+      {
+        "id": "l41",
+        "kind": "narration",
+        "text_de": "Danke fürs Zusehen — bis bald bei Easy German!",
+        "text_tr": "İzlediğiniz için teşekkürler — Easy German'de görüşmek üzere!",
+        "audio_de": "/audio/stories/d_a2_eg_markt/l41-de.mp3",
+        "audio_tr": "/audio/stories/d_a2_eg_markt/l41-tr.mp3"
+      }
+    ],
+    "comprehension": [
+      {
+        "id": "c01",
+        "prompt_tr": "Janusz neden çok şey alıyor?",
+        "options_tr": [
+          "Markette indirim var",
+          "Buzdolabı boş",
+          "Misafir geliyor",
+          "Liste çok uzun"
+        ],
+        "correct_index": 1,
+        "explanation_tr": "mein Kühlschrank ist leer — buzdolabı boş."
+      },
+      {
+        "id": "c02",
+        "prompt_tr": "Biomarkt ne demek?",
+        "options_tr": [
+          "Gece marketi",
+          "Organik ürün marketi",
+          "Sadece et satan yer",
+          "Online market"
+        ],
+        "correct_index": 1
+      },
+      {
+        "id": "c03",
+        "prompt_tr": "Janusz alışveriş listesi kullanıyor mu?",
+        "options_tr": [
+          "Evet, dijital",
+          "Evet, el yazısı",
+          "Hayır, listesiz giriyor",
+          "Sadece hafta sonu"
+        ],
+        "correct_index": 2,
+        "explanation_tr": "keine Liste, null Vorbereitung — liste yok."
+      },
+      {
+        "id": "c04",
+        "prompt_tr": "Apfelschorle nasıl yapılır?",
+        "options_tr": [
+          "Süt + elma suyu",
+          "Elma suyu + soda",
+          "Sadece elma suyu",
+          "Kola + su"
+        ],
+        "correct_index": 1
+      },
+      {
+        "id": "c05",
+        "prompt_tr": "Janusz nasıl ödüyor?",
+        "options_tr": [
+          "Nakit",
+          "Kartla",
+          "Telefonla",
+          "Çekle"
+        ],
+        "correct_index": 1
+      }
+    ]
+  }
+]

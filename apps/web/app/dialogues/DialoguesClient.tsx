@@ -25,12 +25,14 @@ export default function DialoguesClient() {
   const searchParams = useSearchParams();
   const levelParam = searchParams.get("level") as DialogueLevel | null;
   const idParam = searchParams.get("id");
+  const listenParam = searchParams.get("listen") === "1";
 
   const { updateProgress, hydrated } = useProgress();
   const [storage, setStorage] = useState<DialogueStorageState>(() => loadDialogueStorage());
-  const [tab, setTab] = useState<DialogueLevel | "saved">(
-    levelParam && LEVELS.includes(levelParam) ? levelParam : "A1"
-  );
+  const [tab, setTab] = useState<DialogueLevel | "saved">(() => {
+    if (levelParam && LEVELS.includes(levelParam)) return levelParam;
+    return "A1";
+  });
   const [selectedId, setSelectedId] = useState<string | null>(idParam);
   const [generating, setGenerating] = useState(false);
   const [genError, setGenError] = useState<string | null>(null);
@@ -41,6 +43,13 @@ export default function DialoguesClient() {
     if (idParam) setSelectedId(idParam);
     if (levelParam && LEVELS.includes(levelParam)) setTab(levelParam);
   }, [idParam, levelParam]);
+
+  useEffect(() => {
+    if (!listenParam || !selectedId) return;
+    requestAnimationFrame(() => {
+      document.getElementById("story-listen")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [listenParam, selectedId]);
 
   const stories = useMemo(() => {
     if (tab === "saved") return storage.savedStories;
@@ -114,7 +123,7 @@ export default function DialoguesClient() {
 
   if (!hydrated) {
     return (
-      <PageShell title="Hikayeler & Diyaloglar" subtitle="Satır satır oku · ses · quiz" maxWidth="full">
+      <PageShell title="Hikayeler & Diyaloglar" subtitle="Dinle DE→TR · ekran kilitli · dinle-yaz · quiz" maxWidth="full">
         <div className="card-soft h-72 animate-pulse rounded-xl bg-sage-50" />
       </PageShell>
     );
@@ -123,7 +132,7 @@ export default function DialoguesClient() {
   return (
     <PageShell
       title="Hikayeler & Diyaloglar"
-      subtitle="Satır satır oku · ses · quiz"
+      subtitle="Dinle DE→TR · ekran kilitli · dinle-yaz · quiz"
       maxWidth="full"
     >
       <div className="grid gap-4 lg:grid-cols-[minmax(0,320px)_minmax(0,1fr)]">

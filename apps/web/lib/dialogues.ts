@@ -2,9 +2,14 @@ import type { DialogueLevel, DialogueStory } from "./dialogueTypes";
 import a1Data from "../../../data/dialogues/a1.json";
 import a2Data from "../../../data/dialogues/a2.json";
 import extraSamData from "../../../data/dialogues/extra-sam.json";
+import easyGermanMarketData from "../../../data/dialogues/easy-german-market.json";
 import b1Data from "../../../data/dialogues/b1.json";
 
-const A2_DIALOGUES = [...(a2Data as DialogueStory[]), ...(extraSamData as DialogueStory[])];
+const A2_DIALOGUES = [
+  ...(a2Data as DialogueStory[]),
+  ...(extraSamData as DialogueStory[]),
+  ...(easyGermanMarketData as DialogueStory[]),
+];
 
 const SEED_BY_LEVEL: Record<DialogueLevel, DialogueStory[]> = {
   A1: a1Data as DialogueStory[],

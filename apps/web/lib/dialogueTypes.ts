@@ -8,6 +8,10 @@ export interface DialogueLine {
   kind: DialogueLineKind;
   text_de: string;
   text_tr: string;
+  /** Önceden üretilmiş Almanca MP3 (hikaye dinle) */
+  audio_de?: string;
+  /** Önceden üretilmiş Türkçe MP3 — kadın ses */
+  audio_tr?: string;
 }
 
 export interface DialogueComprehension {

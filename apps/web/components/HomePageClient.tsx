@@ -7,6 +7,7 @@ import { CATEGORIES_A1 } from "@german-coach/vocabulary";
 import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
 import { HomeGameBanner } from "@/components/home/HomeGameBanner";
 import { HomeHero } from "@/components/home/HomeHero";
+import { HomeStoryBanner } from "@/components/home/HomeStoryBanner";
 import { HomePathPicker } from "@/components/home/HomePathPicker";
 import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
 import { LearningCoachBanner } from "@/components/LearningCoachBanner";
@@ -50,6 +51,7 @@ export function HomePageClient() {
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
       <div className="space-y-6">
         <HomeHero />
+        <HomeStoryBanner />
         <HomeGameBanner />
         <LearningMethodGuide />
         {report.nextStep && <SmartGuide report={report} />}
@@ -124,7 +126,7 @@ export function HomePageClient() {
               <MiniTile href="/exam" icon="exam" label="Sınav" stat="A1 modül" />
               <MiniTile href="/konus-dinle" icon="konusDinle" label="Konuş-Dinle" stat="Antrenman" />
               <MiniTile href="/speak" icon="speak" label="Sınıf" stat="Profesör" />
-              <MiniTile href="/dialogues" icon="cards" label="Hikayeler" stat="Diyalog" />
+              <MiniTile href="/dialogues?id=d_a2_eg_markt&level=A2&listen=1" icon="listen" label="Hikayeler" stat="DE→TR dinle" />
               <MiniTile href="/listen" icon="listen" label="Dinle" stat="MP3" />
               <MiniTile href="/quiz" icon="cards" label="Quiz" stat="TR anlam" />
               <MiniTile href="/words" icon="list" label="Liste" stat="Ara" />

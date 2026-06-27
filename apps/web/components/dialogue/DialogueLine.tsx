@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { SpeakAudioButton } from "@/components/SpeakAudioButton";
+import { StoryAudioButton } from "@/components/dialogue/StoryAudioButton";
 import type { DialogueLine } from "@/lib/dialogueTypes";
 
 interface DialogueLineRowProps {
@@ -50,7 +50,26 @@ export function DialogueLineRow({
         </button>
       </div>
       <div className="flex items-start gap-2">
-        <SpeakAudioButton text={line.text_de} size="sm" className="mt-0.5 shrink-0" />
+        <div className="mt-0.5 flex shrink-0 flex-col gap-1">
+          {line.audio_de || line.audio_tr ? (
+            <>
+              <StoryAudioButton
+                text={line.text_de}
+                lang="de"
+                audioSrc={line.audio_de}
+                size="sm"
+              />
+              <StoryAudioButton
+                text={line.text_tr}
+                lang="tr"
+                audioSrc={line.audio_tr}
+                size="sm"
+              />
+            </>
+          ) : (
+            <SpeakAudioButton text={line.text_de} size="sm" className="mt-0.5 shrink-0" />
+          )}
+        </div>
         <div className="min-w-0 flex-1">
           <p className="text-sm leading-relaxed text-goethe-blue sm:text-base">{line.text_de}</p>
           {showTranslation && (

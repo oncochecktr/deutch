@@ -3,10 +3,15 @@
 import { useCallback, useMemo, useState } from "react";
 import type { DialogueStory } from "@/lib/dialogueTypes";
 import { DialogueLineRow } from "./DialogueLine";
+import { StoryListenPlayer } from "./StoryListenPlayer";
 
 interface DialogueReaderProps {
   story: DialogueStory;
   onComplete?: () => void;
+}
+
+function storyHasListenAudio(story: DialogueStory): boolean {
+  return story.lines.some((l) => l.audio_de && l.audio_tr);
 }
 
 export function DialogueReader({ story, onComplete }: DialogueReaderProps) {
@@ -50,8 +55,12 @@ export function DialogueReader({ story, onComplete }: DialogueReaderProps) {
     onComplete?.();
   };
 
+  const hasListen = useMemo(() => storyHasListenAudio(story), [story]);
+
   return (
     <div className="space-y-4">
+      {hasListen && <div id="story-listen"><StoryListenPlayer story={story} /></div>}
+
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-sage-400">{story.theme}</p>
@@ -90,7 +99,8 @@ export function DialogueReader({ story, onComplete }: DialogueReaderProps) {
         </button>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-2 border-t border-sage-100 pt-4">
+        <h3 className="text-sm font-semibold text-goethe-blue">Satır satır oku</h3>
         {story.lines.map((line) => (
           <DialogueLineRow
             key={line.id}

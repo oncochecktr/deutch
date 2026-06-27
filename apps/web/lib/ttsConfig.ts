@@ -4,9 +4,9 @@ export const GERMAN_TTS_VOICE_ALT = "de-DE-ConradNeural";
 export const GERMAN_TTS_RATE = "-5%";
 export const GERMAN_TTS_PITCH = "+0Hz";
 
-/** Türkçe Edge TTS — AhmetNeural birincil (daha doğal); Emel yedek */
-export const TURKISH_TTS_VOICE = "tr-TR-AhmetNeural";
-export const TURKISH_TTS_VOICE_ALT = "tr-TR-EmelNeural";
+/** Türkçe Edge TTS — yalnızca kadın ses (Emel birincil, Filiz yedek) */
+export const TURKISH_TTS_VOICE = "tr-TR-EmelNeural";
+export const TURKISH_TTS_VOICE_ALT = "tr-TR-FilizNeural";
 export const TURKISH_TTS_RATE = "+0%";
 export const TURKISH_TTS_PITCH = "+0Hz";
 
