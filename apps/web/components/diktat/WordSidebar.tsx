@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import { getA1Vocabulary, type VocabularyWord } from "@german-coach/vocabulary";
 import { formatWord } from "@/lib/audio";
+import { AttentionHintButton } from "@/components/ui/AttentionHintButton";
+import { GoldCueLine } from "@/components/ui/GoldCueLine";
 
 interface WordSidebarProps {
   showTurkish: boolean;
@@ -44,20 +46,19 @@ export function WordSidebar({
     <aside className="flex h-full min-h-0 flex-col rounded-xl border border-sage-100 bg-white">
       <div className="shrink-0 border-b border-sage-50 p-3">
         <div className="flex items-center justify-between gap-2">
-          <p className="text-xs font-bold uppercase tracking-wide text-goethe-blue">
-            Kelimeler
-          </p>
+          <div className="min-w-0">
+            <p className="text-xs font-bold uppercase tracking-wide text-goethe-blue">
+              Kelimeler
+            </p>
+            <GoldCueLine className="mt-1.5" />
+          </div>
           {onToggleCollapse && (
-            <button
-              type="button"
-              onClick={onToggleCollapse}
-              className="text-xs text-sage-400 lg:hidden"
-            >
-              Gizle
-            </button>
+            <AttentionHintButton onClick={onToggleCollapse} aria-label="Kelime listesini gizle">
+              Gizle ↓
+            </AttentionHintButton>
           )}
         </div>
-        <p className="mt-0.5 text-[10px] text-sage-400">
+        <p className="mt-2 text-[10px] text-sage-400">
           {vocab.total} A1 · dokun = dinle · + metne ekle
         </p>
         <input

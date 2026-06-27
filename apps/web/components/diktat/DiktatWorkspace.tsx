@@ -260,9 +260,9 @@ export function DiktatWorkspace() {
         <button
           type="button"
           onClick={() => setSidebarOpen(true)}
-          className="fixed bottom-24 right-3 z-30 rounded-full bg-goethe-blue px-4 py-2 text-xs font-semibold text-white shadow-lg lg:hidden"
+          className="btn-attention-glow fixed bottom-24 right-3 z-30 rounded-full px-4 py-2.5 text-xs font-semibold shadow-lg lg:hidden"
         >
-          Kelimeler →
+          Kelimeler ↑
         </button>
       )}
     </div>

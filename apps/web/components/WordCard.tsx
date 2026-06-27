@@ -5,6 +5,7 @@ import type { VocabularyWord } from "@german-coach/vocabulary";
 import { AudioButton } from "./AudioButton";
 import { HearAndWrite } from "./HearAndWrite";
 import { IconStar } from "./icons";
+import { GoldCueLine } from "@/components/ui/GoldCueLine";
 import { formatWord } from "@/lib/audio";
 import { PATTERN_LABEL_TR, type VocabPatternId } from "@/lib/wordPatternSlots";
 import { getWordPatterns } from "@/lib/wordPatterns";
@@ -206,10 +207,7 @@ export function WordCard({
             >
               {display}
             </p>
-            <div
-              className="word-cue-line mx-auto h-1 w-28 max-w-[70%] rounded-full bg-gradient-to-r from-goethe-gold/20 via-goethe-gold to-goethe-gold/20"
-              aria-hidden
-            />
+            <GoldCueLine className="mx-auto" />
             <div className="mt-4 w-full max-w-md">
               <p className="mb-1 text-sm font-semibold uppercase tracking-wide text-sage-400">
                 Anlam

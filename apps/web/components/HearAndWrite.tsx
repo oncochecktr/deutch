@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
 import { AudioButton } from "./AudioButton";
+import { GoldCueLine } from "@/components/ui/GoldCueLine";
 import { formatWord } from "@/lib/audio";
 import { checkDictation } from "@/lib/germanTextCompare";
 import { splitExamples } from "@/lib/vocabMeta";
@@ -54,7 +55,8 @@ export function HearAndWrite({ word, wordVisible = false, disabled = false }: He
           <p className="text-xs font-semibold uppercase tracking-wide text-goethe-blue">
             Duyduğunu yaz
           </p>
-          <p className="text-xs text-sage-400">
+          <GoldCueLine className="mt-1.5" />
+          <p className="mt-2 text-xs text-sage-400">
             Dinle → buraya yaz → kontrol et · hata böyle ayıklanır
           </p>
         </div>

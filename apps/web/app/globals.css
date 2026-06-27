@@ -113,11 +113,43 @@ body {
   }
 }
 
-.word-cue-line {
+.word-cue-line,
+.gold-cue-line {
   transform-origin: center;
   animation:
     wordCueDraw 0.75s ease-out forwards,
     wordCuePulse 2.2s ease-in-out 0.75s infinite;
+}
+
+@keyframes attentionGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.2);
+    border-color: rgba(201, 162, 39, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 14px 3px rgba(201, 162, 39, 0.32);
+    border-color: rgba(201, 162, 39, 0.75);
+  }
+}
+
+.btn-attention-glow {
+  border: 1.5px solid rgba(201, 162, 39, 0.5);
+  background: linear-gradient(
+    180deg,
+    rgba(201, 162, 39, 0.16) 0%,
+    rgba(201, 162, 39, 0.06) 100%
+  );
+  color: var(--goethe-blue);
+  animation: attentionGlow 2.8s ease-in-out infinite;
+}
+
+.btn-attention-glow:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(201, 162, 39, 0.22) 0%,
+    rgba(201, 162, 39, 0.1) 100%
+  );
 }
 
 @keyframes progressShine {
@@ -304,10 +336,17 @@ body {
   .animate-shake-soft,
   .animate-counter-bump,
   .animate-check-pulse,
-  .animate-reason-stagger {
+  .animate-reason-stagger,
+  .word-cue-line,
+  .gold-cue-line,
+  .btn-attention-glow {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .btn-attention-glow {
+    box-shadow: none;
   }
 }
 
