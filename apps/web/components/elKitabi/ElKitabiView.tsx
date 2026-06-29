@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ElKitabiHashSync } from "@/components/elKitabi/ElKitabiHashSync";
 import { ElKitabiBlocks } from "@/components/elKitabi/ElKitabiBlocks";
+import { ElKitabiProgressSummary } from "@/components/elKitabi/ElKitabiProgressSummary";
 import { ElKitabiSection } from "@/components/elKitabi/ElKitabiSection";
 import { ElKitabiTable } from "@/components/elKitabi/ElKitabiTable";
 import { ElKitabiToc } from "@/components/elKitabi/ElKitabiToc";
@@ -27,6 +28,8 @@ export function ElKitabiView() {
           </Link>
         </div>
       </div>
+
+      <ElKitabiProgressSummary />
 
       <ElKitabiToc entries={EL_KITABI_TOC} />
 

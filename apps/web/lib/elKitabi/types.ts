@@ -8,10 +8,28 @@ export type ElKitabiBlock =
   | { type: "link"; label: string; href: string; note?: string }
   | { type: "h3"; text: string };
 
+export interface ElKitabiQuizItem {
+  id: string;
+  question_tr: string;
+  context_de?: string;
+  options: string[];
+  correct_index: number;
+  explanation_tr?: string;
+}
+
+export interface ElKitabiPractice {
+  moduleHref: string;
+  moduleLabel: string;
+  quiz?: ElKitabiQuizItem[];
+  weakTip?: string;
+  strongTip?: string;
+}
+
 export interface ElKitabiSubsection {
   id: string;
   title: string;
   blocks: ElKitabiBlock[];
+  practice?: ElKitabiPractice;
 }
 
 export interface ElKitabiChapter {

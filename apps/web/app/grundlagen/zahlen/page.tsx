@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { PageShell } from "@/components/PageShell";
+import { ElKitabiReturnBanner } from "@/components/elKitabi/ElKitabiReturnBanner";
 import { GrundlagenItemList } from "@/components/grundlagen/GrundlagenItemList";
 import { ZahlenQuiz } from "@/components/grundlagen/ZahlenQuiz";
 import { getA1Core } from "@/lib/grundlagen";
@@ -18,6 +19,7 @@ export default function ZahlenPage() {
       backLabel="Temel modüllere dön"
       maxWidth="md"
     >
+      <ElKitabiReturnBanner />
       <div className="flex rounded-xl border border-sage-200 bg-sage-50 p-1">
         <button
           type="button"

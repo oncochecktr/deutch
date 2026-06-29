@@ -1,6 +1,7 @@
 "use client";
 
 import { getWordOrderTrainer } from "@/lib/grundlagen";
+import { ElKitabiReturnBanner } from "@/components/elKitabi/ElKitabiReturnBanner";
 import { PageShell } from "@/components/PageShell";
 import { WordOrderTrainer } from "@/components/grundlagen/WordOrderTrainer";
 
@@ -15,6 +16,7 @@ export default function WordOrderPage() {
       backLabel="A1 modüllere dön"
       maxWidth="md"
     >
+      <ElKitabiReturnBanner />
       <WordOrderTrainer data={data} />
     </PageShell>
   );

@@ -3,6 +3,22 @@ import { processSRSReview, todayISO, isMastered } from "./srs";
 import { DEFAULT_GOETHE, type GoetheProgress, normalizeGoetheProgress } from "./goetheProgress";
 import { DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
 
+export interface ElKitabiSubsectionProgress {
+  read?: boolean;
+  quizBest?: number;
+  quizTotal?: number;
+  moduleVisited?: boolean;
+  updatedAt?: string;
+}
+
+export interface ElKitabiProgress {
+  subsections: Record<string, ElKitabiSubsectionProgress>;
+}
+
+export const DEFAULT_EL_KITABI: ElKitabiProgress = {
+  subsections: {},
+};
+
 export interface GrundlagenProgress {
   satzCompleted: string[];
   patternsCompleted: string[];
@@ -116,6 +132,7 @@ export interface UserProgress {
   targetExamDate: string | null;
   goethe: GoetheProgress;
   grundlagen: GrundlagenProgress;
+  elKitabi: ElKitabiProgress;
 }
 
 export const STORAGE_KEY = "german-coach-progress";
@@ -170,6 +187,7 @@ export const DEFAULT_PROGRESS: UserProgress = {
   targetExamDate: null,
   goethe: { ...DEFAULT_GOETHE },
   grundlagen: { ...DEFAULT_GRUNDLAGEN },
+  elKitabi: { ...DEFAULT_EL_KITABI },
 };
 
 function normalizeGoethe(goethe: Partial<GoetheProgress> | null | undefined): GoetheProgress {
@@ -212,7 +230,19 @@ export function normalizeProgress(progress: Partial<UserProgress>): UserProgress
     dailyGoals: { ...DEFAULT_DAILY_GOALS, ...(progress.dailyGoals ?? {}) },
     goethe: normalizeGoethe(progress.goethe),
     grundlagen: normalizeGrundlagen(progress.grundlagen),
+    elKitabi: normalizeElKitabi(progress.elKitabi),
   };
+}
+
+function normalizeElKitabi(
+  elKitabi: Partial<ElKitabiProgress> | null | undefined
+): ElKitabiProgress {
+  const e = elKitabi ?? {};
+  const subs =
+    e.subsections && typeof e.subsections === "object" && !Array.isArray(e.subsections)
+      ? e.subsections
+      : {};
+  return { subsections: subs };
 }
 
 function normalizeGrundlagen(
@@ -348,6 +378,7 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
   base.targetExamDate = (parsed.targetExamDate as string | null) ?? null;
   base.goethe = normalizeGoethe(parsed.goethe as GoetheProgress);
   base.grundlagen = normalizeGrundlagen(parsed.grundlagen as GrundlagenProgress);
+  base.elKitabi = normalizeElKitabi(parsed.elKitabi as ElKitabiProgress);
 
   return ensureTodayStudySession(normalizeProgress(base));
 }
@@ -398,6 +429,7 @@ export function resetStudyProfile(progress: UserProgress): Partial<UserProgress>
     targetExamDate: null,
     goethe: { ...DEFAULT_GOETHE },
     grundlagen: { ...DEFAULT_GRUNDLAGEN },
+    elKitabi: { ...DEFAULT_EL_KITABI },
     scrollPositions: {},
     dailyStats: {
       date: today,
@@ -666,6 +698,58 @@ export function recordGrammarPackScore(
       },
     },
   };
+}
+
+function patchElKitabiSubsection(
+  progress: UserProgress,
+  subsectionId: string,
+  patch: Partial<ElKitabiSubsectionProgress>
+): UserProgress {
+  const prev = progress.elKitabi.subsections[subsectionId] ?? {};
+  return {
+    ...progress,
+    elKitabi: {
+      subsections: {
+        ...progress.elKitabi.subsections,
+        [subsectionId]: {
+          ...prev,
+          ...patch,
+          updatedAt: new Date().toISOString(),
+        },
+      },
+    },
+  };
+}
+
+export function recordElKitabiRead(progress: UserProgress, subsectionId: string): UserProgress {
+  const prev = progress.elKitabi.subsections[subsectionId];
+  if (prev?.read) return progress;
+  return patchElKitabiSubsection(progress, subsectionId, { read: true });
+}
+
+export function recordElKitabiQuiz(
+  progress: UserProgress,
+  subsectionId: string,
+  correct: number,
+  total: number
+): UserProgress {
+  const prev = progress.elKitabi.subsections[subsectionId] ?? {};
+  const quizBest = Math.max(prev.quizBest ?? 0, correct);
+  return patchElKitabiSubsection(progress, subsectionId, {
+    read: true,
+    quizBest,
+    quizTotal: total,
+  });
+}
+
+export function recordElKitabiModuleVisit(
+  progress: UserProgress,
+  subsectionId: string
+): UserProgress {
+  return patchElKitabiSubsection(progress, subsectionId, {
+    read: true,
+    moduleVisited: true,
+  });
 }
 
 const PATTERN_PASS_SCORE = 4;

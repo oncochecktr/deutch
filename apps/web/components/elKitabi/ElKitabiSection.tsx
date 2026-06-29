@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ElKitabiBlocks } from "@/components/elKitabi/ElKitabiBlocks";
+import { ElKitabiPracticeBridge } from "@/components/elKitabi/ElKitabiPracticeBridge";
 import type { ElKitabiChapter } from "@/lib/elKitabi/types";
+import { getPracticeForSubsection } from "@/lib/elKitabi/practice";
 
 export function ElKitabiSection({
   chapter,
@@ -22,25 +24,41 @@ export function ElKitabiSection({
         )}
 
         <div className="mt-4 space-y-4">
-          {chapter.subsections.map((sub) => (
-            <details
-              key={sub.id}
-              id={sub.id}
-              className="app-collapse group scroll-mt-24 rounded-lg border border-sage-200 bg-white"
-            >
-              <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-goethe-blue marker:content-none [&::-webkit-details-marker]:hidden">
-                <span className="flex items-center justify-between gap-2">
-                  {sub.title}
-                  <span className="text-xs font-normal text-sage-400 group-open:hidden">
-                    Ac
+          {chapter.subsections.map((sub, subIdx) => {
+            const practice = getPracticeForSubsection(sub.id);
+            const nextSub = chapter.subsections[subIdx + 1];
+            const blocks = practice
+              ? sub.blocks.filter((b) => b.type !== "link")
+              : sub.blocks;
+
+            return (
+              <details
+                key={sub.id}
+                id={sub.id}
+                className="app-collapse group scroll-mt-24 rounded-lg border border-sage-200 bg-white"
+              >
+                <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-goethe-blue marker:content-none [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center justify-between gap-2">
+                    {sub.title}
+                    <span className="text-xs font-normal text-sage-400 group-open:hidden">
+                      Ac
+                    </span>
                   </span>
-                </span>
-              </summary>
-              <div className="border-t border-sage-100 px-4 py-4">
-                <ElKitabiBlocks blocks={sub.blocks} />
-              </div>
-            </details>
-          ))}
+                </summary>
+                <div className="border-t border-sage-100 px-4 py-4">
+                  <ElKitabiBlocks blocks={blocks} />
+                  {practice && (
+                    <ElKitabiPracticeBridge
+                      subsectionId={sub.id}
+                      practice={practice}
+                      nextSubsectionId={nextSub?.id}
+                      nextSubsectionLabel={nextSub?.title}
+                    />
+                  )}
+                </div>
+              </details>
+            );
+          })}
         </div>
 
         {chapter.practiceHref && (
