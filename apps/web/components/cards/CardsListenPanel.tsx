@@ -72,6 +72,16 @@ export function CardsListenPanel({ settings, onChange }: CardsListenPanelProps) 
           />
         </label>
 
+        <label className="flex items-center justify-between gap-3 text-sm text-sage-700">
+          <span>Örnek cümlede de dinle</span>
+          <input
+            type="checkbox"
+            checked={settings.playContext}
+            onChange={(e) => patch({ playContext: e.target.checked })}
+            className="h-4 w-4 rounded border-sage-300"
+          />
+        </label>
+
         <div>
           <label className="text-xs font-medium text-sage-500">
             Günlük kelime hedefi: {settings.dailyGoal}

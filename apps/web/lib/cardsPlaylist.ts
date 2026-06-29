@@ -30,7 +30,19 @@ export function buildCardsPlaylist(
     return sortByTierOrder(list);
   }
 
-  return list;
+  return sortByCategoryInTier(list, tier);
+}
+
+function sortByCategoryInTier(
+  words: VocabularyWord[],
+  tier: A1WordTierId
+): VocabularyWord[] {
+  const cats = A1_WORD_TIERS[tier].categories as readonly string[];
+  const rank = (cat: string): number => {
+    const idx = cats.indexOf(cat);
+    return idx === -1 ? 999 : idx;
+  };
+  return [...words].sort((a, b) => rank(a.category) - rank(b.category));
 }
 
 function sortByTierOrder(words: VocabularyWord[]): VocabularyWord[] {
@@ -58,6 +70,7 @@ export function playlistLabel(
   category: string | null
 ): string {
   if (category) return category;
+  if (tier === "medium" && category === null) return "Günlük hayat";
   if (tier === "all") return "Tum A1";
   return A1_WORD_TIERS[tier].label;
 }

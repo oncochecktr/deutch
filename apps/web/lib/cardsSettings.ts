@@ -10,6 +10,8 @@ export interface CardsListenSettings {
   speechSpeed: CardsSpeechSpeed;
   repeatCount: number;
   playTranslation: boolean;
+  /** Kelime + anlam sonrasi ornek cumle (DE + TR) */
+  playContext: boolean;
   dailyGoal: number;
   filterTier: A1WordTierId | "all";
   filterCategory: string | null;
@@ -17,13 +19,25 @@ export interface CardsListenSettings {
   filterIndices: Record<string, number>;
 }
 
+export const DAILY_LIFE_PRESET = {
+  filterTier: "medium" as const,
+  filterCategory: null,
+};
+
+export function isDailyLifePreset(
+  settings: Pick<CardsListenSettings, "filterTier" | "filterCategory">
+): boolean {
+  return settings.filterTier === DAILY_LIFE_PRESET.filterTier && settings.filterCategory === null;
+}
+
 export const DEFAULT_CARDS_LISTEN_SETTINGS: CardsListenSettings = {
   speechSpeed: "normal",
   repeatCount: 2,
   playTranslation: true,
+  playContext: true,
   dailyGoal: 50,
-  filterTier: "easy",
-  filterCategory: "Selamlama",
+  filterTier: DAILY_LIFE_PRESET.filterTier,
+  filterCategory: DAILY_LIFE_PRESET.filterCategory,
   filterIndices: {},
 };
 

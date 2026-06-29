@@ -446,8 +446,8 @@ export function saveProgress(progress: UserProgress): boolean {
   }
 }
 
-/** Kart/quiz/SRS dahil çalışılmış A1 kelime sayısı */
-export function countStudiedA1Words(progress: UserProgress): number {
+/** Kart/quiz/SRS dahil çalışılmış A1 kelime kimlikleri */
+export function getStudiedA1WordIds(progress: UserProgress): Set<string> {
   const ids = new Set<string>();
   for (const id of progress.knownWordIds) {
     if (id.startsWith("a1_")) ids.add(id);
@@ -458,7 +458,22 @@ export function countStudiedA1Words(progress: UserProgress): number {
   for (const id of Object.keys(progress.srsRecords)) {
     if (id.startsWith("a1_")) ids.add(id);
   }
-  return ids.size;
+  return ids;
+}
+
+/** Kart/quiz/SRS dahil çalışılmış A1 kelime sayısı */
+export function countStudiedA1Words(progress: UserProgress): number {
+  return getStudiedA1WordIds(progress).size;
+}
+
+/** Verilen kelime listesinde kaçının çalışıldığını sayar */
+export function countStudiedAmong(progress: UserProgress, wordIds: string[]): number {
+  const studied = getStudiedA1WordIds(progress);
+  let n = 0;
+  for (const id of wordIds) {
+    if (studied.has(id)) n += 1;
+  }
+  return n;
 }
 
 export function recordAnswer(

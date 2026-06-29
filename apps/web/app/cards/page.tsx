@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
-import { CardsDailyGoal } from "@/components/cards/CardsDailyGoal";
+import { CardsMotivationPanel } from "@/components/cards/CardsMotivationPanel";
 import { CardsListenPanel } from "@/components/cards/CardsListenPanel";
 import { CardsLockListenBar } from "@/components/cards/CardsLockListenBar";
 import { CardsTierPicker } from "@/components/cards/CardsTierPicker";
@@ -14,6 +14,7 @@ import { WordCard } from "@/components/WordCard";
 import { IconArrowLeft, IconArrowRight } from "@/components/icons";
 import { buildCardsPlaylist, playlistLabel } from "@/lib/cardsPlaylist";
 import {
+  DAILY_LIFE_PRESET,
   filterKey,
   getTierCategories,
   loadCardsListenSettings,
@@ -24,7 +25,7 @@ import {
   cardsCoachMessage,
   shouldShowCardsCoachBanner,
 } from "@/lib/learningCoach";
-import { recordAnswer } from "@/lib/progress";
+import { countStudiedAmong, recordAnswer } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
 import { useLearningCoach } from "@/lib/useLearningCoach";
 import type { A1WordTierId } from "@/lib/wordTiers";
@@ -72,6 +73,17 @@ export default function CardsPage() {
   const word = vocab.words.find((w) => w.id === viewId) ?? liveWord;
 
   const learnedToday = progress.dailyStats.newWordsLearned;
+
+  const poolTotal = vocab.words.length;
+  const poolStudied = useMemo(
+    () => countStudiedAmong(progress, vocab.words.map((w) => w.id)),
+    [progress, vocab.words]
+  );
+  const groupStudied = useMemo(
+    () => countStudiedAmong(progress, playlist.map((w) => w.id)),
+    [progress, playlist]
+  );
+  const groupLabel = playlistLabel(filterTier, filterCategory);
 
   const patchSettings = useCallback((next: CardsListenSettings) => {
     setListenSettings(next);
@@ -124,6 +136,19 @@ export default function CardsPage() {
     },
     [listenSettings, patchSettings]
   );
+
+  const handleDailyLifePreset = useCallback(() => {
+    const key = filterKey(DAILY_LIFE_PRESET.filterTier, DAILY_LIFE_PRESET.filterCategory);
+    patchSettings({
+      ...listenSettings,
+      filterTier: DAILY_LIFE_PRESET.filterTier,
+      filterCategory: DAILY_LIFE_PRESET.filterCategory,
+      filterIndices: { ...listenSettings.filterIndices, [key]: 0 },
+    });
+    setTrail([]);
+    setTrailCursor(0);
+    trailReady.current = false;
+  }, [listenSettings, patchSettings]);
 
   useEffect(() => {
     if (!hydrated || trailReady.current) return;
@@ -224,7 +249,6 @@ export default function CardsPage() {
 
   const showCoachBanner = shouldShowCardsCoachBanner(trail.length, coach);
   const coachMsg = cardsCoachMessage(coach);
-  const groupLabel = playlistLabel(filterTier, filterCategory);
 
   return (
     <>
@@ -237,10 +261,14 @@ export default function CardsPage() {
       >
         <div className="grid gap-4 lg:grid-cols-[minmax(260px,300px)_1fr] lg:items-start">
           <aside className="space-y-3 lg:sticky lg:top-4">
-            <CardsDailyGoal
+            <CardsMotivationPanel
               learnedToday={learnedToday}
-              goal={listenSettings.dailyGoal}
-              compact
+              dailyGoal={listenSettings.dailyGoal}
+              poolStudied={poolStudied}
+              poolTotal={poolTotal}
+              groupStudied={groupStudied}
+              groupTotal={playlist.length}
+              groupLabel={groupLabel}
             />
 
             <CardsTierPicker
@@ -249,6 +277,7 @@ export default function CardsPage() {
               categories={categories}
               onTierChange={handleTierChange}
               onCategoryChange={handleCategoryChange}
+              onDailyLifePreset={handleDailyLifePreset}
               playlistSize={playlist.length}
             />
 
