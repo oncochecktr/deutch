@@ -5,6 +5,7 @@ import {
   type VocabularyWord,
 } from "@german-coach/vocabulary";
 import { jsPDF } from "jspdf";
+import { ensureVocabPdfFonts, pdfFontFamily } from "@/lib/vocabPdfFont";
 
 export type VocabPdfPack = "a1" | "a2" | "all" | "mesleki";
 
@@ -22,6 +23,7 @@ const COL_W = (PAGE_W - MARGIN * 2 - GAP) / 2;
 const LEFT_X = MARGIN;
 const RIGHT_X = MARGIN + COL_W + GAP;
 const FOOTER_Y = PAGE_H - 10;
+const FONT = () => pdfFontFamily();
 
 export function packLabel(pack: VocabPdfPack): string {
   switch (pack) {
@@ -74,8 +76,13 @@ function ensureSpace(doc: jsPDF, y: number, need: number): number {
   return y;
 }
 
-export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions): jsPDF {
+export async function buildVocabPdf(
+  words: VocabularyWord[],
+  options: VocabPdfOptions
+): Promise<jsPDF> {
   const doc = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+  await ensureVocabPdfFonts(doc);
+
   const title = options.category
     ? `${packLabel(options.pack)} · ${options.category}`
     : `${packLabel(options.pack)} kelimeler`;
@@ -84,12 +91,12 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
   let lastCategory: string | null = null;
 
   const drawHeader = () => {
-    doc.setFont("helvetica", "bold");
+    doc.setFont(FONT(), "bold");
     doc.setFontSize(16);
     doc.setTextColor(30, 58, 95);
     doc.text(title, MARGIN, y);
     y += 7;
-    doc.setFont("helvetica", "normal");
+    doc.setFont(FONT(), "normal");
     doc.setFontSize(9);
     doc.setTextColor(100);
     doc.text("Sol: Almanca oku · Sağ: Türkçe anlam", LEFT_X, y);
@@ -108,7 +115,7 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
       lastCategory = w.category;
       const catBlock = 10;
       y = ensureSpace(doc, y, catBlock);
-      doc.setFont("helvetica", "bold");
+      doc.setFont(FONT(), "bold");
       doc.setFontSize(10);
       doc.setTextColor(90, 120, 90);
       doc.text(w.category, MARGIN, y);
@@ -121,10 +128,10 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
     const deEx = w.example_de;
     const trEx = w.example_tr;
 
-    doc.setFont("helvetica", "bold");
+    doc.setFont(FONT(), "bold");
     doc.setFontSize(13);
     const deHeadLines = doc.splitTextToSize(deHead, COL_W);
-    doc.setFont("helvetica", "normal");
+    doc.setFont(FONT(), "normal");
     doc.setFontSize(12);
     const trHeadLines = doc.splitTextToSize(trHead, COL_W);
 
@@ -143,10 +150,10 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
     const blockH = headRows * 5.5 + (options.includeExamples ? 2 + exRows * 4.2 : 0) + 5;
     y = ensureSpace(doc, y, blockH);
 
-    doc.setFont("helvetica", "bold");
+    doc.setFont(FONT(), "bold");
     doc.setFontSize(13);
     doc.text(deHeadLines, LEFT_X, y);
-    doc.setFont("helvetica", "normal");
+    doc.setFont(FONT(), "normal");
     doc.setFontSize(12);
     doc.text(trHeadLines, RIGHT_X, y);
     y += headRows * 5.5;
@@ -171,7 +178,7 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
   const totalPages = doc.getNumberOfPages();
   for (let p = 1; p <= totalPages; p++) {
     doc.setPage(p);
-    doc.setFont("helvetica", "normal");
+    doc.setFont(FONT(), "normal");
     doc.setFontSize(8);
     doc.setTextColor(140);
     doc.text(`German Coach · ${title}`, MARGIN, FOOTER_Y);
@@ -182,12 +189,15 @@ export function buildVocabPdf(words: VocabularyWord[], options: VocabPdfOptions)
   return doc;
 }
 
-export function downloadVocabPdf(words: VocabularyWord[], options: VocabPdfOptions): void {
-  const doc = buildVocabPdf(words, options);
+export async function downloadVocabPdf(
+  words: VocabularyWord[],
+  options: VocabPdfOptions
+): Promise<void> {
+  const doc = await buildVocabPdf(words, options);
   doc.save(pdfFileName(options));
 }
 
-/** Türkçe karakterler için HTML önizlemeden PDF (daha yavaş, daha doğru) */
+/** Yedek: HTML önizlemeden (font yüklenemezse) */
 export async function downloadVocabPdfFromHtml(
   element: HTMLElement,
   options: VocabPdfOptions

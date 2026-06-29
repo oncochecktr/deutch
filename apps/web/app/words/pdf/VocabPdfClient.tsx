@@ -73,13 +73,11 @@ export default function VocabPdfClient() {
     setDownloading(true);
     const opts = { pack, category, includeExamples };
     try {
-      if (exportRef.current && words.length <= 200) {
-        await downloadVocabPdfFromHtml(exportRef.current, opts);
-      } else {
-        downloadVocabPdf(words, opts);
-      }
+      await downloadVocabPdf(words, opts);
     } catch {
-      downloadVocabPdf(words, opts);
+      if (exportRef.current) {
+        await downloadVocabPdfFromHtml(exportRef.current, opts);
+      }
     } finally {
       setDownloading(false);
     }
@@ -181,7 +179,7 @@ export default function VocabPdfClient() {
           </div>
           <p className="text-[11px] text-sage-400">
             Dosya: {pdfFileName({ pack, category, includeExamples })}
-            {words.length > 200 && " · Büyük listelerde hızlı mod (Türkçe için Yazdır önerilir)"}
+            {downloading && words.length > 300 && " · Büyük liste, biraz sürebilir"}
           </p>
         </section>
       </div>
