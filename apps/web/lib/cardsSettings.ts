@@ -1,6 +1,7 @@
 "use client";
 
 import { A1_WORD_TIERS, type A1WordTierId } from "./wordTiers";
+import { DAILY_COACH } from "./dailyGoals";
 
 export const CARDS_SETTINGS_KEY = "german-coach-cards-settings";
 
@@ -35,7 +36,7 @@ export const DEFAULT_CARDS_LISTEN_SETTINGS: CardsListenSettings = {
   repeatCount: 2,
   playTranslation: true,
   playContext: true,
-  dailyGoal: 50,
+  dailyGoal: DAILY_COACH.newWords,
   filterTier: DAILY_LIFE_PRESET.filterTier,
   filterCategory: DAILY_LIFE_PRESET.filterCategory,
   filterIndices: {},

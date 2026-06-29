@@ -1,7 +1,7 @@
 "use client";
 
 import { Component, type ErrorInfo, type ReactNode } from "react";
-
+import { clearStoredProgress } from "@/lib/progress";
 interface Props {
   children: ReactNode;
 }
@@ -45,11 +45,7 @@ export class AppErrorBoundary extends Component<Props, State> {
                 type="button"
                 className="btn-secondary-lg w-full"
                 onClick={() => {
-                  try {
-                    localStorage.removeItem("german-coach-progress");
-                  } catch {
-                    /* ignore */
-                  }
+                  clearStoredProgress();
                   window.location.href = "/";
                 }}
               >

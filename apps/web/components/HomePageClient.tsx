@@ -13,6 +13,7 @@ import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
 import { LearningCoachBanner } from "@/components/LearningCoachBanner";
 import { LearningPathHub } from "@/components/LearningPathHub";
 import { SmartGuide } from "@/components/SmartGuide";
+import { SmartQueuePanel } from "@/components/SmartQueuePanel";
 import { StorageWarningBanner } from "@/components/StorageWarningBanner";
 import { NavIcon, type NavIconKey } from "@/components/icons";
 import { resolveRecommendedIntent, isEarlyLearner } from "@/lib/homeLearningPath";
@@ -31,7 +32,7 @@ const A1ControlPanel = dynamic(
 );
 
 export function HomePageClient() {
-  const { report, srs, a1, mesleki, progress } = useDashboardReport();
+  const { report, srs, smartQueue, a1, mesleki, progress } = useDashboardReport();
   const { coach } = useLearningCoach();
   const path = useMemo(() => computeLearningPath(progress, report), [progress, report]);
   const a1Studied = countStudiedA1Words(progress);
@@ -55,6 +56,7 @@ export function HomePageClient() {
         <HomeGameBanner />
         <LearningMethodGuide />
         {report.nextStep && <SmartGuide report={report} />}
+        {smartQueue.total > 0 && <SmartQueuePanel queue={smartQueue} />}
         <LearningCoachBanner coach={coach} />
         <HomePathPicker recommended={recommended} progress={progress} />
 

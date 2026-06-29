@@ -84,8 +84,7 @@ function bump(counts: Partial<Record<ErrorTag, number>>, tag: ErrorTag, n = 1) {
   counts[tag] = (counts[tag] ?? 0) + n;
 }
 
-/** Yanlış cevaplar ve düşük puanlardan zayıf konu önerisi üretir */
-export function analyzeWeakTopics(progress: UserProgress): WeakTopicSuggestion | null {
+function weakTopicCounts(progress: UserProgress): Partial<Record<ErrorTag, number>> {
   const counts: Partial<Record<ErrorTag, number>> = {};
 
   const hoerenWrong = Object.values(progress.goethe.hoeren).filter((v) => v === false).length;
@@ -117,20 +116,34 @@ export function analyzeWeakTopics(progress: UserProgress): WeakTopicSuggestion |
   const satzDone = progress.grundlagen.satzCompleted.length;
   if (satzDone < 10) bump(counts, "artikel", 2);
 
-  const entries = Object.entries(counts) as [ErrorTag, number][];
-  if (entries.length === 0) return null;
+  return counts;
+}
 
+function countsToSuggestions(counts: Partial<Record<ErrorTag, number>>): WeakTopicSuggestion[] {
+  const entries = Object.entries(counts) as [ErrorTag, number][];
   entries.sort((a, b) => b[1] - a[1]);
-  const [tag, count] = entries[0];
-  const route = TAG_ROUTES[tag];
-  return {
-    tag,
-    label: route.label,
-    href: route.href,
-    cta: route.cta,
-    count,
-    reason: `${route.label} alanında ${count} zayıf sinyal`,
-  };
+
+  return entries.map(([tag, count]) => {
+    const route = TAG_ROUTES[tag];
+    return {
+      tag,
+      label: route.label,
+      href: route.href,
+      cta: route.cta,
+      count,
+      reason: `${route.label} alanında ${count} zayıf sinyal`,
+    };
+  });
+}
+
+/** Tüm zayıf konular — öncelik sırasıyla (SmartQueue için) */
+export function collectWeakTopics(progress: UserProgress): WeakTopicSuggestion[] {
+  return countsToSuggestions(weakTopicCounts(progress));
+}
+
+/** En güçlü zayıf konu önerisi */
+export function analyzeWeakTopics(progress: UserProgress): WeakTopicSuggestion | null {
+  return collectWeakTopics(progress)[0] ?? null;
 }
 
 export function getTodayFocusSuggestion(progress: UserProgress): WeakTopicSuggestion | null {

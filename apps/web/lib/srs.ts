@@ -5,6 +5,11 @@
 
 export const SRS_INTERVALS = [1, 3, 7, 14, 30] as const;
 
+/** Oturum kuyruğunda yeni (hiç görülmemiş) kelime üst sınırı — gecikmiş tekrar öncelikli */
+export const SRS_QUEUE_MAX_NEW = 8;
+
+const DUE_SCORE_BASE = 1000;
+
 export interface SRSRecord {
   /** 0-based index into SRS_INTERVALS; >= length-1 with streak = mastered */
   step: number;
@@ -136,7 +141,7 @@ export function getSRSStats(
   return { due, newWords, mastered, learning, total: allWordIds.length };
 }
 
-/** Build prioritized review queue: overdue first, then due today, then new */
+/** Build prioritized review queue: overdue first, then due today, then new (capped) */
 export function buildReviewQueue(
   allWordIds: string[],
   srsRecords: Record<string, SRSRecord> | null | undefined,
@@ -144,22 +149,29 @@ export function buildReviewQueue(
   date = todayISO()
 ): string[] {
   const records = srsRecords ?? {};
-  const scored: { id: string; score: number }[] = [];
+  const due: { id: string; score: number }[] = [];
+  const fresh: string[] = [];
 
   for (const id of allWordIds) {
     const rec = records[id];
     if (!rec) {
-      scored.push({ id, score: 1000 });
+      fresh.push(id);
       continue;
     }
     if (isMastered(rec)) continue;
     if (!isDue(rec, date)) continue;
-    const overdue = daysUntilReview(rec, date);
-    scored.push({ id, score: overdue <= 0 ? -overdue + 500 : 100 });
+    const daysUntil = daysUntilReview(rec, date);
+    const lateness = Math.max(0, -daysUntil);
+    due.push({ id, score: DUE_SCORE_BASE + lateness });
   }
 
-  scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, limit).map((s) => s.id);
+  due.sort((a, b) => b.score - a.score);
+  const dueIds = due.map((d) => d.id);
+  const slotsAfterDue = Math.max(0, limit - dueIds.length);
+  const newCap = Math.min(SRS_QUEUE_MAX_NEW, slotsAfterDue);
+  const newIds = fresh.slice(0, newCap);
+
+  return [...dueIds, ...newIds].slice(0, limit);
 }
 
 export function getNextIntervalPreview(record: SRSRecord | undefined, correct: boolean): string {

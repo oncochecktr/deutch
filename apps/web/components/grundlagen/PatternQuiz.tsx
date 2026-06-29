@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { IconCheck, IconX } from "@/components/icons";
 import type { PatternExample, PatternAnchor } from "@/lib/grundlagen";
+import { advancePatternQuizScore } from "@/lib/patternQuizScore";
 
 interface PatternQuizProps {
   questions: PatternExample[];
@@ -21,19 +22,17 @@ export function PatternQuiz({ questions, anchor, onFinish }: PatternQuizProps) {
   const showResult = selected !== null;
   const isCorrect = selected === question.quiz.correct_index;
   const isLast = qIdx >= questions.length - 1;
+  const scoreSoFar = advancePatternQuizScore(correct, showResult && isCorrect);
 
   const handleAnswer = (idx: number) => {
     if (selected !== null) return;
     setSelected(idx);
-    if (idx === question.quiz.correct_index) {
-      setCorrect((c) => c + 1);
-    }
   };
 
   const handleNext = () => {
     if (selected === null) return;
     const thisCorrect = selected === question.quiz.correct_index;
-    const runningCorrect = correct + (thisCorrect ? 1 : 0);
+    const runningCorrect = advancePatternQuizScore(correct, thisCorrect);
     if (isLast) {
       onFinish(runningCorrect);
       return;
@@ -53,7 +52,7 @@ export function PatternQuiz({ questions, anchor, onFinish }: PatternQuizProps) {
       <div className="flex items-center justify-between">
         <p className="text-xs font-semibold uppercase text-goethe-blue">Mini quiz</p>
         <span className="text-xs text-sage-500">
-          {qIdx + 1} / {questions.length} · {correct} doğru
+          {qIdx + 1} / {questions.length} · {scoreSoFar} doğru
         </span>
       </div>
       <p className="text-base font-medium text-goethe-blue">{prompt}</p>

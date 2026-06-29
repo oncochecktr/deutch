@@ -3,12 +3,12 @@ import { getA1Vocabulary } from "@german-coach/vocabulary";
 import type { UserProgress } from "./progress";
 import { calcAccuracy, countStudiedA1Words } from "./progress";
 import { calcGoethePct } from "./goetheProgress";
-import { A1_TARGETS, DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
+import { A1_TARGETS, DAILY_COACH, DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
 import { getSRSStats, todayISO } from "./srs";
 import { getTaskMeta, taskFields } from "./dailyTaskLabels";
 import { getA1Core, getPatternTrainer, getConjugationMatrix, getPossessiveTrainer, getWordOrderTrainer, getArtikelTrainer, getDativTrainer, getNegationTrainer, getPrepositionsTrainer } from "./grundlagen";
 
-export { A1_TARGETS, DEFAULT_DAILY_GOALS, type DailyGoals };
+export { A1_TARGETS, DAILY_COACH, DEFAULT_DAILY_GOALS, type DailyGoals };
 
 export interface ModuleScores {
   words: number;
@@ -75,12 +75,12 @@ const GUIDE_COPY: Record<
 > = {
   srs: {
     cta: "Tekrar Motoruna Git",
-    instruction: "SRS = aralıklı tekrar. Kartları çevir → Biliyorum / Tekrar et. Hedef: 80 kelime.",
+    instruction: `SRS = aralıklı tekrar. Kartları çevir → Biliyorum / Tekrar et. Hedef: ${DAILY_COACH.srsReviews} kelime.`,
     estMinutes: 25,
   },
   new: {
     cta: "Kelime Kartlarına Git",
-    instruction: "Yeni A1 kelimeleri öğren. Kartı çevir, anlamı gör, Biliyorum de. Hedef: 40 kelime.",
+    instruction: `Yeni A1 kelimeleri öğren. Dikte veya tekrar ile pekiştir. Hedef: ${DAILY_COACH.newWords} kelime.`,
     estMinutes: 20,
   },
   hoeren: {
@@ -105,8 +105,8 @@ const GUIDE_COPY: Record<
   },
   listen: {
     cta: "Dinleme (MP3) Moduna Git",
-    instruction: "Kulaklık tak, Başlat'a bas. Yürürken A1 kelimeleri dinle. Hedef: ~30 dk.",
-    estMinutes: 30,
+    instruction: `Kulaklık tak, Başlat'a bas. Yürürken A1 kelimeleri dinle. Hedef: ~${DAILY_COACH.listenMinutes} dk.`,
+    estMinutes: DAILY_COACH.listenMinutes,
   },
   exam: {
     cta: "Deneme Sınavına Git",
@@ -571,8 +571,8 @@ export function computeA1Readiness(
       id: "listen",
       ...taskFields("listen"),
       href: "/listen",
-      done: ds.minutesStudied >= 30,
-      progress: `${ds.minutesStudied} dk`,
+      done: ds.minutesStudied >= goals.listenMinutes,
+      progress: `${ds.minutesStudied}/${goals.listenMinutes} dk`,
       priority: 4,
     },
   ].sort((a, b) => a.priority - b.priority);

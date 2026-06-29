@@ -1,4 +1,5 @@
 import type { NavIconKey } from "@/components/icons";
+import { DAILY_COACH } from "@/lib/dailyGoals";
 import type { LearningStageId } from "@/lib/learningPath";
 
 export interface LearningMethodStep {
@@ -101,23 +102,23 @@ export const HOME_INTENTS: HomeIntent[] = [
   },
 ];
 
-const SRS_REVIEW_THRESHOLD = 5;
+const SRS_REVIEW_THRESHOLD = DAILY_COACH.srsDueNudge;
 
 /** Öğrenme yolu + pedagoji + SRS kuyruğuna göre ana sayfa rozeti */
 export function resolveRecommendedIntent(input: RecommendIntentInput): RecommendedIntent {
   const { activeStageId, a1Studied, srsDue, primaryHref } = input;
 
   if (activeStageId === "words") {
-    if (a1Studied < 12) {
+    if (a1Studied < DAILY_COACH.beginnerWordsStudied) {
       return { id: "new", reason: "Önce birkaç kart aç" };
     }
     if (srsDue >= SRS_REVIEW_THRESHOLD) {
       return {
         id: "words",
-        reason: srsDue >= 10 ? `${srsDue} tekrar bekliyor` : "Tekrar zamanı",
+        reason: srsDue >= DAILY_COACH.srsDueHighlight ? `${srsDue} tekrar bekliyor` : "Tekrar zamanı",
       };
     }
-    if (a1Studied < 40) {
+    if (a1Studied < DAILY_COACH.newWords) {
       return { id: "new", reason: "Kelime havuzunu büyüt" };
     }
     return { id: "words", reason: "Ezberi pekiştir" };

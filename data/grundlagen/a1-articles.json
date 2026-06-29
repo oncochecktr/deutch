@@ -3,7 +3,7 @@
   "level": "A1",
   "title": "Artikel Trainer",
   "titleTr": "Artikel (der / die / das)",
-  "description": "der · die · das · ein/eine · çoğul — 5 set × drill",
+  "description": "der · die · das · Kasus · ein/eine · çoğul — 6 set × drill",
   "passThreshold": 6,
   "drillsPerSet": 10,
   "rules": [
@@ -859,10 +859,230 @@
       ]
     },
     {
+      "id": "kasus",
+      "title": "Kasus",
+      "title_tr": "Artikel halleri (Nom · Akk · Dat)",
+      "order": 4,
+      "examples": [
+        {
+          "id": "kasus-ex-0",
+          "de": "der Mann",
+          "tr": "adam (Nominativ — özne)",
+          "breakdown": [
+            { "de": "der", "tr": "Nominativ (eril)", "role": "article" },
+            { "de": "Mann", "tr": "adam", "role": "noun" }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-1",
+          "de": "den Mann",
+          "tr": "adamı (Akkusativ — nesne)",
+          "breakdown": [
+            { "de": "den", "tr": "Akkusativ (eril)", "role": "article" },
+            { "de": "Mann", "tr": "adam", "role": "noun" }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-2",
+          "de": "dem Mann",
+          "tr": "adama (Dativ — yönelme)",
+          "breakdown": [
+            { "de": "dem", "tr": "Dativ (eril)", "role": "article" },
+            { "de": "Mann", "tr": "adam", "role": "noun" }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-3",
+          "de": "der Frau",
+          "tr": "kadına (Dativ — die → der)",
+          "breakdown": [
+            { "de": "der", "tr": "Dativ (dişil)", "role": "article" },
+            { "de": "Frau", "tr": "kadın", "role": "noun" }
+          ],
+          "noun": "Frau",
+          "article": "die",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-4",
+          "de": "dem Kind",
+          "tr": "çocuğa (Dativ — das → dem)",
+          "breakdown": [
+            { "de": "dem", "tr": "Dativ (nötr)", "role": "article" },
+            { "de": "Kind", "tr": "çocuk", "role": "noun" }
+          ],
+          "noun": "Kind",
+          "article": "das",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-5",
+          "de": "einem Mann",
+          "tr": "bir adama (ein → einem)",
+          "breakdown": [
+            { "de": "einem", "tr": "belirsiz Dativ (eril)", "role": "article" },
+            { "de": "Mann", "tr": "adam", "role": "noun" }
+          ],
+          "noun": "Mann",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-6",
+          "de": "einer Frau",
+          "tr": "bir kadına (eine → einer)",
+          "breakdown": [
+            { "de": "einer", "tr": "belirsiz Dativ (dişil)", "role": "article" },
+            { "de": "Frau", "tr": "kadın", "role": "noun" }
+          ],
+          "noun": "Frau",
+          "article": "die",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-7",
+          "de": "im Haus",
+          "tr": "evde (in + dem = im)",
+          "breakdown": [
+            { "de": "im", "tr": "in + dem", "role": "article" },
+            { "de": "Haus", "tr": "ev", "role": "noun" }
+          ],
+          "noun": "Haus",
+          "article": "das",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-8",
+          "de": "zum Arzt",
+          "tr": "doktora (zu + dem = zum)",
+          "breakdown": [
+            { "de": "zum", "tr": "zu + dem", "role": "article" },
+            { "de": "Arzt", "tr": "doktor", "role": "noun" }
+          ],
+          "noun": "Arzt",
+          "article": "der",
+          "plural": null
+        },
+        {
+          "id": "kasus-ex-9",
+          "de": "zur Bank",
+          "tr": "bankaya (zu + der = zur)",
+          "breakdown": [
+            { "de": "zur", "tr": "zu + der", "role": "article" },
+            { "de": "Bank", "tr": "banka", "role": "noun" }
+          ],
+          "noun": "Bank",
+          "article": "die",
+          "plural": null
+        }
+      ],
+      "drills": [
+        {
+          "id": "drill-kasus-01",
+          "type": "sentence_gap",
+          "prompt_tr": "Nominativ — özne: Der ___ ist groß.",
+          "context_de": "Der ___ ist groß.",
+          "options": ["Mann", "dem Mann", "den Mann", "Mannes"],
+          "correct_index": 0,
+          "explanation_tr": "Özne → Nominativ: der Mann"
+        },
+        {
+          "id": "drill-kasus-02",
+          "type": "sentence_gap",
+          "prompt_tr": "Akkusativ — nesne: Ich sehe ___.",
+          "context_de": "Ich sehe ___.",
+          "options": ["den Mann", "der Mann", "dem Mann", "des Mann"],
+          "correct_index": 0,
+          "explanation_tr": "Nesne (eril) → Akkusativ: den Mann"
+        },
+        {
+          "id": "drill-kasus-03",
+          "type": "sentence_gap",
+          "prompt_tr": "Dativ: Ich helfe ___.",
+          "context_de": "Ich helfe ___.",
+          "options": ["dem Mann", "der Mann", "den Mann", "des Mann"],
+          "correct_index": 0,
+          "explanation_tr": "helfe + Dativ → dem Mann"
+        },
+        {
+          "id": "drill-kasus-04",
+          "type": "sentence_gap",
+          "prompt_tr": "Dativ (dişil): Ich helfe ___.",
+          "context_de": "Ich helfe ___.",
+          "options": ["der Frau", "die Frau", "den Frau", "dem Frau"],
+          "correct_index": 0,
+          "explanation_tr": "die → Dativ: der Frau"
+        },
+        {
+          "id": "drill-kasus-05",
+          "type": "sentence_gap",
+          "prompt_tr": "Dativ (nötr): Ich gebe ___ ein Buch.",
+          "context_de": "Ich gebe ___ ein Buch.",
+          "options": ["dem Kind", "das Kind", "den Kind", "der Kind"],
+          "correct_index": 0,
+          "explanation_tr": "das → Dativ: dem Kind"
+        },
+        {
+          "id": "drill-kasus-06",
+          "type": "sentence_gap",
+          "prompt_tr": "Belirsiz Dativ: Ich helfe ___.",
+          "context_de": "Ich helfe ___.",
+          "options": ["einem Mann", "ein Mann", "einen Mann", "einer Mann"],
+          "correct_index": 0,
+          "explanation_tr": "ein → Dativ: einem Mann"
+        },
+        {
+          "id": "drill-kasus-07",
+          "type": "sentence_gap",
+          "prompt_tr": "Belirsiz Dativ (dişil): Ich danke ___.",
+          "context_de": "Ich danke ___.",
+          "options": ["einer Frau", "eine Frau", "einen Frau", "einem Frau"],
+          "correct_index": 0,
+          "explanation_tr": "eine → Dativ: einer Frau"
+        },
+        {
+          "id": "drill-kasus-08",
+          "type": "sentence_gap",
+          "prompt_tr": "Birleşme: Wir sind ___.",
+          "context_de": "Wir sind ___.",
+          "options": ["im Haus", "in dem Haus", "in das Haus", "am Haus"],
+          "correct_index": 0,
+          "explanation_tr": "in + dem = im Haus"
+        },
+        {
+          "id": "drill-kasus-09",
+          "type": "sentence_gap",
+          "prompt_tr": "Birleşme: Er fährt ___.",
+          "context_de": "Er fährt ___.",
+          "options": ["zum Arzt", "zu dem Arzt", "den Arzt", "am Arzt"],
+          "correct_index": 0,
+          "explanation_tr": "zu + dem = zum Arzt"
+        },
+        {
+          "id": "drill-kasus-10",
+          "type": "sentence_gap",
+          "prompt_tr": "Birleşme: Sie geht ___.",
+          "context_de": "Sie geht ___.",
+          "options": ["zur Bank", "zu der Bank", "die Bank", "am Bank"],
+          "correct_index": 0,
+          "explanation_tr": "zu + der = zur Bank"
+        }
+      ]
+    },
+    {
       "id": "ein",
       "title": "ein / eine",
       "title_tr": "Belirsiz artikel",
-      "order": 4,
+      "order": 5,
       "examples": [
         {
           "id": "ein-ex-0",
@@ -1144,7 +1364,7 @@
       "id": "plural",
       "title": "Plural",
       "title_tr": "Çoğul tanıma",
-      "order": 5,
+      "order": 6,
       "examples": [
         {
           "id": "pl-ex-0",

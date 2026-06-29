@@ -8,7 +8,7 @@ import { A1ControlPanel } from "@/components/A1ControlPanel";
 import { AudioButton } from "@/components/AudioButton";
 import { formatWord } from "@/lib/audio";
 import { useProgress } from "@/lib/ProgressContext";
-import { recordSRSReview } from "@/lib/progress";
+import { recordWordRecall } from "@/lib/learningEngine";
 import { WordCard } from "@/components/WordCard";
 
 const MODULE_GROUPS = [
@@ -84,12 +84,12 @@ export default function MeslekiPage() {
               onFlip={() => setFlipped((f) => !f)}
               showActions={flipped}
               onKnow={() => {
-                updateProgress(recordSRSReview(progress, word.id, true));
+                updateProgress(recordWordRecall(progress, word.id, true, "srs"));
                 setCardIndex((i) => (i + 1) % words.length);
                 setFlipped(false);
               }}
               onDontKnow={() => {
-                updateProgress(recordSRSReview(progress, word.id, false));
+                updateProgress(recordWordRecall(progress, word.id, false, "srs"));
                 setFlipped(false);
               }}
             />

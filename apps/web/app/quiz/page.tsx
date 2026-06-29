@@ -5,7 +5,7 @@ import { getA1Vocabulary, getDistractors } from "@german-coach/vocabulary";
 import { IconCheck, IconX } from "@/components/icons";
 import { AudioButton } from "@/components/AudioButton";
 import { formatWord } from "@/lib/audio";
-import { recordAnswer } from "@/lib/progress";
+import { recordWordRecall } from "@/lib/learningEngine";
 import { useProgress } from "@/lib/ProgressContext";
 
 type QuizPhase = "question" | "result" | "finished";
@@ -37,7 +37,7 @@ export default function QuizPage() {
       setPhase("result");
       setSessionCorrect((c) => c + (isCorrect ? 1 : 0));
       setSessionWrong((w) => w + (isCorrect ? 0 : 1));
-      updateProgress((p) => recordAnswer(p, currentWord.id, isCorrect));
+      updateProgress((p) => recordWordRecall(p, currentWord.id, isCorrect, "quiz"));
     },
     [phase, currentWord.id, updateProgress]
   );

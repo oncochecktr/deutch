@@ -235,10 +235,7 @@ export function A1ControlPanel() {
                   }`
                 : "Kayıt uyarısı: gizli mod veya depolama dolu."}
             </p>
-            <ResetSRSButton
-              label="İstatistiği sıfırla"
-              className="w-full rounded-xl border border-sage-200 py-2 text-sm font-semibold text-sage-600 hover:bg-sage-50"
-            />
+            <ResetSRSButton className="w-full rounded-xl border border-sage-200 py-2 text-sm font-semibold text-sage-600 hover:bg-sage-50" />
           </div>
         </PanelSection>
       </div>

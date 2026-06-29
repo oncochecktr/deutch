@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { getA1Vocabulary, getTimurVocabulary } from "@german-coach/vocabulary";
 import { useProgress } from "@/lib/ProgressContext";
 import { computeA1Readiness } from "@/lib/readinessEngine";
+import { buildDailySmartQueue } from "@/lib/smartQueue";
 import { getSRSStats } from "@/lib/srs";
 
 export function useDashboardReport() {
@@ -25,5 +26,10 @@ export function useDashboardReport() {
     [allIds, progress.srsRecords]
   );
 
-  return { progress, report, srs, a1, mesleki, allIds, hydrated };
+  const smartQueue = useMemo(
+    () => buildDailySmartQueue(progress, allIds),
+    [progress, allIds]
+  );
+
+  return { progress, report, srs, smartQueue, a1, mesleki, allIds, hydrated };
 }

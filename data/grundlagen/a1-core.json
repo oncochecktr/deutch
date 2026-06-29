@@ -1085,6 +1085,18 @@
           "tr": "Ich sehe den Mann."
         },
         {
+          "de": "der → dem (Dativ)",
+          "tr": "Ich helfe dem Mann."
+        },
+        {
+          "de": "die → der (Dativ)",
+          "tr": "Ich helfe der Frau."
+        },
+        {
+          "de": "das → dem (Dativ)",
+          "tr": "Ich gebe dem Kind ein Buch."
+        },
+        {
           "de": "die → die",
           "tr": "Ich lese die Zeitung."
         },
@@ -1269,6 +1281,22 @@
         {
           "de": "mit + Dativ",
           "tr": "ile (mit dem Bus)"
+        },
+        {
+          "de": "der Mann → dem Mann",
+          "tr": "Dativ: isim aynı, artikel değişir"
+        },
+        {
+          "de": "die Frau → der Frau",
+          "tr": "Dativ: die → der"
+        },
+        {
+          "de": "in + dem = im",
+          "tr": "im Haus (evde)"
+        },
+        {
+          "de": "zu + dem = zum",
+          "tr": "zum Arzt (doktora)"
         },
         {
           "de": "bei + Dativ",
@@ -3463,6 +3491,22 @@
             {
               "de": "das Kind",
               "tr": "nötr isim"
+            },
+            {
+              "de": "der → dem (Dativ)",
+              "tr": "der Mann → dem Mann"
+            },
+            {
+              "de": "die → der (Dativ)",
+              "tr": "die Frau → der Frau"
+            },
+            {
+              "de": "in + dem = im",
+              "tr": "im Haus"
+            },
+            {
+              "de": "zu + dem = zum",
+              "tr": "zum Arzt"
             },
             {
               "de": "die Kinder",

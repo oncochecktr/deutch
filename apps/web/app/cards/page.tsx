@@ -25,7 +25,8 @@ import {
   cardsCoachMessage,
   shouldShowCardsCoachBanner,
 } from "@/lib/learningCoach";
-import { countStudiedAmong, recordAnswer } from "@/lib/progress";
+import { countStudiedAmong } from "@/lib/progress";
+import { recordWordExposure, recordWordRecall } from "@/lib/learningEngine";
 import { useProgress } from "@/lib/ProgressContext";
 import { useLearningCoach } from "@/lib/useLearningCoach";
 import type { A1WordTierId } from "@/lib/wordTiers";
@@ -189,14 +190,17 @@ export default function CardsPage() {
     setNudgeTrigger((n) => n + 1);
   }, []);
 
-  const continueLive = useCallback(() => {
+  const advanceLive = useCallback(() => {
     if (!isLive || playlist.length === 0) return;
     const nextIdx = (safeIndex + 1) % playlist.length;
     const nextWord = playlist[nextIdx]!;
-    updateProgress((p) => ({
-      ...recordAnswer(p, liveWord.id, true),
-      cardIndex: vocab.words.findIndex((w) => w.id === nextWord.id),
-    }));
+    updateProgress((p) => {
+      const withExposure = recordWordExposure(p, liveWord.id);
+      return {
+        ...withExposure,
+        cardIndex: vocab.words.findIndex((w) => w.id === nextWord.id),
+      };
+    });
     setFilterIndex(nextIdx);
     appendTrail(nextWord.id);
   }, [
@@ -209,6 +213,12 @@ export default function CardsPage() {
     appendTrail,
     setFilterIndex,
   ]);
+
+  const handleDictationCorrect = useCallback(() => {
+    if (!isLive || playlist.length === 0) return;
+    updateProgress((p) => recordWordRecall(p, liveWord.id, true, "dictation"));
+    advanceLive();
+  }, [isLive, playlist.length, liveWord.id, updateProgress, advanceLive]);
 
   const goPrevious = useCallback(() => {
     if (trailCursor > 0) {
@@ -230,9 +240,9 @@ export default function CardsPage() {
       return;
     }
     if (isLive) {
-      continueLive();
+      advanceLive();
     }
-  }, [trailCursor, livePos, isLive, continueLive]);
+  }, [trailCursor, livePos, isLive, advanceLive]);
 
   const progressPct = useMemo(
     () =>
@@ -332,7 +342,7 @@ export default function CardsPage() {
                 onFlip={() => setFlipped((f) => !f)}
                 readOnly={!isLive && flipped}
                 showHearAndWrite={isLive}
-                onDictationCorrect={isLive ? continueLive : undefined}
+                onDictationCorrect={isLive ? handleDictationCorrect : undefined}
                 listenSettings={listenSettings}
                 hideFlipHint
               />

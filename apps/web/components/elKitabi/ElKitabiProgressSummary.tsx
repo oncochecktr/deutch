@@ -17,7 +17,7 @@ export function ElKitabiProgressSummary() {
       <p className="text-sage-700">
         <span className="font-semibold text-goethe-blue">{stats.read}</span>/{stats.total} okundu
         <span className="mx-2 text-sage-300">·</span>
-        <span className="font-semibold text-goethe-blue">{stats.tested}</span> test
+        <span className="font-semibold text-goethe-blue">{stats.tested}</span> test geçti
         <span className="mx-2 text-sage-300">·</span>
         <span className="font-semibold text-goethe-blue">{stats.moduleVisited}</span> modül
       </p>

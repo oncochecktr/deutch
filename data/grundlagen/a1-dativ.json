@@ -13,15 +13,19 @@
     },
     {
       "article": "bei",
-      "tr": "bei + Dativ (yanında)"
+      "tr": "bei + Dativ — bei + dem = beim"
     },
     {
       "article": "in",
-      "tr": "in der / in dem (içinde)"
+      "tr": "in + Dativ — in + dem = im"
     },
     {
       "article": "zu",
-      "tr": "zu/zur/zum, nach Hause"
+      "tr": "zu/zur/zum (zu + dem = zum, zu + der = zur)"
+    },
+    {
+      "article": "an",
+      "tr": "an + dem = am (am Montag)"
     }
   ],
   "sets": [

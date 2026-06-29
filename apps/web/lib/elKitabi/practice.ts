@@ -82,6 +82,26 @@ export function elKitabiModuleHref(moduleHref: string, subsectionId: string): st
 
 export const EL_KITABI_PRACTICE_IDS = Object.keys(EL_KITABI_PRACTICE);
 
+/** Mini test geçme eşiği — doğru / toplam (ör. 2 soruda en az 2, 1/2 yeterli değil) */
+export const EL_KITABI_QUIZ_PASS_RATIO = 0.8;
+
+export function elKitabiQuizPassThreshold(total: number): number {
+  if (total <= 0) return 0;
+  return Math.max(1, Math.ceil(total * EL_KITABI_QUIZ_PASS_RATIO));
+}
+
+export function elKitabiQuizPassed(correct: number, total: number): boolean {
+  if (total <= 0) return false;
+  return correct >= elKitabiQuizPassThreshold(total);
+}
+
+export function elKitabiSubsectionQuizPassed(
+  sub: { quizBest?: number; quizTotal?: number } | undefined
+): boolean {
+  if (!sub?.quizTotal || sub.quizBest === undefined) return false;
+  return elKitabiQuizPassed(sub.quizBest, sub.quizTotal);
+}
+
 export function getSubsectionTitle(subsectionId: string): string | undefined {
   const practice = EL_KITABI_PRACTICE[subsectionId];
   if (!practice) return undefined;
@@ -100,7 +120,7 @@ export function getSubsectionTitle(subsectionId: string): string | undefined {
 }
 
 export function summarizeElKitabiProgress(
-  subsections: Record<string, { read?: boolean; quizBest?: number; moduleVisited?: boolean }>
+  subsections: Record<string, { read?: boolean; quizBest?: number; quizTotal?: number; moduleVisited?: boolean }>
 ): { total: number; read: number; tested: number; moduleVisited: number } {
   const ids = EL_KITABI_PRACTICE_IDS;
   let read = 0;
@@ -110,7 +130,7 @@ export function summarizeElKitabiProgress(
     const s = subsections[id];
     if (!s) continue;
     if (s.read) read += 1;
-    if (s.quizBest !== undefined && s.quizBest > 0) tested += 1;
+    if (elKitabiSubsectionQuizPassed(s)) tested += 1;
     if (s.moduleVisited) moduleVisited += 1;
   }
   return { total: ids.length, read, tested, moduleVisited };

@@ -3,18 +3,18 @@
 import { useEffect, useState } from "react";
 import type { TocEntry } from "@/lib/elKitabi/types";
 import { scrollElKitabiToHash } from "@/components/elKitabi/ElKitabiHashSync";
-import { EL_KITABI_PRACTICE_IDS } from "@/lib/elKitabi/practice";
+import { EL_KITABI_PRACTICE_IDS, elKitabiSubsectionQuizPassed } from "@/lib/elKitabi/practice";
 import { useProgress } from "@/lib/ProgressContext";
 
 function subsectionStatus(
   id: string,
-  subsections: Record<string, { read?: boolean; quizBest?: number; moduleVisited?: boolean }>
+  subsections: Record<string, { read?: boolean; quizBest?: number; quizTotal?: number; moduleVisited?: boolean }>
 ): string | null {
   if (!EL_KITABI_PRACTICE_IDS.includes(id)) return null;
   const s = subsections[id];
   if (!s) return null;
   if (s.moduleVisited) return "M";
-  if (s.quizBest !== undefined && s.quizBest > 0) return "T";
+  if (elKitabiSubsectionQuizPassed(s)) return "T";
   if (s.read) return "O";
   return null;
 }
@@ -50,7 +50,7 @@ export function ElKitabiToc({ entries }: { entries: TocEntry[] }) {
       <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-sage-400">
         Icindekiler
       </p>
-      <p className="mb-2 text-[10px] text-sage-400">O = okundu · T = test · M = modül</p>
+      <p className="mb-2 text-[10px] text-sage-400">O = okundu · T = test geçildi · M = modül</p>
       <ul className="space-y-1 text-sm">
         {entries.map((entry) => (
           <li key={entry.id}>
@@ -91,7 +91,7 @@ export function ElKitabiToc({ entries }: { entries: TocEntry[] }) {
                               status === "M"
                                 ? "Modül ziyaret edildi"
                                 : status === "T"
-                                  ? "Test yapıldı"
+                                  ? "Test geçildi (%80+)"
                                   : "Okundu"
                             }
                           >

@@ -25,7 +25,7 @@ import {
   PROFESSOR_UNAVAILABLE,
   sanitizeProfessorErrorForUser,
 } from "@/lib/professorMessages";
-import { recordSRSReview } from "@/lib/progress";
+import { recordWordRecall } from "@/lib/learningEngine";
 import { useProgress } from "@/lib/ProgressContext";
 import type { ChatHistoryItem, ChatResponse, SpeakInputLanguage, BoardPhase, TeachingExample } from "@/lib/speakTypes";
 import { formatWrittenAnswer, isWrittenAnswerMessage } from "@/lib/speakTypes";
@@ -599,7 +599,7 @@ export default function SpeakPage() {
         if (chatData.correction) {
           const wordId = mapSpeechCorrectionToWordId(chatData.correction, trimmed);
           if (wordId) {
-            updateProgress((p) => recordSRSReview(p, wordId, false));
+            updateProgress((p) => recordWordRecall(p, wordId, false, "speak"));
           }
         }
 

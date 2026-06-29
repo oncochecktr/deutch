@@ -6,12 +6,12 @@ import { useState } from "react";
 import { IconCheck, IconX } from "@/components/icons";
 import { scrollElKitabiToHash } from "@/components/elKitabi/ElKitabiHashSync";
 import type { ElKitabiPractice } from "@/lib/elKitabi/types";
-import { elKitabiModuleHref } from "@/lib/elKitabi/practice";
+import { elKitabiModuleHref, elKitabiQuizPassed, elKitabiQuizPassThreshold } from "@/lib/elKitabi/practice";
 import {
-  recordElKitabiModuleVisit,
-  recordElKitabiQuiz,
-  recordElKitabiRead,
-} from "@/lib/progress";
+  recordElKitabiModuleLinkVisit,
+  recordElKitabiSectionQuiz,
+  recordElKitabiSectionRead,
+} from "@/lib/learningEngine";
 import { useProgress } from "@/lib/ProgressContext";
 
 type Mode = "choose" | "quiz" | "done";
@@ -45,11 +45,11 @@ export function ElKitabiPracticeBridge({
   const moduleUrl = elKitabiModuleHref(practice.moduleHref, subsectionId);
 
   const handleMarkRead = () => {
-    updateProgress(recordElKitabiRead(progress, subsectionId));
+    updateProgress(recordElKitabiSectionRead(progress, subsectionId));
   };
 
   const handleGoModule = () => {
-    updateProgress(recordElKitabiModuleVisit(progress, subsectionId));
+    updateProgress(recordElKitabiModuleLinkVisit(progress, subsectionId));
     router.push(moduleUrl);
   };
 
@@ -71,7 +71,7 @@ export function ElKitabiPracticeBridge({
   };
 
   const finishQuiz = (correct: number) => {
-    updateProgress(recordElKitabiQuiz(progress, subsectionId, correct, quizTotal));
+    updateProgress(recordElKitabiSectionQuiz(progress, subsectionId, correct, quizTotal));
     setFinalScore(correct);
     setMode("done");
   };
@@ -104,13 +104,19 @@ export function ElKitabiPracticeBridge({
   if (saved?.moduleVisited) statusBits.push("Modül");
 
   if (mode === "done") {
-    const weak = finalScore < quizTotal;
+    const weak = !elKitabiQuizPassed(finalScore, quizTotal);
+    const passAt = elKitabiQuizPassThreshold(quizTotal);
     const tip = weak ? practice.weakTip : practice.strongTip;
     return (
       <div className="mt-4 rounded-xl border border-sage-200 bg-sage-50/80 p-4">
         <p className="text-sm font-semibold text-goethe-blue">Mini test tamamlandı</p>
         <p className="mt-1 text-2xl font-bold tabular-nums text-goethe-blue">
           {finalScore} / {quizTotal}
+        </p>
+        <p className="mt-1 text-xs text-sage-500">
+          {weak
+            ? `Geçmek için en az ${passAt}/${quizTotal} gerekli — modül önerilir.`
+            : "Eşik geçildi — iyi gidiyorsun."}
         </p>
         {tip && <p className="mt-2 text-sm text-sage-700">{tip}</p>}
         <div className="mt-3 flex flex-wrap gap-2">

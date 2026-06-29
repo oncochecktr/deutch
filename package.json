@@ -36,7 +36,8 @@
     "build:grundlagen": "npm run build:word-order && npm run build:possessives && npm run build:articles && npm run build:dativ && npm run build:negation && npm run build:prepositions && npm run build:conjugation && npm run patch:grammar && npm run patch:word-order && npm run patch:satz-questions",
     "brand": "node scripts/build-brand-assets.mjs",
     "extract:el-kitabi": "node scripts/extract-el-kitabi.mjs",
-    "audit:el-kitabi": "node scripts/audit-el-kitabi-links.mjs"
+    "audit:el-kitabi": "node scripts/audit-el-kitabi-links.mjs",
+    "test": "npm run test --workspace=apps/web"
   },
   "devDependencies": {
     "msedge-tts": "^2.0.5",

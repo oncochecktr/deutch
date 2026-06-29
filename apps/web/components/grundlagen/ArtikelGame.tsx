@@ -16,7 +16,7 @@ import {
   pickArtikelSession,
 } from "@/lib/artikelGame";
 import { formatWord } from "@/lib/audio";
-import { recordAnswer } from "@/lib/progress";
+import { recordWordRecall } from "@/lib/learningEngine";
 import { pickSessionReward } from "@/lib/trainerRewards";
 import { splitMeanings } from "@/lib/vocabMeta";
 import { useProgress } from "@/lib/ProgressContext";
@@ -109,7 +109,7 @@ export function ArtikelGame() {
       if (!word || showResult) return;
       setSelected(article);
       const ok = article === word.article;
-      updateProgress((p) => recordAnswer(p, word.id, ok));
+      updateProgress((p) => recordWordRecall(p, word.id, ok, "artikel"));
       if (ok) {
         const s = recordCorrect();
         const reward = pickSessionReward(s, true);

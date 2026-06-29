@@ -1,12 +1,9 @@
 import { LEARNING_METHOD_STEPS } from "@/lib/homeLearningPath";
 import type { CoachMilestones } from "@/lib/coachMilestones";
+import { DAILY_COACH } from "@/lib/dailyGoals";
 import { countStudiedA1Words, type UserProgress } from "@/lib/progress";
 
 export type MethodStepId = "cards" | "diktat" | "speak" | "grammar";
-
-const CARDS_TARGET = 12;
-const KONUS_TARGET = 3;
-const GRAMMAR_TARGET = 1;
 
 const STEP_IDS: MethodStepId[] = ["cards", "diktat", "speak", "grammar"];
 
@@ -19,7 +16,7 @@ const STEP_META: Record<
     body: "Kalıp cümleler — liste değil.",
     href: "/cards",
     cta: "Kartlara git",
-    completeHint: "12 kelime kartı yeterli — harika başlangıç!",
+    completeHint: `${DAILY_COACH.beginnerWordsStudied} kelime kartı yeterli — harika başlangıç!`,
   },
   diktat: {
     title: "Dikte yaz",
@@ -75,11 +72,12 @@ function stepProgress(
 
   switch (id) {
     case "cards": {
-      const pct = Math.min(100, Math.round((studied / CARDS_TARGET) * 100));
+      const target = DAILY_COACH.beginnerWordsStudied;
+      const pct = Math.min(100, Math.round((studied / target) * 100));
       return {
         pct,
-        label: `${studied}/${CARDS_TARGET} kelime`,
-        done: studied >= CARDS_TARGET,
+        label: `${studied}/${target} kelime`,
+        done: studied >= target,
       };
     }
     case "diktat": {
@@ -88,7 +86,7 @@ function stepProgress(
         progress.lastRoute === "/diktat" ||
         typeof progress.scrollPositions["/diktat"] === "number";
       return {
-        pct: visited ? 100 : studied >= CARDS_TARGET ? 40 : 0,
+        pct: visited ? 100 : studied >= DAILY_COACH.beginnerWordsStudied ? 40 : 0,
         label: visited ? "Denendi" : "Henüz denemedin",
         done: visited,
       };
@@ -96,22 +94,24 @@ function stepProgress(
     case "speak": {
       const turns = ds.konusDinleTurns ?? 0;
       const visited = milestones.konusDinleVisited || turns > 0;
-      const pct = Math.min(100, Math.round((turns / KONUS_TARGET) * 100));
+      const target = DAILY_COACH.konusDinleTurns;
+      const pct = Math.min(100, Math.round((turns / target) * 100));
       return {
         pct: visited ? pct : 0,
-        label: `${turns}/${KONUS_TARGET} tur`,
-        done: turns >= KONUS_TARGET,
+        label: `${turns}/${target} tur`,
+        done: turns >= target,
       };
     }
     case "grammar": {
       const doneCount =
         progress.grundlagen.satzCompleted.length +
         progress.grundlagen.patternsCompleted.length;
-      const pct = Math.min(100, Math.round((doneCount / GRAMMAR_TARGET) * 100));
+      const target = DAILY_COACH.grammarExercises;
+      const pct = Math.min(100, Math.round((doneCount / target) * 100));
       return {
         pct,
-        label: `${doneCount}/${GRAMMAR_TARGET} alıştırma`,
-        done: doneCount >= GRAMMAR_TARGET,
+        label: `${doneCount}/${target} alıştırma`,
+        done: doneCount >= target,
       };
     }
   }
@@ -159,7 +159,7 @@ export function computeLearningCoach(
 
   if (activeStep.id === "cards") {
     headline = "Önce kartlarla başla";
-    advice = "5–12 kelime aç; cümle örneklerini sesle dinle.";
+    advice = `${DAILY_COACH.cardsSessionNudge}–${DAILY_COACH.beginnerWordsStudied} kelime aç; cümle örneklerini sesle dinle.`;
   } else if (activeStep.id === "diktat") {
     headline = "Sırada diktat var";
     advice = "Öğrendiğin kelimeleri dinle-yaz-kontrol et.";
@@ -180,7 +180,7 @@ export function computeLearningCoach(
     nextStep,
     headline,
     advice,
-    cardsSessionGoal: 5,
+    cardsSessionGoal: DAILY_COACH.cardsSessionNudge,
   };
 }
 

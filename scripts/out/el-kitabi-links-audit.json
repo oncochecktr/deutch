@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-06-29T12:01:27.903Z",
+  "totalHrefs": 16,
+  "valid": 16,
+  "missing": [],
+  "hrefs": [
+    "/exam",
+    "/exam/schreiben/gercek",
+    "/exam/sprechen",
+    "/grundlagen/artikel",
+    "/grundlagen/conjugation",
+    "/grundlagen/dativ",
+    "/grundlagen/grammar-pack",
+    "/grundlagen/negation",
+    "/grundlagen/possessives",
+    "/grundlagen/prepositions",
+    "/grundlagen/word-order",
+    "/grundlagen/zahlen",
+    "/grundlagen/zeit",
+    "/harita",
+    "/konus-dinle",
+    "/words"
+  ],
+  "modulePractice": {
+    "total": 9,
+    "routesValid": 9,
+    "missingRoutes": [],
+    "missingReturnBanner": [],
+    "entries": [
+      {
+        "subsectionId": "ch01-3",
+        "moduleHref": "/grundlagen/zahlen",
+        "returnUrl": "/grundlagen/zahlen?from=el-kitabi&section=ch01-3",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch02-2",
+        "moduleHref": "/grundlagen/conjugation",
+        "returnUrl": "/grundlagen/conjugation?from=el-kitabi&section=ch02-2",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch02-4",
+        "moduleHref": "/grundlagen/word-order",
+        "returnUrl": "/grundlagen/word-order?from=el-kitabi&section=ch02-4",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch02-5",
+        "moduleHref": "/grundlagen/negation",
+        "returnUrl": "/grundlagen/negation?from=el-kitabi&section=ch02-5",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch03-1",
+        "moduleHref": "/grundlagen/artikel",
+        "returnUrl": "/grundlagen/artikel?from=el-kitabi&section=ch03-1",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch03-2",
+        "moduleHref": "/grundlagen/artikel",
+        "returnUrl": "/grundlagen/artikel?from=el-kitabi&section=ch03-2",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch04-1",
+        "moduleHref": "/grundlagen/dativ",
+        "returnUrl": "/grundlagen/dativ?from=el-kitabi&section=ch04-1",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch06-1",
+        "moduleHref": "/grundlagen/prepositions",
+        "returnUrl": "/grundlagen/prepositions?from=el-kitabi&section=ch06-1",
+        "routeValid": true
+      },
+      {
+        "subsectionId": "ch06-2",
+        "moduleHref": "/grundlagen/prepositions",
+        "returnUrl": "/grundlagen/prepositions?from=el-kitabi&section=ch06-2",
+        "routeValid": true
+      }
+    ]
+  },
+  "grundlagenReturnBanner": {
+    "total": 10,
+    "withBanner": 8,
+    "missing": [
+      "/grundlagen/grammar-pack",
+      "/grundlagen/zeit"
+    ],
+    "optionalWarnings": true
+  }
+}

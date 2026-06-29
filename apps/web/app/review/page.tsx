@@ -8,7 +8,9 @@ import { SessionTrail } from "@/components/SessionTrail";
 import { StudyMotivation } from "@/components/StudyMotivation";
 import { WordCard } from "@/components/WordCard";
 import { IconArrowLeft, IconArrowRight } from "@/components/icons";
-import { recordSRSReview, resetStudyProfile, type UserProgress } from "@/lib/progress";
+import { resetStudyProfile, type UserProgress } from "@/lib/progress";
+import { recordWordRecall } from "@/lib/learningEngine";
+import { clearAllStudyStorage } from "@/lib/studyReset";
 import { useProgress } from "@/lib/ProgressContext";
 import { buildReviewQueue, getIntervalLabel, getSRSStats } from "@/lib/srs";
 
@@ -137,26 +139,31 @@ export default function ReviewPage() {
     [allIds, updateProgress, appendSessionWord]
   );
 
-  const continueLive = useCallback(() => {
-    if (!liveWordId || !isLive) return;
-    const active = getWordById(liveWordId);
-    if (!active) return;
-    const updated = recordSRSReview(progress, active.id, true);
-    advanceQueue(index + 1, queue, updated);
-  }, [liveWordId, isLive, progress, advanceQueue, index, queue]);
+  const gradeLive = useCallback(
+    (isCorrect: boolean) => {
+      if (!liveWordId || !isLive) return;
+      const active = getWordById(liveWordId);
+      if (!active) return;
+      if (isCorrect) {
+        const updated = recordWordRecall(progress, active.id, true, "srs");
+        advanceQueue(index + 1, queue, updated);
+      } else {
+        updateProgress((p) => recordWordRecall(p, active.id, false, "srs"));
+        setFlipped(false);
+      }
+    },
+    [liveWordId, isLive, progress, advanceQueue, index, queue, updateProgress]
+  );
 
   const goNext = useCallback(() => {
     if (viewPos < livePos) {
       setViewPos((p) => p + 1);
       setFlipped(false);
-      return;
     }
-    if (isLive) {
-      continueLive();
-    }
-  }, [viewPos, livePos, isLive, continueLive]);
+  }, [viewPos, livePos]);
 
   const resetIndicators = useCallback(() => {
+    clearAllStudyStorage();
     const fresh = buildReviewQueue(allIds, {}, 30);
     const first = fresh[0] ? [fresh[0]] : [];
     updateProgress({
@@ -190,8 +197,7 @@ export default function ReviewPage() {
 
   const canGoPrev = viewPos > 0;
   const canGoNextHistory = viewPos < livePos;
-  const canContinueLive = isLive;
-  const canGoNext = canGoNextHistory || canContinueLive;
+  const canGoNext = canGoNextHistory;
 
   if (!hydrated) {
     return (
@@ -264,7 +270,8 @@ export default function ReviewPage() {
 
         {!flipped && isLive && (
           <p className="text-center text-sm text-sage-500">
-            Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
+            Kartı çevir · <strong className="text-sage-500">Biliyorum</strong> veya{" "}
+            <strong className="text-sage-500">Tekrar et</strong>
           </p>
         )}
 
@@ -275,7 +282,13 @@ export default function ReviewPage() {
           onFlip={() => setFlipped((f) => !f)}
           readOnly={!isLive && flipped}
           showHearAndWrite={isLive}
-          onDictationCorrect={isLive ? continueLive : undefined}
+          showActions={isLive && flipped}
+          showActionHints={isLive}
+          dontKnowLabel="Tekrar et"
+          onKnow={() => gradeLive(true)}
+          onDontKnow={() => gradeLive(false)}
+          onDictationCorrect={isLive ? () => gradeLive(true) : undefined}
+          hideFlipHint={isLive}
         />
 
         <div className="flex flex-col gap-3 sm:flex-row">
@@ -290,20 +303,12 @@ export default function ReviewPage() {
           </button>
           <button
             type="button"
-            className={`flex flex-1 items-center justify-center gap-2 ${
-              canContinueLive ? "btn-primary-lg" : "btn-secondary-lg"
-            }`}
+            className="btn-secondary-lg flex flex-1 items-center justify-center gap-2"
             onClick={goNext}
             disabled={!canGoNext}
-            title={
-              canContinueLive
-                ? "Sonraki kelimeye geç (kartı çevirmene gerek yok)"
-                : canGoNextHistory
-                  ? "Hafızada ileri git"
-                  : undefined
-            }
+            title={canGoNextHistory ? "Hafızada ileri git" : undefined}
           >
-            {canContinueLive ? "Sonraki kelime" : "İleri"}
+            İleri
             <IconArrowRight size={18} />
           </button>
         </div>
@@ -338,6 +343,7 @@ export default function ReviewPage() {
 
         <ResetSRSButton
           className="btn-secondary w-full text-sm text-goethe-blue"
+          label="Tüm ilerlemeyi sıfırla"
           onAfterReset={resetIndicators}
         />
       </PageShell>

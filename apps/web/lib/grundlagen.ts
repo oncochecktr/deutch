@@ -529,7 +529,7 @@ export const GRUNDLAGEN_MODULES = [
     href: "/grundlagen/artikel",
     de: "Artikel Trainer",
     tr: "Artikel (der/die/das)",
-    desc: "der · die · das · ein/eine · çoğul drill",
+    desc: "der · die · das · Kasus · ein/eine · çoğul drill",
     sections: articlesData.sets.length,
   },
   {

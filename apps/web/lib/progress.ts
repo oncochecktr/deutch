@@ -1,7 +1,7 @@
 import type { SRSRecord } from "./srs";
 import { processSRSReview, todayISO, isMastered } from "./srs";
 import { DEFAULT_GOETHE, type GoetheProgress, normalizeGoetheProgress } from "./goetheProgress";
-import { DEFAULT_DAILY_GOALS, type DailyGoals } from "./dailyGoals";
+import { DEFAULT_DAILY_GOALS, DAILY_COACH, type DailyGoals } from "./dailyGoals";
 
 export interface ElKitabiSubsectionProgress {
   read?: boolean;
@@ -182,7 +182,7 @@ export const DEFAULT_PROGRESS: UserProgress = {
   breakMinutes: 10,
   lastBreakAt: null,
   examSimulations: 0,
-  dailyNewWordGoal: 40,
+  dailyNewWordGoal: DAILY_COACH.newWords,
   dailyGoals: { ...DEFAULT_DAILY_GOALS },
   targetExamDate: null,
   goethe: { ...DEFAULT_GOETHE },
@@ -373,7 +373,7 @@ function migrateProgress(parsed: Record<string, unknown>): UserProgress {
       ? (parsed.scrollPositions as Record<string, number>)
       : {};
   base.lastSavedAt = (parsed.lastSavedAt as string | null) ?? null;
-  base.dailyNewWordGoal = (parsed.dailyNewWordGoal as number) ?? 40;
+  base.dailyNewWordGoal = (parsed.dailyNewWordGoal as number) ?? DAILY_COACH.newWords;
   base.dailyGoals = { ...DEFAULT_DAILY_GOALS, ...(parsed.dailyGoals as DailyGoals) };
   base.targetExamDate = (parsed.targetExamDate as string | null) ?? null;
   base.goethe = normalizeGoethe(parsed.goethe as GoetheProgress);
@@ -393,17 +393,35 @@ function parseStoredProgress(raw: string | null): UserProgress | null {
   }
 }
 
+function savedAtMs(progress: UserProgress | null | undefined): number {
+  if (!progress?.lastSavedAt) return 0;
+  const ms = Date.parse(progress.lastSavedAt);
+  return Number.isFinite(ms) ? ms : 0;
+}
+
+/** localStorage vs session yedek — lastSavedAt ile daha güncel olanı seçer. */
+export function resolveNewerProgress(
+  local: UserProgress | null,
+  backup: UserProgress | null
+): { progress: UserProgress | null; promoteBackup: boolean } {
+  if (!local && !backup) return { progress: null, promoteBackup: false };
+  if (!local) return { progress: backup, promoteBackup: true };
+  if (!backup) return { progress: local, promoteBackup: false };
+  if (savedAtMs(backup) > savedAtMs(local)) {
+    return { progress: backup, promoteBackup: true };
+  }
+  return { progress: local, promoteBackup: false };
+}
+
 export function loadProgress(): UserProgress {
   if (typeof window === "undefined") return DEFAULT_PROGRESS;
   try {
     const fromLocal = parseStoredProgress(localStorage.getItem(STORAGE_KEY));
-    if (fromLocal) return fromLocal;
     const fromBackup = parseStoredProgress(sessionStorage.getItem(STORAGE_BACKUP_KEY));
-    if (fromBackup) {
-      saveProgress(fromBackup);
-      return fromBackup;
-    }
-    return { ...DEFAULT_PROGRESS };
+    const { progress, promoteBackup } = resolveNewerProgress(fromLocal, fromBackup);
+    if (!progress) return { ...DEFAULT_PROGRESS };
+    if (promoteBackup) saveProgress(progress);
+    return progress;
   } catch {
     return { ...DEFAULT_PROGRESS };
   }
@@ -475,6 +493,21 @@ export function saveProgress(progress: UserProgress): boolean {
     } catch {
       return false;
     }
+  }
+}
+
+/** local + session progress kaydını siler (hata sınırı sıfırlama vb.). */
+export function clearStoredProgress(): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    /* ignore */
+  }
+  try {
+    sessionStorage.removeItem(STORAGE_BACKUP_KEY);
+  } catch {
+    /* ignore */
   }
 }
 
@@ -663,7 +696,10 @@ export function getNextStudyTip(
   const readiness = calcReadiness(progress, totalWords);
 
   if (dueCount > 0) return `${dueCount} kelime tekrar bekliyor. Önce Tekrar moduna git — SRS motoru.`;
-  if (readiness < 10) return `Bugün ${progress.dailyNewWordGoal} yeni kelime öğren. Selamlama ile başla.`;
+  if (readiness < 10) {
+    const goal = progress.dailyGoals?.newWords ?? DAILY_COACH.newWords;
+    return `Bugün ${goal} yeni kelime öğren. Selamlama ile başla.`;
+  }
   if (accuracy < 70) return "Doğruluk %70 altında. Yanlış kelimeler yarın tekrar gelecek — bugün tekrar et.";
   if (readiness < 50) return "Quiz + Tekrar döngüsü: 15 dk SRS, 15 dk quiz, 10 dk mola.";
   if (readiness >= 85) return "A1 hazırlığı iyi! Deneme sınavını dene — Prüfungssimulation.";
@@ -753,6 +789,7 @@ export function recordElKitabiModuleVisit(
 }
 
 const PATTERN_PASS_SCORE = 4;
+export { PATTERN_PASS_SCORE };
 
 export function markPatternCompleted(
   progress: UserProgress,
