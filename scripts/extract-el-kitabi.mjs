@@ -1,8 +1,9 @@
 /**
- * PDF metninden el kitabi icerigini cikarir ve markalari temizler.
+ * (Legacy) PDF metninden el kitabi cikarimi — kaynak PDF repoda tutulmuyor.
+ * Icerik: apps/web/lib/elKitabi/
  * node scripts/extract-el-kitabi.mjs
  */
-import { mkdirSync, readFileSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
@@ -92,6 +93,10 @@ function splitChapters(text) {
 }
 
 function main() {
+  if (!existsSync(PDF_TEXT)) {
+    console.log("Kaynak PDF yok (icerik apps/web/lib/elKitabi/ icinde).");
+    process.exit(0);
+  }
   const raw = readFileSync(PDF_TEXT, "utf8");
   const cleaned = cleanText(raw);
   const chapters = splitChapters(cleaned);

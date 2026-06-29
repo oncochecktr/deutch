@@ -2,12 +2,24 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getA1Vocabulary } from "@german-coach/vocabulary";
+import { CardsDailyGoal } from "@/components/cards/CardsDailyGoal";
+import { CardsListenPanel } from "@/components/cards/CardsListenPanel";
+import { CardsLockListenBar } from "@/components/cards/CardsLockListenBar";
+import { CardsTierPicker } from "@/components/cards/CardsTierPicker";
 import { PageShell } from "@/components/PageShell";
 import { LearningCoachBanner } from "@/components/LearningCoachBanner";
 import { SessionTrail } from "@/components/SessionTrail";
 import { StudyMotivation } from "@/components/StudyMotivation";
 import { WordCard } from "@/components/WordCard";
 import { IconArrowLeft, IconArrowRight } from "@/components/icons";
+import { buildCardsPlaylist, playlistLabel } from "@/lib/cardsPlaylist";
+import {
+  filterKey,
+  getTierCategories,
+  loadCardsListenSettings,
+  saveCardsListenSettings,
+  type CardsListenSettings,
+} from "@/lib/cardsSettings";
 import {
   cardsCoachMessage,
   shouldShowCardsCoachBanner,
@@ -15,6 +27,7 @@ import {
 import { recordAnswer } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
 import { useLearningCoach } from "@/lib/useLearningCoach";
+import type { A1WordTierId } from "@/lib/wordTiers";
 
 const SESSION_MEMORY_MAX = 20;
 
@@ -26,22 +39,95 @@ export default function CardsPage() {
   const [trail, setTrail] = useState<string[]>([]);
   const [trailCursor, setTrailCursor] = useState(0);
   const [nudgeTrigger, setNudgeTrigger] = useState(0);
+  const [listenSettings, setListenSettings] = useState<CardsListenSettings>(
+    loadCardsListenSettings
+  );
   const trailReady = useRef(false);
 
   useEffect(() => {
     return () => flushProgress();
   }, [flushProgress]);
 
-  const index = Math.min(progress.cardIndex, vocab.words.length - 1);
-  const liveWord = vocab.words[index];
+  const { filterTier, filterCategory } = listenSettings;
+  const fKey = filterKey(filterTier, filterCategory);
+  const categories = useMemo(
+    () => getTierCategories(filterTier),
+    [filterTier]
+  );
+
+  const playlist = useMemo(
+    () => buildCardsPlaylist(vocab.words, filterTier, filterCategory),
+    [vocab.words, filterTier, filterCategory]
+  );
+
+  const filterIndex = listenSettings.filterIndices[fKey] ?? 0;
+  const safeIndex = playlist.length
+    ? Math.min(filterIndex, playlist.length - 1)
+    : 0;
+
+  const liveWord = playlist[safeIndex] ?? vocab.words[0];
   const livePos = Math.max(0, trail.length - 1);
   const isLive = trail.length === 0 || trailCursor === livePos;
   const viewId = trail.length > 0 ? trail[trailCursor] : liveWord.id;
   const word = vocab.words.find((w) => w.id === viewId) ?? liveWord;
 
+  const learnedToday = progress.dailyStats.newWordsLearned;
+
+  const patchSettings = useCallback((next: CardsListenSettings) => {
+    setListenSettings(next);
+    saveCardsListenSettings(next);
+  }, []);
+
+  const setFilterIndex = useCallback(
+    (idx: number) => {
+      const clamped = playlist.length
+        ? Math.min(Math.max(0, idx), playlist.length - 1)
+        : 0;
+      patchSettings({
+        ...listenSettings,
+        filterIndices: { ...listenSettings.filterIndices, [fKey]: clamped },
+      });
+    },
+    [listenSettings, fKey, playlist.length, patchSettings]
+  );
+
+  const handleTierChange = useCallback(
+    (tier: A1WordTierId | "all") => {
+      const cats = getTierCategories(tier);
+      const firstCat = tier === "all" ? null : (cats[0] ?? null);
+      patchSettings({
+        ...listenSettings,
+        filterTier: tier,
+        filterCategory: firstCat,
+        filterIndices: { ...listenSettings.filterIndices, [filterKey(tier, firstCat)]: 0 },
+      });
+      setTrail([]);
+      setTrailCursor(0);
+      trailReady.current = false;
+    },
+    [listenSettings, patchSettings]
+  );
+
+  const handleCategoryChange = useCallback(
+    (category: string | null) => {
+      patchSettings({
+        ...listenSettings,
+        filterCategory: category,
+        filterIndices: {
+          ...listenSettings.filterIndices,
+          [filterKey(listenSettings.filterTier, category)]: 0,
+        },
+      });
+      setTrail([]);
+      setTrailCursor(0);
+      trailReady.current = false;
+    },
+    [listenSettings, patchSettings]
+  );
+
   useEffect(() => {
     if (!hydrated || trailReady.current) return;
-    const validIds = new Set(vocab.words.map((w) => w.id));
+    const validIds = new Set(playlist.map((w) => w.id));
     const saved = progress.cardsTrail.filter((id) => validIds.has(id));
     if (saved.length > 0) {
       const trimmed = saved.slice(-SESSION_MEMORY_MAX);
@@ -52,7 +138,7 @@ export default function CardsPage() {
       setTrailCursor(0);
     }
     trailReady.current = true;
-  }, [hydrated, progress.cardsTrail, progress.cardsTrailCursor, liveWord.id, vocab.words]);
+  }, [hydrated, progress.cardsTrail, progress.cardsTrailCursor, liveWord.id, playlist]);
 
   useEffect(() => {
     if (!hydrated || !trailReady.current || trail.length === 0) return;
@@ -79,19 +165,35 @@ export default function CardsPage() {
   }, []);
 
   const continueLive = useCallback(() => {
-    if (!isLive) return;
-    const nextIndex = (index + 1) % vocab.words.length;
-    const nextWord = vocab.words[nextIndex];
+    if (!isLive || playlist.length === 0) return;
+    const nextIdx = (safeIndex + 1) % playlist.length;
+    const nextWord = playlist[nextIdx]!;
     updateProgress((p) => ({
       ...recordAnswer(p, liveWord.id, true),
-      cardIndex: nextIndex,
+      cardIndex: vocab.words.findIndex((w) => w.id === nextWord.id),
     }));
+    setFilterIndex(nextIdx);
     appendTrail(nextWord.id);
-  }, [isLive, liveWord.id, index, vocab.words, updateProgress, appendTrail]);
+  }, [
+    isLive,
+    playlist,
+    safeIndex,
+    liveWord.id,
+    vocab.words,
+    updateProgress,
+    appendTrail,
+    setFilterIndex,
+  ]);
 
   const goPrevious = () => {
     if (trailCursor > 0) {
       setTrailCursor((c) => c - 1);
+      setFlipped(false);
+      return;
+    }
+    if (isLive && playlist.length > 0) {
+      const prevIdx = (safeIndex - 1 + playlist.length) % playlist.length;
+      setFilterIndex(prevIdx);
       setFlipped(false);
     }
   };
@@ -108,23 +210,55 @@ export default function CardsPage() {
   };
 
   const progressPct = useMemo(
-    () => Math.round(((index + 1) / vocab.words.length) * 100),
-    [index, vocab.words.length]
+    () =>
+      playlist.length
+        ? Math.round(((safeIndex + 1) / playlist.length) * 100)
+        : 0,
+    [safeIndex, playlist.length]
   );
 
-  const canGoPrev = trailCursor > 0;
+  const canGoPrev = trailCursor > 0 || (isLive && playlist.length > 1);
   const canGoNextHistory = trailCursor < livePos;
-  const canContinueLive = isLive;
+  const canContinueLive = isLive && playlist.length > 0;
   const canGoNext = canGoNextHistory || canContinueLive;
 
   const showCoachBanner = shouldShowCardsCoachBanner(trail.length, coach);
   const coachMsg = cardsCoachMessage(coach);
+  const groupLabel = playlistLabel(filterTier, filterCategory);
 
   return (
     <>
       <StudyMotivation trigger={nudgeTrigger} />
 
-      <PageShell title="Kelime Kartları" subtitle={`Kart ${index + 1} / ${vocab.words.length}`}>
+      <PageShell
+        title="Kelime Kartları"
+        subtitle={`${groupLabel} · ${safeIndex + 1} / ${playlist.length}`}
+      >
+        <CardsDailyGoal learnedToday={learnedToday} goal={listenSettings.dailyGoal} />
+
+        <CardsTierPicker
+          tier={filterTier}
+          category={filterCategory}
+          categories={categories}
+          onTierChange={handleTierChange}
+          onCategoryChange={handleCategoryChange}
+          playlistSize={playlist.length}
+        />
+
+        <CardsListenPanel settings={listenSettings} onChange={patchSettings} />
+
+        {isLive && (
+          <CardsLockListenBar
+            word={liveWord}
+            settings={listenSettings}
+            index={safeIndex}
+            total={playlist.length}
+            categoryLabel={groupLabel}
+            onPrevious={goPrevious}
+            onNext={goNext}
+          />
+        )}
+
         <div className="mx-auto h-2 max-w-xs overflow-hidden rounded-full bg-sage-100">
           <div
             className="h-full bg-sage-400 transition-all"
@@ -155,14 +289,21 @@ export default function CardsPage() {
           />
         )}
 
-        <WordCard
-          word={word}
-          flipped={flipped}
-          onFlip={() => setFlipped((f) => !f)}
-          readOnly={!isLive && flipped}
-          showHearAndWrite={isLive}
-          onDictationCorrect={isLive ? continueLive : undefined}
-        />
+        {playlist.length === 0 ? (
+          <div className="card-soft p-6 text-center text-sm text-sage-500">
+            Bu grupta kelime yok. Baska bir kategori sec.
+          </div>
+        ) : (
+          <WordCard
+            word={word}
+            flipped={flipped}
+            onFlip={() => setFlipped((f) => !f)}
+            readOnly={!isLive && flipped}
+            showHearAndWrite={isLive}
+            onDictationCorrect={isLive ? continueLive : undefined}
+            listenSettings={listenSettings}
+          />
+        )}
 
         <div className="flex flex-col gap-3 sm:flex-row">
           <button

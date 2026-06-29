@@ -17,6 +17,13 @@ function isStaleSession(session: number): boolean {
 
 export type TtsLang = "de" | "tr";
 
+export interface AudioPlayOptions {
+  /** 1 = normal; 0.78 yavas; 0.62 cok yavas */
+  playbackRate?: number;
+}
+
+const BASE_BROWSER_RATE: Record<TtsLang, number> = { de: 0.88, tr: 0.94 };
+
 function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   if (typeof window === "undefined" || !window.speechSynthesis) {
     return Promise.resolve([]);
@@ -91,9 +98,10 @@ export function stopAudio(): void {
   }
 }
 
-async function playBlobAudio(blob: Blob): Promise<void> {
+async function playBlobAudio(blob: Blob, playbackRate = 1): Promise<void> {
   const url = URL.createObjectURL(blob);
   const audio = new Audio(url);
+  audio.playbackRate = playbackRate;
   currentAudio = audio;
   try {
     await new Promise<void>((resolve, reject) => {
@@ -127,8 +135,9 @@ async function playBlobAudio(blob: Blob): Promise<void> {
   }
 }
 
-async function playMp3Url(src: string): Promise<boolean> {
+async function playMp3Url(src: string, playbackRate = 1): Promise<boolean> {
   const audio = new Audio(src);
+  audio.playbackRate = playbackRate;
   audio.setAttribute("playsinline", "");
   audio.setAttribute("webkit-playsinline", "");
   audio.preload = "auto";
@@ -165,7 +174,12 @@ async function playMp3Url(src: string): Promise<boolean> {
   return true;
 }
 
-async function playServerTts(text: string, lang: TtsLang, session: number): Promise<boolean> {
+async function playServerTts(
+  text: string,
+  lang: TtsLang,
+  session: number,
+  playbackRate = 1
+): Promise<boolean> {
   const max = lang === "tr" ? TTS_MAX_CHARS_TR : TTS_MAX_CHARS;
   const trimmed = sanitizeForTts(text.trim(), lang).slice(0, max);
   if (!trimmed) return false;
@@ -175,7 +189,7 @@ async function playServerTts(text: string, lang: TtsLang, session: number): Prom
     );
     if (isStaleSession(session)) return false;
     if (!res.ok) return false;
-    await playBlobAudio(await res.blob());
+    await playBlobAudio(await res.blob(), playbackRate);
     if (isStaleSession(session)) return false;
     return true;
   } catch (err) {
@@ -184,14 +198,18 @@ async function playServerTts(text: string, lang: TtsLang, session: number): Prom
   }
 }
 
-async function speakBrowser(text: string, lang: TtsLang, rate?: number): Promise<void> {
+async function speakBrowser(
+  text: string,
+  lang: TtsLang,
+  playbackRate = 1
+): Promise<void> {
   if (typeof window === "undefined" || !window.speechSynthesis) return;
   window.speechSynthesis.cancel();
   const voices = await loadVoices();
   const cleaned = sanitizeForTts(text, lang);
   const utterance = new SpeechSynthesisUtterance(cleaned);
   utterance.lang = lang === "de" ? "de-DE" : "tr-TR";
-  utterance.rate = rate ?? (lang === "tr" ? 0.94 : 0.88);
+  utterance.rate = BASE_BROWSER_RATE[lang] * playbackRate;
   utterance.pitch = lang === "tr" ? 1.02 : 1;
   const voice = pickVoice(voices, lang);
   if (voice) {
@@ -224,8 +242,10 @@ async function playLangAudio(
   text: string,
   lang: TtsLang,
   audioSrc: string | null | undefined,
-  session: number
+  session: number,
+  options?: AudioPlayOptions
 ): Promise<"mp3" | "server" | "browser"> {
+  const playbackRate = options?.playbackRate ?? 1;
   try {
     const storyMp3 = !!audioSrc?.includes("/audio/stories/");
     const mp3Ok =
@@ -235,7 +255,7 @@ async function playLangAudio(
 
     if (mp3Ok) {
       try {
-        await playMp3Url(audioSrc);
+        await playMp3Url(audioSrc, playbackRate);
         if (isStaleSession(session)) return "browser";
         return "mp3";
       } catch (err) {
@@ -246,13 +266,14 @@ async function playLangAudio(
 
     if (isStaleSession(session)) return "browser";
 
-    if (await playServerTts(text, lang, session)) {
+    if (await playServerTts(text, lang, session, playbackRate)) {
+      if (isStaleSession(session)) return "browser";
       return "server";
     }
 
     if (isStaleSession(session)) return "browser";
 
-    await speakBrowser(text, lang);
+    await speakBrowser(text, lang, playbackRate);
     return "browser";
   } catch (err) {
     if (isAbortedError(err)) return "browser";
@@ -263,21 +284,23 @@ async function playLangAudio(
 /** Almanca TTS — MP3 → sunucu Edge → tarayıcı */
 export async function playGermanAudio(
   text: string,
-  audioSrc?: string | null
+  audioSrc?: string | null,
+  options?: AudioPlayOptions
 ): Promise<"mp3" | "server" | "browser"> {
   stopAudio();
   const session = audioSession;
-  return playLangAudio(text, "de", audioSrc, session);
+  return playLangAudio(text, "de", audioSrc, session, options);
 }
 
 /** Türkçe TTS — MP3 → sunucu Edge (Emel) → tarayıcı */
 export async function playTurkishAudio(
   text: string,
-  audioSrc?: string | null
+  audioSrc?: string | null,
+  options?: AudioPlayOptions
 ): Promise<"mp3" | "server" | "browser"> {
   stopAudio();
   const session = audioSession;
-  return playLangAudio(text, "tr", audioSrc, session);
+  return playLangAudio(text, "tr", audioSrc, session, options);
 }
 
 /** Profesör turu: önce Almanca, sonra Türkçe açıklama, sonra düzeltme modeli */

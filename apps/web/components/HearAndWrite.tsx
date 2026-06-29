@@ -2,7 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
+import type { CardsListenSettings } from "@/lib/cardsSettings";
 import { AudioButton } from "./AudioButton";
+import { CardsPlayButton } from "@/components/cards/CardsPlayButton";
 import { GoldCueLine } from "@/components/ui/GoldCueLine";
 import { SmartTip } from "@/components/ui/SmartTip";
 import { formatWord } from "@/lib/audio";
@@ -20,6 +22,7 @@ interface HearAndWriteProps {
   /** Doğru yazıldığında çağrılır (ör. sonraki kelime kartı) */
   onCorrect?: () => void;
   showKeyboardHint?: boolean;
+  listenSettings?: CardsListenSettings;
 }
 
 export function HearAndWrite({
@@ -28,6 +31,7 @@ export function HearAndWrite({
   disabled = false,
   onCorrect,
   showKeyboardHint = true,
+  listenSettings,
 }: HearAndWriteProps) {
   const display = formatWord(word.word, word.article);
   const examples = splitExamples(word.example_de, word.example_tr);
@@ -141,11 +145,20 @@ export function HearAndWrite({
       )}
 
       <div className="mb-2 flex flex-wrap gap-2">
-        <AudioButton
-          text={target}
-          audioSrc={audioSrc}
-          label={mode === "word" ? "Dinle" : "Cümleyi dinle"}
-        />
+        {listenSettings ? (
+          <CardsPlayButton
+            word={word}
+            settings={listenSettings}
+            mode={mode === "word" ? "word" : "sentence"}
+            label={mode === "word" ? "Dinle" : "Cumleyi dinle"}
+          />
+        ) : (
+          <AudioButton
+            text={target}
+            audioSrc={audioSrc}
+            label={mode === "word" ? "Dinle" : "Cümleyi dinle"}
+          />
+        )}
       </div>
 
       <textarea

@@ -2,7 +2,9 @@
 
 import { useMemo, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
+import type { CardsListenSettings } from "@/lib/cardsSettings";
 import { AudioButton } from "./AudioButton";
+import { CardsPlayButton, CardsPlayTextButton } from "@/components/cards/CardsPlayButton";
 import { HearAndWrite } from "./HearAndWrite";
 import { IconStar } from "./icons";
 import { GoldCueLine } from "@/components/ui/GoldCueLine";
@@ -30,6 +32,7 @@ interface WordCardProps {
   showActionHints?: boolean;
   showHearAndWrite?: boolean;
   onDictationCorrect?: () => void;
+  listenSettings?: CardsListenSettings;
 }
 
 function ExampleBlock({
@@ -95,7 +98,15 @@ function ExampleBlock({
   );
 }
 
-function WordPatternBlock({ wordId, large }: { wordId: string; large?: boolean }) {
+function WordPatternBlock({
+  wordId,
+  large,
+  listenSettings,
+}: {
+  wordId: string;
+  large?: boolean;
+  listenSettings?: CardsListenSettings;
+}) {
   const [open, setOpen] = useState(false);
   const entry = useMemo(() => getWordPatterns(wordId), [wordId]);
   if (!entry || entry.patterns.length === 0) return null;
@@ -134,7 +145,11 @@ function WordPatternBlock({ wordId, large }: { wordId: string; large?: boolean }
                 {p.tr}
               </p>
               <div className="mt-2">
-                <AudioButton text={p.de} label="Dinle" size="sm" />
+                {listenSettings ? (
+                  <CardsPlayTextButton text={p.de} settings={listenSettings} label="Dinle" size="sm" />
+                ) : (
+                  <AudioButton text={p.de} label="Dinle" size="sm" />
+                )}
               </div>
             </li>
           ))}
@@ -158,6 +173,7 @@ export function WordCard({
   showActionHints = false,
   showHearAndWrite = false,
   onDictationCorrect,
+  listenSettings,
 }: WordCardProps) {
   const display = formatWord(word.word, word.article);
   const meanings = splitMeanings(word.translation_tr);
@@ -272,8 +288,23 @@ export function WordCard({
 
       <div className="border-t border-sage-100 p-4">
         <div className="mb-3 flex flex-wrap items-center justify-center gap-2">
-          <AudioButton text={display} audioSrc={word.audio_word} />
-          <AudioButton text={word.example_de} label="Cümle" size="sm" audioSrc={word.audio_example} />
+          {listenSettings ? (
+            <>
+              <CardsPlayButton word={word} settings={listenSettings} mode="word" />
+              <CardsPlayButton
+                word={word}
+                settings={listenSettings}
+                mode="sentence"
+                label="Cumle"
+                size="sm"
+              />
+            </>
+          ) : (
+            <>
+              <AudioButton text={display} audioSrc={word.audio_word} />
+              <AudioButton text={word.example_de} label="Cümle" size="sm" audioSrc={word.audio_example} />
+            </>
+          )}
         </div>
 
         {showHearAndWrite && (
@@ -282,6 +313,7 @@ export function WordCard({
             wordVisible={!flipped}
             disabled={readOnly}
             onCorrect={onDictationCorrect}
+            listenSettings={listenSettings}
           />
         )}
 
@@ -289,7 +321,7 @@ export function WordCard({
           <ExampleBlock examples={[primaryExample]} large={large} compact />
         )}
 
-        {flipped ? <WordPatternBlock wordId={word.id} large={large} /> : null}
+        {flipped ? <WordPatternBlock wordId={word.id} large={large} listenSettings={listenSettings} /> : null}
       </div>
 
       {readOnly && flipped && (
