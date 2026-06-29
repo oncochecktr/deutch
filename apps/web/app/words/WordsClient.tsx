@@ -109,6 +109,23 @@ export default function WordsPage() {
 
         <TrainingActions categoryFilter={categoryFilter} />
 
+        <Link
+          href={
+            categoryFilter
+              ? `/words/pdf?pack=a1&category=${encodeURIComponent(categoryFilter)}`
+              : "/words/pdf?pack=a1"
+          }
+          className="card-soft block border-2 border-goethe-blue/20 p-4 transition hover:border-goethe-blue/40"
+        >
+          <p className="text-xs font-semibold text-goethe-blue">PDF — yazdır veya indir</p>
+          <p className="mt-1 text-sm text-sage-600">
+            Sol Almanca, sağ Türkçe · örnek cümlelerle · önce önizle
+          </p>
+          <span className="mt-2 inline-block text-xs font-medium text-goethe-blue">
+            PDF sayfasına git →
+          </span>
+        </Link>
+
         <input
           type="search"
           placeholder="Kelime ara (DE / TR / RU)..."

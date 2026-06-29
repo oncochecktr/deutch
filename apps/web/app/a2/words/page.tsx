@@ -45,6 +45,12 @@ export default function A2WordsPage() {
           onChange={(e) => setQuery(e.target.value)}
           className="w-full rounded-xl border border-sage-200 px-4 py-2 text-sm"
         />
+        <Link
+          href={category !== "all" ? `/words/pdf?pack=a2&category=${encodeURIComponent(category)}` : "/words/pdf?pack=a2"}
+          className="card-soft block border border-goethe-blue/20 p-3 text-sm text-goethe-blue hover:border-goethe-blue/40"
+        >
+          PDF indir — önizle →
+        </Link>
         <p className="text-xs text-sage-400">{filtered.length} kelime gösteriliyor</p>
         <ul className="divide-y divide-sage-100 rounded-xl border border-sage-100 bg-white">
           {filtered.map((w) => (
