@@ -1,7 +1,10 @@
 /** Goethe A1 Schreiben — Mektup (Brief) örnekleri — PDF kaynaklı */
 
+import type { MektupBullet, MektupExample, MektupSection } from "./mektupTypes";
+
+export type { MektupBullet, MektupExample, MektupSection } from "./mektupTypes";
 export const MEKTUP_EXAM_INFO = {
-  title: "Teil 2: Brief / E-Mail",
+  title: "Teil 2: Brief / E-Mail (A1)",
   duration: "Schreiben bölümü ~20 dk — form + mektup",
   rules: [
     {
@@ -22,33 +25,6 @@ export const MEKTUP_EXAM_INFO = {
     },
   ],
 };
-
-export interface MektupSection {
-  id: string;
-  labelDe: string;
-  labelTr: string;
-  hintTr: string;
-  placeholder: string;
-  phrases: { de: string; tr: string }[];
-}
-
-export interface MektupBullet {
-  de: string;
-  tr: string;
-  /** Tam mektupta aranacak ipuçları (küçük harf) */
-  hints: string[];
-}
-
-export interface MektupExample {
-  id: string;
-  titleTr: string;
-  promptDe: string;
-  promptTr: string;
-  bullets: MektupBullet[];
-  sections: MektupSection[];
-  sampleLetter: string;
-  minWords: number;
-}
 
 const CLOSING_PHRASES: MektupSection["phrases"] = [
   { de: "Ich bitte um eine Antwort.", tr: "Lütfen cevap yazın." },

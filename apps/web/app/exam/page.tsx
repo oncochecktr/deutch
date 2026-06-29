@@ -116,8 +116,8 @@ export default function ExamHubPage() {
         className="card-soft block border border-sage-200 p-5 transition hover:border-sage-300"
       >
         <p className="text-xs font-semibold text-sage-600">Mektup modu</p>
-        <h2 className="mt-1 font-bold text-goethe-blue">5 mektup örneği (PDF)</h2>
-        <p className="mt-1 text-sm text-sage-500">Bölüm bölüm yaz · hazır kalıplar · Türkçe ipuçları</p>
+        <h2 className="mt-1 font-bold text-goethe-blue">A1 + B1 mektup stüdyosu</h2>
+        <p className="mt-1 text-sm text-sage-500">B1 rubrik · 80 kelime · bağlaç bankası · model cevaplar</p>
         <span className="mt-3 inline-block text-sm font-medium text-goethe-blue">Mektup yaz →</span>
       </Link>
 

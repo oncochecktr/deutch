@@ -15,7 +15,7 @@ const DAS_IST_MEIN_KEY = "german-coach-das-ist-mein";
 const SENTENCE_ENGINE_KEY = "german-coach-sentence-engine";
 const WO_IST_LEGO_KEY = "german-coach-wo-ist-lego";
 const WELCOME_KEY = "german-coach-welcome-v2";
-const MEKTUP_DONE_KEY = "german-coach-mektup-done";
+import { MEKTUP_STORAGE_PREFIX } from "./mektupStorage";
 const SPEAK_FOCUS_KEY = "german-coach-speak-focus";
 const SMART_TIP_PREFIX = "german-coach-smart-tip-";
 const EXAM_SESSION_PREFIX = "german-coach-exam-session:";
@@ -30,7 +30,8 @@ const STUDY_LOCAL_KEYS = [
   DIKTAT_STORAGE_KEY,
   KONUS_DINLE_STORAGE_KEY,
   LEARNER_PROFILE_KEY,
-  MEKTUP_DONE_KEY,
+  `${MEKTUP_STORAGE_PREFIX}-done`,
+  `${MEKTUP_STORAGE_PREFIX}-done-b1`,
   SENTENCE_ENGINE_KEY,
   SPEAK_FOCUS_KEY,
   SPEAK_STORAGE_KEY,
@@ -90,4 +91,5 @@ export function clearAllStudyStorage(): void {
 
   removePrefixedLocal(SMART_TIP_PREFIX);
   removePrefixedLocal(EXAM_SESSION_PREFIX);
+  removePrefixedLocal(`${MEKTUP_STORAGE_PREFIX}-`);
 }

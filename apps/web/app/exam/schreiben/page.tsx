@@ -45,7 +45,9 @@ export default function SchreibenExamPage() {
         className="card-soft block border border-sage-200 p-4 transition hover:border-sage-300"
       >
         <p className="text-xs font-semibold text-sage-600">Mektup modu</p>
-        <p className="mt-1 text-sm font-medium text-goethe-blue">5 PDF mektup örneği — adım adım yaz</p>
+        <p className="mt-1 text-sm font-medium text-goethe-blue">
+          A1 (5 örnek) + B1 (80 kelime, rubrik) — adım adım yaz
+        </p>
       </Link>
 
       <div className="card-soft p-5">
