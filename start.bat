@@ -1,4 +1,5 @@
 @echo off
+setlocal EnableDelayedExpansion
 title German Coach
 cd /d "%~dp0"
 set "LOCK=%~dp0.german-coach.lock"
@@ -52,6 +53,15 @@ if /i "%~1"=="--fast" goto :build_check_done
 if /i "%~1"=="--rebuild" set "DO_BUILD=1"
 if not exist "apps\web\.next\BUILD_ID" set "DO_BUILD=1"
 if not exist "apps\web\.next\static\css" set "DO_BUILD=1"
+for /f %%h in ('git rev-parse HEAD 2^>nul') do set "GIT_HEAD=%%h"
+if defined GIT_HEAD (
+  if exist "apps\web\.next\SOURCE_REV" (
+    set /p BUILT_REV=<"apps\web\.next\SOURCE_REV"
+    if not "!GIT_HEAD!"=="!BUILT_REV!" set "DO_BUILD=1"
+  ) else (
+    set "DO_BUILD=1"
+  )
+)
 if "%DO_BUILD%"=="0" (
   dir /b "apps\web\.next\static\css\*.css" >nul 2>&1
   if errorlevel 1 (
@@ -73,6 +83,7 @@ if "%DO_BUILD%"=="1" (
         pause
         exit /b 1
     )
+    if defined GIT_HEAD echo !GIT_HEAD!> .next\SOURCE_REV
     cd ..\..
 ) else (
     echo Hizli acilis ^(--fast^): derleme atlandi.
@@ -82,6 +93,7 @@ echo.
 echo   Tek adres: http://localhost:3000
 echo   (Baska port kullanilmaz — 3000 doluysa once stop.bat)
 echo   CSS patlaksa: fix-css.bat  veya  start.bat --rebuild
+echo   Chunk hatasi: start.bat --rebuild  sonra  Ctrl+F5
 echo   Tarayici: Ctrl+F5
 echo.
 
