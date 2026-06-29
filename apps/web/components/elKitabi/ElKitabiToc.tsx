@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { TocEntry } from "@/lib/elKitabi/types";
+import { scrollElKitabiToHash } from "@/components/elKitabi/ElKitabiHashSync";
 
 export function ElKitabiToc({ entries }: { entries: TocEntry[] }) {
   const [active, setActive] = useState<string>("");
@@ -49,6 +50,11 @@ export function ElKitabiToc({ entries }: { entries: TocEntry[] }) {
                   <li key={child.id}>
                     <a
                       href={`#${child.id}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.history.pushState(null, "", `#${child.id}`);
+                        scrollElKitabiToHash(`#${child.id}`);
+                      }}
                       className={`block rounded px-2 py-0.5 text-xs ${
                         active === child.id
                           ? "font-semibold text-goethe-blue"

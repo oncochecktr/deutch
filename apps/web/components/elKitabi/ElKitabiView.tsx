@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ElKitabiHashSync } from "@/components/elKitabi/ElKitabiHashSync";
 import { ElKitabiBlocks } from "@/components/elKitabi/ElKitabiBlocks";
 import { ElKitabiSection } from "@/components/elKitabi/ElKitabiSection";
 import { ElKitabiTable } from "@/components/elKitabi/ElKitabiTable";
@@ -10,6 +11,7 @@ export function ElKitabiView() {
 
   return (
     <div className="space-y-8">
+      <ElKitabiHashSync />
       <div className="card-goethe p-5">
         <p className="text-sm leading-relaxed text-sage-700">
           A1&apos;den B1&apos;e Almanca dilbilgisi rehberi — German Coach uygulamasinin eslikci

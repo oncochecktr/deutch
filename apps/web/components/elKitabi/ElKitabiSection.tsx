@@ -23,7 +23,11 @@ export function ElKitabiSection({
 
         <div className="mt-4 space-y-4">
           {chapter.subsections.map((sub) => (
-            <details key={sub.id} className="app-collapse group rounded-lg border border-sage-200 bg-white">
+            <details
+              key={sub.id}
+              id={sub.id}
+              className="app-collapse group scroll-mt-24 rounded-lg border border-sage-200 bg-white"
+            >
               <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-goethe-blue marker:content-none [&::-webkit-details-marker]:hidden">
                 <span className="flex items-center justify-between gap-2">
                   {sub.title}
