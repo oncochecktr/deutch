@@ -185,7 +185,7 @@ export default function CardsPage() {
     setFilterIndex,
   ]);
 
-  const goPrevious = () => {
+  const goPrevious = useCallback(() => {
     if (trailCursor > 0) {
       setTrailCursor((c) => c - 1);
       setFlipped(false);
@@ -196,9 +196,9 @@ export default function CardsPage() {
       setFilterIndex(prevIdx);
       setFlipped(false);
     }
-  };
+  }, [trailCursor, isLive, playlist.length, safeIndex, setFilterIndex]);
 
-  const goNext = () => {
+  const goNext = useCallback(() => {
     if (trailCursor < livePos) {
       setTrailCursor((c) => c + 1);
       setFlipped(false);
@@ -207,7 +207,7 @@ export default function CardsPage() {
     if (isLive) {
       continueLive();
     }
-  };
+  }, [trailCursor, livePos, isLive, continueLive]);
 
   const progressPct = useMemo(
     () =>
@@ -233,108 +233,114 @@ export default function CardsPage() {
       <PageShell
         title="Kelime Kartları"
         subtitle={`${groupLabel} · ${safeIndex + 1} / ${playlist.length}`}
+        maxWidth="xl"
       >
-        <CardsDailyGoal learnedToday={learnedToday} goal={listenSettings.dailyGoal} />
+        <div className="grid gap-4 lg:grid-cols-[minmax(260px,300px)_1fr] lg:items-start">
+          <aside className="space-y-3 lg:sticky lg:top-4">
+            <CardsDailyGoal
+              learnedToday={learnedToday}
+              goal={listenSettings.dailyGoal}
+              compact
+            />
 
-        <CardsTierPicker
-          tier={filterTier}
-          category={filterCategory}
-          categories={categories}
-          onTierChange={handleTierChange}
-          onCategoryChange={handleCategoryChange}
-          playlistSize={playlist.length}
-        />
+            <CardsTierPicker
+              tier={filterTier}
+              category={filterCategory}
+              categories={categories}
+              onTierChange={handleTierChange}
+              onCategoryChange={handleCategoryChange}
+              playlistSize={playlist.length}
+            />
 
-        <CardsListenPanel settings={listenSettings} onChange={patchSettings} />
+            <CardsListenPanel settings={listenSettings} onChange={patchSettings} />
 
-        {isLive && (
-          <CardsLockListenBar
-            word={liveWord}
-            settings={listenSettings}
-            index={safeIndex}
-            total={playlist.length}
-            categoryLabel={groupLabel}
-            onPrevious={goPrevious}
-            onNext={goNext}
-          />
-        )}
+            {isLive && (
+              <CardsLockListenBar
+                word={liveWord}
+                settings={listenSettings}
+                index={safeIndex}
+                total={playlist.length}
+                categoryLabel={groupLabel}
+                onPrevious={goPrevious}
+                onNext={goNext}
+              />
+            )}
+          </aside>
 
-        <div className="mx-auto h-2 max-w-xs overflow-hidden rounded-full bg-sage-100">
-          <div
-            className="h-full bg-sage-400 transition-all"
-            style={{ width: `${progressPct}%` }}
-          />
-        </div>
+          <div className="min-w-0 space-y-4">
+            <div className="h-1.5 overflow-hidden rounded-full bg-sage-100">
+              <div
+                className="h-full bg-sage-400 transition-all"
+                style={{ width: `${progressPct}%` }}
+              />
+            </div>
 
-        {!isLive && (
-          <div className="rounded-xl border border-goethe-gold/40 bg-goethe-gold/10 px-4 py-3 text-center text-sm text-goethe-blue">
-            Geçmiş kelime ({trailCursor + 1}/{trail.length})
+            {!isLive && (
+              <div className="rounded-xl border border-goethe-gold/40 bg-goethe-gold/10 px-4 py-2 text-center text-sm text-goethe-blue">
+                Geçmiş kelime ({trailCursor + 1}/{trail.length})
+              </div>
+            )}
+
+            {showCoachBanner && (
+              <LearningCoachBanner
+                coach={coach}
+                variant="session"
+                sessionTitle={coachMsg.title}
+                sessionBody={coachMsg.body}
+                sessionHref={coachMsg.href}
+                sessionCta={coachMsg.cta}
+              />
+            )}
+
+            {playlist.length === 0 ? (
+              <div className="card-soft p-6 text-center text-sm text-sage-500">
+                Bu grupta kelime yok. Baska bir kategori sec.
+              </div>
+            ) : (
+              <WordCard
+                word={word}
+                flipped={flipped}
+                onFlip={() => setFlipped((f) => !f)}
+                readOnly={!isLive && flipped}
+                showHearAndWrite={isLive}
+                onDictationCorrect={isLive ? continueLive : undefined}
+                listenSettings={listenSettings}
+                hideFlipHint
+              />
+            )}
+
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <button
+                type="button"
+                className="btn-secondary-lg flex flex-1 items-center justify-center gap-2"
+                onClick={goPrevious}
+                disabled={!canGoPrev}
+              >
+                <IconArrowLeft size={18} />
+                Önceki
+              </button>
+              <button
+                type="button"
+                className={`flex flex-1 items-center justify-center gap-2 ${
+                  canContinueLive ? "btn-primary-lg" : "btn-secondary-lg"
+                }`}
+                onClick={goNext}
+                disabled={!canGoNext}
+              >
+                {canContinueLive ? "Sonraki kelime" : "İleri"}
+                <IconArrowRight size={18} />
+              </button>
+            </div>
+
+            <SessionTrail
+              wordIds={trail}
+              currentIndex={trailCursor}
+              onSelect={goToTrailIndex}
+              label="Bu oturumda gördüklerin"
+              maxVisible={SESSION_MEMORY_MAX}
+            />
           </div>
-        )}
-
-        {!flipped && isLive && (
-          <p className="text-center text-sm text-sage-400">
-            Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
-          </p>
-        )}
-
-        {showCoachBanner && (
-          <LearningCoachBanner
-            coach={coach}
-            variant="session"
-            sessionTitle={coachMsg.title}
-            sessionBody={coachMsg.body}
-            sessionHref={coachMsg.href}
-            sessionCta={coachMsg.cta}
-          />
-        )}
-
-        {playlist.length === 0 ? (
-          <div className="card-soft p-6 text-center text-sm text-sage-500">
-            Bu grupta kelime yok. Baska bir kategori sec.
-          </div>
-        ) : (
-          <WordCard
-            word={word}
-            flipped={flipped}
-            onFlip={() => setFlipped((f) => !f)}
-            readOnly={!isLive && flipped}
-            showHearAndWrite={isLive}
-            onDictationCorrect={isLive ? continueLive : undefined}
-            listenSettings={listenSettings}
-          />
-        )}
-
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <button
-            type="button"
-            className="btn-secondary-lg flex flex-1 items-center justify-center gap-2"
-            onClick={goPrevious}
-            disabled={!canGoPrev}
-          >
-            <IconArrowLeft size={18} />
-            Önceki
-          </button>
-          <button
-            type="button"
-            className={`flex flex-1 items-center justify-center gap-2 ${
-              canContinueLive ? "btn-primary-lg" : "btn-secondary-lg"
-            }`}
-            onClick={goNext}
-            disabled={!canGoNext}
-          >
-            {canContinueLive ? "Sonraki kelime" : "İleri"}
-            <IconArrowRight size={18} />
-          </button>
         </div>
-
-        <SessionTrail
-          wordIds={trail}
-          currentIndex={trailCursor}
-          onSelect={goToTrailIndex}
-          label="Bu oturumda gördüklerin"
-          maxVisible={SESSION_MEMORY_MAX}
-        />
       </PageShell>
     </>
   );

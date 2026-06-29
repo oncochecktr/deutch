@@ -72,11 +72,6 @@ export function CardsTierPicker({
         </div>
       )}
 
-      {tier === "all" && (
-        <p className="text-xs text-sage-500">
-          Tüm A1 kelimeleri sırayla. Daraltmak için Stufe 1–3 seç.
-        </p>
-      )}
     </div>
   );
 }

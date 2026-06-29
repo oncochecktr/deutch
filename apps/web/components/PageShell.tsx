@@ -9,13 +9,14 @@ interface PageShellProps {
   backLabel?: string;
   children: ReactNode;
   headerExtra?: ReactNode;
-  maxWidth?: "sm" | "md" | "lg" | "full";
+  maxWidth?: "sm" | "md" | "lg" | "xl" | "full";
 }
 
 const WIDTH = {
   sm: "max-w-lg",
   md: "max-w-2xl",
   lg: "max-w-3xl",
+  xl: "max-w-5xl",
   full: "max-w-none w-full",
 } as const;
 

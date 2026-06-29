@@ -87,10 +87,6 @@ export function CardsListenPanel({ settings, onChange }: CardsListenPanelProps) 
           />
         </div>
 
-        <p className="text-xs text-sage-400">
-          Ayarlar bu tarayıcıda saklanır. Dinle&apos;ye her bastığında seçilen hız ve tekrar
-          uygulanır.
-        </p>
       </div>
     </details>
   );

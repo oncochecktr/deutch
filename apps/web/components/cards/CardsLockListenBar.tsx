@@ -33,6 +33,17 @@ export function CardsLockListenBar({
 }: CardsLockListenBarProps) {
   const [playing, setPlaying] = useState(false);
   const genRef = useRef(0);
+  const wordRef = useRef(word);
+  const settingsRef = useRef(settings);
+  const onNextRef = useRef(onNext);
+  const onPreviousRef = useRef(onPrevious);
+  const playingRef = useRef(playing);
+
+  wordRef.current = word;
+  settingsRef.current = settings;
+  onNextRef.current = onNext;
+  onPreviousRef.current = onPrevious;
+  playingRef.current = playing;
 
   const display = formatWord(word.word, word.article);
 
@@ -42,35 +53,42 @@ export function CardsLockListenBar({
     setPlaying(false);
   }, []);
 
-  const playOnce = useCallback(
-    async (gen: number) => {
-      if (genRef.current !== gen) return;
-      await playCardWordAudio(word, settings);
-    },
-    [word, settings]
-  );
+  const playCurrent = useCallback(async () => {
+    const gen = genRef.current;
+    await playCardWordAudio(wordRef.current, settingsRef.current);
+    return genRef.current === gen;
+  }, []);
 
   useEffect(() => {
     if (!playing) return;
-    const gen = ++genRef.current;
-    let active = true;
 
-    (async () => {
-      await playOnce(gen);
-      if (!active || genRef.current !== gen) return;
-      await sleep(2500);
-      if (active && genRef.current === gen) {
-        onNext();
+    const gen = ++genRef.current;
+
+    const loop = async () => {
+      while (playingRef.current && genRef.current === gen) {
+        await playCardWordAudio(wordRef.current, settingsRef.current);
+        if (!playingRef.current || genRef.current !== gen) break;
+        await sleep(2500);
+        if (!playingRef.current || genRef.current !== gen) break;
+        onNextRef.current();
+        await sleep(80);
       }
-    })();
+    };
+
+    void loop();
 
     return () => {
-      active = false;
-      interrupt();
+      genRef.current += 1;
+      stopAudio();
     };
-  }, [playing, word.id, playOnce, onNext, interrupt]);
+  }, [playing]);
 
-  useEffect(() => () => interrupt(), [interrupt]);
+  useEffect(() => {
+    return () => {
+      genRef.current += 1;
+      stopAudio();
+    };
+  }, []);
 
   useListenMediaSession(
     playing,
@@ -85,26 +103,22 @@ export function CardsLockListenBar({
       onPlay: () => setPlaying(true),
       onPrevious: () => {
         interrupt();
-        onPrevious();
+        onPreviousRef.current();
       },
       onNext: () => {
         interrupt();
-        onNext();
+        onNextRef.current();
       },
     }
   );
 
   return (
-    <div className="card-soft border-2 border-goethe-blue/25 bg-goethe-blue/5 p-4">
-      <p className="text-xs font-semibold uppercase text-goethe-blue">Kilit ekranı dinle</p>
-      <p className="mt-1 text-sm text-sage-600">
-        Başlat → telefonu kilitle → kulaklık veya kilit ekranından ileri/geri. Yazmak için ekranı
-        aç; dinleme devam eder.
-      </p>
-      <div className="mt-3 flex gap-2">
+    <div className="card-soft border-2 border-goethe-blue/25 bg-goethe-blue/5 p-3">
+      <p className="mb-2 text-xs font-semibold uppercase text-goethe-blue">Kilit ekranı dinle</p>
+      <div className="flex gap-2">
         <button
           type="button"
-          className={`inline-flex flex-1 items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold text-white ${
+          className={`inline-flex flex-1 items-center justify-center gap-2 rounded-xl py-2 text-sm font-semibold text-white ${
             playing ? "bg-goethe-red" : "bg-goethe-blue"
           }`}
           onClick={() => {
@@ -128,8 +142,7 @@ export function CardsLockListenBar({
           type="button"
           className="btn-secondary text-sm"
           onClick={() => {
-            const gen = ++genRef.current;
-            void playOnce(gen);
+            void playCurrent();
           }}
         >
           Tekrar

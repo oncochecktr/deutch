@@ -5,7 +5,6 @@ import type { VocabularyWord } from "@german-coach/vocabulary";
 import type { CardsListenSettings } from "@/lib/cardsSettings";
 import { AudioButton } from "./AudioButton";
 import { CardsPlayButton } from "@/components/cards/CardsPlayButton";
-import { GoldCueLine } from "@/components/ui/GoldCueLine";
 import { SmartTip } from "@/components/ui/SmartTip";
 import { formatWord } from "@/lib/audio";
 import { checkDictation } from "@/lib/germanTextCompare";
@@ -107,15 +106,9 @@ export function HearAndWrite({
       onKeyDown={(e) => e.stopPropagation()}
     >
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-goethe-blue">
-            Duyduğunu yaz
-          </p>
-          <GoldCueLine className="mt-1.5" />
-          <p className="mt-2 text-xs text-sage-400">
-            Dinle → buraya yaz → kontrol et · hata böyle ayıklanır
-          </p>
-        </div>
+        <p className="text-xs font-semibold uppercase tracking-wide text-goethe-blue">
+          Duyduğunu yaz
+        </p>
         <div className="flex rounded-lg bg-sage-100 p-0.5">
           {(
             [
@@ -137,12 +130,6 @@ export function HearAndWrite({
           ))}
         </div>
       </div>
-
-      {mode === "word" && wordVisible && (
-        <p className="mb-2 rounded-lg bg-goethe-gold/10 px-3 py-2 text-xs text-goethe-blue">
-          Dinle&apos;ye bas — kelimeye bakmadan veya gözlerini kapatarak yaz.
-        </p>
-      )}
 
       <div className="mb-2 flex flex-wrap gap-2">
         {listenSettings ? (

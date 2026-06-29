@@ -64,9 +64,6 @@ export function SessionTrail({
           );
         })}
       </div>
-      <p className="mt-2 text-xs text-sage-400">
-        Chip&apos;e tıklayarak önceki kelimelere dön — son {maxVisible} kelime oturum boyunca burada kalır.
-      </p>
     </section>
   );
 }

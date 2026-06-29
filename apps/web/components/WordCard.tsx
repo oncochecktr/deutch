@@ -33,6 +33,7 @@ interface WordCardProps {
   showHearAndWrite?: boolean;
   onDictationCorrect?: () => void;
   listenSettings?: CardsListenSettings;
+  hideFlipHint?: boolean;
 }
 
 function ExampleBlock({
@@ -174,6 +175,7 @@ export function WordCard({
   showHearAndWrite = false,
   onDictationCorrect,
   listenSettings,
+  hideFlipHint = false,
 }: WordCardProps) {
   const display = formatWord(word.word, word.article);
   const meanings = splitMeanings(word.translation_tr);
@@ -248,9 +250,11 @@ export function WordCard({
                 Plural: {word.plural}
               </p>
             )}
-            <p className={`mt-4 text-sage-400 ${large ? "text-base" : "text-sm"}`}>
-              Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
-            </p>
+            {!hideFlipHint && (
+              <p className={`mt-4 text-sage-400 ${large ? "text-base" : "text-sm"}`}>
+                Kartı çevir · <strong className="text-sage-500">Sonraki kelime</strong>
+              </p>
+            )}
           </>
         ) : (
           <>
@@ -314,6 +318,7 @@ export function WordCard({
             disabled={readOnly}
             onCorrect={onDictationCorrect}
             listenSettings={listenSettings}
+            showKeyboardHint={!listenSettings}
           />
         )}
 
