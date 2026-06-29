@@ -112,8 +112,8 @@ export default function WordsPage() {
         <Link
           href={
             categoryFilter
-              ? `/words/pdf?pack=a1&category=${encodeURIComponent(categoryFilter)}`
-              : "/words/pdf?pack=a1"
+              ? `/kelime-pdf?pack=a1&category=${encodeURIComponent(categoryFilter)}`
+              : "/kelime-pdf?pack=a1"
           }
           className="card-soft block border-2 border-goethe-blue/20 p-4 transition hover:border-goethe-blue/40"
         >

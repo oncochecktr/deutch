@@ -46,7 +46,7 @@ export default function A2WordsPage() {
           className="w-full rounded-xl border border-sage-200 px-4 py-2 text-sm"
         />
         <Link
-          href={category !== "all" ? `/words/pdf?pack=a2&category=${encodeURIComponent(category)}` : "/words/pdf?pack=a2"}
+          href={category !== "all" ? `/kelime-pdf?pack=a2&category=${encodeURIComponent(category)}` : "/kelime-pdf?pack=a2"}
           className="card-soft block border border-goethe-blue/20 p-3 text-sm text-goethe-blue hover:border-goethe-blue/40"
         >
           PDF indir — önizle →

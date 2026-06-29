@@ -25,6 +25,8 @@ const EXTRA_ROUTES: SitemapRoute[] = [
   { path: "/grundlagen/grammar", priority: 0.7, changeFrequency: "monthly" },
   { path: "/a2/cards", priority: 0.65, changeFrequency: "weekly" },
   { path: "/a2/words", priority: 0.65, changeFrequency: "weekly" },
+  { path: "/words/pdf", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/kelime-pdf", priority: 0.7, changeFrequency: "monthly" },
   { path: "/exam/schreiben/mektup", priority: 0.6, changeFrequency: "monthly" },
   { path: "/exam/schreiben/gercek", priority: 0.6, changeFrequency: "monthly" },
   { path: "/exam/sprechen/gercek", priority: 0.6, changeFrequency: "monthly" },
