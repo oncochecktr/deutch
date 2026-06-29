@@ -31,6 +31,7 @@ const EXTRA_ROUTES: SitemapRoute[] = [
   { path: "/blog/sifirdan-goethe-a1", priority: 0.75, changeFrequency: "monthly" },
   { path: "/blog/der-die-das-rehber", priority: 0.75, changeFrequency: "monthly" },
   { path: "/blog/almanya-3-6-ay", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/rehber/el-kitabi", priority: 0.9, changeFrequency: "monthly" },
   { path: "/iletisim", priority: 0.6, changeFrequency: "yearly" },
   { path: "/kvkk", priority: 0.3, changeFrequency: "yearly" },
   { path: "/gizlilik", priority: 0.3, changeFrequency: "yearly" },

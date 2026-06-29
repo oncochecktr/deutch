@@ -358,6 +358,14 @@ export const APP_FEATURES: AppFeature[] = [
     category: "rehber",
     icon: "list",
   },
+  {
+    id: "el-kitabi",
+    href: "/rehber/el-kitabi",
+    title: "A1–B1 El Kitabı",
+    description: "Dilbilgisi rehberi · 11 bölüm · fiil tabloları",
+    category: "rehber",
+    icon: "list",
+  },
 ];
 
 export function getFeaturesByCategory(category: AppFeatureCategory): AppFeature[] {

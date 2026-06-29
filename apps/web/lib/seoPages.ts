@@ -101,6 +101,13 @@ export const SEO_PAGES = {
       "Almanca öğrenme haritası: kelime, gramer ve sınav ilerlemenizi tek ekranda görün. A1'den B1'e yolculuk.",
     path: "/harita",
   }),
+  elKitabi: pageMetadata({
+    title: "A1–B1 El Kitabı — Dilbilgisi Rehberi",
+    description:
+      "A1'den B1'e Almanca dilbilgisi el kitabı: artikel, kasus, zamanlar, edatlar, yazma ve konuşma kalıpları. German Coach rehberi.",
+    path: "/rehber/el-kitabi",
+    keywords: [...PAGE_KEYWORDS.blog],
+  }),
   kvkk: pageMetadata({
     title: "KVKK Aydınlatma Metni",
     description:

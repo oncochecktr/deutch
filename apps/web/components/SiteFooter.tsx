@@ -20,6 +20,9 @@ export function SiteFooter() {
           <Link href="/grundlagen/roadmap" className="hover:text-goethe-blue">
             Gramer haritası
           </Link>
+          <Link href="/rehber/el-kitabi" className="hover:text-goethe-blue">
+            A1–B1 El Kitabı
+          </Link>
           <Link href="/blog" className="hover:text-goethe-blue">
             Blog
           </Link>

@@ -98,6 +98,22 @@ export default function GrundlagenPage() {
         <span className="shrink-0 text-goethe-blue">→</span>
       </Link>
 
+      <Link
+        href="/rehber/el-kitabi"
+        className="card-soft mb-4 flex items-center justify-between gap-3 border-2 border-goethe-gold/30 bg-goethe-gold/5 p-5 transition hover:border-goethe-gold/50"
+      >
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-gold">
+            Rehber
+          </p>
+          <h2 className="mt-1 text-lg font-bold text-goethe-blue">A1–B1 El Kitabı</h2>
+          <p className="mt-1 text-sm text-sage-600">
+            Dilbilgisi rehberi · kasus, zamanlar, edatlar, yazma kalıpları
+          </p>
+        </div>
+        <span className="shrink-0 text-goethe-blue">→</span>
+      </Link>
+
       <div className="card-soft border-2 border-goethe-blue/20 p-5">
         <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-blue">
           Öğrenme yolu — Adım 2

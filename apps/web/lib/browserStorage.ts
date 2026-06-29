@@ -69,6 +69,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "/cerez": "Çerez Politikası",
   "/kullanim-kosullari": "Kullanım Koşulları",
   "/harita": "Öğrenme Haritası",
+  "/rehber/el-kitabi": "A1–B1 El Kitabı",
   "/exam": "A1 Sınav",
   "/exam/bilgi": "Sınav Takvimi",
   "/exam/hoeren": "Hören",
