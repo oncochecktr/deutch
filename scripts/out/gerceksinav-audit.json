@@ -1,0 +1,507 @@
+{
+  "source": "gerceksinav.md",
+  "note": "Extra auf Deutsch — Sam aus Amerika bölümü transkripti",
+  "vocabLevels": [
+    "A1",
+    "A2"
+  ],
+  "uniqueTokens": 249,
+  "inVocab": 68,
+  "missing": 181,
+  "coveragePct": 27,
+  "missingWords": [
+    "aha",
+    "ahh",
+    "ähh",
+    "ahnung",
+    "also",
+    "altmodisch",
+    "amerikaner",
+    "amerikas",
+    "anfassen",
+    "anfasst",
+    "annas",
+    "arbeitet",
+    "autos",
+    "begründen",
+    "bekommen",
+    "bekommt",
+    "bestimmt",
+    "bleibt",
+    "blöder",
+    "böser",
+    "bring",
+    "bücherei",
+    "chance",
+    "cola",
+    "cooler",
+    "currywurst",
+    "deutsch",
+    "deutsch-unterricht",
+    "deutschland",
+    "dienstboten",
+    "drei",
+    "dürft",
+    "duscht",
+    "eingekauft",
+    "eins",
+    "erinnere",
+    "etwa",
+    "etwas",
+    "eure",
+    "fall",
+    "fernbedienung",
+    "finde",
+    "findest",
+    "fliegt",
+    "freies",
+    "freunde",
+    "fühl",
+    "gasrechnung",
+    "gefahren",
+    "gefragt",
+    "gegeben",
+    "gepäck",
+    "gerade",
+    "gesagt",
+    "geschichte",
+    "glaube",
+    "gut",
+    "guter",
+    "gutes",
+    "habt",
+    "halt",
+    "hast",
+    "her",
+    "heul",
+    "hey",
+    "hoch",
+    "höflich",
+    "hund",
+    "interessant",
+    "kannst",
+    "kapiert",
+    "kennst",
+    "kissen",
+    "klamotten",
+    "klapp-couch",
+    "klappe",
+    "kleine",
+    "kleinen",
+    "kommst",
+    "kontrolle",
+    "langsam",
+    "lehrer",
+    "lerne",
+    "lese",
+    "leute",
+    "liebe",
+    "lieblingsessen",
+    "los",
+    "mädchen",
+    "make-up",
+    "männer",
+    "maus",
+    "meinem",
+    "meiner",
+    "meinst",
+    "meint",
+    "miteinander",
+    "möchtest",
+    "museum",
+    "muskeln",
+    "nach",
+    "nachbarn",
+    "nebenan",
+    "nennen",
+    "nett",
+    "neue",
+    "niemals",
+    "niemand",
+    "ofen",
+    "ordnung",
+    "parade",
+    "pickel",
+    "portier",
+    "problem",
+    "r-a-u-s",
+    "raus",
+    "reich",
+    "reichsten",
+    "rein",
+    "richtige",
+    "rum",
+    "sagen",
+    "sagst",
+    "schau",
+    "schlaft",
+    "schläft",
+    "schnell",
+    "schrecklich",
+    "schwesterherz",
+    "selber",
+    "setz",
+    "sexy",
+    "shopping",
+    "sieben",
+    "sollte",
+    "solltest",
+    "spaß",
+    "spiele",
+    "spielst",
+    "spielt",
+    "spielzeug-autos",
+    "sportlich",
+    "spreche",
+    "stark",
+    "starke",
+    "starken",
+    "steht",
+    "stromrechnung",
+    "süß",
+    "tarantel",
+    "telefonrechnung",
+    "total",
+    "typ",
+    "übernachten",
+    "unsere",
+    "unter",
+    "vergesse",
+    "vermieterin",
+    "verpassen",
+    "versteck",
+    "verstehst",
+    "vor",
+    "vorbei",
+    "wahr",
+    "weiß",
+    "weißt",
+    "wem",
+    "werde",
+    "wieso",
+    "willst",
+    "wirklich",
+    "witz",
+    "wohne",
+    "wohnst",
+    "wort",
+    "zeigen",
+    "zeitschrift",
+    "ziehe",
+    "zwar",
+    "zwei",
+    "zweiundzwanzig"
+  ],
+  "inVocabSample": [
+    {
+      "token": "arme",
+      "match": "arm",
+      "entry": {
+        "word": "Arm",
+        "level": "A1",
+        "id": "a1_0610",
+        "category": "Text.md tamamlama"
+      },
+      "from": "arme"
+    },
+    {
+      "token": "bad",
+      "match": "bad",
+      "entry": {
+        "word": "Bad",
+        "level": "A2",
+        "id": "a2_0006",
+        "category": "Duygular"
+      }
+    },
+    {
+      "token": "beinen",
+      "match": "bein",
+      "entry": {
+        "word": "Bein",
+        "level": "A1",
+        "id": "a1_0611",
+        "category": "Text.md tamamlama"
+      },
+      "from": "beinen"
+    },
+    {
+      "token": "besonders",
+      "match": "besonders",
+      "entry": {
+        "word": "besonders",
+        "level": "A1",
+        "id": "a1_0723",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "besser",
+      "match": "besser",
+      "entry": {
+        "word": "besser",
+        "level": "A2",
+        "id": "a2_0237",
+        "category": "Hava & Doğa"
+      }
+    },
+    {
+      "token": "bett",
+      "match": "bett",
+      "entry": {
+        "word": "Bett",
+        "level": "A2",
+        "id": "a2_0011",
+        "category": "İş & Kariyer"
+      }
+    },
+    {
+      "token": "betten",
+      "match": "bett",
+      "entry": {
+        "word": "Bett",
+        "level": "A2",
+        "id": "a2_0011",
+        "category": "İş & Kariyer"
+      },
+      "from": "betten"
+    },
+    {
+      "token": "brief",
+      "match": "brief",
+      "entry": {
+        "word": "Brief",
+        "level": "A1",
+        "id": "a1_0593",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "brieffreund",
+      "match": "brieffreund",
+      "entry": {
+        "word": "Brieffreund",
+        "level": "A1",
+        "id": "a1_0758",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "brieffreunde",
+      "match": "brieffreund",
+      "entry": {
+        "word": "Brieffreund",
+        "level": "A1",
+        "id": "a1_0758",
+        "category": "Text.md tamamlama"
+      },
+      "from": "brieffreunde"
+    },
+    {
+      "token": "bringen",
+      "match": "bringen",
+      "entry": {
+        "word": "bringen",
+        "level": "A1",
+        "id": "a1_0676",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "duschen",
+      "match": "duschen",
+      "entry": {
+        "word": "duschen",
+        "level": "A1",
+        "id": "a1_0515",
+        "category": "Günlük ihtiyaçlar"
+      }
+    },
+    {
+      "token": "einkaufen",
+      "match": "einkaufen",
+      "entry": {
+        "word": "einkaufen",
+        "level": "A2",
+        "id": "a2_0365",
+        "category": "Günlük rutin"
+      }
+    },
+    {
+      "token": "eltern",
+      "match": "eltern",
+      "entry": {
+        "word": "Eltern",
+        "level": "A1",
+        "id": "a1_0497",
+        "category": "Form doldurma"
+      }
+    },
+    {
+      "token": "essen",
+      "match": "essen",
+      "entry": {
+        "word": "Essen",
+        "level": "A2",
+        "id": "a2_0264",
+        "category": "Seyahat"
+      }
+    },
+    {
+      "token": "fahren",
+      "match": "fahren",
+      "entry": {
+        "word": "fahren",
+        "level": "A2",
+        "id": "a2_0121",
+        "category": "Alışveriş & Hizmetler"
+      }
+    },
+    {
+      "token": "fahrrad",
+      "match": "fahrrad",
+      "entry": {
+        "word": "Fahrrad",
+        "level": "A2",
+        "id": "a2_0114",
+        "category": "Sağlık"
+      }
+    },
+    {
+      "token": "fallen",
+      "match": "fallen",
+      "entry": {
+        "word": "fallen",
+        "level": "A1",
+        "id": "a1_0828",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "familien",
+      "match": "familie",
+      "entry": {
+        "word": "Familie",
+        "level": "A1",
+        "id": "a1_0078",
+        "category": "Aile"
+      },
+      "from": "familien"
+    },
+    {
+      "token": "geben",
+      "match": "geben",
+      "entry": {
+        "word": "geben",
+        "level": "A1",
+        "id": "a1_0527",
+        "category": "Günlük ihtiyaçlar"
+      }
+    },
+    {
+      "token": "gehen",
+      "match": "gehen",
+      "entry": {
+        "word": "gehen",
+        "level": "A2",
+        "id": "a2_0365",
+        "category": "Günlük rutin"
+      }
+    },
+    {
+      "token": "gesehen",
+      "match": "gesehen",
+      "entry": {
+        "word": "gesehen",
+        "level": "A2",
+        "id": "a2_0399",
+        "category": "Geçmiş zaman"
+      }
+    },
+    {
+      "token": "groß",
+      "match": "groß",
+      "entry": {
+        "word": "groß",
+        "level": "A1",
+        "id": "a1_0845",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "hause",
+      "match": "haus",
+      "entry": {
+        "word": "Haus",
+        "level": "A2",
+        "id": "a2_0002",
+        "category": "Sağlık"
+      },
+      "from": "hause"
+    },
+    {
+      "token": "heiß",
+      "match": "heiß",
+      "entry": {
+        "word": "heiß",
+        "level": "A1",
+        "id": "a1_0740",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "heiße",
+      "match": "heiß",
+      "entry": {
+        "word": "heiß",
+        "level": "A1",
+        "id": "a1_0740",
+        "category": "Text.md tamamlama"
+      },
+      "from": "heiße"
+    },
+    {
+      "token": "heißt",
+      "match": "heiß",
+      "entry": {
+        "word": "heiß",
+        "level": "A1",
+        "id": "a1_0740",
+        "category": "Text.md tamamlama"
+      },
+      "from": "heißt"
+    },
+    {
+      "token": "hilfe",
+      "match": "hilfe",
+      "entry": {
+        "word": "Hilfe",
+        "level": "A2",
+        "id": "a2_0239",
+        "category": "Geçmiş zaman"
+      }
+    },
+    {
+      "token": "hunger",
+      "match": "hunger",
+      "entry": {
+        "word": "Hunger",
+        "level": "A1",
+        "id": "a1_0597",
+        "category": "Text.md tamamlama"
+      }
+    },
+    {
+      "token": "immer",
+      "match": "immer",
+      "entry": {
+        "word": "immer",
+        "level": "A2",
+        "id": "a2_0155",
+        "category": "İş & Kariyer"
+      }
+    }
+  ],
+  "lineCountEstimate": 349,
+  "charCount": 7967
+}

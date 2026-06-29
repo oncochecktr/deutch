@@ -1,0 +1,3423 @@
+{
+  "vocabTotal": 852,
+  "textMdLines": 597,
+  "in_vocab": [
+    {
+      "line": 1,
+      "raw": "Der Gast",
+      "word": "Gast",
+      "id": "a1_0578"
+    },
+    {
+      "line": 2,
+      "raw": "Der Job",
+      "word": "Job",
+      "id": "a1_0579"
+    },
+    {
+      "line": 3,
+      "raw": "Der Preis",
+      "word": "Preis",
+      "id": "a1_0142"
+    },
+    {
+      "line": 4,
+      "raw": "Der Text",
+      "word": "Text",
+      "id": "a1_0580"
+    },
+    {
+      "line": 5,
+      "raw": "Der Test",
+      "word": "Test",
+      "id": "a1_0581"
+    },
+    {
+      "line": 6,
+      "raw": "Der Urlaub",
+      "word": "Urlaub",
+      "id": "a1_0201"
+    },
+    {
+      "line": 8,
+      "raw": "Das Schaf",
+      "word": "Schaf",
+      "id": "a1_0648"
+    },
+    {
+      "line": 9,
+      "raw": "Das Getränk",
+      "word": "Getränk",
+      "id": "a1_0582"
+    },
+    {
+      "line": 10,
+      "raw": "Das Glas",
+      "word": "Glas",
+      "id": "a1_0583"
+    },
+    {
+      "line": 11,
+      "raw": "Das Hobby",
+      "word": "Hobby",
+      "id": "a1_0584"
+    },
+    {
+      "line": 12,
+      "raw": "Das Internet",
+      "word": "Internet",
+      "id": "a1_0384"
+    },
+    {
+      "line": 13,
+      "raw": "Das Kilo",
+      "word": "Kilo",
+      "id": "a1_0585"
+    },
+    {
+      "line": 14,
+      "raw": "Das Kino",
+      "word": "Kino",
+      "id": "a1_0586"
+    },
+    {
+      "line": 15,
+      "raw": "Das Programm",
+      "word": "Programm",
+      "id": "a1_0587"
+    },
+    {
+      "line": 16,
+      "raw": "Das Taxi",
+      "word": "Taxi",
+      "id": "a1_0212"
+    },
+    {
+      "line": 17,
+      "raw": "Die Antwort",
+      "word": "Antwort",
+      "id": "a1_0062"
+    },
+    {
+      "line": 18,
+      "raw": "Die Banane",
+      "word": "Banane",
+      "id": "a1_0148"
+    },
+    {
+      "line": 19,
+      "raw": "Die Batterie",
+      "word": "Batterie",
+      "id": "a1_0588"
+    },
+    {
+      "line": 20,
+      "raw": "Die Exkursion",
+      "word": "Exkursion",
+      "id": "a1_0605"
+    },
+    {
+      "line": 21,
+      "raw": "Die Frage",
+      "word": "Frage",
+      "id": "a1_0061"
+    },
+    {
+      "line": 22,
+      "raw": "Die Freizeit",
+      "word": "Freizeit",
+      "id": "a1_0604"
+    },
+    {
+      "line": 23,
+      "raw": "Die Miete",
+      "word": "Miete",
+      "id": "a1_0130"
+    },
+    {
+      "line": 24,
+      "raw": "Die Oma",
+      "word": "Oma",
+      "id": "a1_0589"
+    },
+    {
+      "line": 25,
+      "raw": "Die Situation",
+      "word": "Situation",
+      "id": "a1_0591"
+    },
+    {
+      "line": 26,
+      "raw": "Die Person",
+      "word": "Person",
+      "id": "a1_0590"
+    },
+    {
+      "line": 27,
+      "raw": "Die Tochter",
+      "word": "Tochter",
+      "id": "a1_0072"
+    },
+    {
+      "line": 28,
+      "raw": "Die Sprache",
+      "word": "Sprache",
+      "id": "a1_0039"
+    },
+    {
+      "line": 29,
+      "raw": "Die Tür",
+      "word": "Tür",
+      "id": "a1_0109"
+    },
+    {
+      "line": 30,
+      "raw": "Anfragen",
+      "word": "Anfragen",
+      "id": "a1_0674"
+    },
+    {
+      "line": 31,
+      "raw": "Benutzen",
+      "word": "Benutzen",
+      "id": "a1_0675"
+    },
+    {
+      "line": 32,
+      "raw": "Bringen",
+      "word": "Bringen",
+      "id": "a1_0676"
+    },
+    {
+      "line": 33,
+      "raw": "Folgen",
+      "word": "Folgen",
+      "id": "a1_0677"
+    },
+    {
+      "line": 34,
+      "raw": "Funktionieren",
+      "word": "Funktionieren",
+      "id": "a1_0406"
+    },
+    {
+      "line": 35,
+      "raw": "Gehören",
+      "word": "Gehören",
+      "id": "a1_0678"
+    },
+    {
+      "line": 36,
+      "raw": "Hoffen",
+      "word": "Hoffen",
+      "id": "a1_0679"
+    },
+    {
+      "line": 37,
+      "raw": "Informieren",
+      "word": "Informieren",
+      "id": "a1_0680"
+    },
+    {
+      "line": 38,
+      "raw": "Lachen",
+      "word": "Lachen",
+      "id": "a1_0681"
+    },
+    {
+      "line": 39,
+      "raw": "Laufen",
+      "word": "Laufen",
+      "id": "a1_0534"
+    },
+    {
+      "line": 40,
+      "raw": "sparen",
+      "word": "sparen",
+      "id": "a1_0711"
+    },
+    {
+      "line": 41,
+      "raw": "Stellen",
+      "word": "Stellen",
+      "id": "a1_0682"
+    },
+    {
+      "line": 42,
+      "raw": "Verdienen",
+      "word": "Verdienen",
+      "id": "a1_0683"
+    },
+    {
+      "line": 43,
+      "raw": "Vergessen",
+      "word": "Vergessen",
+      "id": "a1_0684"
+    },
+    {
+      "line": 44,
+      "raw": "Wiederholen",
+      "word": "Wiederholen",
+      "id": "a1_0685"
+    },
+    {
+      "line": 45,
+      "raw": "Bequem",
+      "word": "Bequem",
+      "id": "a1_0713"
+    },
+    {
+      "line": 46,
+      "raw": "Andere",
+      "word": "Andere",
+      "id": "a1_0839"
+    },
+    {
+      "line": 47,
+      "raw": "Besser",
+      "word": "Besser",
+      "id": "a1_0337"
+    },
+    {
+      "line": 48,
+      "raw": "Formel",
+      "word": "Formel",
+      "id": "a1_0766"
+    },
+    {
+      "line": 49,
+      "raw": "Freundlich",
+      "word": "Freundlich",
+      "id": "a1_0844"
+    },
+    {
+      "line": 50,
+      "raw": "Koch",
+      "word": "Koch",
+      "id": "a1_0601"
+    },
+    {
+      "line": 51,
+      "raw": "Informell",
+      "word": "Informell",
+      "id": "a1_0718"
+    },
+    {
+      "line": 52,
+      "raw": "Kalt",
+      "word": "Kalt",
+      "id": "a1_0373"
+    },
+    {
+      "line": 53,
+      "raw": "Klar",
+      "word": "Klar",
+      "id": "a1_0714"
+    },
+    {
+      "line": 54,
+      "raw": "Laut",
+      "word": "Laut",
+      "id": "a1_0399"
+    },
+    {
+      "line": 55,
+      "raw": "Licht",
+      "word": "Licht",
+      "id": "a1_0782"
+    },
+    {
+      "line": 56,
+      "raw": "Lustig",
+      "word": "Lustig",
+      "id": "a1_0715"
+    },
+    {
+      "line": 57,
+      "raw": "Müde",
+      "word": "Müde",
+      "id": "a1_0335"
+    },
+    {
+      "line": 58,
+      "raw": "Offiziell",
+      "word": "Offiziell",
+      "id": "a1_0716"
+    },
+    {
+      "line": 59,
+      "raw": "Privat",
+      "word": "Privat",
+      "id": "a1_0717"
+    },
+    {
+      "line": 60,
+      "raw": "schwer",
+      "word": "schwer",
+      "id": "a1_0720"
+    },
+    {
+      "line": 61,
+      "raw": "Toll",
+      "word": "Toll",
+      "id": "a1_0719"
+    },
+    {
+      "line": 62,
+      "raw": "Warm",
+      "word": "Warm",
+      "id": "a1_0372"
+    },
+    {
+      "line": 63,
+      "raw": "Anders",
+      "word": "Anders",
+      "id": "a1_0721"
+    },
+    {
+      "line": 64,
+      "raw": "Beide",
+      "word": "Beide",
+      "id": "a1_0722"
+    },
+    {
+      "line": 65,
+      "raw": "Besonders",
+      "word": "Besonders",
+      "id": "a1_0723"
+    },
+    {
+      "line": 66,
+      "raw": "Genau",
+      "word": "Genau",
+      "id": "a1_0724"
+    },
+    {
+      "line": 67,
+      "raw": "Gern",
+      "word": "Gern",
+      "id": "a1_0730"
+    },
+    {
+      "line": 68,
+      "raw": "Gestern",
+      "word": "Gestern",
+      "id": "a1_0242"
+    },
+    {
+      "line": 70,
+      "raw": "Links",
+      "word": "Links",
+      "id": "a1_0543"
+    },
+    {
+      "line": 71,
+      "raw": "Manchmal",
+      "word": "Manchmal",
+      "id": "a1_0256"
+    },
+    {
+      "line": 72,
+      "raw": "Minus",
+      "word": "Minus",
+      "id": "a1_0849"
+    },
+    {
+      "line": 73,
+      "raw": "Offen",
+      "word": "Offen",
+      "id": "a1_0725"
+    },
+    {
+      "line": 75,
+      "raw": "Selbst",
+      "word": "Selbst",
+      "id": "a1_0726"
+    },
+    {
+      "line": 76,
+      "raw": "Sofort",
+      "word": "Sofort",
+      "id": "a1_0727"
+    },
+    {
+      "line": 77,
+      "raw": "Üben",
+      "word": "Üben",
+      "id": "a1_0835"
+    },
+    {
+      "line": 79,
+      "raw": "Vielleicht",
+      "word": "Vielleicht",
+      "id": "a1_0032"
+    },
+    {
+      "line": 80,
+      "raw": "Weiter",
+      "word": "Weiter",
+      "id": "a1_0728"
+    },
+    {
+      "line": 82,
+      "raw": "Wieder",
+      "word": "Wieder",
+      "id": "a1_0729"
+    },
+    {
+      "line": 83,
+      "raw": "Der Adressat",
+      "word": "Adressat",
+      "id": "a1_0750"
+    },
+    {
+      "line": 85,
+      "raw": "Der Alkohol",
+      "word": "Alkohol",
+      "id": "a1_0751"
+    },
+    {
+      "line": 86,
+      "raw": "Der Arm",
+      "word": "Arm",
+      "id": "a1_0610"
+    },
+    {
+      "line": 88,
+      "raw": "Der Bahnhof",
+      "word": "Bahnhof",
+      "id": "a1_0206"
+    },
+    {
+      "line": 89,
+      "raw": "Der Balkon",
+      "word": "Balkon",
+      "id": "a1_0125"
+    },
+    {
+      "line": 90,
+      "raw": "Der Baum",
+      "word": "Baum",
+      "id": "a1_0594"
+    },
+    {
+      "line": 91,
+      "raw": "Der Berg",
+      "word": "Berg",
+      "id": "a1_0595"
+    },
+    {
+      "line": 92,
+      "raw": "Der Brief",
+      "word": "Brief",
+      "id": "a1_0593"
+    },
+    {
+      "line": 94,
+      "raw": "Der Deutschkurs",
+      "word": "Deutschkurs",
+      "id": "a1_0761"
+    },
+    {
+      "line": 95,
+      "raw": "Der Deutschtest",
+      "word": "Deutschtest",
+      "id": "a1_0762"
+    },
+    {
+      "line": 96,
+      "raw": "Der Deutschunterricht",
+      "word": "Deutschunterricht",
+      "id": "a1_0763"
+    },
+    {
+      "line": 97,
+      "raw": "Der Dialog",
+      "word": "Dialog",
+      "id": "a1_0603"
+    },
+    {
+      "line": 98,
+      "raw": "Der Flug",
+      "word": "Flug",
+      "id": "a1_0764"
+    },
+    {
+      "line": 99,
+      "raw": "Der Fußball",
+      "word": "Fußball",
+      "id": "a1_0619"
+    },
+    {
+      "line": 100,
+      "raw": "Der Garten",
+      "word": "Garten",
+      "id": "a1_0124"
+    },
+    {
+      "line": 101,
+      "raw": "Der Fuß",
+      "word": "Fuß",
+      "id": "a1_0327"
+    },
+    {
+      "line": 102,
+      "raw": "Der Grund",
+      "word": "Grund",
+      "id": "a1_0655"
+    },
+    {
+      "line": 103,
+      "raw": "Der Hunger",
+      "word": "Hunger",
+      "id": "a1_0597"
+    },
+    {
+      "line": 104,
+      "raw": "Der Käse",
+      "word": "Käse",
+      "id": "a1_0155"
+    },
+    {
+      "line": 105,
+      "raw": "Der Koffer",
+      "word": "Koffer",
+      "id": "a1_0596"
+    },
+    {
+      "line": 106,
+      "raw": "Der Kurs",
+      "word": "Kurs",
+      "id": "a1_0468"
+    },
+    {
+      "line": 107,
+      "raw": "Der Laden",
+      "word": "Laden",
+      "id": "a1_0403"
+    },
+    {
+      "line": 108,
+      "raw": "Der Liter",
+      "word": "Liter",
+      "id": "a1_0783"
+    },
+    {
+      "line": 109,
+      "raw": "Der Mensch",
+      "word": "Mensch",
+      "id": "a1_0620"
+    },
+    {
+      "line": 110,
+      "raw": "Der Meter",
+      "word": "Meter",
+      "id": "a1_0572"
+    },
+    {
+      "line": 111,
+      "raw": "Der Moment",
+      "word": "Moment",
+      "id": "a1_0621"
+    },
+    {
+      "line": 112,
+      "raw": "Der Nachmittag",
+      "word": "Nachmittag",
+      "id": "a1_0266"
+    },
+    {
+      "line": 114,
+      "raw": "Der Papa",
+      "word": "Papa",
+      "id": "a1_0598"
+    },
+    {
+      "line": 115,
+      "raw": "Der Satz",
+      "word": "Satz",
+      "id": "a1_0600"
+    },
+    {
+      "line": 116,
+      "raw": "Der Schüler",
+      "word": "Schüler",
+      "id": "a1_0485"
+    },
+    {
+      "line": 117,
+      "raw": "Die See",
+      "word": "See",
+      "id": "a1_0797"
+    },
+    {
+      "line": 118,
+      "raw": "Der Sohn",
+      "word": "Sohn",
+      "id": "a1_0071"
+    },
+    {
+      "line": 119,
+      "raw": "Das Teil",
+      "word": "Teil",
+      "id": "a1_0812"
+    },
+    {
+      "line": 120,
+      "raw": "Der Trainer",
+      "word": "Trainer",
+      "id": "a1_0622"
+    },
+    {
+      "line": 121,
+      "raw": "Der Wein",
+      "word": "Wein",
+      "id": "a1_0649"
+    },
+    {
+      "line": 122,
+      "raw": "Das Alphabet",
+      "word": "Alphabet",
+      "id": "a1_0752"
+    },
+    {
+      "line": 123,
+      "raw": "Das Apartment",
+      "word": "Apartment",
+      "id": "a1_0753"
+    },
+    {
+      "line": 124,
+      "raw": "Das Baby",
+      "word": "Baby",
+      "id": "a1_0081"
+    },
+    {
+      "line": 125,
+      "raw": "Das Bier",
+      "word": "Bier",
+      "id": "a1_0592"
+    },
+    {
+      "line": 126,
+      "raw": "Das Bild",
+      "word": "Bild",
+      "id": "a1_0658"
+    },
+    {
+      "line": 127,
+      "raw": "Das Büro",
+      "word": "Büro",
+      "id": "a1_0176"
+    },
+    {
+      "line": 128,
+      "raw": "Das Diplom",
+      "word": "Diplom",
+      "id": "a1_0659"
+    },
+    {
+      "line": 129,
+      "raw": "Das Dokument",
+      "word": "Dokument",
+      "id": "a1_0452"
+    },
+    {
+      "line": 130,
+      "raw": "Das Dorf",
+      "word": "Dorf",
+      "id": "a1_0614"
+    },
+    {
+      "line": 131,
+      "raw": "Das Ei",
+      "word": "Ei",
+      "id": "a1_0156"
+    },
+    {
+      "line": 132,
+      "raw": "Das Ende",
+      "word": "Ende",
+      "id": "a1_0453"
+    },
+    {
+      "line": 133,
+      "raw": "Das Fest",
+      "word": "Fest",
+      "id": "a1_0652"
+    },
+    {
+      "line": 134,
+      "raw": "Das Gespräch",
+      "word": "Gespräch",
+      "id": "a1_0653"
+    },
+    {
+      "line": 135,
+      "raw": "Das Glück",
+      "word": "Glück",
+      "id": "a1_0654"
+    },
+    {
+      "line": 136,
+      "raw": "Das Gramm",
+      "word": "Gramm",
+      "id": "a1_0772"
+    },
+    {
+      "line": 137,
+      "raw": "Das Hemd",
+      "word": "Hemd",
+      "id": "a1_0616"
+    },
+    {
+      "line": 138,
+      "raw": "Das Kleid",
+      "word": "Kleid",
+      "id": "a1_0617"
+    },
+    {
+      "line": 139,
+      "raw": "Das Leben",
+      "word": "Leben",
+      "id": "a1_0780"
+    },
+    {
+      "line": 140,
+      "raw": "Das Meer",
+      "word": "Meer",
+      "id": "a1_0615"
+    },
+    {
+      "line": 141,
+      "raw": "Das Mineralwasser",
+      "word": "Mineralwasser",
+      "id": "a1_0644"
+    },
+    {
+      "line": 142,
+      "raw": "Das Möbel",
+      "word": "Möbel",
+      "id": "a1_0131"
+    },
+    {
+      "line": 143,
+      "raw": "Das Produkt",
+      "word": "Produkt",
+      "id": "a1_0792"
+    },
+    {
+      "line": 144,
+      "raw": "Das Projekt",
+      "word": "Projekt",
+      "id": "a1_0186"
+    },
+    {
+      "line": 145,
+      "raw": "Das Radio",
+      "word": "Radio",
+      "id": "a1_0796"
+    },
+    {
+      "line": 146,
+      "raw": "Das Salz",
+      "word": "Salz",
+      "id": "a1_0159"
+    },
+    {
+      "line": 147,
+      "raw": "Das Theater",
+      "word": "Theater",
+      "id": "a1_0618"
+    },
+    {
+      "line": 148,
+      "raw": "Das Sofa",
+      "word": "Sofa",
+      "id": "a1_0114"
+    },
+    {
+      "line": 149,
+      "raw": "Das TV",
+      "word": "TV",
+      "id": "a1_0816"
+    },
+    {
+      "line": 151,
+      "raw": "Das Video",
+      "word": "Video",
+      "id": "a1_0397"
+    },
+    {
+      "line": 152,
+      "raw": "Das Wohnzimmer",
+      "word": "Wohnzimmer",
+      "id": "a1_0108"
+    },
+    {
+      "line": 153,
+      "raw": "Das Wörterbuch",
+      "word": "Wörterbuch",
+      "id": "a1_0820"
+    },
+    {
+      "line": 154,
+      "raw": "Die Brille",
+      "word": "Brille",
+      "id": "a1_0602"
+    },
+    {
+      "line": 155,
+      "raw": "Die Brücke",
+      "word": "Brücke",
+      "id": "a1_0561"
+    },
+    {
+      "line": 156,
+      "raw": "Die Butter",
+      "word": "Butter",
+      "id": "a1_0157"
+    },
+    {
+      "line": 157,
+      "raw": "Die Dusche",
+      "word": "Dusche",
+      "id": "a1_0623"
+    },
+    {
+      "line": 158,
+      "raw": "Die E-Mail",
+      "word": "E-Mail",
+      "id": "a1_0387"
+    },
+    {
+      "line": 159,
+      "raw": "Die Ecke",
+      "word": "Ecke",
+      "id": "a1_0558"
+    },
+    {
+      "line": 160,
+      "raw": "Die Ehefrau",
+      "word": "Ehefrau",
+      "id": "a1_0080"
+    },
+    {
+      "line": 161,
+      "raw": "Die Farbe",
+      "word": "Farbe",
+      "id": "a1_0624"
+    },
+    {
+      "line": 162,
+      "raw": "Die Fremdsprache",
+      "word": "Fremdsprache",
+      "id": "a1_0767"
+    },
+    {
+      "line": 163,
+      "raw": "Die Garage",
+      "word": "Garage",
+      "id": "a1_0625"
+    },
+    {
+      "line": 164,
+      "raw": "Die Garantie",
+      "word": "Garantie",
+      "id": "a1_0769"
+    },
+    {
+      "line": 165,
+      "raw": "Die Gitarre",
+      "word": "Gitarre",
+      "id": "a1_0626"
+    },
+    {
+      "line": 166,
+      "raw": "Die Grammatik",
+      "word": "Grammatik",
+      "id": "a1_0773"
+    },
+    {
+      "line": 167,
+      "raw": "groß",
+      "word": "groß",
+      "id": "a1_0845"
+    },
+    {
+      "line": 168,
+      "raw": "Die Gruppe",
+      "word": "Gruppe",
+      "id": "a1_0187"
+    },
+    {
+      "line": 169,
+      "raw": "Die Haltestelle",
+      "word": "Haltestelle",
+      "id": "a1_0217"
+    },
+    {
+      "line": 170,
+      "raw": "Die Hauptstadt",
+      "word": "Hauptstadt",
+      "id": "a1_0627"
+    },
+    {
+      "line": 171,
+      "raw": "Die Hausaufgabe",
+      "word": "Hausaufgabe",
+      "id": "a1_0628"
+    },
+    {
+      "line": 172,
+      "raw": "Die Hausfrau",
+      "word": "Hausfrau",
+      "id": "a1_0774"
+    },
+    {
+      "line": 173,
+      "raw": "Die Informatik",
+      "word": "Informatik",
+      "id": "a1_0777"
+    },
+    {
+      "line": 174,
+      "raw": "Die Kartoffel",
+      "word": "Kartoffel",
+      "id": "a1_0357"
+    },
+    {
+      "line": 175,
+      "raw": "Die Kasse",
+      "word": "Kasse",
+      "id": "a1_0166"
+    },
+    {
+      "line": 176,
+      "raw": "Die Klasse",
+      "word": "Klasse",
+      "id": "a1_0629"
+    },
+    {
+      "line": 177,
+      "raw": "Die Kleidung",
+      "word": "Kleidung",
+      "id": "a1_0539"
+    },
+    {
+      "line": 178,
+      "raw": "Die Küche",
+      "word": "Küche",
+      "id": "a1_0105"
+    },
+    {
+      "line": 179,
+      "raw": "Die Kultur",
+      "word": "Kultur",
+      "id": "a1_0641"
+    },
+    {
+      "line": 180,
+      "raw": "Die Lektion",
+      "word": "Lektion",
+      "id": "a1_0781"
+    },
+    {
+      "line": 181,
+      "raw": "Die Medizin",
+      "word": "Medizin",
+      "id": "a1_0642"
+    },
+    {
+      "line": 182,
+      "raw": "Die Nachrichten",
+      "word": "Nachrichten",
+      "id": "a1_0789"
+    },
+    {
+      "line": 183,
+      "raw": "Die Pause",
+      "word": "Pause",
+      "id": "a1_0178"
+    },
+    {
+      "line": 184,
+      "raw": "Die Prüfung",
+      "word": "Prüfung",
+      "id": "a1_0795"
+    },
+    {
+      "line": 185,
+      "raw": "Die Rechnung",
+      "word": "Rechnung",
+      "id": "a1_0358"
+    },
+    {
+      "line": 186,
+      "raw": "Die Sekunde",
+      "word": "Sekunde",
+      "id": "a1_0249"
+    },
+    {
+      "line": 187,
+      "raw": "Die Station",
+      "word": "Station",
+      "id": "a1_0805"
+    },
+    {
+      "line": 188,
+      "raw": "Die Stelle",
+      "word": "Stelle",
+      "id": "a1_0806"
+    },
+    {
+      "line": 189,
+      "raw": "Die Temperatur",
+      "word": "Temperatur",
+      "id": "a1_0813"
+    },
+    {
+      "line": 190,
+      "raw": "Die Terrasse",
+      "word": "Terrasse",
+      "id": "a1_0814"
+    },
+    {
+      "line": 191,
+      "raw": "Die U-Bahn",
+      "word": "U-Bahn",
+      "id": "a1_0210"
+    },
+    {
+      "line": 192,
+      "raw": "Die USA",
+      "word": "USA",
+      "id": "a1_0818"
+    },
+    {
+      "line": 194,
+      "raw": "Die Zeitung",
+      "word": "Zeitung",
+      "id": "a1_0631"
+    },
+    {
+      "line": 195,
+      "raw": "Die Zigarette",
+      "word": "Zigarette",
+      "id": "a1_0630"
+    },
+    {
+      "line": 196,
+      "raw": "Dauern",
+      "word": "Dauern",
+      "id": "a1_0826"
+    },
+    {
+      "line": 197,
+      "raw": "Erklären",
+      "word": "Erklären",
+      "id": "a1_0691"
+    },
+    {
+      "line": 198,
+      "raw": "Freuen",
+      "word": "Freuen",
+      "id": "a1_0692"
+    },
+    {
+      "line": 199,
+      "raw": "Frühstücken",
+      "word": "Frühstücken",
+      "id": "a1_0829"
+    },
+    {
+      "line": 200,
+      "raw": "Gefallen",
+      "word": "Gefallen",
+      "id": "a1_0830"
+    },
+    {
+      "line": 201,
+      "raw": "Glauben",
+      "word": "Glauben",
+      "id": "a1_0693"
+    },
+    {
+      "line": 202,
+      "raw": "Halten",
+      "word": "Halten",
+      "id": "a1_0694"
+    },
+    {
+      "line": 203,
+      "raw": "heiraten",
+      "word": "heiraten",
+      "id": "a1_0097"
+    },
+    {
+      "line": 204,
+      "raw": "Legen",
+      "word": "Legen",
+      "id": "a1_0697"
+    },
+    {
+      "line": 205,
+      "raw": "Liegen",
+      "word": "Liegen",
+      "id": "a1_0698"
+    },
+    {
+      "line": 206,
+      "raw": "Parken",
+      "word": "Parken",
+      "id": "a1_0710"
+    },
+    {
+      "line": 207,
+      "raw": "Passieren",
+      "word": "Passieren",
+      "id": "a1_0699"
+    },
+    {
+      "line": 208,
+      "raw": "Rauchen",
+      "word": "Rauchen",
+      "id": "a1_0700"
+    },
+    {
+      "line": 209,
+      "raw": "Regnen",
+      "word": "Regnen",
+      "id": "a1_0701"
+    },
+    {
+      "line": 210,
+      "raw": "Reparieren",
+      "word": "Reparieren",
+      "id": "a1_0407"
+    },
+    {
+      "line": 211,
+      "raw": "Schauen",
+      "word": "Schauen",
+      "id": "a1_0702"
+    },
+    {
+      "line": 212,
+      "raw": "Suchen",
+      "word": "Suchen",
+      "id": "a1_0524"
+    },
+    {
+      "line": 213,
+      "raw": "Telefonieren",
+      "word": "Telefonieren",
+      "id": "a1_0833"
+    },
+    {
+      "line": 214,
+      "raw": "Trainieren",
+      "word": "Trainieren",
+      "id": "a1_0834"
+    },
+    {
+      "line": 215,
+      "raw": "Verlieren",
+      "word": "Verlieren",
+      "id": "a1_0709"
+    },
+    {
+      "line": 217,
+      "raw": "Falsch",
+      "word": "Falsch",
+      "id": "a1_0731"
+    },
+    {
+      "line": 219,
+      "raw": "Geschlossen",
+      "word": "Geschlossen",
+      "id": "a1_0749"
+    },
+    {
+      "line": 220,
+      "raw": "Hässlich",
+      "word": "Hässlich",
+      "id": "a1_0742"
+    },
+    {
+      "line": 221,
+      "raw": "Italienisch",
+      "word": "Italienisch",
+      "id": "a1_0846"
+    },
+    {
+      "line": 222,
+      "raw": "Japanisch",
+      "word": "Japanisch",
+      "id": "a1_0847"
+    },
+    {
+      "line": 223,
+      "raw": "Moder",
+      "word": "Moder",
+      "id": "a1_0788"
+    },
+    {
+      "line": 224,
+      "raw": "Pünktlich",
+      "word": "Pünktlich",
+      "id": "a1_0260"
+    },
+    {
+      "line": 225,
+      "raw": "Ruhig",
+      "word": "Ruhig",
+      "id": "a1_0733"
+    },
+    {
+      "line": 226,
+      "raw": "Rund",
+      "word": "Rund",
+      "id": "a1_0851"
+    },
+    {
+      "line": 227,
+      "raw": "Sicher",
+      "word": "Sicher",
+      "id": "a1_0738"
+    },
+    {
+      "line": 228,
+      "raw": "Sonnig",
+      "word": "Sonnig",
+      "id": "a1_0734"
+    },
+    {
+      "line": 229,
+      "raw": "Sympathisch",
+      "word": "Sympathisch",
+      "id": "a1_0735"
+    },
+    {
+      "line": 231,
+      "raw": "Unwichtig",
+      "word": "Unwichtig",
+      "id": "a1_0746"
+    },
+    {
+      "line": 232,
+      "raw": "Jemand",
+      "word": "Jemand",
+      "id": "a1_0848"
+    },
+    {
+      "line": 233,
+      "raw": "Draußen",
+      "word": "Draußen",
+      "id": "a1_0840"
+    },
+    {
+      "line": 234,
+      "raw": "Dreimal",
+      "word": "Dreimal",
+      "id": "a1_0841"
+    },
+    {
+      "line": 235,
+      "raw": "Dunkel",
+      "word": "Dunkel",
+      "id": "a1_0739"
+    },
+    {
+      "line": 236,
+      "raw": "echt",
+      "word": "echt",
+      "id": "a1_0842"
+    },
+    {
+      "line": 238,
+      "raw": "Einmal",
+      "word": "Einmal",
+      "id": "a1_0843"
+    },
+    {
+      "line": 240,
+      "raw": "Geboren",
+      "word": "Geboren",
+      "id": "a1_0098"
+    },
+    {
+      "line": 241,
+      "raw": "Gebraucht",
+      "word": "Gebraucht",
+      "id": "a1_0747"
+    },
+    {
+      "line": 243,
+      "raw": "Halb",
+      "word": "Halb",
+      "id": "a1_0251"
+    },
+    {
+      "line": 244,
+      "raw": "Lied",
+      "word": "Lied",
+      "id": "a1_0821"
+    },
+    {
+      "line": 246,
+      "raw": "Nie",
+      "word": "Nie",
+      "id": "a1_0257"
+    },
+    {
+      "line": 247,
+      "raw": "Noch",
+      "word": "Noch",
+      "id": "a1_0370"
+    },
+    {
+      "line": 248,
+      "raw": "Plus",
+      "word": "Plus",
+      "id": "a1_0850"
+    },
+    {
+      "line": 249,
+      "raw": "Rechts",
+      "word": "Rechts",
+      "id": "a1_0544"
+    },
+    {
+      "line": 252,
+      "raw": "Der Grad",
+      "word": "Grad",
+      "id": "a1_0771"
+    },
+    {
+      "line": 253,
+      "raw": "Die Mama",
+      "word": "Mama",
+      "id": "a1_0599"
+    },
+    {
+      "line": 255,
+      "raw": "Geschieden",
+      "word": "Geschieden",
+      "id": "a1_0459"
+    },
+    {
+      "line": 258,
+      "raw": "Verheiratet",
+      "word": "Verheiratet",
+      "id": "a1_0051"
+    },
+    {
+      "line": 259,
+      "raw": "Stimmen",
+      "word": "Stimmen",
+      "id": "a1_0832"
+    },
+    {
+      "line": 260,
+      "raw": "Tragen",
+      "word": "Tragen",
+      "id": "a1_0704"
+    },
+    {
+      "line": 261,
+      "raw": "Tun",
+      "word": "Tun",
+      "id": "a1_0706"
+    },
+    {
+      "line": 263,
+      "raw": "Voll",
+      "word": "Voll",
+      "id": "a1_0745"
+    },
+    {
+      "line": 264,
+      "raw": "Prüfen",
+      "word": "Prüfen",
+      "id": "a1_0831"
+    },
+    {
+      "line": 265,
+      "raw": "Verletzen",
+      "word": "Verletzen",
+      "id": "a1_0708"
+    },
+    {
+      "line": 266,
+      "raw": "Anmachen",
+      "word": "Anmachen",
+      "id": "a1_0822"
+    },
+    {
+      "line": 267,
+      "raw": "Antworten",
+      "word": "Antworten",
+      "id": "a1_0390"
+    },
+    {
+      "line": 268,
+      "raw": "Beschreiben",
+      "word": "Beschreiben",
+      "id": "a1_0823"
+    },
+    {
+      "line": 269,
+      "raw": "Bleiben",
+      "word": "Bleiben",
+      "id": "a1_0686"
+    },
+    {
+      "line": 270,
+      "raw": "Bitten",
+      "word": "Bitten",
+      "id": "a1_0687"
+    },
+    {
+      "line": 271,
+      "raw": "Brechen",
+      "word": "Brechen",
+      "id": "a1_0824"
+    },
+    {
+      "line": 272,
+      "raw": "Buchstabieren",
+      "word": "Buchstabieren",
+      "id": "a1_0825"
+    },
+    {
+      "line": 273,
+      "raw": "Danken",
+      "word": "Danken",
+      "id": "a1_0688"
+    },
+    {
+      "line": 274,
+      "raw": "Entschuldigen",
+      "word": "Entschuldigen",
+      "id": "a1_0690"
+    },
+    {
+      "line": 275,
+      "raw": "Enden",
+      "word": "Enden",
+      "id": "a1_0689"
+    },
+    {
+      "line": 276,
+      "raw": "Erzählen",
+      "word": "Erzählen",
+      "id": "a1_0827"
+    },
+    {
+      "line": 277,
+      "raw": "Fallen",
+      "word": "Fallen",
+      "id": "a1_0828"
+    },
+    {
+      "line": 278,
+      "raw": "gewinnen",
+      "word": "gewinnen",
+      "id": "a1_0712"
+    },
+    {
+      "line": 281,
+      "raw": "Klingen",
+      "word": "Klingen",
+      "id": "a1_0695"
+    },
+    {
+      "line": 282,
+      "raw": "kennenlernen",
+      "word": "kennenlernen",
+      "id": "a1_0057"
+    },
+    {
+      "line": 283,
+      "raw": "Springen",
+      "word": "Springen",
+      "id": "a1_0703"
+    },
+    {
+      "line": 284,
+      "raw": "Treiben",
+      "word": "Treiben",
+      "id": "a1_0705"
+    },
+    {
+      "line": 285,
+      "raw": "Übersetzen",
+      "word": "Übersetzen",
+      "id": "a1_0836"
+    },
+    {
+      "line": 286,
+      "raw": "Verkaufen",
+      "word": "Verkaufen",
+      "id": "a1_0707"
+    },
+    {
+      "line": 287,
+      "raw": "Zahlen",
+      "word": "Zahlen",
+      "id": "a1_0837"
+    },
+    {
+      "line": 288,
+      "raw": "Zählen",
+      "word": "Zählen",
+      "id": "a1_0838"
+    },
+    {
+      "line": 289,
+      "raw": "Lecker",
+      "word": "Lecker",
+      "id": "a1_0363"
+    },
+    {
+      "line": 290,
+      "raw": "Hungrig",
+      "word": "Hungrig",
+      "id": "a1_0360"
+    },
+    {
+      "line": 291,
+      "raw": "Arm",
+      "word": "Arm",
+      "id": "a1_0610"
+    },
+    {
+      "line": 292,
+      "raw": "Heiß",
+      "word": "Heiß",
+      "id": "a1_0740"
+    },
+    {
+      "line": 293,
+      "raw": "Faul",
+      "word": "Faul",
+      "id": "a1_0732"
+    },
+    {
+      "line": 294,
+      "raw": "Jung",
+      "word": "Jung",
+      "id": "a1_0743"
+    },
+    {
+      "line": 295,
+      "raw": "Selten",
+      "word": "Selten",
+      "id": "a1_0259"
+    },
+    {
+      "line": 296,
+      "raw": "Langweilig",
+      "word": "Langweilig",
+      "id": "a1_0736"
+    },
+    {
+      "line": 297,
+      "raw": "Schwach",
+      "word": "Schwach",
+      "id": "a1_0336"
+    },
+    {
+      "line": 298,
+      "raw": "Hart",
+      "word": "Hart",
+      "id": "a1_0741"
+    },
+    {
+      "line": 299,
+      "raw": "Klug",
+      "word": "Klug",
+      "id": "a1_0744"
+    },
+    {
+      "line": 300,
+      "raw": "Bekannt",
+      "word": "Bekannt",
+      "id": "a1_0748"
+    },
+    {
+      "line": 301,
+      "raw": "Wunderschön",
+      "word": "Wunderschön",
+      "id": "a1_0852"
+    },
+    {
+      "line": 302,
+      "raw": "Seltsam",
+      "word": "Seltsam",
+      "id": "a1_0737"
+    },
+    {
+      "line": 313,
+      "raw": "Der Montag",
+      "word": "Montag",
+      "id": "a1_0273"
+    },
+    {
+      "line": 314,
+      "raw": "Der Dienstag",
+      "word": "Dienstag",
+      "id": "a1_0274"
+    },
+    {
+      "line": 315,
+      "raw": "Der Mittwoch",
+      "word": "Mittwoch",
+      "id": "a1_0275"
+    },
+    {
+      "line": 316,
+      "raw": "Der Donnerstag",
+      "word": "Donnerstag",
+      "id": "a1_0276"
+    },
+    {
+      "line": 317,
+      "raw": "Der Freitag",
+      "word": "Freitag",
+      "id": "a1_0277"
+    },
+    {
+      "line": 318,
+      "raw": "Der Samstag",
+      "word": "Samstag",
+      "id": "a1_0278"
+    },
+    {
+      "line": 319,
+      "raw": "Der Sonntag",
+      "word": "Sonntag",
+      "id": "a1_0279"
+    },
+    {
+      "line": 320,
+      "raw": "Der Januar",
+      "word": "Januar",
+      "id": "a1_0283"
+    },
+    {
+      "line": 321,
+      "raw": "Der Februar",
+      "word": "Februar",
+      "id": "a1_0284"
+    },
+    {
+      "line": 322,
+      "raw": "Der März",
+      "word": "März",
+      "id": "a1_0285"
+    },
+    {
+      "line": 323,
+      "raw": "Der April",
+      "word": "April",
+      "id": "a1_0286"
+    },
+    {
+      "line": 324,
+      "raw": "Der Mai",
+      "word": "Mai",
+      "id": "a1_0287"
+    },
+    {
+      "line": 325,
+      "raw": "Der Juni",
+      "word": "Juni",
+      "id": "a1_0288"
+    },
+    {
+      "line": 326,
+      "raw": "Der Juli",
+      "word": "Juli",
+      "id": "a1_0289"
+    },
+    {
+      "line": 327,
+      "raw": "Der August",
+      "word": "August",
+      "id": "a1_0290"
+    },
+    {
+      "line": 328,
+      "raw": "Der September",
+      "word": "September",
+      "id": "a1_0291"
+    },
+    {
+      "line": 329,
+      "raw": "Der Oktober",
+      "word": "Oktober",
+      "id": "a1_0292"
+    },
+    {
+      "line": 330,
+      "raw": "Der November",
+      "word": "November",
+      "id": "a1_0293"
+    },
+    {
+      "line": 331,
+      "raw": "Der Dezember",
+      "word": "Dezember",
+      "id": "a1_0294"
+    },
+    {
+      "line": 332,
+      "raw": "Der Apfelsaft",
+      "word": "Apfelsaft",
+      "id": "a1_0754"
+    },
+    {
+      "line": 333,
+      "raw": "Der Ausländer",
+      "word": "Ausländer",
+      "id": "a1_0670"
+    },
+    {
+      "line": 334,
+      "raw": "Der Beginn",
+      "word": "Beginn",
+      "id": "a1_0447"
+    },
+    {
+      "line": 335,
+      "raw": "Der Besuch",
+      "word": "Besuch",
+      "id": "a1_0756"
+    },
+    {
+      "line": 336,
+      "raw": "Der Cent",
+      "word": "Cent",
+      "id": "a1_0760"
+    },
+    {
+      "line": 337,
+      "raw": "Der Durst",
+      "word": "Durst",
+      "id": "a1_0647"
+    },
+    {
+      "line": 338,
+      "raw": "Der Einkauf",
+      "word": "Einkauf",
+      "id": "a1_0669"
+    },
+    {
+      "line": 339,
+      "raw": "Der Finger",
+      "word": "Finger",
+      "id": "a1_0665"
+    },
+    {
+      "line": 340,
+      "raw": "Der Fluss",
+      "word": "Fluss",
+      "id": "a1_0765"
+    },
+    {
+      "line": 341,
+      "raw": "Der Intensivkurs",
+      "word": "Intensivkurs",
+      "id": "a1_0778"
+    },
+    {
+      "line": 342,
+      "raw": "Der Kalender",
+      "word": "Kalender",
+      "id": "a1_0301"
+    },
+    {
+      "line": 343,
+      "raw": "Der Kellner",
+      "word": "Kellner",
+      "id": "a1_0345"
+    },
+    {
+      "line": 344,
+      "raw": "Der Kopf",
+      "word": "Kopf",
+      "id": "a1_0325"
+    },
+    {
+      "line": 345,
+      "raw": "Der Mittag",
+      "word": "Mittag",
+      "id": "a1_0265"
+    },
+    {
+      "line": 346,
+      "raw": "Der Ort",
+      "word": "Ort",
+      "id": "a1_0439"
+    },
+    {
+      "line": 347,
+      "raw": "Der Prospekt",
+      "word": "Prospekt",
+      "id": "a1_0794"
+    },
+    {
+      "line": 348,
+      "raw": "Der Sommer",
+      "word": "Sommer",
+      "id": "a1_0296"
+    },
+    {
+      "line": 349,
+      "raw": "Der Start",
+      "word": "Start",
+      "id": "a1_0804"
+    },
+    {
+      "line": 350,
+      "raw": "Der Stift",
+      "word": "Stift",
+      "id": "a1_0807"
+    },
+    {
+      "line": 351,
+      "raw": "Der Stock",
+      "word": "Stock",
+      "id": "a1_0808"
+    },
+    {
+      "line": 352,
+      "raw": "Der Termin",
+      "word": "Termin",
+      "id": "a1_0313"
+    },
+    {
+      "line": 353,
+      "raw": "Der U-Bahnhof",
+      "word": "U-Bahnhof",
+      "id": "a1_0817"
+    },
+    {
+      "line": 354,
+      "raw": "Der Wagen",
+      "word": "Wagen",
+      "id": "a1_0819"
+    },
+    {
+      "line": 355,
+      "raw": "Der Winter",
+      "word": "Winter",
+      "id": "a1_0298"
+    },
+    {
+      "line": 356,
+      "raw": "Der Supermarkt",
+      "word": "Supermarkt",
+      "id": "a1_0136"
+    },
+    {
+      "line": 357,
+      "raw": "Der T-Shirt",
+      "word": "T-Shirt",
+      "id": "a1_0810"
+    },
+    {
+      "line": 358,
+      "raw": "Die Adresse",
+      "word": "Adresse",
+      "id": "a1_0409"
+    },
+    {
+      "line": 359,
+      "raw": "Die Apotheke",
+      "word": "Apotheke",
+      "id": "a1_0310"
+    },
+    {
+      "line": 360,
+      "raw": "Die Lust",
+      "word": "Lust",
+      "id": "a1_0784"
+    },
+    {
+      "line": 361,
+      "raw": "Die Meinung",
+      "word": "Meinung",
+      "id": "a1_0643"
+    },
+    {
+      "line": 362,
+      "raw": "Die Nase",
+      "word": "Nase",
+      "id": "a1_0662"
+    },
+    {
+      "line": 363,
+      "raw": "Die Note",
+      "word": "Note",
+      "id": "a1_0661"
+    },
+    {
+      "line": 364,
+      "raw": "Die Sprachschule",
+      "word": "Sprachschule",
+      "id": "a1_0803"
+    },
+    {
+      "line": 375,
+      "raw": "Lassen",
+      "word": "Lassen",
+      "id": "a1_0696"
+    },
+    {
+      "line": 379,
+      "raw": "Der Arbeiter",
+      "word": "Arbeiter",
+      "id": "a1_0755"
+    },
+    {
+      "line": 380,
+      "raw": "Der Ausgang",
+      "word": "Ausgang",
+      "id": "a1_0667"
+    },
+    {
+      "line": 381,
+      "raw": "Der Bauch",
+      "word": "Bauch",
+      "id": "a1_0612"
+    },
+    {
+      "line": 382,
+      "raw": "Der Becher",
+      "word": "Becher",
+      "id": "a1_0666"
+    },
+    {
+      "line": 383,
+      "raw": "Der Brieffreund",
+      "word": "Brieffreund",
+      "id": "a1_0758"
+    },
+    {
+      "line": 384,
+      "raw": "Der Buchstabe",
+      "word": "Buchstabe",
+      "id": "a1_0759"
+    },
+    {
+      "line": 385,
+      "raw": "Der Drucker",
+      "word": "Drucker",
+      "id": "a1_0673"
+    },
+    {
+      "line": 386,
+      "raw": "Der Eingang",
+      "word": "Eingang",
+      "id": "a1_0668"
+    },
+    {
+      "line": 387,
+      "raw": "Der Friseursalon",
+      "word": "Friseursalon",
+      "id": "a1_0768"
+    },
+    {
+      "line": 388,
+      "raw": "Der Frühling",
+      "word": "Frühling",
+      "id": "a1_0295"
+    },
+    {
+      "line": 389,
+      "raw": "Das Frühstück",
+      "word": "Frühstück",
+      "id": "a1_0349"
+    },
+    {
+      "line": 390,
+      "raw": "Der Gärtner",
+      "word": "Gärtner",
+      "id": "a1_0650"
+    },
+    {
+      "line": 391,
+      "raw": "Der Geburtstag",
+      "word": "Geburtstag",
+      "id": "a1_0281"
+    },
+    {
+      "line": 392,
+      "raw": "Der Gemüseladen",
+      "word": "Gemüseladen",
+      "id": "a1_0770"
+    },
+    {
+      "line": 393,
+      "raw": "Der Gruß",
+      "word": "Gruß",
+      "id": "a1_0656"
+    },
+    {
+      "line": 394,
+      "raw": "Der Gürtel",
+      "word": "Gürtel",
+      "id": "a1_0657"
+    },
+    {
+      "line": 395,
+      "raw": "Der Herbst",
+      "word": "Herbst",
+      "id": "a1_0297"
+    },
+    {
+      "line": 396,
+      "raw": "Der Korb",
+      "word": "Korb",
+      "id": "a1_0779"
+    },
+    {
+      "line": 397,
+      "raw": "Der Kühlschrank",
+      "word": "Kühlschrank",
+      "id": "a1_0120"
+    },
+    {
+      "line": 398,
+      "raw": "Der Mantel",
+      "word": "Mantel",
+      "id": "a1_0785"
+    },
+    {
+      "line": 399,
+      "raw": "Der Mechaniker",
+      "word": "Mechaniker",
+      "id": "a1_0786"
+    },
+    {
+      "line": 400,
+      "raw": "Der Meister",
+      "word": "Meister",
+      "id": "a1_0787"
+    },
+    {
+      "line": 401,
+      "raw": "Der Mietpreis",
+      "word": "Mietpreis",
+      "id": "a1_0660"
+    },
+    {
+      "line": 402,
+      "raw": "Der Mund",
+      "word": "Mund",
+      "id": "a1_0664"
+    },
+    {
+      "line": 403,
+      "raw": "Der Norden",
+      "word": "Norden",
+      "id": "a1_0568"
+    },
+    {
+      "line": 404,
+      "raw": "Der Ober",
+      "word": "Ober",
+      "id": "a1_0790"
+    },
+    {
+      "line": 405,
+      "raw": "Der Osten",
+      "word": "Osten",
+      "id": "a1_0570"
+    },
+    {
+      "line": 406,
+      "raw": "Der Parkplatz",
+      "word": "Parkplatz",
+      "id": "a1_0231"
+    },
+    {
+      "line": 407,
+      "raw": "Der Partner",
+      "word": "Partner",
+      "id": "a1_0640"
+    },
+    {
+      "line": 408,
+      "raw": "Der Pass",
+      "word": "Pass",
+      "id": "a1_0053"
+    },
+    {
+      "line": 409,
+      "raw": "Der Patient",
+      "word": "Patient",
+      "id": "a1_0639"
+    },
+    {
+      "line": 410,
+      "raw": "Der Plan",
+      "word": "Plan",
+      "id": "a1_0791"
+    },
+    {
+      "line": 411,
+      "raw": "Der Platz",
+      "word": "Platz",
+      "id": "a1_0563"
+    },
+    {
+      "line": 412,
+      "raw": "Der Polizist",
+      "word": "Polizist",
+      "id": "a1_0638"
+    },
+    {
+      "line": 413,
+      "raw": "Der Programmierer",
+      "word": "Programmierer",
+      "id": "a1_0793"
+    },
+    {
+      "line": 414,
+      "raw": "Der Pullover",
+      "word": "Pullover",
+      "id": "a1_0634"
+    },
+    {
+      "line": 415,
+      "raw": "Der Punkt",
+      "word": "Punkt",
+      "id": "a1_0252"
+    },
+    {
+      "line": 416,
+      "raw": "Der Regen",
+      "word": "Regen",
+      "id": "a1_0645"
+    },
+    {
+      "line": 417,
+      "raw": "Der Rock",
+      "word": "Rock",
+      "id": "a1_0635"
+    },
+    {
+      "line": 418,
+      "raw": "Der Rücken",
+      "word": "Rücken",
+      "id": "a1_0324"
+    },
+    {
+      "line": 419,
+      "raw": "Der Schrank",
+      "word": "Schrank",
+      "id": "a1_0115"
+    },
+    {
+      "line": 420,
+      "raw": "Der Schreibtisch",
+      "word": "Schreibtisch",
+      "id": "a1_0636"
+    },
+    {
+      "line": 421,
+      "raw": "Der Sekretär",
+      "word": "Sekretär",
+      "id": "a1_0799"
+    },
+    {
+      "line": 422,
+      "raw": "Der Service",
+      "word": "Service",
+      "id": "a1_0801"
+    },
+    {
+      "line": 423,
+      "raw": "Der Ski",
+      "word": "Ski",
+      "id": "a1_0802"
+    },
+    {
+      "line": 424,
+      "raw": "Der Stress",
+      "word": "Stress",
+      "id": "a1_0809"
+    },
+    {
+      "line": 425,
+      "raw": "Der Süden",
+      "word": "Süden",
+      "id": "a1_0569"
+    },
+    {
+      "line": 426,
+      "raw": "Der Westen",
+      "word": "Westen",
+      "id": "a1_0571"
+    },
+    {
+      "line": 427,
+      "raw": "Der Wind",
+      "word": "Wind",
+      "id": "a1_0646"
+    },
+    {
+      "line": 428,
+      "raw": "Der Wochentag",
+      "word": "Wochentag",
+      "id": "a1_0269"
+    },
+    {
+      "line": 429,
+      "raw": "Der Zucker",
+      "word": "Zucker",
+      "id": "a1_0158"
+    },
+    {
+      "line": 430,
+      "raw": "Das Alter",
+      "word": "Alter",
+      "id": "a1_0046"
+    },
+    {
+      "line": 431,
+      "raw": "Das Auge",
+      "word": "Auge",
+      "id": "a1_0328"
+    },
+    {
+      "line": 432,
+      "raw": "Das Bad",
+      "word": "Bad",
+      "id": "a1_0106"
+    },
+    {
+      "line": 433,
+      "raw": "Das Badezimmer",
+      "word": "Badezimmer",
+      "id": "a1_0672"
+    },
+    {
+      "line": 434,
+      "raw": "Das Bein",
+      "word": "Bein",
+      "id": "a1_0611"
+    },
+    {
+      "line": 435,
+      "raw": "Das Gemüse",
+      "word": "Gemüse",
+      "id": "a1_0146"
+    },
+    {
+      "line": 436,
+      "raw": "Das Haus",
+      "word": "Haus",
+      "id": "a1_0102"
+    },
+    {
+      "line": 437,
+      "raw": "Das Heft",
+      "word": "Heft",
+      "id": "a1_0776"
+    },
+    {
+      "line": 438,
+      "raw": "Das Herz",
+      "word": "Herz",
+      "id": "a1_0323"
+    },
+    {
+      "line": 439,
+      "raw": "Das Kaufhaus",
+      "word": "Kaufhaus",
+      "id": "a1_0632"
+    },
+    {
+      "line": 440,
+      "raw": "Das Ohr",
+      "word": "Ohr",
+      "id": "a1_0663"
+    },
+    {
+      "line": 441,
+      "raw": "Das Schwimmbad",
+      "word": "Schwimmbad",
+      "id": "a1_0637"
+    },
+    {
+      "line": 442,
+      "raw": "Das Team",
+      "word": "Team",
+      "id": "a1_0811"
+    },
+    {
+      "line": 443,
+      "raw": "Das Training",
+      "word": "Training",
+      "id": "a1_0815"
+    },
+    {
+      "line": 444,
+      "raw": "Das Joghurt",
+      "word": "Joghurt",
+      "id": "a1_0633"
+    },
+    {
+      "line": 445,
+      "raw": "Der Joghurt",
+      "word": "Joghurt",
+      "id": "a1_0633"
+    },
+    {
+      "line": 446,
+      "raw": "Die Badewanne",
+      "word": "Badewanne",
+      "id": "a1_0671"
+    },
+    {
+      "line": 447,
+      "raw": "Die bitte",
+      "word": "bitte",
+      "id": "a1_0009"
+    },
+    {
+      "line": 448,
+      "raw": "Die Blume",
+      "word": "Blume",
+      "id": "a1_0613"
+    },
+    {
+      "line": 449,
+      "raw": "Die Bluse",
+      "word": "Bluse",
+      "id": "a1_0757"
+    },
+    {
+      "line": 450,
+      "raw": "Die Feier",
+      "word": "Feier",
+      "id": "a1_0651"
+    },
+    {
+      "line": 451,
+      "raw": "Die Firma",
+      "word": "Firma",
+      "id": "a1_0175"
+    },
+    {
+      "line": 452,
+      "raw": "Die Haushaltshilfe",
+      "word": "Haushaltshilfe",
+      "id": "a1_0775"
+    },
+    {
+      "line": 453,
+      "raw": "Die Liste",
+      "word": "Liste",
+      "id": "a1_0609"
+    },
+    {
+      "line": 454,
+      "raw": "Die Pflanze",
+      "word": "Pflanze",
+      "id": "a1_0608"
+    },
+    {
+      "line": 455,
+      "raw": "Die Post",
+      "word": "Post",
+      "id": "a1_0607"
+    },
+    {
+      "line": 456,
+      "raw": "Die Postleitzahl",
+      "word": "Postleitzahl",
+      "id": "a1_0421"
+    },
+    {
+      "line": 457,
+      "raw": "Die Seite",
+      "word": "Seite",
+      "id": "a1_0798"
+    },
+    {
+      "line": 458,
+      "raw": "Die Sekretärin",
+      "word": "Sekretärin",
+      "id": "a1_0800"
+    },
+    {
+      "line": 459,
+      "raw": "Die Sonne",
+      "word": "Sonne",
+      "id": "a1_0606"
+    }
+  ],
+  "missing": [],
+  "typo": [],
+  "grammar_skip": [
+    {
+      "line": 69,
+      "raw": "Jede",
+      "word": "Jede"
+    },
+    {
+      "line": 74,
+      "raw": "Schön",
+      "word": "Schön"
+    },
+    {
+      "line": 78,
+      "raw": "Über",
+      "word": "Über"
+    },
+    {
+      "line": 81,
+      "raw": "Welche",
+      "word": "Welche"
+    },
+    {
+      "line": 84,
+      "raw": "Der Akkusativ",
+      "word": "Akkusativ"
+    },
+    {
+      "line": 87,
+      "raw": "Der Artikel",
+      "word": "Artikel"
+    },
+    {
+      "line": 93,
+      "raw": "Der Dativ",
+      "word": "Dativ"
+    },
+    {
+      "line": 113,
+      "raw": "Der Nominativ",
+      "word": "Nominativ"
+    },
+    {
+      "line": 150,
+      "raw": "Das Verb",
+      "word": "Verb"
+    },
+    {
+      "line": 193,
+      "raw": "Die zahl",
+      "word": "zahl"
+    },
+    {
+      "line": 216,
+      "raw": "Direkt",
+      "word": "Direkt"
+    },
+    {
+      "line": 218,
+      "raw": "Früher",
+      "word": "Früher"
+    },
+    {
+      "line": 230,
+      "raw": "Temporal",
+      "word": "Temporal"
+    },
+    {
+      "line": 237,
+      "raw": "Ein bisschen",
+      "word": "Ein bisschen"
+    },
+    {
+      "line": 239,
+      "raw": "Endlich",
+      "word": "Endlich"
+    },
+    {
+      "line": 242,
+      "raw": "Gegen",
+      "word": "Gegen"
+    },
+    {
+      "line": 245,
+      "raw": "Morgens",
+      "word": "Morgens"
+    },
+    {
+      "line": 250,
+      "raw": "Alleine",
+      "word": "Alleine"
+    },
+    {
+      "line": 251,
+      "raw": "Denn",
+      "word": "Denn"
+    },
+    {
+      "line": 254,
+      "raw": "Gleich",
+      "word": "Gleich"
+    },
+    {
+      "line": 256,
+      "raw": "Solche",
+      "word": "Solche"
+    },
+    {
+      "line": 257,
+      "raw": "Sonst",
+      "word": "Sonst"
+    },
+    {
+      "line": 279,
+      "raw": "Es gibt",
+      "word": "Es gibt"
+    },
+    {
+      "line": 303,
+      "raw": "Zu",
+      "word": "Zu"
+    },
+    {
+      "line": 304,
+      "raw": "Von",
+      "word": "Von"
+    },
+    {
+      "line": 305,
+      "raw": "Es",
+      "word": "Es"
+    },
+    {
+      "line": 306,
+      "raw": "Sich",
+      "word": "Sich"
+    },
+    {
+      "line": 307,
+      "raw": "An",
+      "word": "An"
+    },
+    {
+      "line": 308,
+      "raw": "Dies",
+      "word": "Dies"
+    },
+    {
+      "line": 309,
+      "raw": "Als",
+      "word": "Als"
+    },
+    {
+      "line": 310,
+      "raw": "Bei",
+      "word": "Bei"
+    },
+    {
+      "line": 311,
+      "raw": "Man",
+      "word": "Man"
+    },
+    {
+      "line": 312,
+      "raw": "Werden",
+      "word": "Werden"
+    },
+    {
+      "line": 365,
+      "raw": "All",
+      "word": "All"
+    },
+    {
+      "line": 366,
+      "raw": "Um",
+      "word": "Um"
+    },
+    {
+      "line": 367,
+      "raw": "Du",
+      "word": "Du"
+    },
+    {
+      "line": 368,
+      "raw": "Vor",
+      "word": "Vor"
+    },
+    {
+      "line": 369,
+      "raw": "Durch",
+      "word": "Durch"
+    },
+    {
+      "line": 370,
+      "raw": "Sollen",
+      "word": "Sollen"
+    },
+    {
+      "line": 371,
+      "raw": "Ganz",
+      "word": "Ganz"
+    },
+    {
+      "line": 372,
+      "raw": "Mich",
+      "word": "Mich"
+    },
+    {
+      "line": 373,
+      "raw": "Doch",
+      "word": "Doch"
+    },
+    {
+      "line": 374,
+      "raw": "Das mal",
+      "word": "mal"
+    },
+    {
+      "line": 376,
+      "raw": "Uns",
+      "word": "Uns"
+    },
+    {
+      "line": 377,
+      "raw": "Weil",
+      "word": "Weil"
+    },
+    {
+      "line": 378,
+      "raw": "Stehen",
+      "word": "Stehen"
+    }
+  ],
+  "a2_tail": [
+    {
+      "line": 460,
+      "raw": "Die Speisekarte",
+      "word": "Speisekarte"
+    },
+    {
+      "line": 461,
+      "raw": "Die Straßenbahn",
+      "word": "Straßenbahn"
+    },
+    {
+      "line": 462,
+      "raw": "Die Treppe",
+      "word": "Treppe"
+    },
+    {
+      "line": 463,
+      "raw": "Die Variante",
+      "word": "Variante"
+    },
+    {
+      "line": 464,
+      "raw": "Die Warmmiete",
+      "word": "Warmmiete"
+    },
+    {
+      "line": 465,
+      "raw": "Die Waschmaschine",
+      "word": "Waschmaschine"
+    },
+    {
+      "line": 466,
+      "raw": "Die Weintraube",
+      "word": "Weintraube"
+    },
+    {
+      "line": 467,
+      "raw": "Die Wurst",
+      "word": "Wurst"
+    },
+    {
+      "line": 468,
+      "raw": "Sondern?",
+      "word": "Sondern?"
+    },
+    {
+      "line": 469,
+      "raw": "Zwischen",
+      "word": "Zwischen"
+    },
+    {
+      "line": 470,
+      "raw": "Eben",
+      "word": "Eben"
+    },
+    {
+      "line": 471,
+      "raw": "Erst",
+      "word": "Erst"
+    },
+    {
+      "line": 472,
+      "raw": "Ob",
+      "word": "Ob"
+    },
+    {
+      "line": 473,
+      "raw": "Dabei",
+      "word": "Dabei"
+    },
+    {
+      "line": 474,
+      "raw": "Ihnen",
+      "word": "Ihnen"
+    },
+    {
+      "line": 475,
+      "raw": "Welch",
+      "word": "Welch"
+    },
+    {
+      "line": 476,
+      "raw": "Seit",
+      "word": "Seit"
+    },
+    {
+      "line": 477,
+      "raw": "Dürfen",
+      "word": "Dürfen"
+    },
+    {
+      "line": 478,
+      "raw": "Nennen",
+      "word": "Nennen"
+    },
+    {
+      "line": 479,
+      "raw": "Letzte",
+      "word": "Letzte"
+    },
+    {
+      "line": 480,
+      "raw": "Solch",
+      "word": "Solch"
+    },
+    {
+      "line": 481,
+      "raw": "Dazu",
+      "word": "Dazu"
+    },
+    {
+      "line": 482,
+      "raw": "Zeigen",
+      "word": "Zeigen"
+    },
+    {
+      "line": 483,
+      "raw": "Schön",
+      "word": "Schön"
+    },
+    {
+      "line": 484,
+      "raw": "Einige",
+      "word": "Einige"
+    },
+    {
+      "line": 485,
+      "raw": "Gerade",
+      "word": "Gerade"
+    },
+    {
+      "line": 486,
+      "raw": "Gar",
+      "word": "Gar"
+    },
+    {
+      "line": 487,
+      "raw": "Während",
+      "word": "Während"
+    },
+    {
+      "line": 488,
+      "raw": "Eigen",
+      "word": "Eigen"
+    },
+    {
+      "line": 489,
+      "raw": "Bereits",
+      "word": "Bereits"
+    },
+    {
+      "line": 490,
+      "raw": "Meinen",
+      "word": "Meinen"
+    },
+    {
+      "line": 491,
+      "raw": "Etwa?",
+      "word": "Etwa?"
+    },
+    {
+      "line": 492,
+      "raw": "Wer?",
+      "word": "Wer?"
+    },
+    {
+      "line": 493,
+      "raw": "Zwar",
+      "word": "Zwar"
+    },
+    {
+      "line": 494,
+      "raw": "Weitere",
+      "word": "Weitere"
+    },
+    {
+      "line": 495,
+      "raw": "Gelten",
+      "word": "Gelten"
+    },
+    {
+      "line": 496,
+      "raw": "Jedoch",
+      "word": "Jedoch"
+    },
+    {
+      "line": 497,
+      "raw": "Darauf",
+      "word": "Darauf"
+    },
+    {
+      "line": 498,
+      "raw": "Bisschen",
+      "word": "Bisschen"
+    },
+    {
+      "line": 499,
+      "raw": "Dehnen",
+      "word": "Dehnen"
+    },
+    {
+      "line": 500,
+      "raw": "Dafür",
+      "word": "Dafür"
+    },
+    {
+      "line": 501,
+      "raw": "Sowie",
+      "word": "Sowie"
+    },
+    {
+      "line": 502,
+      "raw": "Halt",
+      "word": "Halt"
+    },
+    {
+      "line": 503,
+      "raw": "Allerdings",
+      "word": "Allerdings"
+    },
+    {
+      "line": 504,
+      "raw": "Fast",
+      "word": "Fast"
+    },
+    {
+      "line": 505,
+      "raw": "Wohl",
+      "word": "Wohl"
+    },
+    {
+      "line": 506,
+      "raw": "Der Fall",
+      "word": "Fall"
+    },
+    {
+      "line": 507,
+      "raw": "Der Herr",
+      "word": "Herr"
+    },
+    {
+      "line": 508,
+      "raw": "Das Prozent",
+      "word": "Prozent"
+    },
+    {
+      "line": 509,
+      "raw": "Das Recht",
+      "word": "Recht"
+    },
+    {
+      "line": 510,
+      "raw": "Die Million",
+      "word": "Million"
+    },
+    {
+      "line": 511,
+      "raw": "Führen",
+      "word": "Führen"
+    },
+    {
+      "line": 512,
+      "raw": "Bestehen",
+      "word": "Bestehen"
+    },
+    {
+      "line": 513,
+      "raw": "Setzen",
+      "word": "Setzen"
+    },
+    {
+      "line": 514,
+      "raw": "Bestimmt",
+      "word": "Bestimmt"
+    },
+    {
+      "line": 515,
+      "raw": "Überhaupt",
+      "word": "Überhaupt"
+    },
+    {
+      "line": 516,
+      "raw": "Der Bereich",
+      "word": "Bereich"
+    },
+    {
+      "line": 517,
+      "raw": "Die Art",
+      "word": "Art"
+    },
+    {
+      "line": 518,
+      "raw": "Versuchen",
+      "word": "Versuchen"
+    },
+    {
+      "line": 519,
+      "raw": "Entsprechen",
+      "word": "Entsprechen"
+    },
+    {
+      "line": 520,
+      "raw": "Dir",
+      "word": "Dir"
+    },
+    {
+      "line": 521,
+      "raw": "Davon",
+      "word": "Davon"
+    },
+    {
+      "line": 522,
+      "raw": "Besonders",
+      "word": "Besonders"
+    },
+    {
+      "line": 523,
+      "raw": "Nächste",
+      "word": "Nächste"
+    },
+    {
+      "line": 524,
+      "raw": "Politisch",
+      "word": "Politisch"
+    },
+    {
+      "line": 525,
+      "raw": "Allein",
+      "word": "Allein"
+    },
+    {
+      "line": 526,
+      "raw": "Kaum",
+      "word": "Kaum"
+    },
+    {
+      "line": 527,
+      "raw": "Einzeln",
+      "word": "Einzeln"
+    },
+    {
+      "line": 528,
+      "raw": "Deshalb",
+      "word": "Deshalb"
+    },
+    {
+      "line": 529,
+      "raw": "Deren",
+      "word": "Deren"
+    },
+    {
+      "line": 530,
+      "raw": "Ziehen",
+      "word": "Ziehen"
+    },
+    {
+      "line": 531,
+      "raw": "Na?",
+      "word": "Na?"
+    },
+    {
+      "line": 532,
+      "raw": "Beziehungsweise",
+      "word": "Beziehungsweise"
+    },
+    {
+      "line": 533,
+      "raw": "Sogar",
+      "word": "Sogar"
+    },
+    {
+      "line": 534,
+      "raw": "Damals",
+      "word": "Damals"
+    },
+    {
+      "line": 535,
+      "raw": "Der Sinn",
+      "word": "Sinn"
+    },
+    {
+      "line": 536,
+      "raw": "Der Staat",
+      "word": "Staat"
+    },
+    {
+      "line": 537,
+      "raw": "Der Weg",
+      "word": "Weg"
+    },
+    {
+      "line": 538,
+      "raw": "Das Unternehmen",
+      "word": "Unternehmen"
+    },
+    {
+      "line": 539,
+      "raw": "Das Ziel",
+      "word": "Ziel"
+    },
+    {
+      "line": 540,
+      "raw": "Die Geschichte",
+      "word": "Geschichte"
+    },
+    {
+      "line": 541,
+      "raw": "Die Gesellschaft",
+      "word": "Gesellschaft"
+    },
+    {
+      "line": 542,
+      "raw": "Die Möglichkeit",
+      "word": "Möglichkeit"
+    },
+    {
+      "line": 543,
+      "raw": "Die form",
+      "word": "Form"
+    },
+    {
+      "line": 544,
+      "raw": "Die Entwicklung",
+      "word": "Entwicklung"
+    },
+    {
+      "line": 545,
+      "raw": "Die Aufgabe",
+      "word": "Aufgabe"
+    },
+    {
+      "line": 546,
+      "raw": "Erhalten",
+      "word": "Erhalten"
+    },
+    {
+      "line": 547,
+      "raw": "Scheinen",
+      "word": "Scheinen"
+    },
+    {
+      "line": 548,
+      "raw": "Entstehen",
+      "word": "Entstehen"
+    },
+    {
+      "line": 549,
+      "raw": "Vorstellen",
+      "word": "Vorstellen"
+    },
+    {
+      "line": 550,
+      "raw": "erreichen",
+      "word": "erreichen"
+    },
+    {
+      "line": 551,
+      "raw": "Schaffen",
+      "word": "Schaffen"
+    },
+    {
+      "line": 552,
+      "raw": "Ragen",
+      "word": "Ragen"
+    },
+    {
+      "line": 553,
+      "raw": "Wegen",
+      "word": "Wegen"
+    },
+    {
+      "line": 554,
+      "raw": "Darüber",
+      "word": "Darüber"
+    },
+    {
+      "line": 555,
+      "raw": "Hinter",
+      "word": "Hinter"
+    },
+    {
+      "line": 556,
+      "raw": "Daran",
+      "word": "Daran"
+    },
+    {
+      "line": 557,
+      "raw": "Handeln",
+      "word": "Handeln"
+    },
+    {
+      "line": 558,
+      "raw": "Schließlich",
+      "word": "Schließlich"
+    },
+    {
+      "line": 559,
+      "raw": "Eher",
+      "word": "Eher"
+    },
+    {
+      "line": 560,
+      "raw": "Je",
+      "word": "Je"
+    },
+    {
+      "line": 561,
+      "raw": "Darin",
+      "word": "Darin"
+    },
+    {
+      "line": 562,
+      "raw": "Gegenüber",
+      "word": "Gegenüber"
+    },
+    {
+      "line": 563,
+      "raw": "Unterschiedlich",
+      "word": "Unterschiedlich"
+    },
+    {
+      "line": 564,
+      "raw": "Daher",
+      "word": "Daher"
+    },
+    {
+      "line": 565,
+      "raw": "Obwohl",
+      "word": "Obwohl"
+    },
+    {
+      "line": 566,
+      "raw": "Deutlich",
+      "word": "Deutlich"
+    },
+    {
+      "line": 567,
+      "raw": "Allgemein",
+      "word": "Allgemein"
+    },
+    {
+      "line": 568,
+      "raw": "Der Blick",
+      "word": "Blick"
+    },
+    {
+      "line": 569,
+      "raw": "Der Gott",
+      "word": "Gott"
+    },
+    {
+      "line": 570,
+      "raw": "Der Raum",
+      "word": "Raum"
+    },
+    {
+      "line": 571,
+      "raw": "Das Ding",
+      "word": "Ding"
+    },
+    {
+      "line": 572,
+      "raw": "Das Paar",
+      "word": "Paar"
+    },
+    {
+      "line": 573,
+      "raw": "Das System",
+      "word": "System"
+    },
+    {
+      "line": 574,
+      "raw": "Die Mark",
+      "word": "Mark"
+    },
+    {
+      "line": 575,
+      "raw": "Einzig",
+      "word": "Einzig"
+    },
+    {
+      "line": 576,
+      "raw": "Darstellen",
+      "word": "Darstellen"
+    },
+    {
+      "line": 577,
+      "raw": "Gemeinsam",
+      "word": "Gemeinsam"
+    },
+    {
+      "line": 578,
+      "raw": "Nahe",
+      "word": "Nahe"
+    },
+    {
+      "line": 579,
+      "raw": "Dessen",
+      "word": "Dessen"
+    },
+    {
+      "line": 580,
+      "raw": "Erkennen",
+      "word": "Erkennen"
+    },
+    {
+      "line": 581,
+      "raw": "Entwickeln",
+      "word": "Entwickeln"
+    },
+    {
+      "line": 582,
+      "raw": "Reden",
+      "word": "Reden"
+    },
+    {
+      "line": 583,
+      "raw": "Aussehen",
+      "word": "Aussehen"
+    },
+    {
+      "line": 584,
+      "raw": "Erschienen",
+      "word": "Erschienen"
+    },
+    {
+      "line": 585,
+      "raw": "Mehrere",
+      "word": "Mehrere"
+    },
+    {
+      "line": 586,
+      "raw": "Zunächst",
+      "word": "Zunächst"
+    },
+    {
+      "line": 587,
+      "raw": "Der Präsident",
+      "word": "Präsident"
+    },
+    {
+      "line": 588,
+      "raw": "Der Markt",
+      "word": "Markt"
+    },
+    {
+      "line": 589,
+      "raw": "Der Gedanke",
+      "word": "Gedanke"
+    },
+    {
+      "line": 590,
+      "raw": "Der Prozess",
+      "word": "Prozess"
+    },
+    {
+      "line": 591,
+      "raw": "Der Betrieb",
+      "word": "Betrieb"
+    },
+    {
+      "line": 592,
+      "raw": "Der Zusammenhang",
+      "word": "Zusammenhang"
+    },
+    {
+      "line": 593,
+      "raw": "Der Chef",
+      "word": "Chef"
+    },
+    {
+      "line": 594,
+      "raw": "Der Körper",
+      "word": "Körper"
+    },
+    {
+      "line": 595,
+      "raw": "Der Vergleich",
+      "word": "Vergleich"
+    },
+    {
+      "line": 596,
+      "raw": "Das Gefühl",
+      "word": "Gefühl"
+    },
+    {
+      "line": 597,
+      "raw": "Das Licht",
+      "word": "Licht"
+    }
+  ],
+  "garbage": [
+    {
+      "line": 262,
+      "raw": "Beschäftig",
+      "word": "Beschäftig"
+    },
+    {
+      "line": 280,
+      "raw": "Gebären",
+      "word": "Gebären"
+    }
+  ],
+  "wrong_article_exists": [
+    {
+      "line": 7,
+      "raw": "Das Brot",
+      "word": "Brot",
+      "vocabArticle": "das"
+    }
+  ],
+  "missingUnique": [],
+  "summary": {
+    "in_vocab": 410,
+    "missing_lines": 0,
+    "missing_unique": 0,
+    "typo": 0,
+    "grammar_skip": 46,
+    "a2_tail": 138,
+    "garbage": 2,
+    "wrong_article_exists": 1
+  }
+}

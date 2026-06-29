@@ -7,3 +7,6 @@ dist/
 .DS_Store
 Thumbs.db
 .vercel
+.german-coach-shell.pid
+apps/web/tsconfig.tsbuildinfo
+data/el-kitabi/cleaned.txt

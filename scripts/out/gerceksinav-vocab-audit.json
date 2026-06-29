@@ -1,0 +1,626 @@
+{
+  "inVocab": [
+    {
+      "lemma": "Geschichte",
+      "tr": "hikaye",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Nachbar",
+      "tr": "komşu",
+      "pack": "a1"
+    },
+    {
+      "lemma": "verliebt",
+      "tr": "aşık",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Post",
+      "tr": "posta",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Kissen",
+      "tr": "yastık",
+      "pack": "a1"
+    },
+    {
+      "lemma": "vorbei",
+      "tr": "bitti",
+      "pack": "a1"
+    },
+    {
+      "lemma": "heulen",
+      "tr": "ağlamak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Männer",
+      "tr": "adamlar",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Telefonrechnung",
+      "tr": "telefon faturası",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Gasrechnung",
+      "tr": "doğalgaz faturası",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Stromrechnung",
+      "tr": "elektrik faturası",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Brief",
+      "tr": "mektup",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Mutter",
+      "tr": "anne",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Pickel",
+      "tr": "sivilce",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Amerika",
+      "tr": "Amerika",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Brieffreund",
+      "tr": "mektup arkadaşı",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Jahr",
+      "tr": "yıl",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Deutsch",
+      "tr": "Almanca",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Deutschland",
+      "tr": "Almanya",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Amerikaner",
+      "tr": "Amerikalı",
+      "pack": "a1"
+    },
+    {
+      "lemma": "schlafen",
+      "tr": "uyumak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Bett",
+      "tr": "yatak",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Tarantel",
+      "tr": "tarantula",
+      "pack": "a2"
+    },
+    {
+      "lemma": "sportlich",
+      "tr": "atletik",
+      "pack": "a2"
+    },
+    {
+      "lemma": "reich",
+      "tr": "zengin",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Kontrolle",
+      "tr": "kontrol",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Muskel",
+      "tr": "kas",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Milch",
+      "tr": "süt",
+      "pack": "a2"
+    },
+    {
+      "lemma": "vergessen",
+      "tr": "unutmak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Cola",
+      "tr": "kola",
+      "pack": "a1"
+    },
+    {
+      "lemma": "männlich",
+      "tr": "erkek",
+      "pack": "a2"
+    },
+    {
+      "lemma": "cool",
+      "tr": "havalı",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Fahrrad",
+      "tr": "bisiklet",
+      "pack": "a2"
+    },
+    {
+      "lemma": "anfassen",
+      "tr": "dokunmak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "begründen",
+      "tr": "gerekçelendirmek",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Hilfe",
+      "tr": "yardım",
+      "pack": "timur"
+    },
+    {
+      "lemma": "Schwester",
+      "tr": "kız kardeş",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Spielzeug",
+      "tr": "oyuncak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Auto",
+      "tr": "araba",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Bücherei",
+      "tr": "kütüphane",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Buch",
+      "tr": "kitap",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Museum",
+      "tr": "müze",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Schlafzimmer",
+      "tr": "yatak odası",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Zimmer",
+      "tr": "oda",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Klappcouch",
+      "tr": "açılır kanepe",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Fernbedienung",
+      "tr": "kumanda",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Klamotten",
+      "tr": "kıyafetler",
+      "pack": "a2"
+    },
+    {
+      "lemma": "altmodisch",
+      "tr": "modası geçmiş",
+      "pack": "a2"
+    },
+    {
+      "lemma": "süß",
+      "tr": "tatlı / sevimli",
+      "pack": "a2"
+    },
+    {
+      "lemma": "höflich",
+      "tr": "nazik / kibar",
+      "pack": "a2"
+    },
+    {
+      "lemma": "sexy",
+      "tr": "seksi",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Gepäck",
+      "tr": "bagaj",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Portier",
+      "tr": "kapıcı",
+      "pack": "a2"
+    },
+    {
+      "lemma": "nebenan",
+      "tr": "yan tarafta / komşu",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Hunger",
+      "tr": "açlık",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Lieblingsessen",
+      "tr": "favori yemek",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Currywurst",
+      "tr": "currywurst",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Spaß",
+      "tr": "eğlence",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Deutschunterricht",
+      "tr": "Almanca dersi",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Ofen",
+      "tr": "fırın",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Hund",
+      "tr": "köpek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "stark",
+      "tr": "güçlü",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Bein",
+      "tr": "bacak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Kilometer",
+      "tr": "kilometre",
+      "pack": "a1"
+    },
+    {
+      "lemma": "blau",
+      "tr": "mavi",
+      "pack": "a1"
+    },
+    {
+      "lemma": "rot",
+      "tr": "kırmızı",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Shopping",
+      "tr": "alışveriş",
+      "pack": "a2"
+    },
+    {
+      "lemma": "einkaufen",
+      "tr": "alışveriş yapmak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Ordnung",
+      "tr": "durum / sorun yok",
+      "pack": "a1"
+    },
+    {
+      "lemma": "heiß",
+      "tr": "sıcak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "duschen",
+      "tr": "duş almak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "nett",
+      "tr": "nazik",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Witz",
+      "tr": "şaka",
+      "pack": "a1"
+    },
+    {
+      "lemma": "böse",
+      "tr": "kötü",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Junge",
+      "tr": "çocuk / oğlan",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Zimmer",
+      "tr": "oda",
+      "pack": "a2"
+    },
+    {
+      "lemma": "frei",
+      "tr": "boş / serbest",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Problem",
+      "tr": "problem",
+      "pack": "timur"
+    },
+    {
+      "lemma": "sofort",
+      "tr": "hemen",
+      "pack": "timur"
+    },
+    {
+      "lemma": "Familie",
+      "tr": "aile",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Dienstboten",
+      "tr": "hizmetkârlar",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Freund",
+      "tr": "arkadaş",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Leute",
+      "tr": "insanlar",
+      "pack": "a1"
+    },
+    {
+      "lemma": "schrecklich",
+      "tr": "korkunç",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Vermieterin",
+      "tr": "ev sahibi (kadın)",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Zeitschrift",
+      "tr": "dergi",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Make-up",
+      "tr": "makyaj",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Love Parade",
+      "tr": "Love Parade",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Party",
+      "tr": "parti",
+      "pack": "a1"
+    },
+    {
+      "lemma": "verstecken",
+      "tr": "saklanmak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Miete",
+      "tr": "kira",
+      "pack": "a2"
+    },
+    {
+      "lemma": "Freunde",
+      "tr": "arkadaşlar",
+      "pack": "a1"
+    },
+    {
+      "lemma": "verpassen",
+      "tr": "kaçırmak",
+      "pack": "a2"
+    },
+    {
+      "lemma": "bekommen",
+      "tr": "almak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Lehrer",
+      "tr": "öğretmen",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Lehrerin",
+      "tr": "öğretmen (kadın)",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Freundin",
+      "tr": "kız arkadaş",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Couch",
+      "tr": "kanepe",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Wohnung",
+      "tr": "daire",
+      "pack": "a2"
+    },
+    {
+      "lemma": "zusammen",
+      "tr": "birlikte",
+      "pack": "a2"
+    },
+    {
+      "lemma": "wohnen",
+      "tr": "yaşamak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "sprechen",
+      "tr": "konuşmak",
+      "pack": "a2"
+    },
+    {
+      "lemma": "kommen",
+      "tr": "gelmek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "möchten",
+      "tr": "istemek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "übernachten",
+      "tr": "gece kalmak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "trinken",
+      "tr": "içecek",
+      "pack": "a2"
+    },
+    {
+      "lemma": "fragen",
+      "tr": "sormak",
+      "pack": "partial",
+      "note": "anfragen"
+    },
+    {
+      "lemma": "lernen",
+      "tr": "öğrenmek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "schlafen",
+      "tr": "uyumak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "zeigen",
+      "tr": "göstermek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "fahren",
+      "tr": "gitmek (araç)",
+      "pack": "a2"
+    },
+    {
+      "lemma": "duschen",
+      "tr": "duş almak",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Schwesterherz",
+      "tr": "canım kardeşim",
+      "pack": "a2"
+    },
+    {
+      "lemma": "interessant",
+      "tr": "ilginç",
+      "pack": "a1"
+    },
+    {
+      "lemma": "tot",
+      "tr": "ölü",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Chance",
+      "tr": "şans",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Wort",
+      "tr": "söz / kelime",
+      "pack": "a1"
+    },
+    {
+      "lemma": "Ahnung",
+      "tr": "fikir / bilmek",
+      "pack": "a1"
+    },
+    {
+      "lemma": "wieso",
+      "tr": "neden",
+      "pack": "a1"
+    },
+    {
+      "lemma": "egal",
+      "tr": "fark etmez",
+      "pack": "a1"
+    },
+    {
+      "lemma": "niemals",
+      "tr": "asla",
+      "pack": "a1"
+    },
+    {
+      "lemma": "selber",
+      "tr": "kendi / bizzat",
+      "pack": "a1"
+    },
+    {
+      "lemma": "vielleicht",
+      "tr": "belki",
+      "pack": "a1"
+    },
+    {
+      "lemma": "wahr",
+      "tr": "doğru",
+      "pack": "a1"
+    }
+  ],
+  "missing": []
+}
