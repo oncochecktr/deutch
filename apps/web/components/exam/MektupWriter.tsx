@@ -6,10 +6,10 @@ import { PageShell } from "@/components/PageShell";
 import { useProgress } from "@/lib/ProgressContext";
 import {
   MEKTUP_PUNCTUATION_RULES,
-  MEKTUP_TEMPLATES,
   SCHREIBEN_GOLDEN_RULES,
   SCHREIBEN_OVERVIEW,
 } from "@/lib/gerceksinavSchreiben";
+import { MektupTemplateList } from "@/components/exam/MektupTemplateList";
 import {
   buildFullLetter,
   checkBullet,
@@ -142,19 +142,10 @@ export function MektupWriterInner({
             </ul>
           </section>
 
-          <section className="card-soft p-4">
-            <h2 className="mb-2 text-xs font-semibold uppercase text-sage-400">Ezber kalıpları</h2>
-            {Object.entries(MEKTUP_TEMPLATES).map(([key, t]) => (
-              <div key={key} className="mb-2 rounded-lg bg-sage-50 p-2 text-xs last:mb-0">
-                <p className="font-semibold text-goethe-blue">{t.label}</p>
-                <p className="font-mono text-sage-700">{t.greeting}</p>
-                <p className="font-mono text-sage-600">{t.deshalb}</p>
-              </div>
-            ))}
-          </section>
+          <MektupTemplateList />
 
           <ul className="list-inside list-disc space-y-1 rounded-xl bg-sage-50 p-3 text-xs text-sage-600">
-            {MEKTUP_PUNCTUATION_RULES.slice(0, 4).map((r) => (
+            {MEKTUP_PUNCTUATION_RULES.slice(0, 5).map((r) => (
               <li key={r}>{r}</li>
             ))}
           </ul>

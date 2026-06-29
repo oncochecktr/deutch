@@ -5,10 +5,10 @@ import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { FormFillSimulator } from "@/components/exam/FormFillSimulator";
 import { MektupWriterInner } from "@/components/exam/MektupWriter";
+import { MektupTemplateList } from "@/components/exam/MektupTemplateList";
 import {
   MEKTUP_PHRASE_BANK,
   MEKTUP_PUNCTUATION_RULES,
-  MEKTUP_TEMPLATES,
   MEKTUP_VERB_NOUN_PAIRS,
   SCHREIBEN_GOLDEN_RULES,
   SCHREIBEN_OVERVIEW,
@@ -83,20 +83,7 @@ export function SchreibenRealSimulator() {
             </ul>
           </section>
 
-          <section className="card-soft p-4">
-            <h2 className="mb-3 text-xs font-semibold uppercase text-sage-400">Mektup kalıpları (ezberle)</h2>
-            <div className="space-y-3">
-              {Object.entries(MEKTUP_TEMPLATES).map(([key, t]) => (
-                <div key={key} className="rounded-lg bg-sage-50 p-3 text-xs">
-                  <p className="font-semibold text-goethe-blue">{t.label}</p>
-                  <p className="mt-1 font-mono text-sage-700">{t.greeting}</p>
-                  <p className="font-mono text-sage-600">{t.deshalb}</p>
-                  <p className="mt-1 font-mono text-sage-600">{t.closing.join(" ")}</p>
-                  {"note" in t && t.note && <p className="mt-1 text-sage-400">{t.note}</p>}
-                </div>
-              ))}
-            </div>
-          </section>
+          <MektupTemplateList showRule={false} />
 
           <section className="card-soft p-4">
             <h2 className="mb-2 text-xs font-semibold uppercase text-sage-400">Noktalama</h2>

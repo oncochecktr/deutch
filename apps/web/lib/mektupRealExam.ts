@@ -9,8 +9,8 @@ export const MEKTUP_EXAM_INFO = {
       text: "Üstte kısa metin ve madde işaretli sorular var. Hepsine mektupta cevap yaz.",
     },
     {
-      title: "Deshalb schreibe ich…",
-      text: "Neden yazdığını mutlaka belirt. Bu cümle A1 yazma bölümünde standart kalıptır.",
+      title: "Neden yazıyorsun?",
+      text: "ich schreibe …, weil … veya önce neden + Deshalb schreibe ich …. Tek başına «Deshalb schreibe ich» yetmez.",
     },
     {
       title: "Resmi / samimi selamlama",
@@ -458,11 +458,22 @@ export function checkBullet(text: string, bullet: MektupBullet): boolean {
 
 export function checkStructure(text: string): { ok: boolean; missing: string[] } {
   const lower = text.toLowerCase();
-  const need = [
-    { key: "deshalb", label: "Deshalb schreibe ich…" },
-    { key: "bitte um eine antwort", label: "Ich bitte um eine Antwort." },
-    { key: "vielen dank im voraus", label: "Vielen Dank im Voraus." },
-  ];
-  const missing = need.filter((n) => !lower.includes(n.key)).map((n) => n.label);
+  const hasWeilOpening = lower.includes("weil") && /schreibe (ich|ihnen|dir|euch)/.test(lower);
+  const deshalbIdx = lower.indexOf("deshalb");
+  const hasDeshalbWithReason =
+    deshalbIdx > 0 &&
+    lower.includes("schreibe ich") &&
+    lower.slice(0, deshalbIdx).includes(".");
+  const hasWhy = hasWeilOpening || hasDeshalbWithReason;
+  const missing: string[] = [];
+  if (!hasWhy) {
+    missing.push("Neden (ich schreibe …, weil … veya … . Deshalb schreibe ich …)");
+  }
+  if (!lower.includes("bitte um eine antwort")) {
+    missing.push("Ich bitte um eine Antwort.");
+  }
+  if (!lower.includes("vielen dank im voraus")) {
+    missing.push("Vielen Dank im Voraus.");
+  }
   return { ok: missing.length === 0, missing };
 }

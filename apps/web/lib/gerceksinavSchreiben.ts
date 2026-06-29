@@ -194,24 +194,43 @@ export const FORM_EXAMPLES: FormExample[] = [
   },
 ];
 
-export const MEKTUP_TEMPLATES = {
+export interface MektupTemplate {
+  label: string;
+  greeting: string;
+  /** A1 giriş — weil ile neden (Goethe kalıbı) */
+  opening: string;
+  /** Önce neden, sonra deshalb (PDF örnekleri) */
+  followUp: string;
+  closing: string[];
+  note?: string;
+}
+
+/** Neden cümlesi kuralı — intro’da gösterilir */
+export const MEKTUP_WHY_RULE =
+  "Deshalb «bu yüzden» demektir; tek başına kullanılamaz. Önce nedeni yaz, sonra Deshalb — " +
+  "veya doğrudan: ich schreibe …, weil …";
+
+export const MEKTUP_TEMPLATES: Record<string, MektupTemplate> = {
   formal: {
     label: "Resmi (kurum / otel / kurs)",
     greeting: "Sehr geehrte Damen und Herren,",
-    deshalb: "Deshalb schreibe ich Ihnen.",
+    opening: "ich schreibe Ihnen, weil …",
+    followUp: "ich möchte … . Deshalb schreibe ich Ihnen.",
     closing: ["Ich bitte um eine Antwort.", "Vielen Dank im Voraus.", "Mit freundlichen Grüßen"],
     note: "Erkek kişi: Sehr geehrter Herr [Nachname], — geehrter (R dikkat)",
   },
   friendOne: {
     label: "Samimi (tek arkadaş)",
     greeting: "Liebe Marianne,",
-    deshalb: "Deshalb schreibe ich dir.",
+    opening: "ich schreibe dir, weil …",
+    followUp: "ich habe … . Deshalb schreibe ich dir.",
     closing: ["Ich bitte um eine Antwort.", "Vielen Dank im Voraus.", "Viele Grüße"],
   },
   friendTwo: {
     label: "Samimi (iki arkadaş)",
     greeting: "Liebe Susanne und lieber Paul,",
-    deshalb: "Deshalb schreibe ich euch.",
+    opening: "ich schreibe euch, weil …",
+    followUp: "ich möchte … . Deshalb schreibe ich euch.",
     closing: ["Ich bitte um eine Antwort.", "Vielen Dank im Voraus.", "Viele Grüße"],
     note: "lieber erkek isimden sonra küçük harf",
   },
@@ -219,7 +238,8 @@ export const MEKTUP_TEMPLATES = {
 
 export const MEKTUP_PUNCTUATION_RULES = [
   "Selamlama satırı sonunda virgül: Sehr geehrte Damen und Herren,",
-  "Alt satırda cümle küçük harfle başlar: ich möchte…",
+  "Alt satırda cümle küçük harfle başlar: ich schreibe Ihnen, weil…",
+  "weil = çünkü (neden) · deshalb = bu yüzden (önce neden cümlesi gerekir)",
   "Paragraflar arasında bir boş satır",
   "Soru cümlesi → ? · Bildirim → .",
   "Information büyük I ile — information yanlış",
