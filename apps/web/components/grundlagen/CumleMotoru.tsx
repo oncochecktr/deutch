@@ -13,16 +13,20 @@ import {
   recordCumleMotoruQuiz,
 } from "@/lib/progress";
 import { useProgress } from "@/lib/ProgressContext";
-import { IconCheck, IconFlame, IconX } from "@/components/icons";
+import { IconArrowLeft, IconArrowRight, IconCheck, IconFlame, IconList, IconX } from "@/components/icons";
+import { AppModal } from "@/components/ui/AppModal";
 import { LearnerOnboarding } from "@/components/grundlagen/LearnerOnboarding";
 import { Pattern02Hint } from "@/components/grundlagen/SentenceEngineHub";
 import { SpiegelCardView } from "@/components/grundlagen/SpiegelCardView";
 import { WordSpiegelList } from "@/components/grundlagen/WordSpiegelList";
 import {
   filterWordSpiegel,
+  filterWordSpiegelBySeen,
   generateWordQuizzes,
+  getA1CategoryCounts,
   getAllWordSpiegel,
   getWordSpiegelById,
+  type SeenFilter,
   type WordQuiz,
 } from "@/lib/wordSpiegel";
 
@@ -33,13 +37,29 @@ export function CumleMotoru() {
   const [mode, setMode] = useState<"kelimeler" | "oyun">("kelimeler");
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<string | null>(null);
+  const [seenFilter, setSeenFilter] = useState<SeenFilter>("unseen");
+  const [listOpen, setListOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const allWords = useMemo(() => getAllWordSpiegel(), []);
+  const categoryCounts = useMemo(() => getA1CategoryCounts(), []);
+  const seenIds = progress.grundlagen.cumleMotoruSeenCards;
+
   const filtered = useMemo(
-    () => filterWordSpiegel(allWords, search, category),
-    [allWords, search, category]
+    () =>
+      filterWordSpiegelBySeen(
+        filterWordSpiegel(allWords, search, category),
+        seenIds,
+        seenFilter
+      ),
+    [allWords, search, category, seenFilter, seenIds]
   );
+
+  const navList = useMemo(() => {
+    const byCat = filterWordSpiegel(allWords, "", category);
+    const bySeen = filterWordSpiegelBySeen(byCat, seenIds, seenFilter);
+    return bySeen.length > 0 ? bySeen : byCat;
+  }, [allWords, category, seenIds, seenFilter]);
   const quizzes = useMemo(() => generateWordQuizzes(10), []);
 
   useEffect(() => {
@@ -61,16 +81,32 @@ export function CumleMotoru() {
   const total = getA1Vocabulary().total;
 
   const selectWord = useCallback(
-    (id: string) => {
+    (id: string, closeList = false) => {
       setSelectedId(id);
       saveLearnerProfile({ lastWordId: id });
       setProfile(loadLearnerProfile());
-      updateProgress((p) =>
-        recordCumleMotoruCardSeen(p, id, filtered.findIndex((w) => w.id === id))
-      );
+      const idx = navList.findIndex((w) => w.id === id);
+      updateProgress((p) => recordCumleMotoruCardSeen(p, id, idx >= 0 ? idx : 0));
+      if (closeList) setListOpen(false);
     },
-    [filtered, updateProgress]
+    [navList, updateProgress]
   );
+
+  const navIndex = selectedId ? navList.findIndex((w) => w.id === selectedId) : -1;
+  const canGoPrev = navIndex > 0;
+  const canGoNext = navIndex >= 0 && navIndex < navList.length - 1;
+
+  const goPrevious = () => {
+    if (!canGoPrev) return;
+    selectWord(navList[navIndex - 1]!.id);
+  };
+
+  const goNext = () => {
+    if (!canGoNext) return;
+    selectWord(navList[navIndex + 1]!.id);
+  };
+
+  const unseenCount = total - seenCount;
 
   const toggleTurkish = () => {
     if (!profile) return;
@@ -158,45 +194,82 @@ export function CumleMotoru() {
             />
           )}
 
-          <input
-            type="search"
-            placeholder="Kelime veya cümle ara…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-xl border border-sage-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-goethe-blue/40"
-          />
+          {navList.length > 0 && (
+            <p className="text-center text-xs text-sage-400">
+              {navIndex >= 0 ? navIndex + 1 : "—"} / {navList.length}
+              {seenFilter === "unseen" && unseenCount > 0 ? " · görülmedi" : ""}
+              {category ? ` · ${category}` : ""}
+            </p>
+          )}
 
-          <div className="flex gap-2 overflow-x-auto pb-1">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <button
               type="button"
-              onClick={() => setCategory(null)}
-              className={`shrink-0 rounded-full px-3 py-1 text-xs ${
-                !category ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
-              }`}
+              className="btn-secondary-lg flex flex-1 items-center justify-center gap-2"
+              onClick={goPrevious}
+              disabled={!canGoPrev}
             >
-              Tümü ({total})
+              <IconArrowLeft size={18} />
+              Önceki
             </button>
-            {CATEGORIES_A1.map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setCategory(cat === category ? null : cat)}
-                className={`shrink-0 rounded-full px-3 py-1 text-xs ${
-                  category === cat ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            <button
+              type="button"
+              className="btn-primary-lg flex flex-1 items-center justify-center gap-2"
+              onClick={goNext}
+              disabled={!canGoNext}
+            >
+              Sonraki
+              <IconArrowRight size={18} />
+            </button>
           </div>
 
-          <p className="text-xs text-sage-400">{filtered.length} kelime — dokun, kart açılsın</p>
+          <button
+            type="button"
+            className="btn-secondary-lg flex w-full items-center justify-center gap-2"
+            onClick={() => setListOpen(true)}
+          >
+            <IconList size={18} />
+            Kelime listesi
+            {seenFilter === "unseen" && unseenCount > 0 && (
+              <span className="rounded-full bg-goethe-blue/10 px-2 py-0.5 text-xs font-semibold text-goethe-blue">
+                {unseenCount} yeni
+              </span>
+            )}
+          </button>
 
-          <WordSpiegelList
-            items={filtered}
-            selectedId={selectedId}
-            onSelect={selectWord}
-          />
+          <AppModal
+            open={listOpen}
+            onClose={() => setListOpen(false)}
+            title="Kelime listesi"
+            subtitle={`${filtered.length} kelime · dokun, kart açılsın`}
+            size="full"
+            contentClassName="space-y-3 p-0 sm:p-0 sm:px-1 sm:pb-1"
+          >
+            <WordSpiegelFilters
+              search={search}
+              onSearchChange={setSearch}
+              category={category}
+              onCategoryChange={setCategory}
+              seenFilter={seenFilter}
+              onSeenFilterChange={setSeenFilter}
+              total={total}
+              seenCount={seenCount}
+              unseenCount={unseenCount}
+              categoryCounts={categoryCounts}
+            />
+            <div className="px-4 pb-4 sm:px-5">
+              <WordSpiegelList
+                items={filtered}
+                selectedId={selectedId}
+                onSelect={(id) => selectWord(id, true)}
+                emptyMessage={
+                  seenFilter === "unseen"
+                    ? "Tüm kelimeler görüldü — filtreyi değiştir veya Oyna sekmesine geç."
+                    : "Bu filtrede kelime yok."
+                }
+              />
+            </div>
+          </AppModal>
         </>
       ) : (
         <WordGamePlay
@@ -209,6 +282,87 @@ export function CumleMotoru() {
           }}
         />
       )}
+    </div>
+  );
+}
+
+function WordSpiegelFilters({
+  search,
+  onSearchChange,
+  category,
+  onCategoryChange,
+  seenFilter,
+  onSeenFilterChange,
+  total,
+  seenCount,
+  unseenCount,
+  categoryCounts,
+}: {
+  search: string;
+  onSearchChange: (v: string) => void;
+  category: string | null;
+  onCategoryChange: (v: string | null) => void;
+  seenFilter: SeenFilter;
+  onSeenFilterChange: (v: SeenFilter) => void;
+  total: number;
+  seenCount: number;
+  unseenCount: number;
+  categoryCounts: Map<string, number>;
+}) {
+  const seenFilters: { id: SeenFilter; label: string; count: number }[] = [
+    { id: "unseen", label: "Görülmedi", count: unseenCount },
+    { id: "seen", label: "Görüldü", count: seenCount },
+    { id: "all", label: "Tümü", count: total },
+  ];
+
+  return (
+    <div className="space-y-3 px-4 pt-1 sm:px-5">
+      <input
+        type="search"
+        placeholder="Kelime veya cümle ara…"
+        value={search}
+        onChange={(e) => onSearchChange(e.target.value)}
+        className="w-full rounded-xl border border-sage-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-goethe-blue/40"
+      />
+
+      <div className="flex flex-wrap gap-1.5">
+        {seenFilters.map((f) => (
+          <button
+            key={f.id}
+            type="button"
+            onClick={() => onSeenFilterChange(f.id)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold ${
+              seenFilter === f.id ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
+            }`}
+          >
+            {f.label} ({f.count})
+          </button>
+        ))}
+      </div>
+
+      <div className="flex gap-2 overflow-x-auto pb-1">
+        <button
+          type="button"
+          onClick={() => onCategoryChange(null)}
+          className={`shrink-0 rounded-full px-3 py-1 text-xs ${
+            !category ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
+          }`}
+        >
+          Tümü ({total})
+        </button>
+        {CATEGORIES_A1.map((cat) => (
+          <button
+            key={cat}
+            type="button"
+            onClick={() => onCategoryChange(cat === category ? null : cat)}
+            className={`shrink-0 rounded-full px-3 py-1 text-xs ${
+              category === cat ? "bg-goethe-blue text-white" : "bg-sage-100 text-sage-600"
+            }`}
+          >
+            {cat} ({categoryCounts.get(cat) ?? 0})
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

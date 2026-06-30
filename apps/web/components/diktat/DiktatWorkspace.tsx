@@ -2,8 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { VocabularyWord } from "@german-coach/vocabulary";
+import { getA1Vocabulary } from "@german-coach/vocabulary";
 import { HearAndWrite } from "@/components/HearAndWrite";
 import { WordSidebar } from "@/components/diktat/WordSidebar";
+import { AppModal } from "@/components/ui/AppModal";
+import { IconList } from "@/components/icons";
 import { loadDiktatStore, saveDiktatStore } from "@/lib/diktatStorage";
 import {
   loadLearnerProfile,
@@ -30,11 +33,13 @@ export function DiktatWorkspace() {
   const [category, setCategory] = useState<string | null>(null);
   const [showTurkish, setShowTurkish] = useState(true);
   const [selectedWord, setSelectedWord] = useState<VocabularyWord | null>(null);
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
+  const [wordsModalOpen, setWordsModalOpen] = useState(false);
   const [mode, setMode] = useState<"free" | "smart" | "listen">("smart");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pendingInsert = useRef<string | null>(null);
+  const vocabTotal = getA1Vocabulary().total;
 
   useEffect(() => {
     const p = loadLearnerProfile();
@@ -50,38 +55,44 @@ export function DiktatWorkspace() {
     if (mode !== "smart") stopAudio();
   }, [mode]);
 
-  const persistText = useCallback((value: string) => {
-    if (saveTimer.current) clearTimeout(saveTimer.current);
-    saveTimer.current = setTimeout(() => {
-      saveDiktatStore({ freeText: value, sidebarCategory: category, showTurkish });
-    }, 400);
-  }, [category, showTurkish]);
+  const persistText = useCallback(
+    (value: string) => {
+      if (saveTimer.current) clearTimeout(saveTimer.current);
+      saveTimer.current = setTimeout(() => {
+        saveDiktatStore({ freeText: value, sidebarCategory: category, showTurkish });
+      }, 400);
+    },
+    [category, showTurkish]
+  );
 
   const handleTextChange = (value: string) => {
     setText(value);
     persistText(value);
   };
 
-  const insertAtCursor = useCallback((snippet: string) => {
-    const el = textareaRef.current;
-    if (!el) {
-      setText((t) => (t ? `${t} ${snippet}` : snippet));
-      return;
-    }
-    const start = el.selectionStart;
-    const end = el.selectionEnd;
-    const before = text.slice(0, start);
-    const needsSpace = before.length > 0 && !before.endsWith(" ") && !before.endsWith("\n");
-    const insert = `${needsSpace ? " " : ""}${snippet}`;
-    const next = before + insert + text.slice(end);
-    setText(next);
-    persistText(next);
-    requestAnimationFrame(() => {
-      const pos = start + insert.length;
-      el.focus();
-      el.setSelectionRange(pos, pos);
-    });
-  }, [text, persistText]);
+  const insertAtCursor = useCallback(
+    (snippet: string) => {
+      const el = textareaRef.current;
+      if (!el) {
+        setText((t) => (t ? `${t} ${snippet}` : snippet));
+        return;
+      }
+      const start = el.selectionStart;
+      const end = el.selectionEnd;
+      const before = text.slice(0, start);
+      const needsSpace = before.length > 0 && !before.endsWith(" ") && !before.endsWith("\n");
+      const insert = `${needsSpace ? " " : ""}${snippet}`;
+      const next = before + insert + text.slice(end);
+      setText(next);
+      persistText(next);
+      requestAnimationFrame(() => {
+        const pos = start + insert.length;
+        el.focus();
+        el.setSelectionRange(pos, pos);
+      });
+    },
+    [text, persistText]
+  );
 
   useEffect(() => {
     if (mode !== "free" || !pendingInsert.current) return;
@@ -90,27 +101,42 @@ export function DiktatWorkspace() {
     requestAnimationFrame(() => insertAtCursor(snippet));
   }, [mode, insertAtCursor]);
 
-  const handleSelectWord = useCallback(async (w: VocabularyWord) => {
-    setSelectedWord(w);
-    const display = formatWord(w.word, w.article);
-    try {
-      await playGermanAudio(display, w.audio_word);
-    } catch {
-      /* TTS yedek — sessiz devam */
-    }
-  }, []);
+  const handleSelectWord = useCallback(
+    async (w: VocabularyWord, closeModal = false) => {
+      setSelectedWord(w);
+      const display = formatWord(w.word, w.article);
+      try {
+        await playGermanAudio(display, w.audio_word);
+      } catch {
+        /* TTS yedek */
+      }
+      if (closeModal) setWordsModalOpen(false);
+    },
+    []
+  );
 
   const handleInsertWord = useCallback(
-    (snippet: string) => {
+    (snippet: string, closeModal = false) => {
       if (mode !== "free") {
         pendingInsert.current = snippet;
         setMode("free");
-        return;
+      } else {
+        insertAtCursor(snippet);
       }
-      insertAtCursor(snippet);
+      if (closeModal) setWordsModalOpen(false);
     },
     [mode, insertAtCursor]
   );
+
+  const sidebarProps = {
+    showTurkish,
+    category,
+    onCategoryChange: (cat: string | null) => {
+      setCategory(cat);
+      saveDiktatStore({ sidebarCategory: cat });
+    },
+    selectedId: selectedWord?.id ?? null,
+  };
 
   return (
     <div className="flex min-h-[calc(100dvh-8rem)] flex-col gap-4 lg:flex-row">
@@ -130,7 +156,7 @@ export function DiktatWorkspace() {
               Diktat defteri
             </p>
             <p className="text-xs text-sage-500">
-              {learnerDisplayName(profile)} — yazarak öğren, kelimeler yanda
+              {learnerDisplayName(profile)} — yazarak öğren
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -185,6 +211,16 @@ export function DiktatWorkspace() {
           </button>
         </div>
 
+        <button
+          type="button"
+          className="btn-secondary-lg flex w-full items-center justify-center gap-2 lg:hidden"
+          onClick={() => setWordsModalOpen(true)}
+        >
+          <IconList size={18} />
+          Kelimeler
+          <span className="text-xs font-normal text-sage-500">({vocabTotal} A1)</span>
+        </button>
+
         <div className={mode === "smart" ? "" : "hidden"}>
           <SmartDiktatDrill showTurkish={showTurkish} active={mode === "smart"} />
         </div>
@@ -226,59 +262,71 @@ export function DiktatWorkspace() {
             </div>
           </div>
         ) : mode === "listen" && selectedWord ? (
-          <div className="rounded-xl border border-sage-100 bg-white overflow-hidden">
+          <div className="overflow-hidden rounded-xl border border-sage-100 bg-white">
             <HearAndWrite word={selectedWord} wordVisible />
             <p className="border-t border-sage-50 px-4 py-2 text-xs text-sage-400">
-              Yan listeden başka kelime seçebilirsin.
+              Başka kelime için Kelimeler listesini aç.
             </p>
           </div>
         ) : mode === "listen" ? (
           <div className="rounded-xl border border-sage-100 bg-white p-6 text-center">
             <p className="text-sm font-medium text-goethe-blue">Kelime dinle-yaz</p>
             <p className="mt-2 text-sm text-sage-600">
-              Sağdaki listeden bir kelimeye dokun — sesi duyarsın, burada yazarak kontrol edersin.
+              Kelimeler butonuna dokun — sesi duy, burada yazarak kontrol et.
             </p>
-            {!sidebarOpen && (
-              <button
-                type="button"
-                className="btn-secondary mt-4 text-xs"
-                onClick={() => setSidebarOpen(true)}
-              >
-                Kelime listesini aç
-              </button>
-            )}
+            <button
+              type="button"
+              className="btn-secondary mt-4 text-xs lg:hidden"
+              onClick={() => setWordsModalOpen(true)}
+            >
+              Kelimeleri aç
+            </button>
           </div>
         ) : null}
+
+        {!desktopSidebarOpen && (
+          <button
+            type="button"
+            className="btn-secondary-lg hidden w-full items-center justify-center gap-2 lg:flex"
+            onClick={() => setDesktopSidebarOpen(true)}
+          >
+            <IconList size={18} />
+            Kelimeleri göster
+          </button>
+        )}
       </div>
 
-      <div
-        className={`${
-          sidebarOpen ? "flex" : "hidden"
-        } fixed inset-x-3 bottom-20 top-28 z-20 flex-col lg:static lg:inset-auto lg:flex lg:w-72 lg:shrink-0`}
-      >
-        <WordSidebar
-          showTurkish={showTurkish}
-          category={category}
-          onCategoryChange={(cat) => {
-            setCategory(cat);
-            saveDiktatStore({ sidebarCategory: cat });
-          }}
-          selectedId={selectedWord?.id ?? null}
-          onSelect={handleSelectWord}
-          onInsert={handleInsertWord}
-          onToggleCollapse={() => setSidebarOpen(false)}
-        />
-      </div>
-
-      {!sidebarOpen && (
-        <button
-          type="button"
-          onClick={() => setSidebarOpen(true)}
-          className="btn-attention-glow fixed bottom-24 right-3 z-30 rounded-full px-4 py-2.5 text-xs font-semibold shadow-lg lg:hidden"
-        >
-          Kelimeler ↑
-        </button>
+      {desktopSidebarOpen && (
+        <div className="hidden min-h-0 lg:flex lg:w-72 lg:shrink-0 lg:flex-col">
+          <WordSidebar
+            {...sidebarProps}
+            variant="panel"
+            onSelect={handleSelectWord}
+            onInsert={handleInsertWord}
+            onToggleCollapse={() => setDesktopSidebarOpen(false)}
+          />
+        </div>
       )}
+
+      <AppModal
+        open={wordsModalOpen}
+        onClose={() => setWordsModalOpen(false)}
+        title="Kelimeler"
+        subtitle={`${vocabTotal} A1 · dokun = dinle · + metne ekle`}
+        size="full"
+        contentClassName="flex min-h-0 flex-1 flex-col p-0 sm:p-0 sm:px-1 sm:pb-1"
+        panelClassName="max-h-[88dvh] sm:max-h-[85dvh]"
+        className="lg:hidden"
+      >
+        <div className="flex min-h-[50dvh] flex-1 flex-col px-4 pb-4 sm:px-5">
+          <WordSidebar
+            {...sidebarProps}
+            variant="plain"
+            onSelect={(w) => void handleSelectWord(w, true)}
+            onInsert={(s) => handleInsertWord(s, true)}
+          />
+        </div>
+      </AppModal>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { sanitizeProfessorErrorForUser } from "@/lib/professorMessages";
 import { PageShell } from "@/components/PageShell";
+import { AppModal } from "@/components/ui/AppModal";
 import { DialogueReader } from "@/components/dialogue/DialogueReader";
 import { getDialogueById, getDialoguesByLevel, getSeedDialogues } from "@/lib/dialogues";
 import type { DialogueLevel, DialogueStory } from "@/lib/dialogueTypes";
@@ -18,14 +19,22 @@ import {
   type DialogueStorageState,
 } from "@/lib/dialogueStorage";
 import { useProgress } from "@/lib/ProgressContext";
+import { useIsMobileLayout } from "@/lib/useMediaQuery";
 
 const LEVELS: (DialogueLevel | "saved")[] = ["A1", "A2", "B1", "saved"];
 
+function dialoguesPath(level?: DialogueLevel | "saved") {
+  return level && level !== "saved" ? `/dialogues?level=${level}` : "/dialogues";
+}
+
 export default function DialoguesClient() {
+  const router = useRouter();
+  const pathname = usePathname();
   const searchParams = useSearchParams();
   const levelParam = searchParams.get("level") as DialogueLevel | null;
   const idParam = searchParams.get("id");
   const listenParam = searchParams.get("listen") === "1";
+  const isMobile = useIsMobileLayout();
 
   const { updateProgress, hydrated } = useProgress();
   const [storage, setStorage] = useState<DialogueStorageState>(() => loadDialogueStorage());
@@ -43,13 +52,6 @@ export default function DialoguesClient() {
     if (idParam) setSelectedId(idParam);
     if (levelParam && LEVELS.includes(levelParam)) setTab(levelParam);
   }, [idParam, levelParam]);
-
-  useEffect(() => {
-    if (!listenParam || !selectedId) return;
-    requestAnimationFrame(() => {
-      document.getElementById("story-listen")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }, [listenParam, selectedId]);
 
   const stories = useMemo(() => {
     if (tab === "saved") return storage.savedStories;
@@ -77,6 +79,28 @@ export default function DialoguesClient() {
       },
     }));
   }, [selectedId, storage, persist, updateProgress]);
+
+  const syncStoryUrl = useCallback(
+    (storyId: string, storyLevel: DialogueLevel, listen?: boolean) => {
+      const params = new URLSearchParams({ id: storyId, level: storyLevel });
+      if (listen) params.set("listen", "1");
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    },
+    [pathname, router]
+  );
+
+  const handleSelectStory = useCallback(
+    (storyId: string, storyLevel: DialogueLevel) => {
+      setSelectedId(storyId);
+      syncStoryUrl(storyId, storyLevel);
+    },
+    [syncStoryUrl]
+  );
+
+  const handleCloseStory = useCallback(() => {
+    setSelectedId(null);
+    router.replace(dialoguesPath(tab), { scroll: false });
+  }, [router, tab]);
 
   const handleGenerate = async () => {
     const guard = canGenerateAiStory(storage);
@@ -114,6 +138,7 @@ export default function DialoguesClient() {
       persist(next);
       setTab("saved");
       setSelectedId(story.id);
+      syncStoryUrl(story.id, story.level);
     } catch (err) {
       setGenError(err instanceof Error ? err.message : "Bağlantı hatası.");
     } finally {
@@ -145,6 +170,7 @@ export default function DialoguesClient() {
                 onClick={() => {
                   setTab(l);
                   setSelectedId(null);
+                  router.replace(dialoguesPath(l), { scroll: false });
                 }}
                 className={`rounded-lg px-3 py-1.5 text-xs font-semibold ${
                   tab === l
@@ -189,7 +215,7 @@ export default function DialoguesClient() {
             </p>
           </div>
 
-          <div className="max-h-[min(52vh,520px)] space-y-2 overflow-y-auto">
+          <div className="max-h-none space-y-2 overflow-y-auto lg:max-h-[min(52vh,520px)]">
             {stories.length === 0 && (
               <p className="text-sm text-sage-500">
                 {tab === "saved"
@@ -203,7 +229,7 @@ export default function DialoguesClient() {
                 <button
                   key={s.id}
                   type="button"
-                  onClick={() => setSelectedId(s.id)}
+                  onClick={() => handleSelectStory(s.id, s.level)}
                   className={`w-full rounded-xl border p-3 text-left transition ${
                     selectedId === s.id
                       ? "border-goethe-blue bg-goethe-blue/5"
@@ -227,19 +253,37 @@ export default function DialoguesClient() {
           </div>
         </aside>
 
-        <main className="card-soft min-h-[400px] p-4 sm:p-6">
+        <main className="card-soft hidden min-h-[400px] p-4 sm:p-6 lg:block">
           {selectedStory ? (
-            <DialogueReader story={selectedStory} onComplete={handleStoryComplete} />
+            <DialogueReader
+              story={selectedStory}
+              onComplete={handleStoryComplete}
+              focusListen={listenParam}
+            />
           ) : (
             <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center text-sage-500">
               <p className="text-lg font-medium text-goethe-blue">Bir hikaye seç</p>
-              <p className="mt-2 max-w-sm text-sm">
-                Soldan hikaye seç.
-              </p>
+              <p className="mt-2 max-w-sm text-sm">Soldan hikaye seç.</p>
             </div>
           )}
         </main>
       </div>
+
+      {selectedStory && isMobile === true && (
+        <AppModal
+          open
+          onClose={handleCloseStory}
+          title={selectedStory.title_de}
+          subtitle={selectedStory.title_tr}
+          size="full"
+        >
+          <DialogueReader
+            story={selectedStory}
+            onComplete={handleStoryComplete}
+            focusListen={listenParam}
+          />
+        </AppModal>
+      )}
     </PageShell>
   );
 }

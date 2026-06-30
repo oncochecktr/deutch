@@ -65,6 +65,27 @@ export function filterWordSpiegel(
   });
 }
 
+export type SeenFilter = "unseen" | "seen" | "all";
+
+export function filterWordSpiegelBySeen(
+  items: SpiegelDisplay[],
+  seenIds: readonly string[],
+  filter: SeenFilter
+): SpiegelDisplay[] {
+  if (filter === "all") return items;
+  const seen = new Set(seenIds);
+  if (filter === "unseen") return items.filter((x) => !seen.has(x.id));
+  return items.filter((x) => seen.has(x.id));
+}
+
+export function getA1CategoryCounts(): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const w of getA1Vocabulary().words) {
+    counts.set(w.category, (counts.get(w.category) ?? 0) + 1);
+  }
+  return counts;
+}
+
 export interface WordQuiz {
   id: string;
   prompt_tr: string;

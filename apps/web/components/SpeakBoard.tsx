@@ -155,7 +155,7 @@ export function SpeakBoard({
                 )}
                 {teachingTopicGerman && (
                   <div className="mt-3 flex items-start gap-3">
-                    <SpeakAudioButton text={teachingTopicGerman} size="md" />
+                    <SpeakAudioButton text={teachingTopicGerman} size="md" variant="dark" />
                     <p className="text-2xl font-semibold text-white sm:text-3xl">
                       {teachingTopicGerman}
                     </p>
@@ -173,7 +173,7 @@ export function SpeakBoard({
                     </p>
                     {teachingExamples.map((ex, i) => (
                       <div key={i} className="flex items-start gap-2 text-base sm:text-lg">
-                        <SpeakAudioButton text={ex.german} className="mt-0.5" />
+                        <SpeakAudioButton text={ex.german} className="mt-0.5" variant="dark" />
                         <div>
                           <p className="font-medium text-[#e8edd8]">{ex.german}</p>
                           <p className="text-sm italic text-[#a8c4b8]">({ex.turkish})</p>
@@ -191,7 +191,7 @@ export function SpeakBoard({
                   Soru
                 </p>
                 <div className="mt-3 flex items-start gap-3">
-                  <SpeakAudioButton text={germanQuestion} size="md" />
+                  <SpeakAudioButton text={germanQuestion} size="md" variant="dark" />
                   <p className="text-2xl font-semibold leading-snug text-white sm:text-3xl md:text-4xl [text-shadow:0_2px_4px_rgba(0,0,0,0.4)]">
                     {germanQuestion}
                   </p>
@@ -255,7 +255,7 @@ export function SpeakBoard({
                   Model / düzeltme
                 </p>
                 <div className="mt-2 flex items-start gap-3">
-                  <SpeakAudioButton text={correction} size="md" />
+                  <SpeakAudioButton text={correction} size="md" variant="dark" />
                   <p className="text-xl font-semibold text-white sm:text-2xl">{correction}</p>
                 </div>
                 {correctionExplanation && (

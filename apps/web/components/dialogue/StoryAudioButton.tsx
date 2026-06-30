@@ -29,8 +29,8 @@ export function StoryAudioButton({
   const langLabel = lang === "de" ? "DE" : "TR";
   const colorClass =
     lang === "de"
-      ? "border-goethe-blue/20 bg-goethe-blue/10 text-goethe-blue hover:bg-goethe-blue/15"
-      : "border-amber-200/80 bg-amber-50 text-amber-900 hover:bg-amber-100";
+      ? "border-goethe-blue/35 bg-goethe-blue/12 text-goethe-blue hover:border-goethe-blue/50 hover:bg-goethe-blue/18"
+      : "border-amber-300/80 bg-amber-50 text-amber-950 hover:border-amber-400 hover:bg-amber-100";
 
   return (
     <button

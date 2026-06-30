@@ -34,8 +34,8 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
   const [checked, setChecked] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [sessionCorrect, setSessionCorrect] = useState(0);
-  const autoPlayedRef = useRef(false);
-  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [lastResult, setLastResult] = useState<ReturnType<typeof checkDictation> | null>(null);
+  const resultRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setQueue(buildSmartQueue(8));
@@ -43,7 +43,6 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
 
   useEffect(
     () => () => {
-      if (advanceTimer.current) clearTimeout(advanceTimer.current);
       stopAudio();
     },
     []
@@ -82,36 +81,52 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
   useEffect(() => {
     setInput("");
     setChecked(false);
-    autoPlayedRef.current = false;
+    setLastResult(null);
   }, [drill?.id]);
+
+  useEffect(() => {
+    if (checked && lastResult && resultRef.current) {
+      resultRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [checked, lastResult]);
 
   const handleCheck = () => {
     if (!drill || !item || checked) return;
     const result = checkDictation(input, drill.de, { minScore: 88, allowArticleOmit: false });
+    setLastResult(result);
     setChecked(true);
 
     if (result.ok) {
       setSessionCorrect((c) => c + 1);
       const store = loadDiktatStore();
       saveDiktatStore({ smartCorrect: (store.smartCorrect ?? 0) + 1 });
-      advanceTimer.current = setTimeout(() => {
-        setQueue((q) => markMastered(q, index));
-        setIndex((i) => i + 1);
-        advanceTimer.current = null;
-      }, 1200);
     } else {
-      if (!autoPlayedRef.current) {
-        autoPlayedRef.current = true;
-        void playAudio(1);
-      }
-      const nextAttempts = item.attempts + 1;
-      setQueue((q) => requeueOnWrong(q, index));
-      const delay = nextAttempts >= 3 ? 2800 : 1600;
-      advanceTimer.current = setTimeout(() => {
-        setIndex((i) => i + 1);
-        advanceTimer.current = null;
-      }, delay);
+      setQueue((q) =>
+        q.map((it, i) => (i === index ? { ...it, attempts: it.attempts + 1 } : it))
+      );
     }
+  };
+
+  const handleRetry = () => {
+    setInput("");
+    setChecked(false);
+    setLastResult(null);
+  };
+
+  const handleNext = () => {
+    if (!item || !lastResult) return;
+
+    if (lastResult.ok) {
+      setQueue((q) => markMastered(q, index));
+      setIndex((i) => i + 1);
+    } else {
+      setQueue((q) => requeueOnWrong(q, index));
+      // Kuyruktan çıkarılınca aynı index'teki sonraki cümle gelir — atlama yok
+    }
+
+    setInput("");
+    setChecked(false);
+    setLastResult(null);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -122,18 +137,14 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
   };
 
   const restart = () => {
-    if (advanceTimer.current) clearTimeout(advanceTimer.current);
+    stopAudio();
     setQueue(buildSmartQueue(8, Date.now()));
     setIndex(0);
     setSessionCorrect(0);
     setInput("");
     setChecked(false);
+    setLastResult(null);
   };
-
-  const result = useMemo(() => {
-    if (!checked || !drill) return null;
-    return checkDictation(input, drill.de, { minScore: 88, allowArticleOmit: false });
-  }, [checked, drill, input]);
 
   if (queue.length === 0) {
     return (
@@ -209,8 +220,8 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
       <textarea
         value={input}
         onChange={(e) => {
+          if (checked) return;
           setInput(e.target.value);
-          setChecked(false);
         }}
         onKeyDown={handleKeyDown}
         rows={3}
@@ -221,49 +232,67 @@ export function SmartDiktatDrill({ showTurkish, active = true }: SmartDiktatDril
         autoComplete="off"
       />
 
-      <div className="flex gap-2">
-        <button
-          type="button"
-          className="btn-primary flex-1"
-          disabled={!input.trim() || playing || checked}
-          onClick={handleCheck}
-        >
-          Kontrol
-        </button>
-        <button
-          type="button"
-          className="btn-secondary"
-          disabled={playing}
-          onClick={() => playAudio(2)}
-        >
-          2× dinle
-        </button>
-      </div>
-
-      {checked && result && (
+      {checked && lastResult && (
         <div
+          ref={resultRef}
           className={`rounded-lg px-4 py-3 text-sm ${
-            result.ok ? "bg-sage-50 text-sage-700" : "bg-red-50 text-red-900"
+            lastResult.ok ? "bg-sage-50 text-sage-700" : "bg-red-50 text-red-900"
           }`}
         >
-          {result.ok ? (
-            <p className="font-semibold">Doğru — sıradaki cümleye geçiliyor…</p>
+          {lastResult.ok ? (
+            <p className="font-semibold">Doğru — devam etmek için Sonraki.</p>
           ) : (
             <>
-              <p className="font-semibold">Henüz tam değil (%{result.score})</p>
+              <p className="font-semibold">Henüz tam değil (%{lastResult.score})</p>
               <p className="mt-2">
                 Doğrusu: <strong className="text-goethe-blue">{drill.de}</strong>
               </p>
               {showTurkish && <p className="mt-1 text-sage-600">{drill.tr}</p>}
               <p className="mt-2 text-xs opacity-80">
-                {item.attempts < 3
-                  ? "Biraz sonra aynı kalıp tekrar gelir — şimdi başka cümleye geç."
-                  : "Cevap gösterildi — devam."}
+                Tekrar yazabilir veya Sonraki ile devam edebilirsin.
               </p>
             </>
           )}
         </div>
       )}
+
+      <div className="flex gap-2">
+        {!checked ? (
+          <>
+            <button
+              type="button"
+              className="btn-primary flex-1"
+              disabled={!input.trim() || playing}
+              onClick={handleCheck}
+            >
+              Kontrol
+            </button>
+            <button
+              type="button"
+              className="btn-secondary"
+              disabled={playing}
+              onClick={() => playAudio(2)}
+            >
+              2× dinle
+            </button>
+          </>
+        ) : (
+          <>
+            {!lastResult?.ok && (
+              <button type="button" className="btn-secondary flex-1" onClick={handleRetry}>
+                Tekrar dene
+              </button>
+            )}
+            <button
+              type="button"
+              className={`${lastResult?.ok ? "btn-primary flex-1" : "btn-primary flex-1"}`}
+              onClick={handleNext}
+            >
+              Sonraki
+            </button>
+          </>
+        )}
+      </div>
     </div>
   );
 }

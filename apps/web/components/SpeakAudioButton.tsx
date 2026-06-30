@@ -8,13 +8,22 @@ interface SpeakAudioButtonProps {
   text: string;
   label?: string;
   size?: "sm" | "md";
+  /** dark: sınıf tahtası gibi koyu zemin; light: beyaz/krem kartlar */
+  variant?: "light" | "dark";
   className?: string;
 }
+
+const VARIANT_CLASS = {
+  light:
+    "border-goethe-blue/25 bg-goethe-blue/10 text-goethe-blue hover:border-goethe-blue/40 hover:bg-goethe-blue/15",
+  dark: "border-white/25 bg-white/10 text-[#e8edd8] hover:bg-white/20",
+} as const;
 
 export function SpeakAudioButton({
   text,
   label,
   size = "sm",
+  variant = "light",
   className = "",
 }: SpeakAudioButtonProps) {
   const [playing, setPlaying] = useState(false);
@@ -42,7 +51,7 @@ export function SpeakAudioButton({
       }}
       aria-label={label ?? `Profesör seslendirsin: ${trimmed}`}
       title="Profesör seslendirsin"
-      className={`inline-flex shrink-0 items-center justify-center rounded-full border border-white/25 bg-white/10 text-[#e8edd8] transition hover:bg-white/20 disabled:opacity-50 ${sizeClass} ${className}`}
+      className={`inline-flex shrink-0 items-center justify-center rounded-full border transition disabled:opacity-50 ${VARIANT_CLASS[variant]} ${sizeClass} ${className}`}
     >
       {playing ? (
         <span className="text-xs">…</span>

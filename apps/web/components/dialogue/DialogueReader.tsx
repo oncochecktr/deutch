@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { DialogueStory } from "@/lib/dialogueTypes";
 import { DialogueLineRow } from "./DialogueLine";
 import { StoryListenPlayer } from "./StoryListenPlayer";
@@ -8,13 +8,15 @@ import { StoryListenPlayer } from "./StoryListenPlayer";
 interface DialogueReaderProps {
   story: DialogueStory;
   onComplete?: () => void;
+  /** Deep link listen=1 — dinleme paneline odaklan */
+  focusListen?: boolean;
 }
 
 function storyHasListenAudio(story: DialogueStory): boolean {
   return story.lines.some((l) => l.audio_de && l.audio_tr);
 }
 
-export function DialogueReader({ story, onComplete }: DialogueReaderProps) {
+export function DialogueReader({ story, onComplete, focusListen = false }: DialogueReaderProps) {
   const [showAllTr, setShowAllTr] = useState(false);
   const [revealedLines, setRevealedLines] = useState<Set<string>>(() => new Set());
   const [readLines, setReadLines] = useState<Set<string>>(() => new Set());
@@ -56,6 +58,13 @@ export function DialogueReader({ story, onComplete }: DialogueReaderProps) {
   };
 
   const hasListen = useMemo(() => storyHasListenAudio(story), [story]);
+
+  useEffect(() => {
+    if (!focusListen || !hasListen) return;
+    requestAnimationFrame(() => {
+      document.getElementById("story-listen")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [focusListen, hasListen]);
 
   return (
     <div className="space-y-4">

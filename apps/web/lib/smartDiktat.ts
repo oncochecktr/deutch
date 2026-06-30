@@ -138,7 +138,7 @@ export function requeueOnWrong(
   const item = queue[index];
   if (!item) return queue;
 
-  const attempts = item.attempts + 1;
+  const attempts = item.attempts;
   const updated: SmartQueueItem = { ...item, attempts };
 
   if (attempts >= 3) {

@@ -10,13 +10,27 @@ interface WordSpiegelListProps {
   items: SpiegelDisplay[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+  emptyMessage?: string;
 }
 
-export function WordSpiegelList({ items, selectedId, onSelect }: WordSpiegelListProps) {
+export function WordSpiegelList({
+  items,
+  selectedId,
+  onSelect,
+  emptyMessage = "Bu filtrede kelime yok.",
+}: WordSpiegelListProps) {
   const { progress } = useProgress();
   const vocab = useMemo(() => getA1Vocabulary(), []);
   const wordMap = useMemo(() => new Map(vocab.words.map((w) => [w.id, w])), [vocab.words]);
   const seen = progress.grundlagen.cumleMotoruSeenCards;
+
+  if (items.length === 0) {
+    return (
+      <p className="rounded-xl border border-sage-100 bg-white px-4 py-8 text-center text-sm text-sage-500">
+        {emptyMessage}
+      </p>
+    );
+  }
 
   return (
     <ul className="divide-y divide-sage-50 rounded-xl border border-sage-100 bg-white">

@@ -13,6 +13,8 @@ interface WordSidebarProps {
   selectedId: string | null;
   onSelect: (word: VocabularyWord) => void;
   onInsert: (text: string) => void;
+  /** panel: yan sütun başlığı + Gizle; plain: modal içi — sadece arama + liste */
+  variant?: "panel" | "plain";
   onToggleCollapse?: () => void;
 }
 
@@ -23,6 +25,7 @@ export function WordSidebar({
   selectedId,
   onSelect,
   onInsert,
+  variant = "panel",
   onToggleCollapse,
 }: WordSidebarProps) {
   const [search, setSearch] = useState("");
@@ -43,24 +46,32 @@ export function WordSidebar({
   }, [vocab.words, category, search]);
 
   return (
-    <aside className="flex h-full min-h-0 flex-col rounded-xl border border-sage-100 bg-white">
-      <div className="shrink-0 border-b border-sage-50 p-3">
-        <div className="flex items-center justify-between gap-2">
-          <div className="min-w-0">
-            <p className="text-xs font-bold uppercase tracking-wide text-goethe-blue">
-              Kelimeler
-            </p>
-            <GoldCueLine className="mt-1.5" />
+    <aside
+      className={`flex min-h-0 flex-col ${
+        variant === "panel" ? "h-full rounded-xl border border-sage-100 bg-white" : "h-full"
+      }`}
+    >
+      <div className={`shrink-0 ${variant === "panel" ? "border-b border-sage-50 p-3" : "pb-3"}`}>
+        {variant === "panel" && (
+          <div className="flex items-center justify-between gap-2">
+            <div className="min-w-0">
+              <p className="text-xs font-bold uppercase tracking-wide text-goethe-blue">
+                Kelimeler
+              </p>
+              <GoldCueLine className="mt-1.5" />
+            </div>
+            {onToggleCollapse && (
+              <AttentionHintButton onClick={onToggleCollapse} aria-label="Kelime listesini gizle">
+                Gizle ↓
+              </AttentionHintButton>
+            )}
           </div>
-          {onToggleCollapse && (
-            <AttentionHintButton onClick={onToggleCollapse} aria-label="Kelime listesini gizle">
-              Gizle ↓
-            </AttentionHintButton>
-          )}
-        </div>
-        <p className="mt-2 text-[10px] text-sage-400">
-          {vocab.total} A1 · dokun = dinle · + metne ekle
-        </p>
+        )}
+        {variant === "panel" && (
+          <p className="mt-2 text-[10px] text-sage-400">
+            {vocab.total} A1 · dokun = dinle · + metne ekle
+          </p>
+        )}
         <input
           type="search"
           value={search}

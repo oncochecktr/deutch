@@ -270,7 +270,7 @@ export default function CardsPage() {
         maxWidth="xl"
       >
         <div className="grid gap-4 lg:grid-cols-[minmax(260px,300px)_1fr] lg:items-start">
-          <aside className="space-y-3 lg:sticky lg:top-4">
+          <aside className="order-2 space-y-3 lg:order-1 lg:sticky lg:top-4">
             <CardsMotivationPanel
               learnedToday={learnedToday}
               dailyGoal={listenSettings.dailyGoal}
@@ -306,7 +306,7 @@ export default function CardsPage() {
             )}
           </aside>
 
-          <div className="min-w-0 space-y-4">
+          <div className="order-1 min-w-0 space-y-4 lg:order-2">
             <div className="h-1.5 overflow-hidden rounded-full bg-sage-100">
               <div
                 className="h-full bg-sage-400 transition-all"
