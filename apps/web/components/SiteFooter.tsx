@@ -4,7 +4,7 @@ import { SITE_TAGLINE } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-sage-100 bg-cream-50 px-4 py-8">
+    <footer className="border-t border-sage-100 bg-white/55 px-4 py-8">
       <div className="mx-auto max-w-5xl space-y-5 text-center">
         <div>
           <p className="text-sm font-bold text-goethe-blue">German Coach</p>

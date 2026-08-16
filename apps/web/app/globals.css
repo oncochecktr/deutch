@@ -3,12 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f9f5ed;
-  --surface: #fdfbf7;
-  --text: #2c3e35;
-  --muted: #6b7c72;
-  --accent: #5a785a;
-  --goethe-blue: #1a3a5c;
+  --bg: #f3f7f1;
+  --bg-deep: #e9f0e8;
+  --surface: #fbfdf9;
+  --surface-strong: #ffffff;
+  --line: #dbe7dc;
+  --text: #193329;
+  --muted: #607568;
+  --accent: #55735e;
+  --goethe-blue: #163a5f;
   --goethe-gold: #c9a227;
 }
 
@@ -29,10 +32,8 @@ body {
   padding-right: env(safe-area-inset-right, 0px);
   background-color: var(--bg);
   background-image:
-    radial-gradient(ellipse 90% 55% at 8% -5%, rgba(90, 120, 90, 0.11), transparent 55%),
-    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(26, 58, 92, 0.07), transparent 50%),
-    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(201, 162, 39, 0.06), transparent 55%),
-    linear-gradient(165deg, #faf6ee 0%, var(--bg) 42%, #f5f0e6 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0) 18rem),
+    linear-gradient(135deg, #fbfdf9 0%, var(--bg) 44%, var(--bg-deep) 100%);
   background-attachment: fixed;
 }
 
@@ -351,16 +352,23 @@ body {
 }
 
 .card-soft {
-  @apply rounded-2xl border border-sage-100 bg-cream-50 shadow-sm;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface-strong);
+  box-shadow:
+    0 1px 2px rgba(22, 58, 95, 0.04),
+    0 12px 28px rgba(25, 51, 41, 0.055);
 }
 
 /* @apply kullanilmiyor — card-soft ile birlestirilmesin diye duz CSS */
 .card-goethe {
   border-radius: 1rem;
   border: 2px solid rgba(26, 58, 92, 0.25);
-  background: linear-gradient(135deg, rgba(201, 162, 39, 0.18) 0%, rgba(26, 58, 92, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(85, 115, 94, 0.14) 0%, rgba(26, 58, 92, 0.07) 100%);
   padding: 1.25rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 1px 2px rgba(22, 58, 95, 0.04),
+    0 12px 28px rgba(25, 51, 41, 0.055);
 }
 
 .btn-primary {

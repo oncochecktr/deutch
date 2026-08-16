@@ -53,7 +53,7 @@ function NavLink({
       className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition ${
         active
           ? "bg-goethe-blue text-white shadow-sm"
-          : "text-sage-600 hover:bg-white hover:text-goethe-blue"
+          : "text-sage-600 hover:bg-sage-50 hover:text-goethe-blue"
       }`}
     >
       <NavIcon name={item.icon} size={16} className={active ? "text-white" : undefined} />
@@ -86,7 +86,7 @@ export function NavBar() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-goethe-blue/10 bg-cream-50/98 shadow-sm backdrop-blur-md"
+      className="sticky top-0 z-40 border-b border-sage-100 bg-white/92 shadow-[0_1px_18px_rgba(25,51,41,0.06)] backdrop-blur-md"
       style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
     >
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-2.5 sm:px-4 lg:gap-4 lg:py-3">
@@ -124,7 +124,7 @@ export function NavBar() {
               className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition ${
                 moreActive || moreOpen
                   ? "bg-goethe-blue/10 text-goethe-blue"
-                  : "text-sage-600 hover:bg-white hover:text-goethe-blue"
+                  : "text-sage-600 hover:bg-sage-50 hover:text-goethe-blue"
               }`}
             >
               <NavIcon name="list" size={16} />
@@ -132,7 +132,7 @@ export function NavBar() {
             </button>
 
             {moreOpen && (
-              <div className="absolute right-0 top-[calc(100%+0.35rem)] z-50 min-w-[11rem] rounded-xl border border-sage-100 bg-white p-1.5 shadow-lg">
+              <div className="absolute right-0 top-[calc(100%+0.35rem)] z-50 min-w-[11rem] rounded-xl border border-sage-100 bg-white p-1.5 shadow-[0_14px_34px_rgba(25,51,41,0.14)]">
                 {MORE_LINKS.map((item) => (
                   <Link
                     key={item.href}
