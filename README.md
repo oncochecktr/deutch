@@ -68,3 +68,7 @@ npm run goethe   # bankayı yeniden üret
 | Deneme | 20 |
 
 Veri: `data/goethe/a1/` · UI: `/exam`
+
+## Deploy kontrolu
+
+Vercel otomatik yayini icin kucuk kontrol degisikligi.
