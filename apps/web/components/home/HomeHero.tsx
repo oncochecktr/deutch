@@ -12,7 +12,7 @@ export function HomeHero() {
         </p>
       </div>
       <h1 className="mt-2 text-2xl font-bold leading-tight sm:text-3xl">
-        Önce cümleyle öğren.
+        Önce cümleyle öğren!
       </h1>
       <p className="mt-2 max-w-md text-sm text-white/85">
         5 dakika kart aç — gerisi gelir.
