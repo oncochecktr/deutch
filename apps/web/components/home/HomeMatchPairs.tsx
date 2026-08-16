@@ -146,7 +146,8 @@ export function HomeMatchPairs() {
     .filter(Boolean)
     .slice(0, 4) as VocabularyWord[];
   const done = matched.length >= round.words.length;
-  const totalProgressPct = pool.length > 0 ? Math.round((solvedUnique / pool.length) * 100) : 0;
+  const totalProgressPct =
+    pool.length > 0 ? Math.min(100, Math.max(0, Math.round((solvedUnique / pool.length) * 100))) : 0;
 
   const startNextRound = () => {
     setRound(makeRound(pool));
@@ -184,7 +185,7 @@ export function HomeMatchPairs() {
               nextMatched.length >= round.words.length
                 ? currentMemory.roundsCompleted + 1
                 : currentMemory.roundsCompleted,
-            solvedIds: Array.from(uniqueSolved).slice(-800),
+            solvedIds: Array.from(uniqueSolved),
             recentIds: [card.id, ...currentMemory.recentIds.filter((id) => id !== card.id)].slice(0, 8),
           });
           saveMemory(nextMemory);
