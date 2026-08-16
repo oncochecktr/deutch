@@ -6,8 +6,8 @@ export function LearningMethodGuide() {
   return (
     <section id="nasil-ogrenilir" className="scroll-mt-24">
       <div className="mb-3">
-        <h2 className="text-lg font-bold text-goethe-blue sm:text-xl">Nasıl öğrenilir?</h2>
-        <p className="mt-0.5 text-sm text-sage-500">Cümle → dikte → konuş → gramer</p>
+        <h2 className="text-lg font-bold text-white sm:text-xl">Nasıl öğrenilir?</h2>
+        <p className="mt-0.5 text-sm text-sage-200">Cümle → dikte → konuş → gramer</p>
       </div>
 
       <ol className="grid gap-3 sm:grid-cols-2">

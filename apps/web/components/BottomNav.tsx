@@ -29,7 +29,7 @@ export function BottomNav() {
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-sage-100 bg-white/92 shadow-[0_-10px_24px_rgba(25,51,41,0.08)] backdrop-blur lg:hidden"
+      className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/15 bg-[#101f23] shadow-[0_-12px_28px_rgba(0,0,0,0.45)] lg:hidden"
       style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
       aria-label="Ana menü"
     >
@@ -42,7 +42,7 @@ export function BottomNav() {
               key={item.href}
               href={item.href}
               className={`relative flex min-h-[56px] min-w-[56px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-2 text-[10px] font-medium transition ${
-                active ? "bg-sage-100 text-goethe-blue" : "text-sage-500"
+                active ? "bg-white/14 text-white" : "text-sage-100 hover:bg-white/8 hover:text-white"
               }`}
             >
               <span className="relative">

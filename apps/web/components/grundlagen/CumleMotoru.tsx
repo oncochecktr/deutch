@@ -58,8 +58,10 @@ export function CumleMotoru() {
   const navList = useMemo(() => {
     const byCat = filterWordSpiegel(allWords, "", category);
     const bySeen = filterWordSpiegelBySeen(byCat, seenIds, seenFilter);
-    return bySeen.length > 0 ? bySeen : byCat;
-  }, [allWords, category, seenIds, seenFilter]);
+    if (seenFilter !== "unseen") return bySeen.length > 0 ? bySeen : byCat;
+    if (!selectedId) return bySeen.length > 0 ? bySeen : byCat;
+    return byCat.filter((w) => w.id === selectedId || !seenIds.includes(w.id));
+  }, [allWords, category, seenIds, seenFilter, selectedId]);
   const quizzes = useMemo(() => generateWordQuizzes(10), []);
 
   useEffect(() => {

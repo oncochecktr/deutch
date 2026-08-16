@@ -53,7 +53,7 @@ function NavLink({
       className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition ${
         active
           ? "bg-goethe-blue text-white shadow-sm"
-          : "text-sage-600 hover:bg-sage-50 hover:text-goethe-blue"
+          : "text-sage-100 hover:bg-white/10 hover:text-white"
       }`}
     >
       <NavIcon name={item.icon} size={16} className={active ? "text-white" : undefined} />
@@ -86,7 +86,7 @@ export function NavBar() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-sage-100 bg-white/92 shadow-[0_1px_18px_rgba(25,51,41,0.06)] backdrop-blur-md"
+      className="sticky top-0 z-40 border-b border-white/10 bg-[#101f23]/94 shadow-[0_1px_18px_rgba(0,0,0,0.22)] backdrop-blur-md"
       style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
     >
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-2.5 sm:px-4 lg:gap-4 lg:py-3">
@@ -100,8 +100,8 @@ export function NavBar() {
             priority
           />
           <div className="hidden min-w-0 sm:block">
-            <p className="truncate text-sm font-bold leading-tight text-goethe-blue">{APP_NAME}</p>
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-sage-500">
+            <p className="truncate text-sm font-bold leading-tight text-white">{APP_NAME}</p>
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-sage-200">
               A1 Hazırlık · {APP_VERSION}
             </p>
           </div>
@@ -123,8 +123,8 @@ export function NavBar() {
               aria-haspopup="true"
               className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium transition ${
                 moreActive || moreOpen
-                  ? "bg-goethe-blue/10 text-goethe-blue"
-                  : "text-sage-600 hover:bg-sage-50 hover:text-goethe-blue"
+                  ? "bg-white/12 text-white"
+                  : "text-sage-100 hover:bg-white/10 hover:text-white"
               }`}
             >
               <NavIcon name="list" size={16} />
@@ -163,7 +163,7 @@ export function NavBar() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             title="LinkedIn"
-            className="flex h-9 w-9 items-center justify-center rounded-full text-sage-500 transition hover:bg-[#0A66C2]/10 hover:text-[#0A66C2]"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-sage-100 transition hover:bg-[#0A66C2]/20 hover:text-white"
           >
             <IconLinkedIn size={18} />
           </a>

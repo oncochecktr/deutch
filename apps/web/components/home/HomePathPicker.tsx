@@ -14,7 +14,7 @@ interface HomePathPickerProps {
 export function HomePathPicker({ recommended, progress }: HomePathPickerProps) {
   return (
     <section>
-      <h2 className="text-lg font-bold text-goethe-blue sm:text-xl">Bugün ne yaparsın?</h2>
+      <h2 className="text-lg font-bold text-white sm:text-xl">Bugün ne yaparsın?</h2>
 
       <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3">
         {HOME_INTENTS.map((intent) => {
@@ -29,7 +29,7 @@ export function HomePathPicker({ recommended, progress }: HomePathPickerProps) {
               title={isRecommended ? recommended.reason : undefined}
               className={`relative flex flex-col gap-1.5 rounded-xl border p-3 transition active:scale-[0.98] sm:p-3.5 ${
                 isRecommended
-                  ? "border-goethe-gold/50 bg-goethe-gold/10 shadow-sm"
+                  ? "border-goethe-gold/70 bg-white shadow-sm ring-1 ring-goethe-gold/20"
                   : "border-sage-100 bg-white hover:border-goethe-blue/20 hover:shadow-sm"
               }`}
             >

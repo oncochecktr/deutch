@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f3f7f1;
-  --bg-deep: #e9f0e8;
-  --surface: #fbfdf9;
-  --surface-strong: #ffffff;
-  --line: #dbe7dc;
+  --bg: #101f23;
+  --bg-deep: #0c181c;
+  --surface: #f5faf4;
+  --surface-strong: #fbfef9;
+  --line: #d6e4d8;
   --text: #193329;
   --muted: #607568;
   --accent: #55735e;
@@ -32,8 +32,8 @@ body {
   padding-right: env(safe-area-inset-right, 0px);
   background-color: var(--bg);
   background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0) 18rem),
-    linear-gradient(135deg, #fbfdf9 0%, var(--bg) 44%, var(--bg-deep) 100%);
+    linear-gradient(180deg, rgba(22, 58, 95, 0.18) 0%, rgba(22, 58, 95, 0) 18rem),
+    linear-gradient(135deg, #14282d 0%, var(--bg) 48%, var(--bg-deep) 100%);
   background-attachment: fixed;
 }
 
@@ -352,18 +352,16 @@ body {
 }
 
 .card-soft {
-  border-radius: 1rem;
-  box-shadow:
-    0 1px 2px rgba(22, 58, 95, 0.04),
-    0 12px 28px rgba(25, 51, 41, 0.055);
-}
-
-.card-soft:not([class*="border-"]) {
   border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface-strong);
+  box-shadow:
+    0 1px 2px rgba(8, 18, 22, 0.12),
+    0 18px 34px rgba(0, 0, 0, 0.18);
 }
 
-.card-soft:not([class*="bg-"]) {
-  background: var(--surface-strong);
+.home-hero-card {
+  background: linear-gradient(135deg, var(--goethe-blue) 0%, var(--goethe-blue) 62%, #244f78 100%);
 }
 
 /* @apply kullanilmiyor — card-soft ile birlestirilmesin diye duz CSS */
@@ -395,6 +393,31 @@ body {
 
 .app-main {
   padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.app-main :where(h1, h2, h3).text-goethe-blue:not(.card-soft *):not(.bg-white *) {
+  color: #f4fbf5;
+}
+
+.app-main :where(p, span, a, button, div).text-goethe-blue:not(.card-soft *):not(.bg-white *) {
+  color: #d7ecff;
+}
+
+.app-main :where(p, span, a, button, div).text-sage-500:not(.card-soft *):not(.bg-white *),
+.app-main :where(p, span, a, button, div).text-sage-600:not(.card-soft *):not(.bg-white *) {
+  color: #b7ceb9;
+}
+
+.app-main :where(.card-soft, .bg-white) :where(h1, h2, h3, p, span, a, button, div).text-goethe-blue {
+  color: var(--goethe-blue) !important;
+}
+
+.app-main :where(.card-soft, .bg-white) :where(h1, h2, h3, p, span, a, button, div).text-sage-500 {
+  color: #607568 !important;
+}
+
+.app-main :where(.card-soft, .bg-white) :where(h1, h2, h3, p, span, a, button, div).text-sage-600 {
+  color: #405b49 !important;
 }
 
 @media (min-width: 1024px) {

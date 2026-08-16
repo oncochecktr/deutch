@@ -4,7 +4,7 @@ import { LanguageFlags } from "@/components/ui/LanguageFlags";
 
 export function HomeHero() {
   return (
-    <section className="card-soft overflow-hidden border-2 border-goethe-blue/20 bg-gradient-to-br from-goethe-blue via-goethe-blue to-goethe-blue/95 p-6 text-white shadow-md sm:p-8">
+    <section className="card-soft home-hero-card overflow-hidden border-2 border-white/10 p-6 text-white shadow-md sm:p-8">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
         <LanguageFlags />
         <p className="text-[10px] font-bold uppercase tracking-widest text-goethe-gold">

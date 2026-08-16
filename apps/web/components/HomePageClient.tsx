@@ -7,6 +7,7 @@ import { CATEGORIES_A1 } from "@german-coach/vocabulary";
 import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
 import { HomeGameBanner } from "@/components/home/HomeGameBanner";
 import { HomeHero } from "@/components/home/HomeHero";
+import { HomeMatchPairs } from "@/components/home/HomeMatchPairs";
 import { HomeStoryBanner } from "@/components/home/HomeStoryBanner";
 import { HomePathPicker } from "@/components/home/HomePathPicker";
 import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
@@ -52,6 +53,7 @@ export function HomePageClient() {
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
       <div className="space-y-6">
         <HomeHero />
+        <HomeMatchPairs />
         <HomeStoryBanner />
         <HomeGameBanner />
         <LearningMethodGuide />
@@ -82,7 +84,7 @@ export function HomePageClient() {
             <LearningPathHub path={path} overallPercent={report.overallPercent} />
             <Link
               href="/grundlagen/roadmap"
-              className="block text-center text-sm font-medium text-goethe-blue underline-offset-2 hover:underline"
+              className="block text-center text-sm font-medium text-sage-100 underline-offset-2 hover:text-white hover:underline"
             >
               Gramer haritası →
             </Link>

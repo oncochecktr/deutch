@@ -4,16 +4,16 @@ import { SITE_TAGLINE } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-sage-100 bg-white/55 px-4 py-8">
+    <footer className="border-t border-white/10 bg-[#101f23]/70 px-4 py-8">
       <div className="mx-auto max-w-5xl space-y-5 text-center">
         <div>
-          <p className="text-sm font-bold text-goethe-blue">German Coach</p>
-          <p className="mt-1 text-sm text-sage-500">germancoach.app · {SITE_TAGLINE}</p>
+          <p className="text-sm font-bold text-white">German Coach</p>
+          <p className="mt-1 text-sm text-sage-200">germancoach.app · {SITE_TAGLINE}</p>
         </div>
 
         <SiteSocialLinks variant="buttons" />
 
-        <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-sage-500">
+        <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-sage-200">
           <Link href="/ozellikler" className="hover:text-goethe-blue">
             Tüm özellikler
           </Link>
@@ -37,7 +37,7 @@ export function SiteFooter() {
           </Link>
         </nav>
 
-        <nav className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-sage-400">
+        <nav className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-sage-300">
           <Link href="/gizlilik" className="hover:text-goethe-blue">
             Gizlilik
           </Link>
@@ -52,7 +52,7 @@ export function SiteFooter() {
           </Link>
         </nav>
 
-        <p className="text-xs text-sage-400">
+        <p className="text-xs text-sage-300">
           Timur Sadullayev · Almanca eğitim platformu
         </p>
       </div>
