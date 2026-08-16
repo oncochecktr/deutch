@@ -255,7 +255,7 @@ export function HomeMatchPairs() {
         </div>
       </div>
 
-      <div className="grid gap-3 p-4 sm:grid-cols-2 sm:gap-4 sm:p-5">
+      <div className="grid grid-cols-2 gap-3 p-4 sm:gap-4 sm:p-5">
         <div className="grid gap-3">
           {round.left.map((card) => (
             <button
