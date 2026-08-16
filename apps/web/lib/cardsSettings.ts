@@ -14,7 +14,7 @@ export interface CardsListenSettings {
   /** Kelime + anlam sonrasi ornek cumle (DE + TR) */
   playContext: boolean;
   dailyGoal: number;
-  filterTier: A1WordTierId | "all";
+  filterTier: A1WordTierId | "all" | "universal";
   filterCategory: string | null;
   /** filterKey → index within filtered playlist */
   filterIndices: Record<string, number>;
@@ -54,11 +54,12 @@ export const SPEECH_LABEL: Record<CardsSpeechSpeed, string> = {
   slower: "Çok yavaş",
 };
 
-export function filterKey(tier: A1WordTierId | "all", category: string | null): string {
+export function filterKey(tier: A1WordTierId | "all" | "universal", category: string | null): string {
   return `${tier}|${category ?? "*"}`;
 }
 
-export function getTierCategories(tier: A1WordTierId | "all"): readonly string[] {
+export function getTierCategories(tier: A1WordTierId | "all" | "universal"): readonly string[] {
+  if (tier === "universal") return ["Universal Paket 001"];
   if (tier === "all") {
     const all = new Set<string>();
     for (const t of Object.keys(A1_WORD_TIERS) as A1WordTierId[]) {

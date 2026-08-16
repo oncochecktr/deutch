@@ -3,13 +3,19 @@
 import { A1_WORD_TIERS, type A1WordTierId } from "@/lib/wordTiers";
 import { isDailyLifePreset } from "@/lib/cardsSettings";
 
-const TIER_ORDER: (A1WordTierId | "all")[] = ["easy", "medium", "hard", "all"];
+const TIER_ORDER: (A1WordTierId | "all" | "universal")[] = [
+  "easy",
+  "medium",
+  "hard",
+  "universal",
+  "all",
+];
 
 interface CardsTierPickerProps {
-  tier: A1WordTierId | "all";
+  tier: A1WordTierId | "all" | "universal";
   category: string | null;
   categories: readonly string[];
-  onTierChange: (tier: A1WordTierId | "all") => void;
+  onTierChange: (tier: A1WordTierId | "all" | "universal") => void;
   onCategoryChange: (category: string | null) => void;
   onDailyLifePreset: () => void;
   playlistSize: number;
@@ -55,6 +61,8 @@ export function CardsTierPicker({
           const label =
             id === "all"
               ? "Tümü"
+              : id === "universal"
+                ? "Universal"
               : `${A1_WORD_TIERS[id].labelTr} · ${A1_WORD_TIERS[id].label}`;
           return (
             <button

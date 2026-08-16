@@ -184,6 +184,7 @@ export function WordCard({
   const kind = getWordKindLabel(word);
   const large = size === "large";
   const primaryExample = examples[0];
+  const levelLabel = word.tags?.includes("universal") ? "Universal" : word.level;
 
   return (
     <div className="card-soft mx-auto w-full max-w-lg overflow-hidden">
@@ -203,7 +204,7 @@ export function WordCard({
           {flipped && (
             <>
               <span className="rounded-full bg-goethe-blue/10 px-2.5 py-1 text-[10px] font-semibold uppercase text-goethe-blue">
-                A1 {word.level}
+                {levelLabel}
               </span>
               <span className="rounded-full bg-sage-100 px-2.5 py-1 text-[10px] font-medium text-sage-500">
                 {kind}

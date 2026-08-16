@@ -7,6 +7,7 @@ import {
 import { A1_WORD_TIERS, type A1WordTierId } from "@/lib/wordTiers";
 
 const TIER_ORDER: A1WordTierId[] = ["easy", "medium", "hard"];
+const UNIVERSAL_TIER = "universal";
 
 /** Grup icinde mantikli sira: once kolay kategoriler, sonra orta, zor */
 export function buildCardsPlaylist(
@@ -15,6 +16,12 @@ export function buildCardsPlaylist(
   category: string | null
 ): VocabularyWord[] {
   let list = words;
+
+  if (tier === UNIVERSAL_TIER) {
+    list = list.filter((w) => w.tags?.includes("universal"));
+    if (category) list = list.filter((w) => w.category === category);
+    return list;
+  }
 
   if (tier !== "all") {
     const cats = new Set(getTierCategories(tier));
@@ -72,5 +79,6 @@ export function playlistLabel(
   if (category) return category;
   if (tier === "medium" && category === null) return "Günlük hayat";
   if (tier === "all") return "Tum A1";
+  if (tier === UNIVERSAL_TIER) return category ?? "Universal";
   return A1_WORD_TIERS[tier].label;
 }

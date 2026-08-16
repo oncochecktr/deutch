@@ -1,0 +1,6761 @@
+{
+  "summary": {
+    "source": "C:\\Users\\MSİ\\.codex\\attachments\\1a30024d-1ba5-46d0-a9e6-62868e6a46a8\\pasted-text.txt",
+    "mode": "dry-run",
+    "obsidian_total": 964,
+    "existing_total": 964,
+    "target_file": "data/universal/vocabulary.json",
+    "target_category": "Universal Paket 001",
+    "additions": 0
+  },
+  "rows": [
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Abend",
+      "translation_tr": "akşamın, akşamı, akşamlar",
+      "note": "a1:a1_0015"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Abendessen",
+      "translation_tr": "yemeğinden, akşam yemeği, öğünün",
+      "note": "a1:a1_0351, a2:a2_0251"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "abends",
+      "translation_tr": "akşam",
+      "note": "universal:u_0001"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aber",
+      "translation_tr": "ama, fakat",
+      "note": "universal:u_0002"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "acht",
+      "translation_tr": "sekiz, sekizi, sekizdir",
+      "note": "universal:u_0003"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Achtung",
+      "translation_tr": "Dikkat",
+      "note": "timur:timur_0102"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "achtzehn",
+      "translation_tr": "on sekiz",
+      "note": "universal:u_0004"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Adresse",
+      "translation_tr": "adresim, adres, adresine",
+      "note": "a1:a1_0045, a1:a1_0409, a2:a2_0309"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aktiv",
+      "translation_tr": "etkin, aktifsin, aktif",
+      "note": "universal:u_0005"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Alex",
+      "translation_tr": "alex'ten, alex'im, alex'i",
+      "note": "universal:u_0006"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "alle",
+      "translation_tr": "herkes, hepsi, bütün",
+      "note": "universal:u_0007"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "allein",
+      "translation_tr": "yalnız, başına, tek başına",
+      "note": "a1:a1_0100"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "alles",
+      "translation_tr": "her şey",
+      "note": "universal:u_0008"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "alles Gute zum Geburtstag",
+      "translation_tr": "Doğum günün kutlu olsun",
+      "note": "universal:u_0009"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "alt",
+      "translation_tr": "eski, eskidir, yaşlıydı",
+      "note": "universal:u_0010"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "am",
+      "translation_tr": "yerinde, sonundaki, an dem = -de/-da (Lokativ)",
+      "note": "universal:u_0011"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "am besten",
+      "translation_tr": "en iyi",
+      "note": "universal:u_0012"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "am Strand",
+      "translation_tr": "plajda",
+      "note": "universal:u_0013"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "am Vormittag",
+      "translation_tr": "öğleden önce",
+      "note": "universal:u_0014"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "andere",
+      "translation_tr": "öbür, başkaları, diğerlerinden",
+      "note": "a1:a1_0839"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "anhalten",
+      "translation_tr": "durabiliriz, durmadı, dururuz",
+      "note": "universal:u_0015"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "anklicken",
+      "translation_tr": "tıklamalısın, tıklarım, tıklamalıyız",
+      "note": "universal:u_0016"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "anrufen",
+      "translation_tr": "aramakta, çalacağım, arayabilirsiniz",
+      "note": "a1:a1_0375, a2:a2_0275"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "anziehen",
+      "translation_tr": "giyinmek, giyelim, çekeriz",
+      "note": "a1:a1_0516"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Apfel",
+      "translation_tr": "elma, elmaların",
+      "note": "a1:a1_0147, a2:a2_0047"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Apfelstrudel",
+      "translation_tr": "Elmalı strudel'i, strudelin, elmalı",
+      "note": "universal:u_0017"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Apotheke",
+      "translation_tr": "eczaneye, eczaneyi, eczanede",
+      "note": "a1:a1_0310, a2:a2_0210"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "April",
+      "translation_tr": "Nisan",
+      "note": "a1:a1_0286, a2:a2_0186"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Arbeit",
+      "translation_tr": "iş",
+      "note": "a1:a1_0170, a2:a2_0070"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "arbeiten",
+      "translation_tr": "çalışmayı, çalışman, çalışılabileceğini",
+      "note": "a1:a1_0172, a2:a2_0072"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "arbeitest",
+      "translation_tr": "çalışıyorsun, çalışırsın",
+      "note": "universal:u_0018"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Arzt",
+      "translation_tr": "doktorda, hekim, doktorunun",
+      "note": "a1:a1_0306, a2:a2_0206"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ärztin",
+      "translation_tr": "hekimin, doktor, hekimime",
+      "note": "universal:u_0019"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auch",
+      "translation_tr": "de",
+      "note": "universal:u_0020"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auf dem Handy",
+      "translation_tr": "telefonda",
+      "note": "universal:u_0021"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auf den Markt",
+      "translation_tr": "pazar",
+      "note": "universal:u_0022"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auf die Toilette",
+      "translation_tr": "tuvalete",
+      "note": "universal:u_0023"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auf jeden Fall",
+      "translation_tr": "kesinlikle",
+      "note": "universal:u_0024"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "auf Wiedersehen",
+      "translation_tr": "hoşça kalın",
+      "note": "a1:a1_0007"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Aufgabe",
+      "translation_tr": "i̇şim, i̇şimin, ödev",
+      "note": "a1:a1_0185, a2:a2_0085"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aufgeregt",
+      "translation_tr": "heyecanlı",
+      "note": "universal:u_0025"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aufräumen",
+      "translation_tr": "düzenler, toplamalı, toparlayalım",
+      "note": "a2:a2_0367"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aufstehen",
+      "translation_tr": "kalkacak, kalktılar, kalkar",
+      "note": "a1:a1_0517"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "aus",
+      "translation_tr": "of, -den, açısından",
+      "note": "universal:u_0026"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ausdrucken",
+      "translation_tr": "yazdırmalıyım, yazdırmalı, yazdıracağını",
+      "note": "universal:u_0027"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ausfüllen",
+      "translation_tr": "doldurmam, doldurmamız, doldurduk",
+      "note": "a1:a1_0440"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ausleihen",
+      "translation_tr": "almak, alabilir",
+      "note": "universal:u_0028"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ausweis",
+      "translation_tr": "kimliğe, kimlik, Kimliğiniz",
+      "note": "a1:a1_0054"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Auto",
+      "translation_tr": "arabalardan, arabanın, araba",
+      "note": "a1:a1_0213, a2:a2_0113"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Baby",
+      "translation_tr": "bebeğimiz, bebek, bebekle",
+      "note": "a1:a1_0081"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "backen",
+      "translation_tr": "pişirdiğin, pişirin, pişirmiyoruz",
+      "note": "universal:u_0029"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bäcker",
+      "translation_tr": "fırıncıdır, fırıncıyı, fırıncı",
+      "note": "universal:u_0030"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bäckerei",
+      "translation_tr": "fırın",
+      "note": "universal:u_0031"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bäckerin",
+      "translation_tr": "fırıncıyım, fırıncı",
+      "note": "universal:u_0032"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bad",
+      "translation_tr": "banyo, banyosu",
+      "note": "a1:a1_0106, a2:a2_0006"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Badehose",
+      "translation_tr": "Mayo, Mayom, Mayosunu",
+      "note": "universal:u_0033"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Badezimmer",
+      "translation_tr": "banyosu, banyosunda",
+      "note": "a1:a1_0672"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bäh",
+      "translation_tr": "Iğrenç",
+      "note": "universal:u_0034"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bahnhof",
+      "translation_tr": "i̇stasyona, i̇stasyon, garda",
+      "note": "a1:a1_0206, a2:a2_0106"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bald",
+      "translation_tr": "yakında",
+      "note": "universal:u_0035"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ball",
+      "translation_tr": "topum, topa, topun",
+      "note": "universal:u_0036"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ballons",
+      "translation_tr": "balonlar",
+      "note": "universal:u_0037"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Banane",
+      "translation_tr": "muz, muzu",
+      "note": "a1:a1_0148, a2:a2_0048"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Band",
+      "translation_tr": "grup",
+      "note": "universal:u_0038"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bank",
+      "translation_tr": "banka",
+      "note": "a1:a1_0429"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bar",
+      "translation_tr": "nakit",
+      "note": "a1:a1_0506"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Basketball",
+      "translation_tr": "basketbol, basketbolu",
+      "note": "universal:u_0039"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "basteln",
+      "translation_tr": "yapmak, yapıyor",
+      "note": "universal:u_0040"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "beginnen",
+      "translation_tr": "başlayan, başlatmanıza, başlarsınız",
+      "note": "universal:u_0041"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "beide",
+      "translation_tr": "her ikisini (de), her iki, ikisi/ikiniz/ikimiz",
+      "note": "a1:a1_0722"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bekannt",
+      "translation_tr": "tanınırız, tanınmıyor, tanınır",
+      "note": "a1:a1_0748"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bekommen",
+      "translation_tr": "oluyor, edinmiyorsunuz, alabilir",
+      "note": "universal:u_0042"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "belegen",
+      "translation_tr": "alabilir, al, belgen",
+      "note": "universal:u_0043"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "beliebt",
+      "translation_tr": "gözde, tutulur, popüler",
+      "note": "universal:u_0044"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bereit",
+      "translation_tr": "niyetli, istekli, hazır",
+      "note": "universal:u_0045"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bericht",
+      "translation_tr": "dosyasını, hikâyesi, hikâyeyi",
+      "note": "universal:u_0046"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Berlin",
+      "translation_tr": "Berlin, berlin'i, berlin’i",
+      "note": "universal:u_0047"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "beschäftigt",
+      "translation_tr": "yoğundum, meşgul, meşgulüz",
+      "note": "universal:u_0048"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "besichtigen",
+      "translation_tr": "gezebilir, gezilecek, geziyoruz",
+      "note": "universal:u_0049"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "besonders",
+      "translation_tr": "özellikle, bilhassa, özel",
+      "note": "a1:a1_0723"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "besser",
+      "translation_tr": "daha iyi",
+      "note": "a1:a1_0337, a2:a2_0237"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bestellen",
+      "translation_tr": "tarıyoruz, çağırıyoruz, ısmarlıyoruz",
+      "note": "a1:a1_0342, a2:a2_0242, a2:a2_0336"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bestimmt",
+      "translation_tr": "kesinlikle",
+      "note": "universal:u_0050"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Besuch",
+      "translation_tr": "ziyaretin, ziyaretimiz, ziyarete",
+      "note": "a1:a1_0756"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "besuchen",
+      "translation_tr": "uğrar, gezdi, uğratır",
+      "note": "universal:u_0051"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bett",
+      "translation_tr": "döşek, yat, yatağına",
+      "note": "a1:a1_0111, a2:a2_0011"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bewölkt",
+      "translation_tr": "bulutlu",
+      "note": "a2:a2_0374"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bezahlen",
+      "translation_tr": "ödedim, ödenir, ödeyeceğinizi",
+      "note": "a1:a1_0169, a1:a1_0521, a2:a2_0069"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bibliothek",
+      "translation_tr": "kütüphane",
+      "note": "universal:u_0052"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bier",
+      "translation_tr": "bira, birayı",
+      "note": "a1:a1_0592"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bild",
+      "translation_tr": "resimle, tablolara, resmimin",
+      "note": "a1:a1_0658"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "billig",
+      "translation_tr": "ucuz",
+      "note": "a1:a1_0143, a2:a2_0043"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bin",
+      "translation_tr": "olmak (1. tekil kişi)",
+      "note": "universal:u_0053"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bioladen",
+      "translation_tr": "Biyomarket",
+      "note": "universal:u_0054"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bis",
+      "translation_tr": "edinceye, dek, ta",
+      "note": "a1:a1_0574"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bis bald",
+      "translation_tr": "görüşürüz",
+      "note": "a1:a1_0020"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bis morgen",
+      "translation_tr": "yarın görüşürüz",
+      "note": "universal:u_0055"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bist",
+      "translation_tr": "olmak (2. Tekil kişi), ...-sin (= olmak), buradasın",
+      "note": "universal:u_0056"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bitte",
+      "translation_tr": "lütfen",
+      "note": "a1:a1_0009"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bitter",
+      "translation_tr": "bitter, acı, acıdır",
+      "note": "universal:u_0057"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "blau",
+      "translation_tr": "maviden, mavidir, mavi",
+      "note": "universal:u_0058"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bleiben",
+      "translation_tr": "kalırız, kalıyorlar, kalıp",
+      "note": "a1:a1_0686"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Blume",
+      "translation_tr": "çiçeğini, çiçek, çiçeklerden",
+      "note": "a1:a1_0613"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Blumenkohl",
+      "translation_tr": "Karnabahar, Karnabahara",
+      "note": "universal:u_0059"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bordkarte",
+      "translation_tr": "kartıma, Biniş kartımı, kartını",
+      "note": "universal:u_0060"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "brauchen",
+      "translation_tr": "ihtiyacınız, lazım, duyuyorlar",
+      "note": "a1:a1_0522"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "braun",
+      "translation_tr": "kahverengi",
+      "note": "universal:u_0061"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "brav",
+      "translation_tr": "uslu, usludur",
+      "note": "universal:u_0062"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "breit",
+      "translation_tr": "geniş, eninde, genişliğinde",
+      "note": "universal:u_0063"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brettspiel",
+      "translation_tr": "oyununda, oyununu, oyunu",
+      "note": "universal:u_0064"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brezel",
+      "translation_tr": "pretzel",
+      "note": "universal:u_0065"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brief",
+      "translation_tr": "mektubu, mektup, mektubun",
+      "note": "a1:a1_0593"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Briefmarke",
+      "translation_tr": "pul, pulu, posta pulu",
+      "note": "universal:u_0066"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Briefumschlag",
+      "translation_tr": "zarf, zarfı",
+      "note": "universal:u_0067"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bringen",
+      "translation_tr": "getirse, getirdiğini, getirilecektir",
+      "note": "a1:a1_0676"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brot",
+      "translation_tr": "ekmek",
+      "note": "a1:a1_0137, a2:a2_0037"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brötchen",
+      "translation_tr": "ekmeği, ekmekler, ekmek",
+      "note": "universal:u_0068"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brücke",
+      "translation_tr": "köprü, köprünün, köprüyü",
+      "note": "a1:a1_0230, a1:a1_0561, a2:a2_0130"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bruder",
+      "translation_tr": "erkek kardeş, kardeşinden, kardeşidir",
+      "note": "a1:a1_0073"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Brüder",
+      "translation_tr": "erkek kardeşler, abiler, kardeşler",
+      "note": "a1:a1_0073"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Buch",
+      "translation_tr": "kitabının, kitabı, kitaba",
+      "note": "universal:u_0069"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bücher",
+      "translation_tr": "kitaplarımız, kitaplar, kitaplara",
+      "note": "universal:u_0070"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "bummeln",
+      "translation_tr": "gezdi, oyalanmalıyız, dolaşıyordun",
+      "note": "universal:u_0071"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Büro",
+      "translation_tr": "ofisler, büron, ofislerin",
+      "note": "a1:a1_0176, a2:a2_0076"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bus",
+      "translation_tr": "otobüsü, otobüse, otobüs",
+      "note": "a1:a1_0205, a2:a2_0105"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Bushaltestelle",
+      "translation_tr": "durağı, durağında, duraktan",
+      "note": "universal:u_0072"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Butter",
+      "translation_tr": "tereyağı",
+      "note": "a1:a1_0157, a2:a2_0057"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Caf",
+      "translation_tr": "Kafeye, Kafe, kafeterya",
+      "note": "universal:u_0073"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "campen",
+      "translation_tr": "yapıyoruz, yapıyor",
+      "note": "universal:u_0074"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Campus",
+      "translation_tr": "Kampüs, Kampüsün, Kampüsü",
+      "note": "universal:u_0075"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Chanukka",
+      "translation_tr": "Hanuka",
+      "note": "universal:u_0076"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Chef",
+      "translation_tr": "patronumuzu, patronun, şefinin",
+      "note": "a1:a1_0174, a2:a2_0074, timur:timur_0088"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "chillen",
+      "translation_tr": "takılıyoruz, takılmak, takılırlar",
+      "note": "universal:u_0077"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Chips",
+      "translation_tr": "cips",
+      "note": "universal:u_0078"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "circa",
+      "translation_tr": "yaklaşık",
+      "note": "universal:u_0079"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Club",
+      "translation_tr": "kulübü, kulüpten, kulüp",
+      "note": "universal:u_0080"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Cola",
+      "translation_tr": "kola",
+      "note": "universal:u_0081"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Comics",
+      "translation_tr": "çizgi roman",
+      "note": "universal:u_0082"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Computer",
+      "translation_tr": "bilgisayarının, bilgisayarımı, bilgisayarın",
+      "note": "universal:u_0083"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "cool",
+      "translation_tr": "havalı, havalıydı, havalıyız",
+      "note": "universal:u_0084"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Cousin",
+      "translation_tr": "kuzeni, Kuzenine, kuzen",
+      "note": "a1:a1_0086"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Cousine",
+      "translation_tr": "kuzenimdir, Kuzenim, kuzenine",
+      "note": "a1:a1_0087"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "da",
+      "translation_tr": "burada, ... için ..., orada",
+      "note": "universal:u_0085"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "da drüben",
+      "translation_tr": "orada",
+      "note": "universal:u_0086"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "da vorn",
+      "translation_tr": "önde",
+      "note": "universal:u_0087"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "danke",
+      "translation_tr": "teşekkürler",
+      "note": "a1:a1_0008"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "danke schön",
+      "translation_tr": "teşekkür ederim",
+      "note": "universal:u_0088"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dann",
+      "translation_tr": "ondan sonra, o zaman, sonra",
+      "note": "a1:a1_0575"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "das",
+      "translation_tr": "istediklerini, it, buna",
+      "note": "universal:u_0089"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "das ist",
+      "translation_tr": "budur, bu",
+      "note": "universal:u_0090"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "das Restaurant",
+      "translation_tr": "restoran",
+      "note": "universal:u_0091"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Date",
+      "translation_tr": "randevun, randevusu, randevum",
+      "note": "universal:u_0092"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dauern",
+      "translation_tr": "sürmese, sürerim, sürüyor",
+      "note": "a1:a1_0826"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dein",
+      "translation_tr": "asistanın, telefonunu, gömleğinin",
+      "note": "universal:u_0093"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Denkmal",
+      "translation_tr": "Anıt, Anıtı, anıtta",
+      "note": "universal:u_0094"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "der",
+      "translation_tr": "olanını, Artikel (Feminin, Dativ), denizi'nin",
+      "note": "universal:u_0095"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "deutlich",
+      "translation_tr": "seçik, aşikar, sarih",
+      "note": "universal:u_0096"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "deutsch",
+      "translation_tr": "almanca, alman",
+      "note": "universal:u_0097"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Deutschland",
+      "translation_tr": "Almanya, almanya'daki",
+      "note": "universal:u_0098"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "die",
+      "translation_tr": "olanları, bu",
+      "note": "universal:u_0099"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Dienstag",
+      "translation_tr": "salı",
+      "note": "a1:a1_0274, a2:a2_0174"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dieser",
+      "translation_tr": "bu",
+      "note": "a2:a2_0431"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Direktor",
+      "translation_tr": "müdürü, müdürüm, yöneticisine",
+      "note": "universal:u_0100"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Dokument",
+      "translation_tr": "kâğıdı, kağıtla, belgemi",
+      "note": "a1:a1_0452"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Donnerstag",
+      "translation_tr": "perşembe, perşembeden",
+      "note": "a1:a1_0276, a2:a2_0176"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Doppelzimmer",
+      "translation_tr": "çift kişilik oda, çift kişilik odaya",
+      "note": "universal:u_0101"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "draußen",
+      "translation_tr": "dışarıda",
+      "note": "a1:a1_0840"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "drei",
+      "translation_tr": "üç",
+      "note": "universal:u_0102"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dreißig",
+      "translation_tr": "otuzdan, otuz, otuzuna",
+      "note": "universal:u_0103"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dreizehn",
+      "translation_tr": "on üç",
+      "note": "universal:u_0104"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dringend",
+      "translation_tr": "Acilen",
+      "note": "universal:u_0105"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "dritte",
+      "translation_tr": "üçüncü",
+      "note": "universal:u_0106"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Drogerie",
+      "translation_tr": "eczane, eczaneye",
+      "note": "universal:u_0107"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Drucker",
+      "translation_tr": "yazıcıdan, yazıcı, yazıcıya",
+      "note": "a1:a1_0673"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "du",
+      "translation_tr": "sen, senin",
+      "note": "universal:u_0108"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "durstig",
+      "translation_tr": "susuzum, susuyorum, susamışım",
+      "note": "a1:a1_0362, a2:a2_0262"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "duschen",
+      "translation_tr": "almak, duşlamak",
+      "note": "a1:a1_0515"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "E-Mail",
+      "translation_tr": "e-posta",
+      "note": "a1:a1_0056, a1:a1_0387, a2:a2_0287"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "E-Mails",
+      "translation_tr": "e-posta",
+      "note": "universal:u_0109"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "echt",
+      "translation_tr": "gerçek",
+      "note": "a1:a1_0842"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Eier",
+      "translation_tr": "yumurtaya, yumurta, yumurtaları",
+      "note": "universal:u_0110"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "eigentlich",
+      "translation_tr": "aslında",
+      "note": "universal:u_0111"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ein",
+      "translation_tr": "gir, bir (Maskulin)",
+      "note": "universal:u_0112"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ein bisschen",
+      "translation_tr": "biraz",
+      "note": "universal:u_0113"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ein paar",
+      "translation_tr": "birkaç",
+      "note": "universal:u_0114"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "eine",
+      "translation_tr": "bir, bir (Feminin, Nominativ)",
+      "note": "universal:u_0115"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "einen Moment",
+      "translation_tr": "bir dakika",
+      "note": "universal:u_0116"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "einfach",
+      "translation_tr": "basitçe, kolaydır, kuşkusuz",
+      "note": "universal:u_0117"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Eingang",
+      "translation_tr": "girişini, girişten, giriş",
+      "note": "a1:a1_0668"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Einkaufszentrum",
+      "translation_tr": "Alışveriş merkezi, Alışveriş merkezine, merkezi",
+      "note": "universal:u_0118"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "einladen",
+      "translation_tr": "etsem, davet etmeliyiz, çağırırız",
+      "note": "universal:u_0119"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "einpacken",
+      "translation_tr": "paketlemeli, koymayı, paketle",
+      "note": "universal:u_0120"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "eins",
+      "translation_tr": "bir",
+      "note": "universal:u_0121"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Eis",
+      "translation_tr": "Dondurmam, dondurmamı, dondurma",
+      "note": "universal:u_0122"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "elegant",
+      "translation_tr": "şık, zarifçe",
+      "note": "universal:u_0123"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Eltern",
+      "translation_tr": "ebeveyn",
+      "note": "a1:a1_0077"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Empfänger",
+      "translation_tr": "alıcı, alıcısı, muhatap",
+      "note": "universal:u_0124"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "empfehlen",
+      "translation_tr": "önerir, edersiniz, öneriyorum",
+      "note": "universal:u_0125"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "enden",
+      "translation_tr": "bitince, bitiyor, bitse",
+      "note": "a1:a1_0689"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "endlich",
+      "translation_tr": "sonunda",
+      "note": "universal:u_0126"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Englisch",
+      "translation_tr": "İngilizce",
+      "note": "universal:u_0127"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Entschuldigung",
+      "translation_tr": "affedersiniz",
+      "note": "a1:a1_0010"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "er",
+      "translation_tr": "er, O (Maskulin 3. tekil kişi zamiri)",
+      "note": "universal:u_0128"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Erdbeere",
+      "translation_tr": "çilektir, çilek",
+      "note": "universal:u_0129"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "erklären",
+      "translation_tr": "bilgilendirmedi, açıklat, açıkladığını",
+      "note": "a1:a1_0691"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "erleichtert",
+      "translation_tr": "kolaylaştırır, rahatladık, rahatladım",
+      "note": "universal:u_0130"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "erschöpft",
+      "translation_tr": "yorgun, düşmüş, yorgunum",
+      "note": "universal:u_0131"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "erste",
+      "translation_tr": "ilk, birinci, i̇lk",
+      "note": "universal:u_0132"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "es",
+      "translation_tr": "it",
+      "note": "universal:u_0133"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "essen",
+      "translation_tr": "dine, yerdi, yiyorlar",
+      "note": "a1:a1_0364, a1:a1_0512, a2:a2_0264"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "etwas",
+      "translation_tr": "bir şey",
+      "note": "universal:u_0134"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "euer",
+      "translation_tr": "sizin, treniniz, sizinkine",
+      "note": "universal:u_0135"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "eure",
+      "translation_tr": "sizin, ceketlerinize, sizinkine",
+      "note": "universal:u_0136"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Euro",
+      "translation_tr": "euron, avroyla, avromuz",
+      "note": "a1:a1_0141, a2:a2_0041"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Exfreund",
+      "translation_tr": "Eski erkek arkadaşım, eski erkek arkadaşı, eski erkek arkadaşımla",
+      "note": "universal:u_0137"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fahren",
+      "translation_tr": "sürerken, gittiğimize, kalkıyor",
+      "note": "a1:a1_0221, a2:a2_0121"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fahrkarte",
+      "translation_tr": "biletin, bilet, biletim",
+      "note": "a1:a1_0207, a2:a2_0107"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fahrrad",
+      "translation_tr": "bisikletim, bisikletten, bisikletlerimiz",
+      "note": "a1:a1_0214, a2:a2_0114"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fahrt",
+      "translation_tr": "yolculuk",
+      "note": "universal:u_0138"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fährt",
+      "translation_tr": "gidiyor, gider, süren",
+      "note": "universal:u_0138"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fair",
+      "translation_tr": "adil, adilce, eşitçe",
+      "note": "universal:u_0139"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "falsch",
+      "translation_tr": "sahte, hatalı, yanlış",
+      "note": "a1:a1_0731"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Familie",
+      "translation_tr": "ailende, aile, ailemdeki",
+      "note": "a1:a1_0078"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Farbe",
+      "translation_tr": "boyayı, renginde, boyanın",
+      "note": "a1:a1_0624"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fast",
+      "translation_tr": "neredeyse",
+      "note": "universal:u_0140"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "faul",
+      "translation_tr": "tembel, tembelim, tembeldiniz",
+      "note": "a1:a1_0732"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fehlen",
+      "translation_tr": "yoksundum, olmaması, eksik",
+      "note": "universal:u_0141"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Feierabend",
+      "translation_tr": "paydos",
+      "note": "a1:a1_0199, a1:a1_0263, a2:a2_0099, a2:a2_0163, timur:timur_0046"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "feiern",
+      "translation_tr": "kutladığımız, kutlayacağız, kutlanır",
+      "note": "universal:u_0142"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fenster",
+      "translation_tr": "penceresi, pencerelerin, pencereleri",
+      "note": "a1:a1_0110, a2:a2_0010"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ferien",
+      "translation_tr": "tatil",
+      "note": "universal:u_0143"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fertig",
+      "translation_tr": "bitti, çıkmaya, tamam",
+      "note": "a1:a1_0371, a2:a2_0271, timur:timur_0096"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fieber",
+      "translation_tr": "ateşleri, ateşiniz, ateşi",
+      "note": "a1:a1_0317, a2:a2_0217"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Film",
+      "translation_tr": "filminden, videona, filminin",
+      "note": "universal:u_0144"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "finden",
+      "translation_tr": "bulacağımızı, bulmuyorum, bulma",
+      "note": "a1:a1_0525"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "findest",
+      "translation_tr": "bulmuyorsun, bulmak, bulduğunu",
+      "note": "universal:u_0145"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "findet",
+      "translation_tr": "bulmuyor, bulmasın, buluyor",
+      "note": "universal:u_0146"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fisch",
+      "translation_tr": "balığa, balık, balıktır",
+      "note": "a1:a1_0154, a2:a2_0054"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fischen",
+      "translation_tr": "tutuyoruz, avlanmayı, balıkla",
+      "note": "universal:u_0147"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fitnessstudio",
+      "translation_tr": "salonundaydım, salonına, salonuna",
+      "note": "universal:u_0148"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flasche",
+      "translation_tr": "şişelerde, matara, şişemi",
+      "note": "universal:u_0149"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fleisch",
+      "translation_tr": "ete, et, etten",
+      "note": "a1:a1_0153, a2:a2_0053"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fliegen",
+      "translation_tr": "uçuyoruz, uçsam, uçuyorlar",
+      "note": "universal:u_0150"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flohmarkt",
+      "translation_tr": "pazarını, pazarı",
+      "note": "universal:u_0151"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flug",
+      "translation_tr": "uçuşum, uçuştan, uçuş",
+      "note": "a1:a1_0764"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flughafen",
+      "translation_tr": "havalimanını, havaalanı, havalimanı",
+      "note": "a1:a1_0216, a2:a2_0116"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flugnummer",
+      "translation_tr": "uçuş numarası",
+      "note": "universal:u_0152"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Flugzeug",
+      "translation_tr": "uçağını, uçağın, uçağınızı",
+      "note": "a1:a1_0215, a2:a2_0115"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fluss",
+      "translation_tr": "akışı, nehir, irmağın",
+      "note": "a1:a1_0765"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Formular",
+      "translation_tr": "form, forma, formanı",
+      "note": "a1:a1_0064, a1:a1_0408, a2:a2_0308"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Foto",
+      "translation_tr": "resimle, resmimin, fotoğraf",
+      "note": "a1:a1_0396, a2:a2_0296"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fotografieren",
+      "translation_tr": "çekeriz, çektiğim, çekerler",
+      "note": "universal:u_0153"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Frage",
+      "translation_tr": "soruma, soruya, sor",
+      "note": "a1:a1_0061"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fragen",
+      "translation_tr": "sorarız, soracağıma, danış",
+      "note": "universal:u_0154"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Frankreich",
+      "translation_tr": "fransa'dan, fransayı, Fransa",
+      "note": "universal:u_0155"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Frau",
+      "translation_tr": "bayan",
+      "note": "universal:u_0156"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "frech",
+      "translation_tr": "fahiş, küstahça, kabadır",
+      "note": "universal:u_0157"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Freitag",
+      "translation_tr": "cuma",
+      "note": "a1:a1_0277, a2:a2_0177"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Freund",
+      "translation_tr": "kankam, arkadaş, yoldaşı",
+      "note": "universal:u_0158"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Freunde",
+      "translation_tr": "arkadaşı, arkadaş, arkadaşlar",
+      "note": "universal:u_0159"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Freundinnen",
+      "translation_tr": "kız arkadaşlar",
+      "note": "universal:u_0160"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "freundlich",
+      "translation_tr": "sıcakça, naziktir, naziksin",
+      "note": "a1:a1_0844"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "freut mich",
+      "translation_tr": "Memnun oldum",
+      "note": "a1:a1_0019"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "frisch",
+      "translation_tr": "dinç, taze, ferah",
+      "note": "universal:u_0161"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "früh",
+      "translation_tr": "erkendir, erkenden, erken gelmek",
+      "note": "a1:a1_0245, a2:a2_0145"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "frühstücken",
+      "translation_tr": "yapıyorlar, yapmak, etmenize",
+      "note": "a1:a1_0829, a2:a2_0361"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Führung",
+      "translation_tr": "tur",
+      "note": "universal:u_0162"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fünf",
+      "translation_tr": "beşi, beş",
+      "note": "universal:u_0163"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fünfzehn",
+      "translation_tr": "on beş",
+      "note": "universal:u_0164"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "fünfzig",
+      "translation_tr": "elli, ellide, ellidir",
+      "note": "universal:u_0165"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "für",
+      "translation_tr": "için, mutfağıyla, yöneliktir",
+      "note": "universal:u_0166"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "furchtbar",
+      "translation_tr": "korkunç",
+      "note": "universal:u_0167"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Fußball",
+      "translation_tr": "futbola, futbol, futbolu",
+      "note": "a1:a1_0619"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gabel",
+      "translation_tr": "çatal",
+      "note": "timur:timur_0080"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ganz",
+      "translation_tr": "tam",
+      "note": "universal:u_0168"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gar nicht",
+      "translation_tr": "hiç",
+      "note": "universal:u_0169"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gäste",
+      "translation_tr": "misafirler, misafire, konukları",
+      "note": "universal:u_0170"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gate",
+      "translation_tr": "kapı, kapıyı, kapımı",
+      "note": "universal:u_0171"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gebäude",
+      "translation_tr": "binaları, binanın, bina",
+      "note": "universal:u_0172"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "geben",
+      "translation_tr": "verene, verilen, veriyoruz",
+      "note": "a1:a1_0527"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geburtstag",
+      "translation_tr": "doğum günü, gününü",
+      "note": "a1:a1_0281, a2:a2_0181"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gefährlich",
+      "translation_tr": "tehlikeliydi, tehlikeli, tehlikelidir",
+      "note": "universal:u_0173"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "geheim",
+      "translation_tr": "gizli, gizlenmiş",
+      "note": "universal:u_0174"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gehen",
+      "translation_tr": "gittiğimize, gidiniz, gitmezler",
+      "note": "a1:a1_0533"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gelb",
+      "translation_tr": "sarı, sarıdır, sarıya",
+      "note": "universal:u_0175"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geld",
+      "translation_tr": "parası, nakde, para",
+      "note": "universal:u_0176"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gemein",
+      "translation_tr": "kaba",
+      "note": "universal:u_0177"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gemüse",
+      "translation_tr": "sebzeyle, sebzelerin, sebze",
+      "note": "a1:a1_0146, a2:a2_0046"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gemütlich",
+      "translation_tr": "rahat",
+      "note": "universal:u_0178"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "genau",
+      "translation_tr": "aynen",
+      "note": "a1:a1_0724"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "geöffnet",
+      "translation_tr": "açılmış, açtınız, açtım",
+      "note": "universal:u_0179"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gerade",
+      "translation_tr": "şu anda, derken",
+      "note": "universal:u_0180"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "geradeaus",
+      "translation_tr": "dümdüz",
+      "note": "a1:a1_0545"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gern",
+      "translation_tr": "memnuniyetle",
+      "note": "a1:a1_0730"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschäft",
+      "translation_tr": "firmamızda, i̇şim, i̇şimin",
+      "note": "universal:u_0181"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschenk",
+      "translation_tr": "hediyeye, hediyelerini, eşyamız",
+      "note": "universal:u_0182"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschenke",
+      "translation_tr": "hediyeye, hediyeler, hediye",
+      "note": "universal:u_0183"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschichte",
+      "translation_tr": "hikayeyi, hikaye, hikayelerini",
+      "note": "universal:u_0184"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschichten",
+      "translation_tr": "hikaye",
+      "note": "universal:u_0185"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "geschlossen",
+      "translation_tr": "kapatmadın, kapatılır, kapatılıyor",
+      "note": "a1:a1_0749"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Geschwister",
+      "translation_tr": "kardeşler, kardeş, kardeşleri",
+      "note": "universal:u_0186"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gestresst",
+      "translation_tr": "stresliyken, stresleniyorum, stresliyim",
+      "note": "universal:u_0187"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gesund",
+      "translation_tr": "sağlıklıdır, sağlıklıyım, sağlıklı",
+      "note": "a1:a1_0333, a2:a2_0233"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Getränk",
+      "translation_tr": "içecek, i̇çecek, içeceğe",
+      "note": "a1:a1_0582"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Getränke",
+      "translation_tr": "i̇çecekler, içecek, içeceklerden",
+      "note": "universal:u_0188"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gibt",
+      "translation_tr": "bulunmaktadır, verir, veriyor",
+      "note": "universal:u_0189"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gitarre",
+      "translation_tr": "gitarayı, gitarı, gitar",
+      "note": "a1:a1_0626"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Glas",
+      "translation_tr": "bardağı, bardak, bardağa",
+      "note": "a1:a1_0583"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gläser",
+      "translation_tr": "bardakları, bardakların, bardaklar",
+      "note": "universal:u_0190"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gleich",
+      "translation_tr": "aynı",
+      "note": "universal:u_0191"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gleis",
+      "translation_tr": "peron, peronu",
+      "note": "a1:a1_0218, a2:a2_0118"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "glücklich",
+      "translation_tr": "mutlu, mutluyum, mutluyuz",
+      "note": "a2:a2_0381"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Golf",
+      "translation_tr": "golfu, Golf",
+      "note": "universal:u_0192"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "grau",
+      "translation_tr": "gri",
+      "note": "universal:u_0193"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "grillen",
+      "translation_tr": "yapıyoruz, ızgara",
+      "note": "universal:u_0194"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Grillparty",
+      "translation_tr": "mangal partisi",
+      "note": "universal:u_0195"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "groß",
+      "translation_tr": "büyüktür, büyükse, büyük",
+      "note": "a1:a1_0845"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Großeltern",
+      "translation_tr": "büyükbaba ve büyükanne, ebeveynlerimizi",
+      "note": "universal:u_0196"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "grün",
+      "translation_tr": "yeşil, yeşildir",
+      "note": "universal:u_0197"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "guck mal",
+      "translation_tr": "bak",
+      "note": "universal:u_0198"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gulasch",
+      "translation_tr": "gulaşı, gulaş",
+      "note": "universal:u_0199"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "günstig",
+      "translation_tr": "hesaplıdır, avantajlı, uygun fiyatlı",
+      "note": "universal:u_0200"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Gurke",
+      "translation_tr": "Salatalık, salatalığa",
+      "note": "universal:u_0201"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gut",
+      "translation_tr": "iyidirler, i̇yi, iyiye",
+      "note": "universal:u_0202"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gut drauf",
+      "translation_tr": "neşeli",
+      "note": "universal:u_0203"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gut gemacht",
+      "translation_tr": "aferin",
+      "note": "universal:u_0204"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "gute Reise",
+      "translation_tr": "iyi yolculuklar",
+      "note": "universal:u_0205"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "guten Abend",
+      "translation_tr": "İyi akşamlar",
+      "note": "a1:a1_0004"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "guten Morgen",
+      "translation_tr": "günaydın",
+      "note": "a1:a1_0002"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "guten Tag",
+      "translation_tr": "iyi günler",
+      "note": "a1:a1_0003"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "haben",
+      "translation_tr": "vardır, bizim ... var, sahiptir",
+      "note": "a1:a1_0060"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hähnchen",
+      "translation_tr": "tavuklu, piliç, Tavuk",
+      "note": "universal:u_0206"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "halb",
+      "translation_tr": "buçuk",
+      "note": "a1:a1_0251, a2:a2_0151"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hallo",
+      "translation_tr": "merhaba",
+      "note": "a1:a1_0001"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hamburg",
+      "translation_tr": "Hamburg (Şehir), hamburg'u",
+      "note": "universal:u_0207"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Handball",
+      "translation_tr": "hentbol",
+      "note": "universal:u_0208"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Handschuhe",
+      "translation_tr": "eldivenlere, eldivenleri, eldivenler",
+      "note": "timur:timur_0068"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Handtuch",
+      "translation_tr": "havluyu, havlu, havlularını",
+      "note": "universal:u_0209"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Handy",
+      "translation_tr": "cep telefonuna, telefonlarına, cep telefonu",
+      "note": "a1:a1_0377, a2:a2_0277"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hassen",
+      "translation_tr": "nefret ediyorsun, nefret ediyoruz, nefret ediyor, sevmediğin",
+      "note": "universal:u_0210"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hässlich",
+      "translation_tr": "çirkin, sevimsiz",
+      "note": "a1:a1_0742"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hast",
+      "translation_tr": "ettin, sahip, söyledin",
+      "note": "universal:u_0211"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hat",
+      "translation_tr": "var, vardır, sahiptir",
+      "note": "universal:u_0212"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Haustiere",
+      "translation_tr": "hayvanlar, hayvanlarım, hayvanların",
+      "note": "universal:u_0213"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Heft",
+      "translation_tr": "deftere, defterimi, defterini",
+      "note": "a1:a1_0776"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "heißen",
+      "translation_tr": "demekti, adlandırılır, nedir",
+      "note": "a1:a1_0058"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "helfen",
+      "translation_tr": "ediyorsa, yardım edeceksiniz, desteklerdik",
+      "note": "universal:u_0214"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hell",
+      "translation_tr": "aydınlık, parlak, ışıl",
+      "note": "universal:u_0215"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hemd",
+      "translation_tr": "gömleklerde, gömlektir, gömlekleri",
+      "note": "a1:a1_0616"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Herr",
+      "translation_tr": "Bay",
+      "note": "universal:u_0216"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "heute",
+      "translation_tr": "bugün, günümüzde",
+      "note": "a1:a1_0240, a2:a2_0140"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "heute Abend",
+      "translation_tr": "bu akşam",
+      "note": "universal:u_0217"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hier",
+      "translation_tr": "burada",
+      "note": "a1:a1_0547"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hilfe",
+      "translation_tr": "yardım",
+      "note": "a1:a1_0339, a2:a2_0239, timur:timur_0098"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hilfsbereit",
+      "translation_tr": "yardımseversiniz, yardımsever, yardımseversin",
+      "note": "universal:u_0218"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hilft",
+      "translation_tr": "yardımcı olur, eden, yardımcı oluyor",
+      "note": "universal:u_0219"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hinten",
+      "translation_tr": "arkada",
+      "note": "a1:a1_0554"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hobby",
+      "translation_tr": "hobisini, hobim, hobiniz",
+      "note": "a1:a1_0584"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hoch",
+      "translation_tr": "yüksek",
+      "note": "universal:u_0220"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hoffentlich",
+      "translation_tr": "umarım, inşallah, i̇nşallah",
+      "note": "universal:u_0221"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "höflich",
+      "translation_tr": "naziksin, kibarca, kibar",
+      "note": "a2:a2_0415"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "holen",
+      "translation_tr": "getirse, almada, getirebiliriz",
+      "note": "universal:u_0222"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hören",
+      "translation_tr": "dinlediğiniz, duyuyorsunuz, işitiyorsa",
+      "note": "a1:a1_0531"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hose",
+      "translation_tr": "pantolonuna, pantolona, pantolonumu",
+      "note": "universal:u_0223"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hotel",
+      "translation_tr": "otelle, otel, otelin",
+      "note": "universal:u_0224"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hund",
+      "translation_tr": "köpeğidir, köpeğe, köpek",
+      "note": "universal:u_0225"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hundert",
+      "translation_tr": "yüz",
+      "note": "universal:u_0226"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hunger",
+      "translation_tr": "karın aç",
+      "note": "a1:a1_0597"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hungrig",
+      "translation_tr": "acıkmış, aç, açken",
+      "note": "a1:a1_0360, a2:a2_0260"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "hurra",
+      "translation_tr": "yaşasın",
+      "note": "universal:u_0227"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Husten",
+      "translation_tr": "öksürüğümüz, öksürüğün, öksürüğü",
+      "note": "a1:a1_0318, a2:a2_0218"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Hut",
+      "translation_tr": "hat, şapkaya, şapkanın",
+      "note": "universal:u_0228"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ich",
+      "translation_tr": "ben, benim",
+      "note": "universal:u_0229"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ich auch",
+      "translation_tr": "ben de",
+      "note": "universal:u_0230"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ich bin",
+      "translation_tr": "ben",
+      "note": "universal:u_0231"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ich heiße",
+      "translation_tr": "benim adım",
+      "note": "universal:u_0232"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ich komme aus",
+      "translation_tr": "geliyorum",
+      "note": "universal:u_0233"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Idee",
+      "translation_tr": "fikri, hayaline, fikrine",
+      "note": "universal:u_0234"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ihr",
+      "translation_tr": "onların, siz, sizin",
+      "note": "universal:u_0235"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im",
+      "translation_tr": "parkındaki, kattadır, ayında",
+      "note": "universal:u_0236"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im Angebot",
+      "translation_tr": "indirimde",
+      "note": "universal:u_0237"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im Ausland",
+      "translation_tr": "yurt dışı",
+      "note": "universal:u_0238"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im Garten",
+      "translation_tr": "bahçe",
+      "note": "universal:u_0239"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im Urlaub",
+      "translation_tr": "tatilde",
+      "note": "universal:u_0240"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "im Zug",
+      "translation_tr": "trende",
+      "note": "universal:u_0241"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Imbiss",
+      "translation_tr": "Büfe, atıştırmalık",
+      "note": "universal:u_0242"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "immer",
+      "translation_tr": "her zaman",
+      "note": "a1:a1_0255, a2:a2_0155"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "in",
+      "translation_tr": "içindeki, i̇çinde, içinde",
+      "note": "universal:u_0243"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "in den Ferien",
+      "translation_tr": "tatilde",
+      "note": "universal:u_0244"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "in der Nähe",
+      "translation_tr": "yakında",
+      "note": "universal:u_0245"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "in die Bar",
+      "translation_tr": "bar",
+      "note": "universal:u_0246"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "in Eile",
+      "translation_tr": "acele içinde",
+      "note": "universal:u_0247"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Indien",
+      "translation_tr": "Hindistan",
+      "note": "universal:u_0248"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ins",
+      "translation_tr": "-in içine, müzesine",
+      "note": "universal:u_0249"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ins Bett",
+      "translation_tr": "yatağa",
+      "note": "universal:u_0250"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Instrument",
+      "translation_tr": "enstrümanının, enstrümanın, araçtır",
+      "note": "universal:u_0251"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "interessant",
+      "translation_tr": "enteresan, ilginç, ilginçti",
+      "note": "universal:u_0252"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "isst",
+      "translation_tr": "tüketmiyor, yemek, (o) yiyor / yer",
+      "note": "universal:u_0253"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ist",
+      "translation_tr": "var, olmak (3. Tekil kişi), biridir",
+      "note": "universal:u_0254"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ja",
+      "translation_tr": "evet",
+      "note": "a1:a1_0030"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Jacke",
+      "translation_tr": "cekete, ceketı, ceketinizi",
+      "note": "a1:a1_0541"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Jahre",
+      "translation_tr": "yaşın, yıldan, yıl",
+      "note": "universal:u_0255"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Januar",
+      "translation_tr": "Ocak",
+      "note": "a1:a1_0283, a2:a2_0183"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Jazz",
+      "translation_tr": "caz",
+      "note": "universal:u_0256"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "jeden Tag",
+      "translation_tr": "her gün",
+      "note": "universal:u_0257"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "jetzt",
+      "translation_tr": "şimdi, şu andan itibaren",
+      "note": "a1:a1_0243, a2:a2_0143"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "joggen",
+      "translation_tr": "koşarız, koşar, koşarlar",
+      "note": "universal:u_0258"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "jung",
+      "translation_tr": "genç, gençti",
+      "note": "a1:a1_0743"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Jungen",
+      "translation_tr": "erkek çocuklar",
+      "note": "universal:u_0259"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kaffee",
+      "translation_tr": "kahve",
+      "note": "a1:a1_0163, a2:a2_0063"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kaffeemaschine",
+      "translation_tr": "makinemizi, makinesini, makinesine",
+      "note": "universal:u_0260"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kalender",
+      "translation_tr": "takvimdir, takvimi, ajandam",
+      "note": "a1:a1_0301, a2:a2_0201"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kalt",
+      "translation_tr": "soğuk, soğuksa",
+      "note": "a1:a1_0373, a2:a2_0273, a2:a2_0377"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kamera",
+      "translation_tr": "kamerası, kamerayı, kameram",
+      "note": "universal:u_0261"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kanada",
+      "translation_tr": "Kanada, kanada'yı",
+      "note": "universal:u_0262"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kaninchen",
+      "translation_tr": "tavşana, tavşanımız, Tavşan",
+      "note": "universal:u_0263"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kanzler",
+      "translation_tr": "şansölye",
+      "note": "universal:u_0264"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kappe",
+      "translation_tr": "Şapkayı, şapkaya, Şapka",
+      "note": "universal:u_0265"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kaputt",
+      "translation_tr": "berbattı, bozuksa, kırık",
+      "note": "universal:u_0266"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Karotte",
+      "translation_tr": "havucu, havuç",
+      "note": "universal:u_0267"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Karte",
+      "translation_tr": "kartpostallık, haritamız, kart",
+      "note": "a1:a1_0565"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kartoffeln",
+      "translation_tr": "patatesler",
+      "note": "universal:u_0268"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kartoffelsalat",
+      "translation_tr": "salatası",
+      "note": "universal:u_0269"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Käse",
+      "translation_tr": "peynir, peyniri, peynirden",
+      "note": "a1:a1_0155, a2:a2_0055"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Käsebrot",
+      "translation_tr": "peynirli ekmek, peynirli ekmeği",
+      "note": "universal:u_0270"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kasse",
+      "translation_tr": "kurumum, nakde, kasada",
+      "note": "a1:a1_0166, a2:a2_0066"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Katze",
+      "translation_tr": "kedi, kedisinin, kedime",
+      "note": "universal:u_0271"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kaufen",
+      "translation_tr": "(satın) almak, alıyorlar, alındıktan",
+      "note": "a1:a1_0140, a2:a2_0040"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kaufhaus",
+      "translation_tr": "mağazada, mağazaya",
+      "note": "a1:a1_0632"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kein",
+      "translation_tr": "olumsuzluk eki, hiçbir",
+      "note": "universal:u_0272"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "keine Ahnung",
+      "translation_tr": "hiçbir fikrim yok",
+      "note": "universal:u_0273"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "keine Sorge",
+      "translation_tr": "Merak etme",
+      "note": "universal:u_0274"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kekse",
+      "translation_tr": "kurabiye, kurabiyeler",
+      "note": "universal:u_0275"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kellner",
+      "translation_tr": "garson, garsonlar, garsona",
+      "note": "a1:a1_0345, a2:a2_0245"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kennen",
+      "translation_tr": "tanıyabilir, bilmeyi, biliyorsan",
+      "note": "universal:u_0276"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kerze",
+      "translation_tr": "mum",
+      "note": "universal:u_0277"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ketchup",
+      "translation_tr": "ketçap",
+      "note": "universal:u_0278"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kind",
+      "translation_tr": "çocuğun, oğlanlara, küçükler",
+      "note": "a1:a1_0070"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kinder",
+      "translation_tr": "çocukların, çocuklar, çocuklarımızı",
+      "note": "universal:u_0279"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kino",
+      "translation_tr": "sinema, sinemayı",
+      "note": "a1:a1_0586"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kiosk",
+      "translation_tr": "büfeye, Kiosk, kioskta",
+      "note": "universal:u_0280"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kirche",
+      "translation_tr": "kilisede, kiliselere, kilisenin",
+      "note": "universal:u_0281"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kissen",
+      "translation_tr": "kadehin, Yastığın, Yastığını",
+      "note": "universal:u_0282"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Klassenzimmer",
+      "translation_tr": "Sınıfa, Sınıfım, Sınıfı",
+      "note": "universal:u_0283"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "klassische Musik",
+      "translation_tr": "klasik müzik",
+      "note": "universal:u_0284"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Klavier",
+      "translation_tr": "piyanonuz, piyano, piyanoya",
+      "note": "universal:u_0285"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kleid",
+      "translation_tr": "elbiselerini, elbisende, kıyafetin",
+      "note": "a1:a1_0617"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kleidung",
+      "translation_tr": "kıyafet",
+      "note": "a1:a1_0539"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "klein",
+      "translation_tr": "küçüktür, küçücüktür, küçüğün",
+      "note": "universal:u_0286"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "klettern",
+      "translation_tr": "tırmalar, tırmanması, tırmanmalıyız",
+      "note": "universal:u_0287"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "klug",
+      "translation_tr": "akıllısın, akıllı, zekidir",
+      "note": "a1:a1_0744"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Klum",
+      "translation_tr": "Klum, klum'u",
+      "note": "universal:u_0288"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Knödel",
+      "translation_tr": "Hamur köftesi, knödel",
+      "note": "universal:u_0289"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Koch",
+      "translation_tr": "aşçı, aşçıdır, aşçıya",
+      "note": "a1:a1_0601"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kochen",
+      "translation_tr": "pişirip, pişirir, pişiririz",
+      "note": "a1:a1_0513"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Köchin",
+      "translation_tr": "aşçıya, aşçının, aşçıdan",
+      "note": "universal:u_0290"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Koffer",
+      "translation_tr": "bavulunuzu, kutunu, kasaları",
+      "note": "a1:a1_0596"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kollegen",
+      "translation_tr": "meslektaşlar",
+      "note": "universal:u_0291"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kollegin",
+      "translation_tr": "meslektaşı, meslektaş, meslektaşın",
+      "note": "universal:u_0292"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "komisch",
+      "translation_tr": "garip, komiklerden",
+      "note": "universal:u_0293"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "komm",
+      "translation_tr": "Gel",
+      "note": "universal:u_0294"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kommen",
+      "translation_tr": "gelmeye, gelmiş, gelmiyorlar",
+      "note": "a1:a1_0037"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Komödie",
+      "translation_tr": "komedi, komedisi",
+      "note": "universal:u_0295"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "können",
+      "translation_tr": "durabiliriz, yazabilir, uçabilir",
+      "note": "universal:u_0296"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Konzert",
+      "translation_tr": "konseri, konser, konsere",
+      "note": "universal:u_0297"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Konzerte",
+      "translation_tr": "konserler, konserleri, konserlerin",
+      "note": "universal:u_0298"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Korb",
+      "translation_tr": "Sepetin, sepetten, Sepet",
+      "note": "a1:a1_0779"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kosten",
+      "translation_tr": "olmayacak, tutmazdı, tutan",
+      "note": "a1:a1_0139, a2:a2_0039"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "krank",
+      "translation_tr": "rahatsızlar, hasta, hastadır",
+      "note": "a1:a1_0202, a1:a1_0334, a2:a2_0102, a2:a2_0234"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Krankenhaus",
+      "translation_tr": "hastane, hastanedir, hastaneyi",
+      "note": "a1:a1_0309, a2:a2_0209"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kräutertee",
+      "translation_tr": "çayı, çayını",
+      "note": "universal:u_0299"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "kreativ",
+      "translation_tr": "yaratıcısın, yaratıcı, yaratıcıdır",
+      "note": "universal:u_0300"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kreditkarte",
+      "translation_tr": "kredi kartı, kredi, kartı",
+      "note": "a1:a1_0507"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kuchen",
+      "translation_tr": "Pastan, kekinden, kekini",
+      "note": "universal:u_0301"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kugelschreiber",
+      "translation_tr": "kalem, kalemini, kalemi",
+      "note": "universal:u_0302"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kühlschrank",
+      "translation_tr": "buzdolabına, buzdolabını, buzdolabı",
+      "note": "a1:a1_0120, a2:a2_0020"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kunden",
+      "translation_tr": "müşteri",
+      "note": "universal:u_0303"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kunst",
+      "translation_tr": "sanat",
+      "note": "universal:u_0304"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Künstler",
+      "translation_tr": "sanatçıya, ressamlar, sanatçıları",
+      "note": "universal:u_0305"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Kurs",
+      "translation_tr": "dersle, yönünü, yönümü",
+      "note": "a1:a1_0468"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lachen",
+      "translation_tr": "gülerdik, gülmemek, gülmemiz",
+      "note": "a1:a1_0681"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Lampe",
+      "translation_tr": "lambası, lamba, lambamızı",
+      "note": "a1:a1_0117, a2:a2_0017"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lang",
+      "translation_tr": "uzun, uzundu, uzunluğunda",
+      "note": "universal:u_0306"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "langsam",
+      "translation_tr": "yavaş, yavaştı, yavaşça",
+      "note": "timur:timur_0094"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "langweilig",
+      "translation_tr": "sıkıcı, sıkıcıdır, sıkıcıydı",
+      "note": "a1:a1_0736"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lass uns",
+      "translation_tr": "Hadi",
+      "note": "universal:u_0307"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "laut",
+      "translation_tr": "seslisiniz, gürültülüydü, seslisin",
+      "note": "a1:a1_0399, a2:a2_0299"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lecker",
+      "translation_tr": "lezzetliydi, lezzetli, lezzetlidir",
+      "note": "a1:a1_0363, a2:a2_0263"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "leer",
+      "translation_tr": "boştu, boş, boşum",
+      "note": "universal:u_0308"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Lehrer",
+      "translation_tr": "öğretmeni, öğretmenidir, eğitimci",
+      "note": "universal:u_0309"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Lehrerin",
+      "translation_tr": "öğretmenleri, öğretmenlerin, öğretmenime",
+      "note": "universal:u_0310"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "leider",
+      "translation_tr": "maalesef",
+      "note": "universal:u_0311"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "leihen",
+      "translation_tr": "vermelisin, verebilir, verebilirim",
+      "note": "universal:u_0312"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "leise",
+      "translation_tr": "sessiz, kısık, sessizce",
+      "note": "a1:a1_0400, a2:a2_0300"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lernen",
+      "translation_tr": "öğrenmemize, çıkaracağım, öğrenirdiniz",
+      "note": "a1:a1_0042"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lesen",
+      "translation_tr": "okuyunca, okuduğundan, okuman",
+      "note": "a1:a1_0529"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Leute",
+      "translation_tr": "kişiler, insanlarının, kişileri",
+      "note": "universal:u_0313"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lieb",
+      "translation_tr": "sevimli, sevimlisin",
+      "note": "universal:u_0314"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lieben",
+      "translation_tr": "bayılıyor, bayılır, sevmek",
+      "note": "a1:a1_0096"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lieber",
+      "translation_tr": "tercih etmek",
+      "note": "universal:u_0315"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "liest",
+      "translation_tr": "okuduğunda, okuyor, okursun",
+      "note": "universal:u_0316"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "links",
+      "translation_tr": "sol, solu",
+      "note": "a1:a1_0543"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Lisa",
+      "translation_tr": "lisa'yı, Lisa, lisa'ya",
+      "note": "universal:u_0317"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "London",
+      "translation_tr": "Londra",
+      "note": "universal:u_0318"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "lustig",
+      "translation_tr": "eğlencelidir, komiklerden, eğlenceli",
+      "note": "a1:a1_0715"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mach's gut",
+      "translation_tr": "kendine iyi bak",
+      "note": "universal:u_0319"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "machen",
+      "translation_tr": "etmeseydim, ediyorsa, yapalım",
+      "note": "a1:a1_0528"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mag",
+      "translation_tr": "sevdiğimi, seviyor, hoşlanmıyorum",
+      "note": "universal:u_0320"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "magst",
+      "translation_tr": "seviyorsun, hoşlanıyor",
+      "note": "universal:u_0321"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "malen",
+      "translation_tr": "çiziyorsun, boyuyoruz, resmediyor",
+      "note": "universal:u_0322"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mama",
+      "translation_tr": "anne",
+      "note": "a1:a1_0599"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "manchmal",
+      "translation_tr": "bazen",
+      "note": "a1:a1_0256, a2:a2_0156"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mann",
+      "translation_tr": "Erkek, Adam, adamla",
+      "note": "universal:u_0323"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mannschaft",
+      "translation_tr": "takım",
+      "note": "universal:u_0324"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mantel",
+      "translation_tr": "paltonuz, manto, paltomu",
+      "note": "a1:a1_0785"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Markt",
+      "translation_tr": "piyasanın, pazara, piyasasını",
+      "note": "universal:u_0325"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "März",
+      "translation_tr": "Mart",
+      "note": "a1:a1_0285, a2:a2_0185"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mathe",
+      "translation_tr": "matematik",
+      "note": "universal:u_0326"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Max",
+      "translation_tr": "max'ı, Max",
+      "note": "universal:u_0327"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Medizin",
+      "translation_tr": "tıp",
+      "note": "a1:a1_0642"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Meer",
+      "translation_tr": "deniz, denizi",
+      "note": "a1:a1_0615"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Meeting",
+      "translation_tr": "toplantı",
+      "note": "universal:u_0328"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mehr",
+      "translation_tr": "daha",
+      "note": "universal:u_0329"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mein",
+      "translation_tr": "işim, yılım, benim",
+      "note": "universal:u_0330"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "meistens",
+      "translation_tr": "çoğunlukla",
+      "note": "universal:u_0331"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mensa",
+      "translation_tr": "yemekhane",
+      "note": "universal:u_0332"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mia",
+      "translation_tr": "mia'yı, mia'yım, Mia",
+      "note": "universal:u_0333"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Miete",
+      "translation_tr": "kirada, kiramı, kirasını",
+      "note": "a1:a1_0130, a2:a2_0030"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Milch",
+      "translation_tr": "süt",
+      "note": "a1:a1_0138, a2:a2_0038"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Minute",
+      "translation_tr": "dakikanız, dakikam, dakika",
+      "note": "a1:a1_0248, a2:a2_0148"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mit",
+      "translation_tr": "ile",
+      "note": "a1:a1_0369, a2:a2_0269"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mitbewohner",
+      "translation_tr": "arkadaşı, arkadaşım, arkadaşın",
+      "note": "universal:u_0334"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mitkommen",
+      "translation_tr": "gelmek, yetişmeye, gelebilir",
+      "note": "universal:u_0335"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mitnehmen",
+      "translation_tr": "alabilir, almada, götürmeliyiz",
+      "note": "universal:u_0336"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mittag",
+      "translation_tr": "öğlen, öğle, öğleleri",
+      "note": "a1:a1_0265, a2:a2_0165"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mittagessen",
+      "translation_tr": "öğle yemeği, öğleleri, öğünün",
+      "note": "a1:a1_0350, a2:a2_0250"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mittagspause",
+      "translation_tr": "aramız, arası, aram",
+      "note": "universal:u_0337"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mittwoch",
+      "translation_tr": "çarşamba, çarşambadan, çarşambayı",
+      "note": "a1:a1_0275, a2:a2_0175"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Möbel",
+      "translation_tr": "mobilyaların, tefrişat, mobilyanın",
+      "note": "a1:a1_0131, a2:a2_0031"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "möchte",
+      "translation_tr": "istiyor, istemediğim, istediği",
+      "note": "universal:u_0338"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "möchten",
+      "translation_tr": "ister misiniz",
+      "note": "a1:a1_0523"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "möchtest",
+      "translation_tr": "istersin, istemen, istediğini",
+      "note": "universal:u_0339"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "modern",
+      "translation_tr": "moderndir, günceldir, modern",
+      "note": "universal:u_0340"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "mögen",
+      "translation_tr": "beğenirsiniz, beğendiğini, hoşlanırdı",
+      "note": "universal:u_0341"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Montag",
+      "translation_tr": "pazartesiye, pazartesi, pazartesidir",
+      "note": "a1:a1_0273, a2:a2_0173"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "morgen",
+      "translation_tr": "yarına",
+      "note": "a1:a1_0014, a1:a1_0241, a2:a2_0141"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "morgen Abend",
+      "translation_tr": "yarın akşam",
+      "note": "universal:u_0342"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "morgen früh",
+      "translation_tr": "yarın sabah",
+      "note": "universal:u_0343"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "morgens",
+      "translation_tr": "sabah",
+      "note": "universal:u_0344"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Moschee",
+      "translation_tr": "Camiye, Cami",
+      "note": "universal:u_0345"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "müde",
+      "translation_tr": "yorgun, uykulusun, bitkindi",
+      "note": "a1:a1_0335, a2:a2_0235"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Müller",
+      "translation_tr": "Değirmenci",
+      "note": "universal:u_0346"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "München",
+      "translation_tr": "Münih, münih'i",
+      "note": "universal:u_0347"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Museen",
+      "translation_tr": "müze",
+      "note": "universal:u_0348"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Museum",
+      "translation_tr": "müze, müzeyi, müzelerini",
+      "note": "universal:u_0349"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Musik",
+      "translation_tr": "müzik",
+      "note": "universal:u_0350"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Musiker",
+      "translation_tr": "müzisyenlerinin, müzisyenler, müzisyenin",
+      "note": "universal:u_0351"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Müsli",
+      "translation_tr": "müsliyim, Müsli, müsliyimi",
+      "note": "universal:u_0352"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "müssen",
+      "translation_tr": "gerekti, almalısınız, kalmayacağımız",
+      "note": "universal:u_0353"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Mütze",
+      "translation_tr": "beremi, şapkama, kep",
+      "note": "universal:u_0354"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nach",
+      "translation_tr": "-(y)a, geçene, sonrası",
+      "note": "universal:u_0355"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nach Hause",
+      "translation_tr": "eve",
+      "note": "universal:u_0356"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nachbar",
+      "translation_tr": "Komşum, komşu, komşuyu",
+      "note": "universal:u_0357"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nachbarn",
+      "translation_tr": "komşular",
+      "note": "universal:u_0358"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nachmittag",
+      "translation_tr": "öğleden sonrasını, öğleden sonra, sonrayı",
+      "note": "a1:a1_0266, a2:a2_0166"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nächste Woche",
+      "translation_tr": "gelecek hafta",
+      "note": "universal:u_0359"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nacht",
+      "translation_tr": "gece, geceler, geceye",
+      "note": "a1:a1_0264, a2:a2_0164"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nachtisch",
+      "translation_tr": "tatlı, Tatlıyı",
+      "note": "universal:u_0360"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "neben",
+      "translation_tr": "yanında",
+      "note": "a1:a1_0555"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nebenan",
+      "translation_tr": "yan tarafta",
+      "note": "a2:a2_0419"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "neblig",
+      "translation_tr": "sisli",
+      "note": "universal:u_0361"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nehmen",
+      "translation_tr": "alırlar, kaldırıyorsun, almada",
+      "note": "a1:a1_0526"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nein",
+      "translation_tr": "hayır",
+      "note": "a1:a1_0031"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nerven",
+      "translation_tr": "sinirlendiriyor, sıkıyorum",
+      "note": "universal:u_0362"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nervig",
+      "translation_tr": "sinir bozucusun, sinir bozucu, bozucuydu",
+      "note": "universal:u_0363"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nervös",
+      "translation_tr": "gerginim, gergin, gergindi",
+      "note": "a2:a2_0383"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nett",
+      "translation_tr": "naziksin, nazik, naziktiler",
+      "note": "universal:u_0364"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "neu",
+      "translation_tr": "yenisidir, yenidir, yeni",
+      "note": "universal:u_0365"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "neun",
+      "translation_tr": "dokuz",
+      "note": "universal:u_0366"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nicht",
+      "translation_tr": "veya",
+      "note": "universal:u_0367"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nichts",
+      "translation_tr": "hiçbir şey",
+      "note": "universal:u_0368"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nickerchen",
+      "translation_tr": "şekerlemeye, şekerleme",
+      "note": "universal:u_0369"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nie",
+      "translation_tr": "asla",
+      "note": "a1:a1_0257, a2:a2_0157"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nimmt",
+      "translation_tr": "alırsa, alır, almamasından",
+      "note": "universal:u_0370"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "noch",
+      "translation_tr": "hala",
+      "note": "a1:a1_0272, a1:a1_0370, a2:a2_0172, a2:a2_0270"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "noch etwas",
+      "translation_tr": "başka bir şey",
+      "note": "universal:u_0371"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Note",
+      "translation_tr": "çeşni, dereceye, notun",
+      "note": "a1:a1_0661"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Notizen",
+      "translation_tr": "not",
+      "note": "universal:u_0372"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "null",
+      "translation_tr": "sıfır",
+      "note": "universal:u_0373"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Nummer",
+      "translation_tr": "numara",
+      "note": "a1:a1_0378, a2:a2_0278"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "nur",
+      "translation_tr": "sadece",
+      "note": "universal:u_0374"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Obst",
+      "translation_tr": "meyveyi, meyveler, meyveye",
+      "note": "a1:a1_0145, a2:a2_0045"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "oder",
+      "translation_tr": "ya da, değil mi?, veya",
+      "note": "universal:u_0375"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "öffnen",
+      "translation_tr": "açtığına, açar, açacaklarını",
+      "note": "a1:a1_0537"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "oft",
+      "translation_tr": "çoğu kez, sıkça, sıklıkla",
+      "note": "a1:a1_0258, a2:a2_0158"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "oh",
+      "translation_tr": "Oh, oha",
+      "note": "universal:u_0376"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "oh nein",
+      "translation_tr": "Ah hayır",
+      "note": "universal:u_0377"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "okay",
+      "translation_tr": "tamam",
+      "note": "universal:u_0378"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Olivenöl",
+      "translation_tr": "Zeytinyağını, zeytinyağına, Zeytinyağı",
+      "note": "universal:u_0379"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Oma",
+      "translation_tr": "anneanne",
+      "note": "a1:a1_0589"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "online",
+      "translation_tr": "çevrimiçi",
+      "note": "universal:u_0380"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Opa",
+      "translation_tr": "Büyükbabamı, Büyükbabam, Büyükbaban",
+      "note": "universal:u_0381"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Oper",
+      "translation_tr": "opera",
+      "note": "universal:u_0382"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ordentlich",
+      "translation_tr": "tertipli, düzenli, serili",
+      "note": "universal:u_0383"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Paket",
+      "translation_tr": "paketini, koliyi, kolileri",
+      "note": "a1:a1_0189, a2:a2_0089, timur:timur_0034"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Papa",
+      "translation_tr": "Baba, Babamız, babası",
+      "note": "a1:a1_0598"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Paris",
+      "translation_tr": "Paris, paris'i",
+      "note": "universal:u_0384"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Park",
+      "translation_tr": "park, parktır, parkları",
+      "note": "a1:a1_0564"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Parkplatz",
+      "translation_tr": "otopark, otoparkı, otoparkın",
+      "note": "a1:a1_0231, a2:a2_0131"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Party",
+      "translation_tr": "parti",
+      "note": "universal:u_0385"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pass",
+      "translation_tr": "pasaport, pasaportunun, pasaportunu",
+      "note": "a1:a1_0053"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pause",
+      "translation_tr": "moladan, molan, duraklama",
+      "note": "a1:a1_0178, a2:a2_0078, timur:timur_0045"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "perfekt",
+      "translation_tr": "mükemmelce, kusursuz, mükemmel",
+      "note": "universal:u_0386"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Personen",
+      "translation_tr": "kişiler",
+      "note": "universal:u_0387"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pferd",
+      "translation_tr": "At, atımın, ata",
+      "note": "universal:u_0388"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pflanze",
+      "translation_tr": "bitkinin, bitkim, bitki",
+      "note": "a1:a1_0608"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pflanzen",
+      "translation_tr": "bitkiler",
+      "note": "universal:u_0389"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Picknick",
+      "translation_tr": "piknik, pikniğe, pikniği",
+      "note": "universal:u_0390"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pilot",
+      "translation_tr": "pilot, pilota, pilotun",
+      "note": "universal:u_0391"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "pink",
+      "translation_tr": "pembe",
+      "note": "universal:u_0392"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pizza",
+      "translation_tr": "pizzayı, pizza, pizzanda",
+      "note": "a1:a1_0354, a2:a2_0254"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pläne",
+      "translation_tr": "planların, hedefleriniz, planlarını",
+      "note": "universal:u_0393"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "planen",
+      "translation_tr": "planlarız, planlamama, planlayabilirdik",
+      "note": "universal:u_0394"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Plätze",
+      "translation_tr": "yeri, yerler, konumlar",
+      "note": "universal:u_0395"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Podcast",
+      "translation_tr": "Podcast, podcastı",
+      "note": "universal:u_0396"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pommes",
+      "translation_tr": "patates kızartması",
+      "note": "universal:u_0397"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Popmusik",
+      "translation_tr": "pop müzik",
+      "note": "universal:u_0398"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Post",
+      "translation_tr": "posta",
+      "note": "a1:a1_0607"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Poster",
+      "translation_tr": "postere, posterlerim, posterin",
+      "note": "universal:u_0399"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Postkarte",
+      "translation_tr": "kartpostal, kartpostalın, kartpostallarım",
+      "note": "universal:u_0400"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Postleitzahl",
+      "translation_tr": "posta kodu",
+      "note": "a1:a1_0421"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Praktikant",
+      "translation_tr": "stajyer, stajyerdim",
+      "note": "universal:u_0401"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Praktikanten",
+      "translation_tr": "stajyer",
+      "note": "universal:u_0402"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Praktikum",
+      "translation_tr": "çıraklık, stajım, staj",
+      "note": "universal:u_0403"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "praktisch",
+      "translation_tr": "yararlı, pratiktir, pratik",
+      "note": "universal:u_0404"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Präsentation",
+      "translation_tr": "sunum",
+      "note": "universal:u_0405"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "probieren",
+      "translation_tr": "denersin, tadabilirim, deneyebilirsin",
+      "note": "universal:u_0406"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Problem",
+      "translation_tr": "çıkmaz, derdi, meselesini",
+      "note": "timur:timur_0097"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Professor",
+      "translation_tr": "profesörden, profesör, profesörün",
+      "note": "universal:u_0407"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Projekt",
+      "translation_tr": "projeye, projesinde, projen",
+      "note": "a1:a1_0186, a2:a2_0086"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Prüfung",
+      "translation_tr": "sınav",
+      "note": "a1:a1_0795"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "puh",
+      "translation_tr": "Off",
+      "note": "universal:u_0408"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Pullover",
+      "translation_tr": "kazağa, kazağımı, kazaklarımıza",
+      "note": "a1:a1_0634"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "pünktlich",
+      "translation_tr": "dakik, dakiksiniz, dakiktir",
+      "note": "a1:a1_0260, a2:a2_0160, a2:a2_0369, timur:timur_0050"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "putzen",
+      "translation_tr": "temizlemeleri, fırçalamanız, temizlemeliyim",
+      "note": "a1:a1_0519, a2:a2_0363"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "putzt",
+      "translation_tr": "temizliyor, fırçalıyorsun, temizliyorsun",
+      "note": "universal:u_0409"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Puzzle",
+      "translation_tr": "Puzzle, yapboz",
+      "note": "universal:u_0410"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Radio",
+      "translation_tr": "radyo, radyom",
+      "note": "a1:a1_0796"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rathaus",
+      "translation_tr": "belediye dairesi, belediye binası, belediyede",
+      "note": "universal:u_0411"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rechnung",
+      "translation_tr": "hesap",
+      "note": "a1:a1_0358, a2:a2_0258"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "rechts",
+      "translation_tr": "sağ",
+      "note": "a1:a1_0544"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Regal",
+      "translation_tr": "reyon, rafının, rafa",
+      "note": "a1:a1_0116, a1:a1_0193, a2:a2_0016, a2:a2_0093, timur:timur_0005"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Regenschirm",
+      "translation_tr": "şemsiyen, şemsiyeye, şemsiyesi",
+      "note": "a1:a1_0542"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "regnen",
+      "translation_tr": "yağdıktan, yağmaya, yağmadan",
+      "note": "a1:a1_0701, a2:a2_0371"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Reis",
+      "translation_tr": "pirince, pirinci, pirinç",
+      "note": "a1:a1_0151, a2:a2_0051"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Reiseführer",
+      "translation_tr": "rehberleri, gezi rehberi, rehber",
+      "note": "universal:u_0412"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "reisen",
+      "translation_tr": "ederler, dolaşır, seyahate gitmek",
+      "note": "universal:u_0413"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "reiten",
+      "translation_tr": "binmeye, biniyoruz, binmene",
+      "note": "universal:u_0414"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rentner",
+      "translation_tr": "emekli, emekliyim",
+      "note": "universal:u_0415"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Reservierung",
+      "translation_tr": "rezervasyon",
+      "note": "a1:a1_0348, a2:a2_0248"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Restaurant",
+      "translation_tr": "lokantayı, restoran, restoranların",
+      "note": "a1:a1_0343, a2:a2_0243"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rezept",
+      "translation_tr": "tarifimizi, yemek tarifi, reçeteye",
+      "note": "a1:a1_0312, a2:a2_0212"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "richtig",
+      "translation_tr": "doğru",
+      "note": "universal:u_0416"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "riechen",
+      "translation_tr": "kokmaya, kokan, kokmuyor",
+      "note": "universal:u_0417"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "riesig",
+      "translation_tr": "kocaman, mega",
+      "note": "universal:u_0418"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ring",
+      "translation_tr": "yüzük, alyansın",
+      "note": "universal:u_0419"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Roadtrip",
+      "translation_tr": "Yolculuğumuz, yolculuk",
+      "note": "universal:u_0420"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rock",
+      "translation_tr": "eteğe, etek, eteğin",
+      "note": "a1:a1_0635"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rollstuhl",
+      "translation_tr": "tekerlekli sandalye, tekerlekli sandalyeyi, tekerlekli sandalyesine",
+      "note": "universal:u_0421"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "romantisch",
+      "translation_tr": "romantik, romantikti",
+      "note": "universal:u_0422"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "rot",
+      "translation_tr": "al, kırmızı, kızıl",
+      "note": "universal:u_0423"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rotwein",
+      "translation_tr": "kırmızı şarap, kırmızı şarabınız, kırmızı şarabımız",
+      "note": "universal:u_0424"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Rucksack",
+      "translation_tr": "çantadan, Sırt çantasını, Sırt çantası",
+      "note": "universal:u_0425"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Ruhe",
+      "translation_tr": "sakinlik",
+      "note": "universal:u_0426"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ruhig",
+      "translation_tr": "sakin, sakinim, sakinleşmiş",
+      "note": "a1:a1_0733"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sache",
+      "translation_tr": "olayla, eşyayı, konudan",
+      "note": "universal:u_0427"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Saft",
+      "translation_tr": "meyve suyu, sap",
+      "note": "a1:a1_0162, a2:a2_0062"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Salat",
+      "translation_tr": "Salatam, Salatayı, salatasından",
+      "note": "a1:a1_0353, a2:a2_0253"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Salz",
+      "translation_tr": "tuz, tuzla, salt",
+      "note": "a1:a1_0159, a2:a2_0059"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "salzig",
+      "translation_tr": "tuzlu, tuzluydu",
+      "note": "universal:u_0428"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sammeln",
+      "translation_tr": "toplamam, topluyor., toparlayalım",
+      "note": "universal:u_0429"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Samstag",
+      "translation_tr": "cumartesi, cumartesidir",
+      "note": "a1:a1_0278, a2:a2_0178"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sandwich",
+      "translation_tr": "sandviç",
+      "note": "universal:u_0430"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sandwiches",
+      "translation_tr": "sandviç",
+      "note": "universal:u_0431"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "satt",
+      "translation_tr": "tok, tokum, tokuz",
+      "note": "a1:a1_0361, a2:a2_0261"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sauber",
+      "translation_tr": "serili, temizdi, temiz",
+      "note": "a1:a1_0134, a2:a2_0034"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schach",
+      "translation_tr": "Satranç, satrancı",
+      "note": "universal:u_0432"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schade",
+      "translation_tr": "yazık",
+      "note": "universal:u_0433"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schal",
+      "translation_tr": "eşarp, atkı, fular",
+      "note": "universal:u_0434"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "scharf",
+      "translation_tr": "kesici, acıdır, acı",
+      "note": "universal:u_0435"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schatz",
+      "translation_tr": "canım",
+      "note": "universal:u_0436"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "scheinen",
+      "translation_tr": "vuruyor, tünüyor, görünmeye",
+      "note": "universal:u_0437"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schenken",
+      "translation_tr": "verene, döktü, verseydim",
+      "note": "universal:u_0438"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schere",
+      "translation_tr": "makasları, makasa, makası",
+      "note": "universal:u_0439"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schick",
+      "translation_tr": "şıksın, şıktır, şık",
+      "note": "universal:u_0440"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schicken",
+      "translation_tr": "gönderirdim, ensende, gönderemez",
+      "note": "a1:a1_0388, a2:a2_0288"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schlafen",
+      "translation_tr": "uyuyordu, uyurum, yatmalı",
+      "note": "a1:a1_0510"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schläft",
+      "translation_tr": "uyuyor, uyur",
+      "note": "universal:u_0441"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schlecht",
+      "translation_tr": "berbattı, kötüsün, kötüsünüz",
+      "note": "a1:a1_0338, a2:a2_0238"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schließen",
+      "translation_tr": "kapanmak, kapatıyor, kapatmalısınız",
+      "note": "a1:a1_0538"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schlimm",
+      "translation_tr": "kötüsün, kötüdür, kötüsünüz",
+      "note": "universal:u_0442"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schloss",
+      "translation_tr": "şato, sarayı, şatoya",
+      "note": "universal:u_0443"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schmecken",
+      "translation_tr": "tadabilirim, tatıyor, tadacağım",
+      "note": "universal:u_0444"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schmerzen",
+      "translation_tr": "ağrı",
+      "note": "a1:a1_0308, a2:a2_0208"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schmutzig",
+      "translation_tr": "kirli, pis",
+      "note": "a1:a1_0135, a2:a2_0035"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schneien",
+      "translation_tr": "yağabilir, yağdıktan",
+      "note": "a2:a2_0372"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schnell",
+      "translation_tr": "çabucak, telaşla, aceleyle",
+      "note": "timur:timur_0095"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schnitzel",
+      "translation_tr": "şinitzel, şnitzel, şnitzeli",
+      "note": "a1:a1_0355, a2:a2_0255"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schokolade",
+      "translation_tr": "çikolata",
+      "note": "universal:u_0445"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schon",
+      "translation_tr": "zaten",
+      "note": "a1:a1_0018, a1:a1_0271, a2:a2_0171, a2:a2_0393"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schön",
+      "translation_tr": "yakışıklı, güzelken, güzel",
+      "note": "a1:a1_0018, a1:a1_0271, a2:a2_0171, a2:a2_0393"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schönen Abend noch",
+      "translation_tr": "iyi akşamlar",
+      "note": "universal:u_0446"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schrank",
+      "translation_tr": "dolaba, dolabın, dolabı",
+      "note": "a1:a1_0115, a2:a2_0015"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schreiben",
+      "translation_tr": "yazıyordu, yazman, yazar",
+      "note": "a1:a1_0530"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schreibtisch",
+      "translation_tr": "çalışma masası, masamızı",
+      "note": "a1:a1_0636"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schreien",
+      "translation_tr": "bağırdığında, çağırırız, bağırıyor",
+      "note": "universal:u_0447"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schuhe",
+      "translation_tr": "ayakkabılara, ayakkabıları, ayakkabılar",
+      "note": "a1:a1_0540"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schule",
+      "translation_tr": "okul, okuldan, okulların",
+      "note": "universal:u_0448"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schüler",
+      "translation_tr": "öğrenci, erkek öğrenci (üniversiteye kadar), öğrencilere",
+      "note": "a1:a1_0485"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schwach",
+      "translation_tr": "güçsüzüm, zayıfım, zayıftı",
+      "note": "a1:a1_0336, a2:a2_0236"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schwarz",
+      "translation_tr": "siyah, siyahtır",
+      "note": "universal:u_0449"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schwer",
+      "translation_tr": "ağır, ağırdır, zar",
+      "note": "a1:a1_0720"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schwester",
+      "translation_tr": "kız kardeş",
+      "note": "a1:a1_0074"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schwestern",
+      "translation_tr": "kız kardeş",
+      "note": "universal:u_0450"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Schwimmbad",
+      "translation_tr": "yüzme havuzu, havuzu, havuz",
+      "note": "a1:a1_0637"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "schwimmen",
+      "translation_tr": "yüzmedim, yüzen, yüzeriz",
+      "note": "universal:u_0451"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sechs",
+      "translation_tr": "altıda, altı, altıya",
+      "note": "universal:u_0452"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sechzehn",
+      "translation_tr": "on altı",
+      "note": "universal:u_0453"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "See",
+      "translation_tr": "gölde, göl, gölünün",
+      "note": "a1:a1_0797"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "segeln",
+      "translation_tr": "açıyoruz, açmaya, yatla",
+      "note": "universal:u_0454"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sehen",
+      "translation_tr": "görüyoruz, görüldüğünü, görmüştü",
+      "note": "a1:a1_0532"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sehr",
+      "translation_tr": "çok",
+      "note": "universal:u_0455"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "seid",
+      "translation_tr": "olmak ikinci şahıs çoğul, olun, olmuşsunuz",
+      "note": "universal:u_0456"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Seife",
+      "translation_tr": "sabuna, sabun, sabunu",
+      "note": "universal:u_0457"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sein",
+      "translation_tr": "olmana, olacağıma, olaydı",
+      "note": "a1:a1_0059"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Seite",
+      "translation_tr": "siteyi, yönler, taraf",
+      "note": "a1:a1_0798"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "selten",
+      "translation_tr": "nadirdi, nadir, nadiren",
+      "note": "a1:a1_0259, a2:a2_0159"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Shampoo",
+      "translation_tr": "şampuan, şampuana",
+      "note": "universal:u_0458"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "shoppen",
+      "translation_tr": "yapıyoruz",
+      "note": "universal:u_0459"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sicher",
+      "translation_tr": "malum, eminiz, güvenle",
+      "note": "a1:a1_0738"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sie",
+      "translation_tr": "it, onlar",
+      "note": "universal:u_0460"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sieben",
+      "translation_tr": "seven, yediyi, yediden",
+      "note": "universal:u_0461"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "siebzehn",
+      "translation_tr": "on yedi",
+      "note": "universal:u_0462"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "siehst",
+      "translation_tr": "görünürsün, gördüğün, gördüğünü",
+      "note": "universal:u_0463"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sind",
+      "translation_tr": "oluyorsunuz, nelerdir, var",
+      "note": "universal:u_0464"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "singen",
+      "translation_tr": "söyleriz, söyleyeceğim, şarkı söylemek",
+      "note": "universal:u_0465"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sitzen",
+      "translation_tr": "otururdum, oturuyorsunuz, oturmanızı",
+      "note": "a1:a1_0535"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Snacks",
+      "translation_tr": "atıştırmalık",
+      "note": "universal:u_0466"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "so",
+      "translation_tr": "çok",
+      "note": "universal:u_0467"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Socke",
+      "translation_tr": "çorabı, çorap",
+      "note": "universal:u_0468"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sofa",
+      "translation_tr": "sofanın, kanepeme, kanepenin",
+      "note": "a1:a1_0114, a2:a2_0014"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sogar",
+      "translation_tr": "hatta",
+      "note": "universal:u_0469"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sohn",
+      "translation_tr": "oğul, oğlun, oğlum",
+      "note": "a1:a1_0071"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sommer",
+      "translation_tr": "yazdan, yaz, yazlar",
+      "note": "a1:a1_0296, a2:a2_0196"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sondern",
+      "translation_tr": "bilakis, aksine",
+      "note": "universal:u_0470"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sonne",
+      "translation_tr": "güneş, güneşe, güneşi",
+      "note": "a1:a1_0606"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sonnenbrille",
+      "translation_tr": "güneş gözlüğü, gözlükleri, gözlüğüne",
+      "note": "universal:u_0471"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sonnencreme",
+      "translation_tr": "güneş kremi",
+      "note": "universal:u_0472"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sonnig",
+      "translation_tr": "güneşli, güneşliydi",
+      "note": "a1:a1_0734"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sonntag",
+      "translation_tr": "pazar",
+      "note": "a1:a1_0279, a2:a2_0179"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sorry",
+      "translation_tr": "üzgünüm",
+      "note": "universal:u_0473"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Soße",
+      "translation_tr": "sosu, sos",
+      "note": "universal:u_0474"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spanien",
+      "translation_tr": "ispanya'yı, İspanya, i̇spanya'yı",
+      "note": "universal:u_0475"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "spannend",
+      "translation_tr": "heyecan verici, sürükleyicidir, gerilimli",
+      "note": "universal:u_0476"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spaß",
+      "translation_tr": "eğlence",
+      "note": "universal:u_0477"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "spät dran",
+      "translation_tr": "geç kalmak",
+      "note": "universal:u_0478"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "später",
+      "translation_tr": "sonra",
+      "note": "a1:a1_0244, a2:a2_0144"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "spazieren",
+      "translation_tr": "gezdi, gezinmeye, dolaşmaya",
+      "note": "universal:u_0479"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Speisekarte",
+      "translation_tr": "yemek listesi, menünüz, menü",
+      "note": "a1:a1_0340, a2:a2_0240"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spiegel",
+      "translation_tr": "aynasıdır, ayna, aynası",
+      "note": "a1:a1_0119, a2:a2_0019"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spiel",
+      "translation_tr": "maça, oyununda, müsabaka",
+      "note": "universal:u_0480"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "spielen",
+      "translation_tr": "oynamasını, çalmak, oynayalım",
+      "note": "universal:u_0481"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spielzeug",
+      "translation_tr": "oyuncak, oyuncağını, oyuncağın",
+      "note": "universal:u_0482"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Spinat",
+      "translation_tr": "ıspanak, ıspanağa",
+      "note": "universal:u_0483"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sport",
+      "translation_tr": "spor, spora, sporla",
+      "note": "universal:u_0484"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sportlich",
+      "translation_tr": "sportifim, sportif, sportifsin",
+      "note": "a2:a2_0405"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Sprache",
+      "translation_tr": "dile, lisan, dilden",
+      "note": "a1:a1_0039"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "sprechen",
+      "translation_tr": "konuşurken, konuşmuş, konuşmaktan",
+      "note": "a1:a1_0040, a1:a1_0391, a2:a2_0291"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "spricht",
+      "translation_tr": "konuşur, konuşan, bahsediyor",
+      "note": "universal:u_0485"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stadion",
+      "translation_tr": "Stadyumu, Stadyuma, Stadyum",
+      "note": "universal:u_0486"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stadt",
+      "translation_tr": "şehir",
+      "note": "a1:a1_0044, a1:a1_0422"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stadtzentrum",
+      "translation_tr": "merkezine",
+      "note": "universal:u_0487"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stift",
+      "translation_tr": "kalem, kalemim, kaleme",
+      "note": "a1:a1_0807"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stifte",
+      "translation_tr": "kalemlere, kalemler, kalemlerim",
+      "note": "universal:u_0488"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "stimmt",
+      "translation_tr": "doğru",
+      "note": "universal:u_0489"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "stören",
+      "translation_tr": "rahatsız ediyor, etmeyelim, rahatsız etmek",
+      "note": "universal:u_0490"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Straße",
+      "translation_tr": "caddesini, sokağı, cadde",
+      "note": "a1:a1_0227, a2:a2_0127"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Straßenbahn",
+      "translation_tr": "tramvay",
+      "note": "a1:a1_0211, a2:a2_0111"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "streng",
+      "translation_tr": "katı, katıdır, katıydı",
+      "note": "universal:u_0491"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "stressig",
+      "translation_tr": "stresli, stresliydi",
+      "note": "universal:u_0492"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "stricken",
+      "translation_tr": "örgü, örmeyi, örmek",
+      "note": "universal:u_0493"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Student",
+      "translation_tr": "öğrenci, öğrenci (üniversite), talebe",
+      "note": "universal:u_0494"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "studieren",
+      "translation_tr": "okuyorsunuz, okuyorlar, okuyorum",
+      "note": "universal:u_0495"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stuhl",
+      "translation_tr": "sandalyeyle, sandalyesinde, koltukları",
+      "note": "a1:a1_0113, a2:a2_0013"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stühle",
+      "translation_tr": "sandalyeleri, sandalyen, koltuklarımız",
+      "note": "universal:u_0496"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Stunde",
+      "translation_tr": "dersle, saatten, saat",
+      "note": "a1:a1_0247, a2:a2_0147"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "suchen",
+      "translation_tr": "arıyoruz, arayabilirsiniz, aramak",
+      "note": "a1:a1_0524"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "super",
+      "translation_tr": "süper",
+      "note": "universal:u_0497"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Supermarkt",
+      "translation_tr": "süpermarkete, Süpermarketin, süpermarketi",
+      "note": "a1:a1_0136, a2:a2_0036"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Suppe",
+      "translation_tr": "çorbayı, çorba, çorbamız",
+      "note": "a1:a1_0352, a2:a2_0252"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "surfen",
+      "translation_tr": "sörf yaparız, sörfe",
+      "note": "universal:u_0498"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "süß",
+      "translation_tr": "tatlı, tatlısın, hoş",
+      "note": "a2:a2_0414"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tage",
+      "translation_tr": "günler, gün",
+      "note": "universal:u_0499"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tagebuch",
+      "translation_tr": "Günlüğüm, Günlüğümü, Günlüğün",
+      "note": "universal:u_0500"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tankstelle",
+      "translation_tr": "istasyonu",
+      "note": "a1:a1_0232, a2:a2_0132"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "tanzen",
+      "translation_tr": "dans ederler/dans ediyorlar, dans ederiz/dans ediyoruz, dans etmek",
+      "note": "universal:u_0501"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tasche",
+      "translation_tr": "cebe, çanta, cep",
+      "note": "universal:u_0502"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tasse",
+      "translation_tr": "fincan, fincanı, kupalar",
+      "note": "universal:u_0503"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Taxi",
+      "translation_tr": "taksi, taksisi, taksiye",
+      "note": "a1:a1_0212, a2:a2_0112"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tee",
+      "translation_tr": "çay",
+      "note": "a1:a1_0164, a2:a2_0064"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "telefonieren",
+      "translation_tr": "telefon etmek, laflıyoruz",
+      "note": "a1:a1_0833"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tennis",
+      "translation_tr": "tenis",
+      "note": "universal:u_0504"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Teppich",
+      "translation_tr": "Halıyı, Halı, halıda",
+      "note": "a1:a1_0118, a2:a2_0018"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Termin",
+      "translation_tr": "randevum, randevuya, randevusu",
+      "note": "a1:a1_0183, a1:a1_0313, a2:a2_0083, a2:a2_0213"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Termine",
+      "translation_tr": "randevular, randevu, tarihlere",
+      "note": "universal:u_0505"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "teuer",
+      "translation_tr": "fahiş, pahalı, pahalıdır",
+      "note": "a1:a1_0144, a2:a2_0044"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Text",
+      "translation_tr": "metinde, yazısı, reklamın",
+      "note": "a1:a1_0580"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Theater",
+      "translation_tr": "tiyatro, tiyatroyu",
+      "note": "a1:a1_0618"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Thema",
+      "translation_tr": "olayla, konudaki, konuyla",
+      "note": "universal:u_0506"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tiergarten",
+      "translation_tr": "hayvanat bahçesi, hayvanat bahçesini",
+      "note": "universal:u_0507"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "tippen",
+      "translation_tr": "tıklarım, yazabilir, yazabilirim",
+      "note": "universal:u_0508"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tisch",
+      "translation_tr": "masalara, masanın, sofrayı",
+      "note": "a1:a1_0112, a1:a1_0347, a2:a2_0012, a2:a2_0247"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tischtennis",
+      "translation_tr": "masa tenisi",
+      "note": "universal:u_0509"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tochter",
+      "translation_tr": "kız çocuk, kız çocuğu, kız",
+      "note": "a1:a1_0072"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Toilette",
+      "translation_tr": "lavabo, helayı, tuvaleti",
+      "note": "a1:a1_0511"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Toilettenpapier",
+      "translation_tr": "kağıdını, kağıdına, kağıdı",
+      "note": "universal:u_0510"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tokio",
+      "translation_tr": "Tokyo'dan, Tokyo'da, Tokyo",
+      "note": "universal:u_0511"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "toll",
+      "translation_tr": "harika, mükemmel, harikadır",
+      "note": "a1:a1_0719"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tomate",
+      "translation_tr": "domates",
+      "note": "a1:a1_0149, a2:a2_0049"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Torte",
+      "translation_tr": "Pastamız, pastandan, Pastan",
+      "note": "universal:u_0512"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Touristen",
+      "translation_tr": "turist",
+      "note": "universal:u_0513"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "tragen",
+      "translation_tr": "takıyoruz, giymelisin, kaldırırsın",
+      "note": "a1:a1_0704"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "trägt",
+      "translation_tr": "takıyor, takar, giyer",
+      "note": "universal:u_0514"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Trainer",
+      "translation_tr": "koç, eğitmen, antrenör",
+      "note": "a1:a1_0622"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "traurig",
+      "translation_tr": "üzgün, üzgündüm, üzgünüm",
+      "note": "a2:a2_0382"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "treffen",
+      "translation_tr": "buluşur, vuruyor, rastladım",
+      "note": "universal:u_0515"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "trifft",
+      "translation_tr": "buluşur, tanışır, buluşuyor",
+      "note": "universal:u_0516"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "trinken",
+      "translation_tr": "içmedi, içsek, içmenizi",
+      "note": "a1:a1_0365, a1:a1_0509, a2:a2_0265"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "tschüss",
+      "translation_tr": "güle güle",
+      "note": "a1:a1_0006"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Tüte",
+      "translation_tr": "poşeti, poşet, poşette",
+      "note": "a1:a1_0165, a2:a2_0065"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "U-Bahn",
+      "translation_tr": "metro",
+      "note": "a1:a1_0210, a2:a2_0110"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "über",
+      "translation_tr": "tepesinde, üstündü, fazlasıdır",
+      "note": "universal:u_0517"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "überrascht",
+      "translation_tr": "şaşırmam, şaşırdın, şaşırdı",
+      "note": "a2:a2_0389"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Uhr",
+      "translation_tr": "saatinin, saat, saate",
+      "note": "a1:a1_0239, a2:a2_0139"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "um",
+      "translation_tr": "yarısında, etrafından, amacıyla",
+      "note": "universal:u_0518"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "um die Ecke",
+      "translation_tr": "köşeyi dönünce",
+      "note": "universal:u_0519"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "und",
+      "translation_tr": "ve",
+      "note": "universal:u_0520"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "und du",
+      "translation_tr": "ya sen",
+      "note": "universal:u_0521"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Universität",
+      "translation_tr": "üniversite",
+      "note": "a1:a1_0496"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "unser",
+      "translation_tr": "bölmemiz, bizim, servisimiz",
+      "note": "universal:u_0522"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "unterschreiben",
+      "translation_tr": "imzalayabilirsiniz, imzalayabiliriz, imzalanmalıdır",
+      "note": "a1:a1_0441"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ups",
+      "translation_tr": "Oops",
+      "note": "universal:u_0523"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Vegetarier",
+      "translation_tr": "etyemez, vejetaryen, vejetaryenler",
+      "note": "universal:u_0524"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vegetarisch",
+      "translation_tr": "vejetaryen, vejetaryendir",
+      "note": "a1:a1_0366, a2:a2_0266"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verdienen",
+      "translation_tr": "kazanacağımızı, kazanmış, kazanırlardı",
+      "note": "a1:a1_0683"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verheiratet",
+      "translation_tr": "evliler, evli",
+      "note": "a1:a1_0051"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verkaufen",
+      "translation_tr": "satmıyorlar, satmam, satış yapıyoruz",
+      "note": "a1:a1_0707"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Verkäufer",
+      "translation_tr": "görevlisi, satıcıdan, görevlileri",
+      "note": "universal:u_0525"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Verkäuferin",
+      "translation_tr": "satıcıdır, satıcı, seller",
+      "note": "universal:u_0526"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verliebt",
+      "translation_tr": "aşığız, âşık, âşığım",
+      "note": "a2:a2_0390"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verspätet",
+      "translation_tr": "gecikti, gecikmeli, gecikmiş",
+      "note": "universal:u_0527"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Verstecken",
+      "translation_tr": "saklambaç",
+      "note": "universal:u_0528"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "verstehen",
+      "translation_tr": "bilmeyi, kavramada, çözdüğüme",
+      "note": "a1:a1_0041"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Videospiele",
+      "translation_tr": "video oyunu",
+      "note": "universal:u_0529"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "viel",
+      "translation_tr": "çok",
+      "note": "universal:u_0530"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "viele",
+      "translation_tr": "çok",
+      "note": "universal:u_0531"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vielleicht",
+      "translation_tr": "belki",
+      "note": "a1:a1_0032"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vier",
+      "translation_tr": "dörtten, dörde, dört",
+      "note": "universal:u_0532"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Viertel",
+      "translation_tr": "mahallini, mahallem, semtimizin",
+      "note": "a1:a1_0250, a2:a2_0150"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vierzehn",
+      "translation_tr": "on dört",
+      "note": "universal:u_0533"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vierzig",
+      "translation_tr": "kırk",
+      "note": "universal:u_0534"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "voll",
+      "translation_tr": "dolu, doluydu, doludur",
+      "note": "a1:a1_0745"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Volleyball",
+      "translation_tr": "voleybolu, voleybol, voleybolda",
+      "note": "universal:u_0535"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "von",
+      "translation_tr": "-dan/-den, max'tan, amirden",
+      "note": "universal:u_0536"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "von hier",
+      "translation_tr": "buralı",
+      "note": "universal:u_0537"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vor",
+      "translation_tr": "kala, karşımda, önündedir",
+      "note": "universal:u_0538"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vorbei",
+      "translation_tr": "bitti",
+      "note": "universal:u_0539"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "vorbereiten",
+      "translation_tr": "hazırlarsak, hazırlanabilir, hazırlamanıza",
+      "note": "universal:u_0540"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Vorlesung",
+      "translation_tr": "ders, dersin, dersimiz",
+      "note": "universal:u_0541"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wahrscheinlich",
+      "translation_tr": "muhtemelen",
+      "note": "universal:u_0542"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wald",
+      "translation_tr": "ormanına, ormandı, orman",
+      "note": "universal:u_0543"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wandern",
+      "translation_tr": "yürümek, gezecek, gezdi",
+      "note": "universal:u_0544"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wann",
+      "translation_tr": "ne zaman",
+      "note": "a1:a1_0254, a2:a2_0154"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "warm",
+      "translation_tr": "sıcakken, sıcak, sıcakça",
+      "note": "a1:a1_0372, a2:a2_0272, a2:a2_0376"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "warte",
+      "translation_tr": "bekliyorum, beklerim",
+      "note": "universal:u_0545"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "warten",
+      "translation_tr": "beklesem, beklememiz, beklemek",
+      "note": "a1:a1_0393, a2:a2_0293"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "warum",
+      "translation_tr": "neden",
+      "note": "universal:u_0546"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "was",
+      "translation_tr": "ne",
+      "note": "universal:u_0547"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "was ist los",
+      "translation_tr": "ne oluyor",
+      "note": "universal:u_0548"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "waschen",
+      "translation_tr": "yıkarız, yıkamak, yıkıyoruz",
+      "note": "a1:a1_0514"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wasser",
+      "translation_tr": "su",
+      "note": "a1:a1_0161, a1:a1_0341, a2:a2_0061, a2:a2_0241"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "weg",
+      "translation_tr": "yolu, yok, gitmiş",
+      "note": "a1:a1_0566"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wegräumen",
+      "translation_tr": "kaldırmak, kaldırabilirim, kaldırabilir",
+      "note": "universal:u_0549"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Weihnachten",
+      "translation_tr": "Noel",
+      "note": "a1:a1_0303, a2:a2_0203"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wein",
+      "translation_tr": "şarap, şarabını, şarabı",
+      "note": "a1:a1_0649"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "weiß",
+      "translation_tr": "öğrendi, biliyor, bilir",
+      "note": "universal:u_0550"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "weit weg",
+      "translation_tr": "uzak",
+      "note": "universal:u_0551"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "welcher",
+      "translation_tr": "hangi (Dativ), hangi",
+      "note": "universal:u_0552"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "weniger",
+      "translation_tr": "daha az",
+      "note": "universal:u_0553"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wer",
+      "translation_tr": "kim, kimdir, kimin",
+      "note": "universal:u_0554"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wetter",
+      "translation_tr": "hava, durumundan, havalarda",
+      "note": "universal:u_0555"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wichtig",
+      "translation_tr": "önemliydi, önemlidirler, önemi",
+      "note": "universal:u_0556"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie",
+      "translation_tr": "nasıl",
+      "note": "universal:u_0557"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie geht's",
+      "translation_tr": "nasılsın",
+      "note": "universal:u_0558"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie heißt du",
+      "translation_tr": "adın ne, adınız ne",
+      "note": "universal:u_0559"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie lange",
+      "translation_tr": "ne kadar süre",
+      "note": "a1:a1_0473"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie oft",
+      "translation_tr": "ne sıklıkla",
+      "note": "universal:u_0560"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wie viel",
+      "translation_tr": "ne kadar",
+      "note": "universal:u_0561"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wieder",
+      "translation_tr": "tekrar, yine",
+      "note": "a1:a1_0729"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wiederholen",
+      "translation_tr": "tekrarlamak, tekrarla, tekrar etmek",
+      "note": "a1:a1_0685"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wien",
+      "translation_tr": "Viyana, Viyana'yı (akk.)",
+      "note": "universal:u_0562"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "will",
+      "translation_tr": "istiyor, isteyen, gitmek istiyorum",
+      "note": "universal:u_0563"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "willkommen",
+      "translation_tr": "hoş geldin",
+      "note": "a1:a1_0011"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wind",
+      "translation_tr": "rüzgarla, rüzgar, rüzgara",
+      "note": "a1:a1_0646"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "windig",
+      "translation_tr": "rüzgarlı, rüzgarlıydı",
+      "note": "universal:u_0564"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wir",
+      "translation_tr": "muyuz, biz, bizler",
+      "note": "universal:u_0565"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wirklich",
+      "translation_tr": "gerçekten",
+      "note": "universal:u_0566"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wo",
+      "translation_tr": "nerede",
+      "note": "universal:u_0567"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wo ist",
+      "translation_tr": "nerede",
+      "note": "a1:a1_0546"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Woche",
+      "translation_tr": "haftadan, haftaya, haftanın",
+      "note": "a1:a1_0299, a2:a2_0199"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wochenende",
+      "translation_tr": "sonum, hafta sonu, sonları",
+      "note": "a1:a1_0268, a2:a2_0168"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "woher",
+      "translation_tr": "nereden",
+      "note": "universal:u_0568"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wohin",
+      "translation_tr": "nereye",
+      "note": "universal:u_0569"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wohnen",
+      "translation_tr": "yaşıyor, oturuyorsunuz, yaşadılar",
+      "note": "a1:a1_0038"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wohnung",
+      "translation_tr": "daire",
+      "note": "a1:a1_0103, a2:a2_0003"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wohnzimmer",
+      "translation_tr": "salonum, salona, oturma odasına",
+      "note": "a1:a1_0108, a2:a2_0008"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wolf",
+      "translation_tr": "Kurt, wolf'a",
+      "note": "universal:u_0570"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wollen",
+      "translation_tr": "istiyor, istediğimiz, istememek",
+      "note": "universal:u_0571"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wort",
+      "translation_tr": "sözünü, kelimenin, kelimelerde",
+      "note": "universal:u_0572"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wörter",
+      "translation_tr": "kelimelerde, sözcüklerin, kelime",
+      "note": "universal:u_0573"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wörterbuch",
+      "translation_tr": "sözlükler, sözlük, sözlüğüm",
+      "note": "a1:a1_0820"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wow",
+      "translation_tr": "Vay",
+      "note": "universal:u_0574"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wunderbar",
+      "translation_tr": "harika",
+      "note": "universal:u_0575"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wunderschön",
+      "translation_tr": "güzel",
+      "note": "a1:a1_0852"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Wurst",
+      "translation_tr": "sosis",
+      "note": "a1:a1_0356, a2:a2_0256"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "wütend",
+      "translation_tr": "kızgındım, sinirlisin, kızgınız",
+      "note": "universal:u_0576"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Yoga",
+      "translation_tr": "yogadan, yogada, yogaya",
+      "note": "universal:u_0577"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zahlen",
+      "translation_tr": "ödedim, öderiz, ödemeliyim",
+      "note": "a1:a1_0837, a1:a1_0838"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zählen",
+      "translation_tr": "saymak, saymalıyız, sayıldığını",
+      "note": "a1:a1_0837, a1:a1_0838"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zahnbürste",
+      "translation_tr": "fırçasına, fırçası, diş fırçası",
+      "note": "universal:u_0578"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zehn",
+      "translation_tr": "on, 10",
+      "note": "universal:u_0579"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zeigen",
+      "translation_tr": "gösterebilirim, gösterseydim, sergiledi",
+      "note": "universal:u_0580"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zeit",
+      "translation_tr": "zaman",
+      "note": "a1:a1_0261, a2:a2_0161"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zeitschriften",
+      "translation_tr": "dergi",
+      "note": "universal:u_0581"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zeitung",
+      "translation_tr": "gazete",
+      "note": "a1:a1_0631"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zeugnis",
+      "translation_tr": "Karnemde, Karnesini, belgemi",
+      "note": "universal:u_0582"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "ziemlich",
+      "translation_tr": "oldukça",
+      "note": "universal:u_0583"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zimmer",
+      "translation_tr": "odamda, odalar, daireme",
+      "note": "a1:a1_0104, a2:a2_0004"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zu",
+      "translation_tr": "çok, fazla, etmeyi",
+      "note": "universal:u_0584"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zu Fuß",
+      "translation_tr": "yürüyerek",
+      "note": "universal:u_0585"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zu Hause",
+      "translation_tr": "ev",
+      "note": "universal:u_0586"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zucker",
+      "translation_tr": "şeker",
+      "note": "a1:a1_0158, a2:a2_0058"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zuerst",
+      "translation_tr": "önce",
+      "note": "universal:u_0587"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zufrieden",
+      "translation_tr": "halinden hoşnut, memnun, memnundum",
+      "note": "universal:u_0588"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "Zug",
+      "translation_tr": "hamlem, hamlede, sırası",
+      "note": "a1:a1_0208, a2:a2_0108"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zum ersten Mal",
+      "translation_tr": "ilk defa",
+      "note": "universal:u_0589"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zur Party",
+      "translation_tr": "partiye gitmek",
+      "note": "universal:u_0590"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zurückgeben",
+      "translation_tr": "geri verebilirsiniz, geri verebilir, geri vermeliyim",
+      "note": "universal:u_0591"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zurzeit",
+      "translation_tr": "şu anda",
+      "note": "universal:u_0592"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zusammen",
+      "translation_tr": "birlikte, birlikteyiz, beraber",
+      "note": "a1:a1_0101, a2:a2_0001"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zwanzig",
+      "translation_tr": "yirmi'de, yirmiye, yirmi",
+      "note": "universal:u_0593"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zwei",
+      "translation_tr": "ikiye, iki tane, iki’de",
+      "note": "universal:u_0594"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zwischen",
+      "translation_tr": "arasında",
+      "note": "a1:a1_0557"
+    },
+    {
+      "status": "mevcut",
+      "level": "Mevcut",
+      "word": "zwölf",
+      "translation_tr": "on iki, 12",
+      "note": "universal:u_0595"
+    }
+  ]
+}

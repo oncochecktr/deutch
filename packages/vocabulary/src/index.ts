@@ -13,6 +13,7 @@ import type { VocabularyPack, VocabularyWord } from "./types";
 import a1Data from "../../../data/a1/vocabulary.json";
 import a2Data from "../../../data/a2/vocabulary.json";
 import timurData from "../../../data/timur/vocabulary.json";
+import universalData from "../../../data/universal/vocabulary.json";
 
 export function getA1Vocabulary(): VocabularyPack {
   return a1Data as VocabularyPack;
@@ -24,6 +25,10 @@ export function getA2Vocabulary(): VocabularyPack {
 
 export function getTimurVocabulary(): VocabularyPack {
   return timurData as VocabularyPack;
+}
+
+export function getUniversalVocabulary(): VocabularyPack {
+  return universalData as VocabularyPack;
 }
 
 /** Mesleki Almanca paketi (iş & kariyer kelimeleri) */
@@ -52,7 +57,8 @@ export function getWordById(id: string) {
   return (
     getA1Vocabulary().words.find((w) => w.id === id) ??
     getA2Vocabulary().words.find((w) => w.id === id) ??
-    getTimurVocabulary().words.find((w) => w.id === id)
+    getTimurVocabulary().words.find((w) => w.id === id) ??
+    getUniversalVocabulary().words.find((w) => w.id === id)
   );
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { getA1Vocabulary } from "@german-coach/vocabulary";
+import { getA1Vocabulary, getUniversalVocabulary } from "@german-coach/vocabulary";
 import { CardsMotivationPanel } from "@/components/cards/CardsMotivationPanel";
 import { CardsListenPanel } from "@/components/cards/CardsListenPanel";
 import { CardsLockListenBar } from "@/components/cards/CardsLockListenBar";
@@ -36,7 +36,17 @@ const SESSION_MEMORY_MAX = 20;
 export default function CardsPage() {
   const { progress, updateProgress, hydrated, flushProgress } = useProgress();
   const { coach } = useLearningCoach();
-  const vocab = getA1Vocabulary();
+  const a1Vocab = getA1Vocabulary();
+  const universalVocab = getUniversalVocabulary();
+  const vocab = useMemo(
+    () => ({
+      ...a1Vocab,
+      total: a1Vocab.words.length + universalVocab.words.length,
+      categories: [...a1Vocab.categories, ...universalVocab.categories],
+      words: [...a1Vocab.words, ...universalVocab.words],
+    }),
+    [a1Vocab, universalVocab]
+  );
   const [flipped, setFlipped] = useState(false);
   const [trail, setTrail] = useState<string[]>([]);
   const [trailCursor, setTrailCursor] = useState(0);
@@ -105,7 +115,7 @@ export default function CardsPage() {
   );
 
   const handleTierChange = useCallback(
-    (tier: A1WordTierId | "all") => {
+    (tier: A1WordTierId | "all" | "universal") => {
       const cats = getTierCategories(tier);
       const firstCat = tier === "all" ? null : (cats[0] ?? null);
       patchSettings({
