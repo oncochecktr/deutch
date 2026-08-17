@@ -93,7 +93,7 @@ export function SmartGuide({ report }: SmartGuideProps) {
           <div className="mt-4 flex flex-col gap-2 sm:flex-row">
             <Link
               href={next.href}
-              className="btn-primary-lg flex flex-1 items-center justify-center gap-2 bg-goethe-gold text-goethe-blue shadow-sm hover:brightness-105"
+              className="btn-primary-lg flex flex-1 items-center justify-center gap-2 bg-sage-600 text-white shadow-sm hover:bg-sage-700"
             >
               {next.cta}
               <IconArrowRight size={20} />
@@ -103,7 +103,7 @@ export function SmartGuide({ report }: SmartGuideProps) {
         ) : (
           <Link
             href={next.href}
-            className="btn-primary-lg mt-4 flex w-full items-center justify-center gap-2 bg-goethe-gold text-goethe-blue shadow-sm hover:brightness-105"
+            className="btn-primary-lg mt-4 flex w-full items-center justify-center gap-2 bg-sage-600 text-white shadow-sm hover:bg-sage-700"
           >
             {next.cta}
             <IconArrowRight size={20} />

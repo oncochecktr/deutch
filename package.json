@@ -11,6 +11,7 @@
     "dev": "npm run dev --workspace=apps/web",
     "build": "npm run build --workspace=apps/web",
     "start": "npm run start --workspace=apps/web",
+    "check:web": "node scripts/check-web.mjs",
     "vocab": "node scripts/build-a1-500.mjs",
     "timur": "node scripts/build-timur.mjs",
     "goethe": "node scripts/build-goethe-a1-bank.mjs",

@@ -70,48 +70,42 @@ function MethodStepRow({ step }: { step: MethodStepState }) {
   const isActive = step.status === "active";
   const isDone = step.status === "done";
 
-  const inner = (
-    <>
-      <span
-        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
-          isDone
-            ? "bg-sage-200 text-sage-600"
-            : isActive
-              ? "bg-goethe-gold text-goethe-blue"
-              : "bg-sage-100 text-sage-400"
-        }`}
-      >
-        {isDone ? <IconCheck size={14} /> : step.order}
-      </span>
-      <div className="min-w-0 flex-1">
-        <p
-          className={`text-sm font-semibold ${
-            isActive ? "text-goethe-blue" : isDone ? "text-sage-500" : "text-sage-400"
-          }`}
-        >
-          {step.title}
-          {isActive && (
-            <span className="ml-2 text-[10px] font-bold uppercase text-goethe-gold">Şimdi</span>
-          )}
-        </p>
-        <p className="text-xs text-sage-500">{step.progressLabel}</p>
-      </div>
-    </>
-  );
-
-  if (isDone) {
-    return <li className="flex items-center gap-3 rounded-lg px-2 py-2 opacity-80">{inner}</li>;
-  }
-
   return (
     <li>
       <Link
         href={step.href}
         className={`flex items-center gap-3 rounded-lg px-2 py-2 transition ${
-          isActive ? "bg-goethe-gold/10 hover:bg-goethe-gold/15" : "hover:bg-sage-50"
+          isDone
+            ? "opacity-80 hover:bg-sage-50"
+            : isActive
+              ? "bg-goethe-gold/10 hover:bg-goethe-gold/15"
+              : "hover:bg-sage-50"
         }`}
       >
-        {inner}
+        <span
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
+            isDone
+              ? "bg-sage-200 text-sage-600"
+              : isActive
+                ? "bg-goethe-gold text-goethe-blue"
+                : "bg-sage-100 text-sage-400"
+          }`}
+        >
+          {isDone ? <IconCheck size={14} /> : step.order}
+        </span>
+        <div className="min-w-0 flex-1">
+          <p
+            className={`text-sm font-semibold ${
+              isActive ? "text-goethe-blue" : isDone ? "text-sage-500" : "text-sage-400"
+            }`}
+          >
+            {step.title}
+            {isActive && (
+              <span className="ml-2 text-[10px] font-bold uppercase text-goethe-gold">Şimdi</span>
+            )}
+          </p>
+          <p className="text-xs text-sage-500">{step.progressLabel}</p>
+        </div>
         {!isActive && <IconArrowRight size={14} className="shrink-0 text-sage-300" />}
       </Link>
     </li>

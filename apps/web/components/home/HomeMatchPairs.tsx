@@ -125,9 +125,26 @@ function makeRound(pool: VocabularyWord[], size = 5) {
   };
 }
 
+function makeInitialRound(pool: VocabularyWord[], size = 5) {
+  const words = pool.slice(0, size);
+  return {
+    words,
+    left: words.map((word) => ({
+      id: word.id,
+      side: "tr" as const,
+      label: word.translation_tr,
+    })),
+    right: words.map((word) => ({
+      id: word.id,
+      side: "de" as const,
+      label: wordLabel(word),
+    })),
+  };
+}
+
 export function HomeMatchPairs() {
   const pool = useMemo(() => buildPool(), []);
-  const [round, setRound] = useState(() => makeRound(pool));
+  const [round, setRound] = useState(() => makeInitialRound(pool));
   const [selected, setSelected] = useState<Partial<Record<MatchSide, string>>>({});
   const [matched, setMatched] = useState<string[]>([]);
   const [mistake, setMistake] = useState<string[]>([]);
@@ -136,7 +153,8 @@ export function HomeMatchPairs() {
 
   useEffect(() => {
     setMemory(loadMemory());
-  }, []);
+    setRound(makeRound(pool));
+  }, [pool]);
 
   const matchedSet = useMemo(() => new Set(matched), [matched]);
   const wordById = useMemo(() => new Map(pool.map((word) => [word.id, word])), [pool]);

@@ -7,7 +7,10 @@ import { useProgress } from "@/lib/ProgressContext";
 
 export function useLearningCoach() {
   const { progress, hydrated } = useProgress();
-  const [milestones, setMilestones] = useState(loadCoachMilestones);
+  const [milestones, setMilestones] = useState({
+    diktatVisited: false,
+    konusDinleVisited: false,
+  });
 
   useEffect(() => {
     if (!hydrated) return;
