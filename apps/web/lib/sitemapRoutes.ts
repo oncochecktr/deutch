@@ -20,6 +20,7 @@ const DEFAULT: Pick<SitemapRoute, "priority" | "changeFrequency"> = {
 const EXTRA_ROUTES: SitemapRoute[] = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/ozellikler", priority: 0.85, changeFrequency: "weekly" },
+  { path: "/almanca-en-cok-kullanilan-100-fiil", priority: 0.85, changeFrequency: "weekly" },
   { path: "/grundlagen/motor-cumleler", priority: 0.75, changeFrequency: "monthly" },
   { path: "/grundlagen/form", priority: 0.7, changeFrequency: "monthly" },
   { path: "/grundlagen/grammar", priority: 0.7, changeFrequency: "monthly" },
@@ -114,3 +115,4 @@ export function getSitemapRoutes(): SitemapRoute[] {
     return a.path.localeCompare(b.path);
   });
 }
+

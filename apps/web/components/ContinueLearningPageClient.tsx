@@ -8,6 +8,7 @@ import { ContinueSessionBanner } from "@/components/ContinueSessionBanner";
 import { HomeGameBanner } from "@/components/home/HomeGameBanner";
 import { HomePathPicker } from "@/components/home/HomePathPicker";
 import { HomeStoryBanner } from "@/components/home/HomeStoryBanner";
+import { HomeTopVerbsBanner } from "@/components/home/HomeTopVerbsBanner";
 import { LearningMethodGuide } from "@/components/home/LearningMethodGuide";
 import { LearningCoachBanner } from "@/components/LearningCoachBanner";
 import { LearningPathHub } from "@/components/LearningPathHub";
@@ -73,6 +74,7 @@ export function ContinueLearningPageClient() {
           </div>
         </header>
 
+        <HomeTopVerbsBanner />
         <HomeStoryBanner />
         <HomeGameBanner />
         <LearningMethodGuide />
@@ -209,3 +211,4 @@ function MiniTile({
     </Link>
   );
 }
+
